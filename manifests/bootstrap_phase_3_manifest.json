@@ -1,0 +1,204 @@
+{
+  "phase": 3,
+  "repository": "Taro102/OFG-Engineering-Atlas",
+  "base_remote_commit": "0e6cee00a47cee86de24b329b31ea4f141d8a734",
+  "phase_1_status": "PASS",
+  "phase_2_status": "PASS",
+  "phase_3_status": "PREPARED_NOT_YET_PUBLISHED",
+  "github_authority": "NOT_YET_ACTIVE",
+  "source_bundle_id": "OFG_EA_MASTER_MIGRATION_RAW_DATA_RETRIEVAL_R2",
+  "source_archive_sha256": "bc052b488e3ce944f765583f7d3b5f0731e210e6a423e439e3d98738bee34da1",
+  "source_file_count": 16,
+  "generated_publication_metadata_count": 1,
+  "total_byte_count": 88160,
+  "files": [
+    {
+      "repository_path": "state/current_working_state.json",
+      "source_path_in_r2": "ofg_migration_bundle/state/current_working_state.json",
+      "byte_count": 13413,
+      "sha256": "6859df47e781d6985cf6f6441324ced2e6f8cd3eddf4768f542a650bac229ffc",
+      "classification": "NORMALIZED_AUTHORITATIVE_STATE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_path": "state/reference_state.json",
+      "source_path_in_r2": "ofg_migration_bundle/state/reference_state.json",
+      "byte_count": 6109,
+      "sha256": "b00ae52296c61f0e81dac08cc6442a149893537ae7263953f40f6ad90113b72a",
+      "classification": "NORMALIZED_AUTHORITATIVE_STATE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_path": "state/active_cycle_c011.json",
+      "source_path_in_r2": "ofg_migration_bundle/state/active_cycle_c011.json",
+      "byte_count": 1394,
+      "sha256": "a8af9c07de4c6e7b090d61ef78623f98349d4750bf6b1dad4add54e19abfb9c7",
+      "classification": "NORMALIZED_AUTHORITATIVE_STATE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_path": "state/c011_dispatches.json",
+      "source_path_in_r2": "ofg_migration_bundle/state/c011_dispatches.json",
+      "byte_count": 8371,
+      "sha256": "c14effd74b1f57dfc6eeee4d521128fdeaed5c6cc9db7aeb94b18efaf8b5a173",
+      "classification": "NORMALIZED_AUTHORITATIVE_STATE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_path": "state/cycle_history.jsonl",
+      "source_path_in_r2": "ofg_migration_bundle/state/cycle_history.jsonl",
+      "byte_count": 3564,
+      "sha256": "44ef94c44b2cb5f1d62f800171b33f80dc9dc14e8a176debff9f512e8f7246f0",
+      "classification": "NORMALIZED_AUTHORITATIVE_STATE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_path": "state/conflicts.jsonl",
+      "source_path_in_r2": "ofg_migration_bundle/state/conflicts.jsonl",
+      "byte_count": 1655,
+      "sha256": "038fc90dc90fea4a1f5a17e976986abd1e8042e45cf3e6a4ceb50cb7280d2fd1",
+      "classification": "NORMALIZED_AUTHORITATIVE_STATE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_path": "state/open_frontiers.jsonl",
+      "source_path_in_r2": "ofg_migration_bundle/state/open_frontiers.jsonl",
+      "byte_count": 1703,
+      "sha256": "1047d9c208041606576fef06d76007f22c80aedc228919465ab919cac99c7c7b",
+      "classification": "NORMALIZED_AUTHORITATIVE_STATE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_path": "state/identity_registry_seed.jsonl",
+      "source_path_in_r2": "ofg_migration_bundle/state/identity_registry_seed.jsonl",
+      "byte_count": 2047,
+      "sha256": "aabe445579cce462d1a30625dea42206bc71b36dc7a2b089b800515da3be3dd1",
+      "classification": "NORMALIZED_AUTHORITATIVE_STATE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_path": "state/provenance_bindings.jsonl",
+      "source_path_in_r2": "ofg_migration_bundle/state/provenance_bindings.jsonl",
+      "byte_count": 1532,
+      "sha256": "509614a659a43c18387f5612ab7091b518431164f350e8188dde20db51828fdd",
+      "classification": "NORMALIZED_AUTHORITATIVE_STATE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_path": "state/thread_role_profiles.json",
+      "source_path_in_r2": "ofg_migration_bundle/state/thread_role_profiles.json",
+      "byte_count": 1111,
+      "sha256": "05a506fc2fa63d5959dc1fa8e18f03674994299e67eea7f6e721fc7b702f3db3",
+      "classification": "NORMALIZED_AUTHORITATIVE_STATE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_path": "state/migration_control.json",
+      "source_path_in_r2": "ofg_migration_bundle/state/migration_control.json",
+      "byte_count": 1351,
+      "sha256": "f1499f0e26db1e77b66fbb5f077c57c818865bc74f6420c1b59e6e4c0f7f7486",
+      "classification": "NORMALIZED_AUTHORITATIVE_STATE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_path": "state/known_raw_gaps.json",
+      "source_path_in_r2": "ofg_migration_bundle/state/known_raw_gaps.json",
+      "byte_count": 1282,
+      "sha256": "5eab87b6717fae8e58aec5835043dd5957080478270f6cce642958fb8a43fed8",
+      "classification": "NORMALIZED_AUTHORITATIVE_STATE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_path": "state/T1-G2_REHYDRATION_CAPSULE.json",
+      "source_path_in_r2": "ofg_migration_bundle/state/T1-G2_REHYDRATION_CAPSULE.json",
+      "byte_count": 15902,
+      "sha256": "5578722a36cbf0636f28d1053b61237edda1deb4d88aa6561a9f68cc01587bb6",
+      "classification": "NORMALIZED_AUTHORITATIVE_STATE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_path": "state/T2-G2_REHYDRATION_CAPSULE.json",
+      "source_path_in_r2": "ofg_migration_bundle/state/T2-G2_REHYDRATION_CAPSULE.json",
+      "byte_count": 6553,
+      "sha256": "f7f8e4a45c619b614824002df4c1f72ae4b19e19b4e1eaf7a84ba8c6263d6ee3",
+      "classification": "NORMALIZED_AUTHORITATIVE_STATE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_path": "state/T4-G2_REHYDRATION_CAPSULE.json",
+      "source_path_in_r2": "ofg_migration_bundle/state/T4-G2_REHYDRATION_CAPSULE.json",
+      "byte_count": 6673,
+      "sha256": "e29f5f265b68cb840f87f745182680d57c0c3dfc1ebae072bb51484a58271642",
+      "classification": "NORMALIZED_AUTHORITATIVE_STATE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_path": "state/T5-G2_REHYDRATION_CAPSULE.json",
+      "source_path_in_r2": "ofg_migration_bundle/state/T5-G2_REHYDRATION_CAPSULE.json",
+      "byte_count": 6290,
+      "sha256": "95468770c9163acb99f04a137a87f6026593ea248a739859b39ce3a9dfba61a5",
+      "classification": "NORMALIZED_AUTHORITATIVE_STATE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_path": "manifests/bootstrap_phase_3_manifest.json",
+      "source_path_in_r2": null,
+      "byte_count": 9210,
+      "sha256": null,
+      "classification": "PUBLICATION_MANIFEST",
+      "source_status": "NEW_USER_REQUESTED_PUBLICATION_METADATA_NOT_R2_SOURCE",
+      "sha256_status": "SELF_HASH_EXCLUDED_EXTERNAL_SHA256_PROVIDED_IN_DELIVERY_RESPONSE"
+    }
+  ],
+  "integrity_policy": {
+    "source_hash_basis": "EXACT_UNMODIFIED_R2_FILE_BYTES",
+    "self_hash_exclusion": "Only this manifest SHA-256 is null inside the manifest to avoid circular self-hashing. Its complete-file SHA-256 is supplied externally in the delivery response.",
+    "self_byte_count_included": true
+  },
+  "state_integrity": {
+    "baseline_id": "OFG-EA-B000-REV3-REVW3-REVS-2031-04-19",
+    "latest_integrated_staging": "OFG-EA-C010-INTEGRATED-STAGING-R1",
+    "working_view": "OFG-EA-B000-PLUS-C001-C002-C003-C004-C005-C006-C007-C008-C009-C010-STAGING-R1",
+    "configuration_cut": "2031-04-19",
+    "latest_globally_integrated_cycle": "OFG-EA-CYCLE-010",
+    "active_cycle": "OFG-EA-CYCLE-011",
+    "c011_global_integration": "NOT_PERFORMED",
+    "t2_g1": "INACTIVE_UNUSABLE_AFTER_CONTEXT_LIMIT_NO_ACCEPTED_C011_RETURN",
+    "t2_g2": "C011_SUCCESSOR_REEXECUTION_OWNER",
+    "t4_g1": "CURRENT_C011_WRITER_UNLESS_FENCED",
+    "t5_g1": "CURRENT_C011_WRITER_UNLESS_FENCED",
+    "t4_g2": "HOT_STANDBY",
+    "t5_g2": "HOT_STANDBY",
+    "thread3": "PERMANENTLY_RETIRED_READ_ONLY",
+    "rev4": "QUARANTINED_OUT_OF_BASELINE",
+    "m88217": "OPEN_CRITICAL_DORMANT",
+    "conflict_policy": "PRESERVE_ALL_ACTIVE_CONFLICTS_WITHOUT_RESOLUTION_OR_CANONICAL_SIDE_SELECTION"
+  },
+  "excluded_material": [
+    "Phase-1 files",
+    "Phase-2 files",
+    "state/encoding_retrieval_spec.json",
+    "reference_raw/",
+    "working_raw/",
+    "transport/",
+    "ofg_master_state.sqlite",
+    "R2 ZIP",
+    "DOCX",
+    "large CSV",
+    "worker-return raw files",
+    "generated indexes",
+    "C011 integration results",
+    "C012 material"
+  ],
+  "publication_controls": {
+    "phase1_modified": false,
+    "phase2_modified": false,
+    "c011_integrated": false,
+    "c011_return_accepted": false,
+    "c012_issued": false,
+    "baseline_promoted": false,
+    "github_authority_activated": false,
+    "remote_write_performed": false
+  },
+  "recommended_git_commit_message": "Bootstrap Phase 3: publish normalized C010/C011 master state"
+}

@@ -1,0 +1,566 @@
+{
+  "schema": "OFG_EA_REHYDRATION_CAPSULE_V2",
+  "logical_thread": 1,
+  "physical_instance": "T1-G2",
+  "master_epoch": 2,
+  "baseline_id": "OFG-EA-B000-REV3-REVW3-REVS-2031-04-19",
+  "staging": "OFG-EA-C010-INTEGRATED-STAGING-R1",
+  "working_view": "OFG-EA-B000-PLUS-C001-C002-C003-C004-C005-C006-C007-C008-C009-C010-STAGING-R1",
+  "configuration_cut": "2031-04-19",
+  "role": {
+    "generation_target": "T1-G2",
+    "scope": [
+      "global identity",
+      "baseline/staging",
+      "cycle orchestration",
+      "semantic merge",
+      "conflicts",
+      "open items",
+      "V&V",
+      "global electrical architecture",
+      "Atlas/Annex binding"
+    ]
+  },
+  "global_guards": [
+    "NO_LAST_WRITE_WINS",
+    "NO_SILENT_MERGE_SPLIT_RENAME",
+    "ADMIN_CLOSED_APPROVED_NOT_PHYSICAL_EXECUTION",
+    "MISSING_RECORD_NOT_NONPERFORMANCE",
+    "PACKAGE_CLASS_NOT_PACKAGE_INSTANCE",
+    "REQUIREMENT_NOT_EXECUTED_RECORD",
+    "WORKFRONT_ACTIVITY_NOT_OBJECT_SPECIFIC_EXECUTION",
+    "ENGINEERING_ROUTE_NOT_ASBUILT_ROUTE",
+    "SURVEY_GENERATION_NOT_ACCEPTED_SURVEY_TRUTH",
+    "RESERVED_OPENING_NOT_INSTALLED_PENETRATION"
+  ],
+  "thread3_state": "PERMANENTLY_RETIRED_READ_ONLY_ARCHIVE",
+  "rev4_source_state": "QUARANTINED_OUT_OF_BASELINE",
+  "active_cycle": {
+    "schema": "OFG_EA_ACTIVE_CYCLE_V2",
+    "cycle_id": "OFG-EA-CYCLE-011",
+    "baseline_id": "OFG-EA-B000-REV3-REVW3-REVS-2031-04-19",
+    "staging_input": "OFG-EA-C010-INTEGRATED-STAGING-R1",
+    "working_view": "OFG-EA-B000-PLUS-C001-C002-C003-C004-C005-C006-C007-C008-C009-C010-STAGING-R1",
+    "configuration_cut": "2031-04-19",
+    "integration_allowed": false,
+    "integration_gate": "T2_G2_C011_RETURN_PLUS_T4_C011_RETURN_PLUS_T5_C011_RETURN_AND_USER_COMMENCE",
+    "dispatches": {
+      "T2": {
+        "package_id": "OFG-EA-T2-C011",
+        "task_id": "T2-C011-OBJECT-LIFECYCLE-PROCUREMENT-RECEIPT-SOURCE-CROSSWALK-WAVE9",
+        "original_instance": "T2-G1",
+        "original_instance_state": "INACTIVE_CONTEXT_LIMIT",
+        "return_received": false,
+        "successor_instance": "T2-G2",
+        "action": "REISSUE_SAME_TASK_FROM_C010_PIN"
+      },
+      "T4": {
+        "package_id": "OFG-EA-T4-C011",
+        "task_id": "T4-C011-CROSS-TABLE-JOIN-PACKAGE-HIDDENWORK-ROUTE-SURVEY-WAVE9",
+        "current_instance": "T4-G1",
+        "return_received": false,
+        "successor_instance": "T4-G2",
+        "successor_state": "STANDBY"
+      },
+      "T5": {
+        "package_id": "OFG-EA-T5-C011",
+        "task_id": "T5-C011-DIRECT-SQLITE-CROSSWALK-ATTACHMENT-COMPLETION-WAVE9",
+        "current_instance": "T5-G1",
+        "return_received": false,
+        "successor_instance": "T5-G2",
+        "successor_state": "STANDBY"
+      }
+    }
+  },
+  "relevant_conflicts": [
+    {
+      "id": "GCF-C001-001",
+      "subject": "M88217_ADMIN_STATUS_VS_PHYSICAL_EXECUTION",
+      "state": "OPEN_CRITICAL_DORMANT",
+      "admin_state": "CLOSED_APPROVED",
+      "physical_execution_proven": false,
+      "reopen_threshold_met": false
+    },
+    {
+      "id": "GCF-C001-002",
+      "subject": "BHT401_FLOW_BASIS",
+      "state": "QUARANTINE_CRITICAL",
+      "rev3_m3_s_per_pump_approx": 1.15,
+      "alternate_mass_flow_kg_s_per_train": 4714,
+      "derived_m3_s_per_pump_range": [
+        3.1428,
+        3.3673
+      ],
+      "canonical_selection": null
+    },
+    {
+      "id": "GCF-C001-003",
+      "subject": "BHT401_PUMP_SUBUNIT_TAG_GRANULARITY",
+      "state": "OPEN_HIGH"
+    },
+    {
+      "id": "GCF-C001-004",
+      "subject": "BHT401_SGHX_GRANULARITY",
+      "state": "OPEN_HIGH"
+    },
+    {
+      "id": "GCF-C001-005",
+      "subject": "SECTOR_CHRONOLOGY",
+      "state": "QUARANTINE_HIGH"
+    },
+    {
+      "id": "GCF-C001-006",
+      "subject": "CRANE_CAPACITY",
+      "state": "OPEN_HIGH"
+    },
+    {
+      "id": "GCF-C001-007",
+      "subject": "ELECTRICAL_TEMPLATE_DATES",
+      "state": "QUARANTINE_HIGH"
+    },
+    {
+      "id": "GCF-C007-001",
+      "subject": "CWS_8_PUMP_E_REFERENCE_VS_6_PUMP_PHYSICAL_CONFIGURATION",
+      "state": "QUARANTINE_HIGH",
+      "refinement": "8-pump layer is engineering reference only; physical or chronological predecessor state not proven; formal change chain open"
+    },
+    {
+      "id": "GCF-C007-002",
+      "subject": "VAC_TORUS_CRYOPUMPS_8_E_VS_6_PHYSICAL",
+      "state": "QUARANTINE_HIGH"
+    },
+    {
+      "id": "GCF-C007-003",
+      "subject": "VAC_CRYOSTAT_CRYOPUMPS_4_E_VS_2_PHYSICAL",
+      "state": "QUARANTINE_HIGH"
+    },
+    {
+      "id": "GCF-C007-004",
+      "subject": "VAC_ROUGHING_4_E_TRAINS_VS_2_FUNCTIONAL_NODES_VS_6_RP_6_BP",
+      "state": "QUARANTINE_HIGH_MULTI_LAYER_MAPPING"
+    },
+    {
+      "id": "GCF-C010-001",
+      "subject": "CRS01_MASTER_EVENT_10_VS_EVENT_MIRROR_9",
+      "state": "RESOLVED",
+      "resolution": "Extra locked-canon 2031-04-10 routine-photographs row exists in master timeline but not compact equipment-event mirror"
+    }
+  ],
+  "relevant_open_frontiers": [
+    {
+      "id": "OI-001",
+      "subject": "PLANTWIDE_CONTRACTOR_CWP_IWP_EXECUTED_ITP_QA_MC_TURNOVER_AND_ATTACHMENT_INDICES",
+      "state": "OPEN"
+    },
+    {
+      "id": "OI-002",
+      "subject": "RHR_PROJECT_NATIVE_P_AND_ID_EQUIPMENT_LIST_LINE_LIST_PUMP_HX_HEAT_SINK_AND_VENDOR_BINDINGS",
+      "state": "OPEN"
+    },
+    {
+      "id": "OI-003",
+      "subject": "CHW_PUMP_BUFFER_HEADER_CLIENT_BRANCH_AND_VENDOR_PACKAGE_BINDINGS",
+      "state": "OPEN"
+    },
+    {
+      "id": "OI-004",
+      "subject": "CRY_VENDOR_CONNECTION_CRYOLINE_AND_VALVE_BOX_CLIENT_BINDINGS",
+      "state": "OPEN"
+    },
+    {
+      "id": "OI-005",
+      "subject": "CWS_REQUIREMENT_DESIGN_PROCUREMENT_PURCHASE_ORDER_VENDOR_AND_COMMISSIONING_CHANGE_CHAIN",
+      "state": "OPEN"
+    },
+    {
+      "id": "OI-006",
+      "subject": "TRITIUM_PROJECT_PROCESS_STREAM_LINE_MANIFOLD_VALVE_SAMPLE_AND_SIGNED_ACCOUNTANCY_BINDINGS",
+      "state": "OPEN"
+    },
+    {
+      "id": "OI-007",
+      "subject": "VAC_RP_BP_VENDOR_PACKAGE_MEMBERSHIP_PAIRING_TRAIN_ASSIGNMENT_REGENERATION_AND_TRANSFER_PATH",
+      "state": "OPEN"
+    },
+    {
+      "id": "OI-008",
+      "subject": "BHT401_SUPPORT_EXECUTED_ITP_AND_PHYSICAL_LOADPATH",
+      "state": "OPEN"
+    },
+    {
+      "id": "OI-009",
+      "subject": "BHT401_PENETRATION_INSTALLED_CLOSEOUT",
+      "state": "OPEN"
+    },
+    {
+      "id": "OI-010",
+      "subject": "UG01_TO_UG05_SEGMENT_LEVEL_HIDDEN_WORK",
+      "state": "OPEN"
+    },
+    {
+      "id": "OI-011",
+      "subject": "SURV001_TO_SURV008_ACCEPTED_SURVEY_TRUTH",
+      "state": "OPEN"
+    },
+    {
+      "id": "OI-012",
+      "subject": "BHT401_P101_AND_E103_E104_E105_ELECTRICAL_PHYSICAL_ROUTES",
+      "state": "OPEN"
+    },
+    {
+      "id": "OI-013",
+      "subject": "CRS01_EXACT_ORIGINAL_IWP_MC_TOV_PACKAGE_IDENTIFIERS",
+      "state": "OPEN"
+    },
+    {
+      "id": "OI-014",
+      "subject": "CRS01_JANUARY_CHILD_ATTACHMENT_AND_TRANSACTION_CHAIN",
+      "state": "OPEN"
+    },
+    {
+      "id": "OI-015",
+      "subject": "BHT401_ALIGNREC_NOZLOAD_PRESSPACK_LEAKPACK_FLUSHPACK_PMT_RESTORATION_FINAL_ASLEFT",
+      "state": "OPEN"
+    },
+    {
+      "id": "OI-016",
+      "subject": "M88217_SPECIFIC_EXECUTION_EVIDENCE",
+      "state": "OPEN"
+    }
+  ],
+  "relevant_identities": [
+    {
+      "uid": "TMP-BHT-401-CRS-01",
+      "kind": "temporary_configuration",
+      "state": "canonical_or_controlled",
+      "notes": "parent CRS temporary configuration"
+    },
+    {
+      "uid": "CRS01-RST-L2",
+      "kind": "restraint_component",
+      "state": "controlled",
+      "notes": "lateral restraint 2"
+    },
+    {
+      "uid": "M-88217",
+      "kind": "maintenance_record_header",
+      "state": "controlled_admin_only",
+      "notes": "CLOSED/APPROVED header; execution unresolved"
+    },
+    {
+      "uid": "PHOTO-BHT401-0410",
+      "kind": "photo_record",
+      "state": "controlled"
+    },
+    {
+      "uid": "EVID-BHT401-RSTL2",
+      "kind": "evidence_control_record",
+      "state": "controlled"
+    },
+    {
+      "uid": "BHT401-EV-*",
+      "kind": "namespace",
+      "state": "reserved",
+      "notes": "Pass10 historical evidence namespace"
+    },
+    {
+      "uid": "BHT-EV-*",
+      "kind": "namespace",
+      "state": "reserved",
+      "notes": "Pass13 required evidence namespace; must not alias to BHT401-EV-*"
+    },
+    {
+      "uid": "ITP-SUP-01",
+      "kind": "itp_requirement",
+      "state": "controlled_requirement_not_execution"
+    },
+    {
+      "uid": "ITP-SUP-02",
+      "kind": "itp_requirement",
+      "state": "controlled_requirement_not_execution"
+    },
+    {
+      "uid": "WP-IWP",
+      "kind": "package_class",
+      "state": "controlled_class_not_instance"
+    },
+    {
+      "uid": "WP-QA",
+      "kind": "package_class",
+      "state": "controlled_class_not_instance"
+    },
+    {
+      "uid": "WP-MC",
+      "kind": "package_class",
+      "state": "controlled_class_not_instance"
+    },
+    {
+      "uid": "WP-TOV",
+      "kind": "package_class",
+      "state": "controlled_class_not_instance"
+    },
+    {
+      "uid": "UG-01",
+      "kind": "engineering_corridor",
+      "state": "E_NOT_ASBUILT"
+    },
+    {
+      "uid": "UG-02",
+      "kind": "engineering_corridor",
+      "state": "E_NOT_ASBUILT"
+    },
+    {
+      "uid": "UG-03",
+      "kind": "engineering_corridor",
+      "state": "E_NOT_ASBUILT"
+    },
+    {
+      "uid": "UG-04",
+      "kind": "engineering_corridor",
+      "state": "E_NOT_SPECIFIC_FEEDER_ROUTE"
+    },
+    {
+      "uid": "UG-05",
+      "kind": "engineering_corridor",
+      "state": "E_NOT_ASBUILT"
+    },
+    {
+      "uid": "SURV-001..008",
+      "kind": "survey_truth_layers",
+      "state": "ACCEPTED_VALUES_OPEN"
+    },
+    {
+      "uid": "RTE-003",
+      "kind": "construction_route",
+      "state": "CONTROLLED_FUNCTIONAL_CURRENT_METRIC_OPEN"
+    },
+    {
+      "uid": "RTE-007",
+      "kind": "construction_maintenance_route",
+      "state": "CONTROLLED_FUNCTIONAL_CURRENT_CONFIG_OPEN"
+    },
+    {
+      "uid": "RTE-008",
+      "kind": "construction_maintenance_route",
+      "state": "CONTROLLED_FUNCTIONAL_CURRENT_CONFIG_OPEN"
+    }
+  ],
+  "relevant_provenance": [
+    {
+      "src": "ANNEX-0012",
+      "rel": "CONTAINS",
+      "dst": "OFG_Atlas_Rev3_DATA02_Master_Event_Timeline_Through_2031-04-19.csv",
+      "state": "CONTROLLED"
+    },
+    {
+      "src": "ANNEX-0536",
+      "rel": "CONTAINS_CONTROLLED_REGISTER",
+      "dst": "DT05_R01_BHT401_Digital_Thread",
+      "state": "CONTROLLED"
+    },
+    {
+      "src": "DT-BHT-006",
+      "rel": "MAPPED_TO_HISTORICAL_EVIDENCE_ROW",
+      "dst": "BHT401-EV-006",
+      "state": "C010"
+    },
+    {
+      "src": "DT-BHT-007",
+      "rel": "MAPPED_TO_HISTORICAL_EVIDENCE_ROW",
+      "dst": "BHT401-EV-007",
+      "state": "C010"
+    },
+    {
+      "src": "DT-BHT-008",
+      "rel": "MAPPED_TO_HISTORICAL_EVIDENCE_ROW",
+      "dst": "BHT401-EV-008",
+      "state": "C010"
+    },
+    {
+      "src": "DT-BHT-015",
+      "rel": "MAPPED_TO",
+      "dst": "PHOTO-BHT401-0410",
+      "state": "C010"
+    },
+    {
+      "src": "PHOTO-BHT401-0410",
+      "rel": "MAPPED_TO_HISTORICAL_EVIDENCE_ROW",
+      "dst": "BHT401-EV-015",
+      "state": "C010"
+    },
+    {
+      "src": "PHOTO-BHT401-0410",
+      "rel": "MAPPED_TO_MASTER_EQUIPMENT_REGISTER_INDEX",
+      "dst": "10",
+      "state": "C010"
+    },
+    {
+      "src": "DT-BHT-018",
+      "rel": "MAPPED_TO",
+      "dst": "EVID-BHT401-RSTL2",
+      "state": "C010"
+    },
+    {
+      "src": "EVID-BHT401-RSTL2",
+      "rel": "MAPPED_TO_HISTORICAL_EVIDENCE_ROW",
+      "dst": "BHT401-EV-018",
+      "state": "C010"
+    },
+    {
+      "src": "EVID-BHT401-RSTL2",
+      "rel": "MAPPED_TO_MASTER_EQUIPMENT_REGISTER_INDEX",
+      "dst": "13",
+      "state": "C010"
+    },
+    {
+      "src": "BHT-EV-006",
+      "rel": "REQUIRED_EVIDENCE_CLASS_FOR",
+      "dst": "BHT401_PRESSURE_LEAK_TEST_ACCEPTANCE",
+      "state": "OPEN_REQUIREMENT"
+    },
+    {
+      "src": "BHT-EV-007",
+      "rel": "REQUIRED_EVIDENCE_CLASS_FOR",
+      "dst": "BHT401_FLUSH_RECIRCULATION_CONFIGURATION",
+      "state": "OPEN_REQUIREMENT"
+    },
+    {
+      "src": "BHT-EV-009",
+      "rel": "REQUIRED_EVIDENCE_CLASS_FOR",
+      "dst": "BHT401_POST_RECONNECTION_RESTORATION_ASLEFT",
+      "state": "OPEN_REQUIREMENT"
+    }
+  ],
+  "critical_state": {
+    "CRS01": {
+      "object": "CRS01-RST-L2",
+      "parent": "TMP-BHT-401-CRS-01",
+      "original_installation": "2030-09-22",
+      "mechanical_completion": "2030-09-28",
+      "turnover": "2030-10-11",
+      "commissioning": "2030-10-12",
+      "commissioning_parent_record": "CPT-BHT401-FLSH-01",
+      "dt_edges": {
+        "installation": "DT-BHT-006",
+        "mc": "DT-BHT-007",
+        "turnover": "DT-BHT-008",
+        "photo": "DT-BHT-015",
+        "evidence_control": "DT-BHT-018"
+      },
+      "pass10_evidence": {
+        "installation": "BHT401-EV-006",
+        "mc": "BHT401-EV-007",
+        "turnover": "BHT401-EV-008",
+        "photo": "BHT401-EV-015",
+        "evidence_control": "BHT401-EV-018"
+      },
+      "exact_iwp_mc_tov_ids": "OPEN",
+      "local_host": "OPEN",
+      "anchor": "OPEN",
+      "asbuilt_survey": "OPEN",
+      "as_found": "OPEN",
+      "as_left": "OPEN"
+    },
+    "M88217": {
+      "state": "OPEN_CRITICAL_DORMANT",
+      "admin_state": "CLOSED_APPROVED",
+      "execution_package": "OPEN",
+      "attachment": "OPEN",
+      "repository_transaction": "OPEN",
+      "performer": "OPEN",
+      "qc_witness": "OPEN",
+      "as_found": "OPEN",
+      "as_left": "OPEN",
+      "torque_tension": "OPEN",
+      "physical_execution_proven": false
+    },
+    "CWS": {
+      "engineering_reference_pump_count": 8,
+      "current_physical_pump_count": 6,
+      "physical_pumps": [
+        "CWS-471-P-001",
+        "CWS-471-P-002",
+        "CWS-471-P-003",
+        "CWS-471-P-004",
+        "CWS-471-P-005",
+        "CWS-471-P-006"
+      ],
+      "receipt_population_complete_by": "2028-04-10",
+      "installation_mobilization_complete_no_later_than": "2028-09-29",
+      "formal_change_chain": "OPEN"
+    },
+    "CRY": {
+      "major_objects": 46,
+      "warm_compressors": 12,
+      "cold_boxes": 3,
+      "tcbs": 1,
+      "valve_boxes": 12,
+      "he_storage": 8,
+      "ln2": 2,
+      "purification": 4,
+      "quench_recovery": 4,
+      "cold_budget_kw_4k_eq": 95,
+      "tf_kw": 60,
+      "unallocated_kw": 35,
+      "valve_box_client_mapping": "OPEN"
+    },
+    "TRITIUM": {
+      "major_objects": 33,
+      "functional_map": "NINE_FUEL_CYCLE_FUNCTIONS",
+      "physical_stream_line_manifold_valve_accountancy_bindings": "OPEN"
+    },
+    "VAC": {
+      "torus_cp_physical": 6,
+      "rp_physical": 6,
+      "bp_physical": 6,
+      "cryostat_cp_physical": 2,
+      "rp_bp_pairing": "OPEN",
+      "functional_train_membership": "OPEN",
+      "regen_transfer_path": "OPEN"
+    },
+    "CHW": {
+      "chillers": [
+        "CHW-461-CH-001",
+        "CHW-461-CH-002",
+        "CHW-461-CH-003",
+        "CHW-461-CH-004"
+      ],
+      "pumps": "OPEN",
+      "buffer": "OPEN",
+      "headers": "OPEN",
+      "client_branches": "OPEN"
+    },
+    "RHR": {
+      "functional_binding": "PHTS/RHR",
+      "working_population_reference": 340,
+      "physical_pumps": "OPEN",
+      "heat_exchangers": "OPEN",
+      "train_architecture": "OPEN",
+      "heat_sinks": "OPEN"
+    },
+    "electrical": {
+      "500kv_cb": 12,
+      "disconnects": 24,
+      "cts": 18,
+      "vts": 12,
+      "gsu": 2,
+      "station_transformers": 4,
+      "13_8kv_switchgear": 8,
+      "4_16kv_switchgear": 12,
+      "600v_mcc": 48,
+      "batteries": 4,
+      "chargers": 8,
+      "ups": 12,
+      "edg": 4,
+      "27_6kv_buses": "FOUR_PROVISIONAL_SECTIONALIZED",
+      "exact_endpoint_feeders": "OPEN",
+      "exact_breakers": "OPEN",
+      "exact_cables": "OPEN",
+      "exact_ct_vt_assignment": "OPEN",
+      "relay_settings": "OPEN",
+      "protection_zones": "OPEN",
+      "energization_packages": "OPEN",
+      "asbuilt_circuit_state": "OPEN"
+    }
+  }
+}

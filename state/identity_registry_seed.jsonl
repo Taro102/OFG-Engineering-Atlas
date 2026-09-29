@@ -1,0 +1,22 @@
+{"uid":"TMP-BHT-401-CRS-01","kind":"temporary_configuration","state":"canonical_or_controlled","notes":"parent CRS temporary configuration"}
+{"uid":"CRS01-RST-L2","kind":"restraint_component","state":"controlled","notes":"lateral restraint 2"}
+{"uid":"M-88217","kind":"maintenance_record_header","state":"controlled_admin_only","notes":"CLOSED/APPROVED header; execution unresolved"}
+{"uid":"PHOTO-BHT401-0410","kind":"photo_record","state":"controlled"}
+{"uid":"EVID-BHT401-RSTL2","kind":"evidence_control_record","state":"controlled"}
+{"uid":"BHT401-EV-*","kind":"namespace","state":"reserved","notes":"Pass10 historical evidence namespace"}
+{"uid":"BHT-EV-*","kind":"namespace","state":"reserved","notes":"Pass13 required evidence namespace; must not alias to BHT401-EV-*"}
+{"uid":"ITP-SUP-01","kind":"itp_requirement","state":"controlled_requirement_not_execution"}
+{"uid":"ITP-SUP-02","kind":"itp_requirement","state":"controlled_requirement_not_execution"}
+{"uid":"WP-IWP","kind":"package_class","state":"controlled_class_not_instance"}
+{"uid":"WP-QA","kind":"package_class","state":"controlled_class_not_instance"}
+{"uid":"WP-MC","kind":"package_class","state":"controlled_class_not_instance"}
+{"uid":"WP-TOV","kind":"package_class","state":"controlled_class_not_instance"}
+{"uid":"UG-01","kind":"engineering_corridor","state":"E_NOT_ASBUILT"}
+{"uid":"UG-02","kind":"engineering_corridor","state":"E_NOT_ASBUILT"}
+{"uid":"UG-03","kind":"engineering_corridor","state":"E_NOT_ASBUILT"}
+{"uid":"UG-04","kind":"engineering_corridor","state":"E_NOT_SPECIFIC_FEEDER_ROUTE"}
+{"uid":"UG-05","kind":"engineering_corridor","state":"E_NOT_ASBUILT"}
+{"uid":"SURV-001..008","kind":"survey_truth_layers","state":"ACCEPTED_VALUES_OPEN"}
+{"uid":"RTE-003","kind":"construction_route","state":"CONTROLLED_FUNCTIONAL_CURRENT_METRIC_OPEN"}
+{"uid":"RTE-007","kind":"construction_maintenance_route","state":"CONTROLLED_FUNCTIONAL_CURRENT_CONFIG_OPEN"}
+{"uid":"RTE-008","kind":"construction_maintenance_route","state":"CONTROLLED_FUNCTIONAL_CURRENT_CONFIG_OPEN"}

@@ -1,0 +1,224 @@
+{
+  "schema": "OFG_EA_REHYDRATION_CAPSULE_V2",
+  "logical_thread": 4,
+  "physical_instance": "T4-G2",
+  "master_epoch": 2,
+  "baseline_id": "OFG-EA-B000-REV3-REVW3-REVS-2031-04-19",
+  "staging": "OFG-EA-C010-INTEGRATED-STAGING-R1",
+  "working_view": "OFG-EA-B000-PLUS-C001-C002-C003-C004-C005-C006-C007-C008-C009-C010-STAGING-R1",
+  "configuration_cut": "2031-04-19",
+  "role": {
+    "generation_target": "T4-G2",
+    "scope": [
+      "site/civil/structural",
+      "buildings",
+      "construction/installation",
+      "supports",
+      "penetrations",
+      "underground",
+      "routes",
+      "survey/as-built"
+    ],
+    "standby_until_fenced": true
+  },
+  "global_guards": [
+    "NO_LAST_WRITE_WINS",
+    "NO_SILENT_MERGE_SPLIT_RENAME",
+    "ADMIN_CLOSED_APPROVED_NOT_PHYSICAL_EXECUTION",
+    "MISSING_RECORD_NOT_NONPERFORMANCE",
+    "PACKAGE_CLASS_NOT_PACKAGE_INSTANCE",
+    "REQUIREMENT_NOT_EXECUTED_RECORD",
+    "WORKFRONT_ACTIVITY_NOT_OBJECT_SPECIFIC_EXECUTION",
+    "ENGINEERING_ROUTE_NOT_ASBUILT_ROUTE",
+    "SURVEY_GENERATION_NOT_ACCEPTED_SURVEY_TRUTH",
+    "RESERVED_OPENING_NOT_INSTALLED_PENETRATION"
+  ],
+  "thread3_state": "PERMANENTLY_RETIRED_READ_ONLY_ARCHIVE",
+  "rev4_source_state": "QUARANTINED_OUT_OF_BASELINE",
+  "active_cycle": {
+    "schema": "OFG_EA_ACTIVE_CYCLE_V2",
+    "cycle_id": "OFG-EA-CYCLE-011",
+    "baseline_id": "OFG-EA-B000-REV3-REVW3-REVS-2031-04-19",
+    "staging_input": "OFG-EA-C010-INTEGRATED-STAGING-R1",
+    "working_view": "OFG-EA-B000-PLUS-C001-C002-C003-C004-C005-C006-C007-C008-C009-C010-STAGING-R1",
+    "configuration_cut": "2031-04-19",
+    "integration_allowed": false,
+    "integration_gate": "T2_G2_C011_RETURN_PLUS_T4_C011_RETURN_PLUS_T5_C011_RETURN_AND_USER_COMMENCE",
+    "dispatches": {
+      "T2": {
+        "package_id": "OFG-EA-T2-C011",
+        "task_id": "T2-C011-OBJECT-LIFECYCLE-PROCUREMENT-RECEIPT-SOURCE-CROSSWALK-WAVE9",
+        "original_instance": "T2-G1",
+        "original_instance_state": "INACTIVE_CONTEXT_LIMIT",
+        "return_received": false,
+        "successor_instance": "T2-G2",
+        "action": "REISSUE_SAME_TASK_FROM_C010_PIN"
+      },
+      "T4": {
+        "package_id": "OFG-EA-T4-C011",
+        "task_id": "T4-C011-CROSS-TABLE-JOIN-PACKAGE-HIDDENWORK-ROUTE-SURVEY-WAVE9",
+        "current_instance": "T4-G1",
+        "return_received": false,
+        "successor_instance": "T4-G2",
+        "successor_state": "STANDBY"
+      },
+      "T5": {
+        "package_id": "OFG-EA-T5-C011",
+        "task_id": "T5-C011-DIRECT-SQLITE-CROSSWALK-ATTACHMENT-COMPLETION-WAVE9",
+        "current_instance": "T5-G1",
+        "return_received": false,
+        "successor_instance": "T5-G2",
+        "successor_state": "STANDBY"
+      }
+    }
+  },
+  "relevant_conflicts": [
+    {
+      "id": "GCF-C010-001",
+      "subject": "CRS01_MASTER_EVENT_10_VS_EVENT_MIRROR_9",
+      "state": "RESOLVED",
+      "resolution": "Extra locked-canon 2031-04-10 routine-photographs row exists in master timeline but not compact equipment-event mirror"
+    }
+  ],
+  "relevant_open_frontiers": [
+    {
+      "id": "OI-008",
+      "subject": "BHT401_SUPPORT_EXECUTED_ITP_AND_PHYSICAL_LOADPATH",
+      "state": "OPEN"
+    },
+    {
+      "id": "OI-009",
+      "subject": "BHT401_PENETRATION_INSTALLED_CLOSEOUT",
+      "state": "OPEN"
+    },
+    {
+      "id": "OI-010",
+      "subject": "UG01_TO_UG05_SEGMENT_LEVEL_HIDDEN_WORK",
+      "state": "OPEN"
+    },
+    {
+      "id": "OI-011",
+      "subject": "SURV001_TO_SURV008_ACCEPTED_SURVEY_TRUTH",
+      "state": "OPEN"
+    },
+    {
+      "id": "OI-012",
+      "subject": "BHT401_P101_AND_E103_E104_E105_ELECTRICAL_PHYSICAL_ROUTES",
+      "state": "OPEN"
+    },
+    {
+      "id": "OI-013",
+      "subject": "CRS01_EXACT_ORIGINAL_IWP_MC_TOV_PACKAGE_IDENTIFIERS",
+      "state": "OPEN"
+    },
+    {
+      "id": "OI-014",
+      "subject": "CRS01_JANUARY_CHILD_ATTACHMENT_AND_TRANSACTION_CHAIN",
+      "state": "OPEN"
+    }
+  ],
+  "relevant_identities": [
+    {
+      "uid": "CRS01-RST-L2",
+      "kind": "restraint_component",
+      "state": "controlled",
+      "notes": "lateral restraint 2"
+    },
+    {
+      "uid": "UG-01",
+      "kind": "engineering_corridor",
+      "state": "E_NOT_ASBUILT"
+    },
+    {
+      "uid": "UG-02",
+      "kind": "engineering_corridor",
+      "state": "E_NOT_ASBUILT"
+    },
+    {
+      "uid": "UG-03",
+      "kind": "engineering_corridor",
+      "state": "E_NOT_ASBUILT"
+    },
+    {
+      "uid": "UG-05",
+      "kind": "engineering_corridor",
+      "state": "E_NOT_ASBUILT"
+    },
+    {
+      "uid": "SURV-001..008",
+      "kind": "survey_truth_layers",
+      "state": "ACCEPTED_VALUES_OPEN"
+    },
+    {
+      "uid": "RTE-003",
+      "kind": "construction_route",
+      "state": "CONTROLLED_FUNCTIONAL_CURRENT_METRIC_OPEN"
+    },
+    {
+      "uid": "RTE-007",
+      "kind": "construction_maintenance_route",
+      "state": "CONTROLLED_FUNCTIONAL_CURRENT_CONFIG_OPEN"
+    },
+    {
+      "uid": "RTE-008",
+      "kind": "construction_maintenance_route",
+      "state": "CONTROLLED_FUNCTIONAL_CURRENT_CONFIG_OPEN"
+    }
+  ],
+  "relevant_provenance": [],
+  "critical_state": {
+    "CRS01": {
+      "object": "CRS01-RST-L2",
+      "parent": "TMP-BHT-401-CRS-01",
+      "original_installation": "2030-09-22",
+      "mechanical_completion": "2030-09-28",
+      "turnover": "2030-10-11",
+      "commissioning": "2030-10-12",
+      "commissioning_parent_record": "CPT-BHT401-FLSH-01",
+      "dt_edges": {
+        "installation": "DT-BHT-006",
+        "mc": "DT-BHT-007",
+        "turnover": "DT-BHT-008",
+        "photo": "DT-BHT-015",
+        "evidence_control": "DT-BHT-018"
+      },
+      "pass10_evidence": {
+        "installation": "BHT401-EV-006",
+        "mc": "BHT401-EV-007",
+        "turnover": "BHT401-EV-008",
+        "photo": "BHT401-EV-015",
+        "evidence_control": "BHT401-EV-018"
+      },
+      "exact_iwp_mc_tov_ids": "OPEN",
+      "local_host": "OPEN",
+      "anchor": "OPEN",
+      "asbuilt_survey": "OPEN",
+      "as_found": "OPEN",
+      "as_left": "OPEN"
+    },
+    "electrical": {
+      "500kv_cb": 12,
+      "disconnects": 24,
+      "cts": 18,
+      "vts": 12,
+      "gsu": 2,
+      "station_transformers": 4,
+      "13_8kv_switchgear": 8,
+      "4_16kv_switchgear": 12,
+      "600v_mcc": 48,
+      "batteries": 4,
+      "chargers": 8,
+      "ups": 12,
+      "edg": 4,
+      "27_6kv_buses": "FOUR_PROVISIONAL_SECTIONALIZED",
+      "exact_endpoint_feeders": "OPEN",
+      "exact_breakers": "OPEN",
+      "exact_cables": "OPEN",
+      "exact_ct_vt_assignment": "OPEN",
+      "relay_settings": "OPEN",
+      "protection_zones": "OPEN",
+      "energization_packages": "OPEN",
+      "asbuilt_circuit_state": "OPEN"
+    }
+  }
+}

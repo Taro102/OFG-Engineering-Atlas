@@ -1,0 +1,453 @@
+{
+  "schema": "OFG_EA_WORKING_STATE_V2",
+  "master_epoch_source": 1,
+  "successor_master_epoch": 2,
+  "current_master_instance": "T1-G1",
+  "successor_master_instance": "T1-G2",
+  "baseline_id": "OFG-EA-B000-REV3-REVW3-REVS-2031-04-19",
+  "latest_integrated_staging": "OFG-EA-C010-INTEGRATED-STAGING-R1",
+  "working_view": "OFG-EA-B000-PLUS-C001-C002-C003-C004-C005-C006-C007-C008-C009-C010-STAGING-R1",
+  "configuration_cut": "2031-04-19",
+  "baseline_promotion_status": "NOT_PROMOTED",
+  "global_release_status": "NOT_RELEASED",
+  "rev4_source_state": "QUARANTINED_OUT_OF_BASELINE",
+  "thread3_state": "PERMANENTLY_RETIRED_READ_ONLY_ARCHIVE",
+  "completion_estimate": {
+    "central_pct": 51,
+    "plausible_pct": [
+      48,
+      54
+    ],
+    "confidence": "MEDIUM"
+  },
+  "active_cycle": "OFG-EA-CYCLE-011",
+  "thread_instances": {
+    "T1-G1": {
+      "state": "ROLLOVER_REQUIRED",
+      "writer": true
+    },
+    "T1-G2": {
+      "state": "TO_ACTIVATE",
+      "writer": false
+    },
+    "T2-G1": {
+      "state": "INACTIVE_CONTEXT_LIMIT",
+      "c011_return_received": false
+    },
+    "T2-G2": {
+      "state": "TO_ACTIVATE_IMMEDIATE_C011_REISSUE"
+    },
+    "T4-G1": {
+      "state": "ACTIVE_C011_PENDING",
+      "writer": true
+    },
+    "T4-G2": {
+      "state": "PREPOSITION_STANDBY"
+    },
+    "T5-G1": {
+      "state": "ACTIVE_C011_PENDING",
+      "writer": true
+    },
+    "T5-G2": {
+      "state": "PREPOSITION_STANDBY"
+    }
+  },
+  "critical_state": {
+    "CRS01": {
+      "object": "CRS01-RST-L2",
+      "parent": "TMP-BHT-401-CRS-01",
+      "original_installation": "2030-09-22",
+      "mechanical_completion": "2030-09-28",
+      "turnover": "2030-10-11",
+      "commissioning": "2030-10-12",
+      "commissioning_parent_record": "CPT-BHT401-FLSH-01",
+      "dt_edges": {
+        "installation": "DT-BHT-006",
+        "mc": "DT-BHT-007",
+        "turnover": "DT-BHT-008",
+        "photo": "DT-BHT-015",
+        "evidence_control": "DT-BHT-018"
+      },
+      "pass10_evidence": {
+        "installation": "BHT401-EV-006",
+        "mc": "BHT401-EV-007",
+        "turnover": "BHT401-EV-008",
+        "photo": "BHT401-EV-015",
+        "evidence_control": "BHT401-EV-018"
+      },
+      "exact_iwp_mc_tov_ids": "OPEN",
+      "local_host": "OPEN",
+      "anchor": "OPEN",
+      "asbuilt_survey": "OPEN",
+      "as_found": "OPEN",
+      "as_left": "OPEN"
+    },
+    "M88217": {
+      "state": "OPEN_CRITICAL_DORMANT",
+      "admin_state": "CLOSED_APPROVED",
+      "execution_package": "OPEN",
+      "attachment": "OPEN",
+      "repository_transaction": "OPEN",
+      "performer": "OPEN",
+      "qc_witness": "OPEN",
+      "as_found": "OPEN",
+      "as_left": "OPEN",
+      "torque_tension": "OPEN",
+      "physical_execution_proven": false
+    },
+    "CWS": {
+      "engineering_reference_pump_count": 8,
+      "current_physical_pump_count": 6,
+      "physical_pumps": [
+        "CWS-471-P-001",
+        "CWS-471-P-002",
+        "CWS-471-P-003",
+        "CWS-471-P-004",
+        "CWS-471-P-005",
+        "CWS-471-P-006"
+      ],
+      "receipt_population_complete_by": "2028-04-10",
+      "installation_mobilization_complete_no_later_than": "2028-09-29",
+      "formal_change_chain": "OPEN"
+    },
+    "CRY": {
+      "major_objects": 46,
+      "warm_compressors": 12,
+      "cold_boxes": 3,
+      "tcbs": 1,
+      "valve_boxes": 12,
+      "he_storage": 8,
+      "ln2": 2,
+      "purification": 4,
+      "quench_recovery": 4,
+      "cold_budget_kw_4k_eq": 95,
+      "tf_kw": 60,
+      "unallocated_kw": 35,
+      "valve_box_client_mapping": "OPEN"
+    },
+    "TRITIUM": {
+      "major_objects": 33,
+      "functional_map": "NINE_FUEL_CYCLE_FUNCTIONS",
+      "physical_stream_line_manifold_valve_accountancy_bindings": "OPEN"
+    },
+    "VAC": {
+      "torus_cp_physical": 6,
+      "rp_physical": 6,
+      "bp_physical": 6,
+      "cryostat_cp_physical": 2,
+      "rp_bp_pairing": "OPEN",
+      "functional_train_membership": "OPEN",
+      "regen_transfer_path": "OPEN"
+    },
+    "CHW": {
+      "chillers": [
+        "CHW-461-CH-001",
+        "CHW-461-CH-002",
+        "CHW-461-CH-003",
+        "CHW-461-CH-004"
+      ],
+      "pumps": "OPEN",
+      "buffer": "OPEN",
+      "headers": "OPEN",
+      "client_branches": "OPEN"
+    },
+    "RHR": {
+      "functional_binding": "PHTS/RHR",
+      "working_population_reference": 340,
+      "physical_pumps": "OPEN",
+      "heat_exchangers": "OPEN",
+      "train_architecture": "OPEN",
+      "heat_sinks": "OPEN"
+    },
+    "electrical": {
+      "500kv_cb": 12,
+      "disconnects": 24,
+      "cts": 18,
+      "vts": 12,
+      "gsu": 2,
+      "station_transformers": 4,
+      "13_8kv_switchgear": 8,
+      "4_16kv_switchgear": 12,
+      "600v_mcc": 48,
+      "batteries": 4,
+      "chargers": 8,
+      "ups": 12,
+      "edg": 4,
+      "27_6kv_buses": "FOUR_PROVISIONAL_SECTIONALIZED",
+      "exact_endpoint_feeders": "OPEN",
+      "exact_breakers": "OPEN",
+      "exact_cables": "OPEN",
+      "exact_ct_vt_assignment": "OPEN",
+      "relay_settings": "OPEN",
+      "protection_zones": "OPEN",
+      "energization_packages": "OPEN",
+      "asbuilt_circuit_state": "OPEN"
+    }
+  },
+  "conflicts": [
+    {
+      "id": "GCF-C001-001",
+      "subject": "M88217_ADMIN_STATUS_VS_PHYSICAL_EXECUTION",
+      "state": "OPEN_CRITICAL_DORMANT",
+      "admin_state": "CLOSED_APPROVED",
+      "physical_execution_proven": false,
+      "reopen_threshold_met": false
+    },
+    {
+      "id": "GCF-C001-002",
+      "subject": "BHT401_FLOW_BASIS",
+      "state": "QUARANTINE_CRITICAL",
+      "rev3_m3_s_per_pump_approx": 1.15,
+      "alternate_mass_flow_kg_s_per_train": 4714,
+      "derived_m3_s_per_pump_range": [
+        3.1428,
+        3.3673
+      ],
+      "canonical_selection": null
+    },
+    {
+      "id": "GCF-C001-003",
+      "subject": "BHT401_PUMP_SUBUNIT_TAG_GRANULARITY",
+      "state": "OPEN_HIGH"
+    },
+    {
+      "id": "GCF-C001-004",
+      "subject": "BHT401_SGHX_GRANULARITY",
+      "state": "OPEN_HIGH"
+    },
+    {
+      "id": "GCF-C001-005",
+      "subject": "SECTOR_CHRONOLOGY",
+      "state": "QUARANTINE_HIGH"
+    },
+    {
+      "id": "GCF-C001-006",
+      "subject": "CRANE_CAPACITY",
+      "state": "OPEN_HIGH"
+    },
+    {
+      "id": "GCF-C001-007",
+      "subject": "ELECTRICAL_TEMPLATE_DATES",
+      "state": "QUARANTINE_HIGH"
+    },
+    {
+      "id": "GCF-C007-001",
+      "subject": "CWS_8_PUMP_E_REFERENCE_VS_6_PUMP_PHYSICAL_CONFIGURATION",
+      "state": "QUARANTINE_HIGH",
+      "refinement": "8-pump layer is engineering reference only; physical or chronological predecessor state not proven; formal change chain open"
+    },
+    {
+      "id": "GCF-C007-002",
+      "subject": "VAC_TORUS_CRYOPUMPS_8_E_VS_6_PHYSICAL",
+      "state": "QUARANTINE_HIGH"
+    },
+    {
+      "id": "GCF-C007-003",
+      "subject": "VAC_CRYOSTAT_CRYOPUMPS_4_E_VS_2_PHYSICAL",
+      "state": "QUARANTINE_HIGH"
+    },
+    {
+      "id": "GCF-C007-004",
+      "subject": "VAC_ROUGHING_4_E_TRAINS_VS_2_FUNCTIONAL_NODES_VS_6_RP_6_BP",
+      "state": "QUARANTINE_HIGH_MULTI_LAYER_MAPPING"
+    },
+    {
+      "id": "GCF-C010-001",
+      "subject": "CRS01_MASTER_EVENT_10_VS_EVENT_MIRROR_9",
+      "state": "RESOLVED",
+      "resolution": "Extra locked-canon 2031-04-10 routine-photographs row exists in master timeline but not compact equipment-event mirror"
+    }
+  ],
+  "critical_open_frontiers": [
+    "PLANTWIDE_CONTRACTOR_CWP_IWP_EXECUTED_ITP_QA_MC_TURNOVER_AND_ATTACHMENT_INDICES",
+    "RHR_PROJECT_NATIVE_P_AND_ID_EQUIPMENT_LIST_LINE_LIST_PUMP_HX_HEAT_SINK_AND_VENDOR_BINDINGS",
+    "CHW_PUMP_BUFFER_HEADER_CLIENT_BRANCH_AND_VENDOR_PACKAGE_BINDINGS",
+    "CRY_VENDOR_CONNECTION_CRYOLINE_AND_VALVE_BOX_CLIENT_BINDINGS",
+    "CWS_REQUIREMENT_DESIGN_PROCUREMENT_PURCHASE_ORDER_VENDOR_AND_COMMISSIONING_CHANGE_CHAIN",
+    "TRITIUM_PROJECT_PROCESS_STREAM_LINE_MANIFOLD_VALVE_SAMPLE_AND_SIGNED_ACCOUNTANCY_BINDINGS",
+    "VAC_RP_BP_VENDOR_PACKAGE_MEMBERSHIP_PAIRING_TRAIN_ASSIGNMENT_REGENERATION_AND_TRANSFER_PATH",
+    "BHT401_SUPPORT_EXECUTED_ITP_AND_PHYSICAL_LOADPATH",
+    "BHT401_PENETRATION_INSTALLED_CLOSEOUT",
+    "UG01_TO_UG05_SEGMENT_LEVEL_HIDDEN_WORK",
+    "SURV001_TO_SURV008_ACCEPTED_SURVEY_TRUTH",
+    "BHT401_P101_AND_E103_E104_E105_ELECTRICAL_PHYSICAL_ROUTES",
+    "CRS01_EXACT_ORIGINAL_IWP_MC_TOV_PACKAGE_IDENTIFIERS",
+    "CRS01_JANUARY_CHILD_ATTACHMENT_AND_TRANSACTION_CHAIN",
+    "BHT401_ALIGNREC_NOZLOAD_PRESSPACK_LEAKPACK_FLUSHPACK_PMT_RESTORATION_FINAL_ASLEFT",
+    "M88217_SPECIFIC_EXECUTION_EVIDENCE"
+  ],
+  "cycles": [
+    {
+      "cycle": "C001",
+      "staging": "OFG-EA-C001-INTEGRATED-STAGING-R1",
+      "state": "COMPLETE",
+      "completion_pct": 25,
+      "plausible": [
+        21,
+        30
+      ],
+      "major": [
+        "Initial three-way integration",
+        "BHT flow conflict registered",
+        "M88217 admin-vs-execution conflict registered",
+        "sector chronology, crane capacity and electrical template-date gaps controlled"
+      ]
+    },
+    {
+      "cycle": "C002",
+      "staging": "OFG-EA-C002-INTEGRATED-STAGING-R1",
+      "state": "COMPLETE",
+      "completion_pct": 25,
+      "plausible": [
+        21,
+        30
+      ],
+      "major": [
+        "BHT electromechanical and RST-L2 loadpath model advanced",
+        "electrical 27.6kV motor/bus/type conflicts kept open",
+        "M88217 search saturated without execution evidence"
+      ]
+    },
+    {
+      "cycle": "C003",
+      "staging": "OFG-EA-C003-INTEGRATED-STAGING-R1",
+      "state": "COMPLETE",
+      "completion_pct": 31,
+      "plausible": [
+        27,
+        35
+      ],
+      "major": [
+        "32 process/system candidates expanded",
+        "plantwide facility layer advanced",
+        "station electrical architecture and provisional large-load endpoints expanded"
+      ]
+    },
+    {
+      "cycle": "C004",
+      "staging": "OFG-EA-C004-INTEGRATED-STAGING-R1",
+      "state": "COMPLETE",
+      "completion_pct": 36,
+      "plausible": [
+        32,
+        40
+      ],
+      "major": [
+        "support/embed/penetration/UG facility topology expanded",
+        "CCW/CWS/CRY/VAC/RHR physical populations advanced",
+        "representative maintenance and material support cases added"
+      ]
+    },
+    {
+      "cycle": "C005",
+      "staging": "OFG-EA-C005-INTEGRATED-STAGING-R1",
+      "state": "COMPLETE",
+      "completion_pct": 40,
+      "plausible": [
+        38,
+        42
+      ],
+      "major": [
+        "high-density process graphs and transient screens",
+        "BHT support and reserved penetration E-layer",
+        "CRS01 native parent work-control genealogy advanced"
+      ]
+    },
+    {
+      "cycle": "C006",
+      "staging": "OFG-EA-C006-INTEGRATED-STAGING-R1",
+      "state": "COMPLETE",
+      "completion_pct": 43,
+      "plausible": [
+        40,
+        46
+      ],
+      "major": [
+        "CRY46/VAC/TRITIUM33/CWS26 populations",
+        "support-host/anchor/embed/penetration/route data classes",
+        "preservation/PMT/reinstall requirement matrices"
+      ]
+    },
+    {
+      "cycle": "C007",
+      "staging": "OFG-EA-C007-INTEGRATED-STAGING-R1",
+      "state": "COMPLETE",
+      "completion_pct": 45,
+      "plausible": [
+        42,
+        48
+      ],
+      "major": [
+        "CRY node-edge and cold-load budget",
+        "CWS 8E-to-6 physical genealogy endpoint",
+        "Tritium33 function map",
+        "BHT supports/pens/UG/SURV/RTE identities",
+        "T5 route/custody frontiers"
+      ]
+    },
+    {
+      "cycle": "C008",
+      "staging": "OFG-EA-C008-INTEGRATED-STAGING-R1",
+      "state": "COMPLETE",
+      "completion_pct": 47,
+      "plausible": [
+        44,
+        50
+      ],
+      "major": [
+        "ITP-SUP-01/02 requirement identities",
+        "WP-IWP/WP-QA/WP-MC/WP-TOV package classes",
+        "period-level underground/electrical workfront history",
+        "RTE003/007/008 transaction frontiers"
+      ]
+    },
+    {
+      "cycle": "C009",
+      "staging": "OFG-EA-C009-INTEGRATED-STAGING-R1",
+      "state": "COMPLETE",
+      "completion_pct": 49,
+      "plausible": [
+        46,
+        52
+      ],
+      "major": [
+        "document identity class separation",
+        "20 Atlas register handles recovered",
+        "CWS six-pump 2028 field implementation sequence",
+        "BHT support ITP/package execution frontier",
+        "RTE003 historical transfer corroboration"
+      ]
+    },
+    {
+      "cycle": "C010",
+      "staging": "OFG-EA-C010-INTEGRATED-STAGING-R1",
+      "state": "COMPLETE",
+      "completion_pct": 51,
+      "plausible": [
+        48,
+        54
+      ],
+      "major": [
+        "20 Annex handles reverse-traced to five parent document families",
+        "ANNEX-0012 master-event row provenance for P101 and CRS01",
+        "ANNEX-0536 DT05 provenance and CRS01 lifecycle edge bindings",
+        "PHOTO-BHT401-0410 and EVID-BHT401-RSTL2 repository chains",
+        "source-layer distinction for CWS 8E vs 6 physical",
+        "field-truth and electrical exact identities remain open"
+      ]
+    },
+    {
+      "cycle": "C011",
+      "staging": null,
+      "state": "ACTIVE_DISPATCHED",
+      "completion_pct": null,
+      "plausible": null,
+      "major": [
+        "T2-G1 became inactive before return; C011 T2 task must be reissued to T2-G2 from C010 pin",
+        "T4-G1 C011 pending",
+        "T5-G1 C011 pending",
+        "C011 global integration prohibited until active returns complete and user Commence"
+      ]
+    }
+  ]
+}

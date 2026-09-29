@@ -1,0 +1,35 @@
+{
+  "schema": "OFG_EA_MIGRATION_CONTROL_V2",
+  "migration_id": "OFG-EA-T1G1-TO-T1G2-C011",
+  "configuration_cut": "2031-04-19",
+  "baseline_id": "OFG-EA-B000-REV3-REVW3-REVS-2031-04-19",
+  "latest_integrated_staging": "OFG-EA-C010-INTEGRATED-STAGING-R1",
+  "active_cycle": "OFG-EA-CYCLE-011",
+  "logical_to_physical": {
+    "T1": {"old":"T1-G1","new":"T1-G2","mode":"MASTER_CUTOVER"},
+    "T2": {"old":"T2-G1","new":"T2-G2","mode":"IMMEDIATE_SUCCESSOR_C011_REISSUE"},
+    "T3": {"old":"T3-G1","new":null,"mode":"PERMANENTLY_RETIRED_READ_ONLY"},
+    "T4": {"old":"T4-G1","new":"T4-G2","mode":"HOT_STANDBY_FENCED"},
+    "T5": {"old":"T5-G1","new":"T5-G2","mode":"HOT_STANDBY_FENCED"}
+  },
+  "authority_rules": {
+    "single_authoritative_master_epoch": true,
+    "single_writer_generation_per_logical_worker": true,
+    "stale_epoch_write": "REJECT_QUARANTINE",
+    "same_packet_same_hash": "IDEMPOTENT_NO_SECOND_WRITE",
+    "same_packet_different_hash": "CONFLICT_QUARANTINE",
+    "unreturned_old_generation_work": "DO_NOT_INFER"
+  },
+  "cutover_gate": [
+    "BASELINE_MATCH",
+    "C010_STAGING_MATCH",
+    "C011_QUEUE_MATCH",
+    "THREAD3_RETIRED",
+    "REV4_QUARANTINED",
+    "CONFLICT_REGISTER_LOADED",
+    "OPEN_FRONTIER_REGISTER_LOADED",
+    "IDENTITY_REGISTRY_LOADED",
+    "PROVENANCE_BINDINGS_LOADED",
+    "T2_G1_C011_RETURN_NOT_INVENTED"
+  ]
+}

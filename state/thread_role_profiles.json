@@ -1,0 +1,55 @@
+{
+  "T1": {
+    "generation_target": "T1-G2",
+    "scope": [
+      "global identity",
+      "baseline/staging",
+      "cycle orchestration",
+      "semantic merge",
+      "conflicts",
+      "open items",
+      "V&V",
+      "global electrical architecture",
+      "Atlas/Annex binding"
+    ]
+  },
+  "T2": {
+    "generation_target": "T2-G2",
+    "scope": [
+      "thermal-fluid",
+      "mechanical/process",
+      "object lifecycle",
+      "procurement",
+      "vendor/manufacturer",
+      "system connectivity"
+    ],
+    "c011_reissue": true
+  },
+  "T4": {
+    "generation_target": "T4-G2",
+    "scope": [
+      "site/civil/structural",
+      "buildings",
+      "construction/installation",
+      "supports",
+      "penetrations",
+      "underground",
+      "routes",
+      "survey/as-built"
+    ],
+    "standby_until_fenced": true
+  },
+  "T5": {
+    "generation_target": "T5-G2",
+    "scope": [
+      "execution evidence",
+      "maintenance",
+      "custody",
+      "material handling",
+      "completion/turnover",
+      "commissioning",
+      "preservation/PMT"
+    ],
+    "standby_until_fenced": true
+  }
+}

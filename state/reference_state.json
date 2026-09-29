@@ -1,0 +1,221 @@
+{
+  "schema": "OFG_EA_REFERENCE_STATE_V2",
+  "baseline_id": "OFG-EA-B000-REV3-REVW3-REVS-2031-04-19",
+  "configuration_cut": "2031-04-19",
+  "project": {
+    "name": "Ontario Fusion Generation Project (OFG)",
+    "nature": "Commercial deployment of qualified HMS HFRP reference architecture descended from ITER -> Q-DEMO; adaptation, licensing, manufacture, construction, commissioning and operation at Clarington.",
+    "owner_licensee_operator": "OPG",
+    "safety_regulator": "CNSC",
+    "grid_system": "IESO",
+    "economic_regulator": "OEB",
+    "epc_integrator": "E&C Canada",
+    "technology_owner_design_authority": "HMS",
+    "public_first_plasma_current": "2031-06-30",
+    "previous_public_baselines": [
+      "2031-03-31",
+      "2031-05-31"
+    ]
+  },
+  "methodology": {
+    "governing_standard": "Engineering Review thread",
+    "rev3_status": "SKELETON_BASELINE_NOT_COMPLETION_CEILING",
+    "open_world_research": true,
+    "external_precedent_to_ofg_history_without_source": false,
+    "open_preferred_to_invention": true,
+    "decomposition": [
+      "function",
+      "system",
+      "subsystem",
+      "train_loop",
+      "equipment",
+      "assembly",
+      "component",
+      "connection",
+      "support_restraint",
+      "penetration",
+      "embed",
+      "route",
+      "termination",
+      "installation_temp_workpackage",
+      "fabrication",
+      "supply",
+      "procurement",
+      "manufacture",
+      "inspection",
+      "transport",
+      "receipt",
+      "preservation",
+      "construction",
+      "mechanical_completion",
+      "turnover",
+      "commissioning",
+      "operations",
+      "maintenance",
+      "intervention",
+      "as_built",
+      "as_installed",
+      "interface",
+      "evidence",
+      "records"
+    ],
+    "representations": [
+      "FUNCTIONAL_PLANT",
+      "DESIGN_PLANT",
+      "PHYSICAL_PLANT",
+      "EVIDENCE_PLANT",
+      "PROCUREMENT_PLANT",
+      "MANUFACTURING_PLANT",
+      "CONSTRUCTION_INSTALLATION_PLANT",
+      "TEMPORARY_PLANT",
+      "LOGISTICS_MATERIAL_FLOW_PLANT",
+      "COMPLETION_TURNOVER_PLANT",
+      "COMMISSIONING_PLANT",
+      "AS_BUILT_CONFIGURATION_PLANT",
+      "OPERATIONS_MAINTENANCE_PLANT"
+    ],
+    "lifecycle": [
+      "Need",
+      "Requirement",
+      "Basis",
+      "Authorization",
+      "Design",
+      "Procurement",
+      "Vendor engineering",
+      "Manufacture/fabrication",
+      "QA/NDE/FAT",
+      "Transport",
+      "Receipt",
+      "Storage/preservation",
+      "Material issue",
+      "Construction/install",
+      "Field inspection",
+      "Testing",
+      "Redline/as-built",
+      "Mechanical completion",
+      "Turnover",
+      "Commissioning",
+      "Operations",
+      "Maintenance",
+      "Intervention",
+      "Current configuration"
+    ],
+    "vv_states": [
+      "PASS",
+      "FAIL",
+      "PARTIAL",
+      "QUARANTINE",
+      "SCREEN",
+      "OPEN"
+    ],
+    "assurance_classes": [
+      "AS0",
+      "AS1",
+      "AS2",
+      "AS3",
+      "AS4"
+    ],
+    "identity_states": [
+      "canonical",
+      "provisional",
+      "alias",
+      "superseded",
+      "merged",
+      "split",
+      "unresolved",
+      "quarantined"
+    ],
+    "time_axes": [
+      "physical_valid_time",
+      "document_record_time",
+      "knowledge_time",
+      "database_time"
+    ],
+    "configuration_states": [
+      "reference",
+      "issued",
+      "as_procured",
+      "manufactured",
+      "received",
+      "installed",
+      "temporary",
+      "test",
+      "commissioned",
+      "as_built",
+      "operating",
+      "story_date"
+    ],
+    "semantic_guards": [
+      "NO_LAST_WRITE_WINS",
+      "NO_SILENT_MERGE_SPLIT_RENAME",
+      "ADMIN_CLOSED_APPROVED_NOT_PHYSICAL_EXECUTION",
+      "MISSING_RECORD_NOT_NONPERFORMANCE",
+      "PACKAGE_CLASS_NOT_PACKAGE_INSTANCE",
+      "REQUIREMENT_NOT_EXECUTED_RECORD",
+      "WORKFRONT_ACTIVITY_NOT_OBJECT_SPECIFIC_EXECUTION",
+      "ENGINEERING_ROUTE_NOT_ASBUILT_ROUTE",
+      "SURVEY_GENERATION_NOT_ACCEPTED_SURVEY_TRUTH",
+      "RESERVED_OPENING_NOT_INSTALLED_PENETRATION"
+    ]
+  },
+  "logical_threads": {
+    "1": {
+      "role": "GLOBAL_MASTER_ORCHESTRATOR_INTEGRATOR_SUBSTANTIVE_ENGINEERING_REVIEW",
+      "state": "ROLLOVER_TO_T1_G2_REQUIRED"
+    },
+    "2": {
+      "role": "PROCESS_MECHANICAL_OBJECT_LIFECYCLE_PROCUREMENT_VENDOR",
+      "state": "T2_G1_INACTIVE_CONTEXT_LIMIT_T2_G2_REQUIRED"
+    },
+    "3": {
+      "role": "ARCHIVAL_ELECTRICAL_WORKER",
+      "state": "PERMANENTLY_RETIRED_READ_ONLY_ARCHIVE"
+    },
+    "4": {
+      "role": "SITE_CIVIL_STRUCTURAL_CONSTRUCTION_PHYSICAL_ROUTE_ASBUILT",
+      "state": "T4_G1_ACTIVE_C011_PENDING_SUCCESSOR_PREPOSITION_RECOMMENDED"
+    },
+    "5": {
+      "role": "EXECUTION_EVIDENCE_MAINTENANCE_CUSTODY_COMPLETION_COMMISSIONING",
+      "state": "T5_G1_ACTIVE_C011_PENDING_SUCCESSOR_PREPOSITION_RECOMMENDED"
+    }
+  },
+  "site_staffing": {
+    "ec_canada_permanent_site_staff_total": 27,
+    "ec_canada_staff": 24,
+    "hms_secondees": 3,
+    "hms_standalone_office": false
+  },
+  "corpus_baseline_facts": {
+    "assets": 22647,
+    "events": 128986,
+    "geometry_features": 38,
+    "relationships": 384,
+    "qa_docx_rows": 9600,
+    "qa_datasets": 238,
+    "qa_source_files": 260,
+    "machine_annex_manifest_source_file_count": 673,
+    "site_work_history_events": 106302,
+    "known_site_history_quarantines": {
+      "installation_before_arrival": 802,
+      "turnover_before_mechanical_completion": 1294
+    },
+    "geometry_coordinate_status": "E_NOT_SURVEYED",
+    "blanket_sectors": 80,
+    "divertor_cassettes": 48,
+    "port_coordinates": "OPEN"
+  },
+  "source_dataset_roles": {
+    "DATA00": "README",
+    "DATA01": "CONTROLLED_ASSET_REGISTER",
+    "DATA02": "MASTER_EVENT_TIMELINE",
+    "DATA03": "SITE_GEOMETRY_GEOJSON",
+    "DATA04": "PARAMETRIC_3D_GEOMETRY",
+    "DATA05": "RELATIONSHIP_GRAPH",
+    "DATA06": "PHYSICAL_OBJECT_SCHEMA",
+    "DATA07": "SQLITE_HISTORICALLY_REFERENCED_NOT_VISIBLE_IN_CURRENT_REFERENCE_SET",
+    "DATA08": "DIGITAL_THREAD_QA",
+    "MACHINE_ANNEX": "MANIFEST_AND_CATALOG",
+    "REVW3_SITE_HISTORY": "WORKING_DATASET_NOT_SELF_AUTHENTICATING_CANON"
+  }
+}
