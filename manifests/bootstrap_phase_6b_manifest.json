@@ -1,0 +1,56 @@
+{
+  "phase": "6B",
+  "repository": "Taro102/OFG-Engineering-Atlas",
+  "base_remote_commit": "620f92b671c9578f6077462bdcc4e1b2d075f863",
+  "phase_1_status": "PASS",
+  "phase_2_status": "PASS",
+  "phase_3_status": "PASS",
+  "phase_4_status": "PASS",
+  "phase_5_status": "PASS",
+  "phase_6a_status": "PASS",
+  "phase_6b_status": "PREPARED_NOT_YET_PUBLISHED",
+  "github_authority": "NOT_YET_ACTIVE",
+  "source_bundle_id": "OFG_EA_MASTER_MIGRATION_RAW_DATA_RETRIEVAL_R2",
+  "source_archive_sha256": "bc052b488e3ce944f765583f7d3b5f0731e210e6a423e439e3d98738bee34da1",
+  "lfs_source_file_count": 1,
+  "generated_metadata_file_count": 1,
+  "total_publication_file_count": 2,
+  "source_file": {
+    "repository_relative_path": "reference_raw/OFG_Site_Work_History_Master_RevW3(8).csv",
+    "source_path_in_r2": "ofg_migration_bundle/reference_raw/OFG_Site_Work_History_Master_RevW3(8).csv",
+    "byte_count": 143123205,
+    "sha256": "efdee0aa79172799d1b06df0a02772500d52e6a3ce92c4904b7eb56e549b8117",
+    "classification": "REFERENCE_RAW_LARGE_TABULAR_DATA",
+    "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+    "storage": "GIT_LFS",
+    "expected_lfs_oid": "sha256:efdee0aa79172799d1b06df0a02772500d52e6a3ce92c4904b7eb56e549b8117",
+    "expected_pointer_text": "version https://git-lfs.github.com/spec/v1\noid sha256:efdee0aa79172799d1b06df0a02772500d52e6a3ce92c4904b7eb56e549b8117\nsize 143123205\n",
+    "expected_pointer_byte_count": 134,
+    "expected_pointer_sha256": "c2b37aff9fefab89230f435d2765d69eecbf01e547b2c1248148134df81670db"
+  },
+  "required_preconditions": {
+    "phase_6a_remote_head": "620f92b671c9578f6077462bdcc4e1b2d075f863",
+    "gitattributes_contains_exact_rule": "reference_raw/OFG_Site_Work_History_Master_RevW3(8).csv filter=lfs diff=lfs merge=lfs -text",
+    "git_lfs_installed": true,
+    "git_lfs_initialized_for_user": true,
+    "git_attribute_filter_lfs_confirmed_before_staging": true
+  },
+  "publication_controls": {
+    "ordinary_git_commit_of_large_source": "PROHIBITED",
+    "source_mutation": "PROHIBITED",
+    "line_ending_normalization": "PROHIBITED",
+    "git_lfs_pointer_required": true,
+    "c011_integration_performed": false,
+    "c012_issued": false,
+    "remote_write_performed": false,
+    "gitattributes_modification_required": false
+  },
+  "post_stage_checks": [
+    "git lfs ls-files includes exact repository path",
+    "git show :reference_raw/OFG_Site_Work_History_Master_RevW3(8).csv renders an LFS pointer rather than the 143123205-byte source",
+    "LFS pointer oid equals sha256:efdee0aa79172799d1b06df0a02772500d52e6a3ce92c4904b7eb56e549b8117",
+    "LFS pointer size equals 143123205"
+  ],
+  "recommended_git_commit_message": "Bootstrap Phase 6B: publish RevW3 site-work history via Git LFS",
+  "manifest_byte_count": 2794
+}
