@@ -1,0 +1,132 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "OFG Definitive Engineering Atlas Rev3 Physical Object",
+  "type": "object",
+  "required": [
+    "object_id",
+    "class",
+    "status",
+    "reference_frame"
+  ],
+  "properties": {
+    "object_id": {
+      "type": "string"
+    },
+    "parent_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "class": {
+      "type": "string"
+    },
+    "subclass": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "status": {
+      "enum": [
+        "C",
+        "V",
+        "R",
+        "E",
+        "OPEN",
+        "C/E",
+        "C/V",
+        "F/O"
+      ]
+    },
+    "reference_frame": {
+      "type": "string"
+    },
+    "reference_point": {
+      "type": [
+        "object",
+        "string",
+        "null"
+      ]
+    },
+    "orientation": {
+      "type": [
+        "object",
+        "string",
+        "null"
+      ]
+    },
+    "geometry": {
+      "type": [
+        "object",
+        "string",
+        "null"
+      ]
+    },
+    "operating_envelope": {
+      "type": [
+        "object",
+        "string",
+        "null"
+      ]
+    },
+    "maintenance_envelope": {
+      "type": [
+        "object",
+        "string",
+        "null"
+      ]
+    },
+    "installation_envelope": {
+      "type": [
+        "object",
+        "string",
+        "null"
+      ]
+    },
+    "interfaces": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "supports": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "penetrations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "construction_state": {
+      "type": [
+        "string",
+        "object",
+        "null"
+      ]
+    },
+    "custody": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "uncertainty": {
+      "type": [
+        "string",
+        "object",
+        "null"
+      ]
+    }
+  }
+}

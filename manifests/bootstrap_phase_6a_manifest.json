@@ -1,0 +1,446 @@
+{
+  "phase": "6A",
+  "repository": "Taro102/OFG-Engineering-Atlas",
+  "base_remote_commit": "776b3432a2a5899cb10502521f19f8ba1debd3ab",
+  "phase_1_status": "PASS",
+  "phase_2_status": "PASS",
+  "phase_3_status": "PASS",
+  "phase_4_status": "PASS",
+  "phase_5_status": "PASS",
+  "phase_6a_status": "PREPARED_NOT_YET_PUBLISHED",
+  "github_authority": "NOT_YET_ACTIVE",
+  "source_bundle_id": "OFG_EA_MASTER_MIGRATION_RAW_DATA_RETRIEVAL_R2",
+  "source_archive_sha256": "bc052b488e3ce944f765583f7d3b5f0731e210e6a423e439e3d98738bee34da1",
+  "reference_raw_total_source_files": 43,
+  "ordinary_git_reference_files_in_this_phase": 42,
+  "deferred_lfs_reference_files": 1,
+  "generated_metadata_file_count": 1,
+  "modified_control_file_count": 1,
+  "publication_new_file_count": 43,
+  "publication_modified_existing_file_count": 1,
+  "total_uncompressed_publication_bytes": 51190392,
+  "deferred_lfs_object": {
+    "repository_relative_path": "reference_raw/OFG_Site_Work_History_Master_RevW3(8).csv",
+    "byte_count": 143123205,
+    "sha256": "efdee0aa79172799d1b06df0a02772500d52e6a3ce92c4904b7eb56e549b8117",
+    "reason": "EXCEEDS_GITHUB_ORDINARY_GIT_100_MIB_LIMIT",
+    "storage_required": "GIT_LFS",
+    "included_in_phase_6a_zip": false
+  },
+  "gitattributes_control": {
+    "path": ".gitattributes",
+    "previous_phase4_sha256": "b7475dd0626f2a0ede6bfb7493a7cb23446e37c748799ca98b1b70073e849fb9",
+    "new_sha256": "97a880d5fe9448984f9b92d5f403bcef6887cdde9f517f5d0d66486e5a44f113",
+    "preserves_existing_phase4_rules": true,
+    "adds_reference_raw_byte_preservation": true,
+    "adds_exact_large_csv_lfs_rule": true
+  },
+  "files": [
+    {
+      "repository_relative_path": "reference_raw/OFG_Actual_Site_Work_History_RevW3(9).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/OFG_Actual_Site_Work_History_RevW3(9).docx",
+      "byte_count": 80435,
+      "sha256": "05a6f896ae1513a12ab537448c0157134e27ffe1059f3c4f2af677fd64898169",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/OFG_Atlas_Rev3_DATA00_README(9).txt",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/OFG_Atlas_Rev3_DATA00_README(9).txt",
+      "byte_count": 1593,
+      "sha256": "f92082f370fab2b5e4b7518a808f88bc0d866ce7299781e49a078785642a44fc",
+      "classification": "REFERENCE_RAW_TEXT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/OFG_Atlas_Rev3_DATA01_Controlled_Asset_Register(8).csv",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/OFG_Atlas_Rev3_DATA01_Controlled_Asset_Register(8).csv",
+      "byte_count": 10762718,
+      "sha256": "50fe00f65fab4316642c9835be6513117bfb11cda5e9d53fac02d16597ec2d3a",
+      "classification": "REFERENCE_RAW_TABULAR_DATA",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/OFG_Atlas_Rev3_DATA02_Master_Event_Timeline_Through_2031-04-19(6).csv",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/OFG_Atlas_Rev3_DATA02_Master_Event_Timeline_Through_2031-04-19(6).csv",
+      "byte_count": 26539936,
+      "sha256": "ca328fd6a7e1acf0c99d801d39a48ac20cbe3b3c2e4f9650f3257c23c1260375",
+      "classification": "REFERENCE_RAW_TABULAR_DATA",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/OFG_Atlas_Rev3_DATA03_Site_Geometry(7).geojson",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/OFG_Atlas_Rev3_DATA03_Site_Geometry(7).geojson",
+      "byte_count": 17576,
+      "sha256": "fb94001dfefe83fb4a21221480f9ae1bfefdae9541d488ad0e74af2fac5b4573",
+      "classification": "REFERENCE_RAW_MACHINE_DATA",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/OFG_Atlas_Rev3_DATA04_Parametric_3D_Geometry(7).json",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/OFG_Atlas_Rev3_DATA04_Parametric_3D_Geometry(7).json",
+      "byte_count": 12631,
+      "sha256": "b46e4fef42dc884351cd3386100cf1a7e1cf7e0a1789b762c707cda05bfd8944",
+      "classification": "REFERENCE_RAW_MACHINE_DATA",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/OFG_Atlas_Rev3_DATA05_Relationship_Graph(7).csv",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/OFG_Atlas_Rev3_DATA05_Relationship_Graph(7).csv",
+      "byte_count": 22953,
+      "sha256": "9ddd29ea938c0dc5e9b0d218fc52d955408442dbd82ab5f9108816f186e75beb",
+      "classification": "REFERENCE_RAW_TABULAR_DATA",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/OFG_Atlas_Rev3_DATA06_Physical_Object_Schema(8).json",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/OFG_Atlas_Rev3_DATA06_Physical_Object_Schema(8).json",
+      "byte_count": 2070,
+      "sha256": "70bb30755f2a81bb5deb917ce92ca6bebd0730facac26ebf6eb80eb0bec2de5d",
+      "classification": "REFERENCE_RAW_MACHINE_DATA",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/OFG_Atlas_Rev3_DATA08_Digital_Thread_QA(8).json",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/OFG_Atlas_Rev3_DATA08_Digital_Thread_QA(8).json",
+      "byte_count": 180,
+      "sha256": "bd8d84f3fb158ae231924e177db9d26669153677793a6be19142b1d340e4d414",
+      "classification": "REFERENCE_RAW_MACHINE_DATA",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/OFG_Definitive_Engineering_Atlas_Rev3_MACHINE_ANNEX_CATALOG(7).csv",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/OFG_Definitive_Engineering_Atlas_Rev3_MACHINE_ANNEX_CATALOG(7).csv",
+      "byte_count": 209035,
+      "sha256": "538a66d38ffba6356b642aad7650559421daea364396cfa7d075f35323d83b2d",
+      "classification": "REFERENCE_RAW_TABULAR_DATA",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/OFG_Definitive_Engineering_Atlas_Rev3_MACHINE_ANNEX_MANIFEST(8).json",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/OFG_Definitive_Engineering_Atlas_Rev3_MACHINE_ANNEX_MANIFEST(8).json",
+      "byte_count": 444,
+      "sha256": "faee2a54202b75b2d3c056698a031f5aa35442fb8063d074e956f2ec2bb3f2d6",
+      "classification": "REFERENCE_RAW_MACHINE_DATA",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/OFG_Definitive_Engineering_Atlas_Rev3_MASTER_INDEX(9).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/OFG_Definitive_Engineering_Atlas_Rev3_MASTER_INDEX(9).docx",
+      "byte_count": 41193,
+      "sha256": "543a3596730ea091c85c835b3c2e85d41d9583b3a97472c6c434596327452480",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/OFG_Site_Work_Representative_Asset_Dossiers_RevW3(8).csv",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/OFG_Site_Work_Representative_Asset_Dossiers_RevW3(8).csv",
+      "byte_count": 9537,
+      "sha256": "324b6926f234db000a551fe6835650b3d21595243d2db79efd13fcccf4e75fc3",
+      "classification": "REFERENCE_RAW_TABULAR_DATA",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/OFG_Site_Workfront_Monthly_History_RevW3(7).csv",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/OFG_Site_Workfront_Monthly_History_RevW3(7).csv",
+      "byte_count": 2076912,
+      "sha256": "362956f89eadf8afb4078273ca42b2a133b660de977001e55267c8d5d8211dea",
+      "classification": "REFERENCE_RAW_TABULAR_DATA",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Annex_K_Workstream_Transition_Register(20260928-081854).csv",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Annex_K_Workstream_Transition_Register(20260928-081854).csv",
+      "byte_count": 4142826,
+      "sha256": "9dd12a1ddc351543af76d79957d0b858a47efa2c1a453b03a00482c0e597c428",
+      "classification": "REFERENCE_RAW_TABULAR_DATA",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Annex_L_Deliverable_Family_Genealogy(10).csv",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Annex_L_Deliverable_Family_Genealogy(10).csv",
+      "byte_count": 1816104,
+      "sha256": "461ce8fecde0373408e0d2db187d56c5cefa6f19fc22910b7464a254696ae4e4",
+      "classification": "REFERENCE_RAW_TABULAR_DATA",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Annex_M_Workstream_Period_Synopsis(20260928-082241).csv",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Annex_M_Workstream_Period_Synopsis(20260928-082241).csv",
+      "byte_count": 3548178,
+      "sha256": "b13aef21112c59b8ff914b114605ee5fe73a934f4826372ab5e74648d73ac9b4",
+      "classification": "REFERENCE_RAW_TABULAR_DATA",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Vol14A_Workstream_Ownership_Transitions(10).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Vol14A_Workstream_Ownership_Transitions(10).docx",
+      "byte_count": 69001,
+      "sha256": "c12efd0c56484ee61f96df07ef0e8ac8b70f25322f3c399992787d71d098da67",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Vol14B_Workstream_Ownership_Transitions(10).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Vol14B_Workstream_Ownership_Transitions(10).docx",
+      "byte_count": 73866,
+      "sha256": "252514e216c07e1721e539e0ba0772529ef239478a36bd2289555ab0aadfa977",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Vol14C_Workstream_Ownership_Transitions(10).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Vol14C_Workstream_Ownership_Transitions(10).docx",
+      "byte_count": 80094,
+      "sha256": "e41a64f523c23aca9a013aae0b16cd6a09d94f0c90defac9e8dfb0e08017b3eb",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Vol14D_Workstream_Ownership_Transitions(10).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Vol14D_Workstream_Ownership_Transitions(10).docx",
+      "byte_count": 71892,
+      "sha256": "961411744edf1e570a72408fe5bc5dea156b1f9d45cfd1c9d2335f719872bda7",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Vol15A_Deliverable_and_Record_Genealogy(10).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Vol15A_Deliverable_and_Record_Genealogy(10).docx",
+      "byte_count": 59609,
+      "sha256": "cdf975ac36f88f72707ba017c703c56186a9aa6a4a1117aae5ce27080193acf1",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Vol15B_Deliverable_and_Record_Genealogy(9).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Vol15B_Deliverable_and_Record_Genealogy(9).docx",
+      "byte_count": 63018,
+      "sha256": "f2ba3f367ce2e143d84a6d60b0688f1cec2f897a4831fd1df24483788dd073ee",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V00_CANON_CONTROL_HIERARCHY_PROJECT_HISTORY_INSTITUTIONAL_WORLD(7).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V00_CANON_CONTROL_HIERARCHY_PROJECT_HISTORY_INSTITUTIONAL_WORLD(7).docx",
+      "byte_count": 70542,
+      "sha256": "cd7a221e08a26d2bd6c2adec5b99507b5c51654bad5ffc088bda96680162cdd8",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V01_TECHNOLOGY_MATURATION_DESIGN_BASIS_FUNDAMENTAL_ENGINEERING(8).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V01_TECHNOLOGY_MATURATION_DESIGN_BASIS_FUNDAMENTAL_ENGINEERING(8).docx",
+      "byte_count": 64352,
+      "sha256": "d7c0d1372f0923aa6b42502dd8b4125128c78020365c02ab684947b718b8a73d",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V02_SITE_GEOGRAPHY_COORDINATES_LOGISTICS_CONSTRUCTION_FIELD(8).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V02_SITE_GEOGRAPHY_COORDINATES_LOGISTICS_CONSTRUCTION_FIELD(8).docx",
+      "byte_count": 68284,
+      "sha256": "3e3d49b3b1bd59281cb3d5fc13e1ed3557b0335a453ec28e3c9f3521e0233c69",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V03_BUILDINGS_CIVIL_STRUCTURAL_ROOMS_PENETRATIONS_EMBEDS(8).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V03_BUILDINGS_CIVIL_STRUCTURAL_ROOMS_PENETRATIONS_EMBEDS(8).docx",
+      "byte_count": 88062,
+      "sha256": "ecfa313986d5a4959f7d0db87fa0fc34cec0f75841fc04fe95d504efd7b15dd7",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V04_FUSION_MACHINE_TOKAMAK_VACUUM_VESSEL_CRYOSTAT_STRUCTURAL_LOAD_PATH(8).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V04_FUSION_MACHINE_TOKAMAK_VACUUM_VESSEL_CRYOSTAT_STRUCTURAL_LOAD_PATH(8).docx",
+      "byte_count": 91738,
+      "sha256": "c1599e1323820a4938bb9dd47935b1a2c143733b51c2212ff0565cdad1e3f10a",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V05_MAGNETS_MAGNET_POWER_CRYOGENICS_QUENCH_PROTECTION(7).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V05_MAGNETS_MAGNET_POWER_CRYOGENICS_QUENCH_PROTECTION(7).docx",
+      "byte_count": 59536,
+      "sha256": "f20b905c9cdcd0d95f0cfb03f7ec0913e19b1c0e3c25333665c3b567eeeddbbe",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V06_BLANKET_DIVERTOR_TRITIUM_FUEL_CYCLE_REMOTE_HANDLING(6).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V06_BLANKET_DIVERTOR_TRITIUM_FUEL_CYCLE_REMOTE_HANDLING(6).docx",
+      "byte_count": 89457,
+      "sha256": "c8232bbf54a2c799cf1669c16e5b4b954c1f7a2b04ee895632bbad441a75d0c0",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V07_PRIMARY_BLANKET_HEAT_TRANSPORT_PHYSICAL_CONFIGURATION_AND_FUNDAMENTAL_ENGINEERING(8).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V07_PRIMARY_BLANKET_HEAT_TRANSPORT_PHYSICAL_CONFIGURATION_AND_FUNDAMENTAL_ENGINEERING(8).docx",
+      "byte_count": 123187,
+      "sha256": "a4b7620eeb865d06facfada3fe3646979d07c66e9a2bea39cde5d8c7f5b68422",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V08_VACUUM_GAS_COOLING_AUXILIARIES_PROCESS_SYSTEMS(7).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V08_VACUUM_GAS_COOLING_AUXILIARIES_PROCESS_SYSTEMS(7).docx",
+      "byte_count": 75499,
+      "sha256": "a7372d6a39adefb556a2048705be727806de13549306a5096fe5aff7212605b2",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V09_POWER_CYCLE_BALANCE_OF_PLANT_PLANT_UTILITIES(7).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V09_POWER_CYCLE_BALANCE_OF_PLANT_PLANT_UTILITIES(7).docx",
+      "byte_count": 58128,
+      "sha256": "f39f9cc3765ac2aa8bd9c08d65cb60a6c73fa7957f7f6df7649598397f134b44",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V10_ELECTRICAL_I_C_DIGITAL_PLANT_HVAC_FIRE_CONFINEMENT(7).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V10_ELECTRICAL_I_C_DIGITAL_PLANT_HVAC_FIRE_CONFINEMENT(7).docx",
+      "byte_count": 55025,
+      "sha256": "52ed16cea786226b3b2e95efa740ad52717f7dfddc059e1d02620aa868dd1784",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V11_EQUIPMENT_COMPONENT_MASTER_ENCYCLOPEDIA(7).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V11_EQUIPMENT_COMPONENT_MASTER_ENCYCLOPEDIA(7).docx",
+      "byte_count": 85905,
+      "sha256": "2a6845f17cfad154be2cacebf58ed1002fc1a325763da4fb4dae735f9778306c",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V12_CONNECTIVITY_ROUTING_NOZZLES_FABRICATION_WELDS_SUPPORTS(7).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V12_CONNECTIVITY_ROUTING_NOZZLES_FABRICATION_WELDS_SUPPORTS(7).docx",
+      "byte_count": 84456,
+      "sha256": "779b997295f19277873552c7949c1be7d16f014695f10d35f1ba516986f21be5",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V13_CONSTRUCTION_TEMPORARY_WORKS_INSTALLATION_FIELD_EXECUTION(7).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V13_CONSTRUCTION_TEMPORARY_WORKS_INSTALLATION_FIELD_EXECUTION(7).docx",
+      "byte_count": 107473,
+      "sha256": "c08bbbda87919906ab8a6a665774bea3f0ab87fa7dc6ab9d7b42368721676c86",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V14_COMMISSIONING_TURNOVER_OPERATIONS_READINESS_TEMPORARY_CONFIGURATION(7).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V14_COMMISSIONING_TURNOVER_OPERATIONS_READINESS_TEMPORARY_CONFIGURATION(7).docx",
+      "byte_count": 52758,
+      "sha256": "9369bde0cecc266d0aca12ee866a86d78c03515ed5809483c8f87862ae4480b1",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V15_MASTER_CHRONOLOGY_INSTALLATION_HISTORY_STORY_DATE_PHYSICAL_STATE(7).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V15_MASTER_CHRONOLOGY_INSTALLATION_HISTORY_STORY_DATE_PHYSICAL_STATE(7).docx",
+      "byte_count": 68859,
+      "sha256": "05641016cc99617e80646a8a71ebbcf09267e1be1cef96f18fe8904df3a9d91e",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V16_BHT_401_CRS_01_FORENSIC_CONFIGURATION_INFORMATION_PROVENANCE(7).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V16_BHT_401_CRS_01_FORENSIC_CONFIGURATION_INFORMATION_PROVENANCE(7).docx",
+      "byte_count": 91706,
+      "sha256": "d88fe4c1c37d7486aeba456be06fb510b1ece51d8b83d9f93be7315828471e2d",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V17_VERIFICATION_VALIDATION_FMEA_OPEN_ITEMS_BACKWARD_PROPAGATION(6).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V17_VERIFICATION_VALIDATION_FMEA_OPEN_ITEMS_BACKWARD_PROPAGATION(6).docx",
+      "byte_count": 71152,
+      "sha256": "9adf144ac519ca54117082a95403d68f068d6d2894f56787b178af449e68473a",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V18_MASTER_SYSTEM_DICTIONARY_ALL_94_SYSTEMS_INTERFACE_COORDINATION(7).docx",
+      "source_path_in_r2": "ofg_migration_bundle/reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V18_MASTER_SYSTEM_DICTIONARY_ALL_94_SYSTEMS_INTERFACE_COORDINATION(7).docx",
+      "byte_count": 54547,
+      "sha256": "5b8b3c1aa95b22fccdc2c5ef392245756dcf7005b5d47a13838862161b7e8787",
+      "classification": "REFERENCE_RAW_DOCUMENT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED",
+      "storage": "ORDINARY_GIT"
+    },
+    {
+      "repository_relative_path": ".gitattributes",
+      "source_path_in_r2": null,
+      "byte_count": 308,
+      "sha256": "97a880d5fe9448984f9b92d5f403bcef6887cdde9f517f5d0d66486e5a44f113",
+      "classification": "REFERENCE_RAW_STORAGE_CONTROL",
+      "source_status": "PHASE6A_UPDATE_TO_EXISTING_FILE"
+    },
+    {
+      "repository_relative_path": "manifests/bootstrap_phase_6a_manifest.json",
+      "source_path_in_r2": null,
+      "byte_count": 27617,
+      "sha256": null,
+      "classification": "PHASE6A_PUBLICATION_MANIFEST",
+      "source_status": "NEW_PHASE6A_PUBLICATION_METADATA",
+      "sha256_status": "SELF_HASH_EXCLUDED_EXTERNAL_SHA256_PROVIDED_IN_DELIVERY_RESPONSE"
+    }
+  ],
+  "publication_controls": {
+    "reference_raw_source_mutation": "PROHIBITED",
+    "line_ending_normalization": "PROHIBITED",
+    "large_csv_included": false,
+    "large_csv_must_not_be_added_before_lfs_is_active": true,
+    "phase1_to_phase5_state_modification": "PROHIBITED_EXCEPT_GITATTRIBUTES_CONTROL_UPDATE",
+    "c011_integration_performed": false,
+    "c012_issued": false,
+    "remote_write_performed": false
+  },
+  "recommended_git_commit_message": "Bootstrap Phase 6A: publish ordinary reference corpus"
+}

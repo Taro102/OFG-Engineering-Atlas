@@ -1,0 +1,8 @@
+{
+  "title": "OFG Definitive Engineering Atlas Rev 3 \u2014 Machine Annex",
+  "source_file_count": 673,
+  "imported_count": 673,
+  "database": "OFG_Definitive_Engineering_Atlas_Rev3_MACHINE_ANNEX.sqlite",
+  "catalog": "OFG_Definitive_Engineering_Atlas_Rev3_MACHINE_ANNEX_CATALOG.csv",
+  "rule": "Atlas governs engineering meaning/canon status; Annex preserves program-consumable structured data and does not promote working records to canon."
+}

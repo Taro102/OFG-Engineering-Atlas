@@ -1,0 +1,847 @@
+{
+  "type": "FeatureCollection",
+  "name": "OFG_Atlas_Rev3_Site_Engineering_Geometry",
+  "crs_note": "Local Cartesian engineering grid OFG-GRID-2031; +E east, +N north; metres. Not a geographic CRS.",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "F-101",
+      "properties": {
+        "name": "Tokamak Building",
+        "zone": "Z01",
+        "height_m": 52.0,
+        "status": "E",
+        "datum": "OFG-GRID-2031",
+        "surveyed": false,
+        "control_note": "Engineering reconstruction geometry; not survey/fabrication control."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              941.0,
+              941.0
+            ],
+            [
+              1059.0,
+              941.0
+            ],
+            [
+              1059.0,
+              1059.0
+            ],
+            [
+              941.0,
+              1059.0
+            ],
+            [
+              941.0,
+              941.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "F-102",
+      "properties": {
+        "name": "Assembly/Outage Hall",
+        "zone": "Z01",
+        "height_m": 42.0,
+        "status": "E",
+        "datum": "OFG-GRID-2031",
+        "surveyed": false,
+        "control_note": "Engineering reconstruction geometry; not survey/fabrication control."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              952.5,
+              1067.5
+            ],
+            [
+              1047.5,
+              1067.5
+            ],
+            [
+              1047.5,
+              1202.5
+            ],
+            [
+              952.5,
+              1202.5
+            ],
+            [
+              952.5,
+              1067.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "F-103",
+      "properties": {
+        "name": "Tritium/Fuel Cycle Building",
+        "zone": "Z02",
+        "height_m": 32.0,
+        "status": "E",
+        "datum": "OFG-GRID-2031",
+        "surveyed": false,
+        "control_note": "Engineering reconstruction geometry; not survey/fabrication control."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              824.0,
+              944.0
+            ],
+            [
+              906.0,
+              944.0
+            ],
+            [
+              906.0,
+              1056.0
+            ],
+            [
+              824.0,
+              1056.0
+            ],
+            [
+              824.0,
+              944.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "F-104",
+      "properties": {
+        "name": "Neutral Beam Building",
+        "zone": "Z01",
+        "height_m": 28.0,
+        "status": "E",
+        "datum": "OFG-GRID-2031",
+        "surveyed": false,
+        "control_note": "Engineering reconstruction geometry; not survey/fabrication control."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1080.0,
+              952.5
+            ],
+            [
+              1190.0,
+              952.5
+            ],
+            [
+              1190.0,
+              1047.5
+            ],
+            [
+              1080.0,
+              1047.5
+            ],
+            [
+              1080.0,
+              952.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "F-105",
+      "properties": {
+        "name": "RF/Heating Building",
+        "zone": "Z01",
+        "height_m": 26.0,
+        "status": "E",
+        "datum": "OFG-GRID-2031",
+        "surveyed": false,
+        "control_note": "Engineering reconstruction geometry; not survey/fabrication control."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1075.0,
+              1079.0
+            ],
+            [
+              1155.0,
+              1079.0
+            ],
+            [
+              1155.0,
+              1151.0
+            ],
+            [
+              1075.0,
+              1151.0
+            ],
+            [
+              1075.0,
+              1079.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "H-101",
+      "properties": {
+        "name": "Heat Transport/Steam Generation",
+        "zone": "Z03",
+        "height_m": 35.0,
+        "status": "E",
+        "datum": "OFG-GRID-2031",
+        "surveyed": false,
+        "control_note": "Engineering reconstruction geometry; not survey/fabrication control."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              922.5,
+              782.5
+            ],
+            [
+              1077.5,
+              782.5
+            ],
+            [
+              1077.5,
+              887.5
+            ],
+            [
+              922.5,
+              887.5
+            ],
+            [
+              922.5,
+              782.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "T-101",
+      "properties": {
+        "name": "Turbine Hall",
+        "zone": "Z04",
+        "height_m": 38.0,
+        "status": "E",
+        "datum": "OFG-GRID-2031",
+        "surveyed": false,
+        "control_note": "Engineering reconstruction geometry; not survey/fabrication control."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              895.0,
+              626.0
+            ],
+            [
+              1105.0,
+              626.0
+            ],
+            [
+              1105.0,
+              704.0
+            ],
+            [
+              895.0,
+              704.0
+            ],
+            [
+              895.0,
+              626.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "T-102",
+      "properties": {
+        "name": "Condenser/Feedwater Annex",
+        "zone": "Z04",
+        "height_m": 22.0,
+        "status": "E",
+        "datum": "OFG-GRID-2031",
+        "surveyed": false,
+        "control_note": "Engineering reconstruction geometry; not survey/fabrication control."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              915.0,
+              544.0
+            ],
+            [
+              1085.0,
+              544.0
+            ],
+            [
+              1085.0,
+              606.0
+            ],
+            [
+              915.0,
+              606.0
+            ],
+            [
+              915.0,
+              544.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "C-101",
+      "properties": {
+        "name": "Cryoplant Compressor Hall",
+        "zone": "Z05",
+        "height_m": 26.0,
+        "status": "E",
+        "datum": "OFG-GRID-2031",
+        "surveyed": false,
+        "control_note": "Engineering reconstruction geometry; not survey/fabrication control."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1210.0,
+              809.0
+            ],
+            [
+              1340.0,
+              809.0
+            ],
+            [
+              1340.0,
+              881.0
+            ],
+            [
+              1210.0,
+              881.0
+            ],
+            [
+              1210.0,
+              809.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "C-102",
+      "properties": {
+        "name": "Cold Box/Storage",
+        "zone": "Z05",
+        "height_m": 28.0,
+        "status": "E",
+        "datum": "OFG-GRID-2031",
+        "surveyed": false,
+        "control_note": "Engineering reconstruction geometry; not survey/fabrication control."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1200.0,
+              897.5
+            ],
+            [
+              1290.0,
+              897.5
+            ],
+            [
+              1290.0,
+              962.5
+            ],
+            [
+              1200.0,
+              962.5
+            ],
+            [
+              1200.0,
+              897.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "E-101",
+      "properties": {
+        "name": "Main Electrical Building",
+        "zone": "Z05",
+        "height_m": 25.0,
+        "status": "E",
+        "datum": "OFG-GRID-2031",
+        "surveyed": false,
+        "control_note": "Engineering reconstruction geometry; not survey/fabrication control."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              692.5,
+              799.0
+            ],
+            [
+              827.5,
+              799.0
+            ],
+            [
+              827.5,
+              871.0
+            ],
+            [
+              692.5,
+              871.0
+            ],
+            [
+              692.5,
+              799.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "E-102",
+      "properties": {
+        "name": "Magnet Power Conversion",
+        "zone": "Z05",
+        "height_m": 28.0,
+        "status": "E",
+        "datum": "OFG-GRID-2031",
+        "surveyed": false,
+        "control_note": "Engineering reconstruction geometry; not survey/fabrication control."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              687.5,
+              885.0
+            ],
+            [
+              832.5,
+              885.0
+            ],
+            [
+              832.5,
+              975.0
+            ],
+            [
+              687.5,
+              975.0
+            ],
+            [
+              687.5,
+              885.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "K-101",
+      "properties": {
+        "name": "Main Control/I&C Building",
+        "zone": "Z05",
+        "height_m": 24.0,
+        "status": "E",
+        "datum": "OFG-GRID-2031",
+        "surveyed": false,
+        "control_note": "Engineering reconstruction geometry; not survey/fabrication control."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              802.5,
+              1094.0
+            ],
+            [
+              897.5,
+              1094.0
+            ],
+            [
+              897.5,
+              1156.0
+            ],
+            [
+              802.5,
+              1156.0
+            ],
+            [
+              802.5,
+              1094.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "R-101",
+      "properties": {
+        "name": "Hot Cell/Radwaste",
+        "zone": "Z02",
+        "height_m": 32.0,
+        "status": "E",
+        "datum": "OFG-GRID-2031",
+        "surveyed": false,
+        "control_note": "Engineering reconstruction geometry; not survey/fabrication control."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              797.5,
+              819.0
+            ],
+            [
+              892.5,
+              819.0
+            ],
+            [
+              892.5,
+              911.0
+            ],
+            [
+              797.5,
+              911.0
+            ],
+            [
+              797.5,
+              819.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "U-101",
+      "properties": {
+        "name": "Central Utilities",
+        "zone": "Z08",
+        "height_m": 22.0,
+        "status": "E",
+        "datum": "OFG-GRID-2031",
+        "surveyed": false,
+        "control_note": "Engineering reconstruction geometry; not survey/fabrication control."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1200.0,
+              660.0
+            ],
+            [
+              1320.0,
+              660.0
+            ],
+            [
+              1320.0,
+              740.0
+            ],
+            [
+              1200.0,
+              740.0
+            ],
+            [
+              1200.0,
+              660.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W-101",
+      "properties": {
+        "name": "Lake Intake Pump House",
+        "zone": "Z06",
+        "height_m": 18.0,
+        "status": "E",
+        "datum": "OFG-GRID-2031",
+        "surveyed": false,
+        "control_note": "Engineering reconstruction geometry; not survey/fabrication control."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              970.0,
+              237.5
+            ],
+            [
+              1050.0,
+              237.5
+            ],
+            [
+              1050.0,
+              282.5
+            ],
+            [
+              970.0,
+              282.5
+            ],
+            [
+              970.0,
+              237.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "W-102",
+      "properties": {
+        "name": "Outfall/Screening Structure",
+        "zone": "Z06",
+        "height_m": 14.0,
+        "status": "E",
+        "datum": "OFG-GRID-2031",
+        "surveyed": false,
+        "control_note": "Engineering reconstruction geometry; not survey/fabrication control."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1107.5,
+              230.0
+            ],
+            [
+              1172.5,
+              230.0
+            ],
+            [
+              1172.5,
+              270.0
+            ],
+            [
+              1107.5,
+              270.0
+            ],
+            [
+              1107.5,
+              230.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "S-101",
+      "properties": {
+        "name": "500-kV Switchyard",
+        "zone": "Z07",
+        "height_m": 0.0,
+        "status": "E",
+        "datum": "OFG-GRID-2031",
+        "surveyed": false,
+        "control_note": "Engineering reconstruction geometry; not survey/fabrication control."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              495.0,
+              565.0
+            ],
+            [
+              725.0,
+              565.0
+            ],
+            [
+              725.0,
+              735.0
+            ],
+            [
+              495.0,
+              735.0
+            ],
+            [
+              495.0,
+              565.0
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "L-101",
+      "properties": {
+        "name": "Main Warehouse/Receiving",
+        "zone": "Z08",
+        "height_m": 18.0,
+        "status": "E",
+        "datum": "OFG-GRID-2031",
+        "surveyed": false,
+        "control_note": "Engineering reconstruction geometry; not survey/fabrication control."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1335.0,
+              1032.5
+            ],
+            [
+              1505.0,
+              1032.5
+            ],
+            [
+              1505.0,
+              1127.5
+            ],
+            [
+              1335.0,
+              1127.5
+            ],
+            [
+              1335.0,
+              1032.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "A-101",
+      "properties": {
+        "name": "Administration/Training",
+        "zone": "Z08",
+        "height_m": 20.0,
+        "status": "E",
+        "datum": "OFG-GRID-2031",
+        "surveyed": false,
+        "control_note": "Engineering reconstruction geometry; not survey/fabrication control."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              627.5,
+              1102.5
+            ],
+            [
+              732.5,
+              1102.5
+            ],
+            [
+              732.5,
+              1177.5
+            ],
+            [
+              627.5,
+              1177.5
+            ],
+            [
+              627.5,
+              1102.5
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "M-101",
+      "properties": {
+        "name": "Maintenance/Workshops",
+        "zone": "Z08",
+        "height_m": 20.0,
+        "status": "E",
+        "datum": "OFG-GRID-2031",
+        "surveyed": false,
+        "control_note": "Engineering reconstruction geometry; not survey/fabrication control."
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1305.0,
+              897.5
+            ],
+            [
+              1435.0,
+              897.5
+            ],
+            [
+              1435.0,
+              982.5
+            ],
+            [
+              1305.0,
+              982.5
+            ],
+            [
+              1305.0,
+              897.5
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

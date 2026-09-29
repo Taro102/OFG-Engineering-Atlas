@@ -1,3 +1,7 @@
 # OFG Engineering Atlas Phase-4 raw provenance byte-preservation rules
 working_raw/worker_returns_archive/** -text
 working_raw/by_package/** -text
+
+# Phase-6 reference corpus byte preservation
+reference_raw/** -text
+reference_raw/OFG_Site_Work_History_Master_RevW3(8).csv filter=lfs diff=lfs merge=lfs -text

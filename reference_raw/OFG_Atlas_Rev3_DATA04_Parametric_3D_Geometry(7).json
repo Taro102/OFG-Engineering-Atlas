@@ -1,0 +1,556 @@
+{
+  "schema_version": "OFG-R3-GEOM-1.0",
+  "datum": {
+    "id": "OFG-GRID-2031",
+    "status": "E",
+    "units": "m",
+    "axes": {
+      "E": "east",
+      "N": "north",
+      "Z": "elevation"
+    },
+    "machine_center": {
+      "id": "MC-0",
+      "E": 1000.0,
+      "N": 1000.0,
+      "Z": 112.0,
+      "status": "E",
+      "surveyed": false
+    },
+    "warning": "All E-layer coordinates are engineering reconstruction coordinates, not surveyed field control."
+  },
+  "toroidal_architecture": {
+    "sector_count": 16,
+    "sector_angle_deg": 22.5,
+    "status": "C",
+    "sectors": [
+      {
+        "sector_id": "SS-01",
+        "index": 1,
+        "center_angle_deg": 0.0,
+        "angular_extent_deg": [
+          -11.25,
+          11.25
+        ],
+        "origin": "MC-0",
+        "radial_extent": "OPEN",
+        "vertical_extent": "OPEN",
+        "blanket_ids": [
+          "BLK-S01-I1",
+          "BLK-S01-I2",
+          "BLK-S01-O1",
+          "BLK-S01-O2",
+          "BLK-S01-O3"
+        ],
+        "divertor_ids": [
+          "DIV-S01-1",
+          "DIV-S01-2",
+          "DIV-S01-3"
+        ],
+        "port_ids": [
+          "UP-01",
+          "EQ-01",
+          "LP-01"
+        ],
+        "status": "C topology / OPEN metric geometry"
+      },
+      {
+        "sector_id": "SS-02",
+        "index": 2,
+        "center_angle_deg": 22.5,
+        "angular_extent_deg": [
+          11.25,
+          33.75
+        ],
+        "origin": "MC-0",
+        "radial_extent": "OPEN",
+        "vertical_extent": "OPEN",
+        "blanket_ids": [
+          "BLK-S02-I1",
+          "BLK-S02-I2",
+          "BLK-S02-O1",
+          "BLK-S02-O2",
+          "BLK-S02-O3"
+        ],
+        "divertor_ids": [
+          "DIV-S02-1",
+          "DIV-S02-2",
+          "DIV-S02-3"
+        ],
+        "port_ids": [
+          "UP-02",
+          "EQ-02",
+          "LP-02"
+        ],
+        "status": "C topology / OPEN metric geometry"
+      },
+      {
+        "sector_id": "SS-03",
+        "index": 3,
+        "center_angle_deg": 45.0,
+        "angular_extent_deg": [
+          33.75,
+          56.25
+        ],
+        "origin": "MC-0",
+        "radial_extent": "OPEN",
+        "vertical_extent": "OPEN",
+        "blanket_ids": [
+          "BLK-S03-I1",
+          "BLK-S03-I2",
+          "BLK-S03-O1",
+          "BLK-S03-O2",
+          "BLK-S03-O3"
+        ],
+        "divertor_ids": [
+          "DIV-S03-1",
+          "DIV-S03-2",
+          "DIV-S03-3"
+        ],
+        "port_ids": [
+          "UP-03",
+          "EQ-03",
+          "LP-03"
+        ],
+        "status": "C topology / OPEN metric geometry"
+      },
+      {
+        "sector_id": "SS-04",
+        "index": 4,
+        "center_angle_deg": 67.5,
+        "angular_extent_deg": [
+          56.25,
+          78.75
+        ],
+        "origin": "MC-0",
+        "radial_extent": "OPEN",
+        "vertical_extent": "OPEN",
+        "blanket_ids": [
+          "BLK-S04-I1",
+          "BLK-S04-I2",
+          "BLK-S04-O1",
+          "BLK-S04-O2",
+          "BLK-S04-O3"
+        ],
+        "divertor_ids": [
+          "DIV-S04-1",
+          "DIV-S04-2",
+          "DIV-S04-3"
+        ],
+        "port_ids": [
+          "UP-04",
+          "EQ-04",
+          "LP-04"
+        ],
+        "status": "C topology / OPEN metric geometry"
+      },
+      {
+        "sector_id": "SS-05",
+        "index": 5,
+        "center_angle_deg": 90.0,
+        "angular_extent_deg": [
+          78.75,
+          101.25
+        ],
+        "origin": "MC-0",
+        "radial_extent": "OPEN",
+        "vertical_extent": "OPEN",
+        "blanket_ids": [
+          "BLK-S05-I1",
+          "BLK-S05-I2",
+          "BLK-S05-O1",
+          "BLK-S05-O2",
+          "BLK-S05-O3"
+        ],
+        "divertor_ids": [
+          "DIV-S05-1",
+          "DIV-S05-2",
+          "DIV-S05-3"
+        ],
+        "port_ids": [
+          "UP-05",
+          "EQ-05",
+          "LP-05"
+        ],
+        "status": "C topology / OPEN metric geometry"
+      },
+      {
+        "sector_id": "SS-06",
+        "index": 6,
+        "center_angle_deg": 112.5,
+        "angular_extent_deg": [
+          101.25,
+          123.75
+        ],
+        "origin": "MC-0",
+        "radial_extent": "OPEN",
+        "vertical_extent": "OPEN",
+        "blanket_ids": [
+          "BLK-S06-I1",
+          "BLK-S06-I2",
+          "BLK-S06-O1",
+          "BLK-S06-O2",
+          "BLK-S06-O3"
+        ],
+        "divertor_ids": [
+          "DIV-S06-1",
+          "DIV-S06-2",
+          "DIV-S06-3"
+        ],
+        "port_ids": [
+          "UP-06",
+          "EQ-06",
+          "LP-06"
+        ],
+        "status": "C topology / OPEN metric geometry"
+      },
+      {
+        "sector_id": "SS-07",
+        "index": 7,
+        "center_angle_deg": 135.0,
+        "angular_extent_deg": [
+          123.75,
+          146.25
+        ],
+        "origin": "MC-0",
+        "radial_extent": "OPEN",
+        "vertical_extent": "OPEN",
+        "blanket_ids": [
+          "BLK-S07-I1",
+          "BLK-S07-I2",
+          "BLK-S07-O1",
+          "BLK-S07-O2",
+          "BLK-S07-O3"
+        ],
+        "divertor_ids": [
+          "DIV-S07-1",
+          "DIV-S07-2",
+          "DIV-S07-3"
+        ],
+        "port_ids": [
+          "UP-07",
+          "EQ-07",
+          "LP-07"
+        ],
+        "status": "C topology / OPEN metric geometry"
+      },
+      {
+        "sector_id": "SS-08",
+        "index": 8,
+        "center_angle_deg": 157.5,
+        "angular_extent_deg": [
+          146.25,
+          168.75
+        ],
+        "origin": "MC-0",
+        "radial_extent": "OPEN",
+        "vertical_extent": "OPEN",
+        "blanket_ids": [
+          "BLK-S08-I1",
+          "BLK-S08-I2",
+          "BLK-S08-O1",
+          "BLK-S08-O2",
+          "BLK-S08-O3"
+        ],
+        "divertor_ids": [
+          "DIV-S08-1",
+          "DIV-S08-2",
+          "DIV-S08-3"
+        ],
+        "port_ids": [
+          "UP-08",
+          "EQ-08",
+          "LP-08"
+        ],
+        "status": "C topology / OPEN metric geometry"
+      },
+      {
+        "sector_id": "SS-09",
+        "index": 9,
+        "center_angle_deg": 180.0,
+        "angular_extent_deg": [
+          168.75,
+          191.25
+        ],
+        "origin": "MC-0",
+        "radial_extent": "OPEN",
+        "vertical_extent": "OPEN",
+        "blanket_ids": [
+          "BLK-S09-I1",
+          "BLK-S09-I2",
+          "BLK-S09-O1",
+          "BLK-S09-O2",
+          "BLK-S09-O3"
+        ],
+        "divertor_ids": [
+          "DIV-S09-1",
+          "DIV-S09-2",
+          "DIV-S09-3"
+        ],
+        "port_ids": [
+          "UP-09",
+          "EQ-09",
+          "LP-09"
+        ],
+        "status": "C topology / OPEN metric geometry"
+      },
+      {
+        "sector_id": "SS-10",
+        "index": 10,
+        "center_angle_deg": 202.5,
+        "angular_extent_deg": [
+          191.25,
+          213.75
+        ],
+        "origin": "MC-0",
+        "radial_extent": "OPEN",
+        "vertical_extent": "OPEN",
+        "blanket_ids": [
+          "BLK-S10-I1",
+          "BLK-S10-I2",
+          "BLK-S10-O1",
+          "BLK-S10-O2",
+          "BLK-S10-O3"
+        ],
+        "divertor_ids": [
+          "DIV-S10-1",
+          "DIV-S10-2",
+          "DIV-S10-3"
+        ],
+        "port_ids": [
+          "UP-10",
+          "EQ-10",
+          "LP-10"
+        ],
+        "status": "C topology / OPEN metric geometry"
+      },
+      {
+        "sector_id": "SS-11",
+        "index": 11,
+        "center_angle_deg": 225.0,
+        "angular_extent_deg": [
+          213.75,
+          236.25
+        ],
+        "origin": "MC-0",
+        "radial_extent": "OPEN",
+        "vertical_extent": "OPEN",
+        "blanket_ids": [
+          "BLK-S11-I1",
+          "BLK-S11-I2",
+          "BLK-S11-O1",
+          "BLK-S11-O2",
+          "BLK-S11-O3"
+        ],
+        "divertor_ids": [
+          "DIV-S11-1",
+          "DIV-S11-2",
+          "DIV-S11-3"
+        ],
+        "port_ids": [
+          "UP-11",
+          "EQ-11",
+          "LP-11"
+        ],
+        "status": "C topology / OPEN metric geometry"
+      },
+      {
+        "sector_id": "SS-12",
+        "index": 12,
+        "center_angle_deg": 247.5,
+        "angular_extent_deg": [
+          236.25,
+          258.75
+        ],
+        "origin": "MC-0",
+        "radial_extent": "OPEN",
+        "vertical_extent": "OPEN",
+        "blanket_ids": [
+          "BLK-S12-I1",
+          "BLK-S12-I2",
+          "BLK-S12-O1",
+          "BLK-S12-O2",
+          "BLK-S12-O3"
+        ],
+        "divertor_ids": [
+          "DIV-S12-1",
+          "DIV-S12-2",
+          "DIV-S12-3"
+        ],
+        "port_ids": [
+          "UP-12",
+          "EQ-12",
+          "LP-12"
+        ],
+        "status": "C topology / OPEN metric geometry"
+      },
+      {
+        "sector_id": "SS-13",
+        "index": 13,
+        "center_angle_deg": 270.0,
+        "angular_extent_deg": [
+          258.75,
+          281.25
+        ],
+        "origin": "MC-0",
+        "radial_extent": "OPEN",
+        "vertical_extent": "OPEN",
+        "blanket_ids": [
+          "BLK-S13-I1",
+          "BLK-S13-I2",
+          "BLK-S13-O1",
+          "BLK-S13-O2",
+          "BLK-S13-O3"
+        ],
+        "divertor_ids": [
+          "DIV-S13-1",
+          "DIV-S13-2",
+          "DIV-S13-3"
+        ],
+        "port_ids": [
+          "UP-13",
+          "EQ-13",
+          "LP-13"
+        ],
+        "status": "C topology / OPEN metric geometry"
+      },
+      {
+        "sector_id": "SS-14",
+        "index": 14,
+        "center_angle_deg": 292.5,
+        "angular_extent_deg": [
+          281.25,
+          303.75
+        ],
+        "origin": "MC-0",
+        "radial_extent": "OPEN",
+        "vertical_extent": "OPEN",
+        "blanket_ids": [
+          "BLK-S14-I1",
+          "BLK-S14-I2",
+          "BLK-S14-O1",
+          "BLK-S14-O2",
+          "BLK-S14-O3"
+        ],
+        "divertor_ids": [
+          "DIV-S14-1",
+          "DIV-S14-2",
+          "DIV-S14-3"
+        ],
+        "port_ids": [
+          "UP-14",
+          "EQ-14",
+          "LP-14"
+        ],
+        "status": "C topology / OPEN metric geometry"
+      },
+      {
+        "sector_id": "SS-15",
+        "index": 15,
+        "center_angle_deg": 315.0,
+        "angular_extent_deg": [
+          303.75,
+          326.25
+        ],
+        "origin": "MC-0",
+        "radial_extent": "OPEN",
+        "vertical_extent": "OPEN",
+        "blanket_ids": [
+          "BLK-S15-I1",
+          "BLK-S15-I2",
+          "BLK-S15-O1",
+          "BLK-S15-O2",
+          "BLK-S15-O3"
+        ],
+        "divertor_ids": [
+          "DIV-S15-1",
+          "DIV-S15-2",
+          "DIV-S15-3"
+        ],
+        "port_ids": [
+          "UP-15",
+          "EQ-15",
+          "LP-15"
+        ],
+        "status": "C topology / OPEN metric geometry"
+      },
+      {
+        "sector_id": "SS-16",
+        "index": 16,
+        "center_angle_deg": 337.5,
+        "angular_extent_deg": [
+          326.25,
+          348.75
+        ],
+        "origin": "MC-0",
+        "radial_extent": "OPEN",
+        "vertical_extent": "OPEN",
+        "blanket_ids": [
+          "BLK-S16-I1",
+          "BLK-S16-I2",
+          "BLK-S16-O1",
+          "BLK-S16-O2",
+          "BLK-S16-O3"
+        ],
+        "divertor_ids": [
+          "DIV-S16-1",
+          "DIV-S16-2",
+          "DIV-S16-3"
+        ],
+        "port_ids": [
+          "UP-16",
+          "EQ-16",
+          "LP-16"
+        ],
+        "status": "C topology / OPEN metric geometry"
+      }
+    ]
+  },
+  "blanket_architecture": {
+    "total_assemblies": 80,
+    "assemblies_per_sector": 5,
+    "status": "C",
+    "positions": [
+      "I1",
+      "I2",
+      "O1",
+      "O2",
+      "O3"
+    ],
+    "radial_coordinates": "OPEN",
+    "poloidal_coordinates": "OPEN"
+  },
+  "divertor_architecture": {
+    "total_cassettes": 48,
+    "cassettes_per_sector": 3,
+    "status": "C",
+    "radial_coordinates": "OPEN",
+    "vertical_coordinates": "OPEN"
+  },
+  "ports": {
+    "per_sector": [
+      {
+        "family": "UP",
+        "function": "upper maintenance / blanket RH",
+        "geometry": "OPEN"
+      },
+      {
+        "family": "EQ",
+        "function": "equatorial services / diagnostics / heating assignment OPEN",
+        "geometry": "OPEN"
+      },
+      {
+        "family": "LP",
+        "function": "lower maintenance / divertor RH",
+        "geometry": "OPEN"
+      }
+    ]
+  },
+  "route_coordinate_contract": {
+    "centreline": "ordered E,N,Z vertices",
+    "section": "OD/duct/tray envelope",
+    "support": "support object IDs and 6DOF restraint data",
+    "penetration": "controlled penetration IDs",
+    "status_rule": "No metric route coordinate may be inferred from schematic topology."
+  }
+}
