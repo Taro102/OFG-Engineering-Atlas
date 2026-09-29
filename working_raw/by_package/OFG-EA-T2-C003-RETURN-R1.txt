@@ -1,0 +1,4805 @@
+{
+  "ARTIFACT_TYPE": "OFG_ENGINEERING_ATLAS_WORKER_RETURN",
+  "SCHEMA_VERSION": "1.0.0",
+  "RETURN_PACKET_ID": "OFG-EA-T2-C003-RETURN-R1",
+  "SOURCE_THREAD": 2,
+  "TARGET_THREAD": 1,
+  "CYCLE_ID": "OFG-EA-CYCLE-003",
+  "TASK_ID": "T2-C003-THERMAL-FLUID-MECHANICAL-PLANTWIDE-DISCOVERY-INSTANTIATION-WAVE1",
+  "INPUT_BASELINE_ID": "OFG-EA-B000-REV3-REVW3-REVS-2031-04-19",
+  "INTEGRATED_STAGING_DELTA_ID": "OFG-EA-C002-INTEGRATED-STAGING-R1",
+  "WORKING_VIEW_ID": "OFG-EA-B000-PLUS-C001-C002-STAGING-R1",
+  "CONFIGURATION_CUT": "2031-04-19",
+  "HEADER": {
+    "WORKER_ROLE": "PARALLEL_ENGINEERING_REVIEW_WORKER",
+    "PRIMARY_ORIENTATION": "THERMAL_FLUID_MECHANICAL_PROCESS_POWER_CONVERSION",
+    "C003_PRIORITY_MODE": "BREADTH_EXPANSION_WITH_BHT401_CRITICAL_ANCHOR_DEEPENING",
+    "ASSURANCE_CLASS": "AS3",
+    "GLOBAL_WRITE_PERFORMED": false,
+    "CANONICAL_SYSTEM_TAGS_CREATED": false,
+    "CANONICAL_ID_MUTATION_PERFORMED": false,
+    "LEGACY_94_SYSTEM_COUNT_USED_AS_SCOPE_CEILING": false,
+    "GENERIC_PRECEDENT_PROMOTED_TO_OFG_HISTORY": false,
+    "UNSUPPORTED_PROCESS_PARAMETERS_CREATED": false,
+    "UNSUPPORTED_VENDOR_IDENTITIES_CREATED": false,
+    "THREAD_3_FOLLOWUP_REQUESTED": false,
+    "THREAD_3_DEPENDENCY_CREATED": false,
+    "THREAD_3_NAMESPACE_MUTATED": false,
+    "BHT401_FLOW_CONFLICT_CLOSED": false,
+    "BHT401_MOTOR_TYPE_SELECTED": false,
+    "BHT401_MOTOR_TERMINAL_VOLTAGE_SELECTED": false,
+    "NEXT_MAJOR_CYCLE_SELF_ASSIGNED": false,
+    "RETURN_STATUS": "READY_FOR_THREAD_1_INTEGRATION"
+  },
+  "LOCAL_STATE_CAPSULE": {
+    "PLANTWIDE_THERMAL_FLUID_MECHANICAL_VIEW": {
+      "STATE": "SKELETON_UNDER_RECURSIVE_RECONSTRUCTION",
+      "PRIMARY_EXISTING_SYSTEM_FAMILIES_IN_SCOPE": [
+        "BHT",
+        "DHT",
+        "VHT",
+        "RHR",
+        "SGS",
+        "MSP",
+        "MAIN-STEAM",
+        "TUR",
+        "TURBINE-AUX",
+        "TURBINE-BOP",
+        "TURBINE-ISLAND",
+        "CND",
+        "CFW",
+        "CWS",
+        "CCW",
+        "CHW",
+        "CRY",
+        "VAC",
+        "VVP",
+        "BTX",
+        "TEX",
+        "TRI",
+        "ISS",
+        "TSD",
+        "FUE",
+        "WDS",
+        "ADS",
+        "TMA",
+        "NBI",
+        "ECH",
+        "ICH",
+        "DRN",
+        "UTL",
+        "TEMP-UTIL"
+      ],
+      "CONTROL_RULE": "EXISTING_CODES_ARE_NOT_ASSUMED_TO_FORM_A_COMPLETE_OR_NON_OVERLAPPING_FUNCTIONAL_DECOMPOSITION"
+    },
+    "APRIL_19_2031_GROUP_STATES": {
+      "COOLING_WATER_CHILLED_WATER": "OA_OR_IC",
+      "CRYOPLANT_CRYODISTRIBUTION": "IC_AND_OPERATING_SUPPORT",
+      "VACUUM": "IC_PUMPDOWN_AND_LEAK_CAMPAIGNS",
+      "BLANKET_DIVERTOR_VESSEL_COOLING": "FC_OR_IC",
+      "FUELLING_DISRUPTION_MITIGATION": "FC_OR_IC",
+      "ECH": "FC_OR_IC",
+      "NBI_ICH": "PC_OR_FC_WITH_PORTIONS_POST_FIRST_PLASMA",
+      "TRITIUM_FUEL_CYCLE": "PC_OR_FC_NO_FULL_DT_SERVICE",
+      "MAIN_STEAM_TURBINE_FEEDWATER": "PC_OR_FC",
+      "GRID_SYNCHRONIZATION": "NOT_PERFORMED",
+      "SOURCE_CITATION": ":chatgpt-content-reference{index="0"}"
+    },
+    "BHT401_ANCHOR_STATE": {
+      "WORKING_PHYSICAL_PUMPS_PER_TRAIN": 2,
+      "WORKING_PUMP_CONFIGURATION": "2_X_50_PERCENT",
+      "WORKING_PHYSICAL_SGHX_MODULES_PER_TRAIN": 2,
+      "EXACT_CANONICAL_SUBUNIT_TAGS": "OPEN",
+      "PUMP_FLOW_CONFLICT": "QUARANTINE",
+      "SCREENED_PER_PUMP_FULL_DUTY_FLOW_M3_S": [
+        3.143,
+        3.367
+      ],
+      "SOURCE_1_15_M3_S_VALUE": "QUARANTINED",
+      "SCREENED_SHAFT_POWER_MW_PER_PHYSICAL_PUMP": [
+        6.286,
+        6.735
+      ],
+      "PUMP_HQ_CURVE": "OPEN",
+      "SYSTEM_CURVE": "OPEN",
+      "NPSH": "OPEN",
+      "CHECK_VALVE_CARDINALITY": "OPEN",
+      "MOTOR_VENDOR_PACKAGE": "NOT_LOCATED",
+      "STARTER_OR_DRIVE_PACKAGE": "NOT_LOCATED",
+      "MOTOR_TYPE": "OPEN_INDUCTION_OR_SYNCHRONOUS",
+      "MOTOR_TERMINAL_VOLTAGE": "OPEN",
+      "CRS01_FLEXIBLE_CONNECTOR_DATA": "OPEN",
+      "RST_L2_AS_BUILT_AND_SETTING_DATA": "OPEN",
+      "M88217_PHYSICAL_EXECUTION": "UNVERIFIED"
+    }
+  },
+  "EXECUTED_SCOPE": {
+    "FUNCTION_FIRST_PLANTWIDE_DISCOVERY": "EXECUTED_WAVE1",
+    "LEGACY_SYSTEM_BOUNDARY_CHALLENGE": "EXECUTED",
+    "THERMAL_TRANSPORT_DISCOVERY": "EXECUTED",
+    "POWER_CONVERSION_DISCOVERY": "EXECUTED",
+    "COOLING_WATER_DISCOVERY": "EXECUTED",
+    "CRYOGENIC_PROCESS_DISCOVERY": "EXECUTED",
+    "VACUUM_AND_GAS_DISCOVERY": "EXECUTED",
+    "HEATING_CURRENT_DRIVE_UTILITY_INTERFACE_DISCOVERY": "EXECUTED",
+    "TRITIUM_AND_FUEL_PROCESS_DISCOVERY": "EXECUTED",
+    "CHEMISTRY_PURIFICATION_DRAIN_VENT_SAMPLE_DISCOVERY": "EXECUTED",
+    "COMPRESSED_GAS_UTILITY_DISCOVERY": "EXECUTED",
+    "ROTATING_EQUIPMENT_PACKAGE_DECOMPOSITION": "EXECUTED_WAVE1",
+    "HEAT_EXCHANGER_PRESSURE_VESSEL_PACKAGE_DECOMPOSITION": "EXECUTED_WAVE1",
+    "PIPING_SUPPORT_RESTRAINT_PENETRATION_BOUNDARY_MODEL": "EXECUTED_WAVE1",
+    "TEMPORARY_COMMISSIONING_PROCESS_SYSTEM_DISCOVERY": "EXECUTED",
+    "PROCUREMENT_MANUFACTURING_LIFECYCLE_EXPANSION": "EXECUTED_WAVE1",
+    "CONSTRUCTION_INSTALLATION_LIFECYCLE_EXPANSION": "EXECUTED_WAVE1",
+    "COMMISSIONING_TURNOVER_MAINTENANCE_LIFECYCLE_EXPANSION": "EXECUTED_WAVE1",
+    "BHT401_CRITICAL_ANCHOR_SEARCH": "EXECUTED_NO_NEW_AUTHORITATIVE_CLOSURE"
+  },
+  "UNFINISHED_SCOPE": [
+    {
+      "ID": "T2-C003-UF-001",
+      "SUBJECT": "SYSTEM_BOUNDARY_CANONICALIZATION",
+      "STATE": "THREAD_1_RECONCILIATION_REQUIRED",
+      "DETAIL": "FUNCTION_DISCOVERY_IDENTIFIES_OVERLAPPING_OR_UNDERDECOMPOSED_FAMILIES_BUT_DOES_NOT_CREATE_NEW_CANONICAL_SYSTEM_CODES"
+    },
+    {
+      "ID": "T2-C003-UF-002",
+      "SUBJECT": "CLIENT_HEAT_LOAD_MATRIX",
+      "STATE": "OPEN",
+      "REQUIRED": [
+        "CLIENT_BY_CLIENT_NORMAL_HEAT_LOAD",
+        "STARTUP_HEAT_LOAD",
+        "SHUTDOWN_HEAT_LOAD",
+        "DECAY_OR_RESIDUAL_HEAT",
+        "REDUNDANCY_CLASS",
+        "REQUIRED_SUPPLY_RETURN_TEMPERATURE",
+        "FLOW",
+        "PRESSURE",
+        "WATER_QUALITY",
+        "ELECTRICAL_LOAD"
+      ]
+    },
+    {
+      "ID": "T2-C003-UF-003",
+      "SUBJECT": "PLANTWIDE_ROTATING_EQUIPMENT_DRIVER_LOAD_LIST",
+      "STATE": "OPEN",
+      "DETAIL": "PUMP_COMPRESSOR_CHILLER_VACUUM_AND_CRYOGENIC_DRIVER_IDENTITIES_AND_ACTUAL_ELECTRICAL_FEEDS_REMAIN_INCOMPLETE"
+    },
+    {
+      "ID": "T2-C003-UF-004",
+      "SUBJECT": "PLANTWIDE_PRESSURE_BOUNDARY_CONNECTION_GRAPH",
+      "STATE": "OPEN",
+      "REQUIRED": [
+        "NOZZLE_REGISTER",
+        "LINE_LIST",
+        "VALVE_LIST",
+        "SPOOL_MAP",
+        "WELD_MAP",
+        "FLANGE_GASKET_BOLTING_REGISTER",
+        "SUPPORT_REGISTER",
+        "PENETRATION_REGISTER",
+        "TEST_BOUNDARY_REGISTER"
+      ]
+    },
+    {
+      "ID": "T2-C003-UF-005",
+      "SUBJECT": "PLANTWIDE_PROCESS_UTILITY_QUALITY_CLASSES",
+      "STATE": "OPEN",
+      "DETAIL": "SERVICE_AIR_INSTRUMENT_AIR_NITROGEN_HELIUM_DEMINERALIZED_WATER_SERVICE_WATER_AND_POTABLE_WATER_REQUIRE_SEPARATE_QUALITY_RELIABILITY_AND_CROSS_CONNECTION_CONTROL"
+    },
+    {
+      "ID": "T2-C003-UF-006",
+      "SUBJECT": "TRITIUM_PROCESS_BOUNDARY_CANONICALIZATION",
+      "STATE": "OPEN",
+      "DETAIL": "TRI_TEX_BTX_ISS_TSD_FUE_WDS_ADS_TMA_FUNCTIONS_EXIST_OR_ARE_REFERENCED_BUT_THEIR_NON_OVERLAPPING_PHYSICAL_AND_CUSTODY_BOUNDARIES_ARE_NOT_FULLY_CLOSED"
+    },
+    {
+      "ID": "T2-C003-UF-007",
+      "SUBJECT": "BHT401_PROJECT_SPECIFIC_CLOSURE_RECORDS",
+      "STATE": "BLOCKED_BY_RECORD_RECOVERY"
+    }
+  ],
+  "RESEARCH_PERFORMED": [
+    {
+      "RESEARCH_ID": "T2-C003-RS-EN-001",
+      "LANGUAGE": "ENGLISH",
+      "DOMAIN": "FUSION_COOLING_HIERARCHY",
+      "SOURCE_CLASS": "ITER_PRIMARY",
+      "FINDING": "ITER separates tokamak cooling, component cooling, chilled water and final heat rejection; auxiliary RF, cryogenic and coil-power loads are explicit cooling clients. This is used only to test completeness of OFG client-loop and heat-rejection decomposition.",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="1"}",
+        ":chatgpt-content-reference{index="2"}",
+        ":chatgpt-content-reference{index="3"}"
+      ],
+      "OFG_PROMOTION": false
+    },
+    {
+      "RESEARCH_ID": "T2-C003-RS-EN-002",
+      "LANGUAGE": "ENGLISH",
+      "DOMAIN": "CRYOGENIC_PLANT",
+      "SOURCE_CLASS": "ITER_PRIMARY",
+      "FINDING": "ITER cryogenic precedent separates warm refrigeration/compression, helium and nitrogen refrigerators, storage/recovery, cryodistribution boxes, circulation pumps and transfer lines serving magnets, thermal shields and cryopumps.",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="4"}",
+        ":chatgpt-content-reference{index="5"}"
+      ],
+      "OFG_PROMOTION": false
+    },
+    {
+      "RESEARCH_ID": "T2-C003-RS-EN-003",
+      "LANGUAGE": "ENGLISH",
+      "DOMAIN": "VACUUM",
+      "SOURCE_CLASS": "ITER_PRIMARY",
+      "FINDING": "ITER vacuum precedent separates roughing/mechanical pumping, high-vacuum cryopumping, torus exhaust, NBI vacuum, cryostat vacuum, distribution pipework and maintainability/reliability functions.",
+      "CITATION": ":chatgpt-content-reference{index="6"}",
+      "OFG_PROMOTION": false
+    },
+    {
+      "RESEARCH_ID": "T2-C003-RS-EN-004",
+      "LANGUAGE": "ENGLISH",
+      "DOMAIN": "TRITIUM_FUEL_CYCLE",
+      "SOURCE_CLASS": "ITER_PRIMARY",
+      "FINDING": "ITER fuel-cycle precedent separates tokamak exhaust processing, isotope separation, storage/delivery, atmospheric detritiation, water detritiation and analytical functions, supporting explicit boundary reconciliation among OFG TRI/TEX/ISS/TSD/FUE/WDS/ADS/TMA families.",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="7"}",
+        ":chatgpt-content-reference{index="8"}"
+      ],
+      "OFG_PROMOTION": false
+    },
+    {
+      "RESEARCH_ID": "T2-C003-RS-EN-005",
+      "LANGUAGE": "ENGLISH",
+      "DOMAIN": "POWER_CONVERSION",
+      "SOURCE_CLASS": "NRC_REAL_WORLD_REFERENCE",
+      "FINDING": "Conventional nuclear power-conversion review practice separately treats turbine-generator, main steam, main condenser, condenser evacuation, gland sealing, turbine bypass, circulating water, condensate cleanup, condensate/feedwater and steam-generator blowdown. This is used as a completeness check against OFG SGS/MSP/TUR/CND/CFW/CWS boundaries.",
+      "CITATION": ":chatgpt-content-reference{index="9"}",
+      "OFG_PROMOTION": false
+    },
+    {
+      "RESEARCH_ID": "T2-C003-RS-EN-006",
+      "LANGUAGE": "ENGLISH",
+      "DOMAIN": "COMPRESSED_AIR",
+      "SOURCE_CLASS": "IAEA_AUTHORITATIVE_REAL_WORLD_REFERENCE",
+      "FINDING": "Compressed-air design requires explicit air quality, condensate control, distribution topology and reliability treatment; therefore service-air and instrument-air functions should not remain a single undifferentiated UTL placeholder.",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="10"}",
+        ":chatgpt-content-reference{index="11"}"
+      ],
+      "OFG_PROMOTION": false
+    },
+    {
+      "RESEARCH_ID": "T2-C003-RS-EN-007",
+      "LANGUAGE": "ENGLISH",
+      "DOMAIN": "UTILITY_GASES_AND_WATER",
+      "SOURCE_CLASS": "ITER_PRIMARY",
+      "FINDING": "ITER plant utility precedent includes compressed air, nitrogen, gaseous helium, demineralized water and hot-water services distributed to client systems, supporting explicit OFG utility-source, treatment, storage and client-distribution functions.",
+      "CITATION": ":chatgpt-content-reference{index="12"}",
+      "OFG_PROMOTION": false
+    },
+    {
+      "RESEARCH_ID": "T2-C003-RS-EN-008",
+      "LANGUAGE": "ENGLISH",
+      "DOMAIN": "COMMISSIONING_DEPENDENCY",
+      "SOURCE_CLASS": "ITER_PRIMARY",
+      "FINDING": "ITER commissioning precedent sequences electrical/control and liquid/gas/HVAC services before cooling water, cryoplant, heating, vacuum and fuelling, demonstrating why support-system availability and temporary configurations must be represented as dependency edges rather than isolated equipment status.",
+      "CITATION": ":chatgpt-content-reference{index="13"}",
+      "OFG_PROMOTION": false
+    },
+    {
+      "RESEARCH_ID": "T2-C003-RS-JA-001",
+      "LANGUAGE": "JAPANESE_SOURCE_ORIGIN",
+      "DOMAIN": "JA_DEMO_BLANKET_HEAT_TRANSPORT",
+      "SOURCE_CLASS": "QST_PRIMARY_TECHNICAL",
+      "FINDING": "JA DEMO precedent supports high-pressure water-cooled blanket architecture around 290-325 C and 15.5 MPa, but these external values do not independently establish OFG parameters.",
+      "CITATION": ":chatgpt-content-reference{index="14"}",
+      "OFG_PROMOTION": false
+    },
+    {
+      "RESEARCH_ID": "T2-C003-RS-FR-001",
+      "LANGUAGE": "FRENCH",
+      "DOMAIN": "COOLING_AND_CRYOGENICS",
+      "SOURCE_CLASS": "ITER_PRIMARY_FRENCH",
+      "FINDING": "French ITER material independently confirms multiple closed cooling loops plus final heat rejection and cryogenic production/distribution serving magnets, cryopumps and thermal shields.",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="15"}",
+        ":chatgpt-content-reference{index="16"}",
+        ":chatgpt-content-reference{index="17"}"
+      ],
+      "OFG_PROMOTION": false
+    },
+    {
+      "RESEARCH_ID": "T2-C003-RS-FR-002",
+      "LANGUAGE": "FRENCH",
+      "DOMAIN": "FUEL_CYCLE",
+      "SOURCE_CLASS": "ITER_PRIMARY_FRENCH",
+      "FINDING": "French ITER fuel-cycle documentation independently reproduces the six-function decomposition of exhaust processing, isotope separation, storage/delivery, atmosphere detritiation, water detritiation and analytics.",
+      "CITATION": ":chatgpt-content-reference{index="18"}",
+      "OFG_PROMOTION": false
+    },
+    {
+      "RESEARCH_ID": "T2-C003-RS-DE-001",
+      "LANGUAGE": "GERMAN",
+      "DOMAIN": "HEATING_CURRENT_DRIVE_AND_VACUUM",
+      "SOURCE_CLASS": "IPP_REAL_WORLD_REFERENCE",
+      "FINDING": "German IPP neutral-beam test-facility material demonstrates tight coupling among high-power RF ion sources, actively cooled grids, very-high-capacity vacuum pumping and beamline support systems; this supports treating NBI local cooling and vacuum as explicit client/interface networks.",
+      "CITATION": ":chatgpt-content-reference{index="19"}",
+      "OFG_PROMOTION": false
+    },
+    {
+      "RESEARCH_ID": "T2-C003-RS-ZH-001",
+      "LANGUAGE": "CHINESE",
+      "DOMAIN": "PROCESS_EQUIPMENT_PROCUREMENT_AND_MANUFACTURING",
+      "SOURCE_CLASS": "ITER_CHINA_EXECUTION_CENTER",
+      "FINDING": "Chinese ITER procurement material demonstrates that cooling/process equipment packages may explicitly include detailed design, manufacturing, welding, heat treatment, cleaning/passivation, NDE, hydrotesting, qualification, FAT, packing, transport, installation manuals and commissioning guidance; these define expected evidence classes but not OFG historical records.",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="20"}",
+        ":chatgpt-content-reference{index="21"}"
+      ],
+      "OFG_PROMOTION": false
+    },
+    {
+      "RESEARCH_ID": "T2-C003-RS-ZH-002",
+      "LANGUAGE": "CHINESE",
+      "DOMAIN": "TRITIUM_MODULAR_PROCESS_SKIDS",
+      "SOURCE_CLASS": "ITER_CHINA_EXECUTION_CENTER",
+      "FINDING": "ITER Tritium Plant modular utility skid procurement illustrates package-level integration of process equipment, interconnecting piping, structures, I&C, electrical supply, spares, maintenance handling aids, FAT, preservation and delivery.",
+      "CITATION": ":chatgpt-content-reference{index="22"}",
+      "OFG_PROMOTION": false
+    },
+    {
+      "RESEARCH_ID": "T2-C003-RS-RU-001",
+      "LANGUAGE": "RUSSIAN",
+      "DOMAIN": "VACUUM_THERMAL_FUNCTIONAL_TESTING",
+      "SOURCE_CLASS": "ITER_RUSSIA_TECHNICAL",
+      "FINDING": "Russian ITER material provides precedent for dedicated port-plug test facilities performing vacuum, thermal and functional testing and associated component qualification.",
+      "CITATION": ":chatgpt-content-reference{index="23"}",
+      "OFG_PROMOTION": false
+    },
+    {
+      "RESEARCH_ID": "T2-C003-RS-ES-001",
+      "LANGUAGE": "SPANISH",
+      "DOMAIN": "TRITIUM_EXTRACTION_AND_COOLANT_PURIFICATION",
+      "SOURCE_CLASS": "CIEMAT_FUSION_TECHNICAL",
+      "FINDING": "Spanish CIEMAT material identifies breeding-blanket tritium extraction and coolant-purification systems as distinct DEMO engineering subjects, reinforcing the need to separate tritium recovery from bulk heat transport and water chemistry functions.",
+      "CITATION": ":chatgpt-content-reference{index="24"}",
+      "OFG_PROMOTION": false
+    },
+    {
+      "RESEARCH_ID": "T2-C003-RS-ES-002",
+      "LANGUAGE": "SPANISH",
+      "DOMAIN": "TRITIUM_FUEL_CYCLE_ARCHITECTURE",
+      "SOURCE_CLASS": "CIEMAT_FUSION_TECHNICAL",
+      "FINDING": "Spanish fusion reference material independently distinguishes reactor exhaust processing, tritium extraction, isotope separation, storage/re-feed, water detritiation and atmosphere/ventilation detritiation functions.",
+      "CITATION": ":chatgpt-content-reference{index="25"}",
+      "OFG_PROMOTION": false
+    }
+  ],
+  "SOURCES_USED": [
+    {
+      "SOURCE_ID": "T2-C003-SRC-001",
+      "SOURCE": "REV3_V08_VACUUM_GAS_COOLING_AUXILIARIES_PROCESS_SYSTEMS",
+      "CLASS": "OFG_SOURCE_CORPUS",
+      "USES": [
+        "CCW",
+        "CHW",
+        "CWS",
+        "DHT",
+        "VHT",
+        "SGS",
+        "CRY",
+        "VAC",
+        "BTX",
+        "TEX",
+        "TSD",
+        "FUE",
+        "TRI",
+        "DRN",
+        "COMMISSIONING_STATES"
+      ],
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="26"}",
+        ":chatgpt-content-reference{index="27"}",
+        ":chatgpt-content-reference{index="28"}",
+        ":chatgpt-content-reference{index="29"}",
+        ":chatgpt-content-reference{index="30"}",
+        ":chatgpt-content-reference{index="31"}",
+        ":chatgpt-content-reference{index="32"}",
+        ":chatgpt-content-reference{index="33"}",
+        ":chatgpt-content-reference{index="34"}",
+        ":chatgpt-content-reference{index="35"}",
+        ":chatgpt-content-reference{index="36"}",
+        ":chatgpt-content-reference{index="37"}",
+        ":chatgpt-content-reference{index="38"}",
+        ":chatgpt-content-reference{index="39"}",
+        ":chatgpt-content-reference{index="40"}"
+      ]
+    },
+    {
+      "SOURCE_ID": "T2-C003-SRC-002",
+      "SOURCE": "REV3_V09_POWER_CYCLE_BALANCE_OF_PLANT_UTILITIES",
+      "CLASS": "OFG_SOURCE_CORPUS",
+      "USES": [
+        "SGS",
+        "MSP",
+        "TUR",
+        "CND",
+        "CFW",
+        "CWS",
+        "CCW",
+        "CHW",
+        "UTL",
+        "POWER_CYCLE_E_ARCHITECTURE"
+      ],
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="41"}",
+        ":chatgpt-content-reference{index="42"}",
+        ":chatgpt-content-reference{index="43"}",
+        ":chatgpt-content-reference{index="44"}",
+        ":chatgpt-content-reference{index="45"}",
+        ":chatgpt-content-reference{index="46"}",
+        ":chatgpt-content-reference{index="47"}",
+        ":chatgpt-content-reference{index="48"}"
+      ]
+    },
+    {
+      "SOURCE_ID": "T2-C003-SRC-003",
+      "SOURCE": "REV3_V15_MASTER_CHRONOLOGY_PHYSICAL_STATE",
+      "CLASS": "OFG_SOURCE_CORPUS",
+      "USE": "2031_04_19_COMMISSIONING_STATE",
+      "CITATION": ":chatgpt-content-reference{index="49"}"
+    },
+    {
+      "SOURCE_ID": "T2-C003-SRC-004",
+      "SOURCE": "REV3_V07_BHT",
+      "CLASS": "OFG_SOURCE_CORPUS",
+      "USE": "BHT401_ANCHOR_AND_E_MODEL_LIMITATIONS",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="50"}",
+        ":chatgpt-content-reference{index="51"}"
+      ]
+    },
+    {
+      "SOURCE_ID": "T2-C003-SRC-005",
+      "SOURCE": "REV3_V16_BHT401_CRS01_FORENSIC",
+      "CLASS": "OFG_SOURCE_CORPUS",
+      "USE": "CRS01_CONFIGURATION_AND_M88217_EVIDENCE",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="52"}",
+        ":chatgpt-content-reference{index="53"}"
+      ]
+    },
+    {
+      "SOURCE_ID": "T2-C003-SRC-006",
+      "SOURCE": "REV3_V17_VV_BACKWARD_PROPAGATION",
+      "CLASS": "OFG_SOURCE_CORPUS",
+      "USE": "PROPAGATION_AND_ASSURANCE_DOCTRINE",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="54"}",
+        ":chatgpt-content-reference{index="55"}"
+      ]
+    }
+  ],
+  "FUNCTION_AND_SYSTEM_DISCOVERY": {
+    "DISCOVERY_RULE": "FUNCTION_FIRST_CANDIDATES_ARE_PROVISIONAL_AND_DO_NOT_CREATE_CANONICAL_SYSTEM_TAGS",
+    "DISCOVERY_REGISTER": [
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-001",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-BHT-CHEM-VOL",
+        "CANDIDATE_TYPE": "UNDERDECOMPOSED_EXISTING_SYSTEM_FUNCTION",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "BHT-400",
+          "BHT"
+        ],
+        "SYSTEM_BOUNDARY": "PRIMARY_BLANKET_COOLANT_INVENTORY_PRESSURE_CHEMISTRY_PURIFICATION_AND_SAMPLING_SUPPORT_OUTSIDE_MAIN_CIRCULATION_TRAINS",
+        "SUBSYSTEMS": [
+          "PRESSURIZATION",
+          "CHARGING_AND_MAKEUP",
+          "LETDOWN",
+          "PURIFICATION",
+          "CHEMICAL_DOSING",
+          "FILTRATION_OR_ION_EXCHANGE",
+          "SAMPLING",
+          "DRAIN_AND_COLLECTION",
+          "RELIEF_INTERFACE"
+        ],
+        "TRAINS_LOOPS": "COMMON_TO_BHT_TRAINS_EXACT_REDUNDANCY_OPEN",
+        "MAJOR_EQUIPMENT": [
+          "PRESSURIZER",
+          "MAKEUP_OR_VOLUME_CONTROL_TANK",
+          "CHARGING_PUMP_SET",
+          "LETDOWN_COOLER",
+          "FILTER_OR_ION_EXCHANGE_SKID",
+          "CHEMISTRY_SKID",
+          "SAMPLING_PANEL"
+        ],
+        "COMPONENT_CLASSES": [
+          "PUMP",
+          "HEAT_EXCHANGER",
+          "TANK_OR_VESSEL",
+          "FILTER",
+          "ION_EXCHANGE_BED",
+          "VALVE",
+          "RELIEF_DEVICE",
+          "INSTRUMENT",
+          "SAMPLE_CONDITIONER"
+        ],
+        "CONNECTION_CLASSES": [
+          "CHARGING",
+          "LETDOWN",
+          "SURGE",
+          "RELIEF",
+          "MAKEUP",
+          "DRAIN",
+          "VENT",
+          "SAMPLE"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "VESSEL_SUPPORT",
+          "PUMP_BASE_AND_ANCHOR",
+          "PIPE_SUPPORT",
+          "GUIDE",
+          "ANCHOR"
+        ],
+        "PENETRATION_INTERFACES": "H101_F101_AND_LOCAL_ROOM_PENETRATIONS_OPEN",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "PRESSURE",
+          "LEVEL",
+          "TEMPERATURE",
+          "FLOW",
+          "CHEMISTRY",
+          "TRITIUM_OR_RADIOLOGICAL_MONITORING_WHERE_REQUIRED"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "CHARGING_PUMPS",
+          "HEATERS_IF_ANY",
+          "SKID_CONTROLS"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "FILL",
+          "FLUSH",
+          "CHEMICAL_CONDITIONING",
+          "LAYUP"
+        ],
+        "PROCUREMENT_PACKAGE": "BHT_COMMON_PROCESS_SUPPORT_PACKAGE_CLASS",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "EXACT_PROJECT_SUPPLY_CHAIN_OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "MECHANICAL_PROCESS_PIPING_EQUIPMENT_SETTING_AND_EI",
+        "INSTALLATION_STATE": "SYSTEM_FAMILY_INSTALLED_OR_COMMISSIONING_BUT_COMPONENT_LEVEL_HISTORY_INCOMPLETE",
+        "TEST_BOUNDARY": "PRESSURE_LEAK_FUNCTIONAL_CHEMISTRY_AND_INVENTORY_CONTROL_BOUNDARIES_REQUIRED",
+        "MECHANICAL_COMPLETION": "EXACT_PACKAGE_RECORD_OPEN",
+        "TURNOVER": "EXACT_PACKAGE_RECORD_OPEN",
+        "COMMISSIONING_STATE": "BHT_GROUP_FC_OR_IC",
+        "MAINTENANCE_STATE": "REQUIRES_FILTER_RESIN_PUMP_VALVE_INSTRUMENT_AND_CHEMISTRY_MAINTENANCE_HISTORY",
+        "PROVENANCE_CLASS": "SOURCE_SUPPORTED_FUNCTION_PLUS_ENGINEERED_DECOMPOSITION",
+        "EVIDENCE_GAPS": [
+          "P_AND_ID",
+          "LINE_LIST",
+          "REDUNDANCY",
+          "CAPACITY",
+          "EQUIPMENT_TAGS",
+          "RELIEF_BASIS",
+          "CHEMISTRY_LIMITS",
+          "TEST_RECORDS"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-SRC-004"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-002",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-RHR",
+        "CANDIDATE_TYPE": "UNDERDECOMPOSED_EXISTING_SYSTEM",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "RHR",
+          "BHT",
+          "DHT",
+          "VHT"
+        ],
+        "SYSTEM_BOUNDARY": "RESIDUAL_AND_DECAY_HEAT_REMOVAL_AFTER_NORMAL_HEAT_SINK_REDUCTION_OR_LOSS",
+        "SUBSYSTEMS": [
+          "HEAT_PICKUP",
+          "CIRCULATION",
+          "HEAT_EXCHANGE",
+          "ULTIMATE_OR_ALTERNATE_SINK_INTERFACE",
+          "ISOLATION",
+          "INVENTORY_AND_VENTING"
+        ],
+        "TRAINS_LOOPS": "REDUNDANCY_AND_CLIENT_ALLOCATION_OPEN",
+        "MAJOR_EQUIPMENT": [
+          "RHR_PUMPS",
+          "RHR_HEAT_EXCHANGERS",
+          "ISOLATION_VALVES",
+          "HEADERS",
+          "INSTRUMENTATION"
+        ],
+        "COMPONENT_CLASSES": [
+          "PUMP",
+          "HEAT_EXCHANGER",
+          "VALVE",
+          "PIPE",
+          "INSTRUMENT"
+        ],
+        "CONNECTION_CLASSES": [
+          "BHT_TIE_IN",
+          "DHT_TIE_IN",
+          "VHT_TIE_IN",
+          "HEAT_SINK_INTERFACE"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "PIPE_SUPPORT",
+          "ANCHOR",
+          "EQUIPMENT_FOUNDATION"
+        ],
+        "PENETRATION_INTERFACES": "H101_AND_UTILITY_BOUNDARIES_OPEN",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "FLOW",
+          "PRESSURE",
+          "TEMPERATURE",
+          "LEVEL",
+          "AUTO_START_OR_ALIGNMENT_LOGIC_OPEN"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "RHR_PUMPS",
+          "VALVE_ACTUATORS"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "COMMISSIONING_RECIRCULATION",
+          "TEMPORARY_HEAT_SINK_IF_USED_OPEN"
+        ],
+        "PROCUREMENT_PACKAGE": "RHR_PUMP_HX_AND_PROCESS_PACKAGE_CLASS",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "MECHANICAL_PROCESS_PIPING",
+        "INSTALLATION_STATE": "REGISTER_POPULATION_EXISTS_BUT_FUNCTIONAL_PHYSICAL_TOPOLOGY_UNCLOSED",
+        "TEST_BOUNDARY": "RHR_FLOW_HEAT_TRANSFER_AUTO_ACTION_AND_ISOLATION_TEST_BOUNDARIES_REQUIRED",
+        "MECHANICAL_COMPLETION": "OPEN_AT_FUNCTIONAL_CHAIN_LEVEL",
+        "TURNOVER": "OPEN_AT_FUNCTIONAL_CHAIN_LEVEL",
+        "COMMISSIONING_STATE": "SUPPORTING_BHT_DHT_VHT_FC_IC_STATE_BUT_EXACT_RHR_STATE_OPEN",
+        "MAINTENANCE_STATE": "PUMP_HX_VALVE_SURVEILLANCE_AND_LAYUP_REQUIREMENTS_OPEN",
+        "PROVENANCE_CLASS": "SOURCE_CODE_EXISTS_FUNCTIONAL_BOUNDARY_ENGINEERED",
+        "EVIDENCE_GAPS": [
+          "CLIENT_MATRIX",
+          "HEAT_DUTY",
+          "REDUNDANCY",
+          "P_AND_ID",
+          "POWER_SUPPLY",
+          "ACTUATION_LOGIC",
+          "ULTIMATE_SINK"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-SRC-001",
+          "T2-C003-SRC-004"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-003",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-DHT-COMMON",
+        "CANDIDATE_TYPE": "UNDERDECOMPOSED_EXISTING_SYSTEM_FUNCTION",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "DHT",
+          "DHT-411",
+          "DHT-412"
+        ],
+        "SYSTEM_BOUNDARY": "DIVERTOR_HEAT_REMOVAL_FROM_COMPONENT_CHANNELS_THROUGH_CIRCULATION_AND_HEAT_EXCHANGE_TO_DOWNSTREAM_SINK",
+        "SUBSYSTEMS": [
+          "CIRCULATION_TRAINS",
+          "COMMON_HEADERS",
+          "HEAT_EXCHANGE",
+          "PRESSURIZATION_OR_EXPANSION",
+          "FILTRATION",
+          "CHEMISTRY",
+          "DRAIN_VENT",
+          "SAMPLING"
+        ],
+        "TRAINS_LOOPS": [
+          "DHT-411",
+          "DHT-412",
+          "COMMON_SUPPORT_EXACT_ID_OPEN"
+        ],
+        "MAJOR_EQUIPMENT": [
+          "TWO_PUMPS_PER_REGISTERED_TRAIN_INSTANCE",
+          "TWO_HEAT_EXCHANGERS_PER_REGISTERED_TRAIN_INSTANCE",
+          "COMMON_SUPPORT_EQUIPMENT_OPEN"
+        ],
+        "COMPONENT_CLASSES": [
+          "PUMP",
+          "HEAT_EXCHANGER",
+          "VALVE",
+          "FILTER",
+          "VESSEL",
+          "PIPE",
+          "INSTRUMENT"
+        ],
+        "CONNECTION_CLASSES": [
+          "DIVERTOR_SUPPLY",
+          "DIVERTOR_RETURN",
+          "BYPASS",
+          "DRAIN",
+          "VENT",
+          "SAMPLE",
+          "HEAT_SINK"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "HIGH_ENERGY_PIPE_SUPPORT_AS_APPLICABLE",
+          "EQUIPMENT_FOUNDATION",
+          "GUIDE",
+          "ANCHOR"
+        ],
+        "PENETRATION_INTERFACES": "F101_H101_DIVERTOR_COOLING_PENETRATIONS_OPEN",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "FLOW",
+          "PRESSURE",
+          "TEMPERATURE",
+          "DP",
+          "PUMP_VIBRATION"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "CIRCULATION_PUMPS",
+          "ACTUATED_VALVES"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "FLUSH",
+          "PRESSURE_TEST",
+          "FUNCTIONAL_RECIRCULATION"
+        ],
+        "PROCUREMENT_PACKAGE": "DHT_ROTATING_HEAT_EXCHANGE_AND_PIPING_PACKAGES",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "MECHANICAL_PROCESS_PIPING_AND_MACHINE_INTERFACE",
+        "INSTALLATION_STATE": "GROUP_FC_OR_IC_BY_STORY_CUT",
+        "TEST_BOUNDARY": "TRAIN_AND_MACHINE_BRANCH_TEST_BOUNDARIES_OPEN",
+        "MECHANICAL_COMPLETION": "GROUP_LEVEL_PRECEDES_FC_IC_EXACT_RECORDS_OPEN",
+        "TURNOVER": "GROUP_LEVEL_OCCURRED_EXACT_PACKAGES_OPEN",
+        "COMMISSIONING_STATE": "FC_OR_IC",
+        "MAINTENANCE_STATE": "ROTATING_EQUIPMENT_HX_FILTER_AND_VALVE_HISTORY_OPEN",
+        "PROVENANCE_CLASS": "SOURCE_SUPPORTED_FUNCTION_AND_REGISTERED_TRAIN_INSTANCES",
+        "EVIDENCE_GAPS": [
+          "TRAIN_P_AND_ID",
+          "CHANNEL_DISTRIBUTION",
+          "CHF_MARGIN",
+          "PUMP_CURVES",
+          "PRESSURIZATION",
+          "COMMON_HEADER_TAGS"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-SRC-001"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-004",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-VHT-COMMON",
+        "CANDIDATE_TYPE": "UNDERDECOMPOSED_EXISTING_SYSTEM_FUNCTION",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "VHT",
+          "VHT-421",
+          "VHT-422"
+        ],
+        "SYSTEM_BOUNDARY": "VACUUM_VESSEL_PORT_AND_SHIELD_HEAT_REMOVAL_PLUS_CONTROLLED_COOLDOWN_AND_BAKEOUT_SUPPORT",
+        "SUBSYSTEMS": [
+          "TWO_CIRCULATION_TRAINS",
+          "COMMON_HEADERS",
+          "HEAT_EXCHANGE",
+          "MAKEUP",
+          "DRAIN_VENT",
+          "BAKEOUT_SUPPORT",
+          "RESIDUAL_HEAT_INTERFACE"
+        ],
+        "TRAINS_LOOPS": [
+          "VHT-421",
+          "VHT-422"
+        ],
+        "MAJOR_EQUIPMENT": [
+          "TWO_PUMPS_PER_REGISTERED_TRAIN_INSTANCE",
+          "ONE_HEAT_EXCHANGER_PER_REGISTERED_TRAIN_INSTANCE",
+          "COMMON_MAKEUP_AND_HEADER_EQUIPMENT_OPEN"
+        ],
+        "COMPONENT_CLASSES": [
+          "PUMP",
+          "HEAT_EXCHANGER",
+          "VALVE",
+          "PIPE",
+          "VESSEL",
+          "INSTRUMENT"
+        ],
+        "CONNECTION_CLASSES": [
+          "VESSEL_SUPPLY",
+          "VESSEL_RETURN",
+          "PORT_COOLING",
+          "BAKEOUT_INTERFACE",
+          "RHR_INTERFACE",
+          "DRAIN",
+          "VENT"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "PIPE_SUPPORT",
+          "MACHINE_INTERFACE_SUPPORT",
+          "ANCHOR",
+          "GUIDE"
+        ],
+        "PENETRATION_INTERFACES": "F101_MACHINE_BOUNDARY_AND_PORT_INTERFACES_OPEN",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "FLOW",
+          "TEMPERATURE",
+          "PRESSURE",
+          "DP",
+          "LEAK_MONITORING_WHERE_REQUIRED"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "CIRCULATION_PUMPS",
+          "BAKEOUT_HEATING_IF_ELECTRIC_OR_EXTERNAL_INTERFACE"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "BAKEOUT",
+          "FLUSH",
+          "COOLDOWN",
+          "PRESSURE_TEST"
+        ],
+        "PROCUREMENT_PACKAGE": "VHT_MACHINE_COOLING_AND_HX_PACKAGE_CLASS",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "MECHANICAL_MACHINE_INTERFACE_PIPING",
+        "INSTALLATION_STATE": "GROUP_FC_OR_IC",
+        "TEST_BOUNDARY": "VESSEL_SIDE_AND_HX_BOUNDARIES_OPEN",
+        "MECHANICAL_COMPLETION": "EXACT_RECORDS_OPEN",
+        "TURNOVER": "EXACT_RECORDS_OPEN",
+        "COMMISSIONING_STATE": "FC_OR_IC",
+        "MAINTENANCE_STATE": "PUMP_HX_VALVE_AND_MACHINE_INTERFACE_HISTORY_OPEN",
+        "PROVENANCE_CLASS": "SOURCE_SUPPORTED_FUNCTION_AND_REGISTERED_TRAIN_INSTANCES",
+        "EVIDENCE_GAPS": [
+          "BAKEOUT_BOUNDARY",
+          "DECAY_HEAT_CASES",
+          "PUMP_CURVE",
+          "HX_DUTY",
+          "PENETRATION_AND_SUPPORT_MAP"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-SRC-001"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-005",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-SGS-BLOWDOWN-CHEM",
+        "CANDIDATE_TYPE": "UNDERDECOMPOSED_SECONDARY_STEAM_SUPPORT_FUNCTION",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "SGS",
+          "CFW",
+          "DRN"
+        ],
+        "SYSTEM_BOUNDARY": "SECONDARY_SIDE_INVENTORY_CHEMISTRY_BLOWDOWN_SAMPLING_DRAIN_AND_RELIEF_SUPPORT_AT_STEAM_GENERATORS",
+        "SUBSYSTEMS": [
+          "FEEDWATER_INLET",
+          "STEAM_OUTLET",
+          "BLOWDOWN",
+          "SAMPLING",
+          "CHEMISTRY_MONITORING",
+          "DRAIN",
+          "VENT",
+          "RELIEF_AND_ISOLATION"
+        ],
+        "TRAINS_LOOPS": "CORRELATED_WITH_SG_MODULES_EXACT_GROUPING_OPEN",
+        "MAJOR_EQUIPMENT": [
+          "STEAM_GENERATOR_SECONDARY_SIDE",
+          "BLOWDOWN_VALVES",
+          "FLASH_OR_HEAT_RECOVERY_EQUIPMENT_IF_USED_OPEN",
+          "SAMPLE_PANEL",
+          "RELIEF_DEVICES"
+        ],
+        "COMPONENT_CLASSES": [
+          "PRESSURE_VESSEL",
+          "VALVE",
+          "RELIEF_DEVICE",
+          "PIPE",
+          "HEAT_EXCHANGER_IF_USED",
+          "INSTRUMENT"
+        ],
+        "CONNECTION_CLASSES": [
+          "FEEDWATER",
+          "MAIN_STEAM",
+          "BLOWDOWN",
+          "DRAIN",
+          "VENT",
+          "SAMPLE",
+          "RELIEF"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "VESSEL_SUPPORT",
+          "HIGH_ENERGY_PIPE_SUPPORT",
+          "ANCHOR",
+          "GUIDE"
+        ],
+        "PENETRATION_INTERFACES": "H101_TO_T101_STEAM_AND_FEEDWATER_BOUNDARIES",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "LEVEL",
+          "PRESSURE",
+          "FLOW",
+          "TEMPERATURE",
+          "CHEMISTRY"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "ACTUATED_VALVES",
+          "SAMPLING_OR_BLOWDOWN_PACKAGE_LOADS_IF_ANY"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "HYDROTEST",
+          "STEAM_BLOW_OR_CLEANING_IF_SELECTED_OPEN",
+          "CHEMICAL_CLEANING_IF_REQUIRED"
+        ],
+        "PROCUREMENT_PACKAGE": "SG_SECONDARY_AND_BLOWDOWN_SUPPORT_PACKAGE_CLASS",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "EXACT_OFG_VENDOR_OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "PRESSURE_BOUNDARY_PIPING_AND_SECONDARY_PROCESS",
+        "INSTALLATION_STATE": "MAIN_STEAM_FEEDWATER_GROUP_PC_OR_FC",
+        "TEST_BOUNDARY": "SG_SECONDARY_HYDRO_LEAK_BLOWDOWN_FUNCTIONAL_BOUNDARIES_REQUIRED",
+        "MECHANICAL_COMPLETION": "OPEN_BY_PACKAGE",
+        "TURNOVER": "OPEN_BY_PACKAGE",
+        "COMMISSIONING_STATE": "PC_OR_FC",
+        "MAINTENANCE_STATE": "TUBE_INTEGRITY_VALVES_CHEMISTRY_AND_RELIEF_SURVEILLANCE_REQUIRED",
+        "PROVENANCE_CLASS": "SOURCE_SUPPORTED_FUNCTION_PLUS_EXTERNAL_COMPLETENESS_PRECEDENT",
+        "EVIDENCE_GAPS": [
+          "BLOWDOWN_TOPOLOGY",
+          "CHEMISTRY_LIMITS",
+          "RELIEF_DISCHARGE",
+          "MODULE_ALLOCATION",
+          "TEST_PACKAGES"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-SRC-001",
+          "T2-C003-RS-EN-005"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-006",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-MSP-STEAM-BYPASS-RELIEF",
+        "CANDIDATE_TYPE": "UNDERDECOMPOSED_EXISTING_POWER_CYCLE_FUNCTION",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "MSP",
+          "MAIN-STEAM",
+          "SGS",
+          "TUR",
+          "CND"
+        ],
+        "SYSTEM_BOUNDARY": "STEAM_TRANSPORT_FROM_SGS_OUTLET_TO_TURBINE_INLET_WITH_ISOLATION_CONTROL_RELIEF_AND_BYPASS_TO_HEAT_SINK",
+        "SUBSYSTEMS": [
+          "MAIN_STEAM_HEADERS",
+          "TRAIN_ISOLATION",
+          "MAIN_STOP_CONTROL",
+          "SAFETY_RELIEF",
+          "TURBINE_BYPASS",
+          "DRAINS_AND_WARMUP"
+        ],
+        "TRAINS_LOOPS": "FOUR_BHT_OR_SG_SOURCE_GROUPS_TO_COMMON_STEAM_SYSTEM_E_ARCHITECTURE_EXACT_HEADERING_OPEN",
+        "MAJOR_EQUIPMENT": [
+          "MAIN_STEAM_ISOLATION_VALVES",
+          "SAFETY_RELIEF_VALVES",
+          "TURBINE_STOP_CONTROL_VALVES",
+          "BYPASS_VALVES",
+          "HEADERS"
+        ],
+        "COMPONENT_CLASSES": [
+          "STEAM_VALVE",
+          "RELIEF_VALVE",
+          "PIPE",
+          "DRAIN_POT_OR_SEPARATOR_IF_REQUIRED",
+          "INSTRUMENT"
+        ],
+        "CONNECTION_CLASSES": [
+          "SG_OUTLET",
+          "TURBINE_INLET",
+          "BYPASS_TO_CONDENSER",
+          "RELIEF_DISCHARGE",
+          "DRAIN"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "HIGH_ENERGY_STEAM_PIPE_SUPPORT",
+          "ANCHOR",
+          "GUIDE",
+          "SNUBBER_OR_DYNAMIC_RESTRAINT_IF_DESIGN_REQUIRES"
+        ],
+        "PENETRATION_INTERFACES": "H101_T101_BUILDING_BOUNDARY_OPEN",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "PRESSURE",
+          "TEMPERATURE",
+          "FLOW",
+          "VALVE_POSITION",
+          "TURBINE_TRIP",
+          "BYPASS_CONTROL"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "VALVE_ACTUATORS",
+          "CONTROL_SYSTEM"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "STEAM_LINE_CLEANING_OR_BLOWING_IF_SELECTED",
+          "WARMUP_LINEUPS",
+          "PRESSURE_TEST"
+        ],
+        "PROCUREMENT_PACKAGE": "MAIN_STEAM_VALVE_PIPING_AND_BYPASS_PACKAGE_CLASS",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "HIGH_ENERGY_STEAM_PIPING",
+        "INSTALLATION_STATE": "PC_OR_FC_GROUP_STATE",
+        "TEST_BOUNDARY": "STEAM_PRESSURE_BOUNDARY_RELIEF_FUNCTION_AND_BYPASS_FUNCTION",
+        "MECHANICAL_COMPLETION": "OPEN_BY_HEADER_OR_PACKAGE",
+        "TURNOVER": "OPEN_BY_HEADER_OR_PACKAGE",
+        "COMMISSIONING_STATE": "PC_OR_FC_NO_GRID_SYNC",
+        "MAINTENANCE_STATE": "VALVE_TESTING_RELIEF_SURVEILLANCE_DRAIN_AND_SUPPORT_INSPECTION_REQUIRED",
+        "PROVENANCE_CLASS": "SOURCE_SUPPORTED_EXISTING_SYSTEMS_WITH_E_ARCHITECTURE",
+        "EVIDENCE_GAPS": [
+          "AS_BUILT_HEADER_TOPOLOGY",
+          "BYPASS_CAPACITY",
+          "RELIEF_CAPACITY",
+          "VALVE_ACTUATION_TIMES",
+          "PIPE_STRESS",
+          "SUPPORTS"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-SRC-002",
+          "T2-C003-RS-EN-005"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-007",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-CND-AIRREMOVAL-HOTWELL",
+        "CANDIDATE_TYPE": "UNDERDECOMPOSED_EXISTING_SYSTEM_FUNCTION",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "CND",
+          "TUR",
+          "CFW",
+          "CWS"
+        ],
+        "SYSTEM_BOUNDARY": "CONDENSE_TURBINE_EXHAUST_MAINTAIN_CONDENSER_VACUUM_COLLECT_CONDENSATE_AND_TRANSFER_TO_CONDENSATE_SYSTEM",
+        "SUBSYSTEMS": [
+          "CONDENSER_SHELL_AND_WATERBOX",
+          "HOTWELL",
+          "AIR_AND_NONCONDENSABLE_REMOVAL",
+          "VACUUM_BREAK_OR_ISOLATION",
+          "CONDENSER_DRAINS_AND_VENTS"
+        ],
+        "TRAINS_LOOPS": "MULTI_SHELL_E_ARCHITECTURE_EXACT_PARTITION_OPEN",
+        "MAJOR_EQUIPMENT": [
+          "SURFACE_CONDENSER",
+          "HOTWELL",
+          "VACUUM_PUMPS_OR_STEAM_EJECTOR_EQUIVALENT_TECHNOLOGY_OPEN",
+          "AIR_REMOVAL_VALVES"
+        ],
+        "COMPONENT_CLASSES": [
+          "HEAT_EXCHANGER",
+          "VACUUM_PUMP_OR_EJECTOR",
+          "VALVE",
+          "PIPE",
+          "INSTRUMENT"
+        ],
+        "CONNECTION_CLASSES": [
+          "TURBINE_EXHAUST",
+          "CWS_INLET_OUTLET",
+          "HOTWELL_TO_CFW",
+          "AIR_REMOVAL",
+          "TURBINE_BYPASS",
+          "DRAIN"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "CONDENSER_SUPPORT",
+          "EXPANSION_INTERFACE",
+          "WATERBOX_SUPPORT",
+          "PIPE_SUPPORT"
+        ],
+        "PENETRATION_INTERFACES": "T101_T102_AND_CWS_BUILDING_INTERFACES",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "CONDENSER_PRESSURE",
+          "HOTWELL_LEVEL",
+          "CWS_FLOW_TEMPERATURE",
+          "AIR_REMOVAL_STATUS"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "VACUUM_PUMPS_IF_SELECTED",
+          "ACTUATED_VALVES"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "VACUUM_LEAK_TEST",
+          "WATERBOX_HYDROTEST",
+          "CONDENSER_CLEANING"
+        ],
+        "PROCUREMENT_PACKAGE": "CONDENSER_AND_AIR_REMOVAL_PACKAGE_CLASS",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "LARGE_HEAT_EXCHANGER_MECHANICAL_PIPING",
+        "INSTALLATION_STATE": "PC_OR_FC",
+        "TEST_BOUNDARY": "VACUUM_TIGHTNESS_WATERBOX_PRESSURE_HEAT_TRANSFER_AND_HOTWELL_FUNCTION",
+        "MECHANICAL_COMPLETION": "OPEN",
+        "TURNOVER": "OPEN",
+        "COMMISSIONING_STATE": "PC_OR_FC",
+        "MAINTENANCE_STATE": "TUBE_WATERBOX_VACUUM_PUMP_AND_CLEANING_HISTORY_REQUIRED",
+        "PROVENANCE_CLASS": "SOURCE_SUPPORTED_FUNCTION_WITH_TECHNOLOGY_SELECTION_OPEN",
+        "EVIDENCE_GAPS": [
+          "AIR_REMOVAL_TECHNOLOGY",
+          "SHELL_PARTITION",
+          "CONDENSER_DUTY",
+          "VACUUM_ACCEPTANCE",
+          "WATERBOX_AS_BUILT"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-SRC-002",
+          "T2-C003-RS-EN-005"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-008",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-CFW-REGEN-CLEANUP",
+        "CANDIDATE_TYPE": "UNDERDECOMPOSED_EXISTING_SYSTEM_FUNCTION",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "CFW",
+          "TURBINE-BOP",
+          "CND",
+          "SGS"
+        ],
+        "SYSTEM_BOUNDARY": "TRANSFER_HOTWELL_CONDENSATE_THROUGH_CLEANUP_REGENERATIVE_HEATING_DEAERATION_AND_FEED_PUMPING_TO_SGS",
+        "SUBSYSTEMS": [
+          "CONDENSATE_EXTRACTION",
+          "CONDENSATE_CLEANUP_OR_POLISHING",
+          "LP_HEATING",
+          "DEAERATION_AND_STORAGE",
+          "FEEDWATER_PUMPING",
+          "HP_HEATING",
+          "HEATER_DRAINS_AND_RECOVERY",
+          "SAMPLING"
+        ],
+        "TRAINS_LOOPS": "MULTI_PUMP_AND_HEATER_TRAINS_E_ARCHITECTURE_EXACT_ALIGNMENT_OPEN",
+        "MAJOR_EQUIPMENT": [
+          "CONDENSATE_PUMPS",
+          "LP_HEATERS",
+          "DEAERATOR_FEEDWATER_TANK",
+          "FEEDWATER_PUMPS",
+          "HP_HEATERS",
+          "CLEANUP_PACKAGE_IF_SELECTED"
+        ],
+        "COMPONENT_CLASSES": [
+          "PUMP",
+          "HEAT_EXCHANGER",
+          "DEAERATOR_VESSEL",
+          "FILTER_OR_POLISHER",
+          "VALVE",
+          "INSTRUMENT"
+        ],
+        "CONNECTION_CLASSES": [
+          "HOTWELL",
+          "EXTRACTION_STEAM",
+          "HEATER_DRAIN",
+          "DEAERATOR",
+          "SG_FEEDWATER",
+          "SAMPLE",
+          "DRAIN"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "PUMP_FOUNDATION",
+          "HEATER_SUPPORT",
+          "VESSEL_SUPPORT",
+          "PIPE_SUPPORT"
+        ],
+        "PENETRATION_INTERFACES": "T101_T102_H101_PROCESS_BOUNDARIES",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "FLOW",
+          "LEVEL",
+          "PRESSURE",
+          "TEMPERATURE",
+          "WATER_CHEMISTRY"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "CONDENSATE_PUMPS",
+          "FEEDWATER_PUMPS",
+          "CLEANUP_PACKAGE_LOADS"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "FLUSH",
+          "CHEMICAL_CLEAN",
+          "PUMP_RECIRCULATION",
+          "HEATER_BYPASS"
+        ],
+        "PROCUREMENT_PACKAGE": "CFW_ROTATING_HEAT_EXCHANGE_AND_WATER_TREATMENT_PACKAGE_CLASSES",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "POWER_ISLAND_MECHANICAL_PIPING_ROTATING_EQUIPMENT",
+        "INSTALLATION_STATE": "PC_OR_FC",
+        "TEST_BOUNDARY": "PUMP_HYDRAULIC_HEATER_LEAK_DEAERATOR_LEVEL_AND_FEEDWATER_FUNCTION",
+        "MECHANICAL_COMPLETION": "OPEN_BY_PACKAGE",
+        "TURNOVER": "OPEN_BY_PACKAGE",
+        "COMMISSIONING_STATE": "PC_OR_FC",
+        "MAINTENANCE_STATE": "PUMP_HEATER_VESSEL_VALVE_AND_CHEMISTRY_MAINTENANCE_REQUIRED",
+        "PROVENANCE_CLASS": "SOURCE_SUPPORTED_WITH_EXTERNAL_COMPLETENESS_CHECK",
+        "EVIDENCE_GAPS": [
+          "CLEANUP_TECHNOLOGY",
+          "EXTRACTION_STEAM_GRAPH",
+          "HEATER_DRAIN_GRAPH",
+          "PUMP_CURVES",
+          "MOTOR_LOADS",
+          "CHEMISTRY"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-SRC-002",
+          "T2-C003-RS-EN-005"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-009",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-TUR-AUX",
+        "CANDIDATE_TYPE": "UNDERDECOMPOSED_ROTATING_EQUIPMENT_AUXILIARY_NETWORK",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "TUR",
+          "TURBINE-AUX",
+          "TURBINE-ISLAND"
+        ],
+        "SYSTEM_BOUNDARY": "SUPPORT_TURBINE_GENERATOR_ROTATION_SEALING_CONTROL_AND_SHUTDOWN",
+        "SUBSYSTEMS": [
+          "LUBE_OIL",
+          "JACKING_OR_LIFT_OIL_IF_REQUIRED_OPEN",
+          "GLAND_SEAL_STEAM",
+          "ELECTRO_HYDRAULIC_CONTROL",
+          "TURNING_GEAR",
+          "BEARING_AND_VIBRATION_MONITORING",
+          "DRAINS"
+        ],
+        "TRAINS_LOOPS": "AUXILIARY_REDUNDANCY_BY_PACKAGE_OPEN",
+        "MAJOR_EQUIPMENT": [
+          "LUBE_OIL_SKID",
+          "LUBE_OIL_PUMPS",
+          "COOLERS",
+          "FILTERS",
+          "GLAND_STEAM_PACKAGE",
+          "EHC_PUMPS",
+          "TURNING_GEAR"
+        ],
+        "COMPONENT_CLASSES": [
+          "PUMP",
+          "OIL_RESERVOIR",
+          "HEAT_EXCHANGER",
+          "FILTER",
+          "VALVE",
+          "ACTUATOR",
+          "GEAR",
+          "BEARING",
+          "VIBRATION_PROBE"
+        ],
+        "CONNECTION_CLASSES": [
+          "LUBE_SUPPLY_RETURN",
+          "EHC_SUPPLY_RETURN",
+          "GLAND_STEAM",
+          "DRAIN",
+          "COOLING_WATER"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "SKID_BASE",
+          "TURBINE_FOUNDATION_INTERFACE",
+          "PIPE_SUPPORT"
+        ],
+        "PENETRATION_INTERFACES": "T101_LOCAL",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "OIL_PRESSURE",
+          "OIL_TEMPERATURE",
+          "BEARING_TEMPERATURE",
+          "SHAFT_VIBRATION",
+          "SPEED",
+          "VALVE_POSITION"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "AUXILIARY_PUMPS",
+          "TURNING_GEAR_MOTOR",
+          "CONTROL_HYDRAULIC_PUMPS"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "OIL_FLUSHING",
+          "TEMPORARY_FILTRATION",
+          "TURNING_GEAR_COMMISSIONING"
+        ],
+        "PROCUREMENT_PACKAGE": "TURBINE_AUXILIARY_PACKAGE_CLASS",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "EXACT_PACKAGE_VENDOR_NOT_ASSERTED_IN_C003",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "TURBINE_MECHANICAL_ROTATING_EQUIPMENT_AND_SMALL_BORE_PIPING",
+        "INSTALLATION_STATE": "PC_OR_FC",
+        "TEST_BOUNDARY": "LUBE_EHC_SEAL_TURNING_GEAR_AND_VIBRATION_FUNCTIONAL_TESTS",
+        "MECHANICAL_COMPLETION": "OPEN_BY_AUXILIARY",
+        "TURNOVER": "OPEN_BY_AUXILIARY",
+        "COMMISSIONING_STATE": "PRE_OR_FUNCTIONAL_COMMISSIONING_NO_GRID_SYNC",
+        "MAINTENANCE_STATE": "OIL_CLEANLINESS_FILTER_BEARING_VIBRATION_AND_PUMP_HISTORY_REQUIRED",
+        "PROVENANCE_CLASS": "SOURCE_SUPPORTED_EQUIPMENT_CLASSES",
+        "EVIDENCE_GAPS": [
+          "P_AND_IDS",
+          "REDUNDANCY",
+          "OIL_SPEC",
+          "FLUSH_ACCEPTANCE",
+          "EHC_TOPOLOGY",
+          "LOAD_LIST"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-SRC-002"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-010",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-CCW-COMMON",
+        "CANDIDATE_TYPE": "HIGH_DEPENDENCY_UNDERINSTANTIATED_COMMON_NETWORK",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "CCW",
+          "CCW-451",
+          "CCW-452",
+          "CCW-453",
+          "CCW-454"
+        ],
+        "SYSTEM_BOUNDARY": "CLOSED_INTERMEDIATE_COOLING_FROM_CLIENT_LOADS_TO_HEAT_EXCHANGERS_AND_DOWNSTREAM_HEAT_REJECTION_INTERFACE",
+        "SUBSYSTEMS": [
+          "FOUR_REGISTERED_COOLING_TRAINS",
+          "COMMON_SUPPLY_HEADER",
+          "COMMON_RETURN_HEADER",
+          "SURGE_OR_EXPANSION_CONTROL",
+          "MAKEUP",
+          "CHEMISTRY",
+          "CLIENT_BRANCHES",
+          "VENT_DRAIN_SAMPLE"
+        ],
+        "TRAINS_LOOPS": [
+          "CCW-451",
+          "CCW-452",
+          "CCW-453",
+          "CCW-454"
+        ],
+        "MAJOR_EQUIPMENT": [
+          "TWO_PUMPS_PER_REGISTERED_TRAIN",
+          "TWO_HEAT_EXCHANGERS_PER_REGISTERED_TRAIN",
+          "SURGE_TANK_REQUIRED_FUNCTION_IDENTITY_OPEN",
+          "CHEMISTRY_CONTROL_REQUIRED_FUNCTION_IDENTITY_OPEN",
+          "COMMON_HEADERS_IDENTITY_OPEN"
+        ],
+        "COMPONENT_CLASSES": [
+          "PUMP",
+          "HEAT_EXCHANGER",
+          "TANK",
+          "FILTER",
+          "CHEMICAL_DOSING",
+          "VALVE",
+          "PIPE",
+          "INSTRUMENT"
+        ],
+        "CONNECTION_CLASSES": [
+          "CLIENT_SUPPLY",
+          "CLIENT_RETURN",
+          "HX_PRIMARY",
+          "HX_SECONDARY",
+          "MAKEUP",
+          "DRAIN",
+          "VENT",
+          "SAMPLE"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "PUMP_HX_FOUNDATION",
+          "PIPE_SUPPORT",
+          "ANCHOR",
+          "GUIDE"
+        ],
+        "PENETRATION_INTERFACES": "U101_H101_CLIENT_BUILDING_PENETRATIONS_REQUIRE_BRANCH_REGISTER",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "HEADER_PRESSURE",
+          "FLOW",
+          "SUPPLY_RETURN_TEMPERATURE",
+          "DP",
+          "SURGE_LEVEL",
+          "WATER_CHEMISTRY"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "EIGHT_REGISTERED_TRAIN_PUMPS_AT_WORKING_REGISTER_LEVEL",
+          "CHEMISTRY_SKID_LOADS",
+          "ACTUATED_VALVES"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "INITIAL_FILL",
+          "FLUSH",
+          "CHEMICAL_CLEAN",
+          "TEMPORARY_CLIENT_BYPASS"
+        ],
+        "PROCUREMENT_PACKAGE": "CCW_PUMP_HX_COMMON_HEADER_CHEMISTRY_PACKAGE_CLASSES",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "UTILITY_MECHANICAL_PROCESS_PIPING",
+        "INSTALLATION_STATE": "OA_OR_IC_GROUP_STATE",
+        "TEST_BOUNDARY": "TRAIN_HYDRAULIC_HX_PERFORMANCE_COMMON_HEADER_AND_CLIENT_BRANCH_BOUNDARIES",
+        "MECHANICAL_COMPLETION": "TRAIN_OBJECTS_EXIST_EXACT_COMMON_NETWORK_MC_OPEN",
+        "TURNOVER": "SYSTEM_SUPPORTING_OPERATION_EXACT_COMMON_NETWORK_TURNOVER_OPEN",
+        "COMMISSIONING_STATE": "OA_OR_IC",
+        "MAINTENANCE_STATE": "PUMP_HX_CHEMISTRY_VALVE_AND_CLIENT_ISOLATION_HISTORY_REQUIRED",
+        "PROVENANCE_CLASS": "SOURCE_SUPPORTED_TRAIN_EQUIPMENT_WITH_ENGINEERED_COMMON_NETWORK_GAP",
+        "EVIDENCE_GAPS": [
+          "COMMON_HEADER_TOPOLOGY",
+          "SURGE_TANK_TAG",
+          "CHEMISTRY_PACKAGE_TAG",
+          "CLIENT_BRANCH_MATRIX",
+          "HEAT_LOAD_MATRIX",
+          "PUMP_CURVES",
+          "HX_DUTIES"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-SRC-001",
+          "T2-C003-RS-EN-001"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-011",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-CHW-COMMON",
+        "CANDIDATE_TYPE": "UNDERDECOMPOSED_EXISTING_SYSTEM_FUNCTION",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "CHW",
+          "HVAC"
+        ],
+        "SYSTEM_BOUNDARY": "CHILLED_WATER_GENERATION_STORAGE_DISTRIBUTION_AND_RETURN_FOR_HVAC_ELECTRONICS_AND_PROCESS_CLIENTS",
+        "SUBSYSTEMS": [
+          "CHILLERS",
+          "PRIMARY_OR_SECONDARY_PUMPING_AS_APPLICABLE",
+          "BUFFER_VOLUME",
+          "SUPPLY_RETURN_HEADERS",
+          "CLIENT_COILS_OR_HX",
+          "WATER_CHEMISTRY"
+        ],
+        "TRAINS_LOOPS": "MULTIPLE_CHILLERS_AND_PUMPS_SOURCE_SUPPORTED_EXACT_TRAIN_COUNT_OPEN",
+        "MAJOR_EQUIPMENT": [
+          "CHILLERS",
+          "PUMPS",
+          "BUFFER_TANK",
+          "CLIENT_HEAT_EXCHANGERS_OR_COILS"
+        ],
+        "COMPONENT_CLASSES": [
+          "CHILLER",
+          "PUMP",
+          "TANK",
+          "VALVE",
+          "PIPE",
+          "COIL_OR_HX",
+          "INSTRUMENT"
+        ],
+        "CONNECTION_CLASSES": [
+          "CHILLED_WATER_SUPPLY",
+          "RETURN",
+          "BYPASS",
+          "MAKEUP",
+          "DRAIN",
+          "VENT"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "CHILLER_FOUNDATION",
+          "PUMP_BASE",
+          "PIPE_SUPPORT"
+        ],
+        "PENETRATION_INTERFACES": "U101_TO_CLIENT_BUILDINGS_OPEN",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "SUPPLY_RETURN_TEMPERATURE",
+          "FLOW",
+          "PRESSURE",
+          "CHILLER_STATUS"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "CHILLER_COMPRESSORS",
+          "PUMPS"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "TEMPORARY_COOLING_DURING_COMMISSIONING",
+          "FLUSH",
+          "FILL"
+        ],
+        "PROCUREMENT_PACKAGE": "CHILLER_AND_CHW_PUMP_PACKAGE_CLASS",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "UTILITY_MECHANICAL_HVAC_INTERFACE",
+        "INSTALLATION_STATE": "OA_OR_IC",
+        "TEST_BOUNDARY": "CHILLER_CAPACITY_FLOW_CONTROL_AND_CLIENT_BRANCH_TESTS",
+        "MECHANICAL_COMPLETION": "OPEN_BY_PACKAGE",
+        "TURNOVER": "SUPPORT_SYSTEM_AVAILABLE_EXACT_RECORD_OPEN",
+        "COMMISSIONING_STATE": "OA_OR_IC",
+        "MAINTENANCE_STATE": "CHILLER_PUMP_CHEMISTRY_AND_CLIENT_COIL_HISTORY_REQUIRED",
+        "PROVENANCE_CLASS": "SOURCE_SUPPORTED_FUNCTION",
+        "EVIDENCE_GAPS": [
+          "CHILLER_COUNT",
+          "REFRIGERANT_OR_TECHNOLOGY",
+          "CLIENT_MATRIX",
+          "BUFFER_VOLUME",
+          "ELECTRICAL_LOADS"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-SRC-001",
+          "T2-C003-RS-EN-001"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-012",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-CWS-INTAKE-OUTFALL",
+        "CANDIDATE_TYPE": "HIGH_DEPENDENCY_EXISTING_SYSTEM_DECOMPOSITION",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "CWS",
+          "CWS-470"
+        ],
+        "SYSTEM_BOUNDARY": "LAKE_ONTARIO_INTAKE_SCREENING_PUMPING_CONDENSER_OR_HX_COOLING_AND_CONTROLLED_OUTFALL",
+        "SUBSYSTEMS": [
+          "INTAKE_STRUCTURE",
+          "TRAVELING_OR_DEBRIS_SCREENS",
+          "PUMPING",
+          "DISTRIBUTION",
+          "CONDENSER_WATERBOXES_OR_HX",
+          "BIOFOULING_CONTROL",
+          "OUTFALL",
+          "DISCHARGE_MONITORING"
+        ],
+        "TRAINS_LOOPS": "MULTI_PUMP_E_ARCHITECTURE_EXACT_PHYSICAL_TRAIN_MAPPING_OPEN",
+        "MAJOR_EQUIPMENT": [
+          "INTAKE_SCREENS",
+          "CIRCULATING_WATER_PUMPS",
+          "LARGE_VALVES_OR_GATES",
+          "WATERBOXES",
+          "BIOFOULING_OR_CHEMICAL_TREATMENT_PACKAGE",
+          "OUTFALL_STRUCTURE"
+        ],
+        "COMPONENT_CLASSES": [
+          "VERTICAL_OR_LARGE_PUMP",
+          "SCREEN",
+          "GATE_OR_VALVE",
+          "PIPE_OR_TUNNEL",
+          "WATERBOX",
+          "CHEMICAL_DOSING",
+          "INSTRUMENT"
+        ],
+        "CONNECTION_CLASSES": [
+          "LAKE_INTAKE",
+          "PUMP_DISCHARGE",
+          "CONDENSER_INLET",
+          "CONDENSER_OUTLET",
+          "OUTFALL",
+          "BLOWDOWN_OR_DRAIN"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "PUMP_SUPPORT",
+          "LARGE_PIPE_SUPPORT",
+          "TUNNEL_STRUCTURE",
+          "VALVE_SUPPORT"
+        ],
+        "PENETRATION_INTERFACES": "W101_W103_T102_AND_LAKE_TUNNEL_BOUNDARIES",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "LEVEL",
+          "FLOW",
+          "PRESSURE",
+          "TEMPERATURE",
+          "SCREEN_DP",
+          "ENVIRONMENTAL_DISCHARGE_MONITORING"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "CWS_PUMPS",
+          "TRAVELING_SCREENS",
+          "TREATMENT_EQUIPMENT"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "INTAKE_DEWATERING",
+          "FLUSH",
+          "PUMP_TEST",
+          "TEMPORARY_BYPASS_IF_USED_OPEN"
+        ],
+        "PROCUREMENT_PACKAGE": "INTAKE_SCREEN_PUMP_VALVE_TREATMENT_AND_OUTFALL_PACKAGE_CLASSES",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "MARINE_TUNNEL_MECHANICAL_LARGE_BORE_PIPING",
+        "INSTALLATION_STATE": "OA_OR_IC",
+        "TEST_BOUNDARY": "INTAKE_PUMP_FLOW_WATERBOX_OUTFALL_AND_ENVIRONMENTAL_MONITORING",
+        "MECHANICAL_COMPLETION": "SYSTEM_SUPPORTING_OPERATION_EXACT_PACKAGES_OPEN",
+        "TURNOVER": "SYSTEM_SUPPORTING_OPERATION_EXACT_PACKAGES_OPEN",
+        "COMMISSIONING_STATE": "OA_OR_IC",
+        "MAINTENANCE_STATE": "PUMP_SCREEN_BIOFOULING_WATERBOX_TUNNEL_AND_VALVE_PROGRAM_REQUIRED",
+        "PROVENANCE_CLASS": "SOURCE_SUPPORTED_FUNCTION_WITH_E_ARCHITECTURE",
+        "EVIDENCE_GAPS": [
+          "CWS470_OBJECT_IDENTITIES",
+          "PUMP_CURVES",
+          "TUNNEL_HYDRAULICS",
+          "WATERBOX_CONFIGURATION",
+          "OUTFALL_MIXING",
+          "CHEMICAL_TREATMENT_PACKAGE"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-SRC-001",
+          "T2-C003-SRC-002",
+          "T2-C003-RS-EN-001"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-013",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-CRY-WARM",
+        "CANDIDATE_TYPE": "HIGH_DEPENDENCY_EXISTING_SYSTEM_DECOMPOSITION",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "CRY",
+          "CRY-600"
+        ],
+        "SYSTEM_BOUNDARY": "WARM_HELIUM_COMPRESSION_AFTERCOOLING_OIL_REMOVAL_PURIFICATION_STORAGE_AND_RECOVERY_UPSTREAM_OF_COLD_BOXES",
+        "SUBSYSTEMS": [
+          "WARM_COMPRESSOR_TRAINS",
+          "AFTERCOOLING",
+          "OIL_REMOVAL",
+          "PURIFICATION",
+          "WARM_STORAGE",
+          "RECOVERY",
+          "INVENTORY_MANAGEMENT"
+        ],
+        "TRAINS_LOOPS": "SOURCE_DESCRIBES_MULTIPLE_COMPRESSOR_TRAINS_EXACT_OPERATIONAL_GROUPING_REQUIRES_CLOSURE",
+        "MAJOR_EQUIPMENT": [
+          "HELIUM_COMPRESSORS",
+          "AFTERCOOLERS",
+          "SEPARATORS",
+          "PURIFIERS",
+          "STORAGE_TANKS",
+          "RECOVERY_HEADERS"
+        ],
+        "COMPONENT_CLASSES": [
+          "COMPRESSOR",
+          "HEAT_EXCHANGER",
+          "SEPARATOR",
+          "FILTER",
+          "VESSEL",
+          "VALVE",
+          "PIPE",
+          "INSTRUMENT"
+        ],
+        "CONNECTION_CLASSES": [
+          "COMPRESSOR_SUCTION",
+          "DISCHARGE",
+          "INTERSTAGE",
+          "STORAGE",
+          "RECOVERY",
+          "COLD_BOX_FEED"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "COMPRESSOR_FOUNDATION",
+          "VESSEL_SUPPORT",
+          "PIPE_SUPPORT",
+          "VIBRATION_ISOLATION"
+        ],
+        "PENETRATION_INTERFACES": "C101_C102_PROCESS_AND_CRYODISTRIBUTION_BOUNDARIES",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "PRESSURE",
+          "TEMPERATURE",
+          "FLOW",
+          "PURITY",
+          "VIBRATION",
+          "BEARING_TEMPERATURE",
+          "MACHINE_PROTECTION"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "LARGE_COMPRESSOR_MOTORS",
+          "AUXILIARY_PUMPS",
+          "PURIFICATION_LOADS"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "INITIAL_HELIUM_CHARGE",
+          "PURGE",
+          "DRYING",
+          "COMMISSIONING_RECIRCULATION"
+        ],
+        "PROCUREMENT_PACKAGE": "CRYOGENIC_WARM_COMPRESSION_AND_PURIFICATION_PACKAGE_CLASS",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "EXACT_OFG_OEM_OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "ROTATING_EQUIPMENT_PROCESS_PIPING_AND_EI",
+        "INSTALLATION_STATE": "IC_AND_OPERATING_SUPPORT",
+        "TEST_BOUNDARY": "COMPRESSOR_PERFORMANCE_LEAK_PURITY_VIBRATION_AND_RECOVERY_TESTS",
+        "MECHANICAL_COMPLETION": "PRECEDES_CURRENT_IC_EXACT_RECORDS_OPEN",
+        "TURNOVER": "PRECEDES_CURRENT_IC_EXACT_RECORDS_OPEN",
+        "COMMISSIONING_STATE": "IC_AND_OPERATING_SUPPORT",
+        "MAINTENANCE_STATE": "COMPRESSOR_OIL_PURIFICATION_BEARING_AND_VIBRATION_PROGRAM_REQUIRED",
+        "PROVENANCE_CLASS": "SOURCE_SUPPORTED_DECOMPOSITION",
+        "EVIDENCE_GAPS": [
+          "COMPRESSOR_OEM_DATA",
+          "COMPRESSOR_MAPS",
+          "MOTOR_LOADS",
+          "OIL_SYSTEM",
+          "PURIFIER_CAPACITY",
+          "AS_BUILT_HEADERS"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-SRC-001",
+          "T2-C003-RS-EN-002"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-014",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-CRY-COLD-DIST",
+        "CANDIDATE_TYPE": "HIGH_DEPENDENCY_EXISTING_SYSTEM_DECOMPOSITION",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "CRY",
+          "CRY-600"
+        ],
+        "SYSTEM_BOUNDARY": "COLD_BOX_REFRIGERATION_COLD_STORAGE_DISTRIBUTION_AND_RETURN_TO_MAGNET_THERMAL_SHIELD_AND_CRYOPUMP_CLIENTS",
+        "SUBSYSTEMS": [
+          "HELIUM_COLD_BOXES",
+          "NITROGEN_OR_PRECOOLING_IF_APPLICABLE",
+          "COLD_STORAGE",
+          "CRYODISTRIBUTION_BOXES",
+          "TRANSFER_LINES",
+          "CLIENT_VALVE_BOXES",
+          "QUENCH_OR_RECOVERY_RETURN"
+        ],
+        "TRAINS_LOOPS": "CLIENT_SPECIFIC_CRYOGENIC_CIRCUITS_EXACT_OFG_TOPOLOGY_OPEN",
+        "MAJOR_EQUIPMENT": [
+          "COLD_BOXES",
+          "CIRCULATORS_OR_CRYOGENIC_PUMPS",
+          "VALVE_BOXES",
+          "VACUUM_JACKETED_TRANSFER_LINES",
+          "STORAGE_VESSELS"
+        ],
+        "COMPONENT_CLASSES": [
+          "CRYOGENIC_HEAT_EXCHANGER",
+          "EXPANDER",
+          "PUMP_OR_CIRCULATOR",
+          "CRYOGENIC_VALVE",
+          "VACUUM_JACKETED_PIPE",
+          "VESSEL",
+          "INSTRUMENT"
+        ],
+        "CONNECTION_CLASSES": [
+          "SUPPLY",
+          "RETURN",
+          "QUENCH_RECOVERY",
+          "RELIEF",
+          "VENT",
+          "VACUUM_JACKET"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "LOW_THERMAL_CONDUCTIVITY_PIPE_SUPPORT",
+          "ANCHOR",
+          "GUIDE",
+          "EXPANSION_COMPENSATION",
+          "VALVE_BOX_SUPPORT"
+        ],
+        "PENETRATION_INTERFACES": "C101_C102_TO_F101_CRYOLINE_PENETRATIONS",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "PRESSURE",
+          "TEMPERATURE",
+          "FLOW",
+          "LEVEL",
+          "VACUUM",
+          "VALVE_POSITION"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "CRYO_CIRCULATORS",
+          "VALVE_ACTUATORS",
+          "HEATERS"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "PURGE",
+          "COOLDOWN",
+          "WARMUP",
+          "LEAK_TEST",
+          "TEMPORARY_CLIENT_ISOLATION"
+        ],
+        "PROCUREMENT_PACKAGE": "CRYOGENIC_COLD_BOX_DISTRIBUTION_TRANSFER_LINE_PACKAGE_CLASSES",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "EXACT_OFG_OEM_OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "CRYOGENIC_PIPING_VALVE_BOX_AND_MACHINE_INTERFACE",
+        "INSTALLATION_STATE": "IC_AND_OPERATING_SUPPORT",
+        "TEST_BOUNDARY": "HELIUM_LEAK_VACUUM_COLD_FUNCTIONAL_AND_CLIENT_INTERFACE_TESTS",
+        "MECHANICAL_COMPLETION": "EXACT_RECORDS_OPEN",
+        "TURNOVER": "EXACT_RECORDS_OPEN",
+        "COMMISSIONING_STATE": "IC_AND_OPERATING_SUPPORT",
+        "MAINTENANCE_STATE": "WARMUP_REQUIRED_FOR_MANY_INTERVENTIONS_CLIENT_OUTAGE_COUPLING_REQUIRED",
+        "PROVENANCE_CLASS": "SOURCE_SUPPORTED_DECOMPOSITION",
+        "EVIDENCE_GAPS": [
+          "TEMPERATURE_LEVEL_ALLOCATION",
+          "CLIENT_LOAD_MATRIX",
+          "VALVE_BOX_IDENTITIES",
+          "TRANSFER_LINE_AS_BUILT",
+          "RELIEF_INVENTORY",
+          "QUENCH_RETURN"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-SRC-001",
+          "T2-C003-RS-EN-002"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-015",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-VAC-ROUGHING",
+        "CANDIDATE_TYPE": "HIGH_DEPENDENCY_EXISTING_SYSTEM_DECOMPOSITION",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "VAC",
+          "VAC-260"
+        ],
+        "SYSTEM_BOUNDARY": "EVACUATE_MACHINE_AND_AUXILIARY_VOLUMES_FROM_ATMOSPHERE_OR_INTERMEDIATE_PRESSURE_TO_HIGH_VACUUM_CROSSOVER",
+        "SUBSYSTEMS": [
+          "DRY_ROUGHING_PUMP_TRAINS",
+          "FORELINES",
+          "ISOLATION",
+          "PURGE",
+          "VENT",
+          "GAS_HANDLING",
+          "MONITORING"
+        ],
+        "TRAINS_LOOPS": "REV3_ENGINEERED_MODEL_HAS_MULTIPLE_ROUGHING_TRAINS_EXACT_FINAL_ARCHITECTURE_OPEN",
+        "MAJOR_EQUIPMENT": [
+          "DRY_ROUGHING_PUMPS",
+          "BACKING_PUMPS",
+          "FORELINE_VALVES",
+          "VACUUM_GAUGES",
+          "FILTER_OR_TRAP_IF_REQUIRED"
+        ],
+        "COMPONENT_CLASSES": [
+          "VACUUM_PUMP",
+          "VALVE",
+          "DUCT_OR_PIPE",
+          "GAUGE",
+          "RGA_OR_GAS_ANALYZER"
+        ],
+        "CONNECTION_CLASSES": [
+          "TORUS",
+          "CRYOSTAT",
+          "NBI",
+          "FORELINE",
+          "EXHAUST",
+          "PURGE",
+          "VENT"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "PUMP_SKID",
+          "VACUUM_LINE_SUPPORT",
+          "BELLOWS_SUPPORT",
+          "ANCHOR"
+        ],
+        "PENETRATION_INTERFACES": "F101_F102_VACUUM_PORT_AND_GALLERY_BOUNDARIES",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "PRESSURE",
+          "PUMP_STATUS",
+          "VALVE_POSITION",
+          "GAS_COMPOSITION"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "ROUGHING_PUMPS",
+          "BACKING_PUMPS",
+          "VALVES"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "LEAK_TEST",
+          "PURGE",
+          "BAKEOUT_SUPPORT",
+          "TEMPORARY_PUMPING"
+        ],
+        "PROCUREMENT_PACKAGE": "VACUUM_ROUGHING_PUMP_AND_FORELINE_PACKAGE_CLASS",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "VACUUM_MECHANICAL_PIPING_AND_MACHINE_INTERFACE",
+        "INSTALLATION_STATE": "IC_PUMPDOWN_LEAK_CAMPAIGNS",
+        "TEST_BOUNDARY": "PUMPDOWN_LEAK_TIGHTNESS_VALVE_ISOLATION_AND_EXHAUST_TESTS",
+        "MECHANICAL_COMPLETION": "EXACT_PACKAGE_RECORDS_OPEN",
+        "TURNOVER": "EXACT_PACKAGE_RECORDS_OPEN",
+        "COMMISSIONING_STATE": "IC",
+        "MAINTENANCE_STATE": "PUMP_SEAL_FORELINE_VALVE_AND_CLEANLINESS_PROGRAM_REQUIRED",
+        "PROVENANCE_CLASS": "SOURCE_SUPPORTED_FUNCTION_WITH_FINAL_ARCHITECTURE_OPEN",
+        "EVIDENCE_GAPS": [
+          "FINAL_PUMP_TECHNOLOGY",
+          "PUMP_SPEED",
+          "FORELINE_GRAPH",
+          "EXHAUST_DESTINATION",
+          "LEAK_BUDGET"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-SRC-001",
+          "T2-C003-RS-EN-003"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-016",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-VAC-HIGH-EXHAUST",
+        "CANDIDATE_TYPE": "HIGH_DEPENDENCY_EXISTING_SYSTEM_DECOMPOSITION",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "VAC",
+          "FUE",
+          "TRI"
+        ],
+        "SYSTEM_BOUNDARY": "HIGH_VACUUM_AND_PLASMA_EXHAUST_FROM_MACHINE_PORTS_THROUGH_HIGH_VACUUM_PUMPS_AND_REGENERATION_OR_CONTINUOUS_TRANSFER_TO_FUEL_PROCESSING",
+        "SUBSYSTEMS": [
+          "HIGH_VACUUM_PUMPING",
+          "DUCTS",
+          "FAST_AND_SLOW_ISOLATION",
+          "CRYOPUMP_REGENERATION_IF_USED",
+          "EXHAUST_TRANSFER",
+          "VACUUM_MEASUREMENT"
+        ],
+        "TRAINS_LOOPS": "FINAL_OFG_BATCH_VS_CONTINUOUS_ARCHITECTURE_OPEN",
+        "MAJOR_EQUIPMENT": [
+          "HIGH_VACUUM_PUMPS",
+          "LARGE_VACUUM_VALVES",
+          "DUCTS",
+          "BELLOWS",
+          "VACUUM_GAUGES",
+          "RGA"
+        ],
+        "COMPONENT_CLASSES": [
+          "CRYOPUMP_OR_ALTERNATIVE_HIGH_VACUUM_PUMP",
+          "VALVE",
+          "BELLOWS",
+          "DUCT",
+          "GAUGE",
+          "RGA"
+        ],
+        "CONNECTION_CLASSES": [
+          "TORUS_PORT",
+          "PUMP_INLET",
+          "REGENERATION",
+          "EXHAUST_TO_TRITIUM_PLANT",
+          "PURGE"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "VACUUM_DUCT_SUPPORT",
+          "BELLOWS_GUIDE",
+          "PUMP_SUPPORT",
+          "PORT_LOAD_INTERFACE"
+        ],
+        "PENETRATION_INTERFACES": "MACHINE_PORTS_AND_TRITIUM_PLANT_TRANSFER_PENETRATIONS",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "VACUUM_PRESSURE",
+          "RGA",
+          "VALVE_POSITION",
+          "PUMP_TEMPERATURE",
+          "REGENERATION_STATE"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "PUMP_DRIVES_OR_CRYOGENIC_CLIENT_LOAD",
+          "VALVES",
+          "HEATERS_FOR_REGENERATION_IF_APPLICABLE"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "BAKEOUT",
+          "LEAK_TEST",
+          "REGENERATION",
+          "ISOLATED_PORT_TEST"
+        ],
+        "PROCUREMENT_PACKAGE": "HIGH_VACUUM_PUMP_DUCT_VALVE_AND_INSTRUMENT_PACKAGE_CLASSES",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "VACUUM_MACHINE_INTERFACE_HIGH_CLEANLINESS_INSTALLATION",
+        "INSTALLATION_STATE": "IC_PUMPDOWN_LEAK_CAMPAIGNS",
+        "TEST_BOUNDARY": "HELIUM_LEAK_PUMPDOWN_ISOLATION_REGENERATION_AND_EXHAUST_TRANSFER",
+        "MECHANICAL_COMPLETION": "OPEN_BY_TRAIN",
+        "TURNOVER": "OPEN_BY_TRAIN",
+        "COMMISSIONING_STATE": "IC",
+        "MAINTENANCE_STATE": "ACCESS_CONSTRAINED_PUMP_VALVE_BELLOWS_AND_CONTAMINATION_PROGRAM_REQUIRED",
+        "PROVENANCE_CLASS": "SOURCE_SUPPORTED_FUNCTION_FINAL_TECHNOLOGY_OPEN",
+        "EVIDENCE_GAPS": [
+          "HIGH_VACUUM_TECHNOLOGY_SELECTION",
+          "PUMP_COUNT",
+          "REGENERATION_SEQUENCE",
+          "TRITIUM_INTERFACE",
+          "DUCT_AS_BUILT",
+          "PORT_LOADS"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-SRC-001",
+          "T2-C003-RS-EN-003"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-017",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-VVP",
+        "CANDIDATE_TYPE": "UNDERDECOMPOSED_EXISTING_PRESSURE_SUPPRESSION_FUNCTION",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "VVP",
+          "VAC",
+          "FUS"
+        ],
+        "SYSTEM_BOUNDARY": "VACUUM_VESSEL_PRESSURE_SUPPRESSION_OR_PROTECTED_RELIEF_PATH_FROM_MACHINE_BOUNDARY_TO_SUPPRESSION_OR_DISCHARGE_VOLUME",
+        "SUBSYSTEMS": [
+          "DETECTION_OR_ACTUATION",
+          "RELIEF_OR_NON_RETURN_VALVES",
+          "SUPPRESSION_VOLUME",
+          "CONNECTING_DUCT_OR_PIPE",
+          "ISOLATION",
+          "INSTRUMENTATION"
+        ],
+        "TRAINS_LOOPS": "OPEN",
+        "MAJOR_EQUIPMENT": [
+          "SUPPRESSION_TANK_OR_VOLUME_IF_OFG_DESIGN_USES",
+          "RELIEF_VALVES",
+          "NON_RETURN_VALVES",
+          "RUPTURE_OR_PRESSURE_RELIEF_DEVICE_IF_USED"
+        ],
+        "COMPONENT_CLASSES": [
+          "PRESSURE_VESSEL",
+          "VALVE",
+          "RUPTURE_DEVICE",
+          "PIPE_OR_DUCT",
+          "INSTRUMENT"
+        ],
+        "CONNECTION_CLASSES": [
+          "VACUUM_VESSEL",
+          "SUPPRESSION_VOLUME",
+          "RELIEF",
+          "VENT",
+          "DRAIN"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "VESSEL_SUPPORT",
+          "DYNAMIC_PIPE_SUPPORT",
+          "VALVE_SUPPORT",
+          "ANCHOR"
+        ],
+        "PENETRATION_INTERFACES": "F101_MACHINE_BOUNDARY",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "PRESSURE",
+          "VALVE_POSITION",
+          "TEMPERATURE"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "ACTUATORS_AND_CONTROLS_IF_ACTIVE"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "FUNCTIONAL_TEST",
+          "LEAK_TEST",
+          "VALVE_QUALIFICATION"
+        ],
+        "PROCUREMENT_PACKAGE": "PRESSURE_SUPPRESSION_VESSEL_AND_VALVE_PACKAGE_CLASS",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "OFG_VENDOR_OPEN_EXTERNAL_ITER_PROCUREMENT_USED_ONLY_AS_PRECEDENT",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "PRESSURE_VESSEL_HIGH_INTEGRITY_PIPING",
+        "INSTALLATION_STATE": "EXACT_OFG_STATE_OPEN",
+        "TEST_BOUNDARY": "PRESSURE_LEAK_VALVE_FUNCTION_AND_SUPPRESSION_PERFORMANCE",
+        "MECHANICAL_COMPLETION": "OPEN",
+        "TURNOVER": "OPEN",
+        "COMMISSIONING_STATE": "OPEN",
+        "MAINTENANCE_STATE": "VALVE_AND_PRESSURE_BOUNDARY_SURVEILLANCE_REQUIRED",
+        "PROVENANCE_CLASS": "SOURCE_CODE_PLUS_EXTERNAL_PRECEDENT_FUNCTIONAL_RECONSTRUCTION",
+        "EVIDENCE_GAPS": [
+          "OFG_FUNCTIONAL_DESCRIPTION",
+          "P_AND_ID",
+          "VESSEL_IDENTITY",
+          "VALVE_IDENTITIES",
+          "DESIGN_TRANSIENT",
+          "QUALIFICATION"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-RS-ZH-001"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-018",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-BLANKET-TRITIUM-EXTRACTION",
+        "CANDIDATE_TYPE": "UNDERDECOMPOSED_EXISTING_FUEL_PROCESS_FUNCTION",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "BTX",
+          "TEX",
+          "TRI"
+        ],
+        "SYSTEM_BOUNDARY": "BLANKET_PURGE_OR_EXTRACTION_STREAMS_FROM_MACHINE_TO_RECOVERY_CLEANUP_AND_TRANSFER_TO_CENTRAL_TRITIUM_PROCESS",
+        "SUBSYSTEMS": [
+          "BLANKET_PURGE_CIRCUITS",
+          "COLLECTION_MANIFOLDS",
+          "RECOVERY",
+          "CLEANUP",
+          "SAMPLING",
+          "TRANSFER"
+        ],
+        "TRAINS_LOOPS": "SECTOR_OR_BLANKET_GROUPING_OPEN",
+        "MAJOR_EQUIPMENT": [
+          "RECOVERY_SKIDS",
+          "SEPARATION_OR_CLEANUP_DEVICES",
+          "PUMPS_OR_CIRCULATORS",
+          "BUFFER_VESSELS"
+        ],
+        "COMPONENT_CLASSES": [
+          "PROCESS_SKID",
+          "VESSEL",
+          "PUMP_OR_COMPRESSOR",
+          "VALVE",
+          "FILTER",
+          "INSTRUMENT"
+        ],
+        "CONNECTION_CLASSES": [
+          "BLANKET_PURGE",
+          "RETURN_OR_SWEEP",
+          "TRANSFER_TO_TRITIUM_PLANT",
+          "SAMPLE",
+          "VENT"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "SKID_SUPPORT",
+          "PROCESS_PIPE_SUPPORT",
+          "PENETRATION_SUPPORT"
+        ],
+        "PENETRATION_INTERFACES": "F101_TO_F103_TRITIUM_TRANSFER_BOUNDARIES",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "FLOW",
+          "PRESSURE",
+          "TEMPERATURE",
+          "COMPOSITION",
+          "TRITIUM_INVENTORY",
+          "LEAK_MONITORING"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "PUMPS_OR_COMPRESSORS",
+          "HEATERS",
+          "SKID_CONTROLS"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "INERT_PURGE",
+          "NON_ACTIVE_COMMISSIONING",
+          "LEAK_TEST"
+        ],
+        "PROCUREMENT_PACKAGE": "TRITIUM_EXTRACTION_PROCESS_SKID_PACKAGE_CLASS",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "HIGH_INTEGRITY_PROCESS_PIPING_SKIDS_I_AND_C",
+        "INSTALLATION_STATE": "TRITIUM_FUEL_CYCLE_GROUP_PC_OR_FC",
+        "TEST_BOUNDARY": "LEAK_TIGHTNESS_PROCESS_FUNCTION_INVENTORY_AND_CONFINEMENT",
+        "MECHANICAL_COMPLETION": "OPEN",
+        "TURNOVER": "OPEN",
+        "COMMISSIONING_STATE": "PC_OR_FC_NO_FULL_DT_SERVICE",
+        "MAINTENANCE_STATE": "CONTAMINATION_CONFINEMENT_AND_COMPONENT_REPLACEMENT_PROGRAM_REQUIRED",
+        "PROVENANCE_CLASS": "SOURCE_SUPPORTED_FUNCTION",
+        "EVIDENCE_GAPS": [
+          "PROCESS_CHEMISTRY",
+          "FLOW",
+          "INVENTORY",
+          "SECTOR_ALLOCATION",
+          "PROCESS_SKID_IDENTITIES"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-SRC-001",
+          "T2-C003-RS-ES-001"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-019",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-TOKAMAK-EXHAUST-PROCESS",
+        "CANDIDATE_TYPE": "FUNCTION_BOUNDARY_RECONCILIATION_CANDIDATE",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "VAC",
+          "FUE",
+          "TRI",
+          "TEX"
+        ],
+        "SYSTEM_BOUNDARY": "RECEIVE_TORUS_EXHAUST_REMOVE_NON_HYDROGEN_IMPURITIES_AND_TRANSFER_HYDROGEN_ISOTOPE_STREAM_TO_ISOTOPE_SEPARATION",
+        "SUBSYSTEMS": [
+          "EXHAUST_RECEIPT",
+          "BUFFERING",
+          "IMPURITY_REMOVAL",
+          "GAS_CLEANUP",
+          "TRANSFER"
+        ],
+        "TRAINS_LOOPS": "REDUNDANCY_OPEN",
+        "MAJOR_EQUIPMENT": [
+          "PROCESS_SKIDS",
+          "BUFFER_VESSELS",
+          "PUMPS_OR_COMPRESSORS",
+          "CATALYTIC_OR_SEPARATION_DEVICES_TECHNOLOGY_OPEN"
+        ],
+        "COMPONENT_CLASSES": [
+          "VESSEL",
+          "PROCESS_COLUMN_OR_REACTOR",
+          "PUMP_OR_COMPRESSOR",
+          "VALVE",
+          "FILTER",
+          "INSTRUMENT"
+        ],
+        "CONNECTION_CLASSES": [
+          "VACUUM_EXHAUST_INLET",
+          "IMPURITY_STREAM",
+          "ISOTOPE_PROCESS_OUTLET",
+          "VENT_OR_DETRITIATION"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "SKID_SUPPORT",
+          "PIPE_SUPPORT"
+        ],
+        "PENETRATION_INTERFACES": "F101_TO_F103",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "PRESSURE",
+          "FLOW",
+          "COMPOSITION",
+          "TRITIUM_INVENTORY",
+          "LEAK"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "PUMPS_COMPRESSORS_HEATERS_SKID_CONTROLS"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "INERT_GAS_COMMISSIONING",
+          "LEAK_TEST",
+          "CLEANUP_TEST"
+        ],
+        "PROCUREMENT_PACKAGE": "TOKAMAK_EXHAUST_PROCESS_SKID_PACKAGE_CLASS",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "TRITIUM_PROCESS_SKID_AND_HIGH_INTEGRITY_PIPING",
+        "INSTALLATION_STATE": "TRITIUM_FUEL_CYCLE_GROUP_PC_OR_FC",
+        "TEST_BOUNDARY": "NON_ACTIVE_PROCESS_LEAK_AND_CONTROL_TESTS",
+        "MECHANICAL_COMPLETION": "OPEN",
+        "TURNOVER": "OPEN",
+        "COMMISSIONING_STATE": "PC_OR_FC_NO_FULL_DT_SERVICE",
+        "MAINTENANCE_STATE": "CONFINEMENT_AND_PROCESS_SKID_MAINTENANCE_REQUIRED",
+        "PROVENANCE_CLASS": "EXISTING_OFG_FUNCTION_FAMILIES_PLUS_EXTERNAL_FUNCTIONAL_PRECEDENT",
+        "EVIDENCE_GAPS": [
+          "OWNING_SYSTEM",
+          "PROCESS_TECHNOLOGY",
+          "SKID_TAGS",
+          "BOUNDARY_WITH_VAC",
+          "BOUNDARY_WITH_TEX_TRI"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-RS-EN-004",
+          "T2-C003-RS-FR-002"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-020",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-ISS",
+        "CANDIDATE_TYPE": "UNDERDECOMPOSED_EXISTING_CODE_FAMILY",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "ISS",
+          "TRI",
+          "TEX",
+          "TSD"
+        ],
+        "SYSTEM_BOUNDARY": "SEPARATE_PURIFIED_HYDROGEN_ISOTOPE_STREAMS_AND_ROUTE_PRODUCTS_TO_STORAGE_DELIVERY_OR_RECYCLE",
+        "SUBSYSTEMS": [
+          "FEED_CONDITIONING",
+          "ISOTOPE_SEPARATION",
+          "PRODUCT_BUFFERING",
+          "RECYCLE",
+          "ANALYTICAL_CONFIRMATION"
+        ],
+        "TRAINS_LOOPS": "OPEN",
+        "MAJOR_EQUIPMENT": [
+          "SEPARATION_COLUMNS_OR_EQUIVALENT_TECHNOLOGY_OPEN",
+          "BUFFER_VESSELS",
+          "PUMPS",
+          "HEAT_EXCHANGERS",
+          "ANALYZERS"
+        ],
+        "COMPONENT_CLASSES": [
+          "PROCESS_COLUMN",
+          "VESSEL",
+          "PUMP",
+          "HEAT_EXCHANGER",
+          "VALVE",
+          "ANALYZER"
+        ],
+        "CONNECTION_CLASSES": [
+          "FEED",
+          "PRODUCT_D",
+          "PRODUCT_T",
+          "RECYCLE",
+          "OFFGAS"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "SKID_SUPPORT",
+          "VESSEL_SUPPORT",
+          "PIPE_SUPPORT"
+        ],
+        "PENETRATION_INTERFACES": "F103_INTERNAL_AND_FUEL_CYCLE_TRANSFER_BOUNDARIES",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "COMPOSITION",
+          "FLOW",
+          "PRESSURE",
+          "TEMPERATURE",
+          "INVENTORY"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "PUMPS",
+          "HEATERS",
+          "REFRIGERATION_IF_TECHNOLOGY_REQUIRES_OPEN"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "NON_ACTIVE_GAS_COMMISSIONING",
+          "LEAK_TEST"
+        ],
+        "PROCUREMENT_PACKAGE": "ISOTOPE_SEPARATION_PROCESS_PACKAGE_CLASS",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "TRITIUM_PROCESS_SKID",
+        "INSTALLATION_STATE": "GROUP_PC_OR_FC",
+        "TEST_BOUNDARY": "LEAK_PROCESS_SEPARATION_AND_ANALYTICAL_ACCEPTANCE",
+        "MECHANICAL_COMPLETION": "OPEN",
+        "TURNOVER": "OPEN",
+        "COMMISSIONING_STATE": "PC_OR_FC_NO_FULL_DT_SERVICE",
+        "MAINTENANCE_STATE": "CONFINEMENT_PROCESS_AND_ANALYTICAL_MAINTENANCE_REQUIRED",
+        "PROVENANCE_CLASS": "SOURCE_CODE_FAMILY_PLUS_EXTERNAL_FUNCTIONAL_PRECEDENT",
+        "EVIDENCE_GAPS": [
+          "TECHNOLOGY",
+          "TRAIN_COUNT",
+          "CAPACITY",
+          "PACKAGE_IDENTITIES",
+          "PROCESS_BOUNDARIES"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-RS-EN-004"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-021",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-TSD",
+        "CANDIDATE_TYPE": "UNDERDECOMPOSED_EXISTING_SYSTEM_FUNCTION",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "TSD"
+        ],
+        "SYSTEM_BOUNDARY": "BUFFER_STORE_METER_AND_DELIVER_HYDROGEN_ISOTOPES_TO_FUELLING_CLIENTS",
+        "SUBSYSTEMS": [
+          "STORAGE_BEDS",
+          "BUFFER_VOLUMES",
+          "DELIVERY_MANIFOLDS",
+          "METERING",
+          "ISOLATION",
+          "INVENTORY_ACCOUNTANCY"
+        ],
+        "TRAINS_LOOPS": "STORAGE_BANK_AND_DELIVERY_REDUNDANCY_OPEN",
+        "MAJOR_EQUIPMENT": [
+          "STORAGE_BEDS",
+          "BUFFER_VESSELS",
+          "MANIFOLDS",
+          "METERING_DEVICES"
+        ],
+        "COMPONENT_CLASSES": [
+          "STORAGE_BED",
+          "VESSEL",
+          "VALVE",
+          "PIPE",
+          "FLOWMETER",
+          "ANALYZER"
+        ],
+        "CONNECTION_CLASSES": [
+          "ISOTOPE_SEPARATION_INLET",
+          "FUEL_DELIVERY",
+          "RECYCLE",
+          "VENT_OR_DETRITIATION"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "VESSEL_OR_BED_SUPPORT",
+          "PIPE_SUPPORT"
+        ],
+        "PENETRATION_INTERFACES": "F103_TO_F101_FUEL_DELIVERY",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "PRESSURE",
+          "TEMPERATURE",
+          "COMPOSITION",
+          "MASS_INVENTORY",
+          "FLOW"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "BED_HEATING_OR_COOLING_IF_REQUIRED",
+          "VALVES",
+          "CONTROLS"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "INERT_COMMISSIONING",
+          "LEAK_TEST"
+        ],
+        "PROCUREMENT_PACKAGE": "TRITIUM_STORAGE_DELIVERY_PACKAGE_CLASS",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "TRITIUM_PROCESS",
+        "INSTALLATION_STATE": "GROUP_PC_OR_FC",
+        "TEST_BOUNDARY": "LEAK_INVENTORY_METERING_AND_DELIVERY_FUNCTION",
+        "MECHANICAL_COMPLETION": "OPEN",
+        "TURNOVER": "OPEN",
+        "COMMISSIONING_STATE": "PC_OR_FC_NO_FULL_DT_SERVICE",
+        "MAINTENANCE_STATE": "STORAGE_BED_VALVE_INSTRUMENT_AND_INVENTORY_PROGRAM_REQUIRED",
+        "PROVENANCE_CLASS": "SOURCE_SUPPORTED_FUNCTION",
+        "EVIDENCE_GAPS": [
+          "BED_TECHNOLOGY",
+          "STORAGE_CAPACITY",
+          "DELIVERY_PRESSURE",
+          "EXACT_TAGS"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-SRC-001",
+          "T2-C003-RS-EN-004"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-022",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-ADS",
+        "CANDIDATE_TYPE": "UNDERDECOMPOSED_EXISTING_CODE_FAMILY",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "ADS",
+          "TRI",
+          "HVAC-CONFINEMENT"
+        ],
+        "SYSTEM_BOUNDARY": "REMOVE_TRITIUM_FROM_CONFINEMENT_OR_PROCESS_ATMOSPHERES_AND_ROUTE_RECOVERED_TRITIATED_WATER_TO_DOWNSTREAM_PROCESSING",
+        "SUBSYSTEMS": [
+          "AIR_EXTRACTION",
+          "CATALYTIC_CONVERSION",
+          "MOISTURE_CAPTURE",
+          "RECOVERED_WATER_TRANSFER",
+          "MONITORING"
+        ],
+        "TRAINS_LOOPS": "REDUNDANCY_OPEN",
+        "MAJOR_EQUIPMENT": [
+          "BLOWERS",
+          "CATALYTIC_REACTOR_OR_EQUIVALENT",
+          "DRYER_OR_MOLECULAR_SIEVE",
+          "WATER_COLLECTION",
+          "TRITIUM_MONITORING"
+        ],
+        "COMPONENT_CLASSES": [
+          "BLOWER",
+          "PROCESS_BED",
+          "HEATER",
+          "VESSEL",
+          "VALVE",
+          "MONITOR"
+        ],
+        "CONNECTION_CLASSES": [
+          "ROOM_OR_PROCESS_ATMOSPHERE_INLET",
+          "CLEAN_AIR_RETURN_OR_DISCHARGE",
+          "TRITIATED_WATER_TO_WDS"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "SKID_SUPPORT",
+          "DUCT_SUPPORT"
+        ],
+        "PENETRATION_INTERFACES": "F103_CONFINEMENT_HVAC_AND_WDS",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "TRITIUM_CONCENTRATION",
+          "FLOW",
+          "TEMPERATURE",
+          "DP",
+          "BED_STATUS"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "BLOWERS",
+          "HEATERS"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "NON_ACTIVE_FUNCTIONAL_TEST",
+          "BYPASS_FOR_MAINTENANCE_IF_ALLOWED_OPEN"
+        ],
+        "PROCUREMENT_PACKAGE": "ATMOSPHERE_DETRITIATION_PROCESS_PACKAGE_CLASS",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "PROCESS_HVAC_CONFINEMENT_INTERFACE",
+        "INSTALLATION_STATE": "TRITIUM_FUEL_CYCLE_GROUP_PC_OR_FC",
+        "TEST_BOUNDARY": "AIRFLOW_LEAK_DETRITIATION_FUNCTION_MONITORING",
+        "MECHANICAL_COMPLETION": "OPEN",
+        "TURNOVER": "OPEN",
+        "COMMISSIONING_STATE": "PC_OR_FC_NO_FULL_DT_SERVICE",
+        "MAINTENANCE_STATE": "BED_CATALYST_FILTER_BLOWER_AND_MONITOR_MAINTENANCE_REQUIRED",
+        "PROVENANCE_CLASS": "SOURCE_CODE_FAMILY_PLUS_STRONG_EXTERNAL_FUNCTIONAL_PRECEDENT",
+        "EVIDENCE_GAPS": [
+          "OFG_PROCESS_TECHNOLOGY",
+          "CAPACITY",
+          "REDUNDANCY",
+          "HVAC_BOUNDARIES",
+          "WDS_TRANSFER"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-RS-EN-004",
+          "T2-C003-RS-ES-002"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-023",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-WDS",
+        "CANDIDATE_TYPE": "UNDERDECOMPOSED_EXISTING_SYSTEM_FUNCTION",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "WDS",
+          "TRI",
+          "ADS"
+        ],
+        "SYSTEM_BOUNDARY": "RECOVER_HYDROGEN_ISOTOPES_FROM_TRITIATED_WATER_AND_RETURN_RECOVERED_ISOTOPES_TO_FUEL_CYCLE_WHILE_PRODUCING_CONTROLLED_WATER_STREAMS",
+        "SUBSYSTEMS": [
+          "WATER_RECEIPT",
+          "PRETREATMENT",
+          "ISOTOPE_RECOVERY",
+          "PRODUCT_TRANSFER",
+          "WATER_MONITORING"
+        ],
+        "TRAINS_LOOPS": "OPEN",
+        "MAJOR_EQUIPMENT": [
+          "WATER_PROCESS_SKIDS",
+          "ELECTROLYSIS_OR_OTHER_TECHNOLOGY_OPEN",
+          "VESSELS",
+          "PUMPS",
+          "ANALYZERS"
+        ],
+        "COMPONENT_CLASSES": [
+          "PUMP",
+          "PROCESS_CELL",
+          "VESSEL",
+          "VALVE",
+          "ANALYZER"
+        ],
+        "CONNECTION_CLASSES": [
+          "TRITIATED_WATER_INLET",
+          "RECOVERED_ISOTOPE",
+          "TREATED_WATER",
+          "VENT"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "SKID_SUPPORT",
+          "PIPE_SUPPORT"
+        ],
+        "PENETRATION_INTERFACES": "F103_INTERNAL_AND_EFFLUENT_BOUNDARIES",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "TRITIUM_ACTIVITY",
+          "FLOW",
+          "LEVEL",
+          "PRESSURE",
+          "COMPOSITION"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "PROCESS_CELLS",
+          "PUMPS",
+          "HEATERS"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "NON_ACTIVE_WATER_TEST",
+          "FLUSH",
+          "DECONTAMINATION"
+        ],
+        "PROCUREMENT_PACKAGE": "WATER_DETRITIATION_PROCESS_PACKAGE_CLASS",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "TRITIUM_WATER_PROCESS",
+        "INSTALLATION_STATE": "TRITIUM_FUEL_CYCLE_GROUP_PC_OR_FC",
+        "TEST_BOUNDARY": "LEAK_PROCESS_RECOVERY_AND_ACTIVITY_MONITORING",
+        "MECHANICAL_COMPLETION": "OPEN",
+        "TURNOVER": "OPEN",
+        "COMMISSIONING_STATE": "PC_OR_FC_NO_FULL_DT_SERVICE",
+        "MAINTENANCE_STATE": "CELL_PUMP_ANALYZER_AND_CONTAMINATION_PROGRAM_REQUIRED",
+        "PROVENANCE_CLASS": "SOURCE_SUPPORTED_SYSTEM_PLUS_EXTERNAL_FUNCTIONAL_PRECEDENT",
+        "EVIDENCE_GAPS": [
+          "PROCESS_TECHNOLOGY",
+          "CAPACITY",
+          "INVENTORY",
+          "DISCHARGE_BOUNDARIES",
+          "PACKAGE_TAGS"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-RS-EN-004"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-024",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-TMA",
+        "CANDIDATE_TYPE": "UNDERDECOMPOSED_EXISTING_CODE_FAMILY",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "TMA",
+          "TRI",
+          "TSD",
+          "TEX",
+          "WDS"
+        ],
+        "SYSTEM_BOUNDARY": "CHEMICAL_ISOTOPIC_AND_INVENTORY_MEASUREMENT_SUPPORTING_TRITIUM_ACCOUNTANCY_AND_PROCESS_CONTROL",
+        "SUBSYSTEMS": [
+          "PROCESS_SAMPLING",
+          "ANALYTICAL_INSTRUMENTATION",
+          "CALIBRATION",
+          "MASS_BALANCE",
+          "ACCOUNTANCY_RECORDS"
+        ],
+        "TRAINS_LOOPS": "DISTRIBUTED_CLIENT_FUNCTION",
+        "MAJOR_EQUIPMENT": [
+          "ANALYZERS",
+          "SAMPLE_CONDITIONING",
+          "CALIBRATION_GAS_OR_STANDARD_INTERFACES",
+          "DATA_ACQUISITION"
+        ],
+        "COMPONENT_CLASSES": [
+          "ANALYZER",
+          "SAMPLE_PANEL",
+          "VALVE",
+          "SMALL_BORE_PROCESS_LINE",
+          "CALIBRATION_DEVICE"
+        ],
+        "CONNECTION_CLASSES": [
+          "PROCESS_SAMPLE",
+          "RETURN_OR_DISPOSAL",
+          "CALIBRATION"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "PANEL_SUPPORT",
+          "SMALL_BORE_SUPPORT"
+        ],
+        "PENETRATION_INTERFACES": "F103_PROCESS_ROOMS",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "PROCESS_ANALYSIS",
+          "INVENTORY_DATABASE",
+          "DCS_INTERFACE"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "ANALYZERS",
+          "PANELS"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "CALIBRATION",
+          "NON_ACTIVE_COMMISSIONING"
+        ],
+        "PROCUREMENT_PACKAGE": "TRITIUM_ANALYTICAL_AND_SAMPLE_PACKAGE_CLASS",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "PROCESS_INSTRUMENTATION_SMALL_BORE_PIPING",
+        "INSTALLATION_STATE": "GROUP_PC_OR_FC",
+        "TEST_BOUNDARY": "CALIBRATION_SAMPLE_PATH_AND_DATA_INTEGRITY",
+        "MECHANICAL_COMPLETION": "OPEN",
+        "TURNOVER": "OPEN",
+        "COMMISSIONING_STATE": "PC_OR_FC",
+        "MAINTENANCE_STATE": "CALIBRATION_AND_SAMPLE_LINE_MAINTENANCE_REQUIRED",
+        "PROVENANCE_CLASS": "SOURCE_CODE_FAMILY_PLUS_EXTERNAL_FUNCTIONAL_PRECEDENT",
+        "EVIDENCE_GAPS": [
+          "ANALYZER_LIST",
+          "SAMPLE_POINT_REGISTER",
+          "CALIBRATION_RECORDS",
+          "ACCOUNTANCY_BOUNDARY"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-RS-EN-004"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-025",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-UTL-IA",
+        "CANDIDATE_TYPE": "UNDERDECOMPOSED_UTILITY_FUNCTION",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "UTL",
+          "PERM-UTILITIES",
+          "UTILITIES"
+        ],
+        "SYSTEM_BOUNDARY": "PRODUCE_TREAT_STORE_AND_DISTRIBUTE_INSTRUMENT_QUALITY_COMPRESSED_AIR_TO_PNEUMATIC_CONTROLS",
+        "SUBSYSTEMS": [
+          "COMPRESSORS",
+          "DRYING",
+          "FILTRATION",
+          "RECEIVERS",
+          "RING_MAIN",
+          "LOCAL_HEADERS"
+        ],
+        "TRAINS_LOOPS": "REDUNDANCY_OPEN",
+        "MAJOR_EQUIPMENT": [
+          "AIR_COMPRESSORS",
+          "DRYERS",
+          "FILTERS",
+          "RECEIVERS",
+          "DISTRIBUTION_HEADERS"
+        ],
+        "COMPONENT_CLASSES": [
+          "COMPRESSOR",
+          "DRYER",
+          "FILTER",
+          "VESSEL",
+          "VALVE",
+          "PIPE",
+          "DEWPOINT_MONITOR"
+        ],
+        "CONNECTION_CLASSES": [
+          "INTAKE",
+          "COMPRESSOR_DISCHARGE",
+          "DRYER",
+          "RECEIVER",
+          "RING_MAIN",
+          "CLIENT_DROP",
+          "CONDENSATE_DRAIN"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "COMPRESSOR_FOUNDATION",
+          "RECEIVER_SUPPORT",
+          "PIPE_SUPPORT"
+        ],
+        "PENETRATION_INTERFACES": "PLANTWIDE_UTILITY_PENETRATIONS",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "PRESSURE",
+          "DEW_POINT",
+          "AIR_QUALITY",
+          "COMPRESSOR_SEQUENCE"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "AIR_COMPRESSORS",
+          "DRYERS"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "TEMPORARY_AIR_DURING_COMMISSIONING",
+          "BLOWING_AND_CLEANING"
+        ],
+        "PROCUREMENT_PACKAGE": "INSTRUMENT_AIR_COMPRESSOR_DRYER_RECEIVER_PACKAGE_CLASS",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "UTILITY_MECHANICAL_PIPING",
+        "INSTALLATION_STATE": "PLANT_UTILITIES_SUPPORT_COMMISSIONING_EXACT_SUBSYSTEM_STATE_OPEN",
+        "TEST_BOUNDARY": "CAPACITY_PRESSURE_DEWPOINT_AIR_QUALITY_AND_RING_ISOLATION",
+        "MECHANICAL_COMPLETION": "OPEN",
+        "TURNOVER": "OPEN",
+        "COMMISSIONING_STATE": "SUPPORT_SERVICE_IN_USE_OR_AVAILABLE_EXACT_BOUNDARY_OPEN",
+        "MAINTENANCE_STATE": "COMPRESSOR_DRYER_FILTER_RECEIVER_AND_AIR_QUALITY_PROGRAM_REQUIRED",
+        "PROVENANCE_CLASS": "SOURCE_UTL_FUNCTION_PLUS_IAEA_DECOMPOSITION_PRECEDENT",
+        "EVIDENCE_GAPS": [
+          "COMPRESSOR_COUNT",
+          "DEWPOINT_REQUIREMENT",
+          "OIL_CLASS",
+          "RING_MAIN_GRAPH",
+          "CLIENT_REGISTER"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-RS-EN-006",
+          "T2-C003-RS-EN-007"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-026",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-UTL-SA",
+        "CANDIDATE_TYPE": "UNDERDECOMPOSED_UTILITY_FUNCTION",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "UTL",
+          "PERM-UTILITIES",
+          "UTILITIES"
+        ],
+        "SYSTEM_BOUNDARY": "PRODUCE_STORE_AND_DISTRIBUTE_GENERAL_SERVICE_COMPRESSED_AIR_SEPARATE_FROM_INSTRUMENT_QUALITY_FUNCTION",
+        "SUBSYSTEMS": [
+          "COMPRESSORS",
+          "RECEIVERS",
+          "DISTRIBUTION",
+          "CLIENT_DROPS",
+          "CONDENSATE_DRAIN"
+        ],
+        "TRAINS_LOOPS": "OPEN",
+        "MAJOR_EQUIPMENT": [
+          "COMPRESSORS",
+          "RECEIVERS",
+          "HEADERS"
+        ],
+        "COMPONENT_CLASSES": [
+          "COMPRESSOR",
+          "VESSEL",
+          "VALVE",
+          "PIPE"
+        ],
+        "CONNECTION_CLASSES": [
+          "SOURCE",
+          "HEADER",
+          "CLIENT",
+          "DRAIN"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "COMPRESSOR_FOUNDATION",
+          "PIPE_SUPPORT"
+        ],
+        "PENETRATION_INTERFACES": "PLANTWIDE",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "PRESSURE",
+          "COMPRESSOR_STATUS"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "COMPRESSORS"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "CONSTRUCTION_AIR_INTERFACE",
+          "COMMISSIONING_AIR"
+        ],
+        "PROCUREMENT_PACKAGE": "SERVICE_AIR_PACKAGE_CLASS",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "UTILITY_PIPING",
+        "INSTALLATION_STATE": "OPEN_AT_SUBSYSTEM_LEVEL",
+        "TEST_BOUNDARY": "CAPACITY_PRESSURE_AND_CROSS_CONNECTION_CONTROL",
+        "MECHANICAL_COMPLETION": "OPEN",
+        "TURNOVER": "OPEN",
+        "COMMISSIONING_STATE": "OPEN",
+        "MAINTENANCE_STATE": "COMPRESSOR_RECEIVER_AND_DRAIN_MAINTENANCE",
+        "PROVENANCE_CLASS": "SOURCE_UTL_FUNCTION_PLUS_ENGINEERED_SEPARATION",
+        "EVIDENCE_GAPS": [
+          "BOUNDARY_FROM_INSTRUMENT_AIR",
+          "PRESSURE",
+          "CLIENTS",
+          "CROSS_CONNECTIONS"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-RS-EN-007"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-027",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-UTL-N2",
+        "CANDIDATE_TYPE": "UNDERDECOMPOSED_UTILITY_FUNCTION",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "UTL",
+          "CRY",
+          "TRI"
+        ],
+        "SYSTEM_BOUNDARY": "PRODUCE_OR_RECEIVE_STORE_AND_DISTRIBUTE_NITROGEN_FOR_INERTING_PURGING_ACTUATION_DRYING_AND_PROCESS_CLIENTS",
+        "SUBSYSTEMS": [
+          "SOURCE_OR_GENERATION",
+          "STORAGE",
+          "PRESSURE_REGULATION",
+          "DISTRIBUTION",
+          "CLIENT_ISOLATION"
+        ],
+        "TRAINS_LOOPS": "OPEN",
+        "MAJOR_EQUIPMENT": [
+          "NITROGEN_SOURCE_OR_GENERATOR",
+          "STORAGE_VESSELS",
+          "REGULATORS",
+          "HEADERS"
+        ],
+        "COMPONENT_CLASSES": [
+          "GENERATOR_OR_STORAGE_VESSEL",
+          "REGULATOR",
+          "VALVE",
+          "PIPE",
+          "INSTRUMENT"
+        ],
+        "CONNECTION_CLASSES": [
+          "SOURCE",
+          "STORAGE",
+          "HEADER",
+          "CLIENT_PURGE",
+          "VENT"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "VESSEL_SUPPORT",
+          "PIPE_SUPPORT"
+        ],
+        "PENETRATION_INTERFACES": "PLANTWIDE_TO_TRITIUM_CRYO_COOLING_AND_TEST_CLIENTS",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "PRESSURE",
+          "FLOW",
+          "PURITY",
+          "STORAGE_LEVEL_OR_INVENTORY"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "GENERATION_PACKAGE_IF_USED"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "PURGE",
+          "DRYING",
+          "LEAK_TEST",
+          "INERT_COMMISSIONING"
+        ],
+        "PROCUREMENT_PACKAGE": "NITROGEN_GENERATION_STORAGE_AND_DISTRIBUTION_PACKAGE_CLASS",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "UTILITY_GAS_PIPING",
+        "INSTALLATION_STATE": "OPEN_AT_SUBSYSTEM_LEVEL",
+        "TEST_BOUNDARY": "PURITY_PRESSURE_FLOW_LEAK_AND_CLIENT_FUNCTION",
+        "MECHANICAL_COMPLETION": "OPEN",
+        "TURNOVER": "OPEN",
+        "COMMISSIONING_STATE": "UTILITY_FUNCTION_REQUIRED_BEFORE_MULTIPLE_CLIENT_COMMISSIONING_STAGES",
+        "MAINTENANCE_STATE": "SOURCE_STORAGE_REGULATOR_AND_VALVE_MAINTENANCE",
+        "PROVENANCE_CLASS": "SOURCE_UTL_FUNCTION_PLUS_EXTERNAL_PRECEDENT",
+        "EVIDENCE_GAPS": [
+          "SOURCE_TECHNOLOGY",
+          "STORAGE",
+          "PURITY",
+          "CLIENT_MATRIX",
+          "CROSS_CONNECTION_CONTROL"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-RS-EN-007"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-028",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-UTL-WATER",
+        "CANDIDATE_TYPE": "UNDERDECOMPOSED_UTILITY_FUNCTION",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "UTL",
+          "UTILITIES",
+          "PERM-UTILITIES"
+        ],
+        "SYSTEM_BOUNDARY": "TREAT_STORE_AND_DISTRIBUTE_DEMINERALIZED_SERVICE_AND_POTABLE_WATER_WITH_SEPARATE_QUALITY_AND_BACKFLOW_BOUNDARIES",
+        "SUBSYSTEMS": [
+          "DEMINERALIZED_WATER",
+          "SERVICE_WATER",
+          "POTABLE_WATER",
+          "STORAGE",
+          "PUMPING",
+          "DISTRIBUTION"
+        ],
+        "TRAINS_LOOPS": "OPEN",
+        "MAJOR_EQUIPMENT": [
+          "WATER_TREATMENT_PACKAGE",
+          "TANKS",
+          "PUMPS",
+          "DISTRIBUTION_HEADERS"
+        ],
+        "COMPONENT_CLASSES": [
+          "FILTER",
+          "ION_EXCHANGE_OR_MEMBRANE_IF_SELECTED",
+          "TANK",
+          "PUMP",
+          "VALVE",
+          "PIPE",
+          "INSTRUMENT"
+        ],
+        "CONNECTION_CLASSES": [
+          "RAW_OR_MUNICIPAL_SOURCE",
+          "TREATMENT",
+          "STORAGE",
+          "CLIENT_SUPPLY",
+          "DRAIN"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "TANK_SUPPORT",
+          "PUMP_FOUNDATION",
+          "PIPE_SUPPORT"
+        ],
+        "PENETRATION_INTERFACES": "PLANTWIDE",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "LEVEL",
+          "FLOW",
+          "PRESSURE",
+          "CONDUCTIVITY_OR_QUALITY"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "PUMPS",
+          "TREATMENT_EQUIPMENT"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "COMMISSIONING_FILL",
+          "FLUSH",
+          "HYDROTEST_SUPPLY"
+        ],
+        "PROCUREMENT_PACKAGE": "WATER_TREATMENT_STORAGE_PUMPING_PACKAGE_CLASS",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "UTILITY_WATER_PROCESS_AND_PIPING",
+        "INSTALLATION_STATE": "OPEN_AT_SUBSYSTEM_LEVEL",
+        "TEST_BOUNDARY": "WATER_QUALITY_CAPACITY_STORAGE_DISTRIBUTION_AND_BACKFLOW",
+        "MECHANICAL_COMPLETION": "OPEN",
+        "TURNOVER": "OPEN",
+        "COMMISSIONING_STATE": "SUPPORT_UTILITY_REQUIRED_FOR_MULTIPLE_COMMISSIONING_PACKAGES",
+        "MAINTENANCE_STATE": "TREATMENT_MEDIA_PUMP_TANK_AND_WATER_QUALITY_PROGRAM_REQUIRED",
+        "PROVENANCE_CLASS": "SOURCE_UTL_FUNCTION_PLUS_EXTERNAL_PRECEDENT",
+        "EVIDENCE_GAPS": [
+          "DEMIN_PLANT_TECHNOLOGY",
+          "TANKS",
+          "PUMP_CAPACITY",
+          "CLIENT_MATRIX",
+          "QUALITY_CLASSES"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-RS-EN-007"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-029",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-HCD-COOL",
+        "CANDIDATE_TYPE": "CROSS_SYSTEM_CLIENT_COOLING_NETWORK",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "NBI",
+          "ECH",
+          "ICH",
+          "CCW",
+          "CHW",
+          "CWS"
+        ],
+        "SYSTEM_BOUNDARY": "LOCAL_COOLING_AND_HEAT_REJECTION_INTERFACES_FOR_HEATING_AND_CURRENT_DRIVE_EQUIPMENT_FROM_CLIENT_SKIDS_TO_PLANT_COOLING_HEADERS",
+        "SUBSYSTEMS": [
+          "NBI_LOCAL_COOLING",
+          "ECH_GYROTRON_AND_TRANSMISSION_COOLING",
+          "ICH_RF_GENERATOR_MATCHING_AND_ANTENNA_COOLING",
+          "LOCAL_HEAT_EXCHANGERS",
+          "FLOW_CONTROL",
+          "LEAK_MONITORING"
+        ],
+        "TRAINS_LOOPS": "CLIENT_PACKAGE_SPECIFIC_OPEN",
+        "MAJOR_EQUIPMENT": [
+          "LOCAL_PUMPS_IF_USED",
+          "HEAT_EXCHANGERS",
+          "FLOW_CONTROL_VALVES",
+          "DEIONIZED_OR_SPECIAL_WATER_PACKAGE_IF_REQUIRED_OPEN"
+        ],
+        "COMPONENT_CLASSES": [
+          "PUMP",
+          "HEAT_EXCHANGER",
+          "VALVE",
+          "PIPE_OR_HOSE",
+          "FLOWMETER",
+          "LEAK_DETECTOR"
+        ],
+        "CONNECTION_CLASSES": [
+          "CLIENT_SUPPLY",
+          "CLIENT_RETURN",
+          "PLANT_CCW_OR_CHW_INTERFACE",
+          "DRAIN",
+          "VENT"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "SKID_SUPPORT",
+          "PIPE_SUPPORT",
+          "FLEXIBLE_CONNECTION_SUPPORT"
+        ],
+        "PENETRATION_INTERFACES": "F104_F105_TO_UTILITY_DISTRIBUTION",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "FLOW",
+          "TEMPERATURE",
+          "PRESSURE",
+          "LEAK",
+          "HEATING_PERMISSIVE"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "LOCAL_PUMPS_IF_ANY",
+          "HEATING_SYSTEM_HIGH_POWER_LOADS_THREAD1_OWNED"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "DUMMY_LOAD_COOLING",
+          "LOCAL_FLUSH",
+          "PRESSURE_TEST"
+        ],
+        "PROCUREMENT_PACKAGE": "HCD_LOCAL_COOLING_PACKAGE_CLASS_PLUS_PLANT_COOLING_INTERFACE",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "HCD_PACKAGE_MECHANICAL_UTILITY_INTERFACE",
+        "INSTALLATION_STATE": "ECH_FC_OR_IC_NBI_ICH_PC_OR_FC",
+        "TEST_BOUNDARY": "LOCAL_LOOP_FLOW_HEAT_REMOVAL_LEAK_AND_HEATING_PERMISSIVE",
+        "MECHANICAL_COMPLETION": "OPEN_BY_CLIENT",
+        "TURNOVER": "OPEN_BY_CLIENT",
+        "COMMISSIONING_STATE": "ECH_FC_OR_IC_NBI_ICH_PC_OR_FC",
+        "MAINTENANCE_STATE": "CLIENT_SPECIFIC_COOLING_CLEANLINESS_AND_LEAK_PROGRAM_REQUIRED",
+        "PROVENANCE_CLASS": "SOURCE_CLIENT_FUNCTION_PLUS_EXTERNAL_FUSION_PRECEDENT",
+        "EVIDENCE_GAPS": [
+          "CLIENT_HEAT_LOADS",
+          "COOLANT_QUALITY",
+          "LOCAL_PUMP_HX_POPULATION",
+          "CCW_CHW_INTERFACE",
+          "CONTROL_INTERLOCKS"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-RS-EN-001",
+          "T2-C003-RS-DE-001"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-030",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-DRN-SEGREGATED",
+        "CANDIDATE_TYPE": "HIGH_DEPENDENCY_UNDERDECOMPOSED_EXISTING_SYSTEM",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "DRN",
+          "DRAINAGE-EFFLUENT",
+          "RAW"
+        ],
+        "SYSTEM_BOUNDARY": "COLLECT_SEGREGATE_MONITOR_HOLD_TRANSFER_OR_DISPOSE_FLOOR_EQUIPMENT_PROCESS_AND_POTENTIALLY_CONTAMINATED_LIQUIDS",
+        "SUBSYSTEMS": [
+          "CLEAN_FLOOR_DRAINS",
+          "EQUIPMENT_DRAINS",
+          "PROCESS_DRAINS",
+          "SUMP_SYSTEMS",
+          "MONITORED_COLLECTION",
+          "POTENTIALLY_CONTAMINATED_TRANSFER",
+          "SAMPLING_AND_RELEASE_OR_RADWASTE_INTERFACE"
+        ],
+        "TRAINS_LOOPS": "AREA_BASED_COLLECTION_NETWORKS_OPEN",
+        "MAJOR_EQUIPMENT": [
+          "SUMPS",
+          "SUMP_PUMPS",
+          "COLLECTION_TANKS",
+          "MONITORING_STATIONS",
+          "TRANSFER_PUMPS"
+        ],
+        "COMPONENT_CLASSES": [
+          "SUMP",
+          "TANK",
+          "PUMP",
+          "VALVE",
+          "PIPE",
+          "MONITOR",
+          "SAMPLE_PANEL"
+        ],
+        "CONNECTION_CLASSES": [
+          "FLOOR_DRAIN",
+          "EQUIPMENT_DRAIN",
+          "PROCESS_DRAIN",
+          "TRANSFER",
+          "SAMPLE",
+          "RADWASTE_INTERFACE"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "PUMP_AND_TANK_SUPPORT",
+          "PIPE_SUPPORT"
+        ],
+        "PENETRATION_INTERFACES": "PLANTWIDE_FLOOR_WALL_AND_BUILDING_COLLECTION_BOUNDARIES",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "LEVEL",
+          "PUMP_STATUS",
+          "FLOW",
+          "RADIATION_OR_TRITIUM_MONITORING_AS_REQUIRED"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "SUMP_AND_TRANSFER_PUMPS"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "CONSTRUCTION_DRAINAGE_INTERFACE",
+          "COMMISSIONING_FLUSH_DISPOSAL",
+          "TEMPORARY_COLLECTION"
+        ],
+        "PROCUREMENT_PACKAGE": "AREA_DRAINAGE_PUMP_TANK_MONITORING_PACKAGE_CLASSES",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "BURIED_EMBEDDED_AND_BUILDING_PROCESS_DRAINAGE",
+        "INSTALLATION_STATE": "PLANTWIDE_MIXED_STATES_EXACT_AREA_STATE_OPEN",
+        "TEST_BOUNDARY": "SUMP_LEVEL_PUMP_TRANSFER_SEGREGATION_AND_MONITORING",
+        "MECHANICAL_COMPLETION": "AREA_SPECIFIC_OPEN",
+        "TURNOVER": "AREA_SPECIFIC_OPEN",
+        "COMMISSIONING_STATE": "MIXED_SUPPORT_STATE",
+        "MAINTENANCE_STATE": "SUMP_PUMP_TANK_LINE_CLEANING_AND_MONITOR_CALIBRATION_REQUIRED",
+        "PROVENANCE_CLASS": "SOURCE_SYSTEM_EXISTS_BUT_FUNCTIONAL_DECOMPOSITION_INADEQUATE",
+        "EVIDENCE_GAPS": [
+          "DRAIN_CLASSIFICATION",
+          "SOURCE_TO_DESTINATION_GRAPH",
+          "CROSS_CONNECTIONS",
+          "RADWASTE_BOUNDARY",
+          "SUMP_PUMP_LIST",
+          "EFFLUENT_RELEASE_PATH"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-SRC-001",
+          "T2-C003-RS-EN-005"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-031",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-SYS-TEMP-COMM-FLUID",
+        "CANDIDATE_TYPE": "TEMPORARY_PLANT_FUNCTIONAL_NETWORK",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "TEMP-UTIL",
+          "TMP-BHT-401-CRS-01",
+          "SYSTEM_SPECIFIC_TEMPORARY_CONFIGURATIONS"
+        ],
+        "SYSTEM_BOUNDARY": "TEMPORARY_FILL_FLUSH_CLEAN_PRESSURE_TEST_LEAK_TEST_DRAIN_VENT_SAMPLE_RECIRCULATION_DRYING_AND_LAYUP_EQUIPMENT_ATTACHED_TO_PERMANENT_PROCESS_SYSTEMS",
+        "SUBSYSTEMS": [
+          "TEMPORARY_RECIRCULATION",
+          "FLUSHING",
+          "CHEMICAL_CLEANING",
+          "HYDROTEST",
+          "LEAK_TEST",
+          "DRYING",
+          "LAYUP",
+          "TEMPORARY_DRAIN_AND_COLLECTION"
+        ],
+        "TRAINS_LOOPS": "SYSTEM_SPECIFIC_TEMPORARY_PACKAGES",
+        "MAJOR_EQUIPMENT": [
+          "TEMPORARY_PUMPS",
+          "SKIDS",
+          "FILTERS",
+          "HEAT_EXCHANGERS_IF_REQUIRED",
+          "HOSES_OR_SPOOLS",
+          "TANKS",
+          "TEST_MANIFOLDS"
+        ],
+        "COMPONENT_CLASSES": [
+          "PUMP",
+          "SKID",
+          "TANK",
+          "FILTER",
+          "HOSE",
+          "SPOOL",
+          "VALVE",
+          "RELIEF_DEVICE",
+          "INSTRUMENT",
+          "TEMPORARY_RESTRAINT"
+        ],
+        "CONNECTION_CLASSES": [
+          "TEMPORARY_TIE_IN",
+          "ISOLATION",
+          "BLIND_OR_BREAK",
+          "DRAIN",
+          "VENT",
+          "SAMPLE",
+          "RETURN"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "SKID_BASE",
+          "TEMPORARY_SUPPORT",
+          "GUIDE",
+          "STOP",
+          "RESTRAINT",
+          "ANCHOR"
+        ],
+        "PENETRATION_INTERFACES": "SYSTEM_SPECIFIC_TEMPORARY_ROUTE_AND_ACCESS_OPEN",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "TEMPORARY_PRESSURE",
+          "FLOW",
+          "TEMPERATURE",
+          "VIBRATION",
+          "TEST_DATA_ACQUISITION"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "TEMPORARY_PUMP_MOTOR",
+          "HEATER",
+          "TEST_PANEL"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "THIS_OBJECT_IS_TEMPORARY_CONFIGURATION_FAMILY"
+        ],
+        "PROCUREMENT_PACKAGE": "TEMPORARY_COMMISSIONING_SKID_RENTAL_OR_PURCHASE_PACKAGE_CLASS",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "PACKAGE_SPECIFIC_OPEN_UNLESS_EVIDENCE_FOUND",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "TEMPORARY_SYSTEM_INSTALLATION_AND_CONFIGURATION_CONTROL",
+        "INSTALLATION_STATE": "MIXED_AND_CHANGEABLE",
+        "TEST_BOUNDARY": "MUST_BE_EXPLICIT_PER_USE_CASE",
+        "MECHANICAL_COMPLETION": "TEMPORARY_PACKAGE_SPECIFIC",
+        "TURNOVER": "COMMISSIONING_CUSTODY_REQUIRED_WHERE_USED",
+        "COMMISSIONING_STATE": "ACTIVE_FUNCTIONAL_CLASS",
+        "MAINTENANCE_STATE": "INSPECTION_PMT_RESTORATION_AND_REMOVAL_REQUIRED",
+        "PROVENANCE_CLASS": "SOURCE_SUPPORTED_TEMPORARY_PLANT_CLASS",
+        "EVIDENCE_GAPS": [
+          "PLANTWIDE_TEMPORARY_SYSTEM_REGISTER",
+          "TIE_IN_REGISTER",
+          "TEMPORARY_SUPPORT_REGISTER",
+          "REMOVAL_AND_RESTORATION",
+          "CUSTODY",
+          "PRESERVATION"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-SRC-005",
+          "T2-C003-RS-EN-008"
+        ]
+      },
+      {
+        "FUNCTION_ID": "T2-PROV-C003-FN-032",
+        "SYSTEM_CANDIDATE_ID": "T2-PROV-C003-FN-COOLANT-TRITIUM-MONITOR",
+        "CANDIDATE_TYPE": "CROSS_SYSTEM_FUNCTIONAL_NETWORK_NOT_NEW_CANONICAL_SYSTEM",
+        "MAPS_TO_EXISTING_SYSTEMS": [
+          "BHT",
+          "DHT",
+          "VHT",
+          "CCW",
+          "DRN",
+          "WDS",
+          "TRI",
+          "TMA"
+        ],
+        "SYSTEM_BOUNDARY": "MONITOR_AND_ROUTE_COOLANT_OR_WATER_STREAMS_WHERE_TRITIUM_PERMEATION_LEAKAGE_OR_ACTIVATION_COULD_REQUIRE_ACCOUNTANCY_DETRITIATION_OR_CONTROLLED_COLLECTION",
+        "SUBSYSTEMS": [
+          "PROCESS_MONITORING",
+          "SAMPLE_POINTS",
+          "LEAK_COLLECTION",
+          "TRANSFER_TO_DETRITIATION_OR_RADWASTE_IF_REQUIRED"
+        ],
+        "TRAINS_LOOPS": "CROSS_SYSTEM",
+        "MAJOR_EQUIPMENT": [
+          "TRITIUM_MONITORS",
+          "SAMPLE_PANELS",
+          "COLLECTION_TANKS",
+          "TRANSFER_PUMPS_IF_REQUIRED"
+        ],
+        "COMPONENT_CLASSES": [
+          "ANALYZER",
+          "SAMPLE_PANEL",
+          "VALVE",
+          "TANK",
+          "PUMP"
+        ],
+        "CONNECTION_CLASSES": [
+          "PROCESS_SAMPLE",
+          "LEAK_COLLECTION",
+          "DRAIN_TRANSFER",
+          "WDS_OR_RADWASTE_INTERFACE"
+        ],
+        "SUPPORT_AND_RESTRAINT_CLASSES": [
+          "PANEL_SUPPORT",
+          "SMALL_BORE_SUPPORT"
+        ],
+        "PENETRATION_INTERFACES": "CLIENT_SYSTEM_BOUNDARIES",
+        "INSTRUMENT_AND_CONTROL_INTERFACES": [
+          "TRITIUM_ACTIVITY",
+          "PROCESS_CONDITION",
+          "ALARM"
+        ],
+        "ELECTRICAL_LOAD_INTERFACES": [
+          "ANALYZERS",
+          "TRANSFER_PUMPS_IF_ANY"
+        ],
+        "TEMPORARY_CONFIGURATIONS": [
+          "COMMISSIONING_SAMPLE_ROUTING",
+          "TEMPORARY_MONITORING"
+        ],
+        "PROCUREMENT_PACKAGE": "MONITORING_AND_SAMPLE_PACKAGE_CLASS",
+        "MANUFACTURER_OEM_VENDOR_SUPPLIER_CHAIN_WHERE_EVIDENCED": "OPEN",
+        "CONSTRUCTION_WORK_PACKAGE_CLASS": "PROCESS_INSTRUMENTATION_SMALL_BORE",
+        "INSTALLATION_STATE": "UNKNOWN_AS_CROSS_SYSTEM_NETWORK",
+        "TEST_BOUNDARY": "SAMPLE_PATH_CALIBRATION_ALARM_AND_TRANSFER",
+        "MECHANICAL_COMPLETION": "DISTRIBUTED_OPEN",
+        "TURNOVER": "DISTRIBUTED_OPEN",
+        "COMMISSIONING_STATE": "CLIENT_DEPENDENT",
+        "MAINTENANCE_STATE": "CALIBRATION_AND_SAMPLE_LINE_PROGRAM_REQUIRED",
+        "PROVENANCE_CLASS": "ENGINEERED_CROSS_SYSTEM_FUNCTION_FROM_SOURCE_AND_FUSION_PRECEDENT",
+        "EVIDENCE_GAPS": [
+          "OFG_REQUIRED_MONITORING_POINTS",
+          "DETRITIATION_ROUTE",
+          "DRAIN_CLASSIFICATION",
+          "ACCOUNTANCY_BOUNDARY"
+        ],
+        "SOURCE_IDS": [
+          "T2-C003-RS-ES-001",
+          "T2-C003-RS-ES-002"
+        ]
+      }
+    ]
+  },
+  "NEW_ENGINEERING_FINDINGS": [
+    {
+      "FINDING_ID": "T2-C003-F001",
+      "FINDING": "THE_LEGACY_SYSTEM_CODE_POPULATION_IS_NOT_A_COMPLETE_FUNCTIONAL_DECOMPOSITION",
+      "STATUS": "PASS_DISCOVERY",
+      "BASIS": "MULTIPLE_EXISTING_CODES_ARE_GENERIC_OR_OVERLAPPING_WHILE_THEIR_REQUIRED_PHYSICAL_FUNCTIONS_REMAIN_UNINSTANTIATED"
+    },
+    {
+      "FINDING_ID": "T2-C003-F002",
+      "FINDING": "CCW_TRAIN_INSTANCES_HAVE_REGISTERED_PUMPS_AND_HEAT_EXCHANGERS_BUT_COMMON_SURGE_CHEMISTRY_HEADERS_AND_CLIENT_BRANCHES_REMAIN_UNINSTANTIATED",
+      "STATUS": "VERIFIED_GAP",
+      "SOURCE_CITATIONS": [
+        ":chatgpt-content-reference{index="56"}",
+        ":chatgpt-content-reference{index="57"}"
+      ]
+    },
+    {
+      "FINDING_ID": "T2-C003-F003",
+      "FINDING": "BHT_TO_STEAM_POWER_CONVERSION_AND_AUXILIARY_CCW_HEAT_REJECTION_ARE_DIFFERENT_THERMODYNAMIC_FUNCTIONS_AND_MUST_NOT_BE_COLLAPSED_INTO_ONE_COOLING_NETWORK",
+      "STATUS": "PASS_BOUNDARY"
+    },
+    {
+      "FINDING_ID": "T2-C003-F004",
+      "FINDING": "UTL_REQUIRES_FUNCTIONAL_SEPARATION_OF_INSTRUMENT_AIR_SERVICE_AIR_NITROGEN_AND_WATER_SERVICES_BECAUSE_THEIR_QUALITY_RELIABILITY_CROSS_CONNECTION_AND_CLIENT_REQUIREMENTS_DIFFER",
+      "STATUS": "E_DISCOVERY"
+    },
+    {
+      "FINDING_ID": "T2-C003-F005",
+      "FINDING": "POWER_CONVERSION_REQUIRES_EXPLICIT_SUBNETWORKS_FOR_MAIN_STEAM_BYPASS_CONDENSER_AIR_REMOVAL_CONDENSATE_CLEANUP_REGENERATIVE_FEEDWATER_TURBINE_LUBE_SEAL_AND_CONTROL_OIL",
+      "STATUS": "E_DISCOVERY_WITH_SOURCE_AND_EXTERNAL_COMPLETENESS_SUPPORT"
+    },
+    {
+      "FINDING_ID": "T2-C003-F006",
+      "FINDING": "TOKAMAK_VACUUM_AND_CONDENSER_VACUUM_ARE_DISTINCT_FUNCTIONAL_NETWORKS_AND_SHALL_NOT_SHARE_SYSTEM_IDENTITY_MERELY_BECAUSE_BOTH_USE_VACUUM_EQUIPMENT",
+      "STATUS": "PASS_BOUNDARY"
+    },
+    {
+      "FINDING_ID": "T2-C003-F007",
+      "FINDING": "TRITIUM_AND_FUEL_PROCESSING_REQUIRES_BOUNDARY_RECONCILIATION_AMONG_TRI_TEX_BTX_ISS_TSD_FUE_WDS_ADS_AND_TMA_TO_PREVENT_DUPLICATE_OWNERSHIP_OF_EXHAUST_PROCESSING_SEPARATION_STORAGE_DETRITIATION_AND_ACCOUNTANCY",
+      "STATUS": "CRITICAL_IDENTITY_BOUNDARY_GAP"
+    },
+    {
+      "FINDING_ID": "T2-C003-F008",
+      "FINDING": "CRYOGENIC_PLANT_SHOULD_BE_MODELED_AS_AT_LEAST_WARM_COMPRESSION_PURIFICATION_STORAGE_AND_COLD_REFRIGERATION_DISTRIBUTION_CLIENT_NETWORKS_EVEN_IF_CANONICAL_SYSTEM_CODE_REMAINS_CR_Y",
+      "STATUS": "E_DECOMPOSITION"
+    },
+    {
+      "FINDING_ID": "T2-C003-F009",
+      "FINDING": "VACUUM_REQUIRES_SEPARATE_ROUGHING_HIGH_VACUUM_EXHAUST_REGENERATION_GAS_HANDLING_AND_MEASUREMENT_FUNCTIONS_WITH_DISTINCT_TEST_BOUNDARIES",
+      "STATUS": "E_DECOMPOSITION"
+    },
+    {
+      "FINDING_ID": "T2-C003-F010",
+      "FINDING": "HEATING_AND_CURRENT_DRIVE_PACKAGES_REQUIRE_EXPLICIT_LOCAL_COOLING_CLIENT_INTERFACES_TO_PLANT_COOLING_AND_THEIR_PERMISSIVES_SHOULD_TRACE_TO_COOLING_AVAILABILITY",
+      "STATUS": "E_CROSS_SYSTEM_INTERFACE"
+    },
+    {
+      "FINDING_ID": "T2-C003-F011",
+      "FINDING": "DRN_IS_TOO_GENERIC_FOR_PHYSICAL_CONFIGURATION_CONTROL_UNLESS_DRAIN_SOURCES_ARE_SEGREGATED_BY_CLEAN_PROCESS_POTENTIALLY_CONTAMINATED_AND_MONITORED_DESTINATION_CLASS",
+      "STATUS": "E_DECOMPOSITION"
+    },
+    {
+      "FINDING_ID": "T2-C003-F012",
+      "FINDING": "TEMPORARY_FLUSH_TEST_DRYING_LAYUP_AND_RECIRCULATION_SYSTEMS_FORM_A_PLANTWIDE_PHYSICAL_ASSET_CLASS_WITH_PRESSURE_BOUNDARY_SUPPORT_ELECTRICAL_I_AND_C_CUSTODY_AND_RESTORATION_REQUIREMENTS",
+      "STATUS": "SOURCE_SUPPORTED"
+    },
+    {
+      "FINDING_ID": "T2-C003-F013",
+      "FINDING": "RHR_EXISTS_AS_A_CONTROLLED_CODE_FAMILY_BUT_REMAINS_FUNCTIONALLY_UNDERDECOMPOSED_AND_REQUIRES_EXPLICIT_CLIENT_AND_HEAT_SINK_MAPPING",
+      "STATUS": "VERIFIED_GAP"
+    },
+    {
+      "FINDING_ID": "T2-C003-F014",
+      "FINDING": "PLANTWIDE_MECHANICAL_DISCOVERY_REQUIRES_A_CLIENT_LOAD_MATRIX_LINKING_EACH_HEAT_GENERATING_PACKAGE_TO_ITS_COOLING_SOURCE_HEAT_EXCHANGER_DOWNSTREAM_SINK_ELECTRICAL_DRIVER_AND_COMMISSIONING_DEPENDENCY",
+      "STATUS": "NEW_ATLAS_REQUIREMENT"
+    },
+    {
+      "FINDING_ID": "T2-C003-F015",
+      "FINDING": "PROCESS_SYSTEM_COMPLETENESS_REQUIRES_DRAIN_VENT_SAMPLE_RELIEF_FILL_FLUSH_TEST_AND_MAINTENANCE_CONNECTIONS_AT_EQUIPMENT_AND_LINE_LEVEL_NOT_JUST_MAJOR_EQUIPMENT_TAGS",
+      "STATUS": "NEW_ATLAS_REQUIREMENT"
+    },
+    {
+      "FINDING_ID": "T2-C003-F016",
+      "FINDING": "COMMISSIONING_STATE_IS_A_DEPENDENCY_GRAPH_NOT_A_SINGLE_PLANT_DATE_SUPPORT_UTILITIES_CONTROL_COOLING_CRYO_VACUUM_FUELLING_AND_HEATING_STATES_CONSTRAIN_DOWNSTREAM_TESTS",
+      "STATUS": "SOURCE_AND_PRECEDENT_SUPPORTED",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="58"}",
+        ":chatgpt-content-reference{index="59"}"
+      ]
+    }
+  ],
+  "PROPOSED_ATLAS_DELTAS": [
+    {
+      "DELTA_ID": "T2-C003-ATLAS-001",
+      "ACTION": "ADD_FUNCTION_FIRST_DISCOVERY_LAYER_ABOVE_AND_BELOW_EXISTING_SYSTEM_CODES",
+      "STATUS": "PROPOSED_E"
+    },
+    {
+      "DELTA_ID": "T2-C003-ATLAS-002",
+      "ACTION": "ADD_COMMON_CCW_NETWORK_WITH_HEADERS_SURGE_CHEMISTRY_MAKEUP_AND_CLIENT_BRANCH_REGISTER",
+      "STATUS": "PROPOSED_E"
+    },
+    {
+      "DELTA_ID": "T2-C003-ATLAS-003",
+      "ACTION": "ADD_RHR_CLIENT_HEAT_SINK_AND_REDUNDANCY_BOUNDARY_MODEL",
+      "STATUS": "PROPOSED_E"
+    },
+    {
+      "DELTA_ID": "T2-C003-ATLAS-004",
+      "ACTION": "ADD_POWER_CYCLE_SUBNETWORKS_FOR_BLOWDOWN_STEAM_BYPASS_CONDENSER_AIR_REMOVAL_CONDENSATE_CLEANUP_REGENERATIVE_HEATING_AND_TURBINE_AUXILIARIES",
+      "STATUS": "PROPOSED_E"
+    },
+    {
+      "DELTA_ID": "T2-C003-ATLAS-005",
+      "ACTION": "ADD_CRYOGENIC_WARM_PLANT_AND_COLD_DISTRIBUTION_FUNCTIONAL_BREAKDOWN",
+      "STATUS": "PROPOSED_E"
+    },
+    {
+      "DELTA_ID": "T2-C003-ATLAS-006",
+      "ACTION": "ADD_VACUUM_ROUGHING_HIGH_VACUUM_EXHAUST_AND_REGENERATION_BOUNDARY_MODEL",
+      "STATUS": "PROPOSED_E"
+    },
+    {
+      "DELTA_ID": "T2-C003-ATLAS-007",
+      "ACTION": "ADD_TRITIUM_FUNCTIONAL_BOUNDARY_MATRIX_ACROSS_TRI_TEX_BTX_ISS_TSD_FUE_WDS_ADS_TMA",
+      "STATUS": "PROPOSED_E"
+    },
+    {
+      "DELTA_ID": "T2-C003-ATLAS-008",
+      "ACTION": "ADD_UTILITY_QUALITY_CLASS_MODEL_FOR_INSTRUMENT_AIR_SERVICE_AIR_NITROGEN_DEMIN_WATER_SERVICE_WATER_AND_POTABLE_WATER",
+      "STATUS": "PROPOSED_E"
+    },
+    {
+      "DELTA_ID": "T2-C003-ATLAS-009",
+      "ACTION": "ADD_HEATING_CURRENT_DRIVE_CLIENT_COOLING_INTERFACE_MODEL",
+      "STATUS": "PROPOSED_E"
+    },
+    {
+      "DELTA_ID": "T2-C003-ATLAS-010",
+      "ACTION": "ADD_DRAIN_SOURCE_CLASSIFICATION_AND_DESTINATION_SEGREGATION_MODEL",
+      "STATUS": "PROPOSED_E"
+    },
+    {
+      "DELTA_ID": "T2-C003-ATLAS-011",
+      "ACTION": "ADD_PLANTWIDE_TEMPORARY_COMMISSIONING_PROCESS_SYSTEM_CLASS",
+      "STATUS": "PROPOSED_E"
+    },
+    {
+      "DELTA_ID": "T2-C003-ATLAS-012",
+      "ACTION": "ADD_CLIENT_HEAT_LOAD_AND_HEAT_SINK_CASCADE_MATRIX",
+      "STATUS": "PROPOSED_E"
+    },
+    {
+      "DELTA_ID": "T2-C003-ATLAS-013",
+      "ACTION": "ADD_PLANTWIDE_ROTATING_EQUIPMENT_DRIVER_AND_ELECTRICAL_LOAD_INTERFACE_REGISTER",
+      "STATUS": "PROPOSED_E"
+    },
+    {
+      "DELTA_ID": "T2-C003-ATLAS-014",
+      "ACTION": "ADD_PROCESS_SYSTEM_FILL_FLUSH_DRAIN_VENT_SAMPLE_RELIEF_AND_TEST_CONNECTION_REQUIREMENT_TO_EVERY_EQUIPMENT_DOSSIER",
+      "STATUS": "PROPOSED_E"
+    }
+  ],
+  "PROPOSED_ANNEX_DELTAS": [
+    {
+      "REGISTER_ID": "T2-PROV-C003-ANNEX-FUNCTION-DISCOVERY",
+      "PURPOSE": "MAP_FUNCTION_TO_EXISTING_SYSTEM_CODES_AND_PROVISIONAL_CANDIDATE_BOUNDARIES"
+    },
+    {
+      "REGISTER_ID": "T2-PROV-C003-ANNEX-CLIENT-HEAT-LOAD",
+      "PURPOSE": "MAP_EVERY_HEAT_LOAD_TO_LOCAL_LOOP_INTERMEDIATE_LOOP_FINAL_SINK_AND_ELECTRICAL_DRIVER"
+    },
+    {
+      "REGISTER_ID": "T2-PROV-C003-ANNEX-ROTATING-EQUIPMENT",
+      "PURPOSE": "PUMP_COMPRESSOR_CHILLER_VACUUM_PUMP_DRIVER_CURVE_INERTIA_FOUNDATION_MONITORING_AND_MAINTENANCE"
+    },
+    {
+      "REGISTER_ID": "T2-PROV-C003-ANNEX-PRESSURE-BOUNDARY",
+      "PURPOSE": "NOZZLE_LINE_SPOOL_WELD_FLANGE_GASKET_BOLTING_RELIEF_SUPPORT_AND_TEST_BOUNDARY"
+    },
+    {
+      "REGISTER_ID": "T2-PROV-C003-ANNEX-UTILITY-QUALITY",
+      "PURPOSE": "UTILITY_SOURCE_QUALITY_STORAGE_REDUNDANCY_DISTRIBUTION_AND_CLIENT_REQUIREMENTS"
+    },
+    {
+      "REGISTER_ID": "T2-PROV-C003-ANNEX-TRITIUM-BOUNDARY",
+      "PURPOSE": "MATERIAL_BALANCE_PROCESS_BOUNDARY_INVENTORY_TRANSFER_CONFINEMENT_AND_ACCOUNTANCY"
+    },
+    {
+      "REGISTER_ID": "T2-PROV-C003-ANNEX-TEMP-PROCESS",
+      "PURPOSE": "TEMPORARY_SKIDS_TIE_INS_SPOOLS_SUPPORTS_ISOLATIONS_TESTS_CUSTODY_AND_RESTORATION"
+    },
+    {
+      "REGISTER_ID": "T2-PROV-C003-ANNEX-COMMISSIONING-BOUNDARY",
+      "PURPOSE": "MC_TURNOVER_TEST_BOUNDARY_PREREQUISITES_ACCEPTANCE_RESTORATION_AND_OPERATING_SUPPORT"
+    },
+    {
+      "REGISTER_ID": "T2-PROV-C003-ANNEX-MECHANICAL-STRUCTURAL-INTERFACE",
+      "PURPOSE": "EQUIPMENT_FOUNDATION_PIPE_SUPPORT_RESTRAINT_PENETRATION_LOAD_AND_AS_BUILT_EVIDENCE"
+    },
+    {
+      "REGISTER_ID": "T2-PROV-C003-ANNEX-PACKAGE-EVIDENCE",
+      "PURPOSE": "PROCUREMENT_VENDOR_MANUFACTURING_ITP_MDR_FAT_SHIPPING_RECEIPT_PRESERVATION_INSTALLATION_SAT_TURNOVER"
+    }
+  ],
+  "CREATED_OR_CHANGED_IDENTITIES": {
+    "CANONICAL_IDENTITIES_CREATED": [],
+    "CANONICAL_IDENTITIES_CHANGED": [],
+    "PROVISIONAL_FUNCTION_IDENTITIES_CREATED": [
+      "T2-PROV-C003-FN-001",
+      "T2-PROV-C003-FN-002",
+      "T2-PROV-C003-FN-003",
+      "T2-PROV-C003-FN-004",
+      "T2-PROV-C003-FN-005",
+      "T2-PROV-C003-FN-006",
+      "T2-PROV-C003-FN-007",
+      "T2-PROV-C003-FN-008",
+      "T2-PROV-C003-FN-009",
+      "T2-PROV-C003-FN-010",
+      "T2-PROV-C003-FN-011",
+      "T2-PROV-C003-FN-012",
+      "T2-PROV-C003-FN-013",
+      "T2-PROV-C003-FN-014",
+      "T2-PROV-C003-FN-015",
+      "T2-PROV-C003-FN-016",
+      "T2-PROV-C003-FN-017",
+      "T2-PROV-C003-FN-018",
+      "T2-PROV-C003-FN-019",
+      "T2-PROV-C003-FN-020",
+      "T2-PROV-C003-FN-021",
+      "T2-PROV-C003-FN-022",
+      "T2-PROV-C003-FN-023",
+      "T2-PROV-C003-FN-024",
+      "T2-PROV-C003-FN-025",
+      "T2-PROV-C003-FN-026",
+      "T2-PROV-C003-FN-027",
+      "T2-PROV-C003-FN-028",
+      "T2-PROV-C003-FN-029",
+      "T2-PROV-C003-FN-030",
+      "T2-PROV-C003-FN-031",
+      "T2-PROV-C003-FN-032"
+    ],
+    "RULE": "PROVISIONAL_DISCOVERY_IDENTITIES_ARE_NOT_CANONICAL_SYSTEM_TAGS"
+  },
+  "PARAMETER_CHANGES": [
+    {
+      "PARAMETER": "CANONICAL_PROCESS_PARAMETERS",
+      "CHANGE": "NONE"
+    },
+    {
+      "PARAMETER": "LEGACY_94_SYSTEM_COUNT_AS_SCOPE_CEILING",
+      "OLD_STATE": "LEGACY_INVENTORY_REFERENCE",
+      "NEW_WORKING_RULE": "NOT_A_SCOPE_CEILING",
+      "STATUS": "THREAD1_DISPATCH_CONTROL"
+    },
+    {
+      "PARAMETER": "BHT401_SCREENING_VALUES",
+      "CHANGE": "NONE",
+      "STATE": "RETAIN_C002_QUARANTINE_AND_SCREENS"
+    }
+  ],
+  "RELATIONSHIP_CHANGES": [
+    {
+      "RELATIONSHIP_ID": "T2-C003-REL-001",
+      "FROM": "BHT",
+      "RELATIONSHIP": "TRANSFERS_USEFUL_HEAT_TO",
+      "TO": "SGS",
+      "STATUS": "SOURCE_ARCHITECTURE"
+    },
+    {
+      "RELATIONSHIP_ID": "T2-C003-REL-002",
+      "FROM": "SGS",
+      "RELATIONSHIP": "SUPPLIES_STEAM_TO",
+      "TO": "MSP_TUR",
+      "STATUS": "SOURCE_ARCHITECTURE"
+    },
+    {
+      "RELATIONSHIP_ID": "T2-C003-REL-003",
+      "FROM": "TUR",
+      "RELATIONSHIP": "EXHAUSTS_TO",
+      "TO": "CND",
+      "STATUS": "SOURCE_ARCHITECTURE"
+    },
+    {
+      "RELATIONSHIP_ID": "T2-C003-REL-004",
+      "FROM": "CND",
+      "RELATIONSHIP": "SUPPLIES_CONDENSATE_TO",
+      "TO": "CFW",
+      "STATUS": "SOURCE_ARCHITECTURE"
+    },
+    {
+      "RELATIONSHIP_ID": "T2-C003-REL-005",
+      "FROM": "CFW",
+      "RELATIONSHIP": "RETURNS_FEEDWATER_TO",
+      "TO": "SGS",
+      "STATUS": "SOURCE_ARCHITECTURE"
+    },
+    {
+      "RELATIONSHIP_ID": "T2-C003-REL-006",
+      "FROM": "CND",
+      "RELATIONSHIP": "REJECTS_HEAT_THROUGH",
+      "TO": "CWS",
+      "STATUS": "SOURCE_ARCHITECTURE"
+    },
+    {
+      "RELATIONSHIP_ID": "T2-C003-REL-007",
+      "FROM": "PLANT_AUXILIARY_CLIENTS",
+      "RELATIONSHIP": "REJECT_HEAT_TO",
+      "TO": "CCW_OR_CHW_CLIENT_MATRIX_OPEN",
+      "STATUS": "PROPOSED_E"
+    },
+    {
+      "RELATIONSHIP_ID": "T2-C003-REL-008",
+      "FROM": "CRY_WARM_PLANT",
+      "RELATIONSHIP": "SUPPLIES_REFRIGERATION_PROCESS_TO",
+      "TO": "CRY_COLD_DISTRIBUTION",
+      "STATUS": "PROPOSED_E"
+    },
+    {
+      "RELATIONSHIP_ID": "T2-C003-REL-009",
+      "FROM": "CRY_COLD_DISTRIBUTION",
+      "RELATIONSHIP": "SERVES",
+      "TO": "MAGNETS_THERMAL_SHIELDS_CRYOPUMPS",
+      "STATUS": "SOURCE_AND_PRECEDENT_SUPPORTED"
+    },
+    {
+      "RELATIONSHIP_ID": "T2-C003-REL-010",
+      "FROM": "VAC_TORUS_EXHAUST",
+      "RELATIONSHIP": "TRANSFERS_GAS_TO",
+      "TO": "TOKAMAK_EXHAUST_PROCESSING",
+      "STATUS": "FUNCTIONAL_BOUNDARY_CANDIDATE"
+    },
+    {
+      "RELATIONSHIP_ID": "T2-C003-REL-011",
+      "FROM": "TOKAMAK_EXHAUST_PROCESSING",
+      "RELATIONSHIP": "SUPPLIES_PURIFIED_ISOTOPE_STREAM_TO",
+      "TO": "ISS",
+      "STATUS": "FUNCTIONAL_BOUNDARY_CANDIDATE"
+    },
+    {
+      "RELATIONSHIP_ID": "T2-C003-REL-012",
+      "FROM": "ISS",
+      "RELATIONSHIP": "SUPPLIES_SEPARATED_ISOTOPES_TO",
+      "TO": "TSD",
+      "STATUS": "FUNCTIONAL_BOUNDARY_CANDIDATE"
+    },
+    {
+      "RELATIONSHIP_ID": "T2-C003-REL-013",
+      "FROM": "TSD",
+      "RELATIONSHIP": "SUPPLIES_FUEL_TO",
+      "TO": "FUE",
+      "STATUS": "FUNCTIONAL_BOUNDARY_CANDIDATE"
+    },
+    {
+      "RELATIONSHIP_ID": "T2-C003-REL-014",
+      "FROM": "ADS",
+      "RELATIONSHIP": "TRANSFERS_RECOVERED_TRITIATED_WATER_TO",
+      "TO": "WDS",
+      "STATUS": "EXTERNAL_PRECEDENT_SUPPORTED_OFG_EDGE_OPEN"
+    },
+    {
+      "RELATIONSHIP_ID": "T2-C003-REL-015",
+      "FROM": "NBI_ECH_ICH",
+      "RELATIONSHIP": "REQUIRE_COOLING_FROM",
+      "TO": "CCW_CHW_OR_LOCAL_COOLING_BOUNDARY_OPEN",
+      "STATUS": "SOURCE_FUNCTIONAL_REQUIREMENT"
+    },
+    {
+      "RELATIONSHIP_ID": "T2-C003-REL-016",
+      "FROM": "TEMPORARY_COMMISSIONING_PROCESS_SYSTEM",
+      "RELATIONSHIP": "TEMPORARILY_CONNECTS_TO",
+      "TO": "PERMANENT_PROCESS_SYSTEM",
+      "STATUS": "CONFIGURATION_CONTROL_REQUIRED"
+    }
+  ],
+  "CONFIGURATION_FINDINGS": [
+    {
+      "FINDING_ID": "T2-C003-CFG-001",
+      "SUBJECT": "SYSTEM_CODE_VS_FUNCTION",
+      "FINDING": "ONE_CONTROLLED_SYSTEM_CODE_MAY_CONTAIN_MULTIPLE_FUNCTIONAL_NETWORKS_AND_MULTIPLE_LEGACY_CODES_MAY_OVERLAP_ONE_PHYSICAL_FUNCTION",
+      "STATUS": "REQUIRES_IDENTITY_RECONCILIATION"
+    },
+    {
+      "FINDING_ID": "T2-C003-CFG-002",
+      "SUBJECT": "SHARED_LOCATION_RELATIONSHIPS",
+      "FINDING": "COLOCATION_DOES_NOT_PROVE_PROCESS_CONNECTIVITY",
+      "STATUS": "CONTROL_RULE"
+    },
+    {
+      "FINDING_ID": "T2-C003-CFG-003",
+      "SUBJECT": "TEMPORARY_PLANT",
+      "FINDING": "TEMPORARY_FLUSH_TEST_AND_RECIRCULATION_EQUIPMENT_REQUIRES_FULL_CONFIGURATION_CONTROL_AND_MUST_NOT_BE_COLLAPSED_INTO_PERMANENT_TOPOLOGY",
+      "STATUS": "SOURCE_SUPPORTED"
+    },
+    {
+      "FINDING_ID": "T2-C003-CFG-004",
+      "SUBJECT": "CRYO",
+      "FINDING": "WARM_PLANT_COLD_BOXES_DISTRIBUTION_AND_CLIENT_CIRCUITS_REQUIRE_SEPARATE_CONFIGURATION_ITEMS",
+      "STATUS": "PROPOSED_E"
+    },
+    {
+      "FINDING_ID": "T2-C003-CFG-005",
+      "SUBJECT": "TRITIUM",
+      "FINDING": "PROCESS_MATERIAL_BOUNDARIES_REQUIRE_MASS_BALANCE_AND_CUSTODY_BOUNDARIES_IN_ADDITION_TO_PIPING_CONNECTIVITY",
+      "STATUS": "PROPOSED_E"
+    },
+    {
+      "FINDING_ID": "T2-C003-CFG-006",
+      "SUBJECT": "BHT401",
+      "FINDING": "LATEST_CORPUS_SEARCH_RECOVERED_ONLY_E_MODEL_CONTROL_GEOMETRY_AND_EXISTING_CRS01_CONFIGURATION_RECORDS_NOT_AUTHORITATIVE_P_AND_ID_PUMP_CURVE_FLEXIBLE_CONNECTOR_OR_RST_L2_AS_BUILT_CLOSURE",
+      "STATUS": "OPEN",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="60"}",
+        ":chatgpt-content-reference{index="61"}"
+      ]
+    }
+  ],
+  "LIFECYCLE_FINDINGS": [
+    {
+      "LIFECYCLE_ID": "T2-C003-LC-001",
+      "SUBJECT": "PROCESS_PACKAGE_MINIMUM_LIFECYCLE",
+      "REQUIRED_CHAIN": [
+        "FUNCTION_REQUIREMENT",
+        "DESIGN_BASIS",
+        "EQUIPMENT_OR_PACKAGE_SPECIFICATION",
+        "VENDOR_ENGINEERING",
+        "MANUFACTURE",
+        "ITP_NDE_FAT",
+        "SHIPPING",
+        "RECEIPT",
+        "STORAGE_PRESERVATION",
+        "MATERIAL_ISSUE",
+        "INSTALLATION",
+        "FIELD_INSPECTION",
+        "PRECOMMISSIONING",
+        "MECHANICAL_COMPLETION",
+        "TURNOVER",
+        "FUNCTIONAL_COMMISSIONING",
+        "INTEGRATED_COMMISSIONING",
+        "OPERATIONS_SUPPORT",
+        "MAINTENANCE",
+        "AS_BUILT_CONFIGURATION"
+      ],
+      "STATUS": "ATLAS_REQUIREMENT"
+    },
+    {
+      "LIFECYCLE_ID": "T2-C003-LC-002",
+      "SUBJECT": "ROTATING_EQUIPMENT",
+      "REQUIRED_ADDITIONAL_CHAIN": [
+        "PUMP_OR_COMPRESSOR_PERFORMANCE_CURVE",
+        "DRIVER_DATA",
+        "ROTORDYNAMICS",
+        "FOUNDATION_LOADS",
+        "ALIGNMENT",
+        "LUBE_SEAL_COOLING",
+        "VIBRATION_BASELINE",
+        "START_STOP_TEST",
+        "SPARES"
+      ],
+      "STATUS": "ATLAS_REQUIREMENT"
+    },
+    {
+      "LIFECYCLE_ID": "T2-C003-LC-003",
+      "SUBJECT": "PRESSURE_BOUNDARY",
+      "REQUIRED_ADDITIONAL_CHAIN": [
+        "MATERIAL_TRACEABILITY",
+        "WPS_PQR_WELDER_QUALIFICATION",
+        "WELD_MAP",
+        "NDE",
+        "PWHT_IF_REQUIRED",
+        "CLEANLINESS",
+        "PRESSURE_OR_LEAK_TEST",
+        "RELIEF_PROTECTION",
+        "AS_BUILT"
+      ],
+      "STATUS": "ATLAS_REQUIREMENT"
+    },
+    {
+      "LIFECYCLE_ID": "T2-C003-LC-004",
+      "SUBJECT": "TEMPORARY_COMMISSIONING_PLANT",
+      "REQUIRED_ADDITIONAL_CHAIN": [
+        "TEMPORARY_DESIGN_RELEASE",
+        "TIE_IN_AUTHORIZATION",
+        "INSTALLATION",
+        "TEMPORARY_SUPPORTS",
+        "TEST",
+        "TURNOVER_TO_COMMISSIONING",
+        "CONTROLLED_USE",
+        "INSPECTION_AND_MAINTENANCE",
+        "REMOVAL_OR_RETENTION",
+        "RESTORATION",
+        "FINAL_CONFIGURATION_CONFIRMATION"
+      ],
+      "STATUS": "SOURCE_SUPPORTED"
+    }
+  ],
+  "PROCUREMENT_MANUFACTURING_FINDINGS": [
+    {
+      "FINDING_ID": "T2-C003-PM-001",
+      "FINDING": "PUMP_COMPRESSOR_CHILLER_VACUUM_PUMP_AND_TURBINE_AUXILIARY_PACKAGES_REQUIRE_OEM_LEVEL_PERFORMANCE_AND_DYNAMIC_DATA_IN_ADDITION_TO_ASSET_TAGS",
+      "REQUIRED_EVIDENCE": [
+        "DATASHEET",
+        "GA",
+        "PERFORMANCE_CURVE",
+        "DRIVER_DATA",
+        "NOZZLE_LOADS",
+        "MATERIALS",
+        "ITP",
+        "MDR",
+        "FAT"
+      ]
+    },
+    {
+      "FINDING_ID": "T2-C003-PM-002",
+      "FINDING": "HEAT_EXCHANGER_AND_PRESSURE_VESSEL_PACKAGES_REQUIRE_THERMAL_MECHANICAL_NOZZLE_SUPPORT_RELIEF_AND_INSPECTION_DATA",
+      "REQUIRED_EVIDENCE": [
+        "THERMAL_DATASHEET",
+        "MECHANICAL_DATASHEET",
+        "GA",
+        "NOZZLE_SCHEDULE",
+        "DESIGN_CALCULATION",
+        "MATERIAL_CERTIFICATES",
+        "NDE",
+        "HYDRO_OR_LEAK_TEST",
+        "MDR"
+      ]
+    },
+    {
+      "FINDING_ID": "T2-C003-PM-003",
+      "FINDING": "PROCESS_SKID_PROCUREMENT_SHOULD_PRESERVE_INTEGRATED_BOUNDARIES_AMONG_PROCESS_PIPING_STRUCTURAL_SUPPORT_I_AND_C_ELECTRICAL_SPARES_AND_MAINTENANCE_HANDLING",
+      "PRECEDENT_CITATION": ":chatgpt-content-reference{index="62"}",
+      "OFG_VENDOR_ASSERTED": false
+    },
+    {
+      "FINDING_ID": "T2-C003-PM-004",
+      "FINDING": "MANUFACTURING_EVIDENCE_CLASSES_INCLUDE_WELDING_HEAT_TREATMENT_CLEANING_NDE_HYDROTEST_QUALIFICATION_FAT_PACKING_PRESERVATION_AND_SHIPPING_WHERE_APPLICABLE",
+      "PRECEDENT_CITATIONS": [
+        ":chatgpt-content-reference{index="63"}",
+        ":chatgpt-content-reference{index="64"}"
+      ],
+      "OFG_HISTORICAL_RECORD_EXISTENCE_ASSERTED": false
+    },
+    {
+      "FINDING_ID": "T2-C003-PM-005",
+      "FINDING": "EXACT_OFG_MANUFACTURER_OEM_VENDOR_AND_SUBVENDOR_IDENTITIES_REMAIN_OPEN_FOR_MOST_NEWLY_DISCOVERED_FUNCTIONAL_PACKAGES",
+      "STATUS": "NO_INVENTION"
+    }
+  ],
+  "CONSTRUCTION_INSTALLATION_FINDINGS": [
+    {
+      "FINDING_ID": "T2-C003-CI-001",
+      "SUBJECT": "MECHANICAL_PROCESS_WORKFACE",
+      "REQUIRED_PHYSICAL_SEQUENCE": [
+        "FOUNDATION_OR_SUPPORT_RELEASE",
+        "EQUIPMENT_RECEIPT_AND_PRESERVATION",
+        "EQUIPMENT_SETTING",
+        "ANCHORING_OR_GROUTING",
+        "NOZZLE_SURVEY",
+        "PIPING_SPOOL_INSTALLATION",
+        "VALVES_AND_INLINE_COMPONENTS",
+        "SUPPORTS_RESTRAINTS_AND_PENETRATIONS",
+        "WELDING_AND_NDE",
+        "CLEANLINESS_CONTROL",
+        "ALIGNMENT",
+        "INSULATION_OR_HEAT_TRACING",
+        "EI_TERMINATION",
+        "REDLINE_AND_AS_BUILT"
+      ],
+      "STATUS": "ATLAS_WORKFACE_REQUIREMENT"
+    },
+    {
+      "FINDING_ID": "T2-C003-CI-002",
+      "SUBJECT": "EARLY_OR_CAPTIVE_COMPONENTS",
+      "FINDING": "PROCESS_LINES_SUPPORT_PLATES_PENETRATIONS_AND_BURIED_OR_INACCESSIBLE_COMPONENTS_REQUIRE_EVIDENCE_BEFORE_CLOSURE_BY_STRUCTURE_OR_LATER_EQUIPMENT",
+      "STATUS": "CONSTRUCTION_SEQUENCE_REQUIREMENT"
+    },
+    {
+      "FINDING_ID": "T2-C003-CI-003",
+      "SUBJECT": "ROTATING_EQUIPMENT",
+      "FINDING": "FOUNDATION_BASEPLATE_GROUT_ANCHOR_ALIGNMENT_SOFT_FOOT_PIPE_STRAIN_NOZZLE_LOAD_AND_REMOVAL_ENVELOPE_ARE_REQUIRED_INSTALLATION_OBJECTS",
+      "STATUS": "ATLAS_DECOMPOSITION_REQUIREMENT"
+    },
+    {
+      "FINDING_ID": "T2-C003-CI-004",
+      "SUBJECT": "TEMPORARY_SYSTEMS",
+      "FINDING": "TEMPORARY_SPOOLS_HOSES_SKIDS_SUPPORTS_BLINDS_AND_TEST_MANIFOLDS_REQUIRE_THE_SAME_PHYSICAL_CONFIGURATION_EVIDENCE_DISCIPLINE_AS_PERMANENT_WORK_WHILE_INSTALLED",
+      "STATUS": "SOURCE_SUPPORTED"
+    }
+  ],
+  "COMMISSIONING_FINDINGS": [
+    {
+      "FINDING_ID": "T2-C003-COM-001",
+      "SUBJECT": "UTILITY_PRECEDENCE",
+      "FINDING": "SUPPORT_UTILITIES_CONTROL_AND_COOLING_ARE_PREREQUISITES_FOR_MANY_DOWNSTREAM_MACHINE_SYSTEM_TESTS",
+      "STATUS": "SOURCE_AND_EXTERNAL_PRECEDENT_SUPPORTED"
+    },
+    {
+      "FINDING_ID": "T2-C003-COM-002",
+      "SUBJECT": "COOLING",
+      "STORY_CUT_STATE": "OA_OR_IC",
+      "SOURCE_CITATION": ":chatgpt-content-reference{index="65"}"
+    },
+    {
+      "FINDING_ID": "T2-C003-COM-003",
+      "SUBJECT": "CRYOGENICS",
+      "STORY_CUT_STATE": "IC_AND_OPERATING_SUPPORT",
+      "SOURCE_CITATION": ":chatgpt-content-reference{index="66"}"
+    },
+    {
+      "FINDING_ID": "T2-C003-COM-004",
+      "SUBJECT": "VACUUM",
+      "STORY_CUT_STATE": "IC_PUMPDOWN_LEAK_CAMPAIGNS",
+      "SOURCE_CITATION": ":chatgpt-content-reference{index="67"}"
+    },
+    {
+      "FINDING_ID": "T2-C003-COM-005",
+      "SUBJECT": "BHT_DHT_VHT",
+      "STORY_CUT_STATE": "FC_OR_IC",
+      "SOURCE_CITATION": ":chatgpt-content-reference{index="68"}"
+    },
+    {
+      "FINDING_ID": "T2-C003-COM-006",
+      "SUBJECT": "TRITIUM_FUEL_CYCLE",
+      "STORY_CUT_STATE": "PC_OR_FC_NO_FULL_DT_SERVICE",
+      "SOURCE_CITATION": ":chatgpt-content-reference{index="69"}"
+    },
+    {
+      "FINDING_ID": "T2-C003-COM-007",
+      "SUBJECT": "MAIN_STEAM_TURBINE_FEEDWATER",
+      "STORY_CUT_STATE": "PC_OR_FC_NO_GRID_SYNCHRONIZATION",
+      "SOURCE_CITATION": ":chatgpt-content-reference{index="70"}"
+    },
+    {
+      "FINDING_ID": "T2-C003-COM-008",
+      "SUBJECT": "TEST_BOUNDARY_MINIMUM_DATA",
+      "REQUIRED": [
+        "INITIAL_CONDITIONS",
+        "CONFIGURATION_AND_LINEUP",
+        "ISOLATION_BOUNDARY",
+        "TEMPORARY_ITEMS",
+        "CALIBRATED_INSTRUMENTS",
+        "TEST_LIMITS",
+        "ACCEPTANCE_CRITERIA",
+        "ABORT_CRITERIA",
+        "RESTORATION",
+        "PERMANENT_RECORD"
+      ],
+      "STATUS": "ATLAS_REQUIREMENT"
+    }
+  ],
+  "BOUNDARY_FINDINGS": {
+    "BC-C003-T1-T2-ELECTROMECHANICAL-AND-LOAD-LIST": {
+      "STATUS": "RETURN_INPUT_EXPANDED",
+      "THREAD2_OWNS": [
+        "MECHANICAL_DUTY",
+        "ROTATING_EQUIPMENT_SHAFT_POWER_REQUIREMENT",
+        "START_STOP_PROCESS_CONSTRAINTS",
+        "HYDRAULIC_TRANSIENT_INPUTS",
+        "PROCESS_PERMISSIVES_AND_TRIPS",
+        "COOLING_CLIENT_REQUIREMENTS"
+      ],
+      "THREAD1_OWNS": [
+        "SOURCE_BUS",
+        "ONE_LINE",
+        "BREAKER",
+        "FEEDER",
+        "PROTECTION",
+        "FINAL_MOTOR_OR_DRIVER_ELECTRICAL_ARCHITECTURE",
+        "LOAD_LIST_INTEGRATION"
+      ],
+      "NEW_LOAD_FAMILIES_TO_REGISTER": [
+        "BHT_DHT_VHT_PUMPS",
+        "CCW_CWS_CHW_PUMPS_AND_CHILLERS",
+        "CRY_COMPRESSORS_AND_CIRCULATORS",
+        "VACUUM_PUMPS",
+        "CFW_CONDENSATE_AND_FEEDWATER_PUMPS",
+        "TURBINE_AUXILIARY_PUMPS_AND_TURNING_GEAR",
+        "UTILITY_AIR_COMPRESSORS",
+        "TRITIUM_PROCESS_PUMPS_COMPRESSORS_AND_HEATERS",
+        "TEMPORARY_COMMISSIONING_SKIDS"
+      ]
+    },
+    "BC-C003-T2-T4-MECHANICAL-SUPPORT-PENETRATION-STRUCTURAL-HOST": {
+      "STATUS": "RETURN_INPUT_EXPANDED",
+      "REQUIRED_INTERFACE_CLASSES": [
+        "EQUIPMENT_FOUNDATION",
+        "BASEPLATE_AND_ANCHOR",
+        "PIPE_SUPPORT",
+        "GUIDE",
+        "ANCHOR",
+        "STOP",
+        "SNUBBER_OR_DYNAMIC_RESTRAINT_IF_USED",
+        "PENETRATION_SLEEVE_OR_FRAME",
+        "EMBED_PLATE",
+        "TEMPORARY_SUPPORT",
+        "CRYOGENIC_LOW_CONDUCTIVITY_SUPPORT",
+        "VACUUM_DUCT_SUPPORT"
+      ],
+      "THREAD2_MUST_RETURN_PER_OBJECT": [
+        "COORDINATE_FRAME",
+        "LOAD_CASES",
+        "STATIC_REACTION",
+        "THERMAL_DISPLACEMENT",
+        "TRANSIENT_REACTION",
+        "GAP_AND_FRICTION_IF_APPLICABLE",
+        "NOZZLE_LOAD",
+        "MASS",
+        "OPERATING_TEMPERATURE"
+      ],
+      "CURRENT_LIMIT": "MOST_PLANTWIDE_NUMERIC_REACTIONS_OPEN"
+    },
+    "BC-C003-T2-T5-MECHANICAL-MAINTENANCE-PRESERVATION-COMMISSIONING": {
+      "STATUS": "RETURN_INPUT_EXPANDED",
+      "REQUIRED_INTERFACE_CLASSES": [
+        "VENDOR_PRESERVATION",
+        "STORAGE",
+        "SHAFT_ROTATION_OR_DESICCANT_OR_NITROGEN_LAYUP_AS_APPLICABLE",
+        "FILTER_AND_LUBE_MAINTENANCE",
+        "ALIGNMENT",
+        "VALVE_STROKE",
+        "RELIEF_SURVEILLANCE",
+        "PRESSURE_BOUNDARY_INSPECTION",
+        "POST_MAINTENANCE_TEST",
+        "TEMPORARY_CONFIGURATION",
+        "RESTORATION",
+        "SPARES",
+        "LIFTING_AND_REMOVAL_ENVELOPE"
+      ]
+    }
+  },
+  "VALIDATION_RESULTS": [
+    {
+      "VALIDATION_ID": "T2-C003-VAL-001",
+      "METHOD": "FUNCTIONAL_COMPLETENESS",
+      "RESULT": "PARTIAL_PASS",
+      "FINDING": "WAVE1_IDENTIFIES_MAJOR_MISSING_OR_UNDERDECOMPOSED_FUNCTIONS_ACROSS_ALL_MANDATORY_DOMAINS_BUT_DOES_NOT_CLAIM_PLANTWIDE_FINAL_COMPLETENESS"
+    },
+    {
+      "VALIDATION_ID": "T2-C003-VAL-002",
+      "METHOD": "THERMODYNAMIC_BOUNDARY",
+      "RESULT": "PASS",
+      "FINDING": "COMMERCIAL_BHT_TO_SGS_HEAT_CONVERSION_IS_KEPT_SEPARATE_FROM_AUXILIARY_CCW_CHW_CWS_HEAT_REJECTION"
+    },
+    {
+      "VALIDATION_ID": "T2-C003-VAL-003",
+      "METHOD": "CLIENT_SERVICE_TRACE",
+      "RESULT": "PARTIAL",
+      "FINDING": "CRYO_VACUUM_HCD_TRITIUM_AND_POWER_CYCLE_CLIENTS_IDENTIFIED_BUT_QUANTITATIVE_CLIENT_LOAD_MATRIX_REMAINS_OPEN"
+    },
+    {
+      "VALIDATION_ID": "T2-C003-VAL-004",
+      "METHOD": "ROTATING_EQUIPMENT_COMPLETENESS",
+      "RESULT": "PARTIAL",
+      "FINDING": "DRIVER_FOUNDATION_CURVE_INERTIA_MONITORING_MAINTENANCE_AND_ELECTRICAL_BOUNDARY_FIELDS_DEFINED_BUT_VENDOR_DATA_INCOMPLETE"
+    },
+    {
+      "VALIDATION_ID": "T2-C003-VAL-005",
+      "METHOD": "PRESSURE_BOUNDARY_COMPLETENESS",
+      "RESULT": "PARTIAL",
+      "FINDING": "REQUIRED_NOZZLE_LINE_JOINT_SUPPORT_RELIEF_AND_TEST_OBJECT_CLASSES_DEFINED_BUT_AS_BUILT_POPULATION_INCOMPLETE"
+    },
+    {
+      "VALIDATION_ID": "T2-C003-VAL-006",
+      "METHOD": "COMMISSIONABILITY",
+      "RESULT": "PASS_ARCHITECTURE",
+      "FINDING": "DEPENDENCY_SEQUENCE_AND_TEST_BOUNDARY_FIELDS_DEFINED_WITHOUT_INVENTING_COMPLETION_DATES"
+    },
+    {
+      "VALIDATION_ID": "T2-C003-VAL-007",
+      "METHOD": "MAINTAINABILITY",
+      "RESULT": "PARTIAL",
+      "FINDING": "MAINTENANCE_BOUNDARIES_AND_REQUIRED_HISTORY_CLASSES_DEFINED_BUT_ACTUAL_SPARES_INTERVALS_REMOVAL_ROUTES_AND_PMT_RECORDS_REMAIN_INCOMPLETE"
+    },
+    {
+      "VALIDATION_ID": "T2-C003-VAL-008",
+      "METHOD": "TRITIUM_MATERIAL_BALANCE_BOUNDARY",
+      "RESULT": "PARTIAL",
+      "FINDING": "FUNCTIONAL_SEQUENCE_IDENTIFIED_BUT_CANONICAL_OWNERSHIP_AND_PHYSICAL_TRANSFER_BOUNDARIES_REMAIN_OPEN"
+    }
+  ],
+  "VERIFICATION_RESULTS": [
+    {
+      "VERIFICATION_ID": "T2-C003-VV-001",
+      "METHOD": "SOURCE_TO_CLAIM",
+      "RESULT": "PASS",
+      "SUBJECT": "CCW_REQUIRED_DECOMPOSITION",
+      "CITATION": ":chatgpt-content-reference{index="71"}"
+    },
+    {
+      "VERIFICATION_ID": "T2-C003-VV-002",
+      "METHOD": "SOURCE_TO_CLAIM",
+      "RESULT": "PASS",
+      "SUBJECT": "DHT_FUNCTION_AND_DECOMPOSITION",
+      "CITATION": ":chatgpt-content-reference{index="72"}"
+    },
+    {
+      "VERIFICATION_ID": "T2-C003-VV-003",
+      "METHOD": "SOURCE_TO_CLAIM",
+      "RESULT": "PASS",
+      "SUBJECT": "VHT_FUNCTION_AND_DECOMPOSITION",
+      "CITATION": ":chatgpt-content-reference{index="73"}"
+    },
+    {
+      "VERIFICATION_ID": "T2-C003-VV-004",
+      "METHOD": "SOURCE_TO_CLAIM",
+      "RESULT": "PASS",
+      "SUBJECT": "POWER_CYCLE_ARCHITECTURE",
+      "CITATION": ":chatgpt-content-reference{index="74"}"
+    },
+    {
+      "VERIFICATION_ID": "T2-C003-VV-005",
+      "METHOD": "SOURCE_TO_CLAIM",
+      "RESULT": "PASS",
+      "SUBJECT": "TRITIUM_FUEL_CYCLE_EXISTING_DECOMPOSITIONS",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="75"}",
+        ":chatgpt-content-reference{index="76"}",
+        ":chatgpt-content-reference{index="77"}",
+        ":chatgpt-content-reference{index="78"}"
+      ]
+    },
+    {
+      "VERIFICATION_ID": "T2-C003-VV-006",
+      "METHOD": "CURRENT_STATE_REPLAY",
+      "RESULT": "PASS_GROUP_LEVEL",
+      "CITATION": ":chatgpt-content-reference{index="79"}"
+    },
+    {
+      "VERIFICATION_ID": "T2-C003-VV-007",
+      "METHOD": "CANON_PROMOTION_CONTROL",
+      "RESULT": "PASS",
+      "FINDING": "NO_PROVISIONAL_FUNCTION_OR_EXTERNAL_REFERENCE_WAS_PROMOTED_TO_CANONICAL_OFG_SYSTEM_IDENTITY"
+    },
+    {
+      "VERIFICATION_ID": "T2-C003-VV-008",
+      "METHOD": "BHT401_TARGETED_RECORD_SEARCH",
+      "RESULT": "NO_NEW_AUTHORITATIVE_CLOSURE",
+      "FINDING": "SEARCH_RETURNED_EXISTING_E_MODEL_GEOMETRY_AND_EXISTING_CRS01_RECORD_CHAIN_BUT_NOT_CERTIFIED_P_AND_ID_LINE_LIST_PUMP_CURVE_CHECK_VALVE_CARDINALITY_MOTOR_PACKAGE_CRS01_FLEX_DATA_OR_RST_L2_AS_BUILT_SETTING",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="80"}",
+        ":chatgpt-content-reference{index="81"}",
+        ":chatgpt-content-reference{index="82"}"
+      ]
+    }
+  ],
+  "ASSURANCE_RESULTS": {
+    "CLASS": "AS3",
+    "RESULT": "PASS_WITH_OPEN_PROJECT_RECORD_BLOCKS",
+    "CHECKS": [
+      "NO_LEGACY_COUNT_SCOPE_CEILING",
+      "NO_NEW_CANONICAL_SYSTEM_TAGS",
+      "NO_GENERIC_PRECEDENT_PROMOTED_TO_HISTORY",
+      "NO_VENDOR_INVENTION",
+      "NO_PROCESS_PARAMETER_INVENTION",
+      "NO_BHT401_FLOW_AVERAGING",
+      "NO_BHT401_MOTOR_SELECTION",
+      "NO_THREAD3_DEPENDENCY",
+      "TEMPORARY_AND_PERMANENT_CONFIGURATION_SEPARATED",
+      "REQUIREMENT_NOT_TREATED_AS_RECORD_EXISTENCE",
+      "GROUP_COMMISSIONING_STATE_NOT_EXPANDED_TO_UNEVIDENCED_COMPONENT_DATES"
+    ]
+  },
+  "CONFLICTS": [
+    {
+      "CONFLICT_ID": "GCF-C001-002",
+      "SUBJECT": "BHT401_PUMP_FLOW",
+      "STATE": "QUARANTINE_RETAINED",
+      "DISPOSITION": "NO_CHANGE"
+    },
+    {
+      "CONFLICT_ID": "GCF-C001-003",
+      "SUBJECT": "BHT401_PUMP_PACKAGE_VS_PHYSICAL_UNIT_CARDINALITY",
+      "STATE": "WORKING_2_X_50_PERCENT_SEMANTICS_CANONICAL_SUBUNIT_IDS_OPEN",
+      "DISPOSITION": "NO_CHANGE"
+    },
+    {
+      "CONFLICT_ID": "GCF-C001-004",
+      "SUBJECT": "BHT401_SGHX_PACKAGE_VS_PHYSICAL_MODULE_CARDINALITY",
+      "STATE": "WORKING_2_X_50_PERCENT_SEMANTICS_CANONICAL_SUBUNIT_IDS_OPEN",
+      "DISPOSITION": "NO_CHANGE"
+    },
+    {
+      "CONFLICT_ID": "GCF-C002-002",
+      "SUBJECT": "THREAD1_CONTROLLED_INHERITED_CONFLICT",
+      "STATE": "RETAINED_WITHOUT_REINTERPRETATION"
+    },
+    {
+      "CONFLICT_ID": "GCF-C002-003",
+      "SUBJECT": "THREAD1_CONTROLLED_INHERITED_CONFLICT",
+      "STATE": "RETAINED_WITHOUT_REINTERPRETATION"
+    },
+    {
+      "CONFLICT_ID": "GCF-C002-004",
+      "SUBJECT": "THREAD1_CONTROLLED_INHERITED_CONFLICT",
+      "STATE": "RETAINED_WITHOUT_REINTERPRETATION"
+    },
+    {
+      "CONFLICT_ID": "T2-C003-CF-001",
+      "SUBJECT": "CCW_TRAIN_EQUIPMENT_VS_COMMON_NETWORK_INSTANTIATION",
+      "STATE": "OPEN",
+      "KNOWN": "FOUR_TRAIN_INSTANCES_WITH_REGISTERED_PUMPS_AND_HX",
+      "MISSING": "SURGE_CHEMISTRY_MAKEUP_COMMON_HEADERS_CLIENT_BRANCHES"
+    },
+    {
+      "CONFLICT_ID": "T2-C003-CF-002",
+      "SUBJECT": "POWER_CYCLE_CODE_OVERLAP",
+      "STATE": "OPEN_IDENTITY_BOUNDARY",
+      "AFFECTED_CODES": [
+        "SGS",
+        "MSP",
+        "MAIN-STEAM",
+        "TUR",
+        "TURBINE-AUX",
+        "TURBINE-BOP",
+        "TURBINE-ISLAND",
+        "CND",
+        "CFW"
+      ]
+    },
+    {
+      "CONFLICT_ID": "T2-C003-CF-003",
+      "SUBJECT": "TRITIUM_FUEL_CYCLE_CODE_OVERLAP",
+      "STATE": "OPEN_IDENTITY_BOUNDARY",
+      "AFFECTED_CODES": [
+        "TRI",
+        "TEX",
+        "BTX",
+        "ISS",
+        "TSD",
+        "FUE",
+        "WDS",
+        "ADS",
+        "TMA"
+      ]
+    },
+    {
+      "CONFLICT_ID": "T2-C003-CF-004",
+      "SUBJECT": "UTILITY_CODE_OVERLAP",
+      "STATE": "OPEN_IDENTITY_BOUNDARY",
+      "AFFECTED_CODES": [
+        "UTL",
+        "UTILITIES",
+        "PERM-UTILITIES",
+        "TEMP-UTIL"
+      ]
+    },
+    {
+      "CONFLICT_ID": "T2-C003-CF-005",
+      "SUBJECT": "DRAINAGE_CODE_OVERLAP",
+      "STATE": "OPEN_IDENTITY_BOUNDARY",
+      "AFFECTED_CODES": [
+        "DRN",
+        "DRAINAGE-EFFLUENT",
+        "RAW"
+      ]
+    },
+    {
+      "CONFLICT_ID": "T2-C003-CF-006",
+      "SUBJECT": "VACUUM_ARCHITECTURE",
+      "STATE": "OPEN",
+      "DETAIL": "EARLIER_BATCH_CRYOPUMP_ARCHITECTURE_IS_ONLY_AN_ENGINEERED_COMPARISON_AND_NOT_FINAL_OFG_HIGH_VACUUM_SELECTION"
+    }
+  ],
+  "OPEN_ITEMS": [
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-001",
+      "SUBJECT": "PLANTWIDE_FUNCTION_TO_SYSTEM_BOUNDARY_MATRIX",
+      "PRIORITY": "BLOCKING_GLOBAL_ARCHITECTURE"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-002",
+      "SUBJECT": "CLIENT_HEAT_LOAD_MATRIX",
+      "PRIORITY": "BLOCKING_THERMAL_NETWORK"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-003",
+      "SUBJECT": "CCW_COMMON_HEADER_SURGE_CHEMISTRY_MAKEUP_AND_CLIENT_BRANCH_OBJECTS",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-004",
+      "SUBJECT": "CWS470_PHYSICAL_EQUIPMENT_IDENTITIES_AND_TRAIN_MAPPING",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-005",
+      "SUBJECT": "CHW_CHILLER_PUMP_BUFFER_AND_CLIENT_POPULATION",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-006",
+      "SUBJECT": "RHR_CLIENT_MATRIX_DUTY_REDUNDANCY_AND_HEAT_SINK",
+      "PRIORITY": "BLOCKING_TRANSIENT"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-007",
+      "SUBJECT": "DHT_P_AND_ID_AND_PUMP_HX_PERFORMANCE",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-008",
+      "SUBJECT": "VHT_P_AND_ID_BAKEOUT_BOUNDARY_AND_DECAY_HEAT_CASE",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-009",
+      "SUBJECT": "SGS_SECONDARY_BLOWDOWN_CHEMISTRY_AND_RELIEF_BOUNDARY",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-010",
+      "SUBJECT": "MSP_MAIN_STEAM_HEADER_BYPASS_RELIEF_AND_DRAIN_GRAPH",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-011",
+      "SUBJECT": "CND_AIR_REMOVAL_TECHNOLOGY_AND_VACUUM_ACCEPTANCE",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-012",
+      "SUBJECT": "CFW_CONDENSATE_CLEANUP_EXTRACTION_STEAM_AND_HEATER_DRAIN_GRAPH",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-013",
+      "SUBJECT": "TURBINE_LUBE_SEAL_EHC_P_AND_IDS_AND_FLUSH_RECORDS",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-014",
+      "SUBJECT": "CRY_WARM_COMPRESSOR_OEM_MAPS_DRIVERS_AND_AUXILIARIES",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-015",
+      "SUBJECT": "CRY_CLIENT_LOAD_MATRIX_AND_CRYODISTRIBUTION_AS_BUILT",
+      "PRIORITY": "BLOCKING_CRYO"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-016",
+      "SUBJECT": "VAC_FINAL_HIGH_VACUUM_ARCHITECTURE",
+      "PRIORITY": "BLOCKING_VACUUM"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-017",
+      "SUBJECT": "VAC_EXHAUST_TO_TRITIUM_PROCESS_BOUNDARY",
+      "PRIORITY": "BLOCKING_FUEL_CYCLE"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-018",
+      "SUBJECT": "TRITIUM_FUNCTIONAL_BOUNDARY_AND_MASS_BALANCE_MATRIX",
+      "PRIORITY": "BLOCKING_FUEL_CYCLE"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-019",
+      "SUBJECT": "ADS_PROCESS_TECHNOLOGY_AND_HVAC_INTERFACE",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-020",
+      "SUBJECT": "WDS_PROCESS_TECHNOLOGY_CAPACITY_AND_DISCHARGE_BOUNDARY",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-021",
+      "SUBJECT": "TMA_SAMPLE_POINT_AND_ANALYTICAL_REGISTER",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-022",
+      "SUBJECT": "INSTRUMENT_AIR_SOURCE_QUALITY_REDUNDANCY_AND_RING_MAIN",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-023",
+      "SUBJECT": "SERVICE_AIR_VS_INSTRUMENT_AIR_PHYSICAL_SEPARATION",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-024",
+      "SUBJECT": "NITROGEN_SOURCE_STORAGE_PURITY_AND_CLIENT_REGISTER",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-025",
+      "SUBJECT": "DEMIN_SERVICE_POTABLE_WATER_BOUNDARIES_AND_QUALITY_CLASSES",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-026",
+      "SUBJECT": "NBI_ECH_ICH_CLIENT_COOLING_LOADS_AND_LOCAL_LOOP_IDENTITIES",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-027",
+      "SUBJECT": "DRN_SOURCE_CLASSIFICATION_AND_DESTINATION_GRAPH",
+      "PRIORITY": "BLOCKING_EFFLUENT_CONFIGURATION"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-028",
+      "SUBJECT": "PLANTWIDE_TEMPORARY_COMMISSIONING_SYSTEM_REGISTER",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-029",
+      "SUBJECT": "PLANTWIDE_ROTATING_EQUIPMENT_ELECTROMECHANICAL_LOAD_REGISTER",
+      "PRIORITY": "BC_C003_T1_T2"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-030",
+      "SUBJECT": "PLANTWIDE_SUPPORT_RESTRAINT_PENETRATION_LOAD_REGISTER",
+      "PRIORITY": "BC_C003_T2_T4"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-031",
+      "SUBJECT": "PLANTWIDE_PRESERVATION_PMT_SPARES_AND_REMOVAL_ENVELOPE_REGISTER",
+      "PRIORITY": "BC_C003_T2_T5"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-032",
+      "SUBJECT": "BHT401_AUTHORITATIVE_P_AND_ID_LINE_LIST_PUMP_GA_AND_CURVES",
+      "PRIORITY": "CRITICAL_ANCHOR"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-033",
+      "SUBJECT": "BHT401_CHECK_VALVE_CARDINALITY",
+      "PRIORITY": "CRITICAL_ANCHOR"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-034",
+      "SUBJECT": "BHT401_MOTOR_VENDOR_AND_STARTER_DRIVE_PACKAGE",
+      "PRIORITY": "CRITICAL_ANCHOR"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-035",
+      "SUBJECT": "CRS01_FLEXIBLE_CONNECTOR_DATASHEET",
+      "PRIORITY": "CRITICAL_FORENSIC"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C003-OI-036",
+      "SUBJECT": "CRS01_RST_L2_AS_BUILT_SETTING_AND_M88217_AS_LEFT",
+      "PRIORITY": "CRITICAL_FORENSIC"
+    }
+  ],
+  "UNCERTAINTIES": [
+    {
+      "UNCERTAINTY_ID": "T2-C003-U001",
+      "SUBJECT": "CANONICAL_SYSTEM_COUNT_AFTER_FUNCTION_FIRST_RECONSTRUCTION",
+      "STATE": "INTENTIONALLY_OPEN"
+    },
+    {
+      "UNCERTAINTY_ID": "T2-C003-U002",
+      "SUBJECT": "POWER_CYCLE_LEGACY_CODE_PARENT_CHILD_RELATIONSHIPS",
+      "STATE": "OPEN"
+    },
+    {
+      "UNCERTAINTY_ID": "T2-C003-U003",
+      "SUBJECT": "TRITIUM_LEGACY_CODE_PARENT_CHILD_RELATIONSHIPS",
+      "STATE": "OPEN"
+    },
+    {
+      "UNCERTAINTY_ID": "T2-C003-U004",
+      "SUBJECT": "UTILITY_LEGACY_CODE_PARENT_CHILD_RELATIONSHIPS",
+      "STATE": "OPEN"
+    },
+    {
+      "UNCERTAINTY_ID": "T2-C003-U005",
+      "SUBJECT": "VACUUM_FINAL_HIGH_VACUUM_TECHNOLOGY",
+      "STATE": "OPEN"
+    },
+    {
+      "UNCERTAINTY_ID": "T2-C003-U006",
+      "SUBJECT": "CONDENSER_AIR_REMOVAL_TECHNOLOGY",
+      "STATE": "OPEN"
+    },
+    {
+      "UNCERTAINTY_ID": "T2-C003-U007",
+      "SUBJECT": "CHW_ARCHITECTURE_AND_CHILLER_COUNT",
+      "STATE": "OPEN"
+    },
+    {
+      "UNCERTAINTY_ID": "T2-C003-U008",
+      "SUBJECT": "CRYOGENIC_TRAIN_COUNTS_AND_TEMPERATURE_LEVEL_ALLOCATION",
+      "STATE": "OPEN"
+    },
+    {
+      "UNCERTAINTY_ID": "T2-C003-U009",
+      "SUBJECT": "TRITIUM_PROCESS_TECHNOLOGY_AND_INVENTORIES",
+      "STATE": "OPEN"
+    },
+    {
+      "UNCERTAINTY_ID": "T2-C003-U010",
+      "SUBJECT": "UTILITY_QUALITY_PRESSURE_CAPACITY_AND_REDUNDANCY",
+      "STATE": "OPEN"
+    },
+    {
+      "UNCERTAINTY_ID": "T2-C003-U011",
+      "SUBJECT": "PLANTWIDE_TEMPORARY_CONFIGURATION_POPULATION",
+      "STATE": "OPEN"
+    },
+    {
+      "UNCERTAINTY_ID": "T2-C003-U012",
+      "SUBJECT": "BHT401_PUMP_FLOW_SOURCE_GENEALOGY",
+      "STATE": "QUARANTINE"
+    }
+  ],
+  "BACKWARD_PROPAGATION_RECOMMENDATIONS": [
+    {
+      "PROPAGATION_ID": "T2-C003-BP-001",
+      "TRIGGER": "FUNCTION_FIRST_SYSTEM_BOUNDARY_RECONSTRUCTION",
+      "TARGETS": [
+        "MASTER_SYSTEM_DICTIONARY",
+        "FUNCTIONAL_NETWORK_REGISTER",
+        "ASSET_REGISTER",
+        "RELATIONSHIP_GRAPH",
+        "DOCUMENT_MATRIX",
+        "COMMISSIONING_BOUNDARY_REGISTER"
+      ]
+    },
+    {
+      "PROPAGATION_ID": "T2-C003-BP-002",
+      "TRIGGER": "CLIENT_HEAT_LOAD_MATRIX",
+      "TARGETS": [
+        "CCW",
+        "CHW",
+        "CWS",
+        "CRY",
+        "HCD",
+        "ELECTRICAL_LOAD_LIST",
+        "BUILDING_HEAT_REJECTION",
+        "COMMISSIONING_SEQUENCE"
+      ]
+    },
+    {
+      "PROPAGATION_ID": "T2-C003-BP-003",
+      "TRIGGER": "ROTATING_EQUIPMENT_DRIVER_REGISTER",
+      "TARGETS": [
+        "THREAD1_ELECTRICAL_LOAD_LIST",
+        "MOTOR_LIST",
+        "FEEDERS",
+        "PROTECTION",
+        "FOUNDATIONS",
+        "VIBRATION_MONITORING",
+        "SPARES",
+        "COMMISSIONING"
+      ]
+    },
+    {
+      "PROPAGATION_ID": "T2-C003-BP-004",
+      "TRIGGER": "TRITIUM_FUNCTIONAL_BOUNDARY_MATRIX",
+      "TARGETS": [
+        "PROCESS_P_AND_IDS",
+        "CONFINEMENT",
+        "HVAC",
+        "DRAINAGE",
+        "RADWASTE",
+        "I_AND_C",
+        "MATERIAL_ACCOUNTANCY",
+        "COMMISSIONING"
+      ]
+    },
+    {
+      "PROPAGATION_ID": "T2-C003-BP-005",
+      "TRIGGER": "UTILITY_FUNCTION_SEPARATION",
+      "TARGETS": [
+        "UTL_SYSTEM_DICTIONARY",
+        "UTILITY_P_AND_IDS",
+        "CLIENT_CONNECTIONS",
+        "ELECTRICAL_LOADS",
+        "BUILDING_PENETRATIONS",
+        "COMMISSIONING_DEPENDENCIES"
+      ]
+    },
+    {
+      "PROPAGATION_ID": "T2-C003-BP-006",
+      "TRIGGER": "TEMPORARY_COMMISSIONING_PROCESS_SYSTEM_CLASS",
+      "TARGETS": [
+        "TEMPORARY_ASSET_REGISTER",
+        "WORK_PACKAGES",
+        "SUPPORT_REGISTER",
+        "TEST_BOUNDARY_REGISTER",
+        "CUSTODY",
+        "MAINTENANCE",
+        "RESTORATION",
+        "AS_BUILT_CONFIGURATION"
+      ]
+    },
+    {
+      "PROPAGATION_ID": "T2-C003-BP-007",
+      "TRIGGER": "DRAINAGE_SEGREGATION",
+      "TARGETS": [
+        "DRN",
+        "RAW",
+        "TRITIUM",
+        "CHEMISTRY",
+        "ENVIRONMENTAL_MONITORING",
+        "EFFLUENT_RELEASE_PATHS"
+      ]
+    }
+  ],
+  "CROSS_BOUNDARY_DEPENDENCIES": [
+    {
+      "CONTRACT": "BC-C003-T1-T2-ELECTROMECHANICAL-AND-LOAD-LIST",
+      "TARGET": "THREAD_1",
+      "STATE": "ACTIVE",
+      "RETURNED": [
+        "ROTATING_EQUIPMENT_LOAD_FAMILIES",
+        "CLIENT_COOLING_LOAD_REQUIREMENT",
+        "PROCESS_START_STOP_CONSTRAINT_CLASSES"
+      ],
+      "NEEDED_FROM_THREAD1": [
+        "GLOBAL_LOAD_LIST",
+        "SOURCE_TO_LOAD_MAPPING",
+        "BUS_FEEDER_PROTECTION_IDENTITIES",
+        "FINAL_DRIVER_ELECTRICAL_CONFIGURATION"
+      ]
+    },
+    {
+      "CONTRACT": "BC-C003-T2-T4-MECHANICAL-SUPPORT-PENETRATION-STRUCTURAL-HOST",
+      "TARGET": "THREAD_4",
+      "STATE": "ACTIVE",
+      "RETURNED": [
+        "MECHANICAL_SUPPORT_CLASS_REGISTER_REQUIREMENTS",
+        "PENETRATION_INTERFACE_CLASSES",
+        "LOAD_DATA_FIELDS"
+      ],
+      "NEEDED_FROM_THREAD4": [
+        "HOST_STRUCTURE_IDENTITIES",
+        "EMBED_AND_ANCHOR_IDENTITIES",
+        "ALLOWABLES",
+        "AS_BUILT_SURVEY",
+        "FIRE_OR_BARRIER_PENETRATION_CONSTRAINTS"
+      ]
+    },
+    {
+      "CONTRACT": "BC-C003-T2-T5-MECHANICAL-MAINTENANCE-PRESERVATION-COMMISSIONING",
+      "TARGET": "THREAD_5",
+      "STATE": "ACTIVE",
+      "RETURNED": [
+        "PACKAGE_PRESERVATION_CLASSES",
+        "MAINTENANCE_BOUNDARY_CLASSES",
+        "PMT_REQUIREMENT_CLASSES",
+        "TEMPORARY_CONFIGURATION_RESTORATION_REQUIREMENTS"
+      ],
+      "NEEDED_FROM_THREAD5": [
+        "PRESERVATION_HISTORY",
+        "MATERIAL_CUSTODY",
+        "SPARES",
+        "WORK_ORDER_HISTORY",
+        "PMT_RECORDS",
+        "RESTORATION_RECORDS"
+      ]
+    }
+  ],
+  "IDENTITY_RECONCILIATION_REQUESTS": [
+    {
+      "REQUEST_ID": "T2-C003-IDR-001",
+      "SUBJECT": "POWER_CYCLE_SYSTEM_HIERARCHY",
+      "AFFECTED_IDENTITIES": [
+        "SGS",
+        "MAIN-STEAM",
+        "MSP",
+        "TUR",
+        "TURBINE-AUX",
+        "TURBINE-BOP",
+        "TURBINE-ISLAND",
+        "CND",
+        "CFW"
+      ],
+      "REQUEST": "THREAD1_RECONCILE_PARENT_CHILD_ALIAS_AND_PHYSICAL_BOUNDARIES_WITHOUT_DELETING_SOURCE_IDENTITIES"
+    },
+    {
+      "REQUEST_ID": "T2-C003-IDR-002",
+      "SUBJECT": "TRITIUM_FUEL_CYCLE_SYSTEM_HIERARCHY",
+      "AFFECTED_IDENTITIES": [
+        "TRI",
+        "TEX",
+        "BTX",
+        "ISS",
+        "TSD",
+        "FUE",
+        "WDS",
+        "ADS",
+        "TMA"
+      ],
+      "REQUEST": "THREAD1_RECONCILE_FUNCTION_OWNERSHIP_AND_ALIAS_RELATIONSHIPS"
+    },
+    {
+      "REQUEST_ID": "T2-C003-IDR-003",
+      "SUBJECT": "UTILITY_HIERARCHY",
+      "AFFECTED_IDENTITIES": [
+        "UTL",
+        "UTILITIES",
+        "PERM-UTILITIES",
+        "TEMP-UTIL"
+      ],
+      "REQUEST": "THREAD1_RECONCILE_PERMANENT_VS_TEMPORARY_AND_FUNCTIONAL_SUBSYSTEM_BOUNDARIES"
+    },
+    {
+      "REQUEST_ID": "T2-C003-IDR-004",
+      "SUBJECT": "DRAINAGE_HIERARCHY",
+      "AFFECTED_IDENTITIES": [
+        "DRN",
+        "DRAINAGE-EFFLUENT",
+        "RAW"
+      ],
+      "REQUEST": "THREAD1_RECONCILE_DRAIN_COLLECTION_EFFLUENT_AND_RADWASTE_BOUNDARIES"
+    },
+    {
+      "REQUEST_ID": "T2-C003-IDR-005",
+      "SUBJECT": "CCW_COMMON_NETWORK",
+      "REQUEST": "DETERMINE_WHETHER_COMMON_SURGE_CHEMISTRY_HEADER_AND_CLIENT_OBJECTS_ALREADY_HAVE_CANONICAL_IDENTITIES_BEFORE_CREATING_ANY_NEW_IDS"
+    },
+    {
+      "REQUEST_ID": "T2-C003-IDR-006",
+      "SUBJECT": "BHT401_PUMP_AND_SGHX_PROVISIONAL_SUBUNIT_IDS",
+      "REQUEST": "RETAIN_C002_WORKING_SEMANTICS_AND_DO_NOT_PROMOTE_UNTIL_VENDOR_OR_PROJECT_RECORD_RECOVERY"
+    }
+  ],
+  "NEXT_INVESTIGATION_RECOMMENDATIONS": [
+    {
+      "PRIORITY": 1,
+      "SUBJECT": "FUNCTION_TO_SYSTEM_CANONICAL_BOUNDARY_RECONCILIATION",
+      "TARGET": "POWER_CYCLE_TRITIUM_UTILITIES_DRAINAGE_AND_COOLING_COMMON_NETWORKS",
+      "ASSIGNMENT_AUTHORITY": "THREAD_1_ONLY"
+    },
+    {
+      "PRIORITY": 2,
+      "SUBJECT": "CLIENT_HEAT_LOAD_MATRIX_RECONSTRUCTION",
+      "TARGET": "EVERY_CCW_CHW_CWS_AND_LOCAL_HCD_CLIENT",
+      "ASSIGNMENT_AUTHORITY": "THREAD_1_ONLY"
+    },
+    {
+      "PRIORITY": 3,
+      "SUBJECT": "ROTATING_EQUIPMENT_PACKAGE_WAVE",
+      "TARGET": [
+        "CCW_PUMPS",
+        "CWS_PUMPS",
+        "DHT_PUMPS",
+        "VHT_PUMPS",
+        "CFW_PUMPS",
+        "CRY_COMPRESSORS",
+        "VACUUM_PUMPS",
+        "UTILITY_AIR_COMPRESSORS"
+      ],
+      "ASSIGNMENT_AUTHORITY": "THREAD_1_ONLY"
+    },
+    {
+      "PRIORITY": 4,
+      "SUBJECT": "POWER_CYCLE_PHYSICAL_NETWORK_WAVE",
+      "TARGET": [
+        "SGS_BLOWDOWN",
+        "MSP",
+        "CND_AIR_REMOVAL",
+        "CFW_REGENERATION",
+        "TUR_AUXILIARIES"
+      ],
+      "ASSIGNMENT_AUTHORITY": "THREAD_1_ONLY"
+    },
+    {
+      "PRIORITY": 5,
+      "SUBJECT": "TRITIUM_PROCESS_PHYSICAL_BOUNDARY_WAVE",
+      "TARGET": [
+        "TOKAMAK_EXHAUST_PROCESS",
+        "ISS",
+        "TSD",
+        "ADS",
+        "WDS",
+        "TMA",
+        "BTX_TEX"
+      ],
+      "ASSIGNMENT_AUTHORITY": "THREAD_1_ONLY"
+    },
+    {
+      "PRIORITY": 6,
+      "SUBJECT": "PLANTWIDE_TEMPORARY_COMMISSIONING_PROCESS_SYSTEM_REGISTER",
+      "ASSIGNMENT_AUTHORITY": "THREAD_1_ONLY"
+    },
+    {
+      "PRIORITY": 7,
+      "SUBJECT": "BHT401_AUTHORITATIVE_RECORD_RECOVERY",
+      "TARGET_RECORDS": [
+        "P_AND_ID",
+        "LINE_LIST",
+        "PUMP_PACKAGE_GA",
+        "PUMP_CURVE",
+        "CHECK_VALVE_PACKAGE_DATA",
+        "MOTOR_VENDOR_PACKAGE",
+        "STARTER_OR_DRIVE_PACKAGE",
+        "CRS01_FLEXIBLE_CONNECTOR_DATA",
+        "RST_L2_AS_BUILT_SETTING",
+        "M88217_EXECUTION_PACKAGE"
+      ],
+      "ASSIGNMENT_AUTHORITY": "THREAD_1_ONLY"
+    }
+  ],
+  "CONTENT_MANIFEST": {
+    "REQUIRED_RETURN_SECTIONS_PRESENT": 30,
+    "FUNCTION_DISCOVERY_ROWS": 32,
+    "PROPOSED_ATLAS_DELTAS": 14,
+    "PROPOSED_ANNEX_REGISTERS": 10,
+    "NEW_ENGINEERING_FINDINGS": 16,
+    "NEW_OR_CARRIED_CONFLICT_RECORDS": 12,
+    "OPEN_ITEMS": 36,
+    "CROSS_BOUNDARY_CONTRACTS_RETURNED": 3,
+    "LANGUAGE_RESEARCH_COVERAGE": [
+      "ENGLISH",
+      "JAPANESE",
+      "GERMAN",
+      "FRENCH",
+      "CHINESE",
+      "RUSSIAN",
+      "SPANISH"
+    ]
+  },
+  "RETURN_COMPLETENESS_STATUS": {
+    "THERMAL_FLUID_MECHANICAL_FUNCTION_AND_SYSTEM_DISCOVERY_WAVE1_EXECUTED_TO_DIMINISHING_RETURNS": "PASS_FOR_WAVE1",
+    "NEWLY_DISCOVERED_OR_UNDERDECOMPOSED_SYSTEMS_REGISTERED_WITH_PROVENANCE": "PASS",
+    "FIRST_WAVE_HIGH_DEPENDENCY_SYSTEMS_DECOMPOSED_BELOW_SYSTEM_LEVEL": "PASS",
+    "CROSS_DOMAIN_BOUNDARIES_RETURNED": "PASS",
+    "BHT401_CRITICAL_ANCHOR_STATE_UPDATED_WITHOUT_UNSUPPORTED_CLOSURE": "PASS_NO_NEW_AUTHORITATIVE_PROJECT_CLOSURE",
+    "ALL_IDENTIFIED_MATERIAL_GAPS_REGISTERED": "PASS",
+    "DOMINANT_NEXT_LIMIT": "PROJECT_SPECIFIC_RECORD_RECOVERY_AND_THREAD1_IDENTITY_RECONCILIATION",
+    "GLOBAL_WRITE": false,
+    "SELF_ASSIGNMENT_ACTIVE": false,
+    "NEXT_MAJOR_TASK_AUTHORITY": "THREAD_1_ONLY",
+    "FINAL_STATE": "WAIT_FOR_THREAD_1_DIRECTION"
+  }
+}

@@ -1,0 +1,1978 @@
+{
+  "HEADER": {
+    "PACKAGE_ID": "OFG-EA-T5-C002-RETURN-R1",
+    "PACKAGE_VERSION": "1.0.0",
+    "PACKAGE_TYPE": "OFG_ENGINEERING_ATLAS_WORKER_RETURN",
+    "SOURCE_THREAD": 5,
+    "TARGET_THREAD": 1,
+    "CYCLE_ID": "OFG-EA-CYCLE-002",
+    "TASK_ID": "T5-C002-M88217-DEEP-EVIDENCE-MATERIAL-CUSTODY-PMT-CLOSURE",
+    "INPUT_BASELINE_ID": "OFG-EA-B000-REV3-REVW3-REVS-2031-04-19",
+    "INTEGRATED_STAGING_DELTA_ID": "OFG-EA-C001-INTEGRATED-STAGING-R1",
+    "CONFIGURATION_CUT": "2031-04-19",
+    "ASSURANCE_CLASS": "AS3",
+    "RETURN_STATUS": "COMPLETE_TO_ASSIGNED_CYCLE_STOP_CONDITIONS",
+    "GLOBAL_WRITE_PERFORMED": false,
+    "CANONICAL_ID_MUTATION_PERFORMED": false,
+    "SILENT_MERGE_PERFORMED": false,
+    "SELF_ASSIGNED_NEXT_MAJOR_CYCLE": false
+  },
+  "LOCAL_STATE_CAPSULE": {
+    "THREAD_ID": 5,
+    "WORKER_ROLE": "PARALLEL_ENGINEERING_REVIEW_WORKER",
+    "PRIMARY_ORIENTATION": "PLANT_SUPPORT_MAINTENANCE_MATERIAL_HANDLING_WASTE_ENVIRONMENTAL_OPERATIONAL_SUPPORT",
+    "CURRENT_STATE": "W_RETURN_READY",
+    "PINNED_BASELINE_ID": "OFG-EA-B000-REV3-REVW3-REVS-2031-04-19",
+    "PINNED_STAGING_DELTA_ID": "OFG-EA-C001-INTEGRATED-STAGING-R1",
+    "LOCAL_CHECKPOINT_ID": "T5-C002-CP-AS3-VV-COMPLETE",
+    "PRIMARY_OBJECTS": [
+      "M-88217",
+      "CRS01-RST-L2",
+      "TMP-BHT-401-CRS-01"
+    ],
+    "GLOBAL_CONFLICT": "GCF-C001-001",
+    "GLOBAL_CONFLICT_STATE": "OPEN",
+    "COMPLETED_SUBROUTINES": [
+      "SR010_GENERATE_RESEARCH_SCOPE",
+      "SR030_RECONSTRUCT_LIFECYCLE",
+      "SR040_RECONSTRUCT_ACTOR_AND_AUTHORITY",
+      "SR050_VALIDATE_ENGINEERING",
+      "SR051_VERIFY_EVIDENCE"
+    ],
+    "COMPLETED_RECURSION_FUNCTIONS": [
+      "RF005_RECURSE_REQUIREMENT_TRACE",
+      "RF006_RECURSE_INTERFACE_TRACE",
+      "RF008_RECURSE_LIFECYCLE_TRACE",
+      "RF009_RECURSE_SUPPLY_CHAIN",
+      "RF011_RECURSE_CONSTRUCTION_WORKFACE",
+      "RF012_RECURSE_COMMISSIONING_AND_TURNOVER",
+      "RF013_RECURSE_CONFIGURATION_CHRONOLOGY",
+      "RF014_RECURSE_ACTOR_AUTHORITY",
+      "RF015_RECURSE_INFORMATION_FLOW",
+      "RF016_RECURSE_VALIDATION",
+      "RF017_RECURSE_VERIFICATION",
+      "RF020_RECURSE_OPERABILITY_MAINTAINABILITY_TESTABILITY",
+      "RF023_RECURSE_BACKWARD_AND_CROSS_PROPAGATION",
+      "RF024_RECURSE_OPEN_ITEM_CLOSURE",
+      "RF041_RECURSE_SOURCE_CLAIM_VERIFICATION",
+      "RF046_RECURSE_CROSS_DOMAIN_VALIDATION"
+    ],
+    "COMPLETED_ITERATION_CYCLES": [
+      "EVIDENCE_DISCOVERY",
+      "RECORD_GENEALOGY",
+      "ACTOR_AUTHORITY",
+      "PHYSICAL_STATE_REPLAY",
+      "MATERIAL_TOOL_TRACE",
+      "PMT_RESTORATION",
+      "EOC_AND_CROSS_BOUNDARY",
+      "VV_RECHECK"
+    ],
+    "ACTIVE_RECURSION_BRANCHES": [],
+    "RETURN_READY": true
+  },
+  "EXECUTED_SCOPE": {
+    "PRIMARY_OBJECTIVE_RESULT": "PHYSICAL_EXECUTION_CHAIN_NOT_RECONSTRUCTABLE_TO_EVIDENTIARY_THRESHOLD; PRECISE_FAILURE_BOUNDARY_ESTABLISHED",
+    "M88217_SEARCH_SATURATION": {
+      "STATUS": "REASONABLY_SATURATED_WITHIN_AVAILABLE_CORPUS_AND_ACCESSIBLE_EXTERNAL_PRECEDENT",
+      "NEW_AUTHORITATIVE_EXECUTION_PACKAGE_FOUND": false,
+      "NEW_PERSON_LEVEL_EXECUTION_EVIDENCE_FOUND": false,
+      "NEW_JOB_SPECIFIC_TOOL_OR_MATERIAL_TRANSACTION_FOUND": false,
+      "NEW_PMT_OR_RESTORATION_RECORD_FOUND": false,
+      "GLOBAL_CONFLICT_CLOSURE_THRESHOLD_MET": false,
+      "CONCLUSION": "The available record chain establishes an administrative work-item state and surrounding chronology but does not bridge that state to verified field execution and verified as-left configuration.",
+      "SOURCE_SUPPORT": [
+        ":chatgpt-content-reference{index="0"}",
+        ":chatgpt-content-reference{index="1"}"
+      ]
+    },
+    "M88217_MANDATORY_SEARCH_AXIS_RESULTS": [
+      {
+        "AXIS": "WORK_MANAGEMENT_HEADER_HISTORY",
+        "RESULT": "FOUND_PARTIAL",
+        "FOUND": "M-88217 maintenance/work-management record identity, lateral-restraint inspection/adjustment description, CLOSED/APPROVED information state.",
+        "NOT_FOUND": "Complete header history, creation history, all status-transition timestamps, requester identity, priority history and revision audit trail."
+      },
+      {
+        "AXIS": "WORK_REQUEST",
+        "RESULT": "PARTIAL_OPEN",
+        "FOUND": "20 March walkdown recommends inspection.",
+        "NOT_FOUND": "Direct controlled record proving the exact conversion of the March recommendation into the M-88217 work request."
+      },
+      {
+        "AXIS": "WORK_ORDER_OR_MAINTENANCE_TASK",
+        "RESULT": "FOUND_INFORMATION_STATE",
+        "FOUND": "M-88217 indexed against CRS01-RST-L2.",
+        "NOT_FOUND": "Recoverable authoritative execution package."
+      },
+      {
+        "AXIS": "REVISION_HISTORY",
+        "RESULT": "NOT_FOUND",
+        "FOUND": null,
+        "NOT_FOUND": "M-88217 revision/supersession history."
+      },
+      {
+        "AXIS": "STATUS_TRANSITIONS",
+        "RESULT": "PARTIAL",
+        "FOUND": "CLOSED/APPROVED state by 11 April 2031.",
+        "NOT_FOUND": "Complete REQUESTED-to-APPROVED transition history."
+      },
+      {
+        "AXIS": "APPROVAL_HISTORY",
+        "RESULT": "PARTIAL",
+        "FOUND": "APPROVED information state.",
+        "NOT_FOUND": "Approver identity, approval basis, review evidence and approval-chain history sufficient to establish field authorization."
+      },
+      {
+        "AXIS": "PERMIT",
+        "RESULT": "NOT_FOUND_FOR_M88217",
+        "FOUND": null,
+        "NOT_FOUND": "Job-specific permit or post-turnover work authorization tied to M-88217."
+      },
+      {
+        "AXIS": "ISOLATION",
+        "RESULT": "NOT_FOUND_FOR_M88217",
+        "FOUND": null,
+        "NOT_FOUND": "Job-specific isolation boundary and isolation record."
+      },
+      {
+        "AXIS": "LOTO",
+        "RESULT": "NOT_FOUND_FOR_M88217",
+        "FOUND": null,
+        "NOT_FOUND": "LOTO/tagging record linked to M-88217."
+      },
+      {
+        "AXIS": "CUSTODY_BOUNDARY",
+        "RESULT": "PARENT_CONFIGURATION_KNOWN_JOB_SPECIFIC_AUTHORIZATION_OPEN",
+        "FOUND": "TMP-BHT-401-CRS-01 had previously been turned over to receiving/commissioning control; subsequent work in the transferred boundary required receiving-party control.",
+        "NOT_FOUND": "M-88217-specific custody release or receiving-party authorization."
+      },
+      {
+        "AXIS": "ACCESS_CONTROL",
+        "RESULT": "NOT_FOUND_FOR_M88217",
+        "FOUND": null,
+        "NOT_FOUND": "Job-specific access release or work-area release."
+      },
+      {
+        "AXIS": "CRAFT_SIGN_ON",
+        "RESULT": "NOT_FOUND",
+        "FOUND": null,
+        "NOT_FOUND": "Performer/craft identity."
+      },
+      {
+        "AXIS": "SHIFT_LOG",
+        "RESULT": "PRECURSOR_ONLY",
+        "FOUND": "17 March operator observation record exists in the CRS-01 chronology.",
+        "NOT_FOUND": "11 April shift log directly proving M-88217 execution."
+      },
+      {
+        "AXIS": "SUPERVISOR_LOG",
+        "RESULT": "NOT_FOUND",
+        "FOUND": null,
+        "NOT_FOUND": "Supervisor log linked to the work."
+      },
+      {
+        "AXIS": "QC_HOLD_WITNESS",
+        "RESULT": "NOT_FOUND",
+        "FOUND": null,
+        "NOT_FOUND": "QC hold, witness or independent release record."
+      },
+      {
+        "AXIS": "TOOL_ISSUE",
+        "RESULT": "NOT_FOUND",
+        "FOUND": null,
+        "NOT_FOUND": "Tool issue/return transaction."
+      },
+      {
+        "AXIS": "CALIBRATION",
+        "RESULT": "NOT_FOUND_JOB_SPECIFIC",
+        "FOUND": "OFG support architecture contains controlled calibration capability.",
+        "NOT_FOUND": "Calibration certificate or calibration-status trace for any instrument used on M-88217."
+      },
+      {
+        "AXIS": "MATERIAL_ISSUE",
+        "RESULT": "NOT_FOUND",
+        "FOUND": null,
+        "NOT_FOUND": "Material issue transaction tied to M-88217."
+      },
+      {
+        "AXIS": "PARTS_ISSUE",
+        "RESULT": "NOT_FOUND",
+        "FOUND": null,
+        "NOT_FOUND": "Parts issue transaction tied to M-88217."
+      },
+      {
+        "AXIS": "FASTENER_OR_SHIM_TRANSACTION",
+        "RESULT": "NOT_FOUND",
+        "FOUND": null,
+        "NOT_FOUND": "Any fastener, retaining hardware, shim or equivalent transaction."
+      },
+      {
+        "AXIS": "AS_FOUND_READING",
+        "RESULT": "NOT_FOUND",
+        "FOUND": null,
+        "NOT_FOUND": "As-found dimensional, gap, position, torque or tension values."
+      },
+      {
+        "AXIS": "AS_LEFT_READING",
+        "RESULT": "NOT_FOUND",
+        "FOUND": null,
+        "NOT_FOUND": "As-left dimensional, gap, position, torque or tension values."
+      },
+      {
+        "AXIS": "TORQUE_OR_TENSION_RECORD",
+        "RESULT": "NOT_FOUND",
+        "FOUND": null,
+        "NOT_FOUND": "Torque/tension record."
+      },
+      {
+        "AXIS": "DIMENSIONAL_RECORD",
+        "RESULT": "NOT_FOUND_FOR_M88217",
+        "FOUND": "10 April photographic baseline exists.",
+        "NOT_FOUND": "Controlled M-88217 dimensional measurements."
+      },
+      {
+        "AXIS": "PHOTO_OR_VIDEO",
+        "RESULT": "PRE_WORK_BASELINE_FOUND_AS_LEFT_NOT_FOUND",
+        "FOUND": "PHOTO-BHT401-0410 provides a 10 April pre-event physical baseline.",
+        "NOT_FOUND": "M-88217-linked as-left photograph or video."
+      },
+      {
+        "AXIS": "INSPECTION",
+        "RESULT": "CLAIMED_BY_RECORD_TITLE_NOT_VERIFIED_BY_EXECUTION_EVIDENCE",
+        "FOUND": "Record description includes inspection/adjustment.",
+        "NOT_FOUND": "Independent proof that the claimed inspection was physically performed."
+      },
+      {
+        "AXIS": "POST_MAINTENANCE_TEST",
+        "RESULT": "NOT_FOUND",
+        "FOUND": null,
+        "NOT_FOUND": "M-88217 PMT record or PMT acceptance evaluation."
+      },
+      {
+        "AXIS": "LEAK_OR_FUNCTIONAL_TEST",
+        "RESULT": "NOT_FOUND_FOR_M88217",
+        "FOUND": null,
+        "NOT_FOUND": "Job-specific leak, loaded-run or functional verification after the claimed intervention."
+      },
+      {
+        "AXIS": "RESTORATION",
+        "RESULT": "NOT_FOUND_FOR_M88217",
+        "FOUND": null,
+        "NOT_FOUND": "Restoration checklist or return-to-service record attributable to M-88217."
+      },
+      {
+        "AXIS": "CONFIGURATION_CONFIRMATION",
+        "RESULT": "NOT_FOUND",
+        "FOUND": null,
+        "NOT_FOUND": "Authoritative confirmation that the post-work physical configuration matched the controlled configuration."
+      },
+      {
+        "AXIS": "CLOSEOUT",
+        "RESULT": "INFORMATION_STATE_FOUND_EXECUTION_BASIS_NOT_FOUND",
+        "FOUND": "CLOSED/APPROVED state.",
+        "NOT_FOUND": "Evidence package demonstrating the basis for closeout."
+      },
+      {
+        "AXIS": "DOCUMENT_CONTROL_ARCHIVE",
+        "RESULT": "SEARCH_REPRESENTED_IN_SOURCE_NO_EXECUTION_PACKAGE_RECOVERED",
+        "FOUND": "Post-event organizational working history records repository/source-system searches, a missing-evidence matrix and provenance mapping.",
+        "NOT_FOUND": "Authoritative linked execution package.",
+        "SOURCE_SUPPORT": ":chatgpt-content-reference{index="2"}"
+      },
+      {
+        "AXIS": "VENDOR_PORTAL",
+        "RESULT": "NO_DIRECT_PORTAL_ACCESS_IN_THREAD",
+        "FOUND": "Vendor records are included among post-event evidence classes searched/assembled in the project reconstruction.",
+        "NOT_FOUND": "A vendor-held M-88217 execution package establishing the missing physical states."
+      },
+      {
+        "AXIS": "TRANSCRIPTION_VARIANTS",
+        "RESULT": "SEARCHED_NO_ALTERNATE_EXECUTION_PACKAGE_SURFACED",
+        "FOUND": "Repeated references to M-88217/88217 and CRS01-RST-L2 across the supplied corpus.",
+        "NOT_FOUND": "Alternate-number or transcription-variant execution package."
+      },
+      {
+        "AXIS": "DOWNSTREAM_REFERENCES",
+        "RESULT": "FOUND",
+        "FOUND": "Multiple Atlas, site-history and organizational-history references preserve the CLOSED/APPROVED state, evidence gap, investigation, repository search and provenance problem.",
+        "NOT_FOUND": "Any downstream reference that supplies the missing execution payload."
+      }
+    ],
+    "M88217_FOUND_RECORD_GENEALOGY": [
+      {
+        "SEQUENCE": 1,
+        "RECORD_ID": "OPLOG-2031-03-17-BHT",
+        "DATE": "2031-03-17",
+        "INFORMATION_STATE": "OPERATOR_OBSERVATION",
+        "PHYSICAL_OBJECT": "TMP-BHT-401-CRS-01",
+        "CONTENT": "Higher-than-remembered vibration observed; no limit exceeded.",
+        "RELATION_TO_M88217": "PRECURSOR",
+        "PROVENANCE": "CONTROLLED_STORY_DIGITAL_THREAD",
+        "DOES_NOT_PROVE": [
+          "DEFECT",
+          "M88217_REQUEST",
+          "M88217_EXECUTION"
+        ]
+      },
+      {
+        "SEQUENCE": 2,
+        "RECORD_ID": "WALK-BHT401-0320",
+        "DATE": "2031-03-20",
+        "INFORMATION_STATE": "WALKDOWN_RECOMMENDATION",
+        "PHYSICAL_OBJECT": "TMP-BHT-401-CRS-01",
+        "CONTENT": "No immediate defect identified; inspection recommended.",
+        "RELATION_TO_M88217": "PLAUSIBLE_WORK_MANAGEMENT_ANTECEDENT_BUT_DIRECT_REQUEST_LINK_NOT_RECOVERED",
+        "PROVENANCE": "CONTROLLED_STORY_DIGITAL_THREAD"
+      },
+      {
+        "SEQUENCE": 3,
+        "RECORD_ID": "PHOTO-BHT401-0410",
+        "DATE": "2031-04-10",
+        "INFORMATION_STATE": "PHYSICAL_BASELINE",
+        "PHYSICAL_OBJECT": "CRS01-RST-L2",
+        "CONTENT": "Routine photographic survey captured restraint geometry and witness marks.",
+        "RELATION_TO_M88217": "PRE_WORK_OR_PRE_EVENT_BASELINE",
+        "PROVENANCE": "CONTROLLED_STORY_CANON"
+      },
+      {
+        "SEQUENCE": 4,
+        "RECORD_ID": "M-88217",
+        "DATE": "2031-04-11",
+        "INFORMATION_STATE": "MAINTENANCE_RECORD_INDEX_STATE",
+        "PHYSICAL_OBJECT": "CRS01-RST-L2",
+        "CONTENT": "Lateral-restraint inspection/adjustment; CLOSED/APPROVED.",
+        "RELATION_TO_M88217": "PRIMARY_RECORD",
+        "PROVENANCE": "LOCKED_CANON_FOR_INFORMATION_STATE",
+        "PHYSICAL_EXECUTION_PROOF": false,
+        "SOURCE_SUPPORT": ":chatgpt-content-reference{index="3"}"
+      },
+      {
+        "SEQUENCE": 5,
+        "RECORD_ID": "EVT-2031-0412-HPNM",
+        "DATE": "2031-04-12",
+        "INFORMATION_STATE": "EVENT_RECORD",
+        "PHYSICAL_OBJECT": "TMP-BHT-401-CRS-01",
+        "CONTENT": "Lateral movement beyond expected envelope during loaded circulation; operator in potential crushing zone; no injury.",
+        "RELATION_TO_M88217": "TRIGGERS_FORENSIC_RECONSTRUCTION",
+        "PROVENANCE": "CONTROLLED_STORY_CANON"
+      },
+      {
+        "SEQUENCE": 6,
+        "RECORD_ID": "EVID-BHT401-RSTL2",
+        "DATE": "2031-04-12",
+        "INFORMATION_STATE": "EVIDENCE_CONTROL",
+        "PHYSICAL_OBJECT": "CRS01-RST-L2",
+        "CONTENT": "Restraint preserved for engineering/event investigation.",
+        "RELATION_TO_M88217": "PRESERVES_POST_EVENT_PHYSICAL_EVIDENCE",
+        "PROVENANCE": "CONTROLLED_STORY_CANON"
+      },
+      {
+        "SEQUENCE": 7,
+        "RECORD_ID": "EOC-BHT-TMP-001",
+        "DATE": "2031-04-13",
+        "INFORMATION_STATE": "EXTENT_OF_CONDITION",
+        "PHYSICAL_OBJECT": "RELATED_TEMPORARY_RESTRAINT_SUPPORT_POPULATION",
+        "CONTENT": "Inspection scope expanded to related temporary restraints/support arrangements.",
+        "RELATION_TO_M88217": "EXPANDS_INVESTIGATION_SCOPE",
+        "PROVENANCE": "CONTROLLED_STORY_CANON"
+      },
+      {
+        "SEQUENCE": 8,
+        "RECORD_ID": "REPOSITORY_SEARCH_LOG_MISSING_EVIDENCE_MATRIX_PROVENANCE_MAP",
+        "DATE_RANGE": "2031-04-13/2031-04-19",
+        "INFORMATION_STATE": "FORENSIC_RECORD_RECONSTRUCTION",
+        "CONTENT": "Expected repositories/source systems were searched for the M-88217 closeout chain and missing evidence was distinguished from proof of non-performance.",
+        "RELATION_TO_M88217": "SEARCH_SATURATION_AND_GAP_CHARACTERIZATION",
+        "PROVENANCE": "REVS_ORGANIZATIONAL_WORKING_HISTORY_MIXED_CANONICAL_FRAMEWORK_MODELED_CONNECTIVE_HISTORY",
+        "PERSON_LEVEL_PROOF": false,
+        "SOURCE_SUPPORT": ":chatgpt-content-reference{index="4"}"
+      }
+    ],
+    "M88217_STATE_MODEL": [
+      {
+        "STATE": "REQUESTED",
+        "RESOLUTION": "PARTIAL_OPEN",
+        "EVIDENCE": "20 March walkdown recommends inspection.",
+        "BLOCKER": "No direct controlled request-to-M-88217 genealogy recovered."
+      },
+      {
+        "STATE": "SCOPED",
+        "RESOLUTION": "PASS_INFORMATION_STATE_ONLY",
+        "EVIDENCE": "M-88217 indexed as lateral-restraint inspection/adjustment.",
+        "BLOCKER": "Detailed work steps and technical acceptance criteria not recovered."
+      },
+      {
+        "STATE": "AUTHORIZED",
+        "RESOLUTION": "PARTIAL_INFORMATION_STATE",
+        "EVIDENCE": "Record is APPROVED at the information-system level.",
+        "BLOCKER": "Approval chain, authorization basis, custody release, permit and field authorization not recovered."
+      },
+      {
+        "STATE": "ISOLATED",
+        "RESOLUTION": "OPEN",
+        "EVIDENCE": null,
+        "BLOCKER": "No M-88217 isolation/LOTO evidence recovered."
+      },
+      {
+        "STATE": "ACCESS_RELEASED",
+        "RESOLUTION": "OPEN",
+        "EVIDENCE": null,
+        "BLOCKER": "No M-88217 access/work-area release recovered."
+      },
+      {
+        "STATE": "WORK_STARTED",
+        "RESOLUTION": "OPEN",
+        "EVIDENCE": null,
+        "BLOCKER": "No craft sign-on, start entry or contemporaneous execution log recovered."
+      },
+      {
+        "STATE": "PHYSICAL_ACTION",
+        "RESOLUTION": "OPEN_CONFLICT",
+        "EVIDENCE": "Physical indications suggest intervention occurred, but the exact action is not reconstructable.",
+        "BLOCKER": "No execution package, dimensional record, material transaction or performer evidence.",
+        "SOURCE_SUPPORT": ":chatgpt-content-reference{index="5"}"
+      },
+      {
+        "STATE": "INSPECTED",
+        "RESOLUTION": "OPEN",
+        "EVIDENCE": "Inspection is part of the record title only.",
+        "BLOCKER": "Record title/status is not proof of actual inspection."
+      },
+      {
+        "STATE": "PMT",
+        "RESOLUTION": "OPEN",
+        "EVIDENCE": null,
+        "BLOCKER": "No post-maintenance verification/test evidence recovered."
+      },
+      {
+        "STATE": "RESTORED",
+        "RESOLUTION": "OPEN",
+        "EVIDENCE": null,
+        "BLOCKER": "No restoration/return-to-service evidence attributable to M-88217 recovered."
+      },
+      {
+        "STATE": "CONFIGURATION_CONFIRMED",
+        "RESOLUTION": "OPEN",
+        "EVIDENCE": null,
+        "BLOCKER": "No as-left configuration confirmation recovered."
+      },
+      {
+        "STATE": "CLOSED",
+        "RESOLUTION": "PASS_INFORMATION_STATE_ONLY",
+        "EVIDENCE": "M-88217 indexed CLOSED.",
+        "BLOCKER": "Execution basis for closure unavailable."
+      },
+      {
+        "STATE": "APPROVED",
+        "RESOLUTION": "PASS_INFORMATION_STATE_ONLY",
+        "EVIDENCE": "M-88217 indexed APPROVED.",
+        "BLOCKER": "Approval state does not establish field execution or as-left correctness."
+      }
+    ],
+    "M88217_STATE_RESOLUTION_COUNTS": {
+      "TOTAL_STATE_NODES": 13,
+      "PASS_INFORMATION_STATE_ONLY": 3,
+      "PARTIAL_OR_PARTIAL_OPEN": 2,
+      "OPEN_OR_OPEN_CONFLICT": 8,
+      "FULL_PHYSICAL_EXECUTION_CHAIN_CLOSED": false
+    },
+    "SECONDARY_OBJECTIVE_RESULT": "THREE_REPRESENTATIVE_MATERIAL_CUSTODY_DOSSIERS_ADVANCED_TO_MAXIMUM_SUPPORTED_DEPTH",
+    "REPRESENTATIVE_MATERIAL_CUSTODY_DOSSIERS": [
+      {
+        "DOSSIER_ID": "T5-C002-CUST-MAG-PF-01",
+        "ASSET_ID": "MAG-PF-01",
+        "ASSET_CLASS": "ONE_MAJOR_FUSION_OR_HEAVY_COMPONENT",
+        "DESCRIPTION": "Poloidal-field coil 1",
+        "LOCATION": "Z01-B / F-101 Tokamak Building",
+        "OWNER_CONTROLLER": "OPG",
+        "DESIGN_AUTHORITY": "HMS",
+        "SUPPLIER_OEM": "MHI/HMS-qualified supply chain",
+        "INSTALLER_OPERATOR": "Kiewit/MHI",
+        "WORKING_DATASET_LIFECYCLE": {
+          "SITE_ARRIVAL": "2027-09-29",
+          "INSTALLATION_START": "2027-12-10",
+          "MECHANICAL_COMPLETION": "2029-08-01",
+          "TURNOVER": "2030-10-15",
+          "COMMISSIONING_START": "2030-11-01",
+          "CUSTODY_AT_CUT": "OPG Commissioning",
+          "STATE_AT_CUT": "Cold / integrated commissioning"
+        },
+        "WORKING_DATASET_STATUS": "NOT_SELF_AUTHENTICATING_CANON",
+        "KNOWN_RECORD_FAMILIES": [
+          "SHIPPING_RELEASE",
+          "PACKING_LIST",
+          "CUSTOMS_IMPORT",
+          "RECEIVING_INSPECTION",
+          "CONDITION_DAMAGE_REPORT",
+          "IDENTIFICATION_SERIAL_RECONCILIATION",
+          "PRESERVATION_STORAGE_ASSIGNMENT",
+          "CWP_IWP",
+          "PERMIT_ACCESS",
+          "MATERIAL_ISSUE",
+          "LIFT_RIGGING",
+          "INSTALLATION_CHECKLIST",
+          "QC_HOLD_WITNESS",
+          "REDLINE_AS_BUILT",
+          "SURVEY_ALIGNMENT_TORQUE_NDE_AS_APPLICABLE",
+          "MC_CHECKLIST",
+          "PUNCH_NCR",
+          "PRESERVATION_STATE",
+          "TURNOVER_DOSSIER",
+          "BOUNDARY_AS_BUILT_OPEN_ITEM_BASELINE_INSPECTION",
+          "COMMISSIONING_TEST_AND_MAINTENANCE_HISTORY"
+        ],
+        "TRANSACTION_LEVEL_GAPS": [
+          "EXACT_SHIPPING_RELEASE_ID",
+          "EXACT_RECEIVING_INSPECTION_ID",
+          "EXACT_SERIAL_RECONCILIATION_RECORD",
+          "EXACT_STORAGE_OR_LAYDOWN_LOCATION_HISTORY",
+          "PRESERVATION_PROCEDURE_AND_PERIODIC_INSPECTION_LOG",
+          "MATERIAL_ISSUE_ID",
+          "ASSET_SPECIFIC_LIFT_RIGGING_RECORD_ID",
+          "TRANSACTION_LEVEL_CUSTODY_HANDOFFS_BEFORE_TURNOVER"
+        ],
+        "CLOSURE": "PARTIAL",
+        "SOURCE_SUPPORT": ":chatgpt-content-reference{index="6"}"
+      },
+      {
+        "DOSSIER_ID": "T5-C002-CUST-APS-821-TR-001",
+        "ASSET_ID": "APS-821-TR-001",
+        "ASSET_CLASS": "ONE_ELECTRICAL_TRANSFORMER_OR_SWITCHGEAR_ITEM",
+        "DESCRIPTION": "Station service transformer 1",
+        "LOCATION": "Z07/Z05 / E-101/E-102/E-103/E-104/E-105",
+        "OWNER_CONTROLLER": "OPG",
+        "DESIGN_AUTHORITY": "E&C",
+        "SUPPLIER_OEM": "GE Vernova/qualified electrical suppliers",
+        "INSTALLER_OPERATOR": "E.S. Fox/OEM",
+        "WORKING_DATASET_LIFECYCLE": {
+          "SITE_ARRIVAL": "2027-07-01",
+          "INSTALLATION_START": "2028-01-01",
+          "MECHANICAL_COMPLETION": "2029-06-01",
+          "TURNOVER": "2029-09-01",
+          "COMMISSIONING_START": "2029-10-01",
+          "CUSTODY_AT_CUT": "OPG",
+          "STATE_AT_CUT": "Operational / commissioned"
+        },
+        "WORKING_DATASET_STATUS": "NOT_SELF_AUTHENTICATING_CANON",
+        "WORKFRONT_CORROBORATION": {
+          "SITE_ARRIVAL_POPULATION": "ELECTRICAL workfront includes APS-821-TR-001",
+          "INSTALLATION_POPULATION": "ELECTRICAL workfront includes APS-821-TR-001",
+          "MECHANICAL_COMPLETION_POPULATION": "ELECTRICAL workfront includes APS-821-TR-001",
+          "TURNOVER_POPULATION": "ELECTRICAL workfront includes APS-821-TR-001",
+          "COMMISSIONING_POPULATION": "ELECTRICAL workfront includes APS-821-TR-001"
+        },
+        "PROJECT_SPECIFIC_PRESERVATION_EVIDENCE": {
+          "STATUS": "RECORD_CLASS_REQUIREMENT_FOUND_METHOD_DETAIL_OPEN",
+          "FOUND": [
+            "PRESERVATION_STORAGE_ASSIGNMENT is an expected site-receipt record class.",
+            "PRESERVATION_STATE is an expected mechanical-completion record class."
+          ],
+          "NOT_FOUND": [
+            "TRANSFORMER_SPECIFIC_PRESERVATION_PROCEDURE",
+            "STORAGE_ENVIRONMENT_LIMITS",
+            "PERIODIC_PRESERVATION_INSPECTION_FREQUENCY",
+            "OIL_OR_DESICCANT_OR_HEATER_SPECIFIC_METHOD",
+            "PRESERVATION_INSPECTION_RESULTS"
+          ]
+        },
+        "CRITICAL_SPARES": {
+          "STATUS": "OPEN",
+          "PROJECT_SPECIFIC_CRITICAL_SPARES_LIST_FOUND": false
+        },
+        "TRANSACTION_LEVEL_GAPS": [
+          "EXACT_RECEIVING_DOCUMENT_ID",
+          "EXACT_STORAGE_LOCATION_HISTORY",
+          "EXACT_PRESERVATION_LOG",
+          "EXACT_MATERIAL_ISSUE_ID",
+          "EXACT_INSTALLATION_TEST_PACKAGE",
+          "EXACT_STARTUP_CRITICAL_SPARES_HOLDING"
+        ],
+        "CLOSURE": "PARTIAL",
+        "SOURCE_SUPPORT": [
+          ":chatgpt-content-reference{index="7"}",
+          ":chatgpt-content-reference{index="8"}",
+          ":chatgpt-content-reference{index="9"}",
+          ":chatgpt-content-reference{index="10"}",
+          ":chatgpt-content-reference{index="11"}"
+        ]
+      },
+      {
+        "DOSSIER_ID": "T5-C002-CUST-TMP-BHT-401-CRS-01",
+        "ASSET_ID": "TMP-BHT-401-CRS-01",
+        "ASSET_CLASS": "ONE_TEMPORARY_COMMISSIONING_SKID_OR_SYSTEM",
+        "DESCRIPTION": "Blanket Heat Transport Train 1 temporary commissioning recirculation skid",
+        "LOCATION": "Z03-A / H-101 BHT Train 1 commissioning bay",
+        "OWNER_CONTROLLER": "E&C / OPG Commissioning after turnover",
+        "DESIGN_AUTHORITY": "E&C with HMS screening",
+        "SUPPLIER_OEM": "Local qualified skid fabricator",
+        "INSTALLER_OPERATOR": "E.S. Fox / OPG Commissioning",
+        "WORKING_DATASET_STATUS": "NOT_SELF_AUTHENTICATING_CANON_EXCEPT_WHERE_SEPARATELY_LOCKED",
+        "LIFECYCLE": [
+          {
+            "DATE": "2030-05-14",
+            "STATE": "DESIGN_NEED",
+            "RECORD": "TEMP-SYS-REQ-BHT401-01"
+          },
+          {
+            "DATE": "2030-06-12",
+            "STATE": "DESIGN_RELEASE_REV_A",
+            "RECORD": "TMP-DWG-BHT401-CRS01 Rev A"
+          },
+          {
+            "DATE": "2030-06-19",
+            "STATE": "HMS_TECHNOLOGY_SCREEN",
+            "RECORD": "HMS-SCR-2030-447"
+          },
+          {
+            "DATE": "2030-08-18",
+            "STATE": "FAT",
+            "RECORD": "FAT-CRS01"
+          },
+          {
+            "DATE": "2030-09-03",
+            "STATE": "SITE_RECEIPT",
+            "RECORD": "Receiving inspection / delivery record"
+          },
+          {
+            "DATE": "2030-09-22",
+            "STATE": "INSTALLATION",
+            "RECORD": "IWP / setup record"
+          },
+          {
+            "DATE": "2030-09-28",
+            "STATE": "MECHANICAL_COMPLETION",
+            "RECORD": "MC certificate / completion package"
+          },
+          {
+            "DATE": "2030-10-11",
+            "STATE": "TURNOVER",
+            "RECORD": "Turnover dossier / certificate"
+          },
+          {
+            "DATE": "2030-10-12",
+            "STATE": "FIRST_CONTROLLED_CAMPAIGN",
+            "RECORD": "CPT-BHT401-FLSH-01"
+          },
+          {
+            "DATE": "2031-01-06",
+            "STATE": "ISOLATED_TEMPORARY_SPOOLS_REMOVED",
+            "RECORD": "WO-BHT401-2031-011"
+          },
+          {
+            "DATE": "2031-01-16",
+            "STATE": "DESIGN_REV_C",
+            "RECORD": "TMP-DWG-BHT401-CRS01 Rev C"
+          },
+          {
+            "DATE": "2031-01-24",
+            "STATE": "RECONNECTED_CONTROLLED_SERVICE",
+            "RECORD": "PTW-BHT401-0124"
+          },
+          {
+            "DATE": "2031-03-17",
+            "STATE": "OPERATOR_OBSERVATION",
+            "RECORD": "OPLOG-2031-03-17-BHT"
+          },
+          {
+            "DATE": "2031-03-20",
+            "STATE": "WALKDOWN",
+            "RECORD": "WALK-BHT401-0320"
+          },
+          {
+            "DATE": "2031-04-10",
+            "STATE": "PHOTO_BASELINE_RESTRAINT",
+            "RECORD": "PHOTO-BHT401-0410"
+          },
+          {
+            "DATE": "2031-04-11",
+            "STATE": "M88217_CLOSED_APPROVED_INFORMATION_STATE",
+            "RECORD": "M-88217"
+          },
+          {
+            "DATE": "2031-04-12",
+            "STATE": "HIGH_POTENTIAL_NEAR_MISS_AND_ISOLATION",
+            "RECORD": "EVT-2031-0412-HPNM"
+          },
+          {
+            "DATE": "2031-04-12",
+            "STATE": "RESTRAINT_EVIDENCE_CONTROL",
+            "RECORD": "EVID-BHT401-RSTL2"
+          },
+          {
+            "DATE": "2031-04-13",
+            "STATE": "EXTENT_OF_CONDITION",
+            "RECORD": "EOC-BHT-TMP-001"
+          }
+        ],
+        "CUSTODY_AT_CUT": "Investigation control / OPG",
+        "STATE_AT_CUT": "Isolated and preserved after 2031-04-12 high-potential near miss",
+        "TRANSACTION_LEVEL_CLOSURE": {
+          "DESIGN_TO_FAT": "HIGH",
+          "FAT_TO_RECEIPT": "PARTIAL",
+          "RECEIPT_TO_INSTALLATION": "PARTIAL",
+          "INSTALLATION_TO_TURNOVER": "PARTIAL",
+          "TURNOVER_TO_JANUARY_INTERVENTION": "HIGH",
+          "JANUARY_INTERVENTION_TO_RECONNECTION": "HIGH",
+          "M88217_SUBCHAIN": "FAIL_OPEN"
+        },
+        "SOURCE_SUPPORT": [
+          ":chatgpt-content-reference{index="12"}",
+          ":chatgpt-content-reference{index="13"}"
+        ]
+      }
+    ],
+    "TERTIARY_OBJECTIVE_RESULT": {
+      "ELECTRICAL_PRESERVATION": "PARTIAL_ADVANCE",
+      "CRITICAL_SPARES": "OPEN_PROJECT_SPECIFIC",
+      "MAINTENANCE_WASTE_INTERFACE": "PARTIAL_ADVANCE",
+      "DETAIL": [
+        "The OFG working data explicitly expects preservation/storage assignment at electrical receipt and preservation-state confirmation at mechanical completion.",
+        "No project-specific transformer preservation procedure or critical-spares list was recovered for APS-821-TR-001.",
+        "No M-88217-specific parts, scrap, waste, drainage or decontamination transaction was recovered.",
+        "Absence of a waste transaction cannot establish that no consumable or discarded material existed."
+      ]
+    }
+  },
+  "UNFINISHED_SCOPE": [
+    {
+      "ID": "T5-C002-UF-001",
+      "SUBJECT": "M88217_FIELD_EXECUTION_PAYLOAD",
+      "STATUS": "BLOCKED",
+      "BLOCKER": "No authoritative execution package recovered."
+    },
+    {
+      "ID": "T5-C002-UF-002",
+      "SUBJECT": "M88217_FIELD_AUTHORIZATION_AND_CUSTODY",
+      "STATUS": "BLOCKED",
+      "BLOCKER": "No permit, isolation, LOTO, access release or receiving-party authorization linked to M-88217 recovered."
+    },
+    {
+      "ID": "T5-C002-UF-003",
+      "SUBJECT": "M88217_PERSONNEL",
+      "STATUS": "BLOCKED",
+      "BLOCKER": "No direct performer, supervisor or QC witness evidence recovered."
+    },
+    {
+      "ID": "T5-C002-UF-004",
+      "SUBJECT": "M88217_TOOL_MATERIAL_TRACE",
+      "STATUS": "BLOCKED",
+      "BLOCKER": "No tool issue, calibration, parts, fastener, shim or material transaction recovered."
+    },
+    {
+      "ID": "T5-C002-UF-005",
+      "SUBJECT": "M88217_AS_FOUND_AS_LEFT",
+      "STATUS": "BLOCKED",
+      "BLOCKER": "No job-linked as-found/as-left dimensional or torque/tension evidence recovered."
+    },
+    {
+      "ID": "T5-C002-UF-006",
+      "SUBJECT": "M88217_PMT_RESTORATION_CONFIGURATION_CONFIRMATION",
+      "STATUS": "BLOCKED",
+      "BLOCKER": "No M-88217 PMT, restoration or configuration-confirmation record recovered."
+    },
+    {
+      "ID": "T5-C002-UF-007",
+      "SUBJECT": "MAG_PF_01_TRANSACTION_LEVEL_MATERIAL_CUSTODY",
+      "STATUS": "PARTIAL",
+      "BLOCKER": "Lifecycle-stage history exists, but exact receipt/storage/preservation/material-issue/lift transactions are not fully identified."
+    },
+    {
+      "ID": "T5-C002-UF-008",
+      "SUBJECT": "APS_821_TR_001_PRESERVATION_AND_CRITICAL_SPARES",
+      "STATUS": "PARTIAL",
+      "BLOCKER": "Project-specific preservation methods, inspection frequency and startup-critical spares are not recovered."
+    },
+    {
+      "ID": "T5-C002-UF-009",
+      "SUBJECT": "M88217_MAINTENANCE_WASTE_DISPOSITION",
+      "STATUS": "OPEN",
+      "BLOCKER": "No parts/material transaction exists from which a waste or unused-material path can be reconstructed."
+    }
+  ],
+  "RESEARCH_PERFORMED": {
+    "RESEARCH_MODE": "EVIDENCE_FIRST_OPEN_WORLD",
+    "SOURCE_CORPUS_METHODS": [
+      "EXACT_IDENTIFIER_SEARCH",
+      "IDENTIFIER_VARIANT_SEARCH",
+      "SEMANTIC_RECORD_GENEALOGY_SEARCH",
+      "IN_FILE_LITERAL_SEARCH",
+      "DOCX_FULL_CORPUS_REFERENCE_SCAN",
+      "CSV_EVENT_TIMELINE_FILTER",
+      "SITE_WORK_HISTORY_ASSET_FILTER",
+      "REPRESENTATIVE_ASSET_DOSSIER_FILTER",
+      "ORGANIZATIONAL_WORKING_HISTORY_TRACE",
+      "DOWNSTREAM_REFERENCE_RECONSTRUCTION",
+      "SOURCE_CLAIM_CLASSIFICATION"
+    ],
+    "LANGUAGES_RESEARCHED": [
+      "ENGLISH",
+      "JAPANESE",
+      "GERMAN",
+      "FRENCH",
+      "CHINESE",
+      "RUSSIAN",
+      "SPANISH"
+    ],
+    "EXTERNAL_RESEARCH_RULE_APPLIED": "EXTERNAL_PRECEDENT_DEFINES_EXPECTED_EVIDENCE_CLASSES_AND_ENGINEERING_CONTROLS_BUT_DOES_NOT_CREATE_MISSING_OFG_HISTORY",
+    "MULTILINGUAL_PRECEDENT_FINDINGS": [
+      {
+        "LANGUAGE": "ENGLISH",
+        "JURISDICTION_OR_BODY": "CNSC",
+        "FINDING": "Canadian maintenance guidance requires controlled maintenance work, traceable measuring/test equipment, controlled spare parts/tools/materials, post-maintenance verification, configuration verification, records-completeness review and PMT where appropriate.",
+        "PROVENANCE_STATUS": "V_OR_R_PRECEDENT",
+        "CITATION": ":chatgpt-content-reference{index="14"}"
+      },
+      {
+        "LANGUAGE": "ENGLISH",
+        "JURISDICTION_OR_BODY": "CNSC",
+        "FINDING": "Turnover guidance requires documented custody transfer, as-built/configuration information, baseline inspection, deficiency control and authorization before previous parties re-enter transferred SSCs; temporary commissioning modifications require formal control.",
+        "PROVENANCE_STATUS": "V_OR_R_PRECEDENT",
+        "CITATION": ":chatgpt-content-reference{index="15"}"
+      },
+      {
+        "LANGUAGE": "JAPANESE",
+        "JURISDICTION_OR_BODY": "QST",
+        "FINDING": "Remote maintenance is treated as an engineered system with dedicated equipment for planned and unplanned replacement of blanket/divertor components.",
+        "PROVENANCE_STATUS": "V_OR_R_PRECEDENT",
+        "CITATION": ":chatgpt-content-reference{index="16"}"
+      },
+      {
+        "LANGUAGE": "GERMAN",
+        "JURISDICTION_OR_BODY": "GRS",
+        "FINDING": "German operating-experience work supports explicit verification following maintenance/revision and decomposition of safety-relevant work into executable actions and controls.",
+        "PROVENANCE_STATUS": "R_PRECEDENT",
+        "CITATIONS": [
+          ":chatgpt-content-reference{index="17"}",
+          ":chatgpt-content-reference{index="18"}"
+        ]
+      },
+      {
+        "LANGUAGE": "FRENCH",
+        "JURISDICTION_OR_BODY": "ASNR",
+        "FINDING": "French oversight identifies intervention traceability, maintenance preparation, requalification testing and spare-parts conformity/conservation as material maintenance controls.",
+        "PROVENANCE_STATUS": "R_PRECEDENT",
+        "CITATIONS": [
+          ":chatgpt-content-reference{index="19"}",
+          ":chatgpt-content-reference{index="20"}"
+        ]
+      },
+      {
+        "LANGUAGE": "CHINESE",
+        "JURISDICTION_OR_BODY": "NNSA",
+        "FINDING": "Chinese regulatory training on HAD103/08-2025 highlights maintenance effectiveness, spare-parts supply risk and responsibility of operating and contracting organizations.",
+        "PROVENANCE_STATUS": "R_PRECEDENT",
+        "CITATION": ":chatgpt-content-reference{index="21"}"
+      },
+      {
+        "LANGUAGE": "RUSSIAN",
+        "JURISDICTION_OR_BODY": "FEDERAL_NUCLEAR_RULES_LIBRARY",
+        "FINDING": "Russian nuclear requirements provide precedent for documented maintenance/repair, verification against design characteristics after repair and functional checks before return to service.",
+        "PROVENANCE_STATUS": "R_PRECEDENT",
+        "CITATIONS": [
+          ":chatgpt-content-reference{index="22"}",
+          ":chatgpt-content-reference{index="23"}"
+        ]
+      },
+      {
+        "LANGUAGE": "SPANISH",
+        "JURISDICTION_OR_BODY": "CSN",
+        "FINDING": "Spanish nuclear maintenance guidance describes systematic inspections and periodic tests to verify equipment remains in adequate operating condition.",
+        "PROVENANCE_STATUS": "R_PRECEDENT",
+        "CITATION": ":chatgpt-content-reference{index="24"}"
+      }
+    ],
+    "RESEARCH_SATURATION_CONCLUSION": "No researched precedent can legitimately fill the M-88217 historical gap. Precedent instead strengthens the conclusion that the missing isolation, personnel, tool/material, as-found/as-left, PMT, restoration and configuration records are material evidence classes."
+  },
+  "SOURCES_USED": [
+    {
+      "SOURCE_ID": "OFG-REVW3-ACTUAL-SITE-WORK-HISTORY",
+      "SOURCE_CLASS": "OFG_SOURCE_CANON_PLUS_WORKING_DATASET",
+      "USE": "M-88217 chronology, execution/authority separation, representative asset lifecycle and workfront history.",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="25"}",
+        ":chatgpt-content-reference{index="26"}",
+        ":chatgpt-content-reference{index="27"}"
+      ]
+    },
+    {
+      "SOURCE_ID": "OFG-REV3-V13",
+      "SOURCE_CLASS": "MIXED_C_V_E_OPEN",
+      "USE": "M-88217 expected evidence chain, information-resolution model, forensic evidence gap and non-causal discipline.",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="28"}",
+        ":chatgpt-content-reference{index="29"}",
+        ":chatgpt-content-reference{index="30"}"
+      ]
+    },
+    {
+      "SOURCE_ID": "OFG-REV3-V15",
+      "SOURCE_CLASS": "CONTROLLED_CHRONOLOGY",
+      "USE": "Administrative-versus-physical state control doctrine and April chronology."
+    },
+    {
+      "SOURCE_ID": "OFG-REV3-V16",
+      "SOURCE_CLASS": "MIXED_C_V_E_OPEN",
+      "USE": "BHT401/CRS01 digital thread, lifecycle, evidence control and M-88217 information-state conflict."
+    },
+    {
+      "SOURCE_ID": "OFG-REVS-VOL14D",
+      "SOURCE_CLASS": "MIXED_CANONICAL_FRAMEWORK_AND_MODELED_CONNECTIVE_WORK_HISTORY",
+      "USE": "Repository/source-system search, missing-evidence matrix and provenance mapping.",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="31"}",
+        ":chatgpt-content-reference{index="32"}"
+      ]
+    },
+    {
+      "SOURCE_ID": "OFG-REVS-VOL15B",
+      "SOURCE_CLASS": "MIXED_CANONICAL_FRAMEWORK_AND_MODELED_CONNECTIVE_WORK_HISTORY",
+      "USE": "M-88217 deliverable/record-family genealogy and interface expectations.",
+      "CITATION": ":chatgpt-content-reference{index="33"}"
+    },
+    {
+      "SOURCE_ID": "OFG-REVW3-SITE-WORK-HISTORY-MASTER",
+      "SOURCE_CLASS": "WORKING_DATASET_NOT_SELF_AUTHENTICATING",
+      "USE": "Transaction-stage record-family expectations and representative asset lifecycle."
+    },
+    {
+      "SOURCE_ID": "OFG-REV3-MASTER-EVENT-TIMELINE",
+      "SOURCE_CLASS": "MIXED_LOCKED_CANON_AND_WORKING_DATASET",
+      "USE": "M-88217 locked 11 April administrative status, CRS01-RST-L2 maintenance linkage and 19 April unresolved investigation state."
+    },
+    {
+      "SOURCE_ID": "CNSC-REGDOC-2.6.2",
+      "SOURCE_CLASS": "AUTHORITATIVE_REAL_WORLD_REFERENCE",
+      "PROVENANCE_STATUS": "V_OR_R_PRECEDENT",
+      "USE": "Work management, measuring/test equipment calibration, spare-parts/tools/material control, post-maintenance verification and testing.",
+      "CITATION": ":chatgpt-content-reference{index="34"}"
+    },
+    {
+      "SOURCE_ID": "CNSC-REGDOC-2.3.1",
+      "SOURCE_CLASS": "AUTHORITATIVE_REAL_WORLD_REFERENCE",
+      "PROVENANCE_STATUS": "V_OR_R_PRECEDENT",
+      "USE": "Turnover, custody, authorized re-entry, configuration control and temporary commissioning modifications.",
+      "CITATION": ":chatgpt-content-reference{index="35"}"
+    },
+    {
+      "SOURCE_ID": "IAEA-SPARE_STORAGE_PRECEDENT",
+      "SOURCE_CLASS": "AUTHORITATIVE_REAL_WORLD_REFERENCE",
+      "PROVENANCE_STATUS": "R_PRECEDENT",
+      "USE": "Shelf-life, storage environment and preservation controls.",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="36"}",
+        ":chatgpt-content-reference{index="37"}"
+      ]
+    },
+    {
+      "SOURCE_ID": "QST-REMOTE-MAINTENANCE",
+      "SOURCE_CLASS": "AUTHORITATIVE_REAL_WORLD_REFERENCE",
+      "PROVENANCE_STATUS": "R_PRECEDENT",
+      "USE": "Remote-maintenance tooling and handling architecture.",
+      "CITATION": ":chatgpt-content-reference{index="38"}"
+    }
+  ],
+  "NEW_ENGINEERING_FINDINGS": [
+    {
+      "FINDING_ID": "T5-C002-FND-001",
+      "TITLE": "M88217_CHAIN_FAILURE_BOUNDARY",
+      "STATUS": "SOURCE_SUPPORTED",
+      "FINDING": "The evidentiary failure boundary is between the administrative work-item state and verifiable field execution/as-left state. The chain does not fail at record identity: M-88217 exists. It fails because the linked field-execution payload cannot be recovered."
+    },
+    {
+      "FINDING_ID": "T5-C002-FND-002",
+      "TITLE": "CLOSED_APPROVED_IS_TWO_STATES_NOT_ONE",
+      "STATUS": "SOURCE_SUPPORTED",
+      "FINDING": "CLOSED and APPROVED are information-system states. They shall be represented independently from PHYSICAL_ACTION, INSPECTED, PMT, RESTORED and CONFIGURATION_CONFIRMED."
+    },
+    {
+      "FINDING_ID": "T5-C002-FND-003",
+      "TITLE": "RECORD_TITLE_DOES_NOT_PROVE_INSPECTION",
+      "STATUS": "SOURCE_SUPPORTED",
+      "FINDING": "The phrase lateral-restraint inspection/adjustment defines claimed scope but does not prove that either inspection or adjustment physically occurred."
+    },
+    {
+      "FINDING_ID": "T5-C002-FND-004",
+      "TITLE": "PHYSICAL_INDICATIONS_DO_NOT_IDENTIFY_ACTION",
+      "STATUS": "SOURCE_SUPPORTED",
+      "FINDING": "Physical indications support keeping intervention as a live possibility, but cannot identify performer, exact action, parts, tool, torque, dimensional setting or conformity.",
+      "SOURCE_SUPPORT": ":chatgpt-content-reference{index="39"}"
+    },
+    {
+      "FINDING_ID": "T5-C002-FND-005",
+      "TITLE": "MISSING_RECORD_IS_NOT_NONPERFORMANCE",
+      "STATUS": "SOURCE_SUPPORTED_AND_EXTERNALLY_VALIDATED",
+      "FINDING": "Failure to recover the execution package does not establish that no work occurred. It establishes that execution cannot be verified from the evidence plant."
+    },
+    {
+      "FINDING_ID": "T5-C002-FND-006",
+      "TITLE": "M88217_APPROVAL_DOES_NOT_ESTABLISH_FIELD_AUTHORIZATION",
+      "STATUS": "ENGINEERED_RECONSTRUCTION",
+      "FINDING": "Because CRS-01 was already in a transferred commissioning boundary, an APPROVED work-item state cannot substitute for job-specific custody, isolation and access authorization."
+    },
+    {
+      "FINDING_ID": "T5-C002-FND-007",
+      "TITLE": "PMT_IS_A_DISTINCT_EVIDENCE_STATE",
+      "STATUS": "V_OR_R_PRECEDENT_PLUS_OFG_RECONSTRUCTION",
+      "FINDING": "Post-maintenance verification/testing must be modeled as a distinct state between work/inspection and restoration or return to service; it cannot be inferred from closeout.",
+      "EXTERNAL_SUPPORT": ":chatgpt-content-reference{index="40"}"
+    },
+    {
+      "FINDING_ID": "T5-C002-FND-008",
+      "TITLE": "M88217_PMT_ADEQUACY_CANNOT_BE_ASSESSED",
+      "STATUS": "OPEN",
+      "FINDING": "Neither the actual PMT nor the design-specific acceptance criteria are presently available. Technical PMT adequacy therefore cannot be judged."
+    },
+    {
+      "FINDING_ID": "T5-C002-FND-009",
+      "TITLE": "MATERIAL_TRANSACTION_ABSENCE_BLOCKS_HARDWARE_CHANGE_CLAIM",
+      "STATUS": "SOURCE_SUPPORTED",
+      "FINDING": "No recovered material/parts transaction supports a claim that a fastener, shim, plate or other restraint hardware was replaced, added or removed."
+    },
+    {
+      "FINDING_ID": "T5-C002-FND-010",
+      "TITLE": "TOOL_CAPABILITY_IS_NOT_JOB_TOOL_TRACEABILITY",
+      "STATUS": "ENGINEERED_RECONSTRUCTION",
+      "FINDING": "Existence of plant calibration/tool-control infrastructure cannot be used to infer what tool was used for M-88217 or whether that tool was in calibration."
+    },
+    {
+      "FINDING_ID": "T5-C002-FND-011",
+      "TITLE": "REPRESENTATIVE_ASSET_CUSTODY_REQUIRES_TRANSACTION_LAYER",
+      "STATUS": "ENGINEERED_RECONSTRUCTION",
+      "FINDING": "The current asset/event data supports lifecycle stage chronology but does not by itself provide transaction-level warehouse location, preservation inspection, material issue, tool issue or workfront delivery genealogy."
+    },
+    {
+      "FINDING_ID": "T5-C002-FND-012",
+      "TITLE": "ELECTRICAL_PRESERVATION_REQUIREMENT_EXISTS_METHOD_REMAINS_OPEN",
+      "STATUS": "WORKING_DATASET_SUPPORTED",
+      "FINDING": "APS-821-TR-001 has expected preservation/storage and preservation-state evidence classes, but no project-specific preservation method or frequency has been recovered."
+    },
+    {
+      "FINDING_ID": "T5-C002-FND-013",
+      "TITLE": "CRS01_PROVIDES_CONTROL_CASE_FOR_M88217",
+      "STATUS": "SOURCE_SUPPORTED",
+      "FINDING": "The January 2031 CRS-01 intervention demonstrates the type of traceable chain that is absent for M-88217: work order, design revision, permit/reconnection and restoration/configuration evidence are individually represented."
+    },
+    {
+      "FINDING_ID": "T5-C002-FND-014",
+      "TITLE": "EXTENT_OF_CONDITION_DOES_NOT_ESTABLISH_SYSTEMIC_FAILURE",
+      "STATUS": "SOURCE_SUPPORTED",
+      "FINDING": "Expansion of inspection to related temporary restraints/supports establishes a broader investigation population, not a finding of common defect or common cause."
+    }
+  ],
+  "PROPOSED_ATLAS_DELTAS": {
+    "CANONICAL_OBJECTS_MUTATED": [],
+    "PROPOSED_STAGING_REFINEMENTS": [
+      {
+        "TARGET": "M-88217",
+        "ACTION": "ADD_DUAL_STATE_MODEL",
+        "FIELDS": [
+          "ADMINISTRATIVE_STATE",
+          "PHYSICAL_EXECUTION_STATE",
+          "EVIDENCE_COMPLETENESS_STATE",
+          "CUSTODY_AUTHORIZATION_STATE",
+          "PMT_STATE",
+          "RESTORATION_STATE",
+          "CONFIGURATION_CONFIRMATION_STATE"
+        ]
+      },
+      {
+        "TARGET": "M-88217",
+        "ACTION": "SET_PHYSICAL_EXECUTION_VERIFICATION_STATE",
+        "VALUE": "OPEN_CONFLICT"
+      },
+      {
+        "TARGET": "M-88217",
+        "ACTION": "SET_INFORMATION_STATE",
+        "VALUE": "CLOSED_APPROVED"
+      },
+      {
+        "TARGET": "M-88217",
+        "ACTION": "BIND_GLOBAL_CONFLICT",
+        "VALUE": "GCF-C001-001"
+      },
+      {
+        "TARGET": "CRS01-RST-L2",
+        "ACTION": "PRESERVE_AS_LEFT_STATE_AS_UNVERIFIED_FOR_2031-04-11",
+        "VALUE": true
+      },
+      {
+        "TARGET": "TMP-BHT-401-CRS-01",
+        "ACTION": "PRESERVE_PARENT_CUSTODY_AND_TEMPORARY_CONFIGURATION_CONTEXT",
+        "VALUE": "OPG_COMMISSIONING_CONTROL_AFTER_TURNOVER"
+      }
+    ]
+  },
+  "PROPOSED_ANNEX_DELTAS": [
+    {
+      "DATASET_ID": "T5-PROV-DATA-M88217-EVIDENCE-MATRIX-001",
+      "NAME": "M88217_EVIDENCE_STATE_MATRIX",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "PURPOSE": "Represent each administrative and physical state independently and bind found, missing and ambiguous evidence.",
+      "FIELDS": [
+        "STATE_ID",
+        "STATE_NAME",
+        "ADMINISTRATIVE_OR_PHYSICAL",
+        "RESOLUTION",
+        "SOURCE_RECORD",
+        "SOURCE_CLASS",
+        "ACTOR_ROLE_IF_EVIDENCED",
+        "AUTHORITY_IF_EVIDENCED",
+        "PHYSICAL_OBJECT",
+        "PHYSICAL_CONSEQUENCE",
+        "RETAINED_EVIDENCE",
+        "MISSING_EVIDENCE",
+        "UNCERTAINTY",
+        "CONFLICT_ID"
+      ],
+      "STATUS": "PROPOSED"
+    },
+    {
+      "DATASET_ID": "T5-PROV-DATA-M88217-SEARCH-001",
+      "NAME": "M88217_REPOSITORY_AND_REFERENCE_SEARCH_LEDGER",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "PURPOSE": "Record exact search axes, identifiers, transcription variants, repositories represented by sources, hits, negative results and provenance limits.",
+      "STATUS": "PROPOSED"
+    },
+    {
+      "DATASET_ID": "T5-PROV-DATA-M88217-PMT-001",
+      "NAME": "M88217_PMT_REQUIREMENT_AND_EVIDENCE_MATRIX",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "PURPOSE": "Separate design-required PMT criteria from evidence that PMT actually occurred.",
+      "STATUS": "PROPOSED"
+    },
+    {
+      "DATASET_ID": "T5-PROV-DATA-CUST-MAG-PF-01",
+      "NAME": "MAG_PF_01_TRANSACTION_LEVEL_CUSTODY_DOSSIER",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "STATUS": "PARTIAL_PROPOSED"
+    },
+    {
+      "DATASET_ID": "T5-PROV-DATA-CUST-APS-821-TR-001",
+      "NAME": "APS_821_TR_001_TRANSACTION_LEVEL_CUSTODY_DOSSIER",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "STATUS": "PARTIAL_PROPOSED"
+    },
+    {
+      "DATASET_ID": "T5-PROV-DATA-CUST-TMP-BHT-401-CRS-01",
+      "NAME": "TMP_BHT_401_CRS_01_TRANSACTION_LEVEL_CUSTODY_DOSSIER",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "STATUS": "ADVANCED_PARTIAL_PROPOSED"
+    }
+  ],
+  "CREATED_OR_CHANGED_IDENTITIES": {
+    "NEW_CANONICAL_IDENTITIES": [],
+    "NEW_PROVISIONAL_ATLAS_OBJECT_IDENTITIES": [],
+    "REUSED_C001_PROVISIONAL_IDENTITIES": [
+      "T5-PROV-FSN-MAT-001",
+      "T5-PROV-PROC-MAT-001",
+      "T5-PROV-FSN-MNT-001",
+      "T5-PROV-PROC-MNT-001",
+      "T5-PROV-FSN-TCL-001",
+      "T5-PROV-REC-MNT-001",
+      "T5-PROV-REC-MAT-001"
+    ],
+    "NEW_PROVISIONAL_ANNEX_DATASET_IDENTITIES": [
+      "T5-PROV-DATA-M88217-EVIDENCE-MATRIX-001",
+      "T5-PROV-DATA-M88217-SEARCH-001",
+      "T5-PROV-DATA-M88217-PMT-001",
+      "T5-PROV-DATA-CUST-MAG-PF-01",
+      "T5-PROV-DATA-CUST-APS-821-TR-001",
+      "T5-PROV-DATA-CUST-TMP-BHT-401-CRS-01"
+    ]
+  },
+  "PARAMETER_CHANGES": {
+    "CANONICAL_ENGINEERING_PARAMETERS_CHANGED": [],
+    "M88217_EVIDENCE_STATE_PARAMETERS": {
+      "TOTAL_REQUIRED_STATE_NODES": 13,
+      "FULL_INFORMATION_STATE_PASSES": 3,
+      "PARTIAL_STATES": 2,
+      "OPEN_OR_CONFLICT_STATES": 8,
+      "JOB_SPECIFIC_PERFORMER_IDENTITIES_VERIFIED": 0,
+      "JOB_SPECIFIC_SUPERVISOR_IDENTITIES_VERIFIED": 0,
+      "JOB_SPECIFIC_QC_IDENTITIES_VERIFIED": 0,
+      "JOB_SPECIFIC_TOOL_TRANSACTIONS_VERIFIED": 0,
+      "JOB_SPECIFIC_MATERIAL_TRANSACTIONS_VERIFIED": 0,
+      "JOB_SPECIFIC_PMT_RECORDS_VERIFIED": 0,
+      "JOB_SPECIFIC_CONFIGURATION_CONFIRMATIONS_VERIFIED": 0
+    },
+    "RULE": "COUNTS_ABOVE_DESCRIBE_CURRENT_EVIDENCE_CLOSURE_ONLY_AND_ARE_NOT_PHYSICAL_PLANT_PARAMETERS"
+  },
+  "RELATIONSHIP_CHANGES": [
+    {
+      "RELATIONSHIP_ID": "T5-C002-REL-001",
+      "FROM": "WALK-BHT401-0320",
+      "RELATIONSHIP": "PRECEDES_AND_MAY_HAVE_INITIATED_WORK_MANAGEMENT_CHAIN_FOR",
+      "TO": "M-88217",
+      "STATUS": "OPEN_GENEALOGY_NOT_DIRECTLY_PROVEN"
+    },
+    {
+      "RELATIONSHIP_ID": "T5-C002-REL-002",
+      "FROM": "PHOTO-BHT401-0410",
+      "RELATIONSHIP": "RECORDS_PRE_EVENT_CONFIGURATION_OF",
+      "TO": "CRS01-RST-L2",
+      "STATUS": "SOURCE_SUPPORTED"
+    },
+    {
+      "RELATIONSHIP_ID": "T5-C002-REL-003",
+      "FROM": "M-88217",
+      "RELATIONSHIP": "CLAIMS_ACTION_ON",
+      "TO": "CRS01-RST-L2",
+      "STATUS": "SOURCE_SUPPORTED_INFORMATION_STATE_ONLY"
+    },
+    {
+      "RELATIONSHIP_ID": "T5-C002-REL-004",
+      "FROM": "M-88217",
+      "RELATIONSHIP": "BOUND_TO_CONFLICT",
+      "TO": "GCF-C001-001",
+      "STATUS": "PROPOSED_STAGING"
+    },
+    {
+      "RELATIONSHIP_ID": "T5-C002-REL-005",
+      "FROM": "EVID-BHT401-RSTL2",
+      "RELATIONSHIP": "CONTROLS_EVIDENCE_FOR",
+      "TO": "CRS01-RST-L2",
+      "STATUS": "SOURCE_SUPPORTED"
+    },
+    {
+      "RELATIONSHIP_ID": "T5-C002-REL-006",
+      "FROM": "EOC-BHT-TMP-001",
+      "RELATIONSHIP": "EXPANDS_SCOPE_FROM",
+      "TO": "CRS01-RST-L2",
+      "STATUS": "SOURCE_SUPPORTED"
+    },
+    {
+      "RELATIONSHIP_ID": "T5-C002-REL-007",
+      "FROM": "T5-PROV-PROC-MNT-001",
+      "RELATIONSHIP": "REQUIRES_DISTINCT_PMT_STATE_FOR",
+      "TO": "M-88217",
+      "STATUS": "PROPOSED_E"
+    },
+    {
+      "RELATIONSHIP_ID": "T5-C002-REL-008",
+      "FROM": "T5-PROV-PROC-MAT-001",
+      "RELATIONSHIP": "REQUIRES_TRANSACTION_TRACE_FOR",
+      "TO": "MAG-PF-01",
+      "STATUS": "PROPOSED_E"
+    },
+    {
+      "RELATIONSHIP_ID": "T5-C002-REL-009",
+      "FROM": "T5-PROV-PROC-MAT-001",
+      "RELATIONSHIP": "REQUIRES_TRANSACTION_TRACE_FOR",
+      "TO": "APS-821-TR-001",
+      "STATUS": "PROPOSED_E"
+    },
+    {
+      "RELATIONSHIP_ID": "T5-C002-REL-010",
+      "FROM": "T5-PROV-PROC-MAT-001",
+      "RELATIONSHIP": "REQUIRES_TRANSACTION_TRACE_FOR",
+      "TO": "TMP-BHT-401-CRS-01",
+      "STATUS": "PROPOSED_E"
+    }
+  ],
+  "CONFIGURATION_FINDINGS": [
+    {
+      "CONFIGURATION_FINDING_ID": "T5-C002-CFG-001",
+      "OBJECT": "CRS01-RST-L2",
+      "DATE": "2031-04-10",
+      "STATE": "PHOTOGRAPHIC_BASELINE_EXISTS",
+      "CONFIDENCE": "HIGH"
+    },
+    {
+      "CONFIGURATION_FINDING_ID": "T5-C002-CFG-002",
+      "OBJECT": "CRS01-RST-L2",
+      "DATE": "2031-04-11",
+      "STATE": "AS_LEFT_PHYSICAL_CONFIGURATION_UNVERIFIED",
+      "CONFIDENCE": "HIGH",
+      "REASON": "M-88217 administrative state is not accompanied by sufficient execution/as-left evidence."
+    },
+    {
+      "CONFIGURATION_FINDING_ID": "T5-C002-CFG-003",
+      "OBJECT": "TMP-BHT-401-CRS-01",
+      "DATE": "2031-04-12",
+      "STATE": "ISOLATED_AND_EVIDENCE_CONTROLLED_AFTER_EVENT",
+      "CONFIDENCE": "HIGH"
+    },
+    {
+      "CONFIGURATION_FINDING_ID": "T5-C002-CFG-004",
+      "OBJECT": "TMP-BHT-401-CRS-01",
+      "DATE": "2031-04-19",
+      "STATE": "ISOLATED_UNDER_INVESTIGATION",
+      "CONFIDENCE": "HIGH"
+    },
+    {
+      "CONFIGURATION_FINDING_ID": "T5-C002-CFG-005",
+      "OBJECT": "M-88217",
+      "STATE": "DESIGN_PHYSICAL_EVIDENCE_EQUIVALENCE_NOT_DEMONSTRATED",
+      "CONFIDENCE": "HIGH"
+    }
+  ],
+  "LIFECYCLE_FINDINGS": [
+    {
+      "LIFECYCLE_FINDING_ID": "T5-C002-LC-001",
+      "OBJECT": "M-88217",
+      "LIFECYCLE_STATUS": "ADMINISTRATIVE_CHAIN_PARTIAL_PHYSICAL_CHAIN_OPEN",
+      "LAST_VERIFIED_PRE_WORK_PHYSICAL_EVIDENCE": "PHOTO-BHT401-0410",
+      "VERIFIED_ADMINISTRATIVE_STATE": "CLOSED_APPROVED",
+      "FIRST_POST_WORK_PHYSICAL_EVENT": "EVT-2031-0412-HPNM",
+      "MISSING_BRIDGE": [
+        "FIELD_AUTHORIZATION",
+        "ISOLATION",
+        "ACCESS_RELEASE",
+        "WORK_START",
+        "PERFORMER",
+        "AS_FOUND",
+        "PHYSICAL_ACTION",
+        "TOOLS",
+        "MATERIALS",
+        "AS_LEFT",
+        "QC_ACCEPTANCE",
+        "PMT",
+        "RESTORATION",
+        "CONFIGURATION_CONFIRMATION"
+      ]
+    },
+    {
+      "LIFECYCLE_FINDING_ID": "T5-C002-LC-002",
+      "OBJECT": "TMP-BHT-401-CRS-01",
+      "LIFECYCLE_STATUS": "HIGH_TRACEABILITY_EXCEPT_M88217_SUBCHAIN",
+      "CONTROL_CASE": "WO-BHT401-2031-011_TO_REV_C_TO_PTW-BHT401-0124"
+    },
+    {
+      "LIFECYCLE_FINDING_ID": "T5-C002-LC-003",
+      "OBJECT": "MAG-PF-01",
+      "LIFECYCLE_STATUS": "STAGE_LEVEL_TRACEABLE_TRANSACTION_LEVEL_PARTIAL"
+    },
+    {
+      "LIFECYCLE_FINDING_ID": "T5-C002-LC-004",
+      "OBJECT": "APS-821-TR-001",
+      "LIFECYCLE_STATUS": "STAGE_LEVEL_TRACEABLE_PRESERVATION_AND_SPARES_DETAIL_OPEN"
+    }
+  ],
+  "BOUNDARY_FINDINGS": [
+    {
+      "BOUNDARY_CONTRACT_ID": "BC-C002-T2-T5-BHT401-MAINTENANCE-PMT-ISOLATION-REQUIREMENTS",
+      "THREAD_5_RETURN": {
+        "EVIDENCE_FINDING": "No M-88217 isolation, PMT, restoration or configuration-confirmation record recovered.",
+        "REQUIRED_FROM_T2": [
+          "DESIGN_REQUIRED_ISOLATION_BOUNDARY_FOR_CRS01_RST_L2_INTERVENTION",
+          "ENERGY_AND_PRESSURE_STATE_REQUIRED_BEFORE_RESTRAINT_WORK",
+          "DESIGN_ACCEPTANCE_CRITERIA_FOR_RESTRAINT_INSPECTION_OR_ADJUSTMENT",
+          "MINIMUM_POST_MAINTENANCE_TEST_OR_REQUALIFICATION_REQUIREMENT",
+          "WHETHER_LOADED_CIRCULATION_OR_OTHER_DYNAMIC_VERIFICATION_WOULD_BE_REQUIRED",
+          "NOZZLE_LOAD_OR_SUPPORT_SETTING_REQUIREMENTS_RELEVANT_TO_AS_LEFT_ACCEPTANCE"
+        ],
+        "PURPOSE": "Separate missing historical evidence from the technical PMT that should have been required."
+      }
+    },
+    {
+      "BOUNDARY_CONTRACT_ID": "BC-C002-T3-T5-ENERGIZATION-TEST-PRESERVATION-SPARES",
+      "THREAD_5_RETURN": {
+        "EVIDENCE_FINDING": "APS-821-TR-001 has lifecycle-stage preservation record classes but no recovered project-specific preservation method or critical-spares list.",
+        "REQUIRED_FROM_T3": [
+          "TRANSFORMER_SPECIFIC_RECEIPT_AND_STORAGE_PRESERVATION_REQUIREMENTS",
+          "PRESERVATION_INSPECTION_FREQUENCY",
+          "PRE_ENERGIZATION_TEST_REQUIREMENTS",
+          "POST_MAINTENANCE_OR_POST_STORAGE_ACCEPTANCE_CRITERIA",
+          "STARTUP_CRITICAL_SPARE_CLASSIFICATION",
+          "SPARE_TRANSFORMER_COMPONENT_OR_BUSHING_PROTECTION_STRATEGY_IF_APPLICABLE"
+        ]
+      }
+    },
+    {
+      "BOUNDARY_CONTRACT_ID": "BC-C002-T4-T5-F106F101-LIFT-CUSTODY-MAINTENANCE-ROUTE",
+      "THREAD_5_RETURN": {
+        "EVIDENCE_FINDING": "MAG-PF-01 stage-level custody is reconstructable but transaction-level storage, route and lift evidence is incomplete.",
+        "REQUIRED_FROM_T4": [
+          "CONTROLLED_LAYDOWN_AND_STAGING_LOCATION_GEOMETRY",
+          "HEAVY_COMPONENT_TRANSPORT_ROUTE",
+          "F106_TO_F101_LIFT_ROUTE",
+          "LIFTING_FIXTURE_AND_TEMPORARY_SUPPORT_INTERFACES",
+          "MAINTENANCE_REMOVAL_ROUTE",
+          "ACCESS_AND_OBSTRUCTION_ENVELOPES"
+        ]
+      }
+    }
+  ],
+  "VALIDATION_RESULTS": [
+    {
+      "VALIDATION_ID": "T5-C002-VAL-001",
+      "METHOD": "WORK_CONTROL_COHERENCE",
+      "TARGET": "M-88217",
+      "RESULT": "FAIL_OPEN",
+      "DETAIL": "The administrative end-state exists, but the field work-control chain cannot be reconstructed."
+    },
+    {
+      "VALIDATION_ID": "T5-C002-VAL-002",
+      "METHOD": "CUSTODY_COHERENCE",
+      "TARGET": "M-88217",
+      "RESULT": "PARTIAL",
+      "DETAIL": "Parent system custody after turnover is known at organizational level; job-specific release is not."
+    },
+    {
+      "VALIDATION_ID": "T5-C002-VAL-003",
+      "METHOD": "ISOLATION_LOGIC",
+      "TARGET": "M-88217",
+      "RESULT": "NOT_VERIFIABLE",
+      "DETAIL": "No job-specific isolation/LOTO record recovered."
+    },
+    {
+      "VALIDATION_ID": "T5-C002-VAL-004",
+      "METHOD": "MAINTENANCE_ACCESS",
+      "TARGET": "CRS01-RST-L2",
+      "RESULT": "NOT_VERIFIABLE_FOR_11_APRIL",
+      "DETAIL": "No job-specific access release or craft sign-on recovered."
+    },
+    {
+      "VALIDATION_ID": "T5-C002-VAL-005",
+      "METHOD": "MATERIAL_FLOW",
+      "TARGET": "M-88217",
+      "RESULT": "NOT_VERIFIABLE",
+      "DETAIL": "No linked parts/material issue or return transaction recovered."
+    },
+    {
+      "VALIDATION_ID": "T5-C002-VAL-006",
+      "METHOD": "TOOL_CALIBRATION",
+      "TARGET": "M-88217",
+      "RESULT": "NOT_VERIFIABLE",
+      "DETAIL": "No job-specific tool or calibration evidence recovered."
+    },
+    {
+      "VALIDATION_ID": "T5-C002-VAL-007",
+      "METHOD": "PMT_ADEQUACY",
+      "TARGET": "M-88217",
+      "RESULT": "NOT_ASSESSABLE",
+      "DETAIL": "Actual PMT evidence and T2 design-specific acceptance criteria are both unavailable."
+    },
+    {
+      "VALIDATION_ID": "T5-C002-VAL-008",
+      "METHOD": "RESTORATION_LOGIC",
+      "TARGET": "M-88217",
+      "RESULT": "NOT_VERIFIABLE",
+      "DETAIL": "No restoration or return-to-service evidence recovered."
+    },
+    {
+      "VALIDATION_ID": "T5-C002-VAL-009",
+      "METHOD": "CONFIGURATION_REPLAY",
+      "TARGET": "CRS01-RST-L2_2031-04-11",
+      "RESULT": "FAIL_OPEN",
+      "DETAIL": "Physical as-left configuration at M-88217 closure cannot be replayed."
+    },
+    {
+      "VALIDATION_ID": "T5-C002-VAL-010",
+      "METHOD": "MATERIAL_CUSTODY",
+      "TARGET": "MAG-PF-01",
+      "RESULT": "PARTIAL_PASS",
+      "DETAIL": "Lifecycle stages and responsible organizations are represented; transaction-level storage/preservation/issue/lift records remain incomplete."
+    },
+    {
+      "VALIDATION_ID": "T5-C002-VAL-011",
+      "METHOD": "MATERIAL_CUSTODY",
+      "TARGET": "APS-821-TR-001",
+      "RESULT": "PARTIAL_PASS",
+      "DETAIL": "Lifecycle stages are represented; preservation specifics and critical spares remain open."
+    },
+    {
+      "VALIDATION_ID": "T5-C002-VAL-012",
+      "METHOD": "MATERIAL_CUSTODY",
+      "TARGET": "TMP-BHT-401-CRS-01",
+      "RESULT": "PASS_WITH_M88217_EXCEPTION",
+      "DETAIL": "Skid lifecycle and January intervention/reconnection are substantially replayable; April 11 subchain is not."
+    }
+  ],
+  "VERIFICATION_RESULTS": [
+    {
+      "VERIFICATION_ID": "T5-C002-VER-001",
+      "METHOD": "RECORD_TO_PERSON_OR_ROLE",
+      "TARGET": "M-88217",
+      "RESULT": "FAIL_OPEN",
+      "DETAIL": "Organization-level maintenance/work-control context exists; direct performer, supervisor and QC identities do not."
+    },
+    {
+      "VERIFICATION_ID": "T5-C002-VER-002",
+      "METHOD": "RECORD_TO_PHYSICAL_OBJECT",
+      "TARGET": "M-88217",
+      "RESULT": "PASS",
+      "DETAIL": "M-88217 is linked to CRS01-RST-L2."
+    },
+    {
+      "VERIFICATION_ID": "T5-C002-VER-003",
+      "METHOD": "RECORD_TO_ACTION",
+      "TARGET": "M-88217",
+      "RESULT": "PARTIAL_ONLY",
+      "DETAIL": "The record claims inspection/adjustment; execution evidence is insufficient to verify the action."
+    },
+    {
+      "VERIFICATION_ID": "T5-C002-VER-004",
+      "METHOD": "ACTION_TO_PHYSICAL_CONSEQUENCE",
+      "TARGET": "M-88217",
+      "RESULT": "FAIL_OPEN",
+      "DETAIL": "No verified M-88217 action exists from which a physical consequence can be attributed."
+    },
+    {
+      "VERIFICATION_ID": "T5-C002-VER-005",
+      "METHOD": "PHYSICAL_CONSEQUENCE_TO_INSPECTION",
+      "TARGET": "M-88217",
+      "RESULT": "FAIL_OPEN",
+      "DETAIL": "No as-left inspection package recovered."
+    },
+    {
+      "VERIFICATION_ID": "T5-C002-VER-006",
+      "METHOD": "INSPECTION_TO_PMT",
+      "TARGET": "M-88217",
+      "RESULT": "FAIL_OPEN",
+      "DETAIL": "No PMT record recovered."
+    },
+    {
+      "VERIFICATION_ID": "T5-C002-VER-007",
+      "METHOD": "PMT_TO_RESTORATION",
+      "TARGET": "M-88217",
+      "RESULT": "FAIL_OPEN",
+      "DETAIL": "Neither PMT nor restoration evidence recovered."
+    },
+    {
+      "VERIFICATION_ID": "T5-C002-VER-008",
+      "METHOD": "RESTORATION_TO_AS_LEFT_BASELINE",
+      "TARGET": "M-88217",
+      "RESULT": "FAIL_OPEN",
+      "DETAIL": "No authoritative as-left baseline recovered."
+    },
+    {
+      "VERIFICATION_ID": "T5-C002-VER-009",
+      "METHOD": "SOURCE_TO_CLAIM",
+      "TARGET": "M88217_INFORMATION_STATE",
+      "RESULT": "PASS",
+      "DETAIL": "CLOSED/APPROVED is directly source-supported."
+    },
+    {
+      "VERIFICATION_ID": "T5-C002-VER-010",
+      "METHOD": "SOURCE_TO_CLAIM",
+      "TARGET": "M88217_PHYSICAL_EXECUTION",
+      "RESULT": "PASS_AS_OPEN_NOT_AS_COMPLETED",
+      "DETAIL": "Sources support only an unresolved physical-execution state."
+    },
+    {
+      "VERIFICATION_ID": "T5-C002-VER-011",
+      "METHOD": "SOURCE_TO_CLAIM",
+      "TARGET": "FALSIFICATION",
+      "RESULT": "PASS_NEGATIVE_CONTROL",
+      "DETAIL": "No source permits selection of falsification."
+    },
+    {
+      "VERIFICATION_ID": "T5-C002-VER-012",
+      "METHOD": "SOURCE_TO_CLAIM",
+      "TARGET": "NONPERFORMANCE",
+      "RESULT": "PASS_NEGATIVE_CONTROL",
+      "DETAIL": "Missing records do not permit a conclusion that work did not occur."
+    }
+  ],
+  "ASSURANCE_RESULTS": {
+    "ASSURANCE_CLASS": "AS3",
+    "GENERATION_IS_ACCEPTANCE": false,
+    "RESULT": "PASS_FOR_EVIDENCE_BOUNDARY_DEFINITION_WITH_GLOBAL_CONFLICT_RETAINED_OPEN",
+    "CHECKS_EXECUTED": [
+      "EXACT_IDENTIFIER_SEARCH",
+      "TRANSCRIPTION_VARIANT_SEARCH",
+      "RECORD_GENEALOGY_SEARCH",
+      "DOWNSTREAM_REFERENCE_TRACE",
+      "ADMINISTRATIVE_PHYSICAL_STATE_SEPARATION",
+      "PERSON_LEVEL_EVIDENCE_THRESHOLD_CHECK",
+      "CUSTODY_BOUNDARY_CHECK",
+      "TOOL_MATERIAL_TRANSACTION_CHECK",
+      "PMT_RESTORATION_CHECK",
+      "CONFIGURATION_REPLAY",
+      "REPRESENTATIVE_ASSET_CUSTODY_CHECK",
+      "MULTILINGUAL_PRECEDENT_CHECK",
+      "SOURCE_TO_CLAIM_CHECK",
+      "NO_ROOT_CAUSE_SELECTION_CHECK",
+      "NO_FALSIFICATION_SELECTION_CHECK",
+      "NO_MISSING_RECORD_EQUALS_NONPERFORMANCE_CHECK",
+      "NO_CLOSED_APPROVED_EQUALS_EXECUTION_CHECK"
+    ],
+    "KEY_ASSURANCE_CONCLUSION": "The defensible closure for Cycle 002 is not that M-88217 was or was not physically performed. The defensible closure is that the administrative record exists while the evidence required to establish physical execution, field authorization, PMT, restoration and as-left configuration remains unavailable.",
+    "INDEPENDENT_CHECK_REQUIRED": true,
+    "INDEPENDENT_CHECK_SCOPE": [
+      "THREAD1_GLOBAL_CONFLICT_DISPOSITION",
+      "THREAD2_PMT_AND_ISOLATION_TECHNICAL_REQUIREMENTS",
+      "THREAD3_ELECTRICAL_PRESERVATION_AND_SPARES",
+      "THREAD4_HEAVY_COMPONENT_TRANSACTION_ROUTE",
+      "ANY_LATER_RECOVERED_M88217_NATIVE_EXECUTION_RECORD"
+    ]
+  },
+  "CONFLICTS": [
+    {
+      "CONFLICT_ID": "GCF-C001-001",
+      "OBJECT": "M-88217 / CRS01-RST-L2",
+      "TYPE": "ADMINISTRATIVE_STATE_VS_VERIFIABLE_PHYSICAL_STATE",
+      "PRIOR_STATE": "OPEN",
+      "CURRENT_STATE": "OPEN",
+      "CLOSED_THIS_CYCLE": false,
+      "CLOSURE_THRESHOLD_MET": false,
+      "KNOWN": [
+        "M-88217 exists as a controlled maintenance-record identity.",
+        "It is indexed as lateral-restraint inspection/adjustment.",
+        "Its information-system state is CLOSED/APPROVED by 11 April 2031.",
+        "PHOTO-BHT401-0410 establishes a pre-event physical baseline.",
+        "Physical indications suggest intervention occurred.",
+        "The authoritative linked execution evidence cannot be recovered from the available corpus.",
+        "Post-event repository/source-system searches are represented in the organizational working history.",
+        "The event and restraint are subsequently evidence-controlled and subject to extent-of-condition review."
+      ],
+      "NOT_ESTABLISHED": [
+        "REQUESTER_IDENTITY",
+        "DETAILED_SCOPE",
+        "FIELD_AUTHORIZATION",
+        "PERMIT",
+        "ISOLATION",
+        "LOTO",
+        "ACCESS_RELEASE",
+        "PERFORMER",
+        "SUPERVISOR",
+        "QC_WITNESS",
+        "TOOL_IDENTITY",
+        "TOOL_CALIBRATION",
+        "PARTS_OR_MATERIALS",
+        "FASTENER_OR_SHIM_TRANSACTION",
+        "AS_FOUND_READING",
+        "PHYSICAL_ACTION",
+        "AS_LEFT_READING",
+        "TORQUE_OR_TENSION",
+        "PMT",
+        "RESTORATION",
+        "CONFIGURATION_CONFIRMATION"
+      ],
+      "PROHIBITED_CONCLUSIONS": [
+        "FALSIFICATION_OCCURRED",
+        "WORK_DID_NOT_OCCUR",
+        "WORK_OCCURRED_EXACTLY_AS_DESCRIBED",
+        "A_SPECIFIC_PERSON_PERFORMED_THE_WORK",
+        "A_SPECIFIC_HARDWARE_CHANGE_OCCURRED",
+        "M88217_CAUSED_THE_12_APRIL_EVENT"
+      ],
+      "SOURCE_SUPPORT": [
+        ":chatgpt-content-reference{index="41"}",
+        ":chatgpt-content-reference{index="42"}",
+        ":chatgpt-content-reference{index="43"}"
+      ],
+      "GLOBAL_CLOSURE_AUTHORITY": "THREAD_1"
+    }
+  ],
+  "OPEN_ITEMS": [
+    {
+      "OPEN_ITEM_ID": "T5-C002-OI-001",
+      "SUBJECT": "M88217_WORK_REQUEST_GENEALOGY",
+      "STATUS": "OPEN",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T5-C002-OI-002",
+      "SUBJECT": "M88217_APPROVAL_AND_FIELD_AUTHORIZATION_HISTORY",
+      "STATUS": "OPEN",
+      "PRIORITY": "CRITICAL"
+    },
+    {
+      "OPEN_ITEM_ID": "T5-C002-OI-003",
+      "SUBJECT": "M88217_CUSTODY_ISOLATION_LOTO_ACCESS",
+      "STATUS": "OPEN",
+      "PRIORITY": "CRITICAL"
+    },
+    {
+      "OPEN_ITEM_ID": "T5-C002-OI-004",
+      "SUBJECT": "M88217_PERFORMER_SUPERVISOR_QC",
+      "STATUS": "OPEN",
+      "PRIORITY": "CRITICAL"
+    },
+    {
+      "OPEN_ITEM_ID": "T5-C002-OI-005",
+      "SUBJECT": "M88217_TOOL_AND_CALIBRATION_TRACE",
+      "STATUS": "OPEN",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T5-C002-OI-006",
+      "SUBJECT": "M88217_MATERIAL_PART_FASTENER_SHIM_TRACE",
+      "STATUS": "OPEN",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T5-C002-OI-007",
+      "SUBJECT": "M88217_AS_FOUND_AS_LEFT",
+      "STATUS": "OPEN",
+      "PRIORITY": "CRITICAL"
+    },
+    {
+      "OPEN_ITEM_ID": "T5-C002-OI-008",
+      "SUBJECT": "M88217_PMT_RESTORATION_CONFIGURATION_CONFIRMATION",
+      "STATUS": "OPEN",
+      "PRIORITY": "CRITICAL"
+    },
+    {
+      "OPEN_ITEM_ID": "T5-C002-OI-009",
+      "SUBJECT": "RELATED_RESTRAINT_EXTENT_OF_CONDITION_RESULTS",
+      "STATUS": "OPEN",
+      "PRIORITY": "HIGH",
+      "NOTE": "Inspection scope expansion is established; complete findings are not."
+    },
+    {
+      "OPEN_ITEM_ID": "T5-C002-OI-010",
+      "SUBJECT": "MAG_PF_01_TRANSACTION_LEVEL_CUSTODY",
+      "STATUS": "PARTIAL_ADVANCED",
+      "PRIORITY": "MEDIUM"
+    },
+    {
+      "OPEN_ITEM_ID": "T5-C002-OI-011",
+      "SUBJECT": "APS_821_TR_001_PROJECT_SPECIFIC_PRESERVATION",
+      "STATUS": "PARTIAL_ADVANCED",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T5-C002-OI-012",
+      "SUBJECT": "APS_821_TR_001_CRITICAL_SPARES",
+      "STATUS": "OPEN",
+      "PRIORITY": "MEDIUM"
+    },
+    {
+      "OPEN_ITEM_ID": "T5-C002-OI-013",
+      "SUBJECT": "M88217_WASTE_UNUSED_MATERIAL_DISPOSITION",
+      "STATUS": "OPEN",
+      "PRIORITY": "LOW_TO_MEDIUM"
+    }
+  ],
+  "UNCERTAINTIES": [
+    {
+      "UNCERTAINTY_ID": "T5-C002-UNC-001",
+      "SUBJECT": "WHETHER_M88217_PHYSICAL_WORK_OCCURRED",
+      "STATE": "UNRESOLVED",
+      "RULE": "DO_NOT_RESOLVE_FROM_CLOSED_APPROVED_OR_MISSING_PACKAGE_ALONE"
+    },
+    {
+      "UNCERTAINTY_ID": "T5-C002-UNC-002",
+      "SUBJECT": "EXACT_PHYSICAL_ACTION_IF_ANY",
+      "STATE": "UNRESOLVED"
+    },
+    {
+      "UNCERTAINTY_ID": "T5-C002-UNC-003",
+      "SUBJECT": "PERSONNEL_IDENTITIES",
+      "STATE": "UNRESOLVED",
+      "RULE": "PERSON_LEVEL_HISTORY_REQUIRES_DIRECT_EVIDENCE"
+    },
+    {
+      "UNCERTAINTY_ID": "T5-C002-UNC-004",
+      "SUBJECT": "MATERIAL_OR_HARDWARE_CHANGE",
+      "STATE": "UNRESOLVED",
+      "RULE": "DO_NOT_INFER_SHIM_FASTENER_OR_REPLACEMENT_FROM_WITNESS_MARK"
+    },
+    {
+      "UNCERTAINTY_ID": "T5-C002-UNC-005",
+      "SUBJECT": "TOOL_USE_AND_TORQUE",
+      "STATE": "UNRESOLVED",
+      "RULE": "DO_NOT_INFER_TOOL_USE_OR_TORQUE"
+    },
+    {
+      "UNCERTAINTY_ID": "T5-C002-UNC-006",
+      "SUBJECT": "PMT",
+      "STATE": "UNRESOLVED",
+      "RULE": "DO_NOT_INFER_PMT_FROM_CLOSEOUT"
+    },
+    {
+      "UNCERTAINTY_ID": "T5-C002-UNC-007",
+      "SUBJECT": "APS_821_TR_001_PRESERVATION_METHOD",
+      "STATE": "PROJECT_SPECIFIC_OPEN"
+    },
+    {
+      "UNCERTAINTY_ID": "T5-C002-UNC-008",
+      "SUBJECT": "MAG_PF_01_EXACT_STORAGE_AND_LIFT_TRANSACTION_CHAIN",
+      "STATE": "OPEN"
+    }
+  ],
+  "BACKWARD_PROPAGATION_RECOMMENDATIONS": [
+    {
+      "PROPAGATION_ID": "T5-C002-BP-001",
+      "TARGET": "ATLAS_MAINTENANCE_RECORD_MODEL",
+      "ACTION": "Separate requested, scoped, approved, physically executed, inspected, PMT-complete, restored, configuration-confirmed, closed and approved states."
+    },
+    {
+      "PROPAGATION_ID": "T5-C002-BP-002",
+      "TARGET": "ATLAS_CONFIGURATION_MODEL",
+      "ACTION": "Add an explicit VERIFIED_AS_LEFT boolean/state with evidence references rather than deriving as-left status from work-order closure."
+    },
+    {
+      "PROPAGATION_ID": "T5-C002-BP-003",
+      "TARGET": "ATLAS_WORK_CONTROL_MODEL",
+      "ACTION": "Require job-specific custody, isolation, LOTO and access-release edges for work inside transferred commissioning boundaries."
+    },
+    {
+      "PROPAGATION_ID": "T5-C002-BP-004",
+      "TARGET": "ATLAS_TOOL_CONTROL_MODEL",
+      "ACTION": "Require tool identity and calibration-state links when measurements or controlled torque/tension are acceptance-critical."
+    },
+    {
+      "PROPAGATION_ID": "T5-C002-BP-005",
+      "TARGET": "ATLAS_MATERIAL_CONTROL_MODEL",
+      "ACTION": "Require parts/material issue and unused/return/disposition edges when physical work can alter configuration."
+    },
+    {
+      "PROPAGATION_ID": "T5-C002-BP-006",
+      "TARGET": "ATLAS_PMT_MODEL",
+      "ACTION": "Represent PMT requirement, PMT procedure, acceptance criteria, result and restoration release as separate entities."
+    },
+    {
+      "PROPAGATION_ID": "T5-C002-BP-007",
+      "TARGET": "ANNEX_MASTER_EVENT_TIMELINE",
+      "ACTION": "Do not represent a maintenance CLOSED/APPROVED event as a completed physical event unless execution evidence state separately supports it."
+    },
+    {
+      "PROPAGATION_ID": "T5-C002-BP-008",
+      "TARGET": "ANNEX_CONTROLLED_ASSET_REGISTER",
+      "ACTION": "Add links to storage location, preservation state, issue transaction, workfront delivery and custody transaction where required for executable material genealogy."
+    },
+    {
+      "PROPAGATION_ID": "T5-C002-BP-009",
+      "TARGET": "ELECTRICAL_ASSET_DOSSIERS",
+      "ACTION": "Add equipment-specific preservation procedure, inspection frequency, expiration/shelf-life if applicable, critical-spares list and pre-energization preservation release."
+    },
+    {
+      "PROPAGATION_ID": "T5-C002-BP-010",
+      "TARGET": "FORENSIC_INFORMATION_MODEL",
+      "ACTION": "Preserve negative-search evidence and repository-search provenance without converting absence into proof of non-performance."
+    }
+  ],
+  "CROSS_BOUNDARY_DEPENDENCIES": [
+    {
+      "DEPENDENCY_ID": "BC-C002-T2-T5-BHT401-MAINTENANCE-PMT-ISOLATION-REQUIREMENTS",
+      "TARGET_THREAD": 2,
+      "STATE": "INPUT_REQUIRED_FOR_TECHNICAL_ADEQUACY_NOT_FOR_EVIDENCE_GAP_CONCLUSION",
+      "REQUIRED_INPUT": [
+        "CRS01_RST_L2_REQUIRED_ISOLATION_BOUNDARY",
+        "RESTRAINT_DESIGN_ACCEPTANCE_CRITERIA",
+        "REQUIRED_AS_FOUND_AND_AS_LEFT_MEASUREMENTS",
+        "REQUIRED_TORQUE_TENSION_OR_GAP_CRITERIA_IF_APPLICABLE",
+        "REQUIRED_PMT_OR_FUNCTIONAL_REQUALIFICATION",
+        "RESTORATION_ACCEPTANCE_CRITERIA"
+      ]
+    },
+    {
+      "DEPENDENCY_ID": "BC-C002-T3-T5-ENERGIZATION-TEST-PRESERVATION-SPARES",
+      "TARGET_THREAD": 3,
+      "STATE": "INPUT_REQUIRED",
+      "REQUIRED_INPUT": [
+        "APS_821_TR_001_PRESERVATION_REQUIREMENTS",
+        "PRE_ENERGIZATION_TEST_REQUIREMENTS",
+        "TRANSFORMER_AND_SWITCHGEAR_CRITICAL_SPARE_CLASSIFICATION",
+        "SPARE_STORAGE_AND_PRESERVATION_REQUIREMENTS"
+      ]
+    },
+    {
+      "DEPENDENCY_ID": "BC-C002-T4-T5-F106F101-LIFT-CUSTODY-MAINTENANCE-ROUTE",
+      "TARGET_THREAD": 4,
+      "STATE": "INPUT_REQUIRED",
+      "REQUIRED_INPUT": [
+        "MAG_PF_01_CONTROLLED_LAYDOWN_LOCATION",
+        "MAG_PF_01_ROUTE_TO_F106_F101",
+        "LIFT_AND_RIGGING_INTERFACE_GEOMETRY",
+        "MAINTENANCE_REMOVAL_ROUTE",
+        "ACCESS_ENVELOPE"
+      ]
+    }
+  ],
+  "IDENTITY_RECONCILIATION_REQUESTS": [
+    {
+      "REQUEST_ID": "T5-C002-IDR-001",
+      "TARGET_THREAD": 1,
+      "SUBJECT": "C001_PROVISIONAL_MAINTENANCE_AND_MATERIAL_SERVICE_NETWORKS",
+      "REQUEST": "Retain existing C001 provisional identities as shared service-network/process classes if not duplicative of authoritative integrated identities; Cycle 002 creates no competing Atlas object identities."
+    },
+    {
+      "REQUEST_ID": "T5-C002-IDR-002",
+      "TARGET_THREAD": 1,
+      "SUBJECT": "M88217_GLOBAL_CONFLICT_BINDING",
+      "REQUEST": "Bind M-88217 and CRS01-RST-L2 evidence-state divergence directly to GCF-C001-001 without creating a second independent global conflict."
+    }
+  ],
+  "NEXT_INVESTIGATION_RECOMMENDATIONS": [
+    {
+      "RECOMMENDATION_ID": "T5-C002-NI-001",
+      "SUBJECT": "NATIVE_WORK_MANAGEMENT_AUDIT_TRAIL_RECOVERY",
+      "RATIONALE": "If a future source becomes available, highest-value evidence is the native M-88217 audit trail including creation, assignment, status transitions, approver identity and attachment history.",
+      "AUTHORITY_TO_ASSIGN": "THREAD_1"
+    },
+    {
+      "RECOMMENDATION_ID": "T5-C002-NI-002",
+      "SUBJECT": "PERMIT_ISOLATION_LOTO_CROSS_INDEX",
+      "RATIONALE": "Search by CRS01-RST-L2, TMP-BHT-401-CRS-01, location, date window and custody boundary rather than M-88217 number alone.",
+      "AUTHORITY_TO_ASSIGN": "THREAD_1"
+    },
+    {
+      "RECOMMENDATION_ID": "T5-C002-NI-003",
+      "SUBJECT": "TOOL_MATERIAL_TRANSACTION_CROSS_INDEX",
+      "RATIONALE": "Search tool crib, calibration, warehouse/material issue and parts-return records by location/date/equipment tag rather than work-order number alone.",
+      "AUTHORITY_TO_ASSIGN": "THREAD_1"
+    },
+    {
+      "RECOMMENDATION_ID": "T5-C002-NI-004",
+      "SUBJECT": "PHOTO_METADATA_AND_PHYSICAL_COMPARISON",
+      "RATIONALE": "Preserve and compare pre-work/pre-event and post-event imagery with controlled angle/lighting/compression limitations; do not convert visual differences into unsupported work-scope claims.",
+      "AUTHORITY_TO_ASSIGN": "THREAD_1"
+    },
+    {
+      "RECOMMENDATION_ID": "T5-C002-NI-005",
+      "SUBJECT": "T2_DERIVED_PMT_REQUIREMENT_MATRIX",
+      "RATIONALE": "Once T2 provides restraint function and hydraulic/load requirements, derive what PMT would technically have been required without asserting it occurred.",
+      "AUTHORITY_TO_ASSIGN": "THREAD_1"
+    },
+    {
+      "RECOMMENDATION_ID": "T5-C002-NI-006",
+      "SUBJECT": "APS_821_TR_001_VENDOR_PRESERVATION_DOSSIER",
+      "RATIONALE": "Recover project-specific storage/preservation instructions and critical spares before promoting electrical preservation assumptions.",
+      "AUTHORITY_TO_ASSIGN": "THREAD_1"
+    },
+    {
+      "RECOMMENDATION_ID": "T5-C002-NI-007",
+      "SUBJECT": "MAG_PF_01_TRANSACTION_DOSSIER",
+      "RATIONALE": "Recover exact receiving, preservation, laydown, transport, rigging and lift-release records for one heavy component as a template for plantwide material custody.",
+      "AUTHORITY_TO_ASSIGN": "THREAD_1"
+    }
+  ],
+  "CONTENT_MANIFEST": {
+    "M88217_MANDATORY_SEARCH_AXES_REPORTED": 34,
+    "M88217_STATE_NODES_REPORTED": 13,
+    "M88217_FOUND_RECORD_GENEALOGY_NODES": 8,
+    "REPRESENTATIVE_MATERIAL_CUSTODY_DOSSIERS": 3,
+    "NEW_ENGINEERING_FINDINGS": 14,
+    "PROPOSED_ANNEX_DELTAS": 6,
+    "PROPOSED_RELATIONSHIP_REFINEMENTS": 10,
+    "CONFIGURATION_FINDINGS": 5,
+    "LIFECYCLE_FINDINGS": 4,
+    "BOUNDARY_FINDINGS": 3,
+    "VALIDATION_RESULTS": 12,
+    "VERIFICATION_RESULTS": 12,
+    "GLOBAL_CONFLICTS_CLOSED": 0,
+    "GLOBAL_CONFLICTS_RETAINED_OPEN": 1,
+    "OPEN_ITEMS": 13,
+    "UNCERTAINTIES": 8,
+    "BACKWARD_PROPAGATION_RECOMMENDATIONS": 10,
+    "CROSS_BOUNDARY_DEPENDENCIES": 3,
+    "IDENTITY_RECONCILIATION_REQUESTS": 2,
+    "NEXT_INVESTIGATION_RECOMMENDATIONS": 7,
+    "CANONICAL_ID_MUTATIONS": 0,
+    "GLOBAL_WRITES": 0,
+    "UNSUPPORTED_PERSON_IDENTITIES_CREATED": 0,
+    "UNSUPPORTED_ROOT_CAUSE_CONCLUSIONS": 0
+  },
+  "RETURN_COMPLETENESS_STATUS": {
+    "STATUS": "COMPLETE_TO_CYCLE_002_STOP_CONDITIONS",
+    "STOP_CONDITIONS": {
+      "M88217_EVIDENCE_SEARCH_EXHAUSTED_TO_REASONABLE_SATURATION": true,
+      "EVERY_FOUND_RECORD_BOUND_TO_PROVENANCE_AND_INFORMATION_FLOW": true,
+      "PHYSICAL_EXECUTION_STATE_RESOLVED_OR_PRECISELY_BLOCKED": true,
+      "PHYSICAL_EXECUTION_RESOLUTION_MODE": "PRECISELY_BLOCKED",
+      "NO_UNSUPPORTED_CAUSAL_CONCLUSION": true,
+      "REPRESENTATIVE_MATERIAL_CUSTODY_DOSSIERS_ADVANCED": true,
+      "CROSS_BOUNDARY_REQUIREMENTS_RETURNED": true,
+      "ALL_MATERIAL_GAPS_REGISTERED": true
+    },
+    "PRIMARY_CONCLUSION": "M-88217 remains an open information-versus-physical-state conflict. The work item is demonstrably present and CLOSED/APPROVED administratively, but the currently available evidence cannot establish the complete authorization, execution, inspection, PMT, restoration or as-left configuration chain.",
+    "GLOBAL_CONFLICT_GCF_C001_001": "RETAIN_OPEN",
+    "GLOBAL_PROJECT_COMPLETENESS_DECLARED": false,
+    "NEXT_MAJOR_TASK_AUTHORITY": "THREAD_1_ONLY"
+  }
+}

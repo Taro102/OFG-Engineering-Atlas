@@ -1,0 +1,3 @@
+# OFG Engineering Atlas Phase-4 raw provenance byte-preservation rules
+working_raw/worker_returns_archive/** -text
+working_raw/by_package/** -text

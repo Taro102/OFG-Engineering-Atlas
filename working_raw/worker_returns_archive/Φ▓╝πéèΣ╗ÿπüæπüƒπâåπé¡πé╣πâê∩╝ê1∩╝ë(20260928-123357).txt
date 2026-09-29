@@ -1,0 +1,1816 @@
+{
+  "HEADER": {
+    "PACKAGE_ID": "OFG-EA-T5-C003-RETURN-R1",
+    "PACKAGE_VERSION": "1.0.0",
+    "PACKAGE_TYPE": "OFG_ENGINEERING_ATLAS_WORKER_RETURN",
+    "SOURCE_THREAD": 5,
+    "TARGET_THREAD": 1,
+    "CYCLE_ID": "OFG-EA-CYCLE-003",
+    "TASK_ID": "T5-C003-PLANTWIDE-SUPPORT-LIFECYCLE-MATERIAL-COMMISSIONING-INSTANTIATION-WAVE1",
+    "INPUT_BASELINE_ID": "OFG-EA-B000-REV3-REVW3-REVS-2031-04-19",
+    "INTEGRATED_STAGING_DELTA_ID": "OFG-EA-C002-INTEGRATED-STAGING-R1",
+    "WORKING_VIEW_ID": "OFG-EA-B000-PLUS-C001-C002-STAGING-R1",
+    "CONFIGURATION_CUT": "2031-04-19",
+    "ASSURANCE_CLASS": "AS3",
+    "RETURN_MODE": "CYCLE_003_WAVE1_DELTA",
+    "MACHINE_READABLE_ONLY": true,
+    "COPY_PASTE_SAFE_STRICT_JSON": true,
+    "GLOBAL_WRITE_PERFORMED": false,
+    "CANONICAL_ID_MUTATION_PERFORMED": false,
+    "SILENT_MERGE_PERFORMED": false,
+    "THREAD_3_DEPENDENCY_CREATED": false,
+    "THREAD_3_FROZEN_NAMESPACE_MUTATED": false,
+    "T3_PROVISIONAL_ID_PROMOTED": false,
+    "SELF_ASSIGNED_NEXT_MAJOR_CYCLE": false
+  },
+  "LOCAL_STATE_CAPSULE": {
+    "THREAD_ID": 5,
+    "WORKER_ROLE": "PARALLEL_ENGINEERING_REVIEW_WORKER",
+    "PRIMARY_ORIENTATION": "PLANT_SUPPORT_MAINTENANCE_MATERIAL_HANDLING_WASTE_ENVIRONMENTAL_OPERATIONAL_SUPPORT",
+    "CURRENT_STATE": "W_RETURN_READY",
+    "PINNED_BASELINE_ID": "OFG-EA-B000-REV3-REVW3-REVS-2031-04-19",
+    "PINNED_STAGING_DELTA_ID": "OFG-EA-C002-INTEGRATED-STAGING-R1",
+    "PINNED_WORKING_VIEW_ID": "OFG-EA-B000-PLUS-C001-C002-STAGING-R1",
+    "LOCAL_CHECKPOINT_ID": "T5-C003-CP-WAVE1-AS3-COMPLETE",
+    "THREAD_3_STATE": "PERMANENTLY_RETIRED_READ_ONLY_ARCHIVE",
+    "THREAD_3_FOLLOWUP_REQUESTED": false,
+    "THREAD_3_NAMESPACE": "T3-PROV",
+    "THREAD_3_NAMESPACE_STATE": "FROZEN",
+    "GLOBAL_CONFLICTS_CARRIED": [
+      "GCF-C001-001"
+    ],
+    "C001_PROVISIONAL_IDENTITIES_REUSED": [
+      "T5-PROV-FSN-MAT-001",
+      "T5-PROV-PROC-MAT-001",
+      "T5-PROV-FSN-MNT-001",
+      "T5-PROV-PROC-MNT-001",
+      "T5-PROV-FSN-TCL-001",
+      "T5-PROV-FSN-LFT-001",
+      "T5-PROV-FSN-COM-001",
+      "T5-PROV-FSN-WDE-001",
+      "T5-PROV-FSN-REC-001",
+      "T5-PROV-REC-MNT-001",
+      "T5-PROV-REC-MAT-001",
+      "T5-PROV-REC-LFT-001",
+      "T5-PROV-REC-COM-001"
+    ],
+    "C002_ELECTRICAL_DATASETS_REUSED": [
+      "T5-PROV-DATA-ELEC-ENERGIZATION-EVIDENCE-001",
+      "T5-PROV-DATA-ELEC-PRESERVATION-SPARES-001",
+      "T5-PROV-DATA-DCUPS-MAINT-001",
+      "T5-PROV-DATA-TEMP-ELEC-TEST-CONFIG-001"
+    ],
+    "ACTIVE_RECURSION_BRANCHES": [],
+    "RETURN_READY": true
+  },
+  "EXECUTED_SCOPE": {
+    "PRIMARY_OBJECTIVE_STATUS": "EXECUTED_TO_WAVE1_STOP_CONDITIONS",
+    "PLANTWIDE_DISCOVERY": "EXECUTED",
+    "MATERIAL_TRANSACTION_MODEL": "ADVANCED",
+    "MAINTENANCE_WORK_CONTROL_MODEL": "ADVANCED",
+    "TEMPORARY_CONFIGURATION_MODEL": "ADVANCED",
+    "COMMISSIONING_SUPPORT_MODEL": "ADVANCED",
+    "WAREHOUSE_PRESERVATION_SPARES_MODEL": "ADVANCED",
+    "TOOL_CALIBRATION_MODEL": "ADVANCED",
+    "REMOTE_MAINTENANCE_MODEL": "ADVANCED",
+    "WASTE_DECON_EFFLUENT_MODEL": "ADVANCED",
+    "CHEMISTRY_LAB_ENVIRONMENTAL_INTERFACE_MODEL": "ADVANCED_TO_FUNCTIONAL_INTERFACE_LEVEL",
+    "ELECTRICAL_LIFECYCLE_SCOPE": "FULLY_INTERNALIZED_IN_THREAD5",
+    "M88217": "RETAINED_AS_EVIDENCE_CONTROL_CASE_WITHOUT_NEW_CAUSAL_CLOSURE",
+    "WAVE1_DISCOVERY_CONCLUSION": "The legacy Atlas already contains substantial physical support-plant populations. The principal deficiency is not absence of support hardware but insufficient decomposition of support functions, transaction states, custody transitions, temporary configurations, preservation histories, work-control evidence, restoration evidence and cross-system intervention routes.",
+    "SOURCE_SUPPORT": [
+      ":chatgpt-content-reference{index="0"}",
+      ":chatgpt-content-reference{index="1"}",
+      ":chatgpt-content-reference{index="2"}",
+      ":chatgpt-content-reference{index="3"}"
+    ]
+  },
+  "UNFINISHED_SCOPE": [
+    {
+      "ID": "T5-C003-UF-001",
+      "SUBJECT": "PLANTWIDE_ITEM_LEVEL_WAREHOUSE_LOCATION_HISTORY",
+      "STATUS": "OPEN",
+      "BLOCKER": "Current asset lifecycle records generally do not provide bin, bay, laydown position or complete location-change transaction history."
+    },
+    {
+      "ID": "T5-C003-UF-002",
+      "SUBJECT": "ITEM_LEVEL_PRESERVATION_EXECUTION_HISTORY",
+      "STATUS": "OPEN",
+      "BLOCKER": "Preservation requirement classes are reconstructable but equipment-specific procedures, periodic inspections and preservation releases are incomplete."
+    },
+    {
+      "ID": "T5-C003-UF-003",
+      "SUBJECT": "PLANTWIDE_SPARES_INVENTORY_AND_OBSOLESCENCE",
+      "STATUS": "OPEN",
+      "BLOCKER": "No sufficiently complete project-specific critical-spares, quantity, storage, shelf-life and obsolescence population has been recovered."
+    },
+    {
+      "ID": "T5-C003-UF-004",
+      "SUBJECT": "TOOL_ISSUE_RETURN_TRANSACTION_HISTORY",
+      "STATUS": "OPEN",
+      "BLOCKER": "Physical calibration and maintenance-shop capability exists, but plantwide tool-crudential issue/return linkage to work orders is incomplete."
+    },
+    {
+      "ID": "T5-C003-UF-005",
+      "SUBJECT": "CALIBRATION_CERTIFICATE_TO_WORK_ORDER_TRACE",
+      "STATUS": "OPEN",
+      "BLOCKER": "Calibration benches exist physically, but individual instrument certificate and work-use lineage is not yet instantiated."
+    },
+    {
+      "ID": "T5-C003-UF-006",
+      "SUBJECT": "TEMP_COMMISSIONING_TARGET_SYSTEM_BINDING",
+      "STATUS": "OPEN",
+      "BLOCKER": "Temporary commissioning equipment populations exist, but many individual temporary assets are not bound to exact permanent-system test boundaries."
+    },
+    {
+      "ID": "T5-C003-UF-007",
+      "SUBJECT": "TEMP_COMMISSIONING_FINAL_DISPOSITION",
+      "STATUS": "OPEN",
+      "BLOCKER": "Removal, demobilization or formal retained-configuration state is not available for all representative temporary commissioning assets."
+    },
+    {
+      "ID": "T5-C003-UF-008",
+      "SUBJECT": "REMOTE_MAINTENANCE_ROUTE_GEOMETRY_AND_RECOVERY_ENVELOPES",
+      "STATUS": "OPEN",
+      "BLOCKER": "Equipment populations are present but item-specific cask paths, swept volumes, contamination boundaries, failed-equipment recovery routes and maintenance staging envelopes remain incomplete."
+    },
+    {
+      "ID": "T5-C003-UF-009",
+      "SUBJECT": "MAINTENANCE_WASTE_TRANSACTION_BINDING",
+      "STATUS": "OPEN",
+      "BLOCKER": "Waste and decontamination plant exists but individual maintenance jobs are not yet consistently bound to generated liquids, solids, filters, resins, contaminated consumables or disposition records."
+    },
+    {
+      "ID": "T5-C003-UF-010",
+      "SUBJECT": "ELECTRICAL_ENERGIZATION_AND_AS_LEFT_EXECUTION_RECORDS",
+      "STATUS": "OPEN",
+      "BLOCKER": "Cycle 002 electrical evidence gaps remain open; scope ownership is now fully internal to Thread 5 except for Thread 1 design/configuration inputs."
+    },
+    {
+      "ID": "T5-C003-UF-011",
+      "SUBJECT": "M88217_PHYSICAL_EXECUTION_CHAIN",
+      "STATUS": "OPEN_CRITICAL",
+      "BLOCKER": "No materially new project-specific execution evidence recovered in Cycle 003."
+    }
+  ],
+  "RESEARCH_PERFORMED": {
+    "MODE": "COMPREHENSIVE_RECURSIVE_EVIDENCE_FIRST",
+    "CORPUS_METHODS": [
+      "SYSTEM_FAMILY_POPULATION_SEARCH",
+      "PHYSICAL_ASSET_DECOMPOSITION",
+      "SITE_WORK_HISTORY_TRACE",
+      "LIFECYCLE_STAGE_RECONSTRUCTION",
+      "TRANSACTION_MODEL_RECONSTRUCTION",
+      "CUSTODY_STATE_RECONSTRUCTION",
+      "TEMPORARY_CONFIGURATION_POPULATION_SEARCH",
+      "REMOTE_HANDLING_AND_WASTE_INTERFACE_TRACE",
+      "MAINTENANCE_TOOL_CALIBRATION_CAPABILITY_TRACE",
+      "C001_C002_STATE_RECONCILIATION",
+      "EXTERNAL_PRECEDENT_VALIDATION"
+    ],
+    "LANGUAGES": [
+      "ENGLISH",
+      "JAPANESE",
+      "GERMAN",
+      "FRENCH",
+      "CHINESE",
+      "RUSSIAN",
+      "SPANISH"
+    ],
+    "EXTERNAL_RESEARCH_DOMAINS": [
+      "NUCLEAR_MAINTENANCE",
+      "WORK_MANAGEMENT",
+      "MATERIAL_CONTROL",
+      "WAREHOUSING",
+      "PRESERVATION",
+      "SPARES",
+      "CALIBRATION",
+      "TEMPORARY_CONFIGURATION_CONTROL",
+      "COMMISSIONING",
+      "REMOTE_MAINTENANCE",
+      "DECONTAMINATION",
+      "RADWASTE",
+      "CHEMISTRY",
+      "BATTERY_AND_UPS_MAINTENANCE",
+      "PROTECTION_CONFIGURATION_CONTROL"
+    ],
+    "CONTROL_RULE": "External precedent establishes expected engineering and evidence classes only and does not create OFG historical records."
+  },
+  "SOURCES_USED": [
+    {
+      "SOURCE_ID": "REV3_V11_EQUIPMENT_COMPONENT_MASTER",
+      "SOURCE_CLASS": "OFG_SOURCE_MIXED_CONTROLLED_WORKING",
+      "USE": "Physical support-family populations and representative equipment.",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="4"}",
+        ":chatgpt-content-reference{index="5"}",
+        ":chatgpt-content-reference{index="6"}",
+        ":chatgpt-content-reference{index="7"}"
+      ]
+    },
+    {
+      "SOURCE_ID": "REVW3_ACTUAL_SITE_WORK_HISTORY",
+      "SOURCE_CLASS": "WORKING_DATASET_NOT_SELF_AUTHENTICATING",
+      "USE": "Site arrival, installation, mechanical completion, turnover and commissioning population history.",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="8"}",
+        ":chatgpt-content-reference{index="9"}",
+        ":chatgpt-content-reference{index="10"}"
+      ]
+    },
+    {
+      "SOURCE_ID": "C001_THREAD5_RETURN",
+      "SOURCE_CLASS": "INTEGRATED_PRIOR_CYCLE_STAGING_INPUT",
+      "USE": "Existing provisional service networks, processes, evidence classes and working counts.",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="11"}",
+        ":chatgpt-content-reference{index="12"}"
+      ]
+    },
+    {
+      "SOURCE_ID": "C002_THREAD5_RETURN",
+      "SOURCE_CLASS": "INTEGRATED_PRIOR_CYCLE_STAGING_INPUT",
+      "USE": "M-88217 evidence state, representative custody dossiers and open maintenance evidence chains."
+    },
+    {
+      "SOURCE_ID": "C002_THREAD5_T3_REDIRECT_RETURN",
+      "SOURCE_CLASS": "INTEGRATED_PRIOR_CYCLE_STAGING_INPUT",
+      "USE": "Electrical lifecycle, energization, preservation, spares, battery/UPS and as-left scope now inherited by Thread 5.",
+      "CITATION": ":chatgpt-content-reference{index="13"}"
+    },
+    {
+      "SOURCE_ID": "CNSC_REGDOC_2_6_2",
+      "SOURCE_CLASS": "AUTHORITATIVE_REAL_WORLD_REFERENCE",
+      "USE": "Maintenance facilities, tools, calibration, spare parts, work management, post-maintenance verification and record controls.",
+      "CITATION": ":chatgpt-content-reference{index="14"}"
+    },
+    {
+      "SOURCE_ID": "IAEA_SSG_74",
+      "SOURCE_CLASS": "AUTHORITATIVE_REAL_WORLD_REFERENCE",
+      "USE": "Maintenance workshops, decontamination, special tools, measuring/test equipment, lifting, stores and work-order evidence.",
+      "CITATION": ":chatgpt-content-reference{index="15"}"
+    },
+    {
+      "SOURCE_ID": "IAEA_COMMISSIONING_GUIDANCE",
+      "SOURCE_CLASS": "AUTHORITATIVE_REAL_WORLD_REFERENCE",
+      "USE": "Temporary equipment/configuration control, jumpers/lifted leads, restoration and baseline transfer.",
+      "CITATION": ":chatgpt-content-reference{index="16"}"
+    },
+    {
+      "SOURCE_ID": "IAEA_PROCUREMENT_SUPPLY_CHAIN_GUIDANCE",
+      "SOURCE_CLASS": "AUTHORITATIVE_REAL_WORLD_REFERENCE",
+      "USE": "Procurement, supplier management, transport, receipt, warehouse/inventory and configuration-linked spare support.",
+      "CITATION": ":chatgpt-content-reference{index="17"}"
+    },
+    {
+      "SOURCE_ID": "IAEA_CHEMISTRY_GUIDANCE",
+      "SOURCE_CLASS": "AUTHORITATIVE_REAL_WORLD_REFERENCE",
+      "USE": "Chemistry/radiochemistry monitoring, sample records, support-system chemistry and discharge interfaces.",
+      "CITATION": ":chatgpt-content-reference{index="18"}"
+    },
+    {
+      "SOURCE_ID": "ITER_HOT_CELL_PRECEDENT",
+      "SOURCE_CLASS": "AUTHORITATIVE_REAL_WORLD_REFERENCE",
+      "USE": "Remote handling, cask transfer, cleaning, repair/refurbishment/testing and waste interface.",
+      "CITATION": ":chatgpt-content-reference{index="19"}"
+    },
+    {
+      "SOURCE_ID": "QST_REMOTE_MAINTENANCE_PRECEDENT",
+      "SOURCE_CLASS": "AUTHORITATIVE_REAL_WORLD_REFERENCE",
+      "USE": "Dedicated remote-maintenance systems and specialized remote tooling.",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="20"}",
+        ":chatgpt-content-reference{index="21"}",
+        ":chatgpt-content-reference{index="22"}"
+      ]
+    },
+    {
+      "SOURCE_ID": "ASNR_IRSN_MAINTENANCE_PRECEDENT",
+      "SOURCE_CLASS": "AUTHORITATIVE_REAL_WORLD_REFERENCE",
+      "USE": "Maintenance logistics, consignation/isolation, requalification, spares and obsolescence.",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="23"}",
+        ":chatgpt-content-reference{index="24"}"
+      ]
+    },
+    {
+      "SOURCE_ID": "KTA_MAINTENANCE_PRECEDENT",
+      "SOURCE_CLASS": "AUTHORITATIVE_REAL_WORLD_REFERENCE",
+      "USE": "Maintenance organization, written work controls, inspections, testing and commissioning-after-modification.",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="25"}",
+        ":chatgpt-content-reference{index="26"}"
+      ]
+    },
+    {
+      "SOURCE_ID": "CHINESE_NUCLEAR_MAINTENANCE_PRECEDENT",
+      "SOURCE_CLASS": "AUTHORITATIVE_REAL_WORLD_REFERENCE",
+      "USE": "Storage/protection/handling, spares inventory, test equipment calibration and hazardous/radioactive material management.",
+      "CITATION": ":chatgpt-content-reference{index="27"}"
+    },
+    {
+      "SOURCE_ID": "RUSSIAN_POST_REPAIR_TEST_PRECEDENT",
+      "SOURCE_CLASS": "AUTHORITATIVE_REAL_WORLD_REFERENCE",
+      "USE": "Post-repair verification and documented tests before return to service.",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="28"}",
+        ":chatgpt-content-reference{index="29"}"
+      ]
+    },
+    {
+      "SOURCE_ID": "SPANISH_MAINTENANCE_PRECEDENT",
+      "SOURCE_CLASS": "AUTHORITATIVE_REAL_WORLD_REFERENCE",
+      "USE": "Preventive maintenance, systematic inspection and periodic testing.",
+      "CITATION": ":chatgpt-content-reference{index="30"}"
+    }
+  ],
+  "FUNCTION_AND_SYSTEM_DISCOVERY": [
+    {
+      "DISCOVERY_ID": "T5-C003-DISC-001",
+      "EXISTING_FAMILY": "MAINT-WH",
+      "WORKING_ASSET_COUNT": 70,
+      "LOCATION": "M-101/M-102/M-103",
+      "PHYSICAL_CLASSES_FOUND": [
+        "MAINTENANCE_SHOP_OVERHEAD_CRANES",
+        "LATHES",
+        "MILLING_MACHINES",
+        "BALANCING_MACHINES",
+        "WELDING_STATIONS",
+        "CALIBRATION_BENCHES",
+        "WAREHOUSE_FORKLIFTS",
+        "RIGGING_EQUIPMENT_SETS"
+      ],
+      "DISPOSITION": "EXISTING_PHYSICAL_SYSTEM_RETAIN_AND_DEEPEN",
+      "UNDERDECOMPOSED_FUNCTIONS": [
+        "TOOL_CRIB",
+        "TOOL_ISSUE_RETURN",
+        "CALIBRATION_CERTIFICATE_CONTROL",
+        "SPARE_PARTS_STORAGE",
+        "REPAIR_REFURBISHMENT_ROUTING",
+        "WORK_ORDER_TO_SHOP_TRANSACTION"
+      ],
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="31"}",
+        ":chatgpt-content-reference{index="32"}"
+      ]
+    },
+    {
+      "DISCOVERY_ID": "T5-C003-DISC-002",
+      "EXISTING_FAMILY": "PERMANENT-HANDLING",
+      "WORKING_ASSET_COUNT": 158,
+      "LOCATION": "PLANT_BUILDINGS",
+      "DISPOSITION": "EXISTING_PHYSICAL_SYSTEM_RETAIN_AND_BIND_TO_MAINTENANCE_AND_MATERIAL_FLOW",
+      "UNDERDECOMPOSED_FUNCTIONS": [
+        "INDIVIDUAL_LIFT_RELEASE",
+        "RIGGING_CONFIGURATION",
+        "INSPECTION_PROOF_LOAD_STATE",
+        "MAINTENANCE_REMOVAL_ROUTE",
+        "OUTAGE_CONFIGURATION"
+      ],
+      "CITATION": ":chatgpt-content-reference{index="33"}"
+    },
+    {
+      "DISCOVERY_ID": "T5-C003-DISC-003",
+      "EXISTING_FAMILY": "HEAVY-LOGISTICS",
+      "WORKING_ASSET_COUNT": 92,
+      "LOCATION": "MARINE_TERMINAL_HEAVY_HAUL_ROUTE_LAYDOWN",
+      "DISPOSITION": "EXISTING_PHYSICAL_SYSTEM_RETAIN_AND_BIND_TO_ITEM_LEVEL_CUSTODY",
+      "UNDERDECOMPOSED_FUNCTIONS": [
+        "SHIPPING_RELEASE_TO_RECEIPT",
+        "ROUTE_CUSTODY",
+        "LAYDOWN_ASSIGNMENT",
+        "PRESERVATION_DURING_HOLD",
+        "WORKFRONT_RELEASE"
+      ],
+      "CITATION": ":chatgpt-content-reference{index="34"}"
+    },
+    {
+      "DISCOVERY_ID": "T5-C003-DISC-004",
+      "EXISTING_FAMILY": "HOTCELL-RH",
+      "WORKING_ASSET_COUNT": 52,
+      "LOCATION": "R-101/R-102/R-103",
+      "PHYSICAL_CLASSES_FOUND": [
+        "CASK_TRANSPORTER_AGV",
+        "SHIELDED_TRANSFER_CASK",
+        "DECONTAMINATION_SKID_OR_CELL",
+        "HOT_CELL_BRIDGE_CRANE",
+        "REMOTE_MANIPULATOR",
+        "REMOTE_MAINTENANCE_ROBOT",
+        "REMOTE_WELDING_SYSTEM",
+        "REMOTE_CUTTING_SYSTEM"
+      ],
+      "DISPOSITION": "EXISTING_PHYSICAL_SYSTEM_RETAIN_AND_DEEPEN_AS_REMOTE_INTERVENTION_SERVICE_CHAIN",
+      "CITATION": ":chatgpt-content-reference{index="35"}"
+    },
+    {
+      "DISCOVERY_ID": "T5-C003-DISC-005",
+      "EXISTING_FAMILY": "RADWASTE-DECON",
+      "WORKING_ASSET_COUNT": 45,
+      "LOCATION": "R-104/R-105",
+      "PHYSICAL_CLASSES_FOUND": [
+        "RADIOACTIVE_LIQUID_COLLECTION_MONITOR_TANK",
+        "RADWASTE_FILTRATION_SKID",
+        "ION_EXCHANGE_SKID",
+        "SOLID_WASTE_COMPACTOR",
+        "WASTE_ASSAY_STATION"
+      ],
+      "DISPOSITION": "EXISTING_PHYSICAL_SYSTEM_RETAIN_AND_BIND_TO_MAINTENANCE_AND_DECON_TRANSACTION_GRAPH",
+      "CITATION": ":chatgpt-content-reference{index="36"}"
+    },
+    {
+      "DISCOVERY_ID": "T5-C003-DISC-006",
+      "EXISTING_FAMILY": "DRAINAGE-EFFLUENT",
+      "WORKING_ASSET_COUNT": 78,
+      "LOCATION": "N-101_N-102_PLANTWIDE",
+      "DISPOSITION": "EXISTING_PHYSICAL_SYSTEM_RETAIN_AND_BIND_TO_FLUSH_DECON_AND_MAINTENANCE_EFFLUENT_SOURCES",
+      "CITATION": ":chatgpt-content-reference{index="37"}"
+    },
+    {
+      "DISCOVERY_ID": "T5-C003-DISC-007",
+      "EXISTING_FAMILY": "ENV-MONITORING",
+      "WORKING_ASSET_COUNT": 50,
+      "LOCATION": "SITE_PERIMETER_LAKE_N103_OUTFALL",
+      "DISPOSITION": "EXISTING_PHYSICAL_SYSTEM_RETAIN_AND_BIND_TO_DISCHARGE_AND_ENVIRONMENTAL_ACCEPTANCE",
+      "CITATION": ":chatgpt-content-reference{index="38"}"
+    },
+    {
+      "DISCOVERY_ID": "T5-C003-DISC-008",
+      "EXISTING_FAMILY": "LABORATORY",
+      "WORKING_ASSET_COUNT": 20,
+      "LOCATION": "A-103/F-103",
+      "DISPOSITION": "EXISTING_PHYSICAL_SYSTEM_RETAIN_AND_DEEPEN_FOR_CHEMISTRY_SAMPLE_AND_CALIBRATION_SUPPORT",
+      "CITATION": ":chatgpt-content-reference{index="39"}"
+    },
+    {
+      "DISCOVERY_ID": "T5-C003-DISC-009",
+      "EXISTING_FAMILY": "TEMP-COMMISSIONING",
+      "WORKING_ASSET_COUNT_CARRIED_FROM_C001": 226,
+      "WORKING_ASSET_COUNT_STATUS": "WORKING_DATASET_NOT_SELF_AUTHENTICATING",
+      "REPRESENTATIVE_CLASSES": [
+        "DAQ",
+        "TEMPORARY_POWER",
+        "LOAD_BANK",
+        "FLUSHING",
+        "FILTRATION",
+        "HYDRAULIC_TEST",
+        "RECIRCULATION",
+        "AIR_BLOW",
+        "OFFLINE_TEST",
+        "TEMPORARY_PROCESS_INSTRUMENTATION"
+      ],
+      "DISPOSITION": "PHYSICAL_POPULATION_RETAIN_AND_BIND_TO_TARGET_SYSTEM_CONFIGURATION_AND_FINAL_DISPOSITION",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="40"}",
+        ":chatgpt-content-reference{index="41"}"
+      ]
+    }
+  ],
+  "NEW_ENGINEERING_FINDINGS": [
+    {
+      "FINDING_ID": "T5-C003-FND-001",
+      "TITLE": "SUPPORT_PLANT_IS_A_PHYSICAL_PLANT_LAYER",
+      "STATUS": "SOURCE_SUPPORTED",
+      "FINDING": "Maintenance, handling, remote maintenance, waste, environmental and commissioning support are represented by substantial physical equipment populations and shall not be modeled merely as procedures or organizational functions."
+    },
+    {
+      "FINDING_ID": "T5-C003-FND-002",
+      "TITLE": "PRIMARY_GAP_IS_TRANSACTION_AND_CONFIGURATION_BINDING",
+      "STATUS": "SOURCE_SUPPORTED_PLUS_ENGINEERED_RECONSTRUCTION",
+      "FINDING": "The principal Wave-1 completeness deficit is the missing graph between existing support equipment and the item, work order, test boundary, custody state, preservation state, temporary configuration and final as-left state that each support object serves."
+    },
+    {
+      "FINDING_ID": "T5-C003-FND-003",
+      "TITLE": "MATERIAL_CUSTODY_IS_MULTI_AXIS",
+      "STATUS": "ENGINEERED_RECONSTRUCTION_SUPPORTED_BY_PRECEDENT",
+      "FINDING": "Title or commercial possession, physical possession, technical acceptance, material release, workfront custody, turnover custody and operating custody are distinct states and shall not be collapsed into a single ownership field."
+    },
+    {
+      "FINDING_ID": "T5-C003-FND-004",
+      "TITLE": "PRESERVATION_CAN_PRECEDE_INSTALLATION_AND_CONTINUE_AFTER_INSTALLATION",
+      "STATUS": "AUTHORITATIVE_PRECEDENT_PLUS_OFG_INTERFACE_REQUIREMENT",
+      "FINDING": "Preservation may begin at supplier release or receipt and can remain active through storage, laydown, installation and pre-operation holding until a controlled release or replacement operating environment supersedes it."
+    },
+    {
+      "FINDING_ID": "T5-C003-FND-005",
+      "TITLE": "MAINTENANCE_WORK_REQUIRES_THREE_PARALLEL_CHAINS",
+      "STATUS": "ENGINEERED_RECONSTRUCTION",
+      "FINDING": "Maintenance shall be modeled simultaneously as an authorization chain, a physical-action chain and an evidence/configuration chain. Administrative closeout cannot substitute for either physical execution or as-left verification."
+    },
+    {
+      "FINDING_ID": "T5-C003-FND-006",
+      "TITLE": "TOOL_AND_CALIBRATION_CAPABILITY_IS_PHYSICALLY_PRESENT",
+      "STATUS": "SOURCE_SUPPORTED",
+      "FINDING": "MNT-106 calibration benches and other MAINT-WH assets establish physical maintenance/calibration capability, but do not establish which instrument or tool was issued or calibrated for any particular job.",
+      "CITATION": ":chatgpt-content-reference{index="42"}"
+    },
+    {
+      "FINDING_ID": "T5-C003-FND-007",
+      "TITLE": "REMOTE_MAINTENANCE_IS_A_CLOSED_LOOP_SERVICE_REQUIREMENT",
+      "STATUS": "ENGINEERED_RECONSTRUCTION_SUPPORTED_BY_OFG_ASSETS_AND_ITER_QST_PRECEDENT",
+      "FINDING": "A remote intervention is not complete at component removal. The support chain must cover containment or casking, transport, hot-cell receipt, decontamination where needed, inspection, repair/refurbishment or cutting/welding, requalification, storage or reinstallation, and waste routing where applicable."
+    },
+    {
+      "FINDING_ID": "T5-C003-FND-008",
+      "TITLE": "MAINTENANCE_WASTE_IS_A_TRANSACTION_OUTPUT",
+      "STATUS": "ENGINEERED_RECONSTRUCTION_SUPPORTED_BY_EXISTING_SYSTEMS",
+      "FINDING": "Maintenance work can generate unused parts, conventional waste, contaminated consumables, filters, resins, liquids, flushing fluids and removed equipment. These outputs require explicit disposition edges rather than disappearing at work-order closeout."
+    },
+    {
+      "FINDING_ID": "T5-C003-FND-009",
+      "TITLE": "CONTAMINATION_STATUS_MUST_NOT_BE_INFERRED_FROM_MAINTENANCE_LOCATION_ALONE",
+      "STATUS": "CONTROL_FINDING",
+      "FINDING": "Routing to conventional waste, radioactive waste, decontamination or effluent systems must be driven by evidenced material/contamination state and applicable classification, not by generic association with nuclear work."
+    },
+    {
+      "FINDING_ID": "T5-C003-FND-010",
+      "TITLE": "TEMPORARY_TEST_PLANT_REQUIRES_FULL_CONFIGURATION_LIFECYCLE",
+      "STATUS": "SOURCE_SUPPORTED_PLUS_AUTHORITATIVE_PRECEDENT",
+      "FINDING": "Temporary power, DAQ, load banks, filtration, flushing, test leads, jumpers, temporary grounds and test instrumentation are configuration-affecting objects requiring authorization, target-boundary definition, calibration where relevant, installation, test use, removal or formal retention, restoration and as-left confirmation."
+    },
+    {
+      "FINDING_ID": "T5-C003-FND-011",
+      "TITLE": "COMMISSIONING_BASELINE_IS_MAINTENANCE_INPUT",
+      "STATUS": "AUTHORITATIVE_PRECEDENT",
+      "FINDING": "Commissioning acceptance results and baseline measurements must flow into operating and maintenance baselines; turnover is therefore a lifecycle bridge rather than the end of construction evidence."
+    },
+    {
+      "FINDING_ID": "T5-C003-FND-012",
+      "TITLE": "SPARES_REQUIRE_CONFIGURATION_EQUIVALENCE_CONTROL",
+      "STATUS": "AUTHORITATIVE_PRECEDENT",
+      "FINDING": "A spare is not acceptable solely because it is physically available. Its identity, technical equivalence, qualification where applicable, preservation, shelf-life or limited-life state and configuration effect must be controlled."
+    },
+    {
+      "FINDING_ID": "T5-C003-FND-013",
+      "TITLE": "ELECTRICAL_LIFECYCLE_SCOPE_IS_NOW_NATIVE_TO_THREAD5",
+      "STATUS": "WORKFLOW_CONTROL",
+      "FINDING": "All future energization evidence, switching/LOTO, preservation, spares, battery/DC/UPS maintenance, temporary test configuration, PMT, restoration and as-left evidence work is handled within Thread 5 or its Thread 1 boundary contract without Thread 3 dependency."
+    },
+    {
+      "FINDING_ID": "T5-C003-FND-014",
+      "TITLE": "M88217_NOT_MATERIALLY_ADVANCED_BY_NEW_PROJECT_EVIDENCE",
+      "STATUS": "CONTROL_FINDING",
+      "FINDING": "Cycle 003 support-system discovery adds broader requirements for tool, calibration, material, PMT, restoration and custody evidence but does not supply new project-specific M-88217 execution evidence. GCF-C001-001 therefore remains open without causal reinterpretation."
+    }
+  ],
+  "PROPOSED_ATLAS_DELTAS": {
+    "NEW_CANONICAL_OBJECTS": [],
+    "NEW_PROVISIONAL_PHYSICAL_ASSET_IDENTITIES": [],
+    "EXISTING_PROVISIONAL_SERVICE_NETWORKS_TO_RETAIN_AND_DEEPEN": [
+      {
+        "ID": "T5-PROV-FSN-MAT-001",
+        "NAME": "MATERIAL_RECEIPT_STORAGE_PRESERVATION_ISSUE_AND_DISPOSITION",
+        "C003_REFINEMENT": [
+          "PROCUREMENT_ORIGIN",
+          "SUPPLY_CHAIN_ROLE",
+          "RECEIPT_ACCEPTANCE",
+          "QUARANTINE_STATUS",
+          "SERIAL_HEAT_LOT_RECONCILIATION",
+          "STORAGE_LOCATION",
+          "PRESERVATION_STATE",
+          "ISSUE_RETURN",
+          "TURNOVER_CUSTODY",
+          "OPERATING_CUSTODY",
+          "DISPOSITION"
+        ]
+      },
+      {
+        "ID": "T5-PROV-FSN-MNT-001",
+        "NAME": "MAINTENANCE_WORK_EXECUTION_AND_RESTORATION_SUPPORT",
+        "C003_REFINEMENT": [
+          "AUTHORIZATION_CHAIN",
+          "ISOLATION_LOTO",
+          "ACCESS",
+          "TOOLS_PARTS",
+          "PHYSICAL_ACTION",
+          "INSPECTION",
+          "PMT",
+          "RESTORATION",
+          "AS_LEFT_CONFIRMATION"
+        ]
+      },
+      {
+        "ID": "T5-PROV-FSN-TCL-001",
+        "NAME": "TOOL_CONTROL_CALIBRATION_AND_TEST_EQUIPMENT_SUPPORT",
+        "C003_REFINEMENT": [
+          "TOOL_CRIB",
+          "TOOL_ISSUE_RETURN",
+          "CALIBRATION_CERTIFICATE",
+          "LIMITED_CALIBRATION",
+          "OUT_OF_TOLERANCE_EVALUATION",
+          "WORK_ORDER_LINKAGE"
+        ]
+      },
+      {
+        "ID": "T5-PROV-FSN-LFT-001",
+        "NAME": "LIFTING_RIGGING_AND_HANDLING_SUPPORT",
+        "C003_REFINEMENT": [
+          "ITEM_TO_LIFT_DEVICE",
+          "RIGGING_CONFIGURATION",
+          "ROUTE",
+          "LIFT_RELEASE",
+          "PROOF_LOAD_OR_INSPECTION_STATE",
+          "MAINTENANCE_REMOVAL_ROUTE"
+        ]
+      },
+      {
+        "ID": "T5-PROV-FSN-COM-001",
+        "NAME": "TEMPORARY_COMMISSIONING_SUPPORT",
+        "C003_REFINEMENT": [
+          "TARGET_SYSTEM",
+          "TEMPORARY_BOUNDARY",
+          "TEMPORARY_POWER",
+          "LOAD_BANK",
+          "DAQ",
+          "FLUSHING_FILTRATION",
+          "HYDRAULIC_TEST",
+          "CALIBRATION",
+          "REMOVAL_OR_RETENTION",
+          "RESTORATION"
+        ]
+      },
+      {
+        "ID": "T5-PROV-FSN-WDE-001",
+        "NAME": "MAINTENANCE_WASTE_DECONTAMINATION_DRAINAGE_AND_ENVIRONMENTAL_SUPPORT",
+        "C003_REFINEMENT": [
+          "WASTE_OR_EFFLUENT_SOURCE",
+          "CONTAMINATION_CLASSIFICATION",
+          "COLLECTION",
+          "DECONTAMINATION",
+          "FILTRATION_OR_ION_EXCHANGE",
+          "ASSAY_OR_CHARACTERIZATION",
+          "DISCHARGE_OR_DISPOSITION",
+          "ENVIRONMENTAL_MONITORING"
+        ]
+      },
+      {
+        "ID": "T5-PROV-FSN-REC-001",
+        "NAME": "INTERVENTION_RECOVERY_AND_OUTAGE_CONFIGURATION_SUPPORT",
+        "C003_REFINEMENT": [
+          "FAILED_COMPONENT_RECOVERY",
+          "REMOTE_MAINTENANCE",
+          "CASK_AND_TRANSPORT",
+          "HOT_CELL",
+          "REPAIR_REFURBISHMENT",
+          "SPECIAL_TOOLING",
+          "REQUALIFICATION",
+          "RETURN_OR_WASTE"
+        ]
+      }
+    ],
+    "NEW_PROVISIONAL_SERVICE_NETWORKS": [
+      {
+        "ID": "T5-PROV-FSN-SPR-001",
+        "CLASS": "FUNCTIONAL_SERVICE_NETWORK",
+        "NAME": "SPARES_TECHNICAL_CONTROL_AND_OBSOLESCENCE_SUPPORT",
+        "STATUS": "ENGINEERED_RECONSTRUCTION",
+        "GLOBAL_AUTHORITY": false,
+        "RATIONALE": "C001 material-flow network covers custody but does not explicitly isolate technical-equivalence, critical-spare strategy, shelf-life and obsolescence management."
+      },
+      {
+        "ID": "T5-PROV-FSN-CHM-001",
+        "CLASS": "FUNCTIONAL_SERVICE_NETWORK",
+        "NAME": "CHEMISTRY_SAMPLING_LABORATORY_AND_DISCHARGE_SUPPORT",
+        "STATUS": "ENGINEERED_RECONSTRUCTION",
+        "GLOBAL_AUTHORITY": false,
+        "RATIONALE": "Laboratory, process chemistry, commissioning cleanliness and effluent/discharge evidence require a cross-system support network distinct from waste hardware."
+      }
+    ],
+    "M88217_DELTA": {
+      "GLOBAL_CONFLICT": "GCF-C001-001",
+      "STATE_CHANGE": "NONE",
+      "REASON": "NO_MATERIALLY_NEW_PROJECT_EXECUTION_EVIDENCE"
+    }
+  },
+  "PROPOSED_ANNEX_DELTAS": [
+    {
+      "DATASET_ID": "T5-PROV-DATA-MATERIAL-TRANSACTION-LEDGER-001",
+      "NAME": "PLANTWIDE_MATERIAL_TRANSACTION_AND_CUSTODY_LEDGER",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "STATUS": "PROPOSED",
+      "FIELDS": [
+        "ITEM_ID",
+        "PROCUREMENT_ORIGIN",
+        "VENDOR",
+        "SUPPLIER",
+        "OEM",
+        "MANUFACTURER",
+        "FABRICATOR",
+        "TRADING_COMPANY_IF_EVIDENCED",
+        "SHIPPING_RELEASE",
+        "TRANSPORT_EVENT",
+        "SITE_RECEIPT",
+        "RECEIVING_INSPECTION",
+        "SERIAL_HEAT_LOT",
+        "QUARANTINE_STATUS",
+        "TECHNICAL_RELEASE",
+        "STORAGE_LOCATION",
+        "PRESERVATION_STATE",
+        "MATERIAL_ISSUE",
+        "WORKFRONT_CUSTODY",
+        "INSTALLATION_OR_USE",
+        "RETURN_UNUSED",
+        "SCRAP_OR_WASTE_DISPOSITION",
+        "TURNOVER_CUSTODY",
+        "OPERATING_CUSTODY",
+        "MAINTENANCE_TRANSACTION",
+        "FINAL_AS_LEFT_STATE",
+        "PROVENANCE"
+      ]
+    },
+    {
+      "DATASET_ID": "T5-PROV-DATA-STORAGE-PRESERVATION-REGISTER-001",
+      "NAME": "PLANTWIDE_STORAGE_AND_PRESERVATION_REGISTER",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "STATUS": "PROPOSED",
+      "FIELDS": [
+        "ITEM_ID",
+        "STORAGE_LOCATION",
+        "STORAGE_CLASS",
+        "PRESERVATION_PROCEDURE",
+        "ENVIRONMENTAL_LIMITS",
+        "PRESERVATION_START",
+        "PERIODIC_INSPECTION",
+        "DEFICIENCY",
+        "SHELF_OR_LIMITED_LIFE",
+        "PRESERVATION_RELEASE",
+        "POST_INSTALL_PRESERVATION",
+        "PROVENANCE"
+      ]
+    },
+    {
+      "DATASET_ID": "T5-PROV-DATA-TOOL-CALIBRATION-LEDGER-001",
+      "NAME": "TOOL_TEST_EQUIPMENT_AND_CALIBRATION_LEDGER",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "STATUS": "PROPOSED",
+      "FIELDS": [
+        "TOOL_OR_INSTRUMENT_ID",
+        "CLASS",
+        "CALIBRATION_REQUIREMENT",
+        "CALIBRATION_CERTIFICATE",
+        "CALIBRATION_DUE",
+        "LIMITED_USE_STATE",
+        "OUT_OF_TOLERANCE_STATE",
+        "ISSUE_TRANSACTION",
+        "WORK_ORDER",
+        "PERFORMER_ROLE_IF_EVIDENCED",
+        "RETURN_TRANSACTION",
+        "POST_USE_CONDITION",
+        "PROVENANCE"
+      ]
+    },
+    {
+      "DATASET_ID": "T5-PROV-DATA-MAINT-WORK-PMT-RESTORATION-001",
+      "NAME": "PLANTWIDE_MAINTENANCE_PMT_RESTORATION_LEDGER",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "STATUS": "PROPOSED",
+      "FIELDS": [
+        "WORK_NEED",
+        "WORK_REQUEST",
+        "WORK_ORDER",
+        "TECHNICAL_SCOPE",
+        "CUSTODY_BOUNDARY",
+        "ISOLATION",
+        "LOTO",
+        "ACCESS_RELEASE",
+        "TOOLS",
+        "CALIBRATION",
+        "PARTS_MATERIALS",
+        "AS_FOUND",
+        "PHYSICAL_ACTION",
+        "INSPECTION",
+        "PMT_REQUIREMENT",
+        "PMT_RESULT",
+        "RESTORATION",
+        "CONFIGURATION_CONFIRMATION",
+        "CLOSEOUT",
+        "AS_LEFT_STATE",
+        "RETAINED_EVIDENCE",
+        "UNCERTAINTY"
+      ]
+    },
+    {
+      "DATASET_ID": "T5-PROV-DATA-TEMP-CONFIG-PLANTWIDE-001",
+      "NAME": "PLANTWIDE_TEMPORARY_CONFIGURATION_REGISTER",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "STATUS": "PROPOSED",
+      "FIELDS": [
+        "TEMPORARY_OBJECT_ID",
+        "TEMPORARY_CONFIGURATION_CLASS",
+        "TARGET_PERMANENT_SYSTEM",
+        "TARGET_BOUNDARY",
+        "DESIGN_OR_TECHNICAL_BASIS",
+        "AUTHORIZATION",
+        "CUSTODY",
+        "ISOLATION",
+        "TEMPORARY_POWER",
+        "DAQ",
+        "LOAD_BANK",
+        "TEST_LEADS_OR_JUMPERS",
+        "TEMPORARY_GROUND",
+        "FLUSHING_OR_FILTRATION_CONNECTION",
+        "CALIBRATION",
+        "INSTALLATION_STATE",
+        "TEST_USE",
+        "REMOVAL_STATE",
+        "FORMAL_RETENTION_STATE",
+        "RESTORATION",
+        "AS_LEFT_CONFIRMATION",
+        "PROVENANCE"
+      ]
+    },
+    {
+      "DATASET_ID": "T5-PROV-DATA-SPARES-OBSOLESCENCE-001",
+      "NAME": "CRITICAL_SPARES_AND_OBSOLESCENCE_REGISTER",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "STATUS": "PROPOSED",
+      "FIELDS": [
+        "SPARE_ID",
+        "PARENT_EQUIPMENT_CLASS",
+        "CRITICALITY_BASIS",
+        "TECHNICAL_EQUIVALENCE",
+        "QUALIFICATION",
+        "QUANTITY_REQUIRED",
+        "QUANTITY_AVAILABLE",
+        "STORAGE_LOCATION",
+        "PRESERVATION",
+        "SHELF_LIFE",
+        "OBSOLESCENCE_STATE",
+        "VENDOR_SUPPORT_STATE",
+        "REPLACEMENT_CONFIGURATION_EFFECT",
+        "ISSUE_RETURN_HISTORY",
+        "PROVENANCE"
+      ]
+    },
+    {
+      "DATASET_ID": "T5-PROV-DATA-REMOTE-MAINT-ROUTE-001",
+      "NAME": "REMOTE_MAINTENANCE_AND_RECOVERY_ROUTE_REGISTER",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "STATUS": "PROPOSED",
+      "FIELDS": [
+        "TARGET_COMPONENT",
+        "REMOVAL_CONFIGURATION",
+        "REMOTE_TOOL",
+        "LIFT_OR_MANIPULATOR",
+        "CASK",
+        "TRANSPORTER",
+        "ROUTE",
+        "OPENING_AND_SWEPT_VOLUME",
+        "CONTAMINATION_BOUNDARY",
+        "HOT_CELL_DESTINATION",
+        "DECONTAMINATION",
+        "REPAIR_OR_REFURBISHMENT",
+        "REQUALIFICATION",
+        "RETURN_ROUTE",
+        "FAILED_EQUIPMENT_RECOVERY",
+        "WASTE_INTERFACE",
+        "PROVENANCE"
+      ]
+    },
+    {
+      "DATASET_ID": "T5-PROV-DATA-MAINT-WASTE-EFFLUENT-001",
+      "NAME": "MAINTENANCE_WASTE_DECONTAMINATION_AND_EFFLUENT_TRANSACTION_REGISTER",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "STATUS": "PROPOSED"
+    },
+    {
+      "DATASET_ID": "T5-PROV-DATA-CHEM-LAB-SAMPLE-001",
+      "NAME": "CHEMISTRY_LAB_SAMPLE_AND_ACCEPTANCE_REGISTER",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "STATUS": "PROPOSED"
+    }
+  ],
+  "CREATED_OR_CHANGED_IDENTITIES": {
+    "NEW_CANONICAL_IDENTITIES": [],
+    "NEW_PROVISIONAL_PHYSICAL_IDENTITIES": [],
+    "NEW_PROVISIONAL_SERVICE_NETWORK_IDENTITIES": [
+      "T5-PROV-FSN-SPR-001",
+      "T5-PROV-FSN-CHM-001"
+    ],
+    "REUSED_C001_PROVISIONAL_IDENTITIES": [
+      "T5-PROV-FSN-MAT-001",
+      "T5-PROV-PROC-MAT-001",
+      "T5-PROV-FSN-MNT-001",
+      "T5-PROV-PROC-MNT-001",
+      "T5-PROV-FSN-TCL-001",
+      "T5-PROV-FSN-LFT-001",
+      "T5-PROV-FSN-COM-001",
+      "T5-PROV-FSN-WDE-001",
+      "T5-PROV-FSN-REC-001",
+      "T5-PROV-REC-MNT-001",
+      "T5-PROV-REC-MAT-001",
+      "T5-PROV-REC-LFT-001",
+      "T5-PROV-REC-COM-001"
+    ],
+    "NEW_PROVISIONAL_ANNEX_IDENTITIES": [
+      "T5-PROV-DATA-MATERIAL-TRANSACTION-LEDGER-001",
+      "T5-PROV-DATA-STORAGE-PRESERVATION-REGISTER-001",
+      "T5-PROV-DATA-TOOL-CALIBRATION-LEDGER-001",
+      "T5-PROV-DATA-MAINT-WORK-PMT-RESTORATION-001",
+      "T5-PROV-DATA-TEMP-CONFIG-PLANTWIDE-001",
+      "T5-PROV-DATA-SPARES-OBSOLESCENCE-001",
+      "T5-PROV-DATA-REMOTE-MAINT-ROUTE-001",
+      "T5-PROV-DATA-MAINT-WASTE-EFFLUENT-001",
+      "T5-PROV-DATA-CHEM-LAB-SAMPLE-001"
+    ],
+    "T3_NAMESPACE_CHANGES": [],
+    "IDENTITY_RECONCILIATION_REQUIRED": true
+  },
+  "PARAMETER_CHANGES": {
+    "CANONICAL_PARAMETER_CHANGES": [],
+    "WORKING_COUNTS_CARRIED_OR_CONFIRMED": [
+      {
+        "PARAMETER": "MAINT_WH_WORKING_ASSET_COUNT",
+        "VALUE": 70,
+        "STATUS": "WORKING_DATASET_NOT_SELF_AUTHENTICATING"
+      },
+      {
+        "PARAMETER": "PERMANENT_HANDLING_WORKING_ASSET_COUNT",
+        "VALUE": 158,
+        "STATUS": "WORKING_DATASET_NOT_SELF_AUTHENTICATING"
+      },
+      {
+        "PARAMETER": "HEAVY_LOGISTICS_WORKING_ASSET_COUNT",
+        "VALUE": 92,
+        "STATUS": "WORKING_DATASET_NOT_SELF_AUTHENTICATING"
+      },
+      {
+        "PARAMETER": "HOTCELL_RH_WORKING_ASSET_COUNT",
+        "VALUE": 52,
+        "STATUS": "WORKING_DATASET_NOT_SELF_AUTHENTICATING"
+      },
+      {
+        "PARAMETER": "RADWASTE_DECON_WORKING_ASSET_COUNT",
+        "VALUE": 45,
+        "STATUS": "WORKING_DATASET_NOT_SELF_AUTHENTICATING"
+      },
+      {
+        "PARAMETER": "DRAINAGE_EFFLUENT_WORKING_ASSET_COUNT",
+        "VALUE": 78,
+        "STATUS": "WORKING_DATASET_NOT_SELF_AUTHENTICATING"
+      },
+      {
+        "PARAMETER": "ENV_MONITORING_WORKING_ASSET_COUNT",
+        "VALUE": 50,
+        "STATUS": "WORKING_DATASET_NOT_SELF_AUTHENTICATING"
+      },
+      {
+        "PARAMETER": "LABORATORY_WORKING_ASSET_COUNT",
+        "VALUE": 20,
+        "STATUS": "WORKING_DATASET_NOT_SELF_AUTHENTICATING"
+      },
+      {
+        "PARAMETER": "TEMP_COMMISSIONING_WORKING_ASSET_COUNT",
+        "VALUE": 226,
+        "STATUS": "C001_WORKING_DATASET_COUNT_NOT_SELF_AUTHENTICATING"
+      }
+    ],
+    "UNSUPPORTED_PARAMETER_CLOSURES": 0
+  },
+  "RELATIONSHIP_CHANGES": [
+    {
+      "RELATIONSHIP_ID": "T5-C003-REL-001",
+      "FROM": "T5-PROV-FSN-TCL-001",
+      "RELATIONSHIP": "PHYSICALLY_SUPPORTED_BY",
+      "TO": "MAINT-WH/MNT-106-CAL-*",
+      "STATUS": "PROPOSED_E_WITH_SOURCE_SUPPORTED_ASSET_CLASS"
+    },
+    {
+      "RELATIONSHIP_ID": "T5-C003-REL-002",
+      "FROM": "T5-PROV-FSN-MAT-001",
+      "RELATIONSHIP": "USES_MATERIAL_HANDLING_CAPABILITY",
+      "TO": "MAINT-WH/MNT-107-FLT-*",
+      "STATUS": "PROPOSED_E_WITH_SOURCE_SUPPORTED_ASSET_CLASS"
+    },
+    {
+      "RELATIONSHIP_ID": "T5-C003-REL-003",
+      "FROM": "T5-PROV-FSN-LFT-001",
+      "RELATIONSHIP": "USES_RIGGING_CAPABILITY",
+      "TO": "MAINT-WH/MNT-108-RIG-*",
+      "STATUS": "PROPOSED_E_WITH_SOURCE_SUPPORTED_ASSET_CLASS"
+    },
+    {
+      "RELATIONSHIP_ID": "T5-C003-REL-004",
+      "FROM": "T5-PROV-FSN-REC-001",
+      "RELATIONSHIP": "USES",
+      "TO": "HOTCELL-RH",
+      "STATUS": "PROPOSED_E_CARRY_FORWARD"
+    },
+    {
+      "RELATIONSHIP_ID": "T5-C003-REL-005",
+      "FROM": "T5-PROV-FSN-REC-001",
+      "RELATIONSHIP": "USES_REMOTE_TRANSPORT",
+      "TO": "CKS-911-AGV_AND_CASK_FAMILIES",
+      "STATUS": "PROPOSED_E"
+    },
+    {
+      "RELATIONSHIP_ID": "T5-C003-REL-006",
+      "FROM": "T5-PROV-FSN-WDE-001",
+      "RELATIONSHIP": "INTERFACES_WITH",
+      "TO": "RADWASTE-DECON",
+      "STATUS": "PROPOSED_E"
+    },
+    {
+      "RELATIONSHIP_ID": "T5-C003-REL-007",
+      "FROM": "T5-PROV-FSN-WDE-001",
+      "RELATIONSHIP": "INTERFACES_WITH",
+      "TO": "DRAINAGE-EFFLUENT",
+      "STATUS": "PROPOSED_E"
+    },
+    {
+      "RELATIONSHIP_ID": "T5-C003-REL-008",
+      "FROM": "T5-PROV-FSN-WDE-001",
+      "RELATIONSHIP": "INTERFACES_WITH",
+      "TO": "ENV-MONITORING",
+      "STATUS": "PROPOSED_E"
+    },
+    {
+      "RELATIONSHIP_ID": "T5-C003-REL-009",
+      "FROM": "T5-PROV-FSN-CHM-001",
+      "RELATIONSHIP": "USES",
+      "TO": "LABORATORY",
+      "STATUS": "PROPOSED_E"
+    },
+    {
+      "RELATIONSHIP_ID": "T5-C003-REL-010",
+      "FROM": "T5-PROV-FSN-COM-001",
+      "RELATIONSHIP": "PHYSICALLY_INSTANTIATED_BY",
+      "TO": "TEMP-COMMISSIONING",
+      "STATUS": "PROPOSED_E_WITH_WORKING_DATASET_SUPPORT"
+    },
+    {
+      "RELATIONSHIP_ID": "T5-C003-REL-011",
+      "FROM": "T5-PROV-FSN-SPR-001",
+      "RELATIONSHIP": "SUBSERVICE_OF_AND_CONSTRAINS",
+      "TO": "T5-PROV-FSN-MAT-001",
+      "STATUS": "PROPOSED_E"
+    },
+    {
+      "RELATIONSHIP_ID": "T5-C003-REL-012",
+      "FROM": "T5-PROV-PROC-MNT-001",
+      "RELATIONSHIP": "PRODUCES",
+      "TO": "FINAL_AS_LEFT_CONFIGURATION_STATE",
+      "STATUS": "PROPOSED_E"
+    }
+  ],
+  "CONFIGURATION_FINDINGS": [
+    {
+      "ID": "T5-C003-CFG-001",
+      "OBJECT": "TEMP-COMMISSIONING",
+      "FINDING": "Temporary support equipment shall be treated as configuration-affecting whenever connected to, substituting for or modifying a permanent-system test or operating boundary.",
+      "STATE": "SCHEMA_REQUIREMENT_CLOSED_ITEM_BINDING_PARTIAL"
+    },
+    {
+      "ID": "T5-C003-CFG-002",
+      "OBJECT": "MAINT-WH",
+      "FINDING": "Maintenance-shop equipment is physical support plant; use of an individual machine, calibration bench, forklift or rigging set remains a separate work transaction.",
+      "STATE": "PHYSICAL_POPULATION_ESTABLISHED_TRANSACTION_BINDING_OPEN"
+    },
+    {
+      "ID": "T5-C003-CFG-003",
+      "OBJECT": "REMOTE_MAINTENANCE_CHAIN",
+      "FINDING": "Remote tools, casks, transporters, hot-cell equipment and waste systems require synchronized availability/configuration for intervention capability.",
+      "STATE": "FUNCTIONAL_CHAIN_RECONSTRUCTED_EXACT_ROUTE_OPEN"
+    },
+    {
+      "ID": "T5-C003-CFG-004",
+      "OBJECT": "ELECTRICAL_COMMISSIONING",
+      "FINDING": "Energization and protection as-left configuration evidence remains open but is now wholly represented inside Thread 5 lifecycle/evidence architecture.",
+      "STATE": "FAIL_OPEN_EXECUTION_RECORDS"
+    },
+    {
+      "ID": "T5-C003-CFG-005",
+      "OBJECT": "M-88217",
+      "FINDING": "Administrative CLOSED/APPROVED state remains distinct from physical execution and as-left configuration state.",
+      "STATE": "GCF-C001-001_OPEN"
+    }
+  ],
+  "LIFECYCLE_FINDINGS": [
+    {
+      "ID": "T5-C003-LC-001",
+      "CHAIN": "PLANTWIDE_MATERIAL_TRANSACTION",
+      "SEQUENCE": [
+        "PROCUREMENT_ORIGIN",
+        "VENDOR_SUPPLIER_OEM_MANUFACTURER_FABRICATOR_AS_EVIDENCED",
+        "SHIPPING_RELEASE",
+        "TRANSPORT",
+        "SITE_RECEIPT",
+        "RECEIVING_INSPECTION",
+        "IDENTITY_AND_TRACEABILITY_RECONCILIATION",
+        "QUARANTINE_OR_TECHNICAL_RELEASE",
+        "STORAGE_LOCATION",
+        "PRESERVATION",
+        "MATERIAL_ISSUE",
+        "WORKFRONT_CUSTODY",
+        "INSTALLATION_OR_USE",
+        "RETURN_UNUSED_OR_DISPOSITION",
+        "TURNOVER_CUSTODY",
+        "OPERATING_CUSTODY",
+        "MAINTENANCE_TRANSACTION",
+        "FINAL_AS_LEFT_STATE"
+      ],
+      "STATUS": "ARCHITECTURE_ADVANCED_ITEM_LEVEL_COMPLETENESS_PARTIAL"
+    },
+    {
+      "ID": "T5-C003-LC-002",
+      "CHAIN": "MAINTENANCE",
+      "SEQUENCE": [
+        "NEED",
+        "REQUEST",
+        "SCOPE",
+        "WORK_ORDER",
+        "CUSTODY_AUTHORIZATION",
+        "ISOLATION_LOTO",
+        "ACCESS_RELEASE",
+        "TOOLS_CALIBRATION",
+        "PARTS_MATERIALS",
+        "AS_FOUND",
+        "PHYSICAL_WORK",
+        "INSPECTION",
+        "PMT",
+        "RESTORATION",
+        "CONFIGURATION_CONFIRMATION",
+        "CLOSEOUT",
+        "RETAINED_EVIDENCE"
+      ],
+      "STATUS": "ARCHITECTURE_ADVANCED"
+    },
+    {
+      "ID": "T5-C003-LC-003",
+      "CHAIN": "TEMPORARY_CONFIGURATION",
+      "SEQUENCE": [
+        "NEED",
+        "TECHNICAL_BASIS",
+        "DESIGN_OR_CONFIGURATION_RELEASE",
+        "AUTHORIZATION",
+        "MATERIAL_AND_EQUIPMENT_CONTROL",
+        "INSTALLATION",
+        "INSPECTION",
+        "CALIBRATION_IF_APPLICABLE",
+        "TEST_OR_OPERATIONAL_USE",
+        "MONITORING",
+        "REMOVAL_OR_FORMAL_RETENTION",
+        "RESTORATION",
+        "AS_LEFT_CONFIRMATION",
+        "ARCHIVE"
+      ],
+      "STATUS": "ARCHITECTURE_ADVANCED_POPULATION_BINDING_PARTIAL"
+    },
+    {
+      "ID": "T5-C003-LC-004",
+      "CHAIN": "REMOTE_MAINTENANCE",
+      "SEQUENCE": [
+        "INTERVENTION_NEED",
+        "SAFE_PLANT_CONFIGURATION",
+        "REMOTE_TOOL_PREPARATION",
+        "COMPONENT_DISCONNECTION_OR_REMOVAL",
+        "CONFINEMENT_OR_CASKING",
+        "TRANSPORT",
+        "HOT_CELL_RECEIPT",
+        "DECONTAMINATION_IF_REQUIRED",
+        "INSPECTION",
+        "REPAIR_REFURBISHMENT_OR_SEGMENTATION",
+        "REQUALIFICATION",
+        "STORAGE_REINSTALLATION_OR_WASTE_DISPOSITION",
+        "RESTORATION"
+      ],
+      "STATUS": "FUNCTIONAL_SEQUENCE_RECONSTRUCTED"
+    }
+  ],
+  "PROCUREMENT_SUPPLY_CHAIN_FINDINGS": [
+    {
+      "ID": "T5-C003-SC-001",
+      "FINDING": "The plantwide transaction model must retain vendor, supplier, OEM, manufacturer, fabricator and trading company as separate role classes because they may or may not be the same legal/physical entity for a given item.",
+      "STATUS": "MODEL_REQUIREMENT"
+    },
+    {
+      "ID": "T5-C003-SC-002",
+      "FINDING": "No supplier role shall be assigned to a specific support asset unless directly evidenced in the project corpus.",
+      "STATUS": "CONTROL_RULE"
+    },
+    {
+      "ID": "T5-C003-SC-003",
+      "FINDING": "Supplier release and shipping release do not equal site technical acceptance, and site receipt does not equal material release for installation.",
+      "STATUS": "ENGINEERED_RECONSTRUCTION_SUPPORTED_BY_PRECEDENT"
+    },
+    {
+      "ID": "T5-C003-SC-004",
+      "FINDING": "Spare-part procurement must connect procurement configuration to the installed design/configuration basis and subsequent replacement history.",
+      "STATUS": "AUTHORITATIVE_PRECEDENT"
+    }
+  ],
+  "MATERIAL_CUSTODY_FINDINGS": [
+    {
+      "ID": "T5-C003-MAT-001",
+      "FINDING": "Material custody requires explicit state transitions rather than only arrival and installation dates.",
+      "REQUIRED_STATES": [
+        "IN_TRANSIT",
+        "RECEIVED_PENDING_INSPECTION",
+        "QUARANTINED_IF_APPLICABLE",
+        "ACCEPTED_FOR_STORAGE",
+        "PRESERVED",
+        "RELEASED_FOR_ISSUE",
+        "ISSUED_TO_WORKFRONT",
+        "INSTALLED_OR_CONSUMED",
+        "RETURNED_UNUSED",
+        "TURNED_OVER",
+        "OPERATING_CUSTODY",
+        "REMOVED_FOR_MAINTENANCE",
+        "REINSTALLED_OR_DISPOSED"
+      ]
+    },
+    {
+      "ID": "T5-C003-MAT-002",
+      "FINDING": "MAINT-WH forklifts and rigging equipment provide physical material-handling capability but do not identify the movement history of any particular item.",
+      "CITATION": ":chatgpt-content-reference{index="43"}"
+    },
+    {
+      "ID": "T5-C003-MAT-003",
+      "FINDING": "Heavy logistics and permanent handling shall be connected to the same item-level custody record when an item moves from delivery/laydown through final installation or later maintenance removal.",
+      "STATUS": "PROPOSED_E"
+    }
+  ],
+  "MAINTENANCE_FINDINGS": [
+    {
+      "ID": "T5-C003-MNT-001",
+      "FINDING": "The 70-item MAINT-WH population materially supports machining, balancing, welding, calibration, warehouse movement and rigging functions.",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="44"}",
+        ":chatgpt-content-reference{index="45"}"
+      ]
+    },
+    {
+      "ID": "T5-C003-MNT-002",
+      "FINDING": "Every maintenance action capable of affecting configuration requires a controlled path to inspection, PMT where applicable, restoration and final configuration confirmation.",
+      "STATUS": "AUTHORITATIVE_PRECEDENT_PLUS_ENGINEERED_RECONSTRUCTION"
+    },
+    {
+      "ID": "T5-C003-MNT-003",
+      "FINDING": "Maintenance records must capture actual parts/material consumption and actual work performed where those details are necessary for configuration or reliability history.",
+      "STATUS": "AUTHORITATIVE_PRECEDENT"
+    },
+    {
+      "ID": "T5-C003-MNT-004",
+      "FINDING": "M-88217 remains a negative control demonstrating why work-management state and verified maintenance execution must remain independent.",
+      "STATUS": "GCF_CARRIED_OPEN"
+    }
+  ],
+  "COMMISSIONING_FINDINGS": [
+    {
+      "ID": "T5-C003-COM-001",
+      "FINDING": "TEMP-COMMISSIONING is a physical equipment population rather than an abstract commissioning activity.",
+      "STATUS": "WORKING_DATASET_SUPPORTED"
+    },
+    {
+      "ID": "T5-C003-COM-002",
+      "FINDING": "Representative temporary commissioning assets pass through arrival, installation, mechanical completion, turnover and commissioning states in the working history, but that history alone does not define exact target-system connection or final restoration.",
+      "CITATION": ":chatgpt-content-reference{index="46"}"
+    },
+    {
+      "ID": "T5-C003-COM-003",
+      "FINDING": "Commissioning baseline measurements, temporary-configuration disposition and unresolved deficiencies are required inputs to operating/maintenance custody.",
+      "STATUS": "AUTHORITATIVE_PRECEDENT"
+    }
+  ],
+  "TEMPORARY_CONFIGURATION_FINDINGS": [
+    {
+      "ID": "T5-C003-TMP-001",
+      "FINDING": "Temporary configurations shall be first-class configuration objects whenever they alter flow path, electrical connectivity, protection logic, support/load path, instrumentation, test boundary, access, confinement or operating lineup.",
+      "STATUS": "ENGINEERED_RECONSTRUCTION"
+    },
+    {
+      "ID": "T5-C003-TMP-002",
+      "FINDING": "The final state of a temporary object must be one of REMOVED, FORMALLY_RETAINED_AS_CONTROLLED_CONFIGURATION or OPEN_UNRESOLVED; disappearance from active testing is not sufficient.",
+      "STATUS": "ENGINEERED_RECONSTRUCTION"
+    },
+    {
+      "ID": "T5-C003-TMP-003",
+      "FINDING": "Electrical temporary-test configuration requirements from Cycle 002 are fully inherited into the plantwide temporary-configuration model and no Thread 3 dependency remains.",
+      "STATUS": "WORKFLOW_CONTROL"
+    }
+  ],
+  "BOUNDARY_FINDINGS": [
+    {
+      "BOUNDARY_CONTRACT_ID": "BC-C003-T2-T5-MECHANICAL-MAINTENANCE-PRESERVATION-COMMISSIONING",
+      "STATUS": "RETURN_INPUT_READY",
+      "THREAD5_PROVIDES": [
+        "MATERIAL_AND_PRESERVATION_TRANSACTION_MODEL",
+        "MAINTENANCE_WORK_CONTROL_MODEL",
+        "TOOL_AND_CALIBRATION_MODEL",
+        "TEMPORARY_CONFIGURATION_MODEL",
+        "PMT_RESTORATION_AS_LEFT_EVIDENCE_MODEL",
+        "MAINTENANCE_WASTE_AND_CHEMISTRY_INTERFACES"
+      ],
+      "REQUIRED_FROM_T2": [
+        "SYSTEM_SPECIFIC_ISOLATION_BOUNDARIES",
+        "DESIGN_SPECIFIC_PMT_CRITERIA",
+        "FLUSH_CLEANLINESS_AND_CHEMISTRY_REQUIREMENTS",
+        "COMPONENT_REMOVAL_AND_REINSTALLATION_TECHNICAL_REQUIREMENTS",
+        "PRESERVATION_REQUIREMENTS_WHERE_MECHANICALLY_DESIGN_SPECIFIC"
+      ]
+    },
+    {
+      "BOUNDARY_CONTRACT_ID": "BC-C003-T1-T5-ELECTRICAL-ENERGIZATION-PRESERVATION-ASLEFT",
+      "STATUS": "ACTIVE_NO_THREAD3_DEPENDENCY",
+      "THREAD5_OWNS": [
+        "WORK_CONTROL",
+        "LOTO",
+        "SWITCHING_EVIDENCE",
+        "ENERGIZATION_EVIDENCE",
+        "TEST_SUPPORT",
+        "CALIBRATION",
+        "PRESERVATION",
+        "SPARES",
+        "BATTERY_DC_UPS_MAINTENANCE",
+        "RELAY_IED_REPLACEMENT_CONFIGURATION_EVIDENCE",
+        "PMT",
+        "RESTORATION",
+        "AS_LEFT_EVIDENCE"
+      ],
+      "REQUIRED_FROM_THREAD1": [
+        "AUTHORITATIVE_ONE_LINE_AND_FEEDER_IDENTITY",
+        "PROTECTION_CONFIGURATION_REQUIREMENTS",
+        "CT_VT_ASSIGNMENT_REQUIREMENTS",
+        "EQUIPMENT_SPECIFIC_ACCEPTANCE_CRITERIA"
+      ]
+    },
+    {
+      "BOUNDARY_CONTRACT_ID": "BC-C003-T4-T5-CONSTRUCTION-LOGISTICS-CUSTODY-TURNOVER-MAINTENANCE",
+      "STATUS": "RETURN_INPUT_READY",
+      "THREAD5_PROVIDES": [
+        "ITEM_LEVEL_CUSTODY_STATE_MODEL",
+        "WAREHOUSE_LAYDOWN_PRESERVATION_REQUIREMENTS",
+        "LIFT_RELEASE_AND_RIGGING_EVIDENCE_MODEL",
+        "TURNOVER_CUSTODY_MODEL",
+        "MAINTENANCE_REMOVAL_AND_RETURN_CUSTODY_MODEL"
+      ],
+      "REQUIRED_FROM_T4": [
+        "SPATIAL_LAYDOWN_AND_STORAGE_GEOMETRY",
+        "CONTROLLED_TRANSPORT_AND_LIFT_ROUTES",
+        "ACCESS_AND_REMOVAL_ENVELOPES",
+        "FLOOR_AND_SUPPORT_LOAD_CONSTRAINTS",
+        "TEMPORARY_SUPPORT_AND_OPENING_CONFIGURATION"
+      ]
+    }
+  ],
+  "VALIDATION_RESULTS": [
+    {
+      "VALIDATION_ID": "T5-C003-VAL-001",
+      "METHOD": "PLANTWIDE_SUPPORT_FUNCTION_COMPLETENESS",
+      "RESULT": "PARTIAL_PASS",
+      "DETAIL": "Major physical support families are present; transaction and evidence bindings remain incomplete."
+    },
+    {
+      "VALIDATION_ID": "T5-C003-VAL-002",
+      "METHOD": "MATERIAL_FLOW_FEASIBILITY",
+      "RESULT": "PASS_ARCHITECTURE_PARTIAL_EXECUTION_HISTORY"
+    },
+    {
+      "VALIDATION_ID": "T5-C003-VAL-003",
+      "METHOD": "PRESERVATION_CONTINUITY",
+      "RESULT": "PARTIAL",
+      "DETAIL": "Lifecycle requirement is coherent; item-specific execution evidence is incomplete."
+    },
+    {
+      "VALIDATION_ID": "T5-C003-VAL-004",
+      "METHOD": "TOOL_AND_CALIBRATION_SUPPORT",
+      "RESULT": "PASS_PHYSICAL_CAPABILITY_OPEN_TRANSACTION_TRACE"
+    },
+    {
+      "VALIDATION_ID": "T5-C003-VAL-005",
+      "METHOD": "MAINTENANCE_WORK_CONTROL",
+      "RESULT": "PASS_SCHEMA_PARTIAL_PLANTWIDE_INSTANCE_CLOSURE"
+    },
+    {
+      "VALIDATION_ID": "T5-C003-VAL-006",
+      "METHOD": "PMT_AND_RESTORATION",
+      "RESULT": "PASS_REQUIREMENT_MODEL_PARTIAL_EVIDENCE"
+    },
+    {
+      "VALIDATION_ID": "T5-C003-VAL-007",
+      "METHOD": "TEMPORARY_CONFIGURATION_CONTROL",
+      "RESULT": "PARTIAL_PASS",
+      "DETAIL": "Physical population and lifecycle exist; exact target-system connections and final disposition remain incomplete."
+    },
+    {
+      "VALIDATION_ID": "T5-C003-VAL-008",
+      "METHOD": "REMOTE_MAINTAINABILITY",
+      "RESULT": "PARTIAL_PASS",
+      "DETAIL": "Physical handling, cask, decon, manipulation and repair capability exists; exact intervention routes and recovery cases remain open."
+    },
+    {
+      "VALIDATION_ID": "T5-C003-VAL-009",
+      "METHOD": "MAINTENANCE_WASTE_AND_EFFLUENT_INTERFACE",
+      "RESULT": "PASS_FUNCTIONAL_ARCHITECTURE_OPEN_JOB_LEVEL_BINDING"
+    },
+    {
+      "VALIDATION_ID": "T5-C003-VAL-010",
+      "METHOD": "ELECTRICAL_SCOPE_INTERNALIZATION",
+      "RESULT": "PASS",
+      "DETAIL": "No Thread 3 dependency remains."
+    },
+    {
+      "VALIDATION_ID": "T5-C003-VAL-011",
+      "METHOD": "M88217_EVIDENCE_DISCIPLINE",
+      "RESULT": "PASS",
+      "DETAIL": "No unsupported binary execution or causal conclusion introduced."
+    }
+  ],
+  "VERIFICATION_RESULTS": [
+    {
+      "VERIFICATION_ID": "T5-C003-VER-001",
+      "METHOD": "SOURCE_TO_PHYSICAL_SUPPORT_FAMILY",
+      "RESULT": "PASS"
+    },
+    {
+      "VERIFICATION_ID": "T5-C003-VER-002",
+      "METHOD": "SOURCE_TO_MAINT_WH_ASSET_CLASS",
+      "RESULT": "PASS",
+      "CITATION": ":chatgpt-content-reference{index="47"}"
+    },
+    {
+      "VERIFICATION_ID": "T5-C003-VER-003",
+      "METHOD": "SOURCE_TO_HOTCELL_RH_ASSET_CLASS",
+      "RESULT": "PASS",
+      "CITATION": ":chatgpt-content-reference{index="48"}"
+    },
+    {
+      "VERIFICATION_ID": "T5-C003-VER-004",
+      "METHOD": "SOURCE_TO_RADWASTE_DECON_ASSET_CLASS",
+      "RESULT": "PASS",
+      "CITATION": ":chatgpt-content-reference{index="49"}"
+    },
+    {
+      "VERIFICATION_ID": "T5-C003-VER-005",
+      "METHOD": "SOURCE_TO_TEMP_COMMISSIONING_LIFECYCLE",
+      "RESULT": "PASS_AT_WORKING_DATASET_LEVEL"
+    },
+    {
+      "VERIFICATION_ID": "T5-C003-VER-006",
+      "METHOD": "SOURCE_TO_VENDOR_SUPPLIER_PERSON_ASSIGNMENT",
+      "RESULT": "PASS_NEGATIVE_CONTROL",
+      "DETAIL": "No unsupported vendor, supplier, manufacturer or individual was assigned."
+    },
+    {
+      "VERIFICATION_ID": "T5-C003-VER-007",
+      "METHOD": "REQUIRED_DOCUMENT_CLASS_VS_HISTORICAL_EXISTENCE",
+      "RESULT": "PASS_NEGATIVE_CONTROL"
+    },
+    {
+      "VERIFICATION_ID": "T5-C003-VER-008",
+      "METHOD": "ELECTRICAL_UNSUPPORTED_SETTINGS_TEST_RESULTS",
+      "RESULT": "PASS_NEGATIVE_CONTROL"
+    },
+    {
+      "VERIFICATION_ID": "T5-C003-VER-009",
+      "METHOD": "M88217_CAUSAL_CONTROL",
+      "RESULT": "PASS_NEGATIVE_CONTROL"
+    }
+  ],
+  "ASSURANCE_RESULTS": {
+    "ASSURANCE_CLASS": "AS3",
+    "RESULT": "PASS_FOR_WAVE1_WITH_OPEN_ITEM_REGISTRY",
+    "GENERATION_IS_ACCEPTANCE": false,
+    "CHECKS": [
+      "BASELINE_AND_STAGING_PIN_CHECK",
+      "C001_C002_IDENTITY_REUSE_CHECK",
+      "THREAD3_RETIREMENT_CHECK",
+      "FUNCTIONAL_COMPLETENESS_SCAN",
+      "PHYSICAL_SUPPORT_POPULATION_CHECK",
+      "TRANSACTION_MODEL_CHECK",
+      "CUSTODY_STATE_CHECK",
+      "PRESERVATION_CHECK",
+      "TOOL_CALIBRATION_CHECK",
+      "TEMPORARY_CONFIGURATION_CHECK",
+      "REMOTE_MAINTENANCE_CHECK",
+      "WASTE_EFFLUENT_CHECK",
+      "ELECTRICAL_SCOPE_INTERNALIZATION_CHECK",
+      "SOURCE_TO_CLAIM_CHECK",
+      "NO_PERSON_INVENTION_CHECK",
+      "NO_VENDOR_INVENTION_CHECK",
+      "NO_REQUIRED_DOCUMENT_EQUALS_EXISTENCE_CHECK",
+      "NO_MISSING_RECORD_EQUALS_NONPERFORMANCE_CHECK",
+      "NO_M88217_BINARY_CLOSURE_CHECK"
+    ],
+    "PRIMARY_CONCLUSION": "Wave 1 establishes a coherent plantwide support and lifecycle architecture grounded in substantial existing physical support populations while preserving the distinction between physical capability, required process/evidence architecture and actual historical transaction proof."
+  },
+  "CONFLICTS": [
+    {
+      "CONFLICT_ID": "GCF-C001-001",
+      "SUBJECT": "M-88217_ADMINISTRATIVE_STATE_VS_VERIFIABLE_PHYSICAL_EXECUTION",
+      "STATE_BEFORE_C003": "OPEN",
+      "STATE_AFTER_C003": "OPEN",
+      "MATERIAL_NEW_PROJECT_EVIDENCE_FOUND": false,
+      "CAUSAL_CONCLUSION_CHANGED": false,
+      "C003_EFFECT": "Plantwide support modeling strengthens the required evidence taxonomy but does not resolve the historical execution gap."
+    }
+  ],
+  "OPEN_ITEMS": [
+    {
+      "ID": "T5-C003-OI-001",
+      "SUBJECT": "WAREHOUSE_BIN_BAY_AND_LAYDOWN_TRANSACTION_HISTORY",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "ID": "T5-C003-OI-002",
+      "SUBJECT": "ITEM_SPECIFIC_PRESERVATION_HISTORY",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "ID": "T5-C003-OI-003",
+      "SUBJECT": "PLANTWIDE_CRITICAL_SPARES_AND_OBSOLESCENCE_REGISTER",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "ID": "T5-C003-OI-004",
+      "SUBJECT": "TOOL_ISSUE_RETURN_AND_CALIBRATION_WORK_LINKAGE",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "ID": "T5-C003-OI-005",
+      "SUBJECT": "TEMP_COMMISSIONING_TARGET_SYSTEM_BINDING",
+      "PRIORITY": "CRITICAL"
+    },
+    {
+      "ID": "T5-C003-OI-006",
+      "SUBJECT": "TEMP_COMMISSIONING_REMOVAL_OR_FORMAL_RETENTION",
+      "PRIORITY": "CRITICAL"
+    },
+    {
+      "ID": "T5-C003-OI-007",
+      "SUBJECT": "REMOTE_MAINTENANCE_ROUTE_AND_RECOVERY_ENVELOPES",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "ID": "T5-C003-OI-008",
+      "SUBJECT": "MAINTENANCE_WASTE_TO_RADWASTE_DRAINAGE_DECON_TRANSACTION_BINDING",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "ID": "T5-C003-OI-009",
+      "SUBJECT": "CHEMISTRY_SAMPLE_CHAIN_AND_ACCEPTANCE_CRITERIA",
+      "PRIORITY": "MEDIUM_HIGH"
+    },
+    {
+      "ID": "T5-C003-OI-010",
+      "SUBJECT": "ELECTRICAL_ENERGIZATION_SWITCHING_LOTO_AS_LEFT",
+      "PRIORITY": "CRITICAL"
+    },
+    {
+      "ID": "T5-C003-OI-011",
+      "SUBJECT": "BATTERY_DC_UPS_CAPACITY_AND_MAINTENANCE_HISTORY",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "ID": "T5-C003-OI-012",
+      "SUBJECT": "RELAY_IED_REPLACEMENT_CONFIGURATION_CONTROL",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "ID": "T5-C003-OI-013",
+      "SUBJECT": "F106_F101_ITEM_LEVEL_CUSTODY_AND_MAINTENANCE_REMOVAL",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "ID": "T5-C003-OI-014",
+      "SUBJECT": "M88217_EXECUTION_EVIDENCE",
+      "PRIORITY": "CRITICAL",
+      "STATE": "OPEN_NO_NEW_C003_EVIDENCE"
+    }
+  ],
+  "UNCERTAINTIES": [
+    {
+      "ID": "T5-C003-UNC-001",
+      "SUBJECT": "SUPPORT_ASSET_TO_INDIVIDUAL_WORK_TRANSACTION_BINDING",
+      "STATE": "PARTIAL"
+    },
+    {
+      "ID": "T5-C003-UNC-002",
+      "SUBJECT": "SUPPORT_ASSET_VENDOR_SUPPLIER_OEM",
+      "STATE": "ITEM_SPECIFIC_OPEN_WHERE_NOT_EVIDENCED"
+    },
+    {
+      "ID": "T5-C003-UNC-003",
+      "SUBJECT": "PRESERVATION_METHOD_AND_INTERVAL",
+      "STATE": "ITEM_SPECIFIC_OPEN"
+    },
+    {
+      "ID": "T5-C003-UNC-004",
+      "SUBJECT": "TEMPORARY_CONFIGURATION_FINAL_DISPOSITION",
+      "STATE": "PARTIAL_OPEN"
+    },
+    {
+      "ID": "T5-C003-UNC-005",
+      "SUBJECT": "REMOTE_MAINTENANCE_EXACT_ROUTES",
+      "STATE": "OPEN"
+    },
+    {
+      "ID": "T5-C003-UNC-006",
+      "SUBJECT": "MAINTENANCE_WASTE_CONTAMINATION_CLASSIFICATION",
+      "STATE": "JOB_SPECIFIC_OPEN"
+    },
+    {
+      "ID": "T5-C003-UNC-007",
+      "SUBJECT": "ELECTRICAL_AS_LEFT_EXECUTION",
+      "STATE": "OPEN"
+    },
+    {
+      "ID": "T5-C003-UNC-008",
+      "SUBJECT": "M88217_PHYSICAL_EXECUTION",
+      "STATE": "OPEN_CRITICAL"
+    }
+  ],
+  "BACKWARD_PROPAGATION_RECOMMENDATIONS": [
+    {
+      "ID": "T5-C003-BP-001",
+      "TARGET": "PHYSICAL_OBJECT_SCHEMA",
+      "ACTION": "Add custody, preservation, storage-location, temporary-configuration, maintenance-state and final-as-left links as first-class lifecycle properties."
+    },
+    {
+      "ID": "T5-C003-BP-002",
+      "TARGET": "CONTROLLED_ASSET_REGISTER",
+      "ACTION": "Add transaction references for receipt, quarantine, storage, preservation, issue, turnover, maintenance removal and final disposition."
+    },
+    {
+      "ID": "T5-C003-BP-003",
+      "TARGET": "MASTER_EVENT_TIMELINE",
+      "ACTION": "Separate administrative lifecycle events from verified physical state transitions."
+    },
+    {
+      "ID": "T5-C003-BP-004",
+      "TARGET": "EQUIPMENT_DOSSIERS",
+      "ACTION": "Add maintenance route, lifting/removal envelope, special tooling, spares, preservation, PMT and waste/decon interfaces."
+    },
+    {
+      "ID": "T5-C003-BP-005",
+      "TARGET": "TEMPORARY_CONFIGURATION_SCHEMA",
+      "ACTION": "Require explicit target-system binding and REMOVED, FORMALLY_RETAINED or OPEN final state."
+    },
+    {
+      "ID": "T5-C003-BP-006",
+      "TARGET": "TURNOVER_DOSSIER_SCHEMA",
+      "ACTION": "Carry preservation history, baseline measurements, outstanding temporary configurations, spare/tool state and initial maintenance basis into operating custody."
+    },
+    {
+      "ID": "T5-C003-BP-007",
+      "TARGET": "REMOTE_HANDLING_ATLAS",
+      "ACTION": "Add complete component-removal-to-hot-cell-to-requalification-or-waste lifecycle and failed-equipment recovery routes."
+    },
+    {
+      "ID": "T5-C003-BP-008",
+      "TARGET": "WASTE_AND_EFFLUENT_ATLAS",
+      "ACTION": "Add source-work-order and source-component relationships to waste, decon and effluent streams."
+    },
+    {
+      "ID": "T5-C003-BP-009",
+      "TARGET": "ELECTRICAL_COMMISSIONING_AND_MAINTENANCE_SCHEMA",
+      "ACTION": "Retain Cycle 002 energization, preservation, spares, battery/UPS, IED configuration and restoration evidence requirements under Thread 5 ownership."
+    },
+    {
+      "ID": "T5-C003-BP-010",
+      "TARGET": "M88217_FORENSIC_MODEL",
+      "ACTION": "Preserve evidence-state divergence and do not alter GCF-C001-001 without new historical evidence."
+    }
+  ],
+  "CROSS_BOUNDARY_DEPENDENCIES": [
+    {
+      "ID": "BC-C003-T2-T5-MECHANICAL-MAINTENANCE-PRESERVATION-COMMISSIONING",
+      "TARGET": "THREAD_2",
+      "BLOCKING_WAVE1_RETURN": false,
+      "REQUIRED_INPUTS": [
+        "SYSTEM_SPECIFIC_ISOLATION",
+        "DESIGN_SPECIFIC_PMT",
+        "FLUSH_CHEMISTRY_AND_CLEANLINESS",
+        "REMOVAL_REINSTALLATION_REQUIREMENTS"
+      ]
+    },
+    {
+      "ID": "BC-C003-T1-T5-ELECTRICAL-ENERGIZATION-PRESERVATION-ASLEFT",
+      "TARGET": "THREAD_1",
+      "BLOCKING_WAVE1_RETURN": false,
+      "REQUIRED_INPUTS": [
+        "AUTHORITATIVE_ELECTRICAL_TOPOLOGY",
+        "PROTECTION_REQUIREMENTS",
+        "CT_VT_ASSIGNMENTS",
+        "ACCEPTANCE_CRITERIA"
+      ],
+      "THREAD3_DEPENDENCY": false
+    },
+    {
+      "ID": "BC-C003-T4-T5-CONSTRUCTION-LOGISTICS-CUSTODY-TURNOVER-MAINTENANCE",
+      "TARGET": "THREAD_4",
+      "BLOCKING_WAVE1_RETURN": false,
+      "REQUIRED_INPUTS": [
+        "LAYDOWN_GEOMETRY",
+        "TRANSPORT_LIFT_ROUTES",
+        "REMOVAL_ENVELOPES",
+        "TEMPORARY_SUPPORT_CONFIGURATION"
+      ]
+    }
+  ],
+  "IDENTITY_RECONCILIATION_REQUESTS": [
+    {
+      "ID": "T5-C003-IDR-001",
+      "TARGET_THREAD": 1,
+      "SUBJECT": "T5-PROV-FSN-SPR-001",
+      "REQUEST": "Check whether a canonical or already-integrated plantwide spares/obsolescence service identity exists before promotion."
+    },
+    {
+      "ID": "T5-C003-IDR-002",
+      "TARGET_THREAD": 1,
+      "SUBJECT": "T5-PROV-FSN-CHM-001",
+      "REQUEST": "Check whether an integrated chemistry/sample/laboratory support service network already exists before promotion; do not duplicate physical LABORATORY or process-chemistry systems."
+    }
+  ],
+  "NEXT_INVESTIGATION_RECOMMENDATIONS": [
+    {
+      "ID": "T5-C003-NI-001",
+      "PRIORITY": "P0",
+      "SUBJECT": "PLANTWIDE_MATERIAL_TRANSACTION_POPULATION",
+      "ACTION": "Instantiate transaction rows for representative equipment from supplier release through final as-left, beginning with items already used in C001/C002 cross-cuts."
+    },
+    {
+      "ID": "T5-C003-NI-002",
+      "PRIORITY": "P0",
+      "SUBJECT": "TEMP_COMMISSIONING_CONFIGURATION_BINDING",
+      "ACTION": "Bind representative TMP-COM-PWR, TMP-COM-LOAD, TMP-COM-DAQ, TMP-COM-FLS, TMP-COM-FLT and TMP-COM-HYD assets to target systems, procedures, custody and final disposition."
+    },
+    {
+      "ID": "T5-C003-NI-003",
+      "PRIORITY": "P1",
+      "SUBJECT": "MAINT_WH_SERVICE_INSTANTIATION",
+      "ACTION": "Instantiate tool, calibration, material movement, rigging and repair transactions using MNT-106, MNT-107, MNT-108 and representative machine-shop equipment."
+    },
+    {
+      "ID": "T5-C003-NI-004",
+      "PRIORITY": "P1",
+      "SUBJECT": "REMOTE_MAINTENANCE_ROUTE_INSTANTIATION",
+      "ACTION": "Select representative blanket/divertor or other remotely handled component and construct complete removal, cask, transporter, hot-cell, decon, repair/requalification and waste-interface graph."
+    },
+    {
+      "ID": "T5-C003-NI-005",
+      "PRIORITY": "P1",
+      "SUBJECT": "MAINTENANCE_WASTE_AND_CHEMISTRY_TRANSACTION_INSTANTIATION",
+      "ACTION": "Instantiate representative flushing, filter, decon-liquid, removed-part and laboratory-sample transactions without assuming radioactive classification."
+    },
+    {
+      "ID": "T5-C003-NI-006",
+      "PRIORITY": "P1",
+      "SUBJECT": "ELECTRICAL_EVIDENCE_CONTINUATION",
+      "ACTION": "Continue native energization, switching, LOTO, CT/VT, relay, battery/UPS, temporary-test and final as-left evidence recovery solely through Thread 5/Thread 1 boundary."
+    },
+    {
+      "ID": "T5-C003-NI-007",
+      "PRIORITY": "CONDITIONAL",
+      "SUBJECT": "M88217",
+      "ACTION": "Reopen only if new native evidence or a newly resolved T2 technical requirement materially changes the evidentiary state."
+    }
+  ],
+  "CONTENT_MANIFEST": {
+    "PHYSICAL_SUPPORT_FAMILIES_DISCOVERED_OR_RECONFIRMED": 9,
+    "NEW_ENGINEERING_FINDINGS": 14,
+    "NEW_PROVISIONAL_SERVICE_NETWORK_IDENTITIES": 2,
+    "REUSED_C001_PROVISIONAL_IDENTITIES": 13,
+    "NEW_PROVISIONAL_ANNEX_DATASETS": 9,
+    "PROPOSED_RELATIONSHIP_CHANGES": 12,
+    "CONFIGURATION_FINDINGS": 5,
+    "LIFECYCLE_FINDINGS": 4,
+    "PROCUREMENT_SUPPLY_CHAIN_FINDINGS": 4,
+    "MATERIAL_CUSTODY_FINDINGS": 3,
+    "MAINTENANCE_FINDINGS": 4,
+    "COMMISSIONING_FINDINGS": 3,
+    "TEMPORARY_CONFIGURATION_FINDINGS": 3,
+    "BOUNDARY_FINDINGS": 3,
+    "VALIDATION_RESULTS": 11,
+    "VERIFICATION_RESULTS": 9,
+    "CONFLICTS_CLOSED": 0,
+    "CONFLICTS_RETAINED_OPEN": 1,
+    "OPEN_ITEMS": 14,
+    "UNCERTAINTIES": 8,
+    "BACKWARD_PROPAGATION_RECOMMENDATIONS": 10,
+    "CROSS_BOUNDARY_DEPENDENCIES": 3,
+    "IDENTITY_RECONCILIATION_REQUESTS": 2,
+    "NEXT_INVESTIGATION_RECOMMENDATIONS": 7,
+    "CANONICAL_IDS_MUTATED": 0,
+    "T3_IDS_MUTATED": 0,
+    "PERSON_LEVEL_HISTORY_INVENTED": 0,
+    "VENDOR_SUPPLIER_MANUFACTURER_IDENTITIES_INVENTED": 0,
+    "ELECTRICAL_SETTINGS_OR_TEST_RESULTS_INVENTED": 0,
+    "M88217_CAUSAL_CONCLUSIONS_CREATED": 0
+  },
+  "RETURN_COMPLETENESS_STATUS": {
+    "STATUS": "COMPLETE_TO_CYCLE_003_WAVE1_STOP_CONDITIONS",
+    "STOP_CONDITIONS": {
+      "PLANTWIDE_SUPPORT_AND_LIFECYCLE_DISCOVERY_WAVE1_EXECUTED": true,
+      "FIRST_WAVE_TRANSACTION_LEVEL_MATERIAL_AND_CUSTODY_MODELS_ADVANCED": true,
+      "TEMPORARY_CONFIGURATION_AND_COMMISSIONING_SUPPORT_POPULATIONS_ADVANCED": true,
+      "ELECTRICAL_LIFECYCLE_SCOPE_FULLY_INTERNALIZED_WITHOUT_THREAD3_DEPENDENCY": true,
+      "M88217_REMAINS_EVIDENCE_DISCIPLINED": true,
+      "ALL_MATERIAL_GAPS_REGISTERED": true
+    },
+    "PRIMARY_RESULT": "CYCLE_003_WAVE1_ESTABLISHES_PLANTWIDE_SUPPORT_PLANT_AS_A_PHYSICAL_AND_TRANSACTIONAL_LAYER; EXISTING_SUPPORT_HARDWARE_POPULATIONS_ARE_RETAINED_WHILE_MATERIAL_CUSTODY_PRESERVATION_SPARES_TOOL_CALIBRATION_MAINTENANCE_TEMPORARY_CONFIGURATION_REMOTE_HANDLING_WASTE_CHEMISTRY_AND_ELECTRICAL_ASLEFT_EVIDENCE_MODELS_ARE_SUBSTANTIALLY_DEEPENED.",
+    "M88217_GLOBAL_CONFLICT": "GCF-C001-001_OPEN_UNCHANGED",
+    "THREAD3_DEPENDENCY": "NONE",
+    "GLOBAL_ATLAS_COMPLETENESS_DECLARED": false,
+    "NEXT_MAJOR_TASK_AUTHORITY": "THREAD_1_ONLY"
+  }
+}

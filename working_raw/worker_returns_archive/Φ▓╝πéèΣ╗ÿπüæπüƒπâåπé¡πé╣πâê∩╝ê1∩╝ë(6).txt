@@ -1,0 +1,2213 @@
+{
+  "PACKAGE_ID": "OFG-EA-T4-C001-RETURN-R1",
+  "PACKAGE_VERSION": "1.0.0",
+  "PACKAGE_TYPE": "OFG_ENGINEERING_ATLAS_WORKER_RETURN",
+  "SOURCE_THREAD": 4,
+  "TARGET_THREAD": 1,
+  "CYCLE_ID": "OFG-EA-CYCLE-001",
+  "TASK_ID": "T4-C001-F106-F101-SECTOR-ASSEMBLY-ERECTION-CONSTRUCTION-CLOSURE",
+  "INPUT_BASELINE_ID": "OFG-EA-B000-REV3-REVW3-REVS-2031-04-19",
+  "CONFIGURATION_CUT": "2031-04-19",
+  "ASSURANCE_CLASS": "AS3",
+  "LOCAL_STATE_CAPSULE": {
+    "THREAD_ID": 4,
+    "THREAD_ROLE": "PARALLEL_ENGINEERING_REVIEW_WORKER",
+    "CURRENT_OPERATING_STATE": "W_RETURN_READY",
+    "CURRENT_CYCLE_ID": "OFG-EA-CYCLE-001",
+    "CURRENT_TASK_ID": "T4-C001-F106-F101-SECTOR-ASSEMBLY-ERECTION-CONSTRUCTION-CLOSURE",
+    "PINNED_BASELINE_ID": "OFG-EA-B000-REV3-REVW3-REVS-2031-04-19",
+    "LOCAL_CHECKPOINT_ID": "T4-CP-C001-RETURN-001",
+    "ASSIGNED_SCOPE_SUMMARY": [
+      "F-106_ASSEMBLY_HALL",
+      "F-101_TOKAMAK_BUILDING",
+      "F106_TO_F101_HEAVY_LIFT_AND_TRANSFER_PATH",
+      "TOROIDAL_SECTOR_ASSEMBLY_AND_CLOSURE_FRONT"
+    ],
+    "ACTIVE_SUBROUTINES": [],
+    "COMPLETED_SUBROUTINES": [
+      "SR010_GENERATE_RESEARCH_SCOPE",
+      "SR021_RECONSTRUCT_PHYSICAL_PLANT",
+      "SR030_RECONSTRUCT_LIFECYCLE",
+      "SR040_RECONSTRUCT_ACTOR_AND_AUTHORITY",
+      "SR050_VALIDATE_ENGINEERING",
+      "SR051_VERIFY_EVIDENCE"
+    ],
+    "ACTIVE_RECURSION_BRANCHES": [],
+    "COMPLETED_RECURSION_FUNCTIONS": [
+      "RF004_RECURSE_PHYSICAL_DECOMPOSITION",
+      "RF006_RECURSE_INTERFACE_TRACE",
+      "RF007_RECURSE_SPATIAL_AND_SUPPORT_CHAIN",
+      "RF008_RECURSE_LIFECYCLE_TRACE",
+      "RF009_RECURSE_SUPPLY_CHAIN",
+      "RF010_RECURSE_MANUFACTURING_HISTORY",
+      "RF011_RECURSE_CONSTRUCTION_WORKFACE",
+      "RF013_RECURSE_CONFIGURATION_CHRONOLOGY",
+      "RF014_RECURSE_ACTOR_AUTHORITY",
+      "RF015_RECURSE_INFORMATION_FLOW",
+      "RF016_RECURSE_VALIDATION",
+      "RF017_RECURSE_VERIFICATION",
+      "RF019_RECURSE_CONSTRUCTABILITY",
+      "RF023_RECURSE_BACKWARD_AND_CROSS_PROPAGATION_LOCAL_ASSESSMENT_ONLY",
+      "RF025_RECURSE_COMPLETENESS_SCAN",
+      "RF027_RECURSE_LOAD_CASE_CLOSURE",
+      "RF041_RECURSE_SOURCE_CLAIM_VERIFICATION",
+      "RF046_RECURSE_CROSS_DOMAIN_VALIDATION"
+    ],
+    "PROVISIONAL_IDENTITIES": [
+      "T4-PROV-WP-SECTOR-FACTORY-RELEASE",
+      "T4-PROV-WP-SECTOR-SITE-RECEIPT",
+      "T4-PROV-WP-SECTOR-PRESERVATION",
+      "T4-PROV-WP-F106-PREASSEMBLY",
+      "T4-PROV-WP-SECTOR-PRELIFT",
+      "T4-PROV-WP-SECTOR-TRANSFER-SET",
+      "T4-PROV-WP-SECTOR-TEMP-STABILIZATION",
+      "T4-PROV-WP-SECTOR-FITUP",
+      "T4-PROV-WP-SECTOR-CLOSURE-PIECE",
+      "T4-PROV-WP-SECTOR-WELD",
+      "T4-PROV-WP-SECTOR-NDE",
+      "T4-PROV-WP-SECTOR-LEAK",
+      "T4-PROV-WP-SECTOR-POSTWELD-SURVEY",
+      "T4-PROV-WP-SECTOR-LOAD-TRANSFER",
+      "T4-PROV-WP-SECTOR-ASBUILT-CLOSEOUT",
+      "T4-PROV-FJ-SECTOR-JOINT-FAMILY",
+      "T4-PROV-TW-SECTOR-STABILITY-FAMILY",
+      "T4-PROV-EXCL-SECTOR-LIFT-FAMILY"
+    ],
+    "LOCAL_OPEN_ITEMS": [
+      "T4-OI-C001-001",
+      "T4-OI-C001-002",
+      "T4-OI-C001-003",
+      "T4-OI-C001-004",
+      "T4-OI-C001-005",
+      "T4-OI-C001-006",
+      "T4-OI-C001-007",
+      "T4-OI-C001-008",
+      "T4-OI-C001-009",
+      "T4-OI-C001-010",
+      "T4-OI-C001-011",
+      "T4-OI-C001-012",
+      "T4-OI-C001-013",
+      "T4-OI-C001-014",
+      "T4-OI-C001-015",
+      "T4-OI-C001-016",
+      "T4-OI-C001-017",
+      "T4-OI-C001-018",
+      "T4-OI-C001-019",
+      "T4-OI-C001-020"
+    ],
+    "LOCAL_CONFLICTS": [
+      "T4-CONFLICT-C001-F106-F102-ASSEMBLY-HALL",
+      "T4-CONFLICT-C002-SECTOR-INSTALL-CHRONOLOGY",
+      "T4-CONFLICT-C003-CRANE-CAPACITY-STATUS"
+    ],
+    "BOUNDARY_DEPENDENCIES": [
+      "BC-C001-T2-T4-BHT401_SUPPORT_ANCHOR_BUILDING_INTERFACE",
+      "BC-C001-T3-T4-ELECTRICAL_CIVIL_DUCTBANK_PENETRATION_SUPPORT_AND_ROOM_INTERFACE",
+      "BC-C001-T4-T5-F101_F106_LIFTING_TOOLING_LOGISTICS_PRESERVATION_AND_TURNOVER"
+    ],
+    "VV_STATUS": {
+      "SOURCE_TO_CLAIM": "PASS",
+      "CONSTRUCTION_SEQUENCE": "PASS",
+      "TEMPORAL_CROSS_DATASET_RECONCILIATION": "FAIL_REQUIRES_THREAD_1_RECONCILIATION",
+      "HEAVY_LIFT_NUMERICAL_FEASIBILITY": "PARTIAL_BLOCKED_BY_OPEN_INPUTS",
+      "LOAD_PATH_TOPOLOGY": "PASS_WITH_NUMERICAL_CLOSURE_OPEN",
+      "TEMPORARY_STABILITY": "PARTIAL",
+      "METROLOGY_AND_JOINING_SEQUENCE": "PASS_LOGIC",
+      "NDE_AND_LEAK_TRACEABILITY": "PARTIAL",
+      "AS_BUILT_MODEL_REQUIREMENTS": "PASS",
+      "INSTANCE_LEVEL_AS_BUILT_EVIDENCE": "PARTIAL",
+      "MAINTAINABILITY_ACCESS": "PARTIAL_BLOCKED_BY_GEOMETRY"
+    },
+    "RETURN_STATUS": "READY",
+    "STATE_MANIFEST_ID": "T4-MANIFEST-C001-R1"
+  },
+  "EXECUTED_SCOPE": {
+    "STATUS": "EXECUTED_TO_STOP_CONDITION",
+    "PRIMARY_WORKFRONTS": [
+      {
+        "WORKFRONT": "F-106_ASSEMBLY_HALL",
+        "STATUS": "RECONSTRUCTED_TO_MAXIMUM_SUPPORTED_DEPTH",
+        "RESULT": "Assembly Hall reconstructed as a production system comprising controlled receipt/preservation, assembly stations, metrology control, crane/runway system, specialized tooling, temporary works, access/cleanliness state and release-to-lift functions rather than as a completed building alone."
+      },
+      {
+        "WORKFRONT": "F-101_TOKAMAK_BUILDING",
+        "STATUS": "RECONSTRUCTED_TO_MAXIMUM_SUPPORTED_DEPTH",
+        "RESULT": "F-101 sequence reconstructed from basemat/embed control through machine-support survey, open-top erection, toroidal joining, closure, in-vessel work and later live commissioning boundaries. Exact grids, elevations, structural dimensions and instance-level penetration coordinates remain OPEN."
+      },
+      {
+        "WORKFRONT": "F106_TO_F101_HEAVY_LIFT_AND_TRANSFER_PATH",
+        "STATUS": "LOGIC_RECONSTRUCTED_GEOMETRY_OPEN",
+        "RESULT": "Heavy-lift interface requires controlled opening, crane/transfer path, clean boundary, laydown, survey control and exclusion state. Legacy Rev3 material also contains an F102-to-F101 identity requiring canonical reconciliation."
+      },
+      {
+        "WORKFRONT": "TOROIDAL_SECTOR_ASSEMBLY_AND_CLOSURE_FRONT",
+        "STATUS": "RECONSTRUCTED_TO_MAXIMUM_SUPPORTED_DEPTH",
+        "RESULT": "Sector lift and toroidal joining are separate but overlapping production fronts. Sector placement can proceed while earlier joints undergo fit-up, welding, NDE, leak testing and post-weld metrology."
+      }
+    ],
+    "REPRESENTATIVE_CHAIN": {
+      "REFERENCE_INSTANCE": "SS-01",
+      "RATIONALE": "SS-01 provides the first canonical 2028 erection month and a complete controlled component identity family in the working asset/event data without requiring inference of a later-sector joining lag.",
+      "CHAIN_STATUS": "RECONSTRUCTED",
+      "CHAIN": [
+        "MANUFACTURING_ACCEPTANCE",
+        "SHIPMENT_RELEASE",
+        "SITE_RECEIPT",
+        "PRESERVATION_AND_LAYDOWN",
+        "F106_PREASSEMBLY",
+        "METROLOGY_RELEASE",
+        "RIGGING_AND_CRITICAL_LIFT_READINESS",
+        "F106_TO_F101_TRANSFER",
+        "F101_PIT_SET_AND_TEMPORARY_STABILIZATION",
+        "AS_SET_SURVEY",
+        "ADJACENT_SECTOR_FITUP",
+        "CLOSURE_OR_SPLICE_DEFINITION",
+        "FIELD_WELDING",
+        "NDE",
+        "VACUUM_BOUNDARY_LEAK_TEST",
+        "POSTWELD_METROLOGY",
+        "PERMANENT_LOAD_PATH_VERIFICATION_AND_TRANSFER",
+        "TEMPORARY_WORK_REMOVAL",
+        "ASBUILT_CONFIGURATION_BASELINE"
+      ]
+    },
+    "STOP_CONDITIONS": {
+      "F106_TO_F101_REPRESENTATIVE_SECTOR_CHAIN_RECONSTRUCTED_TO_MAXIMUM_SUPPORTED_DEPTH": true,
+      "ALL_MATERIAL_UNCERTAINTIES_REGISTERED": true,
+      "NO_UNREGISTERED_CONFLICTS": true,
+      "RETURN_PACKAGE_COMPLETE": true
+    }
+  },
+  "UNFINISHED_SCOPE": [
+    {
+      "ITEM": "METRIC_HEAVY_LIFT_FEASIBILITY",
+      "REASON": "Authoritative OFG lift masses, accepted as-built COGs, crane rated capacities/configurations, runway reactions, opening geometry and swept-path geometry are not jointly controlled in the supplied baseline.",
+      "DISPOSITION": "OPEN_REGISTERED_NOT_INVENTED"
+    },
+    {
+      "ITEM": "COUPLED_MACHINE_BUILDING_FOUNDATION_FE",
+      "REASON": "Support reaction vectors, stiffness matrices, support friction/contact/preload, anchor/embed geometry and SSI remain unresolved.",
+      "DISPOSITION": "OPEN_REGISTERED"
+    },
+    {
+      "ITEM": "INSTANCE_LEVEL_WELD_NDE_LEAK_ACCEPTANCE",
+      "REASON": "The sequence and evidence classes are supported, but exact historical work-pack IDs, WPS/PQRs, NDE method/coverage, leak-test sensitivity and acceptance criteria for each sector joint were not recovered.",
+      "DISPOSITION": "OPEN_REGISTERED"
+    },
+    {
+      "ITEM": "EXACT_ASBUILT_SURVEY_COORDINATES_AND_TOLERANCES",
+      "REASON": "Controlled surveyed F-101/F-106 coordinate transforms and instance-level tolerances were not supplied. No numerical coordinate was inferred from E-layer geometry.",
+      "DISPOSITION": "OPEN_REGISTERED"
+    },
+    {
+      "ITEM": "LEGACY_F102_VERSUS_F106_IDENTITY",
+      "REASON": "Requires Thread 1 canonical identity reconciliation.",
+      "DISPOSITION": "RETURNED_TO_THREAD_1"
+    }
+  ],
+  "RESEARCH_PERFORMED": {
+    "MODE": "OPEN_WORLD_EXHAUSTIVE_WITHIN_ASSIGNED_CYCLE_SCOPE",
+    "INTERNAL_CORPUS_RESEARCH": [
+      "Rev3 V03 civil/structural/room/embed/penetration model and machine erection state machine",
+      "Rev3 V04 machine sector/support/load-path and authority/evidence model",
+      "Rev3 V13 construction/temporary works/installation/4-D constructability model",
+      "Rev3 V15 chronology and installation-state control",
+      "Rev3 V17 V&V/conflict/backward-propagation registers",
+      "RevW3 actual site-work history",
+      "RevW3 event-level site-work master",
+      "RevW3 monthly workfront aggregation",
+      "RevW3 representative asset dossiers",
+      "RevS organizational construction/completion workstream history",
+      "Machine Annex geometry, object schema and relationship constraints"
+    ],
+    "EXTERNAL_RESEARCH": {
+      "STATUS": "COMPLETED",
+      "DEFAULT_EPISTEMIC_STATUS": "V_OR_R_PRECEDENT_ONLY",
+      "LANGUAGE_COVERAGE": [
+        {
+          "LANGUAGE": "ENGLISH",
+          "DOMAINS": [
+            "ITER assembly tooling and installation",
+            "ITER dimensional metrology",
+            "Fusion for Energy vacuum-vessel manufacturing/FAT",
+            "CNSC construction/commissioning/design control",
+            "IAEA commissioning and construction acceptance",
+            "ASME lifting-device/crane lifecycle",
+            "AWS structural welding",
+            "AISC structural steel",
+            "CII Advanced Work Packaging"
+          ]
+        },
+        {
+          "LANGUAGE": "JAPANESE",
+          "DOMAINS": [
+            "QST JA-DEMO assembly sequence",
+            "ITER Japan sector lift/assembly",
+            "captive-item installation logic",
+            "field-joint fit-up and dimensional control",
+            "temporary-to-permanent support transfer"
+          ]
+        },
+        {
+          "LANGUAGE": "CHINESE",
+          "DOMAINS": [
+            "ITER sector module assembly",
+            "gravity-support installation",
+            "post-shipment sector inspection",
+            "field NDE and temporary-stability practice"
+          ]
+        },
+        {
+          "LANGUAGE": "FRENCH",
+          "DOMAINS": [
+            "CEA ITER assembly contracts",
+            "site/factory acceptance",
+            "metrology/NDE/UHV qualification"
+          ]
+        },
+        {
+          "LANGUAGE": "GERMAN",
+          "DOMAINS": [
+            "IPP full-scale ITER vessel-segment welding/distortion/NDE prototype work"
+          ]
+        },
+        {
+          "LANGUAGE": "RUSSIAN",
+          "DOMAINS": [
+            "official Russian ITER manufacturing/assembly and major-lift reporting"
+          ]
+        },
+        {
+          "LANGUAGE": "SPANISH",
+          "DOMAINS": [
+            "CIEMAT fusion assembly/metrology/remote-NDE and shipment/alignment precedent"
+          ]
+        }
+      ],
+      "SOURCE_SELECTION_RESULT": "ITER/QST/F4E/CNSC/IAEA sources materially constrained the reconstruction. German/French/Chinese/Russian/Spanish sources were used as corroborating or specialized precedent and were not promoted to OFG project fact.",
+      "REJECTED_TRANSFERS": [
+        "ITER crane capacities and rail elevations were not transferred to OFG.",
+        "ITER vessel dimensions, support reactions and erection tolerances were not transferred to OFG.",
+        "ITER weld sequencing was not assumed to be the OFG historical sequence where ITER's own current sequence has evolved.",
+        "Generic code provisions were not treated as proof of OFG code-class allocation.",
+        "Advanced Work Packaging practice was used to structure required package content, not as proof that an exact CII document hierarchy historically existed on OFG."
+      ]
+    }
+  },
+  "NEW_ENGINEERING_FINDINGS": [
+    {
+      "FINDING_ID": "T4-F-C001-001",
+      "TITLE": "F106_IS_A_PRODUCTION_SYSTEM_NOT_A_BUILDING_COMPLETION_STATE",
+      "STATUS": "SUPPORTED",
+      "EPISTEMIC_CLASS": "OFG_SOURCE_CANON_PLUS_ENGINEERED_RECONSTRUCTION",
+      "FINDING": "The operational construction object is the F106 production system: receipt/cleanliness, controlled laydown, four sector assembly stations, metrology, tooling, crane/runway availability, lifting-device certification, preservation, workface access and release-to-lift. Building structural completion alone is insufficient."
+    },
+    {
+      "FINDING_ID": "T4-F-C001-002",
+      "TITLE": "SECTOR_ARRIVAL_IS_NOT_LIFT_READINESS",
+      "STATUS": "SUPPORTED",
+      "EPISTEMIC_CLASS": "OFG_SOURCE_CANON",
+      "FINDING": "Sector lift release requires verified mass/COG, crane configuration, metrology, obstruction walkdown, temporary-support/rigging inspection, test/critical-lift readiness, exclusion control and approved pit-set/stabilization state."
+    },
+    {
+      "FINDING_ID": "T4-F-C001-003",
+      "TITLE": "SECTOR_ERECTION_AND_TOROIDAL_JOINING_ARE_PARALLEL_PRODUCTION_LINES",
+      "STATUS": "SUPPORTED",
+      "EPISTEMIC_CLASS": "OFG_SOURCE_CANON",
+      "FINDING": "The next sector may advance while earlier interfaces undergo fit-up, closure-piece preparation, welding, NDE, leak testing and post-weld metrology. The last sector set therefore does not equal toroidal structural or vacuum-boundary completion."
+    },
+    {
+      "FINDING_ID": "T4-F-C001-004",
+      "TITLE": "CLOSURE_PROGRESSIVELY_REMOVES_ADJUSTMENT_FREEDOM",
+      "STATUS": "SUPPORTED",
+      "EPISTEMIC_CLASS": "OFG_SOURCE_CANON",
+      "FINDING": "SS-13 through SS-16 complete the placement campaign in the controlled narrative during January-April 2029, but joining, NDE, leak work and survey continue; closure converts open erection interfaces into configuration gates."
+    },
+    {
+      "FINDING_ID": "T4-F-C001-005",
+      "TITLE": "CONSTRUCTION_OPENING_AND_MAINTENANCE_OPENING_ARE_DISTINCT_CONFIGURATION_OBJECTS",
+      "STATUS": "SUPPORTED",
+      "EPISTEMIC_CLASS": "OFG_ENGINEERED_RECONSTRUCTION_CONSTRAINED_BY_CANON",
+      "FINDING": "The F106/F101 crane-hall-to-pit envelope must remain configuration-controlled until critical-lift requirements and permanent maintenance strategy are satisfied. Its dimensions remain OPEN."
+    },
+    {
+      "FINDING_ID": "T4-F-C001-006",
+      "TITLE": "TEMPORARY_WORKS_REQUIRE_OBJECT_STATUS_AND_LIFECYCLE",
+      "STATUS": "SUPPORTED",
+      "EPISTEMIC_CLASS": "OFG_ENGINEERED_RECONSTRUCTION_PLUS_REAL_PRECEDENT",
+      "FINDING": "Temporary erection platforms, rigging, stabilization, openings, clean boundaries and scaffolds are not annotations; they carry load, control access, change hazard boundaries and can create or remove failure paths."
+    },
+    {
+      "FINDING_ID": "T4-F-C001-007",
+      "TITLE": "PERMANENT_MACHINE_SUPPORT_TOPOLOGY_IS_16_STATIONS_BUT_NUMERICAL_BEHAVIOR_REMAINS_OPEN",
+      "STATUS": "SUPPORTED_WITH_OPEN_NUMERICS",
+      "EPISTEMIC_CLASS": "C_FUNCTION_E_ARCHITECTURE_OPEN_NUMERICS",
+      "FINDING": "Sixteen F101 machine gravity-support foundation/interfaces are required. Each sector interface ultimately requires a 6DOF reaction vector, stiffness matrix, permitted movement, anchor/embed geometry, preload/contact/friction and survey datum."
+    },
+    {
+      "FINDING_ID": "T4-F-C001-008",
+      "TITLE": "SECTOR_FIELD_JOINTS_ARE_CONFIGURATION_AND_EVIDENCE_OBJECTS",
+      "STATUS": "SUPPORTED",
+      "EPISTEMIC_CLASS": "ENGINEERED_RECONSTRUCTION_REQUIRED_BY_PHYSICAL_TOPOLOGY",
+      "FINDING": "Each adjacent-sector interface requires identity, fit-up state, measured gap/mismatch, closure/splice disposition, weld-map relationship, NDE relationship, leak boundary relationship and post-weld survey state. Exact canonical joint tags were not recovered and therefore provisional identities are proposed."
+    },
+    {
+      "FINDING_ID": "T4-F-C001-009",
+      "TITLE": "CLOSURE_PIECE_DEFINITION_MUST_FOLLOW_AS_BUILT_METROLOGY",
+      "STATUS": "VALIDATED_BY_OFG_SOURCE_AND_REAL_PRECEDENT",
+      "EPISTEMIC_CLASS": "OFG_SOURCE_CANON_PLUS_V_PRECEDENT",
+      "FINDING": "Adjacent-sector measurement precedes closure/splice fitting and welding. Real fusion assembly precedent independently supports measured mismatch followed by customized fit-up/closure work."
+    },
+    {
+      "FINDING_ID": "T4-F-C001-010",
+      "TITLE": "TEMPORARY_TO_PERMANENT_LOAD_TRANSFER_IS_A_DISTINCT_HOLD_POINT",
+      "STATUS": "ENGINEERING_RECONSTRUCTION_REQUIRED",
+      "EPISTEMIC_CLASS": "E_WITH_V_PRECEDENT",
+      "FINDING": "A sector may be suspended, landed, temporarily stabilized, aligned, partially supported and only later transferred to its permanent load path. Crane release, temporary-support removal and permanent support acceptance cannot be represented by a single INSTALLED flag."
+    },
+    {
+      "FINDING_ID": "T4-F-C001-011",
+      "TITLE": "PERMANENT_LOAD_PATH_IS_COUPLED_AND_BIDIRECTIONAL",
+      "STATUS": "PARTIAL_OPEN",
+      "EPISTEMIC_CLASS": "ENGINEERED_TOPOLOGY_OPEN_ANALYSIS",
+      "FINDING": "Required topology is sector/VV shell and joints -> gravity-support interface -> support pedestal/base/contact -> anchor/embed/grout -> F101 reinforced foundation/basemat -> subgrade/rock, with building/support displacement feeding back into machine response."
+    },
+    {
+      "FINDING_ID": "T4-F-C001-012",
+      "TITLE": "CAPTIVE_ITEMS_MUST_BE_CLEARED_BEFORE_TOROIDAL_OR_BUILDING_ACCESS_CLOSURE",
+      "STATUS": "VALIDATED",
+      "EPISTEMIC_CLASS": "OFG_SOURCE_CANON_PLUS_V_PRECEDENT",
+      "FINDING": "Lower PF/support elements and inaccessible machine interfaces must precede closure that removes access."
+    },
+    {
+      "FINDING_ID": "T4-F-C001-013",
+      "TITLE": "AS_BUILT_IS_A_PRECONDITION_FOR_CONFIGURATION_CLOSEOUT",
+      "STATUS": "SUPPORTED",
+      "EPISTEMIC_CLASS": "CANONICAL_ENGINEERING_RULE_PLUS_V_PRECEDENT",
+      "FINDING": "Final closeout requires reconciliation of surveys, field changes, NCR dispositions, weld/NDE/leak evidence, support state and temporary-work removal with the installed configuration."
+    },
+    {
+      "FINDING_ID": "T4-F-C001-014",
+      "TITLE": "BUILDING_CUSTODY_CANNOT_BE_USED_AS_SINGLE_STATE_AFTER_SYSTEMIZATION",
+      "STATUS": "SUPPORTED",
+      "EPISTEMIC_CLASS": "OFG_SOURCE_CANON",
+      "FINDING": "After system turnover begins, construction-controlled, commissioning-controlled and shared interfaces can coexist within one building. Residual work inside transferred boundaries requires receiving/licensee authorization rather than geography-based constructor control."
+    },
+    {
+      "FINDING_ID": "T4-F-C001-015",
+      "TITLE": "FACTORY_ACCEPTANCE_AND_SHIPMENT_RELEASE_REQUIRE_SEPARATE_EVIDENCE_FROM_SITE_ACCEPTANCE",
+      "STATUS": "VALIDATED",
+      "EPISTEMIC_CLASS": "E_REQUIRED_BY_LIFECYCLE_PLUS_V_PRECEDENT",
+      "FINDING": "Sector factory records must establish manufacturing pedigree, weld/NDE status, dimensional/metrology state, pressure/vacuum/leak evidence as applicable and release configuration; site receipt then independently establishes identity, condition, preservation and transport effects."
+    }
+  ],
+  "PROPOSED_ATLAS_DELTAS": [
+    {
+      "DELTA_ID": "T4-AD-C001-001",
+      "ACTION": "EXPAND",
+      "TARGET": "REV3_V13",
+      "SECTION": "F106_ASSEMBLY_HALL_PRODUCTION_SYSTEM",
+      "PROPOSAL": {
+        "OBJECT_CLASS": "CONSTRUCTION_PRODUCTION_SYSTEM",
+        "COMPONENTS": [
+          "controlled_receipt_interface",
+          "preservation_and_laydown",
+          "four_sector_assembly_stations",
+          "upending_and_alignment_tooling",
+          "metrology_network",
+          "bridge_crane_and_runway_system",
+          "auxiliary_cranes",
+          "below_hook_lifting_devices",
+          "cleanliness/FME_boundary",
+          "work_access_and_scaffold",
+          "release_to_lift_gate"
+        ],
+        "RULE": "BUILDING_COMPLETION_DOES_NOT_EQUAL_PRODUCTION_READINESS"
+      }
+    },
+    {
+      "DELTA_ID": "T4-AD-C001-002",
+      "ACTION": "ADD",
+      "TARGET": "REV3_V13",
+      "SECTION": "REPRESENTATIVE_SECTOR_LIFECYCLE_STATE_MACHINE",
+      "PROPOSAL": {
+        "STATES": [
+          "FACTORY_RELEASED",
+          "SHIPPING_RELEASED",
+          "SITE_RECEIVED",
+          "PRESERVED",
+          "F106_PREASSEMBLY",
+          "LIFT_READY",
+          "SUSPENDED_TRANSFER",
+          "PIT_TEMP_SUPPORTED",
+          "AS_SET_SURVEYED",
+          "RELEASED_TO_JOIN",
+          "FIELD_JOINT_FITUP",
+          "WELDED_NDE_PENDING",
+          "NDE_ACCEPTED_LEAK_PENDING",
+          "LEAK_ACCEPTED_POSTWELD_SURVEY",
+          "PERMANENT_LOAD_PATH_VERIFIED",
+          "TEMPORARY_WORK_REMOVED",
+          "ASBUILT_BASELINED"
+        ]
+      }
+    },
+    {
+      "DELTA_ID": "T4-AD-C001-003",
+      "ACTION": "ADD",
+      "TARGET": "REV3_V04",
+      "SECTION": "CONSTRUCTION_STAGE_MACHINE_LOAD_PATH",
+      "PROPOSAL": {
+        "LOAD_PATHS": [
+          "HEAVY_LIFT_SUSPENDED",
+          "PIT_TEMPORARY_STABILIZATION",
+          "PERMANENT_GRAVITY_SUPPORT",
+          "FIELD_JOINT_CLOSURE_AND_REDISTRIBUTION"
+        ],
+        "NUMERICAL_VALUES": "OPEN"
+      }
+    },
+    {
+      "DELTA_ID": "T4-AD-C001-004",
+      "ACTION": "ADD",
+      "TARGET": "REV3_V13",
+      "SECTION": "TOROIDAL_JOINING_PRODUCTION_FRONT",
+      "PROPOSAL": {
+        "SEQUENCE": [
+          "adjacent_sector_metrology",
+          "gap_mismatch_assessment",
+          "closure_or_splice_definition",
+          "machining/fitting_as_required",
+          "joint_preparation",
+          "tack_or_alignment_retention",
+          "controlled_weld_sequence",
+          "NDE",
+          "vacuum_boundary_leak_test",
+          "postweld_metrology",
+          "deviation_disposition",
+          "release_next_configuration"
+        ],
+        "RULE": "ERECTION_CADENCE_DOES_NOT_DEFINE_JOIN_COMPLETION_CADENCE"
+      }
+    },
+    {
+      "DELTA_ID": "T4-AD-C001-005",
+      "ACTION": "ADD",
+      "TARGET": "REV3_V03",
+      "SECTION": "TEMPORARY_SUPPORT_AND_LOAD_TRANSFER",
+      "PROPOSAL": {
+        "TEMPORARY_SUPPORT_OBJECT_FIELDS": [
+          "support_id",
+          "host",
+          "supported_sector",
+          "configuration_state",
+          "load_case",
+          "restraint_directions",
+          "interface/contact_state",
+          "installation_inspection",
+          "survey_reference",
+          "removal_prerequisites",
+          "removal/restoration_record"
+        ]
+      }
+    },
+    {
+      "DELTA_ID": "T4-AD-C001-006",
+      "ACTION": "EXPAND",
+      "TARGET": "REV3_V03",
+      "SECTION": "OPENING_AND_ACCESS_CONFIGURATION",
+      "PROPOSAL": {
+        "OPENING_CLASSES": [
+          "PERMANENT_OPERATIONAL",
+          "PERMANENT_MAINTENANCE",
+          "CONDITIONALLY_PERMANENT",
+          "TEMPORARY_CONSTRUCTION"
+        ],
+        "MANDATORY_FIELDS": [
+          "payload",
+          "active_configuration_states",
+          "swept_volume_requirement",
+          "closure_authority",
+          "closure_prerequisites",
+          "captive_item_clearance",
+          "asbuilt_release",
+          "future_maintenance_equivalence"
+        ]
+      }
+    },
+    {
+      "DELTA_ID": "T4-AD-C001-007",
+      "ACTION": "EXPAND",
+      "TARGET": "REV3_V17",
+      "SECTION": "F106_F101_VV_MATRIX",
+      "PROPOSAL": {
+        "NEW_CHECKS": [
+          "sector_factory_to_site_pedigree_trace",
+          "lift_release_evidence_completeness",
+          "temporary_support_configuration_replay",
+          "field_joint_weld_map_to_NDE_trace",
+          "leak_boundary_to_joint_map_trace",
+          "postweld_metrology_to_asbuilt_trace",
+          "permanent_support_load_transfer_evidence",
+          "temporary_work_removal_and_restoration",
+          "captive_item_before_closure_check",
+          "live_boundary_post_turnover_reentry_check"
+        ]
+      }
+    },
+    {
+      "DELTA_ID": "T4-AD-C001-008",
+      "ACTION": "ADD",
+      "TARGET": "REV3_V15",
+      "SECTION": "SECTOR_CHRONOLOGY_RECONCILIATION_NOTE",
+      "PROPOSAL": {
+        "RULE": "CONTROLLED_NARRATIVE_MONTH_SEQUENCE_GOVERNS_PENDING_REVW3_DATE_RECONCILIATION",
+        "CONFLICT_ID": "T4-CONFLICT-C002-SECTOR-INSTALL-CHRONOLOGY"
+      }
+    },
+    {
+      "DELTA_ID": "T4-AD-C001-009",
+      "ACTION": "ADD",
+      "TARGET": "REV3_V14",
+      "SECTION": "POST_TURNOVER_MACHINE_REENTRY",
+      "PROPOSAL": {
+        "RULE": "RESIDUAL_CONSTRUCTION_ON_TRANSFERRED_MACHINE_OR_SUPPORT_BOUNDARIES_REQUIRES_RECEIVING_ORGANIZATION_AND_LICENSEE_WORK_CONTROL",
+        "SOURCE_CLASS": "C_PLUS_V"
+      }
+    }
+  ],
+  "PROPOSED_ANNEX_DELTAS": [
+    {
+      "DATASET_ID": "T4-C001-A01-SECTOR_LIFECYCLE_TEMPLATE",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "ROW_GRAIN": "SECTOR_INSTANCE_X_LIFECYCLE_STAGE",
+      "PURPOSE": "Bind sector identity, configuration state, work package, authority, evidence, custody and physical consequence."
+    },
+    {
+      "DATASET_ID": "T4-C001-A02-SECTOR_CANON_MONTH_SEQUENCE",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "ROW_GRAIN": "SECTOR",
+      "ROWS": [
+        ["SS-01", "2028-01"],
+        ["SS-02", "2028-02"],
+        ["SS-03", "2028-03"],
+        ["SS-04", "2028-04"],
+        ["SS-05", "2028-05"],
+        ["SS-06", "2028-06"],
+        ["SS-07", "2028-07"],
+        ["SS-08", "2028-08"],
+        ["SS-09", "2028-09"],
+        ["SS-10", "2028-10"],
+        ["SS-11", "2028-11"],
+        ["SS-12", "2028-12"],
+        ["SS-13", "2029-01"],
+        ["SS-14", "2029-02"],
+        ["SS-15", "2029-03"],
+        ["SS-16", "2029-04"]
+      ],
+      "STATUS": "C_DERIVED_FROM_CONTROLLED_NARRATIVE_MONTHLY_SEQUENCE"
+    },
+    {
+      "DATASET_ID": "T4-C001-A03-SECTOR_WORKING_DATE_RECONCILIATION",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "ROW_GRAIN": "SECTOR",
+      "STATUS": "QUARANTINE_PENDING_THREAD_1_RECONCILIATION",
+      "NOTE": "RevW3 event master/monthly rows diverge from the controlled monthly narrative from SS-06 onward; see conflict T4-CONFLICT-C002."
+    },
+    {
+      "DATASET_ID": "T4-C001-A04-SECTOR_FIELD_JOINT_REGISTER",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "ROW_GRAIN": "ADJACENT_SECTOR_PAIR",
+      "INSTANCE_IDS": [
+        "T4-PROV-FJ-SS01-SS02",
+        "T4-PROV-FJ-SS02-SS03",
+        "T4-PROV-FJ-SS03-SS04",
+        "T4-PROV-FJ-SS04-SS05",
+        "T4-PROV-FJ-SS05-SS06",
+        "T4-PROV-FJ-SS06-SS07",
+        "T4-PROV-FJ-SS07-SS08",
+        "T4-PROV-FJ-SS08-SS09",
+        "T4-PROV-FJ-SS09-SS10",
+        "T4-PROV-FJ-SS10-SS11",
+        "T4-PROV-FJ-SS11-SS12",
+        "T4-PROV-FJ-SS12-SS13",
+        "T4-PROV-FJ-SS13-SS14",
+        "T4-PROV-FJ-SS14-SS15",
+        "T4-PROV-FJ-SS15-SS16",
+        "T4-PROV-FJ-SS16-SS01"
+      ],
+      "STATUS": "PROVISIONAL_IDENTITY_REQUIRED_BY_CLOSED_TOROID_TOPOLOGY",
+      "FIELDS": [
+        "joint_id",
+        "sector_a",
+        "sector_b",
+        "fitup_survey_record",
+        "gap_mismatch_state",
+        "closure_piece_record",
+        "weld_map",
+        "WPS_PQR",
+        "performer_qualification_record",
+        "NDE_records",
+        "leak_test_boundary",
+        "postweld_survey",
+        "NCR_deviation",
+        "release_state"
+      ]
+    },
+    {
+      "DATASET_ID": "T4-C001-A05-WORK_PACKAGE_CLASS_REGISTER",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "ROW_GRAIN": "PACKAGE_CLASS",
+      "STATUS": "ENGINEERED_RECONSTRUCTION_REQUIRED_RECORD_CLASS_NOT_PROOF_OF_HISTORICAL_DOCUMENT_EXISTENCE"
+    },
+    {
+      "DATASET_ID": "T4-C001-A06-CONFIGURATION_STATE_MACHINE",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "ROW_GRAIN": "STATE_TRANSITION"
+    },
+    {
+      "DATASET_ID": "T4-C001-A07-CONSTRUCTION_LOAD_PATH_GRAPH",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "ROW_GRAIN": "LOAD_PATH_EDGE_X_CONFIGURATION_STATE"
+    },
+    {
+      "DATASET_ID": "T4-C001-A08-HOLD_WITNESS_EVIDENCE_MATRIX",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "ROW_GRAIN": "GATE"
+    },
+    {
+      "DATASET_ID": "T4-C001-A09-VV_LEDGER",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "ROW_GRAIN": "CHECK"
+    },
+    {
+      "DATASET_ID": "T4-C001-A10-CONFLICT_OPEN_ITEM_REGISTER",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "ROW_GRAIN": "CONFLICT_OR_OPEN_ITEM"
+    }
+  ],
+  "CREATED_OR_CHANGED_IDENTITIES": [
+    {
+      "ID": "T4-PROV-WP-SECTOR-FACTORY-RELEASE",
+      "TYPE": "WORK_PACKAGE_CLASS",
+      "STATUS": "PROVISIONAL",
+      "HISTORICAL_DOCUMENT_EXISTENCE_ASSERTED": false
+    },
+    {
+      "ID": "T4-PROV-WP-SECTOR-SITE-RECEIPT",
+      "TYPE": "WORK_PACKAGE_CLASS",
+      "STATUS": "PROVISIONAL",
+      "HISTORICAL_DOCUMENT_EXISTENCE_ASSERTED": false
+    },
+    {
+      "ID": "T4-PROV-WP-SECTOR-PRESERVATION",
+      "TYPE": "WORK_PACKAGE_CLASS",
+      "STATUS": "PROVISIONAL",
+      "HISTORICAL_DOCUMENT_EXISTENCE_ASSERTED": false
+    },
+    {
+      "ID": "T4-PROV-WP-F106-PREASSEMBLY",
+      "TYPE": "WORK_PACKAGE_CLASS",
+      "STATUS": "PROVISIONAL",
+      "HISTORICAL_DOCUMENT_EXISTENCE_ASSERTED": false
+    },
+    {
+      "ID": "T4-PROV-WP-SECTOR-PRELIFT",
+      "TYPE": "WORK_PACKAGE_CLASS",
+      "STATUS": "PROVISIONAL",
+      "HISTORICAL_DOCUMENT_EXISTENCE_ASSERTED": false
+    },
+    {
+      "ID": "T4-PROV-WP-SECTOR-TRANSFER-SET",
+      "TYPE": "WORK_PACKAGE_CLASS",
+      "STATUS": "PROVISIONAL",
+      "HISTORICAL_DOCUMENT_EXISTENCE_ASSERTED": false
+    },
+    {
+      "ID": "T4-PROV-WP-SECTOR-TEMP-STABILIZATION",
+      "TYPE": "WORK_PACKAGE_CLASS",
+      "STATUS": "PROVISIONAL",
+      "HISTORICAL_DOCUMENT_EXISTENCE_ASSERTED": false
+    },
+    {
+      "ID": "T4-PROV-WP-SECTOR-FITUP",
+      "TYPE": "WORK_PACKAGE_CLASS",
+      "STATUS": "PROVISIONAL",
+      "HISTORICAL_DOCUMENT_EXISTENCE_ASSERTED": false
+    },
+    {
+      "ID": "T4-PROV-WP-SECTOR-CLOSURE-PIECE",
+      "TYPE": "WORK_PACKAGE_CLASS",
+      "STATUS": "PROVISIONAL",
+      "HISTORICAL_DOCUMENT_EXISTENCE_ASSERTED": false
+    },
+    {
+      "ID": "T4-PROV-WP-SECTOR-WELD",
+      "TYPE": "WORK_PACKAGE_CLASS",
+      "STATUS": "PROVISIONAL",
+      "HISTORICAL_DOCUMENT_EXISTENCE_ASSERTED": false
+    },
+    {
+      "ID": "T4-PROV-WP-SECTOR-NDE",
+      "TYPE": "WORK_PACKAGE_CLASS",
+      "STATUS": "PROVISIONAL",
+      "HISTORICAL_DOCUMENT_EXISTENCE_ASSERTED": false
+    },
+    {
+      "ID": "T4-PROV-WP-SECTOR-LEAK",
+      "TYPE": "WORK_PACKAGE_CLASS",
+      "STATUS": "PROVISIONAL",
+      "HISTORICAL_DOCUMENT_EXISTENCE_ASSERTED": false
+    },
+    {
+      "ID": "T4-PROV-WP-SECTOR-POSTWELD-SURVEY",
+      "TYPE": "WORK_PACKAGE_CLASS",
+      "STATUS": "PROVISIONAL",
+      "HISTORICAL_DOCUMENT_EXISTENCE_ASSERTED": false
+    },
+    {
+      "ID": "T4-PROV-WP-SECTOR-LOAD-TRANSFER",
+      "TYPE": "WORK_PACKAGE_CLASS",
+      "STATUS": "PROVISIONAL",
+      "HISTORICAL_DOCUMENT_EXISTENCE_ASSERTED": false
+    },
+    {
+      "ID": "T4-PROV-WP-SECTOR-ASBUILT-CLOSEOUT",
+      "TYPE": "WORK_PACKAGE_CLASS",
+      "STATUS": "PROVISIONAL",
+      "HISTORICAL_DOCUMENT_EXISTENCE_ASSERTED": false
+    },
+    {
+      "ID": "T4-PROV-FJ-SECTOR-JOINT-FAMILY",
+      "TYPE": "PHYSICAL_CONNECTION_FAMILY",
+      "STATUS": "PROVISIONAL",
+      "INSTANCE_COUNT": 16,
+      "RATIONALE": "Sixteen-sector closed torus necessarily creates sixteen adjacent-sector interfaces, but no controlled canonical joint-tag grammar was recovered."
+    },
+    {
+      "ID": "T4-PROV-TW-SECTOR-STABILITY-FAMILY",
+      "TYPE": "TEMPORARY_WORKS_CONFIGURATION_FAMILY",
+      "STATUS": "PROVISIONAL",
+      "RATIONALE": "Temporary stabilization is physically required and source-supported, but exact hardware count/configuration is OPEN."
+    },
+    {
+      "ID": "T4-PROV-EXCL-SECTOR-LIFT-FAMILY",
+      "TYPE": "TEMPORARY_EXCLUSION_ZONE_FAMILY",
+      "STATUS": "PROVISIONAL",
+      "GEOMETRY": "OPEN"
+    }
+  ],
+  "PARAMETER_CHANGES": [],
+  "PARAMETER_CLOSURE_REQUESTS": [
+    {
+      "PARAMETER_FAMILY": "SECTOR_AS_BUILT_MASS_AND_COG",
+      "STATUS": "OPEN",
+      "REQUIRED_FOR": [
+        "CRANE_SELECTION",
+        "RIGGING_DESIGN",
+        "LIFT_PLAN",
+        "RUNWAY_REACTIONS",
+        "TEMPORARY_STABILITY"
+      ]
+    },
+    {
+      "PARAMETER_FAMILY": "CRANE_RATED_CAPACITY_CONFIGURATION_AND_RAIL_ELEVATION",
+      "STATUS": "OPEN",
+      "REQUIRED_FOR": "HEAVY_LIFT_NUMERICAL_FEASIBILITY"
+    },
+    {
+      "PARAMETER_FAMILY": "F106_F101_TRANSFER_OPENING_AND_SWEPT_PATH",
+      "STATUS": "OPEN",
+      "REQUIRED_FOR": "ACCESS_AND_OBSTRUCTION_VERIFICATION"
+    },
+    {
+      "PARAMETER_FAMILY": "PERMANENT_SUPPORT_6DOF_REACTION_STIFFNESS_MOVEMENT",
+      "STATUS": "OPEN",
+      "REQUIRED_FOR": "MACHINE_BUILDING_COUPLED_FE"
+    },
+    {
+      "PARAMETER_FAMILY": "ANCHOR_EMBED_BASEPLATE_GROUT_GEOMETRY_AND_CAPACITY",
+      "STATUS": "OPEN",
+      "REQUIRED_FOR": "LOAD_PATH_CLOSURE"
+    },
+    {
+      "PARAMETER_FAMILY": "TEMPORARY_SUPPORT_REACTION_STIFFNESS_AND_LOAD_CASES",
+      "STATUS": "OPEN",
+      "REQUIRED_FOR": "ERECTION_STABILITY"
+    },
+    {
+      "PARAMETER_FAMILY": "FIELD_JOINT_ASBUILT_TOLERANCE_WELD_SHRINKAGE_AND_ACCEPTANCE",
+      "STATUS": "OPEN",
+      "REQUIRED_FOR": "JOINING_AND_POSTWELD_METROLOGY"
+    },
+    {
+      "PARAMETER_FAMILY": "LEAK_TEST_SENSITIVITY_AND_ACCEPTANCE_CRITERION",
+      "STATUS": "OPEN",
+      "REQUIRED_FOR": "VACUUM_BOUNDARY_RELEASE"
+    }
+  ],
+  "RELATIONSHIP_CHANGES": [
+    {
+      "ACTION": "PROPOSE_ADD",
+      "FROM": "SS-xx",
+      "RELATION": "HAS_WORKING_COMPONENT_INSTANCE",
+      "TO_PATTERN": [
+        "FUS-Sxx-VV",
+        "FUS-Sxx-TF",
+        "FUS-Sxx-TS"
+      ],
+      "STATUS": "VERIFY_EXISTING_BEFORE_MERGE"
+    },
+    {
+      "ACTION": "PROPOSE_ADD",
+      "FROM": "SS-xx",
+      "RELATION": "INSTALLS_TO",
+      "TO": "F101_TOROIDAL_MACHINE_POSITION_TS-xx",
+      "STATUS": "E/C_DERIVED"
+    },
+    {
+      "ACTION": "PROPOSE_ADD",
+      "FROM": "SS-xx",
+      "RELATION": "LOADS_THROUGH",
+      "TO": "STRIF-TSxx",
+      "STATUS": "E"
+    },
+    {
+      "ACTION": "PROPOSE_ADD",
+      "FROM": "STRIF-TSxx",
+      "RELATION": "SUPPORTED_BY",
+      "TO": "F101-SUP-xx",
+      "STATUS": "E/C_DERIVED"
+    },
+    {
+      "ACTION": "PROPOSE_ADD",
+      "FROM": "F101-SUP-xx",
+      "RELATION": "LOADS_TO",
+      "TO": "STR-F101-GSUP",
+      "STATUS": "E"
+    },
+    {
+      "ACTION": "PROPOSE_ADD",
+      "FROM": "STR-F101-GSUP",
+      "RELATION": "LOADS_TO",
+      "TO": "STR-F101-BM",
+      "STATUS": "E"
+    },
+    {
+      "ACTION": "PROPOSE_ADD",
+      "FROM": "STR-F101-BM",
+      "RELATION": "LOADS_TO",
+      "TO": "F101_FOUNDATION_SUBGRADE_OR_ROCK_BOUNDARY",
+      "STATUS": "OPEN_NUMERICAL"
+    },
+    {
+      "ACTION": "PROPOSE_ADD",
+      "FROM": "T4-PROV-FJ-SSxx-SSyy",
+      "RELATION": "JOINS",
+      "TO": [
+        "SS-xx",
+        "SS-yy"
+      ],
+      "STATUS": "PROVISIONAL"
+    },
+    {
+      "ACTION": "PROPOSE_ADD",
+      "FROM": "T4-PROV-TW-SECTOR-STABILITY-FAMILY",
+      "RELATION": "TEMPORARILY_SUPPORTS",
+      "TO": "SS-xx",
+      "STATUS": "PROVISIONAL"
+    },
+    {
+      "ACTION": "PROPOSE_ADD",
+      "FROM": "T4-PROV-WP-SECTOR-PRELIFT",
+      "RELATION": "RELEASES",
+      "TO": "SUSPENDED_TRANSFER_STATE",
+      "STATUS": "E"
+    },
+    {
+      "ACTION": "PROPOSE_ADD",
+      "FROM": "T4-PROV-WP-SECTOR-TRANSFER-SET",
+      "RELATION": "TRANSITIONS",
+      "TO": "PIT_TEMP_SUPPORTED_STATE",
+      "STATUS": "E"
+    },
+    {
+      "ACTION": "PROPOSE_ADD",
+      "FROM": "T4-PROV-WP-SECTOR-POSTWELD-SURVEY",
+      "RELATION": "VERIFIES_GEOMETRY_OF",
+      "TO": "T4-PROV-FJ-SECTOR-JOINT-FAMILY",
+      "STATUS": "E"
+    },
+    {
+      "ACTION": "PROPOSE_ADD",
+      "FROM": "T4-PROV-WP-SECTOR-LOAD-TRANSFER",
+      "RELATION": "VERIFIES_PERMANENT_LOAD_PATH",
+      "TO": "F101-SUP-xx",
+      "STATUS": "E"
+    }
+  ],
+  "CONFIGURATION_FINDINGS": {
+    "SECTOR_CONFIGURATION_STATE_MACHINE": [
+      {
+        "STATE": "CFG-00_FACTORY_RELEASED",
+        "PHYSICAL_MEANING": "Manufacturing acceptance package complete to the release basis; sector not yet a site-installed object.",
+        "MINIMUM_EVIDENCE": [
+          "manufacturing dossier",
+          "material/weld/NDE genealogy",
+          "dimensional/metrology record",
+          "NCR disposition",
+          "factory test/leak records as applicable",
+          "shipping release"
+        ]
+      },
+      {
+        "STATE": "CFG-01_SITE_RECEIVED_PRESERVED",
+        "PHYSICAL_MEANING": "Identity/condition accepted at site and preservation established.",
+        "MINIMUM_EVIDENCE": [
+          "receiving inspection",
+          "transport/shock condition",
+          "dimensional/condition inspection",
+          "preservation plan",
+          "storage/laydown location"
+        ]
+      },
+      {
+        "STATE": "CFG-02_F106_PREASSEMBLY",
+        "PHYSICAL_MEANING": "Sector constituent interfaces assembled or prepared on qualified fixture/tooling.",
+        "MINIMUM_EVIDENCE": [
+          "fixture acceptance",
+          "tool calibration",
+          "cleanliness/FME status",
+          "interface metrology",
+          "temporary support state"
+        ]
+      },
+      {
+        "STATE": "CFG-03_F106_LIFT_READY",
+        "PHYSICAL_MEANING": "Critical-lift release prerequisites satisfied.",
+        "MINIMUM_EVIDENCE": [
+          "accepted mass/COG",
+          "crane configuration",
+          "lifting-device inspection",
+          "rigging configuration",
+          "metrology",
+          "obstruction/path walkdown",
+          "temporary support readiness",
+          "exclusion zone",
+          "trial/rehearsal where required",
+          "critical-lift authorization"
+        ]
+      },
+      {
+        "STATE": "CFG-04_SUSPENDED_TRANSFER",
+        "PHYSICAL_MEANING": "Sector load carried by the lifting system; transfer/opening/exclusion configuration active.",
+        "MINIMUM_EVIDENCE": [
+          "lift record",
+          "communications/control state",
+          "path monitoring",
+          "temporary configuration state"
+        ]
+      },
+      {
+        "STATE": "CFG-05_PIT_TEMP_SUPPORTED",
+        "PHYSICAL_MEANING": "Sector captured in F101 on temporary/permanent support combination; final load path not yet assumed.",
+        "MINIMUM_EVIDENCE": [
+          "touchdown/set record",
+          "temporary-support inspection",
+          "stability verification",
+          "as-set survey"
+        ]
+      },
+      {
+        "STATE": "CFG-06_ALIGNED_RELEASED_TO_JOIN",
+        "PHYSICAL_MEANING": "As-set alignment accepted sufficiently for adjacent-sector joining work.",
+        "MINIMUM_EVIDENCE": [
+          "survey",
+          "deviation disposition",
+          "release-to-join"
+        ]
+      },
+      {
+        "STATE": "CFG-07_FIELD_JOINT_FITUP",
+        "PHYSICAL_MEANING": "Measured adjacent geometry controls closure/splice fabrication and joint preparation.",
+        "MINIMUM_EVIDENCE": [
+          "gap/mismatch survey",
+          "closure/splice disposition",
+          "fit-up record",
+          "joint preparation inspection"
+        ]
+      },
+      {
+        "STATE": "CFG-08_WELDED_NDE_PENDING",
+        "PHYSICAL_MEANING": "Permanent weld exists but acceptance boundary is incomplete.",
+        "MINIMUM_EVIDENCE": [
+          "weld traveller",
+          "WPS/PQR reference",
+          "operator/welder qualification",
+          "consumable/control records",
+          "distortion/metrology monitoring"
+        ]
+      },
+      {
+        "STATE": "CFG-09_NDE_ACCEPTED_LEAK_PENDING",
+        "PHYSICAL_MEANING": "Required NDE accepted; vacuum/leak boundary not yet released.",
+        "MINIMUM_EVIDENCE": [
+          "NDE records",
+          "weld map",
+          "repair/re-NDE records"
+        ]
+      },
+      {
+        "STATE": "CFG-10_LEAK_ACCEPTED_POSTWELD_METROLOGY",
+        "PHYSICAL_MEANING": "Leak test accepted and as-welded geometry established.",
+        "MINIMUM_EVIDENCE": [
+          "test boundary lineup",
+          "instrument calibration",
+          "leak-test result",
+          "post-weld survey"
+        ]
+      },
+      {
+        "STATE": "CFG-11_PERMANENT_LOAD_PATH_VERIFIED",
+        "PHYSICAL_MEANING": "Permanent support/load path accepted for the applicable construction state and temporary support removal authorized.",
+        "MINIMUM_EVIDENCE": [
+          "support/interface inspection",
+          "anchor/embed/base/grout acceptance",
+          "load-transfer procedure/result",
+          "survey",
+          "temporary-support removal authorization"
+        ]
+      },
+      {
+        "STATE": "CFG-12_ASBUILT_BASELINED",
+        "PHYSICAL_MEANING": "Installed physical geometry, weld/NDE/leak status, support configuration, deviations and temporary-work disposition reconciled into the controlled as-built baseline.",
+        "MINIMUM_EVIDENCE": [
+          "redlines",
+          "as-built model/drawings",
+          "survey",
+          "joint/weld/NDE/leak genealogy",
+          "NCR closure or accepted open-item status",
+          "temporary-work removal/restoration",
+          "configuration baseline"
+        ]
+      }
+    ],
+    "OPENING_CONFIGURATION_RULE": "A route used for construction is not automatically a permanent maintenance route.",
+    "TEMPORARY_WORK_RULE": "Every load-bearing or access-affecting temporary work requires its own design, installation, inspection, configuration, removal prerequisites and restoration evidence.",
+    "LIVE_BOUNDARY_RULE": "After turnover, constructor/subcontractor re-entry is controlled by the receiving organization/licensee rather than by prior geographic ownership."
+  },
+  "LIFECYCLE_FINDINGS": {
+    "REPRESENTATIVE_SS01": {
+      "CANONICAL_INSTALLATION_MONTH": "2028-01",
+      "WORKING_DATASET_SITE_ARRIVAL": "2027-08-18",
+      "WORKING_DATASET_INSTALLATION_START": "2028-01-15",
+      "WORKING_DATASET_STATUS": "NOT_SELF_AUTHENTICATING_CANON",
+      "COMPONENT_WORKING_IDENTITIES": [
+        "FUS-S01-VV",
+        "FUS-S01-TF",
+        "FUS-S01-TS"
+      ],
+      "SUPPLIER_WORKING_LABEL": "MHI/HMS-qualified supply chain",
+      "INSTALLER_WORKING_LABEL": "Kiewit/MHI/HMS",
+      "CONTROL_NOTE": "Exact day-level values remain working-dataset detail. Narrative month is controlling until reconciliation."
+    },
+    "SECTOR_CAMPAIGN_CANONICAL_MONTHS": {
+      "START": "2028-01",
+      "END": "2029-04",
+      "COUNT": 16,
+      "RULE": "ONE_PLACEMENT_PER_MONTH_IN_CONTROLLED_NARRATIVE"
+    },
+    "MANUFACTURING_TO_SITE_AUTHORITY_CHAIN": {
+      "CONTROLLED_FRAMEWORK": [
+        "HMS_TECHNOLOGY_REQUIREMENT",
+        "E&C_PURCHASE_AND_INTEGRATION_SPECIFICATION",
+        "QUALIFIED_MANUFACTURER",
+        "E&C/HMS_QA_ACCEPTANCE_FOR_SHIPMENT_OR_ASSEMBLY",
+        "BECHTEL/KIEWIT_SITE_INSTALLATION_CHAIN",
+        "E&C/HMS/OPG_ACCEPTANCE"
+      ],
+      "LIMITATION": "Do not infer that every FUS-Sxx-VV component was manufactured solely by MHI without component-specific manufacturing records."
+    }
+  },
+  "ENGINEERED_RECONSTRUCTIONS": [
+    {
+      "ID": "T4-ER-C001-001",
+      "SUBJECT": "SECTOR_LIFECYCLE_STATE_MACHINE",
+      "STATUS": "E",
+      "BASIS": "OFG workfront history + V03 erection state machine + ITER/QST precedent"
+    },
+    {
+      "ID": "T4-ER-C001-002",
+      "SUBJECT": "FIELD_JOINT_INSTANCE_FAMILY",
+      "STATUS": "E/PROVISIONAL_IDENTITY",
+      "BASIS": "Closed 16-sector toroidal topology physically requires 16 adjacent-sector interfaces; exact OFG tag grammar absent."
+    },
+    {
+      "ID": "T4-ER-C001-003",
+      "SUBJECT": "TEMPORARY_STABILITY_CONFIGURATION_FAMILY",
+      "STATUS": "E",
+      "BASIS": "OFG pit-set/stabilization sequence plus ITER temporary-support precedent."
+    },
+    {
+      "ID": "T4-ER-C001-004",
+      "SUBJECT": "LOAD_TRANSFER_HOLD_POINT",
+      "STATUS": "E",
+      "BASIS": "Permanent gravity supports exist and are surveyed before machine erection, but erection-state supports cannot be assumed identical to final load path."
+    },
+    {
+      "ID": "T4-ER-C001-005",
+      "SUBJECT": "F106_PRODUCTION_SYSTEM_DECOMPOSITION",
+      "STATUS": "E/C_DERIVED",
+      "BASIS": "Source history explicitly differentiates production readiness from building completion."
+    }
+  ],
+  "CONSTRUCTION_PACKAGES": [
+    {
+      "PACKAGE_CLASS": "T4-PROV-WP-SECTOR-FACTORY-RELEASE",
+      "REQUIRED_CONTENT": [
+        "manufacturing dossier",
+        "material traceability",
+        "weld/NDE genealogy",
+        "dimensional report",
+        "NCR disposition",
+        "factory pressure/vacuum/leak evidence as applicable",
+        "release note"
+      ],
+      "HISTORICAL_DOCUMENT_ASSERTED": false
+    },
+    {
+      "PACKAGE_CLASS": "T4-PROV-WP-SECTOR-SITE-RECEIPT",
+      "REQUIRED_CONTENT": [
+        "identity/pedigree",
+        "delivery record",
+        "shipping restraint/condition evidence",
+        "damage inspection",
+        "shock/condition recorder review if fitted",
+        "dimensional check",
+        "preservation disposition"
+      ],
+      "HISTORICAL_DOCUMENT_ASSERTED": false
+    },
+    {
+      "PACKAGE_CLASS": "T4-PROV-WP-F106-PREASSEMBLY",
+      "REQUIRED_CONTENT": [
+        "fixture release",
+        "tool calibration",
+        "cleanliness/FME",
+        "component pedigree",
+        "assembly sequence",
+        "temporary support state",
+        "metrology",
+        "interface inspection"
+      ],
+      "HISTORICAL_DOCUMENT_ASSERTED": false
+    },
+    {
+      "PACKAGE_CLASS": "T4-PROV-WP-SECTOR-PRELIFT",
+      "REQUIRED_CONTENT": [
+        "accepted mass/COG",
+        "lift plan",
+        "crane configuration",
+        "below-hook device pedigree",
+        "rigging inspection",
+        "swept-path/obstruction check",
+        "temporary-support readiness",
+        "exclusion zone",
+        "communications",
+        "weather/environmental limits if applicable",
+        "hold/witness release"
+      ],
+      "HISTORICAL_DOCUMENT_ASSERTED": false
+    },
+    {
+      "PACKAGE_CLASS": "T4-PROV-WP-SECTOR-TRANSFER-SET",
+      "REQUIRED_CONTENT": [
+        "opening/path state",
+        "critical-lift execution",
+        "pit approach/lowering",
+        "touchdown/set",
+        "temporary stabilization",
+        "as-set survey"
+      ],
+      "HISTORICAL_DOCUMENT_ASSERTED": false
+    },
+    {
+      "PACKAGE_CLASS": "T4-PROV-WP-SECTOR-FITUP",
+      "REQUIRED_CONTENT": [
+        "adjacent geometry survey",
+        "gap/mismatch",
+        "closure/splice definition",
+        "machining/fitting record",
+        "alignment restraint",
+        "joint preparation inspection"
+      ],
+      "HISTORICAL_DOCUMENT_ASSERTED": false
+    },
+    {
+      "PACKAGE_CLASS": "T4-PROV-WP-SECTOR-WELD",
+      "REQUIRED_CONTENT": [
+        "joint identity",
+        "WPS/PQR",
+        "performer qualification",
+        "weld sequence",
+        "consumables",
+        "environmental/preheat/interpass controls as applicable",
+        "weld traveller",
+        "distortion monitoring"
+      ],
+      "HISTORICAL_DOCUMENT_ASSERTED": false
+    },
+    {
+      "PACKAGE_CLASS": "T4-PROV-WP-SECTOR-NDE",
+      "REQUIRED_CONTENT": [
+        "weld map",
+        "method/procedure",
+        "personnel qualification",
+        "coverage",
+        "results",
+        "repair/reinspection genealogy"
+      ],
+      "HISTORICAL_DOCUMENT_ASSERTED": false
+    },
+    {
+      "PACKAGE_CLASS": "T4-PROV-WP-SECTOR-LEAK",
+      "REQUIRED_CONTENT": [
+        "test boundary",
+        "lineup",
+        "instrument calibration",
+        "method",
+        "sensitivity",
+        "acceptance criterion",
+        "result",
+        "leak location/repair/retest if applicable"
+      ],
+      "HISTORICAL_DOCUMENT_ASSERTED": false
+    },
+    {
+      "PACKAGE_CLASS": "T4-PROV-WP-SECTOR-ASBUILT-CLOSEOUT",
+      "REQUIRED_CONTENT": [
+        "postweld metrology",
+        "support configuration",
+        "anchor/embed state",
+        "temporary-work removal",
+        "redlines",
+        "NCR/deviation status",
+        "weld/NDE/leak genealogy",
+        "as-built model/drawing",
+        "configuration release"
+      ],
+      "HISTORICAL_DOCUMENT_ASSERTED": false
+    }
+  ],
+  "WORKFRONTS": [
+    {
+      "WORKFRONT_ID": "WF-T4-C001-F106-SA",
+      "LOCATION": "F-106_ASSEMBLY_HALL",
+      "FUNCTION": "SECTOR_RECEIPT_PREASSEMBLY_METROLOGY_TOOLING_AND_LIFT_RELEASE",
+      "PHYSICAL_PREDECESSORS": [
+        "crane/runway available",
+        "proof load/certification",
+        "assembly fixture acceptance",
+        "metrology baseline",
+        "cleanliness/preservation state"
+      ],
+      "SUCCESSOR": "WF-T4-C001-F106-F101-LIFT"
+    },
+    {
+      "WORKFRONT_ID": "WF-T4-C001-F106-F101-LIFT",
+      "LOCATION": "F106_TO_F101_TRANSFER_INTERFACE",
+      "FUNCTION": "CRITICAL_LIFT_AND_TRANSFER",
+      "PHYSICAL_PREDECESSORS": [
+        "sector lift-ready",
+        "opening/path released",
+        "rigging ready",
+        "temporary support ready",
+        "exclusion zone established"
+      ],
+      "SUCCESSOR": "WF-T4-C001-F101-SET"
+    },
+    {
+      "WORKFRONT_ID": "WF-T4-C001-F101-SET",
+      "LOCATION": "F-101_TOKAMAK_PIT",
+      "FUNCTION": "PIT_SET_TEMPORARY_STABILIZATION_AND_AS_SET_SURVEY",
+      "SUCCESSOR": "WF-T4-C001-F101-JOIN"
+    },
+    {
+      "WORKFRONT_ID": "WF-T4-C001-F101-JOIN",
+      "LOCATION": "F-101_TOROIDAL_JOINT_FRONT",
+      "FUNCTION": "METROLOGY_FITUP_CLOSURE_WELD_NDE_LEAK_AND_POSTWELD_SURVEY",
+      "CONCURRENCY_RULE": "MAY_RUN_BEHIND_CONTINUING_SECTOR_PLACEMENT_FRONT"
+    },
+    {
+      "WORKFRONT_ID": "WF-T4-C001-F101-LOADPATH",
+      "LOCATION": "F-101_MACHINE_SUPPORT_AND_FOUNDATION_INTERFACE",
+      "FUNCTION": "PERMANENT_LOAD_TRANSFER_TEMPORARY_SUPPORT_REMOVAL_AND_ASBUILT"
+    }
+  ],
+  "TEMPORARY_WORKS": [
+    {
+      "TYPE": "SECTOR_ASSEMBLY_FIXTURE",
+      "KNOWN_WORKING_IDENTITIES": [
+        "AST-SAF-01",
+        "AST-SAF-02",
+        "AST-SAF-03",
+        "AST-SAF-04"
+      ],
+      "STATUS": "WORKING_DATASET_IDENTITIES_REQUIRE_BASELINE_CONFIRMATION"
+    },
+    {
+      "TYPE": "SECTOR_UPENDING_TOOL",
+      "KNOWN_WORKING_IDENTITIES": [
+        "AST-UPD-01",
+        "AST-UPD-02"
+      ],
+      "STATUS": "WORKING_DATASET_IDENTITIES_REQUIRE_BASELINE_CONFIRMATION"
+    },
+    {
+      "TYPE": "SECTOR_LIFTING_TOOL",
+      "KNOWN_WORKING_IDENTITY": "AST-SLT-01",
+      "STATUS": "WORKING_DATASET_IDENTITIES_REQUIRE_BASELINE_CONFIRMATION"
+    },
+    {
+      "TYPE": "DUAL_CRANE_HEAVY_LIFTING_BEAM",
+      "KNOWN_WORKING_IDENTITY": "AST-DCHLB-01",
+      "STATUS": "WORKING_DATASET_IDENTITIES_REQUIRE_BASELINE_CONFIRMATION"
+    },
+    {
+      "TYPE": "IN_PIT_ASSEMBLY_ALIGNMENT_AND_RADIAL_SUPPORT_SYSTEM",
+      "KNOWN_WORKING_IDENTITY": "AST-IPAT-01",
+      "STATUS": "WORKING_DATASET_IDENTITIES_REQUIRE_BASELINE_CONFIRMATION"
+    },
+    {
+      "TYPE": "TEMPORARY_SECTOR_STABILIZATION",
+      "KNOWN_IDENTITY": null,
+      "PROVISIONAL_FAMILY": "T4-PROV-TW-SECTOR-STABILITY-FAMILY",
+      "STATUS": "PHYSICALLY_REQUIRED_EXACT_TOPOLOGY_OPEN"
+    },
+    {
+      "TYPE": "TEMPORARY_ACCESS_SCAFFOLD_PLATFORM",
+      "STATUS": "INSTANCE_IDENTITIES_OPEN",
+      "RULE": "Must not conflict with lift path, egress, weld/NDE access, metrology line-of-sight or later removal sequence."
+    },
+    {
+      "TYPE": "HEAVY_LIFT_EXCLUSION_ZONE",
+      "PROVISIONAL_FAMILY": "T4-PROV-EXCL-SECTOR-LIFT-FAMILY",
+      "STATUS": "GEOMETRY_OPEN"
+    }
+  ],
+  "LOGISTICS_FINDINGS": [
+    {
+      "ID": "T4-LOG-C001-001",
+      "FINDING": "Site receipt is a separate controlled lifecycle stage from manufacturing acceptance and includes offload, condition/dimensional inspection, preservation, transport-condition review and controlled movement to laydown or installation."
+    },
+    {
+      "ID": "T4-LOG-C001-002",
+      "FINDING": "No claim is made that sector arrival makes the sector immediately available for lift; preservation, assembly, metrology, fixture release and lift-readiness gates intervene."
+    },
+    {
+      "ID": "T4-LOG-C001-003",
+      "FINDING": "Heavy-haul/transfer route numerical width, grade, axle load, turning radius and overhead-clearance closure remains OPEN."
+    }
+  ],
+  "INSTALLATION_FINDINGS": [
+    {
+      "ID": "T4-INST-C001-001",
+      "FINDING": "The controlled sector lift cycle is repeatable as a production template but each instance retains its own configuration/evidence state."
+    },
+    {
+      "ID": "T4-INST-C001-002",
+      "FINDING": "Crane hook release after pit set must not be assumed until temporary/permanent support stability is verified."
+    },
+    {
+      "ID": "T4-INST-C001-003",
+      "FINDING": "Monthly pit placement does not establish monthly field-joint completion."
+    },
+    {
+      "ID": "T4-INST-C001-004",
+      "FINDING": "Joining sequence must preserve access for welding, NDE, leak testing, metrology and repair; premature permanent closure can create unserviceable or unverifiable joints."
+    }
+  ],
+  "QA_QC_FINDINGS": {
+    "MINIMUM_HOLD_WITNESS_MATRIX": [
+      "HP01_FACTORY_MDR_AND_RELEASE",
+      "HP02_SHIPPING_AND_PRESERVATION_RELEASE",
+      "HP03_SITE_RECEIPT_IDENTITY_CONDITION",
+      "HP04_FIXTURE_CERTIFICATION_AND_CALIBRATION",
+      "HP05_CRANE_PROOF_LOAD_AND_CERTIFICATION",
+      "HP06_METROLOGY_NETWORK_ACCEPTANCE",
+      "HP07_MASS_COG_RELEASE",
+      "HP08_RIGGING_AND_LIFTING_FIXTURE_INSPECTION",
+      "HP09_PATH_OBSTRUCTION_EXCLUSION_RELEASE",
+      "HP10_TRIAL_OR_PRELIFT_RELEASE",
+      "HP11_TEMPORARY_SUPPORT_READY",
+      "HP12_PIT_TOUCHDOWN_AND_AS_SET_SURVEY",
+      "HP13_FITUP_GAP_MISMATCH_CLOSURE_DISPOSITION",
+      "HP14_WELD_PROCEDURE_OPERATOR_AND_JOINT_PREP_RELEASE",
+      "HP15_NDE_ACCEPTANCE",
+      "HP16_LEAK_TEST_ACCEPTANCE",
+      "HP17_POSTWELD_METROLOGY",
+      "HP18_PERMANENT_LOAD_TRANSFER_VERIFICATION",
+      "HP19_TEMPORARY_WORK_REMOVAL_RESTORATION",
+      "HP20_ASBUILT_CONFIGURATION_CLOSEOUT"
+    ],
+    "CONTROL_NOTE": "Named witness parties are not assigned beyond evidence-supported organizational roles. Exact individual inspectors, welders, riggers and signatories remain source-dependent."
+  },
+  "REDLINE_AS_BUILT_FINDINGS": [
+    {
+      "ID": "T4-AB-C001-001",
+      "RULE": "A survey deviation cannot be closed merely by altering the BIM model; disposition must link design basis, NCR/deviation authority, physical condition and post-disposition evidence."
+    },
+    {
+      "ID": "T4-AB-C001-002",
+      "RULE": "Final toroidal as-built must preserve joint identity, measured geometry, closure-piece configuration, weld map, NDE, leak-test result and support configuration."
+    },
+    {
+      "ID": "T4-AB-C001-003",
+      "RULE": "Temporary support/tooling removal and permanent opening closure are configuration changes requiring retained restoration/closure evidence."
+    }
+  ],
+  "COMPLETION_TURNOVER_FINDINGS": [
+    {
+      "ID": "T4-CT-C001-001",
+      "FINDING": "Machine/component physical installation, structural closure, vacuum-boundary acceptance, mechanical completion, turnover and commissioning are distinct states."
+    },
+    {
+      "ID": "T4-CT-C001-002",
+      "FINDING": "The last sector placement does not satisfy machine structural closure, joint acceptance, as-built reconciliation or turnover."
+    },
+    {
+      "ID": "T4-CT-C001-003",
+      "FINDING": "Post-turnover construction re-entry requires receiving-organization/licensee work control."
+    }
+  ],
+  "BOUNDARY_FINDINGS": [
+    {
+      "BOUNDARY_ID": "BC-C001-T4-T5-F101_F106_LIFTING_TOOLING_LOGISTICS_PRESERVATION_AND_TURNOVER",
+      "STATUS": "INPUT_REQUIRED_FOR_NUMERICAL_AND_PEDIGREE_CLOSURE",
+      "T4_OUTPUT": [
+        "required manufacturing-to-site evidence contract",
+        "lift-readiness data contract",
+        "temporary/permanent support interface requirements",
+        "receipt/preservation state model"
+      ],
+      "REQUIRED_FROM_T5": [
+        "manufacturer/fabricator identity by sector component",
+        "MDR/FAT/NCR release genealogy",
+        "factory as-built mass/COG",
+        "shipment packaging/restraint configuration",
+        "shipping release",
+        "transport/shock data",
+        "site preservation requirements",
+        "OEM lifting-point and handling restrictions"
+      ],
+      "BLOCKING": true
+    },
+    {
+      "BOUNDARY_ID": "BC-C001-T3-T4-ELECTRICAL_CIVIL_DUCTBANK_PENETRATION_SUPPORT_AND_ROOM_INTERFACE",
+      "STATUS": "NONBLOCKING_FOR_LOGIC_BLOCKING_FOR_FINAL_GEOMETRIC_CLOSEOUT",
+      "T4_OUTPUT": [
+        "crane/runway/building support objects",
+        "opening/penetration closure states",
+        "construction-to-live-boundary sequence"
+      ],
+      "REQUIRED_FROM_T3": [
+        "crane power/control/grounding interface",
+        "permanent versus temporary power transition",
+        "cable/duct penetration requirements",
+        "energization boundary affecting access/work control"
+      ]
+    },
+    {
+      "BOUNDARY_ID": "BC-C001-T2-T4-BHT401_SUPPORT_ANCHOR_BUILDING_INTERFACE",
+      "STATUS": "NONBLOCKING_SHARED_SCHEMA_DEPENDENCY",
+      "T4_OUTPUT": [
+        "common support-anchor-embed-foundation evidence schema",
+        "temporary support lifecycle rules",
+        "post-turnover re-entry rule"
+      ],
+      "REQUIRED_FROM_T2": [
+        "BHT load/reaction envelopes where civil support closure is required",
+        "temporary skid/support configuration interfaces"
+      ]
+    }
+  ],
+  "VALIDATION_RESULTS": [
+    {
+      "VALIDATION_ID": "T4-VAL-C001-001",
+      "SUBJECT": "CONSTRUCTION_SEQUENCE",
+      "METHOD": "SOURCE_CHRONOLOGY_CROSSCHECK_PLUS_ITER_QST_ANALOGUE",
+      "RESULT": "PASS",
+      "LIMITATION": "Exact joining lag by sector remains OPEN."
+    },
+    {
+      "VALIDATION_ID": "T4-VAL-C001-002",
+      "SUBJECT": "HEAVY_LIFT_FEASIBILITY",
+      "METHOD": "LOGICAL_PREREQUISITE_AND_EVIDENCE_CHECK",
+      "RESULT": "PARTIAL",
+      "LIMITATION": "Numerical capacity, accepted sector mass/COG, runway reactions and transfer geometry are unresolved."
+    },
+    {
+      "VALIDATION_ID": "T4-VAL-C001-003",
+      "SUBJECT": "ACCESS_AND_OBSTRUCTION_COHERENCE",
+      "METHOD": "4D_SEQUENCE_AND_OPENING_LOGIC",
+      "RESULT": "PARTIAL",
+      "LIMITATION": "Metric swept path remains blocked."
+    },
+    {
+      "VALIDATION_ID": "T4-VAL-C001-004",
+      "SUBJECT": "LOAD_PATH_CONTINUITY",
+      "METHOD": "TOPOLOGY_TRACE_FROM_MACHINE_TO_GROUND",
+      "RESULT": "PARTIAL",
+      "LIMITATION": "No numerical coupled machine/building/SSI solution."
+    },
+    {
+      "VALIDATION_ID": "T4-VAL-C001-005",
+      "SUBJECT": "TEMPORARY_STABILITY",
+      "METHOD": "CONSTRUCTION_STATE_REPLAY_PLUS_REAL_WORLD_PRECEDENT",
+      "RESULT": "PARTIAL",
+      "LIMITATION": "OFG temporary-support hardware geometry, reactions and stability calculations not recovered."
+    },
+    {
+      "VALIDATION_ID": "T4-VAL-C001-006",
+      "SUBJECT": "METROLOGY_AND_JOINING_SEQUENCE",
+      "METHOD": "SOURCE_SEQUENCE_PLUS_INDEPENDENT_FUSION_PRECEDENT",
+      "RESULT": "PASS",
+      "LIMITATION": "Numerical OFG tolerances remain OPEN."
+    },
+    {
+      "VALIDATION_ID": "T4-VAL-C001-007",
+      "SUBJECT": "NDE_AND_LEAK_BOUNDARY_COHERENCE",
+      "METHOD": "RECORD_AND_BOUNDARY_GENEALOGY",
+      "RESULT": "PARTIAL",
+      "LIMITATION": "Exact method, coverage, qualified procedure, acceptance criterion and test sensitivity are not supplied."
+    },
+    {
+      "VALIDATION_ID": "T4-VAL-C001-008",
+      "SUBJECT": "ASBUILT_CONFIGURATION",
+      "METHOD": "DESIGN_PHYSICAL_EVIDENCE_RECONCILIATION_RULE",
+      "RESULT": "PASS",
+      "LIMITATION": "Not all instance-level sector closeout records are present in supplied corpus."
+    },
+    {
+      "VALIDATION_ID": "T4-VAL-C001-009",
+      "SUBJECT": "MAINTAINABILITY_ACCESS",
+      "METHOD": "CONSTRUCTION_ROUTE_VERSUS_PERMANENT_ROUTE_CHECK",
+      "RESULT": "PARTIAL",
+      "LIMITATION": "Permanent major-maintenance swept-volume geometry remains OPEN."
+    }
+  ],
+  "VERIFICATION_RESULTS": [
+    {
+      "VERIFICATION_ID": "T4-VER-C001-001",
+      "SUBJECT": "SOURCE_TO_CLAIM",
+      "RESULT": "PASS",
+      "METHOD": "Claim-level source classification and precedent segregation",
+      "LIMITATIONS": "External sources retained as V/R only."
+    },
+    {
+      "VERIFICATION_ID": "T4-VER-C001-002",
+      "SUBJECT": "OBJECT_TO_WORK_PACKAGE_TRACE",
+      "RESULT": "PARTIAL",
+      "METHOD": "Physical object -> lifecycle stage -> required package class",
+      "LIMITATIONS": "Exact historical OFG work-package IDs are not recovered; generated package classes are explicitly provisional."
+    },
+    {
+      "VERIFICATION_ID": "T4-VER-C001-003",
+      "SUBJECT": "TEMPORAL_SEQUENCE",
+      "RESULT": "FAIL",
+      "METHOD": "Narrative chronology versus RevW3 event master/monthly workfront comparison",
+      "FAILURE": "Controlled narrative gives monthly SS-01..SS-12 Jan-Dec 2028 and SS-13..SS-16 Jan-Apr 2029, while working event data shifts SS-06 onward and ends SS-16 in June 2029.",
+      "DISPOSITION": "QUARANTINE_LOWER_PRIORITY_WORKING_DATE_FIELDS_PENDING_THREAD_1_RECONCILIATION"
+    },
+    {
+      "VERIFICATION_ID": "T4-VER-C001-004",
+      "SUBJECT": "CONFIGURATION_REPLAY",
+      "RESULT": "PARTIAL",
+      "METHOD": "Representative SS-01 lifecycle replay from factory release through as-built baseline",
+      "LIMITATIONS": "State machine closes logically; exact joint-specific work records and temporary-support hardware are incomplete."
+    },
+    {
+      "VERIFICATION_ID": "T4-VER-C001-005",
+      "SUBJECT": "SURVEY_AND_METROLOGY_RECORD_GENEALOGY",
+      "RESULT": "PARTIAL",
+      "METHOD": "factory metrology -> receipt -> fixture/preassembly -> pre-lift -> as-set -> fit-up -> postweld -> as-built",
+      "LIMITATIONS": "Required genealogy is coherent but actual record IDs/coordinates are not fully supplied."
+    },
+    {
+      "VERIFICATION_ID": "T4-VER-C001-006",
+      "SUBJECT": "WELD_NDE_LEAK_TEST_TRACEABILITY",
+      "RESULT": "PARTIAL",
+      "METHOD": "joint identity -> weld map -> NDE -> leak boundary -> postweld survey",
+      "LIMITATIONS": "No full instance-level historical register recovered."
+    },
+    {
+      "VERIFICATION_ID": "T4-VER-C001-007",
+      "SUBJECT": "LIFECYCLE_RECONCILIATION",
+      "RESULT": "FAIL",
+      "METHOD": "Cross-source date/state reconciliation",
+      "FAILURE": "Sector placement chronology inconsistency remains unresolved.",
+      "DISPOSITION": "RETURN_TO_THREAD_1"
+    },
+    {
+      "VERIFICATION_ID": "T4-VER-C001-008",
+      "SUBJECT": "CIVIL_TRANSFER_SWEPT_PATH",
+      "RESULT": "PARTIAL_BLOCKED",
+      "METHOD": "Inherited VER13 check review"
+    },
+    {
+      "VERIFICATION_ID": "T4-VER-C001-009",
+      "SUBJECT": "UNSUPPORTED_NUMERICAL_IMPORT_CONTROL",
+      "RESULT": "PASS",
+      "METHOD": "Scan for imported ITER geometry/capacity/tolerance values",
+      "RESULT_DETAIL": "No ITER numerical dimension, crane capacity, reaction or tolerance promoted to OFG fact."
+    }
+  ],
+  "VV_RECORDS": [
+    {
+      "ID": "T4-VVREC-C001-001",
+      "CLASS": "CONSTRUCTION_SEQUENCE",
+      "STATUS": "PASS"
+    },
+    {
+      "ID": "T4-VVREC-C001-002",
+      "CLASS": "HEAVY_LIFT_FEASIBILITY",
+      "STATUS": "PARTIAL"
+    },
+    {
+      "ID": "T4-VVREC-C001-003",
+      "CLASS": "ACCESS_OBSTRUCTION",
+      "STATUS": "PARTIAL"
+    },
+    {
+      "ID": "T4-VVREC-C001-004",
+      "CLASS": "LOAD_PATH",
+      "STATUS": "PARTIAL"
+    },
+    {
+      "ID": "T4-VVREC-C001-005",
+      "CLASS": "TEMPORARY_STABILITY",
+      "STATUS": "PARTIAL"
+    },
+    {
+      "ID": "T4-VVREC-C001-006",
+      "CLASS": "METROLOGY_JOINING",
+      "STATUS": "PASS"
+    },
+    {
+      "ID": "T4-VVREC-C001-007",
+      "CLASS": "NDE_LEAK",
+      "STATUS": "PARTIAL"
+    },
+    {
+      "ID": "T4-VVREC-C001-008",
+      "CLASS": "ASBUILT",
+      "STATUS": "PASS_REQUIREMENT_PARTIAL_EVIDENCE"
+    },
+    {
+      "ID": "T4-VVREC-C001-009",
+      "CLASS": "MAINTAINABILITY",
+      "STATUS": "PARTIAL"
+    }
+  ],
+  "ASSURANCE_RESULTS": {
+    "ASSURANCE_CLASS": "AS3",
+    "GENERATION_IS_NOT_ACCEPTANCE": true,
+    "RESULT": "PASS_WITH_REGISTERED_OPEN_ITEMS_AND_CONFLICTS",
+    "CHECKS_EXECUTED": [
+      "baseline/source precedence check",
+      "historical execution evidence check",
+      "external precedent segregation check",
+      "physical decomposition completeness scan",
+      "construction chronology replay",
+      "workfront/interface consistency check",
+      "temporary works lifecycle check",
+      "load-path continuity check",
+      "authority/actor separation check",
+      "evidence genealogy check",
+      "numerical non-invention check",
+      "cross-dataset chronology reconciliation",
+      "cross-domain boundary assessment"
+    ],
+    "VERIFICATION_METHOD": "SOURCE_TO_CLAIM_PLUS_CROSS_DATASET_AND_TOPOLOGY_CHECK",
+    "VALIDATION_METHOD": "INTENDED_USE_CONSTRUCTABILITY_AND_REAL_WORLD_PRECEDENT_TRIANGULATION",
+    "LIMITATIONS": [
+      "No final structural/lift numerical analysis is possible without project-specific mass, geometry, support and material inputs.",
+      "No craft-person identity was inferred.",
+      "No exact weld/NDE/leak acceptance criterion was invented.",
+      "No working-dataset day-level sector date was promoted over controlled chronology.",
+      "F106/F102 identity mismatch remains outside worker authority."
+    ],
+    "INDEPENDENT_CHECK_REQUIRED": [
+      "final heavy-lift engineering",
+      "temporary support/stability analysis",
+      "machine-building coupled FE/SSI",
+      "anchor/embed qualification",
+      "vacuum-boundary weld/NDE/leak acceptance basis",
+      "canonical identity reconciliation",
+      "sector chronology reconciliation"
+    ],
+    "RF023_INTERPRETATION_NOTE": "Dispatch-required RF023 was executed only as LOCAL backward/cross-propagation assessment. No global propagation control or global baseline write was performed."
+  },
+  "CONFLICTS": [
+    {
+      "CONFLICT_ID": "T4-CONFLICT-C001-F106-F102-ASSEMBLY-HALL",
+      "TYPE": "CANONICAL_IDENTITY_REFERENCE_CONFLICT",
+      "SEVERITY": "HIGH",
+      "CANDIDATE_A": {
+        "IDENTITY": "F-106_ASSEMBLY_HALL",
+        "BASIS": "Current dispatch and RevW3 site history use F106."
+      },
+      "CANDIDATE_B": {
+        "IDENTITY": "F102_ASSEMBLY_OUTAGE_HALL",
+        "BASIS": "Rev3 V03 federated interface uses F102 Assembly/Outage Hall -> F101 machine hall."
+      },
+      "ADDITIONAL_EVIDENCE": "Rev3 V13 later uses F106/F101 for the crane-hall-to-pit major-lift envelope.",
+      "LOCAL_DISPOSITION": "USE_F106_AS_DISPATCH_SCOPE_LABEL_WITHOUT_MERGING_OR_MUTATING_LEGACY_F102_ID",
+      "THREAD_1_ACTION_REQUIRED": true
+    },
+    {
+      "CONFLICT_ID": "T4-CONFLICT-C002-SECTOR-INSTALL-CHRONOLOGY",
+      "TYPE": "TEMPORAL_DATASET_CONFLICT",
+      "SEVERITY": "HIGH",
+      "CONTROLLED_NARRATIVE": "SS-01..SS-12 placed monthly Jan-Dec 2028; SS-13..SS-16 complete monthly placement Jan-Apr 2029.",
+      "WORKING_DATASET_SEQUENCE": [
+        ["SS-01", "2028-01"],
+        ["SS-02", "2028-02"],
+        ["SS-03", "2028-03"],
+        ["SS-04", "2028-04"],
+        ["SS-05", "2028-05"],
+        ["SS-06", "2028-07"],
+        ["SS-07", "2028-08"],
+        ["SS-08", "2028-09"],
+        ["SS-09", "2028-10"],
+        ["SS-10", "2028-11"],
+        ["SS-11", "2028-12"],
+        ["SS-12", "2029-01"],
+        ["SS-13", "2029-02"],
+        ["SS-14", "2029-04"],
+        ["SS-15", "2029-05"],
+        ["SS-16", "2029-06"]
+      ],
+      "WORKING_DATASET_QUALITY_NOTE": "Rows carry QA OK and are not flagged by the lifecycle-anomaly quarantine, showing that this is a narrative/dataset synchronization problem rather than an installation-before-arrival or turnover-before-MC anomaly.",
+      "LOCAL_DISPOSITION": "CONTROLLED_NARRATIVE_MONTH_SEQUENCE_GOVERNS_FOR_STORY_AND_CANON; WORKING_DAY_LEVEL_AND_MONTHLY_ROWS_QUARANTINED_FOR_THIS_CLAIM",
+      "THREAD_1_ACTION_REQUIRED": true
+    },
+    {
+      "CONFLICT_ID": "T4-CONFLICT-C003-CRANE-CAPACITY-STATUS",
+      "TYPE": "EPISTEMIC_STATUS_CONFLICT",
+      "SEVERITY": "MEDIUM",
+      "WORKING_DATASET": "LFT-F106-HBC-01 and -02 descriptions contain 900-t each / 1,800-t tandem wording and auxiliaries contain 75-t wording.",
+      "REV3_CONTROL": "V17 CDR07-003 explicitly leaves OFG crane capacity/elevation OPEN and says values must derive from OFG heaviest lift and building geometry rather than ITER values.",
+      "LOCAL_DISPOSITION": "DO_NOT_PROMOTE_WORKING_CAPACITY_DESCRIPTIONS_TO_CONTROLLED_ENGINEERING_PARAMETER",
+      "THREAD_1_ACTION_REQUIRED": true
+    }
+  ],
+  "QUARANTINED_ITEMS": [
+    {
+      "ID": "T4-Q-C001-001",
+      "ITEM": "REVW3_SECTOR_INSTALLATION_DATE_FIELDS_SS06_THROUGH_SS16",
+      "REASON": "Conflict with controlled narrative monthly erection campaign.",
+      "SCOPE": "SECTOR_PLACEMENT_DATE_CLAIMS_ONLY"
+    },
+    {
+      "ID": "T4-Q-C001-002",
+      "ITEM": "WORKING_CRANE_CAPACITY_DESCRIPTION",
+      "REASON": "Rev3 canonical decision register keeps OFG project crane capacity/elevation OPEN.",
+      "SCOPE": "NUMERICAL_FEASIBILITY_AND_DESIGN_PARAMETER_USE"
+    },
+    {
+      "ID": "T4-Q-C001-003",
+      "ITEM": "LEGACY_F102_TO_F101_ASSEMBLY_HALL_INTERFACE_IDENTITY",
+      "REASON": "Conflicts with current F106 scope identity and later V13/RevW3 usage.",
+      "SCOPE": "CANONICAL_IDENTITY_MERGE"
+    }
+  ],
+  "OPEN_ITEMS": [
+    {
+      "OPEN_ITEM_ID": "T4-OI-C001-001",
+      "SUBJECT": "F106_F101_TRANSFER_GEOMETRY",
+      "STATUS": "OPEN",
+      "NEEDED": [
+        "opening profile",
+        "crane/rail continuity",
+        "hook path",
+        "sector swept volume",
+        "clearances",
+        "temporary structures",
+        "laydown interface"
+      ]
+    },
+    {
+      "OPEN_ITEM_ID": "T4-OI-C001-002",
+      "SUBJECT": "CRANE_CAPACITY_AND_RAIL_GEOMETRY",
+      "STATUS": "OPEN",
+      "NEEDED": [
+        "rated load by configuration",
+        "tandem control basis",
+        "rail elevation",
+        "runway span",
+        "wheel loads",
+        "dynamic factors",
+        "proof-load record"
+      ]
+    },
+    {
+      "OPEN_ITEM_ID": "T4-OI-C001-003",
+      "SUBJECT": "SECTOR_ASBUILT_MASS_COG",
+      "STATUS": "OPEN",
+      "NEEDED": [
+        "accepted shipping/as-built mass",
+        "COG coordinates",
+        "lift-point reactions"
+      ]
+    },
+    {
+      "OPEN_ITEM_ID": "T4-OI-C001-004",
+      "SUBJECT": "LIFT_LOAD_CASES",
+      "STATUS": "OPEN",
+      "NEEDED": [
+        "static lift",
+        "dynamic amplification",
+        "off-level case",
+        "COG uncertainty",
+        "tandem load share",
+        "accidental skew",
+        "landing/contact"
+      ]
+    },
+    {
+      "OPEN_ITEM_ID": "T4-OI-C001-005",
+      "SUBJECT": "TEMPORARY_SUPPORT_TOPOLOGY_AND_REACTIONS",
+      "STATUS": "OPEN"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-OI-C001-006",
+      "SUBJECT": "PERMANENT_SUPPORT_6DOF_INTERFACE",
+      "STATUS": "OPEN"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-OI-C001-007",
+      "SUBJECT": "ANCHOR_EMBED_BASEPLATE_GROUT_DETAIL",
+      "STATUS": "OPEN"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-OI-C001-008",
+      "SUBJECT": "F101_FOUNDATION_AND_SSI_COUPLED_ANALYSIS",
+      "STATUS": "OPEN"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-OI-C001-009",
+      "SUBJECT": "COMPONENT_SPECIFIC_MANUFACTURING_PEDIGREE",
+      "STATUS": "OPEN",
+      "BOUNDARY": "T5"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-OI-C001-010",
+      "SUBJECT": "CANONICAL_FIELD_JOINT_TAGS_AND_EXACT_JOINING_LAG",
+      "STATUS": "OPEN"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-OI-C001-011",
+      "SUBJECT": "HISTORICAL_WPS_PQR_WELDER_OR_OPERATOR_RECORDS",
+      "STATUS": "OPEN"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-OI-C001-012",
+      "SUBJECT": "NDE_METHOD_COVERAGE_AND_ACCEPTANCE",
+      "STATUS": "OPEN"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-OI-C001-013",
+      "SUBJECT": "LEAK_TEST_METHOD_SENSITIVITY_ACCEPTANCE",
+      "STATUS": "OPEN"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-OI-C001-014",
+      "SUBJECT": "SURVEY_DATUM_COORDINATES_TOLERANCES_UNCERTAINTY",
+      "STATUS": "OPEN"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-OI-C001-015",
+      "SUBJECT": "OPENING_PENETRATION_COUNTS_COORDINATES_AND_FINAL_CLOSURE",
+      "STATUS": "OPEN"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-OI-C001-016",
+      "SUBJECT": "CAPTIVE_ITEM_LIST_BY_CLOSURE_GATE",
+      "STATUS": "OPEN"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-OI-C001-017",
+      "SUBJECT": "SECTOR_INSTANCE_ASBUILT_MC_TURNOVER_RECORD_IDS",
+      "STATUS": "OPEN"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-OI-C001-018",
+      "SUBJECT": "SECTOR_CHRONOLOGY_RECONCILIATION",
+      "STATUS": "OPEN_CONFLICT"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-OI-C001-019",
+      "SUBJECT": "POST_TURNOVER_REENTRY_AUTHORIZATION_MAP",
+      "STATUS": "OPEN"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-OI-C001-020",
+      "SUBJECT": "PERMANENT_MAJOR_MAINTENANCE_LIFT_AND_REMOVAL_PATH_GEOMETRY",
+      "STATUS": "OPEN"
+    }
+  ],
+  "UNCERTAINTIES": [
+    {
+      "CLASS": "GEOMETRIC",
+      "ITEMS": [
+        "F106/F101 interface dimensions",
+        "F101 internal structural grid",
+        "crane rail/hook elevation",
+        "temporary opening geometry",
+        "support coordinates",
+        "penetration coordinates",
+        "maintenance swept volumes"
+      ]
+    },
+    {
+      "CLASS": "STRUCTURAL",
+      "ITEMS": [
+        "crane reactions",
+        "temporary support reactions",
+        "permanent support reactions/stiffness",
+        "anchor/embed capacities",
+        "foundation stiffness",
+        "SSI",
+        "construction-stage redistribution",
+        "weld shrinkage/distortion"
+      ]
+    },
+    {
+      "CLASS": "FABRICATION_AND_JOINING",
+      "ITEMS": [
+        "closure-piece dimensions",
+        "joint-specific tolerances",
+        "WPS/PQR IDs",
+        "NDE methods/coverage",
+        "leak sensitivity/criterion",
+        "exact repair history"
+      ]
+    },
+    {
+      "CLASS": "HISTORICAL",
+      "ITEMS": [
+        "exact sector manufacturing assignment by component",
+        "exact historical package/document identifiers",
+        "exact sector joining dates",
+        "working-dataset sector placement dates after SS-05"
+      ]
+    },
+    {
+      "CLASS": "IDENTITY",
+      "ITEMS": [
+        "F106 versus legacy F102 Assembly/Outage Hall interface identity"
+      ]
+    }
+  ],
+  "BACKWARD_PROPAGATION_RECOMMENDATIONS": [
+    {
+      "PROPAGATION_ID": "T4-BP-C001-001",
+      "TARGET": "REV3_V03",
+      "CHANGE": "Bind machine support objects to specific anchor/embed host and temporary/permanent load-transfer state; preserve F106/F102 identity conflict until reconciled."
+    },
+    {
+      "PROPAGATION_ID": "T4-BP-C001-002",
+      "TARGET": "REV3_V04",
+      "CHANGE": "Add explicit construction-state load paths and field-joint evidence graph to permanent machine-support model."
+    },
+    {
+      "PROPAGATION_ID": "T4-BP-C001-003",
+      "TARGET": "REV3_V13",
+      "CHANGE": "Expand F106 production-system model and add sector lifecycle/package/hold-point templates."
+    },
+    {
+      "PROPAGATION_ID": "T4-BP-C001-004",
+      "TARGET": "REV3_V15",
+      "CHANGE": "Add controlled note quarantining conflicting RevW3 sector placement dates pending dataset repair."
+    },
+    {
+      "PROPAGATION_ID": "T4-BP-C001-005",
+      "TARGET": "REV3_V17",
+      "CHANGE": "Add instance-level trace checks for lift release, temporary support, joint/NDE/leak, load transfer and as-built closeout."
+    },
+    {
+      "PROPAGATION_ID": "T4-BP-C001-006",
+      "TARGET": "SITE_WORK_HISTORY_MASTER",
+      "CHANGE": "Reconcile sector placement event dates to controlling narrative or explicitly supersede narrative through Thread 1 controlled change."
+    },
+    {
+      "PROPAGATION_ID": "T4-BP-C001-007",
+      "TARGET": "MACHINE_ANNEX_RELATIONSHIP_GRAPH",
+      "CHANGE": "Add construction-state relationships between sectors, field joints, supports, temporary works, work packages and evidence objects after Thread 1 identity acceptance."
+    },
+    {
+      "PROPAGATION_ID": "T4-BP-C001-008",
+      "TARGET": "PARAMETRIC_3D_GEOMETRY",
+      "CHANGE": "Do not add invented metric transfer/lift/support geometry; add only topology/state contracts until surveyed/IFC values are available."
+    }
+  ],
+  "CROSS_BOUNDARY_DEPENDENCIES": [
+    {
+      "DEPENDENCY_ID": "BC-C001-T4-T5-F101_F106_LIFTING_TOOLING_LOGISTICS_PRESERVATION_AND_TURNOVER",
+      "EXTERNAL_SCOPE": "PROCUREMENT_MANUFACTURING_LOGISTICS_VENDOR_PEDIGREE",
+      "REQUIRED_INPUT": [
+        "sector manufacturing dossier genealogy",
+        "factory release",
+        "manufacturer by component",
+        "accepted mass and COG",
+        "shipping restraints",
+        "shipping release",
+        "transport condition/shock records",
+        "preservation requirements",
+        "OEM lifting point restrictions"
+      ],
+      "SHARED_OBJECTS": [
+        "FUS-Sxx-VV",
+        "FUS-Sxx-TF",
+        "FUS-Sxx-TS",
+        "AST-SAF-01..04",
+        "AST-SLT-01",
+        "AST-DCHLB-01",
+        "AST-IPAT-01"
+      ],
+      "TIME_STATE": "FACTORY_RELEASE_THROUGH_SITE_RECEIPT_AND_F106_PREASSEMBLY",
+      "BLOCKING": true
+    },
+    {
+      "DEPENDENCY_ID": "BC-C001-T3-T4-ELECTRICAL_CIVIL_DUCTBANK_PENETRATION_SUPPORT_AND_ROOM_INTERFACE",
+      "EXTERNAL_SCOPE": "ELECTRICAL_POWER_CONTROL_GROUNDING_CABLE_PENETRATION",
+      "REQUIRED_INPUT": [
+        "crane electrical supply/protection",
+        "grounding/bonding",
+        "control/communication",
+        "ductbank/penetration interfaces",
+        "energization boundaries"
+      ],
+      "TIME_STATE": "CONSTRUCTION_THROUGH_POST_TURNOVER_LIVE_BOUNDARIES",
+      "BLOCKING": false
+    },
+    {
+      "DEPENDENCY_ID": "BC-C001-T2-T4-BHT401_SUPPORT_ANCHOR_BUILDING_INTERFACE",
+      "EXTERNAL_SCOPE": "THERMAL_FLUID_MECHANICAL_SUPPORT_REACTION",
+      "REQUIRED_INPUT": [
+        "shared civil support schema compatibility",
+        "BHT support reaction/interface requirements"
+      ],
+      "BLOCKING": false
+    }
+  ],
+  "IDENTITY_RECONCILIATION_REQUESTS": [
+    {
+      "REQUEST_ID": "T4-IDR-C001-001",
+      "SUBJECT": "ASSEMBLY_HALL_IDENTITY",
+      "CANDIDATES": [
+        "F-106_ASSEMBLY_HALL",
+        "F102_ASSEMBLY_OUTAGE_HALL"
+      ],
+      "REQUESTED_THREAD_1_ACTION": "DETERMINE_CANONICAL_IDENTITY_AND_LEGACY_ALIAS_OR_SUPERSESSION_RULE_WITHOUT_SILENT_MERGE"
+    }
+  ],
+  "NEXT_INVESTIGATION_RECOMMENDATIONS": [
+    {
+      "RECOMMENDATION_ID": "T4-NI-C001-001",
+      "SUBJECT": "SECTOR_MANUFACTURING_TO_SITE_PEDIGREE_CLOSURE",
+      "RATIONALE": "Highest-value missing input for complete lifecycle trace.",
+      "ASSIGNMENT_AUTHORITY": "THREAD_1_ONLY"
+    },
+    {
+      "RECOMMENDATION_ID": "T4-NI-C001-002",
+      "SUBJECT": "F106_F101_METRIC_HEAVY_LIFT_MODEL",
+      "REQUIRED_INPUTS": [
+        "canonical building identity",
+        "survey/IFC geometry",
+        "sector as-built mass/COG",
+        "crane rating/configuration",
+        "runway structural model",
+        "lifting-device model",
+        "temporary support model"
+      ],
+      "ASSIGNMENT_AUTHORITY": "THREAD_1_ONLY"
+    },
+    {
+      "RECOMMENDATION_ID": "T4-NI-C001-003",
+      "SUBJECT": "FIELD_JOINT_INSTANCE_GENEALOGY",
+      "RATIONALE": "Needed to bind fit-up, closure-piece, weld, NDE, leak and metrology evidence to all 16 physical joints.",
+      "ASSIGNMENT_AUTHORITY": "THREAD_1_ONLY"
+    },
+    {
+      "RECOMMENDATION_ID": "T4-NI-C001-004",
+      "SUBJECT": "COUPLED_MACHINE_SUPPORT_FOUNDATION_FE",
+      "RATIONALE": "Required to close 6DOF support behavior and construction/permanent load cases.",
+      "ASSIGNMENT_AUTHORITY": "THREAD_1_ONLY"
+    },
+    {
+      "RECOMMENDATION_ID": "T4-NI-C001-005",
+      "SUBJECT": "SECTOR_CHRONOLOGY_DATASET_REPAIR",
+      "RATIONALE": "Required before event-master day-level sector dates can support scene-level or engineering-history use.",
+      "ASSIGNMENT_AUTHORITY": "THREAD_1_ONLY"
+    }
+  ],
+  "CONTENT_MANIFEST": {
+    "SECTIONS_PRESENT": [
+      "LOCAL_STATE_CAPSULE",
+      "EXECUTED_SCOPE",
+      "UNFINISHED_SCOPE",
+      "RESEARCH_PERFORMED",
+      "NEW_ENGINEERING_FINDINGS",
+      "PROPOSED_ATLAS_DELTAS",
+      "PROPOSED_ANNEX_DELTAS",
+      "CREATED_OR_CHANGED_IDENTITIES",
+      "PARAMETER_CHANGES",
+      "PARAMETER_CLOSURE_REQUESTS",
+      "RELATIONSHIP_CHANGES",
+      "CONFIGURATION_FINDINGS",
+      "LIFECYCLE_FINDINGS",
+      "ENGINEERED_RECONSTRUCTIONS",
+      "CONSTRUCTION_PACKAGES",
+      "WORKFRONTS",
+      "TEMPORARY_WORKS",
+      "LOGISTICS_FINDINGS",
+      "INSTALLATION_FINDINGS",
+      "QA_QC_FINDINGS",
+      "REDLINE_AS_BUILT_FINDINGS",
+      "COMPLETION_TURNOVER_FINDINGS",
+      "BOUNDARY_FINDINGS",
+      "VALIDATION_RESULTS",
+      "VERIFICATION_RESULTS",
+      "VV_RECORDS",
+      "ASSURANCE_RESULTS",
+      "CONFLICTS",
+      "QUARANTINED_ITEMS",
+      "OPEN_ITEMS",
+      "UNCERTAINTIES",
+      "BACKWARD_PROPAGATION_RECOMMENDATIONS",
+      "CROSS_BOUNDARY_DEPENDENCIES",
+      "IDENTITY_RECONCILIATION_REQUESTS",
+      "NEXT_INVESTIGATION_RECOMMENDATIONS",
+      "RETURN_COMPLETENESS_STATUS"
+    ],
+    "PROVISIONAL_ID_PREFIX_USED": "T4-PROV",
+    "GLOBAL_CANON_WRITES": 0,
+    "GLOBAL_IDENTITY_PROMOTIONS": 0,
+    "SILENT_MERGES": 0,
+    "SELF_ASSIGNED_NEXT_MAJOR_TASKS": 0,
+    "UNSUPPORTED_METRIC_OFG_VALUES_PROMOTED": 0
+  },
+  "RETURN_COMPLETENESS_STATUS": {
+    "STATUS": "COMPLETE_WITH_REGISTERED_OPEN_ITEMS_AND_THREAD_1_RECONCILIATIONS_REQUIRED",
+    "ASSIGNED_SCOPE_EXECUTED_TO_STOP_CONDITION": true,
+    "LOCAL_V_AND_V_COMPLETED_TO_REQUIRED_LEVEL": true,
+    "UNRESOLVED_ITEMS_EXPLICIT": true,
+    "RETURN_PACKAGE_COMPLETE": true,
+    "LOCAL_STATE_CAPSULE_COMPLETE": true,
+    "GLOBAL_PROJECT_COMPLETION_DECLARED": false,
+    "NEXT_MAJOR_CYCLE_SELF_ASSIGNED": false,
+    "TERMINAL_STATE": "W_RETURN_READY"
+  }
+}

@@ -1,0 +1,569 @@
+{
+  "phase": 4,
+  "repository": "Taro102/OFG-Engineering-Atlas",
+  "base_remote_commit": "4337a2ca539ca29a1f1056d3a8da2bb95fa60eaf",
+  "phase_1_status": "PASS",
+  "phase_2_status": "PASS",
+  "phase_3_status": "PASS",
+  "phase_4_status": "PREPARED_NOT_YET_PUBLISHED",
+  "github_authority": "NOT_YET_ACTIVE",
+  "source_bundle_id": "OFG_EA_MASTER_MIGRATION_RAW_DATA_RETRIEVAL_R2",
+  "source_archive_sha256": "bc052b488e3ce944f765583f7d3b5f0731e210e6a423e439e3d98738bee34da1",
+  "raw_archive_file_count": 30,
+  "by_package_file_count": 32,
+  "worker_return_catalog_count": 1,
+  "r2_source_file_count": 63,
+  "generated_metadata_file_count": 1,
+  "generated_control_file_count": 1,
+  "total_publication_file_count": 65,
+  "total_uncompressed_byte_count": 4377484,
+  "files": [
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(1).txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(1).txt",
+      "byte_count": 53545,
+      "sha256": "6c94ede9e555f6aed4094f559e5f9253170758c7407fa7f5905e077035c0af0b",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(10).txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(10).txt",
+      "byte_count": 66248,
+      "sha256": "a8a56fb67cfdefce415487de75bf9d76671eb8c469586fe4ee9d33fd8f0ed4b4",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(2).txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(2).txt",
+      "byte_count": 76290,
+      "sha256": "154e34639f589f7f25bcf7c0f1006f7c1edb2dd450ea6512812dd9f536652352",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(20260929-035853).txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(20260929-035853).txt",
+      "byte_count": 37642,
+      "sha256": "23c49fd66d07b6774ff990e5f914b01930899ffc68c569d270c609e9f106e378",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(20260929-040249).txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(20260929-040249).txt",
+      "byte_count": 79270,
+      "sha256": "0c01279dabbc6dc262e41529431dbbdbd5ac0ce2baa62b9e249abed142fa9216",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(3).txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(3).txt",
+      "byte_count": 104316,
+      "sha256": "2574615d6b21355a014a673efa38aee6e86fd918ea2f3e76176153ba2a5887f0",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(4).txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(4).txt",
+      "byte_count": 53383,
+      "sha256": "edfefcfe6858291d1dec3db933e90d6883734d734d53fb179ca4483260af5266",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(5).txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(5).txt",
+      "byte_count": 43374,
+      "sha256": "a8a2f10aac884f4854eeed37c54b3236356de6ab303ac915ca8b0341ccecb5d8",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(6).txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(6).txt",
+      "byte_count": 79940,
+      "sha256": "8876e689e2508018a732bde3c9d9e5b4b5c584412e3734cb21d67138922c659b",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(7).txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(7).txt",
+      "byte_count": 79940,
+      "sha256": "8876e689e2508018a732bde3c9d9e5b4b5c584412e3734cb21d67138922c659b",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(8).txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(8).txt",
+      "byte_count": 49341,
+      "sha256": "df9327f6683165830c12c4324db2668ea7fb2f9d829a1cff116b5e02123d01fa",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(9).txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(9).txt",
+      "byte_count": 51600,
+      "sha256": "e1c0429768cfba7b5eb0eb13351b31161434dfd9c86d4bf10e8f31c664237351",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë.txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë.txt",
+      "byte_count": 125905,
+      "sha256": "4dd2f72ae5034b2786a722eda6f94c03c34745a2b3f62046ebf4e2ff9dac813b",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(10).txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(10).txt",
+      "byte_count": 28738,
+      "sha256": "8a304864fd77299a65b822dc8e0db27de8eedf673ac6e7bddc94da545152ee2f",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(20260928-112600).txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(20260928-112600).txt",
+      "byte_count": 65686,
+      "sha256": "8c5cfb0401af8e51bfa10919857a77c48eea9287847efba2cbbf3dccefafe8ff",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(20260928-112939).txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(20260928-112939).txt",
+      "byte_count": 79083,
+      "sha256": "ff82b97502a2ecd3b08050ee217ce5e67f65712eb66ba613c368c5c793603e9c",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(20260928-115301).txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(20260928-115301).txt",
+      "byte_count": 43206,
+      "sha256": "f1ab172cc1f73ae10ba706c96fa720fbc9478e6029fd4265090253adae3e5f21",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(20260928-123357).txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(20260928-123357).txt",
+      "byte_count": 69369,
+      "sha256": "5dd9d677f10cf5ee6e7021c2e8243741b5cb7a8c959cfd52428b38f036b8361b",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(20260928-124137).txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(20260928-124137).txt",
+      "byte_count": 164711,
+      "sha256": "51c5dd140d535554ef51503316128080d6c16cf88bb99926a0d67a775da050b6",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(20260928-134912).txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(20260928-134912).txt",
+      "byte_count": 122901,
+      "sha256": "61d8df390fd06f0ffe22433f17cf7702f5f10caa737178574b22d4e29a9e0626",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(5).txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(5).txt",
+      "byte_count": 48718,
+      "sha256": "96612d6808e609cc9c9561b6dd1caf057276437e9bb9e200e7b60f5124fa94cf",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(6).txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(6).txt",
+      "byte_count": 82157,
+      "sha256": "bb0a81af42f726ef48a6f2dc0b2f953461694c4376aea566514a863c62cd20fa",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(7).txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(7).txt",
+      "byte_count": 56527,
+      "sha256": "a11472ebe5921ea962128a1e2f5f62877f90faa9a86e4e14a0071bb54b3fbf17",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâ₧πâ╝πé»πâÇπéªπâ│∩╝ê1∩╝ë(20260928-215853).md",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâ₧πâ╝πé»πâÇπéªπâ│∩╝ê1∩╝ë(20260928-215853).md",
+      "byte_count": 54746,
+      "sha256": "20d73d26b554dcace8c590dfaaf4d548b7f00b92083104b0430b77c1db700558",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâ₧πâ╝πé»πâÇπéªπâ│∩╝ê1∩╝ë(20260928-235336).md",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâ₧πâ╝πé»πâÇπéªπâ│∩╝ê1∩╝ë(20260928-235336).md",
+      "byte_count": 76829,
+      "sha256": "93e7dee8f57718bd23466694584a9401ecbe5ac07a943c696841afd0a0ff3b50",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâ₧πâ╝πé»πâÇπéªπâ│∩╝ê1∩╝ë(20260929-004416).md",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâ₧πâ╝πé»πâÇπéªπâ│∩╝ê1∩╝ë(20260929-004416).md",
+      "byte_count": 58309,
+      "sha256": "a63217a60e3184d466821245be6d10c2e595036417808c4528631764c7f4e749",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâ₧πâ╝πé»πâÇπéªπâ│∩╝ê1∩╝ë(20260929-022633).md",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâ₧πâ╝πé»πâÇπéªπâ│∩╝ê1∩╝ë(20260929-022633).md",
+      "byte_count": 61097,
+      "sha256": "3f6f3dfe44b1fd670b1e5b8a8dd273cb6f586cc8ed7ef544cb3cca8aedc30de0",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâ₧πâ╝πé»πâÇπéªπâ│∩╝ê1∩╝ë(20260929-022754).md",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâ₧πâ╝πé»πâÇπéªπâ│∩╝ê1∩╝ë(20260929-022754).md",
+      "byte_count": 84365,
+      "sha256": "6762e6c63cbdf60aa599c675d10cd7285edb62efaf946cda990ab61b527f3e0b",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâ₧πâ╝πé»πâÇπéªπâ│∩╝ê1∩╝ë(20260929-032148).md",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâ₧πâ╝πé»πâÇπéªπâ│∩╝ê1∩╝ë(20260929-032148).md",
+      "byte_count": 61425,
+      "sha256": "ca5cf490f9c89f63efd07b9293ee2e6a448e5eb78aacdf2bc127a26c66e0b2f2",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâ₧πâ╝πé»πâÇπéªπâ│∩╝ê1∩╝ë(20260929-032505).md",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâ₧πâ╝πé»πâÇπéªπâ│∩╝ê1∩╝ë(20260929-032505).md",
+      "byte_count": 74791,
+      "sha256": "66895a05e3128120e1c1199eac5aa0a9a7a9184226bd11c9b46df21161072310",
+      "classification": "RAW_WORKER_RETURN_PROVENANCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T2-C001-RETURN-R1.txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T2-C001-RETURN-R1.txt",
+      "byte_count": 48718,
+      "sha256": "96612d6808e609cc9c9561b6dd1caf057276437e9bb9e200e7b60f5124fa94cf",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T2-C002-RETURN-R2.txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T2-C002-RETURN-R2.txt",
+      "byte_count": 28738,
+      "sha256": "8a304864fd77299a65b822dc8e0db27de8eedf673ac6e7bddc94da545152ee2f",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T2-C002-T3REDIRECT-RETURN-R1.txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T2-C002-T3REDIRECT-RETURN-R1.txt",
+      "byte_count": 43206,
+      "sha256": "f1ab172cc1f73ae10ba706c96fa720fbc9478e6029fd4265090253adae3e5f21",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T2-C003-RETURN-R1.txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T2-C003-RETURN-R1.txt",
+      "byte_count": 164711,
+      "sha256": "51c5dd140d535554ef51503316128080d6c16cf88bb99926a0d67a775da050b6",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T2-C004-RETURN-R1-CONT-02.md",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T2-C004-RETURN-R1-CONT-02.md",
+      "byte_count": 54746,
+      "sha256": "20d73d26b554dcace8c590dfaaf4d548b7f00b92083104b0430b77c1db700558",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T2-C005-RETURN-R1.txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T2-C005-RETURN-R1.txt",
+      "byte_count": 76290,
+      "sha256": "154e34639f589f7f25bcf7c0f1006f7c1edb2dd450ea6512812dd9f536652352",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T2-C006-RETURN-R1.md",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T2-C006-RETURN-R1.md",
+      "byte_count": 76829,
+      "sha256": "93e7dee8f57718bd23466694584a9401ecbe5ac07a943c696841afd0a0ff3b50",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T2-C006-RETURN-R1.txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T2-C006-RETURN-R1.txt",
+      "byte_count": 43374,
+      "sha256": "a8a2f10aac884f4854eeed37c54b3236356de6ab303ac915ca8b0341ccecb5d8",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T2-C007-RETURN-R1.md",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T2-C007-RETURN-R1.md",
+      "byte_count": 58309,
+      "sha256": "a63217a60e3184d466821245be6d10c2e595036417808c4528631764c7f4e749",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T2-C008-RETURN-R1.md",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T2-C008-RETURN-R1.md",
+      "byte_count": 61097,
+      "sha256": "3f6f3dfe44b1fd670b1e5b8a8dd273cb6f586cc8ed7ef544cb3cca8aedc30de0",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T2-C009-RETURN-R1.md",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T2-C009-RETURN-R1.md",
+      "byte_count": 61425,
+      "sha256": "ca5cf490f9c89f63efd07b9293ee2e6a448e5eb78aacdf2bc127a26c66e0b2f2",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T2-C010-RETURN-R1.txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T2-C010-RETURN-R1.txt",
+      "byte_count": 66248,
+      "sha256": "a8a56fb67cfdefce415487de75bf9d76671eb8c469586fe4ee9d33fd8f0ed4b4",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T4-C001-RETURN-R1.txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T4-C001-RETURN-R1.txt",
+      "byte_count": 82157,
+      "sha256": "bb0a81af42f726ef48a6f2dc0b2f953461694c4376aea566514a863c62cd20fa",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T4-C002-RETURN-R1.txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T4-C002-RETURN-R1.txt",
+      "byte_count": 65686,
+      "sha256": "8c5cfb0401af8e51bfa10919857a77c48eea9287847efba2cbbf3dccefafe8ff",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T4-C003-RETURN-R1.txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T4-C003-RETURN-R1.txt",
+      "byte_count": 122901,
+      "sha256": "61d8df390fd06f0ffe22433f17cf7702f5f10caa737178574b22d4e29a9e0626",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T4-C004-RETURN-R1.txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T4-C004-RETURN-R1.txt",
+      "byte_count": 125905,
+      "sha256": "4dd2f72ae5034b2786a722eda6f94c03c34745a2b3f62046ebf4e2ff9dac813b",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T4-C005-RETURN-R1.txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T4-C005-RETURN-R1.txt",
+      "byte_count": 104316,
+      "sha256": "2574615d6b21355a014a673efa38aee6e86fd918ea2f3e76176153ba2a5887f0",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T4-C007-RETURN-R1.txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T4-C007-RETURN-R1.txt",
+      "byte_count": 79940,
+      "sha256": "8876e689e2508018a732bde3c9d9e5b4b5c584412e3734cb21d67138922c659b",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T4-C008-RETURN-R1.md",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T4-C008-RETURN-R1.md",
+      "byte_count": 84365,
+      "sha256": "6762e6c63cbdf60aa599c675d10cd7285edb62efaf946cda990ab61b527f3e0b",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T4-C008-RETURN-R1.txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T4-C008-RETURN-R1.txt",
+      "byte_count": 51600,
+      "sha256": "e1c0429768cfba7b5eb0eb13351b31161434dfd9c86d4bf10e8f31c664237351",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T4-C009-RETURN-R1.md",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T4-C009-RETURN-R1.md",
+      "byte_count": 74791,
+      "sha256": "66895a05e3128120e1c1199eac5aa0a9a7a9184226bd11c9b46df21161072310",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T4-C010-RETURN-R1.txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T4-C010-RETURN-R1.txt",
+      "byte_count": 79270,
+      "sha256": "0c01279dabbc6dc262e41529431dbbdbd5ac0ce2baa62b9e249abed142fa9216",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T5-C001-RETURN-R1.txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T5-C001-RETURN-R1.txt",
+      "byte_count": 56527,
+      "sha256": "a11472ebe5921ea962128a1e2f5f62877f90faa9a86e4e14a0071bb54b3fbf17",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T5-C002-RETURN-R1.txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T5-C002-RETURN-R1.txt",
+      "byte_count": 79083,
+      "sha256": "ff82b97502a2ecd3b08050ee217ce5e67f65712eb66ba613c368c5c793603e9c",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T5-C003-RETURN-R1.txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T5-C003-RETURN-R1.txt",
+      "byte_count": 69369,
+      "sha256": "5dd9d677f10cf5ee6e7021c2e8243741b5cb7a8c959cfd52428b38f036b8361b",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T5-C005-RETURN-R1.txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T5-C005-RETURN-R1.txt",
+      "byte_count": 53545,
+      "sha256": "6c94ede9e555f6aed4094f559e5f9253170758c7407fa7f5905e077035c0af0b",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T5-C006-RETURN-R1.txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T5-C006-RETURN-R1.txt",
+      "byte_count": 53383,
+      "sha256": "edfefcfe6858291d1dec3db933e90d6883734d734d53fb179ca4483260af5266",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T5-C007-RETURN-R1.txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T5-C007-RETURN-R1.txt",
+      "byte_count": 43374,
+      "sha256": "a8a2f10aac884f4854eeed37c54b3236356de6ab303ac915ca8b0341ccecb5d8",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T5-C007-RETURN-R1__VARIANT2.txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T5-C007-RETURN-R1__VARIANT2.txt",
+      "byte_count": 49341,
+      "sha256": "df9327f6683165830c12c4324db2668ea7fb2f9d829a1cff116b5e02123d01fa",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T5-C008-RETURN-R1.txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T5-C008-RETURN-R1.txt",
+      "byte_count": 49341,
+      "sha256": "df9327f6683165830c12c4324db2668ea7fb2f9d829a1cff116b5e02123d01fa",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T5-C009-RETURN-R1.txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T5-C009-RETURN-R1.txt",
+      "byte_count": 51600,
+      "sha256": "e1c0429768cfba7b5eb0eb13351b31161434dfd9c86d4bf10e8f31c664237351",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "working_raw/by_package/OFG-EA-T5-C010-RETURN-R1.txt",
+      "source_path_in_r2": "ofg_migration_bundle/working_raw/by_package/OFG-EA-T5-C010-RETURN-R1.txt",
+      "byte_count": 37642,
+      "sha256": "23c49fd66d07b6774ff990e5f914b01930899ffc68c569d270c609e9f106e378",
+      "classification": "NORMALIZED_BY_PACKAGE_LOOKUP",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "manifests/worker_return_catalog.json",
+      "source_path_in_r2": "ofg_migration_bundle/manifests/worker_return_catalog.json",
+      "byte_count": 10747,
+      "sha256": "ccff6c192d345eea66075cffc8cc58ff392d72383dacbd6246e50dccfd6ff473",
+      "classification": "WORKER_RETURN_CATALOG",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": ".gitattributes",
+      "source_path_in_r2": null,
+      "byte_count": 147,
+      "sha256": "b7475dd0626f2a0ede6bfb7493a7cb23446e37c748799ca98b1b70073e849fb9",
+      "classification": "BYTE_PRESERVATION_CONTROL",
+      "source_status": "NEW_PHASE4_PUBLICATION_CONTROL"
+    },
+    {
+      "repository_relative_path": "manifests/bootstrap_phase_4_manifest.json",
+      "source_path_in_r2": null,
+      "byte_count": 35311,
+      "sha256": null,
+      "classification": "PUBLICATION_MANIFEST",
+      "source_status": "NEW_PHASE4_PUBLICATION_METADATA",
+      "sha256_status": "SELF_HASH_EXCLUDED_EXTERNAL_SHA256_PROVIDED_IN_DELIVERY_RESPONSE"
+    }
+  ],
+  "integrity_policy": {
+    "raw_source_mutation": "PROHIBITED",
+    "missing_packet_reconstruction": "PROHIBITED",
+    "duplicate_elimination": "PROHIBITED",
+    "variant_canonicalization": "NOT_PERFORMED",
+    "semantic_merge": "NOT_PERFORMED",
+    "source_hash_basis": "EXACT_UNMODIFIED_R2_FILE_BYTES",
+    "self_hash_exclusion": "Phase-4 manifest SHA-256 is null inside itself to avoid circular self-hashing; complete-file SHA-256 is supplied externally."
+  },
+  "known_raw_gaps_not_reconstructed": [
+    "OFG-EA-T4-C006-RETURN-R1",
+    "OFG-EA-T2-C004-RETURN-R1_PARENT_PART",
+    "OFG-EA-T5-C004-RETURN-R1",
+    "REV3_DATA07_SQLITE"
+  ],
+  "publication_controls": {
+    "phase1_modified": false,
+    "phase2_modified": false,
+    "phase3_modified": false,
+    "c011_integrated": false,
+    "c012_issued": false,
+    "remote_write_performed": false,
+    "git_lfs_rules_added": false,
+    "visibility": "PUBLIC_INTENTIONAL"
+  },
+  "recommended_git_commit_message": "Bootstrap Phase 4: publish historical worker-return provenance"
+}

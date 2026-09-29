@@ -1,0 +1,806 @@
+{
+  "ARTIFACT_TYPE": "OFG_ENGINEERING_ATLAS_WORKER_RETURN_ADDENDUM",
+  "SCHEMA_VERSION": "1.0.0",
+  "RETURN_PACKET_ID": "OFG-EA-T2-C002-RETURN-R2",
+  "PARENT_RETURN_PACKET_ID": "OFG-EA-T2-C002-RETURN-R1",
+  "SOURCE_THREAD": 2,
+  "TARGET_THREAD": 1,
+  "CYCLE_ID": "OFG-EA-CYCLE-002",
+  "TASK_ID": "T2-C002-BHT401-PID-CARDINALITY-HYDRAULIC-LOADPATH-CLOSURE",
+  "INPUT_BASELINE_ID": "OFG-EA-B000-REV3-REVW3-REVS-2031-04-19",
+  "INTEGRATED_STAGING_DELTA_ID": "OFG-EA-C001-INTEGRATED-STAGING-R1",
+  "CONFIGURATION_CUT": "2031-04-19",
+  "RETURN_MODE": "INCREMENTAL_DELTA_ONLY",
+  "HEADER": {
+    "CONTINUATION_OF_EXISTING_CYCLE": true,
+    "NEW_MAJOR_CYCLE_SELF_ASSIGNED": false,
+    "GLOBAL_WRITE": false,
+    "CANONICAL_ID_MUTATION": false,
+    "SILENT_CONFLICT_RESOLUTION": false,
+    "EXTERNAL_PRECEDENT_PROMOTED_TO_OFG_FACT": false,
+    "PURPOSE": [
+      "DEEPEN_BHT401_HYDRAULIC_TRANSIENT_MODEL",
+      "REFINE_PARALLEL_PUMP_AND_CHECK_VALVE_REQUIREMENTS",
+      "REFINE_27_6KV_MOTOR_INTERFACE_CONFLICT",
+      "EXPAND_CRS01_TEMPORARY_CONFIGURATION_PHYSICAL_DECOMPOSITION",
+      "ADVANCE_RST_L2_NONLINEAR_LOAD_PATH_REQUIREMENTS",
+      "REFINE_COMMISSIONING_TEST_AND_RESTORATION_EVIDENCE_REQUIREMENTS"
+    ]
+  },
+  "NEW_SOURCE_DERIVED_FINDINGS": [
+    {
+      "FINDING_ID": "T2-C002-R2-F001",
+      "SUBJECT": "REV3_EXPLICIT_PUMP_DUTY_AND_DRIVER_SOURCE",
+      "STATUS": "SOURCE_DERIVED_CONFLICT_PRESERVED",
+      "FINDING": "Rev3 V11 explicitly preserves a worked BHT-401-P-101A example with duty approximately 1.15 m3/s in a 2x50-percent train arrangement and a 27.6-kV induction/synchronous motor concept. The same source states that hydraulic-element selection follows NPSH/system-curve study and includes minimum-flow/recycle, vibration, bearing temperature, seal leakage and low-suction-margin protection.",
+      "CONTROL": "THE_WORKED_EXAMPLE_IS_NOT_USED_TO_OVERRIDE_THE_LATER_MASS_FLOW_BASIS_OR_TO_CLOSE_MOTOR_TYPE",
+      "CITATION": ":chatgpt-content-reference{index="0"}"
+    },
+    {
+      "FINDING_ID": "T2-C002-R2-F002",
+      "SUBJECT": "TEMPORARY_CRS01_REQUIRED_PHYSICAL_DECOMPOSITION",
+      "STATUS": "SOURCE_SUPPORTED_COMPONENT_CLASS_MODEL",
+      "FINDING": "Rev3 explicitly requires TMP-BHT-401-CRS-01 to decompose into pump(s), baseframe, temporary piping/spools, isolation/check/control valves, flexible/rigid connectors, instruments, drains/vents, electrical supply/control and restraints/supports. Exact manufacturer, model and counts remain OPEN.",
+      "CANONICAL_COMPONENT_IDS_CREATED": false,
+      "SOURCE_STATE": "C_ASSET_E_DECOMPOSITION"
+    },
+    {
+      "FINDING_ID": "T2-C002-R2-F003",
+      "SUBJECT": "CRS01_RST_L2_COMPONENT_DECOMPOSITION",
+      "STATUS": "SOURCE_SUPPORTED_C_E",
+      "FINDING": "CRS01-RST-L2 requires a restraint member, connection hardware, base/anchor interface, contact/gap interface and witness-mark evidence. Exact geometry, material and anchor design remain OPEN.",
+      "CANONICAL_SUBCOMPONENT_IDS_CREATED": false
+    },
+    {
+      "FINDING_ID": "T2-C002-R2-F004",
+      "SUBJECT": "REV3_TRANSIENT_CASE_SET",
+      "STATUS": "SOURCE_SUPPORTED",
+      "FINDING": "Rev3 already defines seven hydraulic/mechanical cases: steady recirculation; pump start; pump trip; rapid valve closure; air/gas pocket; flush/cooldown/warmup temperature change; and temporary-restraint degradation.",
+      "CITATION": ":chatgpt-content-reference{index="1"}"
+    },
+    {
+      "FINDING_ID": "T2-C002-R2-F005",
+      "SUBJECT": "HT07_TEMPORARY_RESTRAINT_DEGRADATION",
+      "STATUS": "SOURCE_SUPPORTED_EVENT_RECONSTRUCTION_CASE",
+      "FINDING": "HT-07 models reduced lateral stiffness or gap change using nonlinear restraint stiffness/contact plus hydraulic forcing, with skid displacement, vibration and crush-envelope outputs.",
+      "CAUSAL_INFERENCE": "NONE",
+      "CONTROL_NOTE": "THIS_IS_A_REQUIRED_RECONSTRUCTION_CASE_NOT_A_FINDING_THAT_RESTRAINT_DEGRADATION_CAUSED_THE_12_APRIL_EVENT",
+      "CITATION": ":chatgpt-content-reference{index="2"}"
+    },
+    {
+      "FINDING_ID": "T2-C002-R2-F006",
+      "SUBJECT": "C001_THREAD3_27_6KV_ARCHITECTURE",
+      "STATUS": "CROSS_THREAD_SOURCE_SUPPORTED",
+      "FINDING": "Thread 3 found four sectionalized 27.6-kV buses in the source architecture but no complete historical 27.6-kV bus, breaker, feeder, cable, relay or motor identity chain for BHT-401-P-101.",
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="3"}",
+        ":chatgpt-content-reference{index="4"}"
+      ]
+    }
+  ],
+  "NEW_EXTERNAL_RESEARCH_FINDINGS": [
+    {
+      "RESEARCH_ID": "T2-C002-R2-RS001",
+      "DOMAIN": "PARALLEL_PUMP_OPERATION",
+      "SOURCE_CLASS": "HYDRAULIC_INSTITUTE",
+      "PROVENANCE": "AUTHORITATIVE_REAL_WORLD_REFERENCE",
+      "FINDING": "The operating point of multiple parallel pumps is determined by the intersection of the combined pump curve and the system curve; pump operating region, NPSH margin and reliability must be checked against the actual operating point.",
+      "OFG_PROMOTION": false,
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="5"}",
+        ":chatgpt-content-reference{index="6"}",
+        ":chatgpt-content-reference{index="7"}"
+      ]
+    },
+    {
+      "RESEARCH_ID": "T2-C002-R2-RS002",
+      "DOMAIN": "PARALLEL_PUMP_CHECK_VALVES",
+      "SOURCE_CLASS": "OEM_TECHNICAL_REFERENCE",
+      "PROVENANCE": "V_OR_R_PRECEDENT",
+      "FINDING": "KSB states that each pump in parallel centrifugal-pump operation requires its own check valve and identifies shutoff-head compatibility as material to whether a second pump can successfully enter service.",
+      "OFG_PROMOTION": false,
+      "CITATION": ":chatgpt-content-reference{index="8"}"
+    },
+    {
+      "RESEARCH_ID": "T2-C002-R2-RS003",
+      "DOMAIN": "PUMP_OPERATING_REGION_AND_NPSH",
+      "SOURCE_CLASS": "HYDRAULIC_INSTITUTE",
+      "PROVENANCE": "AUTHORITATIVE_REAL_WORLD_REFERENCE",
+      "FINDING": "POR, AOR and NPSH margin are linked; operation away from BEP can increase hydraulic loading, recirculation, vibration and cavitation susceptibility, and NPSHR/NPSH3 is a function of flow and pump characteristics.",
+      "OFG_PROMOTION": false,
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="9"}",
+        ":chatgpt-content-reference{index="10"}",
+        ":chatgpt-content-reference{index="11"}"
+      ]
+    },
+    {
+      "RESEARCH_ID": "T2-C002-R2-RS004",
+      "DOMAIN": "COMMISSIONING_TEMPORARY_CONFIGURATION",
+      "SOURCE_CLASS": "IAEA",
+      "PROVENANCE": "AUTHORITATIVE_REAL_WORLD_REFERENCE",
+      "FINDING": "Commissioning procedures should control temporary modifications and abnormal lineups, specify initial conditions, test limits, acceptance criteria, calibrated special test equipment, responsibilities, permanent records and explicit restoration to the intended configuration.",
+      "OFG_PROMOTION": false,
+      "CITATION": ":chatgpt-content-reference{index="12"}"
+    },
+    {
+      "RESEARCH_ID": "T2-C002-R2-RS005",
+      "DOMAIN": "LARGE_MOTOR_VOLTAGE_PLAUSIBILITY",
+      "SOURCE_CLASS": "OEM_TECHNICAL_REFERENCE",
+      "PROVENANCE": "V_OR_R_PRECEDENT",
+      "FINDING": "Representative modern ABB large induction-motor offerings extend to approximately 28.5 MW but list terminal voltages only up to 13.8 kV; Siemens medium-voltage drive portfolios similarly commonly serve motors through 13.8 kV. This does not prove that a custom 27.6-kV OFG motor is impossible, but it creates a strong requirement to distinguish 27.6-kV distribution-bus voltage from actual motor-terminal voltage.",
+      "OFG_PROMOTION": false,
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="13"}",
+        ":chatgpt-content-reference{index="14"}"
+      ]
+    },
+    {
+      "RESEARCH_ID": "T2-C002-R2-RS006",
+      "DOMAIN": "PUMP_START_STOP_TRANSIENT_CONTROL",
+      "SOURCE_CLASS": "OEM_TECHNICAL_REFERENCE",
+      "PROVENANCE": "V_OR_R_PRECEDENT",
+      "FINDING": "Commercial medium-voltage soft-start systems explicitly market controlled acceleration/deceleration for large pump applications to reduce current and mechanical shock and mitigate water-hammer effects during stopping; therefore start/stop law is an explicit hydraulic input, not merely an electrical parameter.",
+      "OFG_PROMOTION": false,
+      "CITATION": ":chatgpt-content-reference{index="15"}"
+    }
+  ],
+  "NEW_OR_REFINED_CONFLICTS": [
+    {
+      "CONFLICT_ID": "T2-C002-CF-003",
+      "SUBJECT": "27_6KV_BUS_VERSUS_MOTOR_TERMINAL_VOLTAGE",
+      "STATE": "OPEN",
+      "SOURCE_A": {
+        "CLAIM": "Rev3 V11 worked example calls the BHT-401-P-101A driver a 27.6-kV induction/synchronous motor.",
+        "CITATION": ":chatgpt-content-reference{index="16"}"
+      },
+      "SOURCE_B": {
+        "CLAIM": "Thread 3 source architecture identifies four 27.6-kV buses serving large loads but lacks the actual source-to-motor circuit and exact motor identity.",
+        "CITATION": ":chatgpt-content-reference{index="17"}"
+      },
+      "EXTERNAL_PRECEDENT": {
+        "CLAIM": "Representative large industrial motor portfolios commonly top out at 13.8-kV terminal voltage.",
+        "CITATIONS": [
+          ":chatgpt-content-reference{index="18"}",
+          ":chatgpt-content-reference{index="19"}"
+        ]
+      },
+      "PERMITTED_INTERPRETATIONS_NOT_SELECTED": [
+        "27_6KV_IS_ACTUAL_CUSTOM_MOTOR_TERMINAL_VOLTAGE",
+        "27_6KV_IS_FEEDER_OR_DISTRIBUTION_BUS_WITH_LOCAL_STEP_DOWN_TRANSFORMER",
+        "27_6KV_WORKED_EXAMPLE_IS_EARLY_ENGINEERED_PLACEHOLDER"
+      ],
+      "REQUIRED_RESOLUTION_EVIDENCE": [
+        "MOTOR_DATASHEET",
+        "MOTOR_TERMINAL_RATING",
+        "SINGLE_LINE_DIAGRAM",
+        "FEEDER_SCHEDULE",
+        "LOCAL_TRANSFORMER_IF_ANY",
+        "STARTER_OR_DRIVE_DATASHEET",
+        "PROCUREMENT_MDR"
+      ],
+      "DISPOSITION": "RETURN_TO_THREAD_1_AND_THREAD_3_NO_AUTOMATIC_CORRECTION"
+    },
+    {
+      "CONFLICT_ID": "T2-C002-CF-004",
+      "SUBJECT": "PARALLEL_PUMP_CHECK_VALVE_CARDINALITY",
+      "STATE": "MATERIAL_OPEN_CONFLICT",
+      "WORKING_PHYSICAL_PUMPS": 2,
+      "CONTROLLED_PACKAGE_CHECK_VALVE_TAGS_VISIBLE": [
+        "BHT-401-CV-103"
+      ],
+      "ENGINEERING_REQUIREMENT": "EACH_PARALLEL_BRANCH_REQUIRES_CONFIRMED_BACKFLOW_PREVENTION_FUNCTION",
+      "CANONICAL_NEW_VALVE_TAGS_CREATED": false,
+      "REQUIRED_EVIDENCE": [
+        "P_AND_ID",
+        "VALVE_LIST",
+        "PUMP_BRANCH_ISOMETRICS",
+        "VENDOR_PACKAGE_GA",
+        "CHECK_VALVE_DATASHEETS"
+      ]
+    },
+    {
+      "CONFLICT_ID": "T2-C002-CF-005",
+      "SUBJECT": "PUMP_TYPE_NOT_ACTUALLY_CLOSED",
+      "STATE": "OPEN",
+      "SOURCE_TEXT": "INDUCTION_OR_SYNCHRONOUS_MOTOR_AS_FINAL_VENDOR_OPTIMIZATION",
+      "FINDING": "The driver technology itself remains unresolved in the worked source example and therefore starting current, torque-speed behavior, excitation, protection and inertia cannot be uniquely specified.",
+      "CITATION": ":chatgpt-content-reference{index="20"}"
+    }
+  ],
+  "ADDITIONAL_CALCULATIONS": [
+    {
+      "CALC_ID": "T2-C002-R2-CALC-001",
+      "SUBJECT": "PUMP_HEAD_EQUIVALENT_FOR_1_70_MPA_DIFFERENTIAL",
+      "EQUATION": "H = DELTA_P / (RHO * g)",
+      "DELTA_P_MPA": 1.7,
+      "DENSITY_RANGE_KG_M3": [
+        700,
+        750
+      ],
+      "RESULT_HEAD_RANGE_M": [
+        231.1,
+        247.6
+      ],
+      "STATUS": "SCREENING_ONLY",
+      "NOTE": "USES_EXISTING_SCREEN_DENSITY_RANGE_NOT_PROPERTY_CORRECT_FINAL_STATE"
+    },
+    {
+      "CALC_ID": "T2-C002-R2-CALC-002",
+      "SUBJECT": "PER_PUMP_HYDRAULIC_POWER",
+      "EQUATION": "P_HYD = DELTA_P * Q",
+      "DELTA_P_MPA": 1.7,
+      "FLOW_PER_PUMP_RANGE_M3_S": [
+        3.1428,
+        3.3673
+      ],
+      "RESULT_MW": [
+        5.3428,
+        5.7244
+      ],
+      "STATUS": "SCREENING"
+    },
+    {
+      "CALC_ID": "T2-C002-R2-CALC-003",
+      "SUBJECT": "PER_PUMP_SHAFT_POWER",
+      "EQUATION": "P_SHAFT = P_HYD / ETA_PUMP",
+      "PUMP_EFFICIENCY": 0.85,
+      "RESULT_MW": [
+        6.2856,
+        6.7346
+      ],
+      "STATUS": "SCREENING"
+    },
+    {
+      "CALC_ID": "T2-C002-R2-CALC-004",
+      "SUBJECT": "MOTOR_CURRENT_INPUT_CONTRACT_AT_27_6KV",
+      "EQUATION": "I = P_SHAFT / (SQRT(3) * V * ETA_MOTOR * PF)",
+      "VOLTAGE_KV": 27.6,
+      "P_SHAFT_RANGE_MW": [
+        6.2856,
+        6.7346
+      ],
+      "RESULT_NORMALIZED_A_DIVIDED_BY_ETA_MOTOR_PF": [
+        131.5,
+        140.9
+      ],
+      "STATUS": "INTERFACE_EQUATION_ONLY"
+    },
+    {
+      "CALC_ID": "T2-C002-R2-CALC-005",
+      "SUBJECT": "MOTOR_CURRENT_INPUT_CONTRACT_AT_13_8KV_ALTERNATIVE",
+      "EQUATION": "I = P_SHAFT / (SQRT(3) * V * ETA_MOTOR * PF)",
+      "VOLTAGE_KV": 13.8,
+      "P_SHAFT_RANGE_MW": [
+        6.2856,
+        6.7346
+      ],
+      "RESULT_NORMALIZED_A_DIVIDED_BY_ETA_MOTOR_PF": [
+        263.0,
+        281.8
+      ],
+      "STATUS": "ALTERNATIVE_INTERFACE_SCREEN_ONLY",
+      "CANONICAL_VOLTAGE_SELECTION": false
+    }
+  ],
+  "TRANSIENT_CASE_REGISTER_DELTA": [
+    {
+      "CASE_ID": "HT-01",
+      "SCENARIO": "STEADY_RECIRCULATION",
+      "REQUIRED_INPUTS": [
+        "PUMP_CURVE",
+        "SYSTEM_RESISTANCE",
+        "VALVE_CV",
+        "ELEVATIONS",
+        "FLUID_STATE"
+      ],
+      "REQUIRED_OUTPUTS": [
+        "FLOW",
+        "PRESSURE",
+        "NOZZLE_LOADS",
+        "SUPPORT_REACTIONS"
+      ],
+      "CLOSURE": "OPEN_NUMERIC"
+    },
+    {
+      "CASE_ID": "HT-02",
+      "SCENARIO": "PUMP_START",
+      "REQUIRED_INPUTS": [
+        "MOTOR_TORQUE_SPEED",
+        "TOTAL_ROTATING_INERTIA",
+        "PUMP_START_RAMP",
+        "CHECK_VALVE_OPENING_BEHAVIOR",
+        "PARALLEL_PUMP_INITIAL_STATE"
+      ],
+      "REQUIRED_OUTPUTS": [
+        "ACCELERATION_TIME",
+        "FLOW_RAMP",
+        "PRESSURE_TRANSIENT",
+        "CHECK_VALVE_DIFFERENTIAL",
+        "NOZZLE_LOADS",
+        "SUPPORT_REACTION"
+      ],
+      "CLOSURE": "OPEN_NUMERIC"
+    },
+    {
+      "CASE_ID": "HT-03",
+      "SCENARIO": "PUMP_TRIP_COASTDOWN",
+      "REQUIRED_INPUTS": [
+        "ROTATING_INERTIA",
+        "PUMP_FOUR_QUADRANT_OR_EQUIVALENT_TRANSIENT_CHARACTERISTIC",
+        "CHECK_VALVE_CLOSURE_LAW",
+        "PARALLEL_PUMP_STATE",
+        "LINE_WAVE_SPEED",
+        "SYSTEM_GEOMETRY"
+      ],
+      "REQUIRED_OUTPUTS": [
+        "COASTDOWN",
+        "REVERSE_FLOW",
+        "CHECK_VALVE_SLAM_RISK",
+        "PRESSURE_WAVE",
+        "NOZZLE_LOADS",
+        "SUPPORT_AND_RESTRAINT_REACTION"
+      ],
+      "CLOSURE": "CRITICAL_OPEN"
+    },
+    {
+      "CASE_ID": "HT-04",
+      "SCENARIO": "RAPID_VALVE_CLOSURE",
+      "REQUIRED_INPUTS": [
+        "VALVE_CLOSURE_TIME_LAW",
+        "VALVE_CV_POSITION_CURVE",
+        "WAVE_SPEED",
+        "FLUID_STATE",
+        "AS_BUILT_LINE_GEOMETRY"
+      ],
+      "REQUIRED_OUTPUTS": [
+        "SURGE_PRESSURE",
+        "PIPE_DYNAMIC_LOADS",
+        "NOZZLE_LOADS",
+        "SUPPORT_REACTIONS"
+      ],
+      "CLOSURE": "CRITICAL_OPEN"
+    },
+    {
+      "CASE_ID": "HT-05",
+      "SCENARIO": "AIR_OR_GAS_POCKET",
+      "REQUIRED_INPUTS": [
+        "HIGH_POINT_GEOMETRY",
+        "VENT_CONFIGURATION",
+        "GAS_VOLUME",
+        "INITIAL_PRESSURE",
+        "TEMPERATURE",
+        "FLOW_TRANSIENT"
+      ],
+      "REQUIRED_OUTPUTS": [
+        "TWO_PHASE_OR_COMPRESSIBILITY_RESPONSE",
+        "LOCAL_PRESSURE_TRANSIENT",
+        "VIBRATION",
+        "SUPPORT_LOAD"
+      ],
+      "CLOSURE": "OPEN"
+    },
+    {
+      "CASE_ID": "HT-06",
+      "SCENARIO": "FLUSH_COOLDOWN_WARMUP_TEMPERATURE_CHANGE",
+      "REQUIRED_INPUTS": [
+        "FLUID_TEMPERATURE_HISTORY",
+        "PIPE_METAL_TEMPERATURE_HISTORY",
+        "SUPPORT_FRICTION",
+        "ANCHOR_GUIDE_CONFIGURATION"
+      ],
+      "REQUIRED_OUTPUTS": [
+        "THERMAL_DISPLACEMENT",
+        "SUPPORT_LOADS",
+        "NOZZLE_LOADS"
+      ],
+      "CLOSURE": "OPEN"
+    },
+    {
+      "CASE_ID": "HT-07",
+      "SCENARIO": "TEMPORARY_RESTRAINT_DEGRADATION_OR_GAP_CHANGE",
+      "REQUIRED_INPUTS": [
+        "RESTRAINT_NONLINEAR_STIFFNESS",
+        "GAP_AND_CONTACT_STATE",
+        "FRICTION",
+        "PRELOAD_IF_ANY",
+        "HYDRAULIC_FORCING_TIME_HISTORY",
+        "CONNECTED_SPOOL_GEOMETRY",
+        "FLEXIBLE_ELEMENT_PROPERTIES"
+      ],
+      "REQUIRED_OUTPUTS": [
+        "SKID_DISPLACEMENT",
+        "RESTRAINT_CONTACT_FORCE",
+        "ANCHOR_REACTION",
+        "VIBRATION",
+        "CRUSH_ZONE_ENVELOPE"
+      ],
+      "CLOSURE": "EVENT_RECONSTRUCTION_OPEN",
+      "SOURCE_CITATION": ":chatgpt-content-reference{index="21"}",
+      "CAUSAL_CONCLUSION": "NONE"
+    }
+  ],
+  "CRS01_PHYSICAL_DECOMPOSITION_DELTA": [
+    {
+      "PROVISIONAL_ID": "T2-PROV-C002-CRS01-PUMPSET",
+      "CLASS": "TEMPORARY_PUMP_OR_PUMP_SET",
+      "PARENT": "TMP-BHT-401-CRS-01",
+      "EXACT_COUNT": "OPEN",
+      "MANUFACTURER": "OPEN",
+      "MODEL": "OPEN",
+      "DUTY": "OPEN",
+      "STATUS": "REQUIRED_CLASS_NOT_HISTORICAL_ID"
+    },
+    {
+      "PROVISIONAL_ID": "T2-PROV-C002-CRS01-BASEFRAME",
+      "CLASS": "SKID_BASEFRAME",
+      "PARENT": "TMP-BHT-401-CRS-01",
+      "MATERIAL": "OPEN",
+      "GEOMETRY": "OPEN",
+      "ANCHORING": "OPEN",
+      "STATUS": "REQUIRED_CLASS_NOT_HISTORICAL_ID"
+    },
+    {
+      "PROVISIONAL_ID": "T2-PROV-C002-CRS01-TEMP-SPOOL-FAMILY",
+      "CLASS": "TEMPORARY_PIPING_SPOOL_SET",
+      "PARENT": "TMP-BHT-401-CRS-01",
+      "REQUIRED_SUBOBJECTS": [
+        "PIPE",
+        "FITTINGS",
+        "FLANGES_OR_WELDS",
+        "GASKETS",
+        "BOLTING",
+        "VENTS",
+        "DRAINS",
+        "SUPPORTS"
+      ],
+      "EXACT_SPOOL_SCHEDULE": "OPEN",
+      "STATUS": "C_E_FAMILY_RECONSTRUCTION"
+    },
+    {
+      "PROVISIONAL_ID": "T2-PROV-C002-CRS01-VALVE-FAMILY",
+      "CLASS": "TEMPORARY_VALVE_SET",
+      "PARENT": "TMP-BHT-401-CRS-01",
+      "FUNCTIONS": [
+        "ISOLATION",
+        "CHECK",
+        "CONTROL",
+        "RELIEF_AS_REQUIRED"
+      ],
+      "EXACT_COUNT_AND_TAGS": "OPEN",
+      "STATUS": "REQUIRED_CLASS_NOT_HISTORICAL_ID"
+    },
+    {
+      "PROVISIONAL_ID": "T2-PROV-C002-CRS01-FLEX-FAMILY",
+      "CLASS": "FLEXIBLE_OR_RIGID_CONNECTOR_SET",
+      "PARENT": "TMP-BHT-401-CRS-01",
+      "REQUIRED_ENGINEERING_FIELDS": [
+        "TYPE",
+        "EFFECTIVE_AREA",
+        "PRESSURE_THRUST",
+        "AXIAL_STIFFNESS",
+        "LATERAL_STIFFNESS",
+        "ANGULAR_STIFFNESS",
+        "ALLOWABLE_AXIAL_MOVEMENT",
+        "ALLOWABLE_LATERAL_MOVEMENT",
+        "ALLOWABLE_ANGULAR_MOVEMENT",
+        "CYCLE_QUALIFICATION",
+        "TIE_OR_LIMIT_RODS_IF_ANY",
+        "INSTALLATION_PRESET"
+      ],
+      "EXACT_COUNT_AND_MODEL": "OPEN",
+      "STATUS": "REQUIRED_CLASS_NOT_HISTORICAL_ID"
+    },
+    {
+      "PROVISIONAL_ID": "T2-PROV-C002-CRS01-INSTRUMENT-FAMILY",
+      "CLASS": "TEMPORARY_TEST_INSTRUMENT_SET",
+      "PARENT": "TMP-BHT-401-CRS-01",
+      "FUNCTIONS": [
+        "PRESSURE",
+        "TEMPERATURE",
+        "FLOW",
+        "VIBRATION_AS_REQUIRED"
+      ],
+      "CALIBRATION_IDS": "OPEN",
+      "EXACT_INSTRUMENT_LIST": "OPEN",
+      "STATUS": "REQUIRED_CLASS_NOT_HISTORICAL_ID"
+    },
+    {
+      "PROVISIONAL_ID": "T2-PROV-C002-CRS01-RESTRAINT-LOADPATH",
+      "CLASS": "TEMPORARY_SUPPORT_AND_RESTRAINT_NETWORK",
+      "PARENT": "TMP-BHT-401-CRS-01",
+      "KNOWN_MEMBER": "CRS01-RST-L2",
+      "OTHER_MEMBER_COUNT": "OPEN",
+      "STATUS": "PARTIAL"
+    }
+  ],
+  "RST_L2_LOADPATH_SCHEMA_DELTA": {
+    "OBJECT_ID": "CRS01-RST-L2",
+    "REQUIRED_GEOMETRY_FIELDS": [
+      "GLOBAL_COORDINATE",
+      "LOCAL_AXIS",
+      "CONTACT_NORMAL",
+      "CONTACT_SURFACE",
+      "FREE_GAP",
+      "AS_FOUND_GAP",
+      "AS_LEFT_GAP",
+      "MEMBER_LENGTH",
+      "CROSS_SECTION",
+      "BASEPLATE_GEOMETRY",
+      "ANCHOR_PATTERN",
+      "FASTENER_GEOMETRY"
+    ],
+    "REQUIRED_MECHANICAL_FIELDS": [
+      "MATERIAL",
+      "ELASTIC_STIFFNESS",
+      "CONTACT_STIFFNESS",
+      "FRICTION",
+      "PRELOAD",
+      "BOLT_OR_ANCHOR_PRELOAD",
+      "ALLOWABLE_FORCE",
+      "ALLOWABLE_DISPLACEMENT",
+      "ALLOWABLE_ROTATION"
+    ],
+    "REQUIRED_DYNAMIC_FIELDS": [
+      "MASS",
+      "DAMPING",
+      "CONTACT_IMPACT_MODEL",
+      "HYDRAULIC_FORCING_TIME_HISTORY",
+      "CONNECTED_PIPE_STIFFNESS",
+      "SKID_BASEFRAME_STIFFNESS",
+      "ANCHOR_HOST_STIFFNESS"
+    ],
+    "REQUIRED_EVIDENCE_FIELDS": [
+      "INSTALLATION_RECORD",
+      "AS_BUILT_SURVEY",
+      "SETTING_RECORD",
+      "FASTENER_CONTROL_RECORD",
+      "PHOTO_BASELINE",
+      "M88217_AS_FOUND",
+      "M88217_AS_LEFT",
+      "POST_WORK_VERIFICATION",
+      "POST_MAINTENANCE_TEST",
+      "APRIL12_AS_FOUND_SURVEY"
+    ],
+    "CURRENT_CLOSURE": "OPEN"
+  },
+  "MOTOR_INTERFACE_DELTA": {
+    "OBJECT": "BHT-401-P-101_MOTOR_INTERFACE",
+    "SOURCE_VOLTAGE_STATEMENTS": {
+      "REV3_V11_DRIVER": "27.6_KV",
+      "THREAD3_DISTRIBUTION_LAYER": "27.6_KV",
+      "EXACT_MOTOR_TERMINAL_VOLTAGE": "OPEN"
+    },
+    "MOTOR_TYPE": "INDUCTION_OR_SYNCHRONOUS_OPEN",
+    "WORKING_SHAFT_POWER_RANGE_MW_PER_PHYSICAL_PUMP": [
+      6.2856,
+      6.7346
+    ],
+    "REQUIRED_OEM_FIELDS": [
+      "RATED_OUTPUT",
+      "RATED_TERMINAL_VOLTAGE",
+      "FREQUENCY",
+      "PHASES",
+      "RATED_SPEED",
+      "NUMBER_OF_POLES",
+      "EFFICIENCY_CURVE",
+      "POWER_FACTOR_CURVE",
+      "LOCKED_ROTOR_CURRENT",
+      "LOCKED_ROTOR_TORQUE",
+      "BREAKDOWN_TORQUE",
+      "TORQUE_SPEED_CURVE",
+      "MOTOR_INERTIA",
+      "ALLOWABLE_STARTS_HOT",
+      "ALLOWABLE_STARTS_COLD",
+      "ACCELERATION_TIME_LIMIT",
+      "THERMAL_WITHSTAND",
+      "BEARING_TYPE",
+      "BEARING_TEMPERATURE_LIMITS",
+      "VIBRATION_LIMITS",
+      "COOLING_METHOD",
+      "GROUNDING_METHOD"
+    ],
+    "THREAD3_REQUIRED_DECISION": "RESOLVE_BUS_VOLTAGE_TO_MOTOR_TERMINAL_ARCHITECTURE_BEFORE_FEEDER_PROTECTION_AND_STARTING_STUDY_CLOSURE",
+    "OFG_V11_CITATION": ":chatgpt-content-reference{index="22"}",
+    "THREAD3_CITATION": ":chatgpt-content-reference{index="23"}"
+  },
+  "COMMISSIONING_AND_PMT_REQUIREMENT_DELTA": {
+    "TMP_BHT401_CRS01": {
+      "BEFORE_TEST_REQUIRED": [
+        "AUTHORIZED_TEMPORARY_CONFIGURATION",
+        "CURRENT_REVISION_DRAWINGS_AND_LINEUP",
+        "INITIAL_CONDITIONS",
+        "DEFINED_TEST_BOUNDARY",
+        "DEFINED_ISOLATION_BOUNDARY",
+        "CALIBRATED_INSTRUMENTS",
+        "TEMPORARY_SUPPORT_VERIFICATION",
+        "PRESSURE_AND_TEMPERATURE_LIMITS",
+        "FLOW_LIMITS",
+        "CONTINGENCY_OR_ABORT_CRITERIA"
+      ],
+      "DURING_TEST_REQUIRED": [
+        "CONTROLLED_VALVE_LINEUP",
+        "MONITORED_PRESSURE",
+        "MONITORED_FLOW",
+        "MONITORED_TEMPERATURE",
+        "VIBRATION_OR_MOVEMENT_MONITORING_WHERE_REQUIRED",
+        "DEVIATION_RECORDING"
+      ],
+      "AFTER_TEST_REQUIRED": [
+        "TEST_COMPLETION_SIGNOFF",
+        "TEMPORARY_CHANGE_REMOVAL_OR_FORMAL_RETAINED_STATE",
+        "RESTORATION",
+        "FINAL_LINEUP_CONFIRMATION",
+        "CONFIGURATION_UPDATE",
+        "PERMANENT_RECORD_RETENTION"
+      ],
+      "EXTERNAL_REFERENCE": ":chatgpt-content-reference{index="24"}"
+    },
+    "M88217": {
+      "ADMINISTRATIVE_STATE": "CLOSED_APPROVED",
+      "PHYSICAL_EXECUTION_STATE": "OPEN",
+      "MINIMUM_EVIDENCE_FOR_PHYSICAL_CLOSURE": [
+        "AUTHORIZED_WORK_SCOPE",
+        "ENERGY_ISOLATION_BOUNDARY",
+        "PERFORMER",
+        "SUPERVISOR_OR_RESPONSIBLE_AUTHORITY",
+        "AS_FOUND_SETTING",
+        "ACTUAL_ADJUSTMENT_IF_ANY",
+        "AS_LEFT_SETTING",
+        "FASTENER_TORQUE_OR_TENSION_IF_APPLICABLE",
+        "CALIBRATED_TOOL_ID",
+        "PART_OR_MATERIAL_ISSUE_IF_ANY",
+        "QC_OR_INDEPENDENT_VERIFICATION",
+        "POST_MAINTENANCE_TEST",
+        "RESTORATION",
+        "CONFIGURATION_CONFIRMATION"
+      ],
+      "CURRENT_DISPOSITION": "QUARANTINE_FROM_PHYSICAL_AS_LEFT_ASSERTION"
+    }
+  },
+  "CROSS_THREAD_RETURN_DELTAS": [
+    {
+      "BOUNDARY_CONTRACT": "BC-C002-T2-T3-BHT401-P101-MECHANICAL-ELECTRICAL-MOTOR-INTERFACE",
+      "TARGET_THREAD": 3,
+      "NEW_INPUTS": [
+        "27_6KV_MOTOR_TERMINAL_VOLTAGE_MUST_NOT_BE_ASSUMED_EQUAL_TO_27_6KV_BUS_WITHOUT_CIRCUIT_EVIDENCE",
+        "MOTOR_TYPE_INDUCTION_VS_SYNCHRONOUS_REMAINS_OPEN",
+        "SCREENED_SHAFT_POWER_6_286_TO_6_735_MW_PER_PHYSICAL_PUMP",
+        "27_6KV_CURRENT_COEFFICIENT_131_5_TO_140_9_A_DIVIDED_BY_ETA_PF",
+        "13_8KV_ALTERNATIVE_CURRENT_COEFFICIENT_263_0_TO_281_8_A_DIVIDED_BY_ETA_PF",
+        "STARTING_AND_STOPPING_LAW_IS_HYDRAULIC_TRANSIENT_INPUT",
+        "TOTAL_ROTATING_INERTIA_REQUIRED",
+        "CHECK_VALVE_BEHAVIOR_REQUIRED_FOR_START_TRIP_STUDIES"
+      ],
+      "STATE": "RETURN_INPUT_READY"
+    },
+    {
+      "BOUNDARY_CONTRACT": "BC-C002-T2-T4-BHT401-CRS01-SUPPORT-REACTION-STRUCTURAL-HOST",
+      "TARGET_THREAD": 4,
+      "NEW_INPUTS": [
+        "HT07_REQUIRES_NONLINEAR_GAP_CONTACT_MODEL",
+        "HOST_REACTION_MUST_BE_TIME_HISTORY_OR_ENVELOPE_FROM_COUPLED_HYDRAULIC_MECHANICAL_MODEL",
+        "RESTraint_EFFECTIVE_STIFFNESS_AND_HOST_STIFFNESS_REQUIRED",
+        "31_2_MN_PRIMARY_TRUNK_PRESSURE_FORCE_SCREEN_MUST_NOT_BE_USED_AS_RST_L2_DESIGN_REACTION"
+      ],
+      "STATE": "RETURN_INPUT_READY_NUMERIC_REACTION_OPEN"
+    },
+    {
+      "BOUNDARY_CONTRACT": "BC-C002-T2-T5-BHT401-MAINTENANCE-PMT-ISOLATION-REQUIREMENTS",
+      "TARGET_THREAD": 5,
+      "NEW_INPUTS": [
+        "PMT_SHOULD_TEST_AS_LEFT_RESTRAINT_FUNCTION_NOT_MERELY_VISUAL_COMPLETION",
+        "IF_PRESSURE_BOUNDARY_WAS_DISTURBED_PRESSURE_OR_LEAK_TEST_BOUNDARY_AND_RESTORATION_RECORD_REQUIRED",
+        "IF_LOAD_PATH_CHANGED_FREE_STATE_ALIGNMENT_GAP_CONTACT_AND_VIBRATION_BASELINE_SHOULD_BE_REVERIFIED",
+        "EXACT_NUMERIC_ACCEPTANCE_LIMITS_REMAIN_PROJECT_DESIGN_OR_OEM_RECORD_ITEMS"
+      ],
+      "STATE": "RETURN_INPUT_READY"
+    }
+  ],
+  "BACKWARD_PROPAGATION_DELTAS": [
+    {
+      "PROPAGATION_ID": "T2-C002-R2-BP001",
+      "TRIGGER": "27_6KV_BUS_MOTOR_VOLTAGE_AMBIGUITY",
+      "TARGETS": [
+        "ELECTRICAL_ONE_LINE",
+        "LOAD_LIST",
+        "MOTOR_DATASHEET",
+        "TRANSFORMER_POPULATION",
+        "FEEDER_SCHEDULE",
+        "STARTER_OR_DRIVE",
+        "PROTECTION",
+        "CABLE_AMPACITY",
+        "GROUNDING",
+        "ENERGIZATION_TESTS"
+      ]
+    },
+    {
+      "PROPAGATION_ID": "T2-C002-R2-BP002",
+      "TRIGGER": "PARALLEL_PUMP_CHECK_VALVE_CARDINALITY",
+      "TARGETS": [
+        "P_AND_ID",
+        "VALVE_LIST",
+        "PUMP_PACKAGE_GA",
+        "PARALLEL_START_SEQUENCE",
+        "PUMP_TRIP_TRANSIENT",
+        "MAINTENANCE_ISOLATION",
+        "COMMISSIONING_PROCEDURE"
+      ]
+    },
+    {
+      "PROPAGATION_ID": "T2-C002-R2-BP003",
+      "TRIGGER": "HT07_NONLINEAR_RESTRAINT_CASE",
+      "TARGETS": [
+        "CRS01_STRUCTURAL_MODEL",
+        "TEMPORARY_PIPE_STRESS_MODEL",
+        "RST_L2_SETTING_RECORD",
+        "ANCHOR_HOST_MODEL",
+        "M88217_PMT",
+        "EXTENT_OF_CONDITION",
+        "CRUSH_ZONE_HAZARD_ANALYSIS"
+      ]
+    },
+    {
+      "PROPAGATION_ID": "T2-C002-R2-BP004",
+      "TRIGGER": "IAEA_TEMPORARY_CONFIGURATION_CONTROL_PRECEDENT",
+      "TARGETS": [
+        "COMMISSIONING_PROCEDURE_SCHEMA",
+        "TEMPORARY_CONFIGURATION_REGISTER",
+        "TEST_BOUNDARY_REGISTER",
+        "CALIBRATION_REGISTER",
+        "RESTORATION_RECORD",
+        "PERMANENT_TEST_RECORD"
+      ]
+    }
+  ],
+  "OPEN_ITEM_DELTA": [
+    {
+      "OPEN_ITEM_ID": "T2-C002-R2-OI-001",
+      "SUBJECT": "27_6KV_BUS_TO_MOTOR_TERMINAL_TOPOLOGY",
+      "PRIORITY": "BLOCKING_ELECTRICAL_INTERFACE"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C002-R2-OI-002",
+      "SUBJECT": "BHT401_MOTOR_TYPE_INDUCTION_OR_SYNCHRONOUS",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C002-R2-OI-003",
+      "SUBJECT": "PARALLEL_PUMP_PER_BRANCH_CHECK_VALVE_IDENTITIES",
+      "PRIORITY": "BLOCKING_TRANSIENT_AND_ISOLATION"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C002-R2-OI-004",
+      "SUBJECT": "CRS01_FLEXIBLE_CONNECTOR_TYPE_EFFECTIVE_AREA_STIFFNESS_MOVEMENT_AND_TIE_ROD_STATE",
+      "PRIORITY": "BLOCKING_LOADPATH"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C002-R2-OI-005",
+      "SUBJECT": "HT07_RESTRAINT_NONLINEAR_CONTACT_MODEL",
+      "PRIORITY": "BLOCKING_FORENSIC_REPLAY"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C002-R2-OI-006",
+      "SUBJECT": "CRS01_TEST_INSTRUMENT_LIST_AND_CALIBRATION_CERTIFICATES",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T2-C002-R2-OI-007",
+      "SUBJECT": "CRS01_FORMAL_ABORT_LIMITS_AND_TEST_ACCEPTANCE_CRITERIA",
+      "PRIORITY": "HIGH"
+    }
+  ],
+  "RETURN_COMPLETENESS_STATUS": {
+    "CURRENT_CYCLE": "OFG-EA-CYCLE-002",
+    "CURRENT_TASK": "T2-C002-BHT401-PID-CARDINALITY-HYDRAULIC-LOADPATH-CLOSURE",
+    "R2_DELTA_READY_FOR_THREAD1": true,
+    "DOMINANT_REMAINING_LIMIT": "PROJECT_SPECIFIC_RECORD_RECOVERY",
+    "GENERIC_RESEARCH_VALUE": "DIMINISHING_RETURNS",
+    "MATERIAL_NEW_FINDINGS_REGISTERED": true,
+    "UNREGISTERED_KNOWN_CONFLICTS": false,
+    "CANONICAL_PROMOTION_REQUESTED": false,
+    "GLOBAL_WRITE": false,
+    "SELF_ASSIGNMENT_ACTIVE": false,
+    "NEXT_MAJOR_TASK_AUTHORITY": "THREAD_1_ONLY"
+  }
+}

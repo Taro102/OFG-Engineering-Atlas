@@ -1,0 +1,1763 @@
+{
+  "HEADER": {
+    "PACKAGE_ID": "OFG-EA-T4-C002-RETURN-R1",
+    "PACKAGE_VERSION": "1.0.0",
+    "PACKAGE_TYPE": "OFG_ENGINEERING_ATLAS_WORKER_RETURN",
+    "SOURCE_THREAD": 4,
+    "TARGET_THREAD": 1,
+    "CYCLE_ID": "OFG-EA-CYCLE-002",
+    "TASK_ID": "T4-C002-CRS01-STRUCTURAL-HOST-ELECTRICAL-ROUTE-F106F101-SPATIAL-CLOSURE",
+    "INPUT_BASELINE_ID": "OFG-EA-B000-REV3-REVW3-REVS-2031-04-19",
+    "INTEGRATED_STAGING_DELTA_ID": "OFG-EA-C001-INTEGRATED-STAGING-R1",
+    "CONFIGURATION_CUT": "2031-04-19",
+    "ASSURANCE_CLASS": "AS3",
+    "RETURN_REVISION": "R1",
+    "RETURN_MODEL": "TYPED_DELTA_AGAINST_PINNED_BASELINE_AND_C001_INTEGRATED_STAGING",
+    "MACHINE_READABLE_ONLY": true,
+    "COPY_PASTE_SAFE_STRICT_JSON": true,
+    "GLOBAL_WRITE_PERFORMED": false,
+    "CANONICAL_ID_MUTATION_PERFORMED": false,
+    "LEGACY_PROVENANCE_DELETED": false,
+    "UNSUPPORTED_METRIC_CLOSURE_PERFORMED": false,
+    "NEXT_MAJOR_CYCLE_SELF_ASSIGNED": false
+  },
+  "LOCAL_STATE_CAPSULE": {
+    "THREAD_ID": 4,
+    "THREAD_ROLE": "PARALLEL_ENGINEERING_REVIEW_WORKER",
+    "PRIMARY_ORIENTATION": "SITE_CIVIL_STRUCTURAL_BUILDINGS_CONSTRUCTION_INSTALLATION",
+    "CURRENT_OPERATING_STATE": "W_RETURN_READY",
+    "CURRENT_CYCLE_ID": "OFG-EA-CYCLE-002",
+    "CURRENT_TASK_ID": "T4-C002-CRS01-STRUCTURAL-HOST-ELECTRICAL-ROUTE-F106F101-SPATIAL-CLOSURE",
+    "PINNED_BASELINE_ID": "OFG-EA-B000-REV3-REVW3-REVS-2031-04-19",
+    "PINNED_STAGING_DELTA_ID": "OFG-EA-C001-INTEGRATED-STAGING-R1",
+    "LOCAL_CHECKPOINT_ID": "T4-C002-CP-AS3-RETURN-001",
+    "STATE_MANIFEST_ID": "T4-C002-MANIFEST-R1",
+    "THREAD_1_RESOLVED_FACILITY_IDENTITIES_APPLIED": {
+      "F-102": "DIAGNOSTICS_BUILDING",
+      "F-106": "MACHINE_ASSEMBLY_AND_OUTAGE_HALL"
+    },
+    "ACTIVE_SUBROUTINES": [],
+    "COMPLETED_SUBROUTINES": [
+      "SR010_GENERATE_RESEARCH_SCOPE",
+      "SR021_RECONSTRUCT_PHYSICAL_PLANT",
+      "SR030_RECONSTRUCT_LIFECYCLE",
+      "SR040_RECONSTRUCT_ACTOR_AND_AUTHORITY",
+      "SR050_VALIDATE_ENGINEERING",
+      "SR051_VERIFY_EVIDENCE"
+    ],
+    "COMPLETED_RECURSION_FUNCTIONS": [
+      "RF004_RECURSE_PHYSICAL_DECOMPOSITION",
+      "RF006_RECURSE_INTERFACE_TRACE",
+      "RF007_RECURSE_SPATIAL_AND_SUPPORT_CHAIN",
+      "RF008_RECURSE_LIFECYCLE_TRACE",
+      "RF011_RECURSE_CONSTRUCTION_WORKFACE",
+      "RF013_RECURSE_CONFIGURATION_CHRONOLOGY",
+      "RF014_RECURSE_ACTOR_AUTHORITY",
+      "RF015_RECURSE_INFORMATION_FLOW",
+      "RF016_RECURSE_VALIDATION",
+      "RF017_RECURSE_VERIFICATION",
+      "RF019_RECURSE_CONSTRUCTABILITY",
+      "RF020_RECURSE_OPERABILITY_MAINTAINABILITY_TESTABILITY",
+      "RF023_RECURSE_BACKWARD_AND_CROSS_PROPAGATION_LOCAL_ASSESSMENT_ONLY",
+      "RF024_RECURSE_OPEN_ITEM_CLOSURE",
+      "RF025_RECURSE_COMPLETENESS_SCAN",
+      "RF027_RECURSE_LOAD_CASE_CLOSURE",
+      "RF041_RECURSE_SOURCE_CLAIM_VERIFICATION",
+      "RF046_RECURSE_CROSS_DOMAIN_VALIDATION"
+    ],
+    "ITERATION_CYCLES_COMPLETED": [
+      "CRS01_STRUCTURAL_HOST",
+      "ELECTRICAL_CIVIL_ROUTE",
+      "F106_F101_SPATIAL",
+      "AS_BUILT_EVIDENCE",
+      "LOAD_PATH_VALIDATION",
+      "MAINTAINABILITY",
+      "VV_RECHECK"
+    ],
+    "PROVISIONAL_IDENTITIES_CREATED_THIS_CYCLE": [
+      "T4-PROV-CRS01-HOST-LOCAL-01",
+      "T4-PROV-CRS01-CONNECTION-01",
+      "T4-PROV-CRS01-ANCHOR-GROUP-01",
+      "T4-PROV-CRS01-EMBED-OR-HOST-PLATE-01",
+      "T4-PROV-ELEC-ROUTE-SUPPORT-HOST-A",
+      "T4-PROV-ELEC-SUPPORT-ANCHOR-A",
+      "T4-PROV-ELEC-SUPPORT-EMBED-A",
+      "T4-PROV-ELEC-PEN-HOST-A",
+      "T4-PROV-ELEC-FIRE-BARRIER-A"
+    ],
+    "PROVISIONAL_IDENTITIES_REFERENCED_FROM_THREAD_3": [
+      "T3-PROV-TRAY-A",
+      "T3-PROV-CONDUIT-A",
+      "T3-PROV-DUCTBANK-A",
+      "T3-PROV-PEN-A",
+      "T3-PROV-FIRESEAL-A",
+      "T3-PROV-GND-BOND-SRC-A",
+      "T3-PROV-CBL-A-S01",
+      "T3-PROV-CBL-A-S02"
+    ],
+    "RETURN_STATUS": "READY",
+    "VV_STATUS": "AS3_COMPLETE_TO_ASSIGNED_CYCLE_STOP_CONDITION_WITH_EXPLICIT_PROJECT_SPECIFIC_BLOCKS"
+  },
+  "EXECUTED_SCOPE": {
+    "PRIMARY_OBJECTIVE_1_BHT401_CRS01_SUPPORT_ANCHOR_BUILDING_INTERFACE": {
+      "STATUS": "ADVANCED_TO_MAXIMUM_SUPPORTED_DEPTH",
+      "CRS01_OBJECT": "CRS01-RST-L2",
+      "FACILITY_HOST": "H-101",
+      "FACILITY_HOST_NAME": "PRIMARY_HEAT_TRANSPORT_STEAM_GENERATOR_ANNEX",
+      "FACILITY_ZONE": "Z03",
+      "HOST_RESOLUTION_LEVEL": "FACILITY_CONFIRMED_LOCAL_STRUCTURAL_MEMBER_OPEN",
+      "LOCAL_STRUCTURAL_HOST_ID": null,
+      "LOCAL_STRUCTURAL_HOST_PROVISIONAL_PLACEHOLDER": "T4-PROV-CRS01-HOST-LOCAL-01",
+      "HOST_MATERIAL_BRANCH": [
+        "LOCAL_STRUCTURAL_STEEL",
+        "LOCAL_REINFORCED_CONCRETE_OR_EMBEDDED_STEEL_INTERFACE"
+      ],
+      "HOST_MATERIAL_BRANCH_STATUS": "UNRESOLVED_DO_NOT_COLLAPSE",
+      "SOURCE_BASIS": "H-101 is the canonical heat-transport annex; its primary structure consists of walls/slabs/steel framing and its embedded-interface tags remain open. :chatgpt-content-reference{index="0"}",
+      "CRS01_SUPPORT_CLASS": "TEMPORARY_COMMISSIONING_RESTRAINT",
+      "SUPPORT_CLASS_SOURCE": "V16 classifies SUP-08 as a temporary commissioning restraint with skid/pipe-to-structure load path and requires gap/contact, stiffness, anchors and inspection/maintenance data for CRS01-RST-L2. :chatgpt-content-reference{index="1"}",
+      "EXACT_ANCHOR_GEOMETRY": "OPEN",
+      "EXACT_EMBED_IDENTITY": "OPEN",
+      "EXACT_BASEPLATE_OR_BRACKET_GEOMETRY": "OPEN",
+      "EXACT_ALLOWABLES": "OPEN",
+      "EXACT_AS_BUILT_SURVEY": "OPEN"
+    },
+    "PRIMARY_OBJECTIVE_2_E101_E105_ELECTRICAL_CIVIL_PHYSICAL_ROUTE_INTERFACE": {
+      "STATUS": "ADVANCED_TO_EXPLICIT_CLASS_AND_HOST_CONTRACT",
+      "CURRENT_FACILITY_IDENTITIES": {
+        "E-101": "MAIN_TRANSFORMER_YARD",
+        "E-102": "500_KV_SWITCHYARD",
+        "E-103": "STATION_ELECTRICAL_BUILDING",
+        "E-104": "EMERGENCY_POWER_BUILDING",
+        "E-105": "BATTERY_UPS_BUILDING"
+      },
+      "FACILITY_IDENTITY_SOURCE": "Current chronology identifies E-101 through E-105 with the coordinated facility mapping above. :chatgpt-content-reference{index="2"}",
+      "THREAD_3_ROUTE_IDENTITIES_REUSED_WITHOUT_PROMOTION": [
+        "T3-PROV-TRAY-A",
+        "T3-PROV-CONDUIT-A",
+        "T3-PROV-DUCTBANK-A",
+        "T3-PROV-PEN-A",
+        "T3-PROV-FIRESEAL-A",
+        "T3-PROV-GND-BOND-SRC-A"
+      ],
+      "THREAD_3_PROVISIONAL_SOURCE": "Thread 3 already instantiated provisional cable-tray, conduit, ductbank, penetration, fire-seal and grounding-bond object classes. :chatgpt-content-reference{index="3"}",
+      "EXACT_ROUTE_GEOMETRY": "OPEN",
+      "EXACT_DUCTBANK_SEGMENT_IDS": "OPEN",
+      "EXACT_SUPPORT_IDS": "OPEN",
+      "EXACT_PENETRATION_IDS": "OPEN",
+      "EXACT_FIRESTOP_INSTANCE_IDS": "OPEN",
+      "EXACT_FIRE_AREA_ASSIGNMENTS": "OPEN",
+      "EXACT_ROOM_ASSIGNMENTS_BELOW_FACILITY_LEVEL": "OPEN"
+    },
+    "PRIMARY_OBJECTIVE_3_F106_F101_METRIC_AND_CONFIGURATION_CLOSURE_CONTINUATION": {
+      "STATUS": "PARTIAL_METRIC_CLOSURE_AT_E_LAYER_ONLY",
+      "CURRENT_IDENTITY_PROPAGATION": "COMPLETE",
+      "CURRENT_IDENTITY": {
+        "F-106": "MACHINE_ASSEMBLY_AND_OUTAGE_HALL",
+        "F-102": "DIAGNOSTICS_BUILDING"
+      },
+      "CURRENT_FACILITY_PLACEMENT_E_LAYER": {
+        "F-101": {
+          "CENTRE_E_M": 1000,
+          "CENTRE_N_M": 1000,
+          "GRADE_Z_M": 100,
+          "LENGTH_M": 126,
+          "WIDTH_M": 112,
+          "HEIGHT_M": 78,
+          "STATUS": "ENGINEERING_RECONSTRUCTION_NOT_SURVEY"
+        },
+        "F-106": {
+          "CENTRE_E_M": 1000,
+          "CENTRE_N_M": 1148,
+          "GRADE_Z_M": 100,
+          "LENGTH_M": 104,
+          "WIDTH_M": 86,
+          "HEIGHT_M": 62,
+          "STATUS": "ENGINEERING_RECONSTRUCTION_NOT_SURVEY"
+        }
+      },
+      "PLACEMENT_SOURCE": "The later coordinated facility register places F-106 as Machine Assembly & Outage Hall on the continuous crane/assembly axis with F-101. :chatgpt-content-reference{index="4"}",
+      "PROTECTED_HEAVY_LIFT_AXIS_E_LAYER": {
+        "ZONE_ID": "MC-CRANE-AXIS",
+        "FUNCTION": "F106_F101_CONTINUOUS_HEAVY_LIFT_AXIS",
+        "E_MIN_M": 960,
+        "E_MAX_M": 1040,
+        "N_MIN_M": 1000,
+        "N_MAX_M": 1195,
+        "Z_MIN_M": 100,
+        "Z_MAX_M": 170,
+        "CLASS": "CONSTRUCTION_OUTAGE_HEAVY_LIFT",
+        "STATUS": "ENGINEERING_RECONSTRUCTION_PROTECTED_ZONE_NOT_FIELD_SURVEY"
+      },
+      "HEAVY_LIFT_AXIS_SOURCE": "The controlled protected-zone register contains MC-CRANE-AXIS as the F106-F101 continuous heavy-lift envelope. :chatgpt-content-reference{index="5"}",
+      "LIFT_PATH_TOPOLOGY": "CLOSED_AT_PROTECTED_ZONE_LEVEL",
+      "PAYLOAD_SPECIFIC_SWEPT_VOLUME": "OPEN",
+      "CRANE_RUNWAY_RAIL_AND_HOOK_GEOMETRY": "OPEN",
+      "CRANE_CAPACITY": "OPEN",
+      "MAINTENANCE_REMOVAL_CORRIDOR": "FUNCTIONALLY_RESERVED_BY_MC_CRANE_AXIS_PAYLOAD_SPECIFIC_ENVELOPES_OPEN",
+      "FIELD_JOINT_GENEALOGY": "REMAINS_OPEN_FROM_C001",
+      "SECTOR_MONTH_SEQUENCE": "THREAD_1_CONTROLLED_C001_SEQUENCE_RETAINED",
+      "WORKING_DAY_LEVEL_SECTOR_DATES": "QUARANTINED"
+    },
+    "STOP_CONDITIONS": {
+      "F106_F102_CURRENT_IDENTITY_PROPAGATED": true,
+      "CRS01_STRUCTURAL_BOUNDARY_ADVANCED_TO_MAXIMUM_SUPPORTED_DEPTH": true,
+      "T3_ELECTRICAL_CIVIL_BOUNDARY_ADVANCED": true,
+      "F106_F101_SPATIAL_OPEN_ITEMS_REDUCED_OR_EXPLICITLY_BLOCKED": true,
+      "NO_INVENTED_METRIC_GEOMETRY": true,
+      "ALL_MATERIAL_GAPS_REGISTERED": true
+    }
+  },
+  "UNFINISHED_SCOPE": [
+    {
+      "ITEM": "CRS01_LOCAL_STRUCTURAL_HOST_MEMBER",
+      "STATUS": "BLOCKED_PROJECT_SPECIFIC_RECORD",
+      "REASON": "The corpus supports H-101 as facility host but does not identify the exact steel member, slab, wall, pedestal, embedded plate or foundation element to which CRS01-RST-L2 was physically connected."
+    },
+    {
+      "ITEM": "CRS01_ANCHOR_EMBED_BASEPLATE_GEOMETRY",
+      "STATUS": "BLOCKED_PROJECT_SPECIFIC_RECORD",
+      "REASON": "V16 explicitly leaves actual gap/contact geometry, stiffness and anchors open."
+    },
+    {
+      "ITEM": "CRS01_STRUCTURAL_ALLOWABLES",
+      "STATUS": "BLOCKED_LOAD_AND_DESIGN_RECORD",
+      "REASON": "No project-specific allowable reaction envelope, anchor capacity, host member capacity or temporary-restraint design calculation was recovered."
+    },
+    {
+      "ITEM": "CRS01_AS_BUILT_SURVEY",
+      "STATUS": "BLOCKED_EVIDENCE",
+      "REASON": "No authoritative as-built coordinate/gap/contact survey record for CRS01-RST-L2 was recovered."
+    },
+    {
+      "ITEM": "E101_E105_EXACT_CIVIL_ROUTE",
+      "STATUS": "BLOCKED_AS_BUILT_ROUTE_MODEL",
+      "REASON": "Thread 3 established object classes and provisional route objects but exact route-support-penetration-firestop spatial genealogy remains open."
+    },
+    {
+      "ITEM": "ELECTRICAL_FIRE_AREA_AND_FIRESTOP_INSTANCE_MAPPING",
+      "STATUS": "BLOCKED_FIRE_PROTECTION_CONFIGURATION_RECORD",
+      "REASON": "No instance-level fire-area boundary schedule and tested firestop assembly mapping was recovered."
+    },
+    {
+      "ITEM": "F106_F101_PAYLOAD_SPECIFIC_SWEPT_VOLUME",
+      "STATUS": "BLOCKED_GEOMETRY_AND_PAYLOAD",
+      "REASON": "The protected heavy-lift axis is available at E-layer, but payload-specific sector, rigging and crane-hook swept volumes remain unavailable."
+    },
+    {
+      "ITEM": "F106_F101_CRANE_RUNWAY_NUMERICAL_CLOSURE",
+      "STATUS": "BLOCKED_PROJECT_SPECIFIC_CRANE_DATA",
+      "REASON": "Rated configurations, rail/hook geometry, wheel loads and structural reactions remain open."
+    },
+    {
+      "ITEM": "MAINTENANCE_REMOVAL_PAYLOAD_ENVELOPES",
+      "STATUS": "BLOCKED_MAINTENANCE_SCENARIO_DEFINITION",
+      "REASON": "The protected outage route is established, but each component removal envelope, rigging state, laydown state and temporary-support condition remains open."
+    }
+  ],
+  "RESEARCH_PERFORMED": {
+    "MODE": "PROJECT_SPECIFIC_CLOSURE_PRIORITY_WITH_TARGETED_EXTERNAL_PRECEDENT",
+    "INTERNAL_CORPUS": [
+      "Rev3 V02 site geography, coordinated facility identities and protected spatial corridors",
+      "Rev3 V03 building/civil/structural hierarchy, embed and penetration contracts",
+      "Rev3 V07 BHT routing/support context",
+      "Rev3 V10 electrical/fire/confinement architecture",
+      "Rev3 V12 routing/support/penetration graph requirements",
+      "Rev3 V13 construction temporary works and embed lifecycle",
+      "Rev3 V15 current facility identity and April-2031 state",
+      "Rev3 V16 CRS01 forensic configuration and support-class requirements",
+      "Rev3 V17 open configuration and verification state",
+      "Thread 2 C001 support/interface return",
+      "Thread 3 C001 electrical route return",
+      "Thread 5 C001 lifting/maintenance support return",
+      "Thread 4 C001 integrated staging return"
+    ],
+    "EXTERNAL_RESEARCH": {
+      "STATUS": "TARGETED_COMPLETED",
+      "EPISTEMIC_CLASS": "V_OR_R_PRECEDENT_ONLY",
+      "TOPICS": [
+        "Canadian nuclear construction and commissioning configuration control",
+        "large-load design and lifting interfaces",
+        "temporary-to-permanent fusion-machine support transfer",
+        "fusion assembly metrology",
+        "temporary stability restraint",
+        "fire-barrier penetration seal integrity",
+        "cable-tray and conduit fire separation"
+      ],
+      "RESULT": "External research validated the required data contracts and configuration controls but did not close any OFG project-specific coordinate, allowable, anchor, route or firestop identity."
+    }
+  },
+  "SOURCES_USED": [
+    {
+      "SOURCE_ID": "T4-C002-SRC-001",
+      "SOURCE": "REV3_V16_BHT401_CRS01_FORENSIC_CONFIGURATION",
+      "CLASS": "OFG_SOURCE_CORPUS",
+      "USES": [
+        "CRS01 lifecycle",
+        "temporary commissioning restraint classification",
+        "required gap/contact/stiffness/anchor inputs"
+      ],
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="6"}",
+        ":chatgpt-content-reference{index="7"}"
+      ]
+    },
+    {
+      "SOURCE_ID": "T4-C002-SRC-002",
+      "SOURCE": "REV3_V03_BUILDINGS_CIVIL_STRUCTURAL",
+      "CLASS": "OFG_SOURCE_CORPUS",
+      "USES": [
+        "H-101 structural hierarchy",
+        "embedded-interface status",
+        "penetration data contract",
+        "F101 electrical federated interface"
+      ],
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="8"}",
+        ":chatgpt-content-reference{index="9"}"
+      ]
+    },
+    {
+      "SOURCE_ID": "T4-C002-SRC-003",
+      "SOURCE": "REV3_V13_CONSTRUCTION_TEMPORARY_WORKS",
+      "CLASS": "OFG_SOURCE_CORPUS",
+      "USES": [
+        "embed lifecycle",
+        "grounding embed",
+        "embedded conduit/sleeve",
+        "temporary support anchors",
+        "pre-concealment/as-built evidence"
+      ],
+      "CITATION": ":chatgpt-content-reference{index="10"}"
+    },
+    {
+      "SOURCE_ID": "T4-C002-SRC-004",
+      "SOURCE": "REV3_V02_SITE_GEOGRAPHY_COORDINATES_LOGISTICS",
+      "CLASS": "OFG_SOURCE_CORPUS",
+      "USES": [
+        "current F106/F102 physical mapping",
+        "F101/F106 engineering placement envelope",
+        "MC-CRANE-AXIS"
+      ],
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="11"}",
+        ":chatgpt-content-reference{index="12"}"
+      ]
+    },
+    {
+      "SOURCE_ID": "T4-C002-SRC-005",
+      "SOURCE": "REV3_V15_MASTER_CHRONOLOGY",
+      "CLASS": "OFG_SOURCE_CANON_CHRONOLOGY",
+      "USES": [
+        "current F102/F106 identity",
+        "current E101-E105 facility mapping"
+      ],
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="13"}",
+        ":chatgpt-content-reference{index="14"}"
+      ]
+    },
+    {
+      "SOURCE_ID": "T4-C002-SRC-006",
+      "SOURCE": "THREAD_3_C001_RETURN",
+      "CLASS": "INTEGRATED_STAGING_INPUT",
+      "USES": [
+        "provisional electrical route object identities",
+        "route-state requirements",
+        "route/civil boundary request"
+      ],
+      "CITATIONS": [
+        ":chatgpt-content-reference{index="15"}",
+        ":chatgpt-content-reference{index="16"}",
+        ":chatgpt-content-reference{index="17"}"
+      ]
+    },
+    {
+      "SOURCE_ID": "T4-C002-SRC-007",
+      "SOURCE": "THREAD_5_C001_RETURN",
+      "CLASS": "INTEGRATED_STAGING_INPUT",
+      "USES": [
+        "F106/F101 maintenance-route boundary",
+        "controlled lift support",
+        "CRS01 maintenance evidence limitations"
+      ],
+      "CITATION": ":chatgpt-content-reference{index="18"}"
+    },
+    {
+      "SOURCE_ID": "T4-C002-SRC-101",
+      "SOURCE": "CNSC_REGDOC_2_3_1",
+      "CLASS": "AUTHORITATIVE_REAL_WORLD_REFERENCE",
+      "USE": "Construction/commissioning shall be managed consistently with design requirements and controlled turnover/configuration principles.",
+      "WEB_CITATION": ":chatgpt-content-reference{index="19"}"
+    },
+    {
+      "SOURCE_ID": "T4-C002-SRC-102",
+      "SOURCE": "CNSC_REGDOC_2_5_2",
+      "CLASS": "AUTHORITATIVE_REAL_WORLD_REFERENCE",
+      "USE": "Large-load handling, construction/installation capability and penetration inspection/testability precedent.",
+      "WEB_CITATION": ":chatgpt-content-reference{index="20"}"
+    },
+    {
+      "SOURCE_ID": "T4-C002-SRC-103",
+      "SOURCE": "ITER_TEMPORARY_TO_PERMANENT_SUPPORT_TRANSFER",
+      "CLASS": "AUTHORITATIVE_REAL_WORLD_REFERENCE",
+      "USE": "Temporary support, stability restraint and permanent gravity-support load transfer precedent.",
+      "WEB_CITATIONS": [
+        ":chatgpt-content-reference{index="21"}",
+        ":chatgpt-content-reference{index="22"}",
+        ":chatgpt-content-reference{index="23"}"
+      ]
+    },
+    {
+      "SOURCE_ID": "T4-C002-SRC-104",
+      "SOURCE": "ITER_METROLOGY",
+      "CLASS": "AUTHORITATIVE_REAL_WORLD_REFERENCE",
+      "USE": "Survey network, deformation monitoring and configuration-stage metrology precedent.",
+      "WEB_CITATION": ":chatgpt-content-reference{index="24"}"
+    },
+    {
+      "SOURCE_ID": "T4-C002-SRC-105",
+      "SOURCE": "NRC_NUREG_1552_FIRE_BARRIER_PENETRATION_SEALS",
+      "CLASS": "AUTHORITATIVE_REAL_WORLD_REFERENCE",
+      "USE": "Penetration seals are configuration-controlled elements of fire-barrier continuity.",
+      "WEB_CITATION": ":chatgpt-content-reference{index="25"}"
+    },
+    {
+      "SOURCE_ID": "T4-C002-SRC-106",
+      "SOURCE": "NRC_APPENDIX_R_FIRE_PROTECTION",
+      "CLASS": "AUTHORITATIVE_REAL_WORLD_REFERENCE",
+      "USE": "Cable/conduit separation and qualified cable-penetration fire-seal precedent.",
+      "WEB_CITATION": ":chatgpt-content-reference{index="26"}"
+    }
+  ],
+  "NEW_ENGINEERING_FINDINGS": [
+    {
+      "FINDING_ID": "T4-C002-F001",
+      "TITLE": "CRS01_FACILITY_HOST_CAN_BE_CLOSED_TO_H101_BUT_NOT_TO_LOCAL_MEMBER",
+      "STATUS": "PARTIAL_CLOSURE",
+      "FINDING": "The physical restraint belongs within H-101's heat-transport structural envelope, but the available corpus does not establish whether CRS01-RST-L2 attaches to a local structural-steel member, reinforced-concrete element, embedded plate or another secondary-support object.",
+      "PROVENANCE": "C/E/O"
+    },
+    {
+      "FINDING_ID": "T4-C002-F002",
+      "TITLE": "CRS01_RESTRAINT_MUST_BE_MODELED_AS_A_6DOF_CONTACT_AND_STIFFNESS_INTERFACE",
+      "STATUS": "SUPPORTED_REQUIREMENT",
+      "FINDING": "The event-relevant restraint cannot be represented by a binary attached/not-attached state. Its required state includes restraint directions, free directions, gap/contact condition, translational and rotational stiffness, friction/slip assumptions where applicable, connection condition and host movement.",
+      "PROVENANCE": "E_CONSTRAINED_BY_V16"
+    },
+    {
+      "FINDING_ID": "T4-C002-F003",
+      "TITLE": "CRS01_EVENT_LOAD_PATH_REQUIRES_TWO_SIDED_INTERFACE_INPUT",
+      "STATUS": "DERIVED_REQUIREMENT",
+      "FINDING": "Thread 2 must provide pipe/skid forces and moments by applicable event/transient/load case; Thread 4 structural side must provide host stiffness, support connection properties, anchor/embed capacity basis, gaps/contact and movement. Neither side alone can close event mechanics."
+    },
+    {
+      "FINDING_ID": "T4-C002-F004",
+      "TITLE": "CRS01_ANCHOR_IDENTITY_CANNOT_BE_DERIVED_FROM_CLOSED_APPROVED_M88217",
+      "STATUS": "VERIFIED",
+      "FINDING": "M-88217 CLOSED/APPROVED is an information-state fact and does not identify anchor geometry, fastener condition, as-left gap/contact, torque/preload, host connection or actual executed adjustment."
+    },
+    {
+      "FINDING_ID": "T4-C002-F005",
+      "TITLE": "ELECTRICAL_ROUTE_LOGIC_AND_CIVIL_PHYSICAL_ROUTE_MUST_REMAIN_SEPARATE_LINKED_GRAPHS",
+      "STATUS": "SUPPORTED",
+      "FINDING": "Electrical source-to-load connectivity does not establish where cables physically run. A route must separately resolve raceway, support, host, penetration, barrier, firestop, grounding/bonding and as-built state."
+    },
+    {
+      "FINDING_ID": "T4-C002-F006",
+      "TITLE": "THREAD3_PROVISIONAL_ROUTE_OBJECTS_ARE_REUSABLE_INPUTS_NOT_CANONICAL_IDENTITIES",
+      "STATUS": "SUPPORTED",
+      "FINDING": "T3-PROV-TRAY-A, T3-PROV-CONDUIT-A, T3-PROV-DUCTBANK-A, T3-PROV-PEN-A and T3-PROV-FIRESEAL-A are valid cross-thread placeholders. Thread 4 must not silently rename or promote them."
+    },
+    {
+      "FINDING_ID": "T4-C002-F007",
+      "TITLE": "PENETRATION_HOST_AND_FIRESTOP_ARE_DISTINCT_OBJECTS",
+      "STATUS": "SUPPORTED",
+      "FINDING": "The wall/slab/roof or other host is one object; the opening/sleeve/embedded frame is another; the installed cable/conduit is another; the firestop or barrier-seal assembly is another. All must be separately traceable."
+    },
+    {
+      "FINDING_ID": "T4-C002-F008",
+      "TITLE": "FIRE_BARRIER_CONTINUITY_IS_A_CONFIGURATION_STATE_NOT_A_DRAWING_ATTRIBUTE",
+      "STATUS": "VALIDATED",
+      "FINDING": "A penetrated fire boundary remains compliant only when the specific penetration configuration and qualified seal assembly are installed, inspected, restored after modification and retained in the as-built evidence chain.",
+      "EXTERNAL_VALIDATION": [
+        ":chatgpt-content-reference{index="27"}",
+        ":chatgpt-content-reference{index="28"}"
+      ]
+    },
+    {
+      "FINDING_ID": "T4-C002-F009",
+      "TITLE": "GROUNDING_EMBEDS_REQUIRE_PRE_CONCEALMENT_CONTINUITY_AND_AS_BUILT_RECORD",
+      "STATUS": "SUPPORTED",
+      "FINDING": "V13 requires grounding/bonding embeds to be checked for conductor continuity, accessible test point and unintended loops before concealment and to be retained in the as-built record.",
+      "SOURCE": ":chatgpt-content-reference{index="29"}"
+    },
+    {
+      "FINDING_ID": "T4-C002-F010",
+      "TITLE": "CURRENT_F106_F102_IDENTITY_CONFLICT_IS_RESOLVED_FOR_CURRENT_CONFIGURATION",
+      "STATUS": "THREAD_1_CONTROL_DECISION_APPLIED",
+      "FINDING": "F-106 is the Machine Assembly & Outage Hall and F-102 is the Diagnostics Building. Older F-102 Assembly/Outage Hall records remain legacy provenance only."
+    },
+    {
+      "FINDING_ID": "T4-C002-F011",
+      "TITLE": "F106_F101_HEAVY_LIFT_AXIS_HAS_CONTROLLED_E_LAYER_METRIC_ENVELOPE",
+      "STATUS": "PARTIAL_METRIC_CLOSURE",
+      "FINDING": "MC-CRANE-AXIS provides an E-layer protected volume from F-106 to F-101. It can be used for engineering reconstruction, clash screening and reservation control, but not as surveyed setting-out truth.",
+      "SOURCE": ":chatgpt-content-reference{index="30"}"
+    },
+    {
+      "FINDING_ID": "T4-C002-F012",
+      "TITLE": "MC_CRANE_AXIS_FUNCTIONALLY_SUPPORTS_BOTH_CONSTRUCTION_AND_OUTAGE_USE",
+      "STATUS": "SUPPORTED",
+      "FINDING": "The protected zone is explicitly classified for construction/outage heavy lift. This closes the topological requirement for a future major-maintenance route while leaving payload-specific removal envelopes open."
+    },
+    {
+      "FINDING_ID": "T4-C002-F013",
+      "TITLE": "PROTECTED_ZONE_DOES_NOT_CLOSE_CRANE_FEASIBILITY",
+      "STATUS": "SUPPORTED",
+      "FINDING": "A reserved envelope alone does not prove crane capacity, structural runway adequacy, hook reach, rigging headroom, tandem-control feasibility, floor capacity or component-specific swept-volume clearance."
+    },
+    {
+      "FINDING_ID": "T4-C002-F014",
+      "TITLE": "TEMPORARY_SUPPORT_REMOVAL_IS_A_CONFIGURATION_CHANGE",
+      "STATUS": "VALIDATED",
+      "FINDING": "Removal of temporary restraint/support hardware requires confirmation that permanent load paths are active and that removal does not violate stability, alignment or adjacent-system conditions.",
+      "EXTERNAL_VALIDATION": [
+        ":chatgpt-content-reference{index="31"}",
+        ":chatgpt-content-reference{index="32"}"
+      ]
+    }
+  ],
+  "PROPOSED_ATLAS_DELTAS": [
+    {
+      "DELTA_ID": "T4-C002-AD-001",
+      "ACTION": "ADD",
+      "TARGET": "REV3_V16",
+      "SECTION": "CRS01_STRUCTURAL_INTERFACE_CONTRACT",
+      "PROPOSAL": {
+        "FACILITY_HOST": "H-101",
+        "LOCAL_HOST": "OPEN",
+        "HOST_BRANCHES": [
+          "STRUCTURAL_STEEL",
+          "CONCRETE_EMBEDDED_STEEL_INTERFACE"
+        ],
+        "MANDATORY_FIELDS": [
+          "support_id",
+          "supported_object",
+          "local_host_id",
+          "host_material",
+          "connection_type",
+          "baseplate_or_bracket_id",
+          "anchor_group_id",
+          "embed_id",
+          "grout_or_bearing_interface",
+          "6dof_restraint_function",
+          "6dof_stiffness",
+          "gap_contact",
+          "friction_or_slip_model",
+          "allowable_force_moment_envelope",
+          "load_cases",
+          "as_designed_geometry",
+          "as_built_geometry",
+          "survey_uncertainty",
+          "inspection_state",
+          "maintenance_state",
+          "temporary_configuration_state"
+        ]
+      }
+    },
+    {
+      "DELTA_ID": "T4-C002-AD-002",
+      "ACTION": "ADD",
+      "TARGET": "REV3_V03",
+      "SECTION": "TEMPORARY_COMMISSIONING_SUPPORT_HOST_GRAPH",
+      "PROPOSAL": {
+        "GRAPH": [
+          "PROCESS_OR_SKID_OBJECT",
+          "TEMPORARY_RESTRAINT_OR_SUPPORT",
+          "BRACKET_OR_BASEPLATE",
+          "ANCHOR_OR_FASTENER_GROUP",
+          "EMBED_OR_DIRECT_HOST_CONNECTION",
+          "LOCAL_STEEL_OR_CONCRETE_MEMBER",
+          "PRIMARY_BUILDING_STRUCTURE",
+          "SUBSTRUCTURE_OR_FOUNDATION"
+        ],
+        "RULE": "UNKNOWN_INTERMEDIATE_OBJECTS_MUST_REMAIN_EXPLICITLY_OPEN_NOT_SKIPPED"
+      }
+    },
+    {
+      "DELTA_ID": "T4-C002-AD-003",
+      "ACTION": "ADD",
+      "TARGET": "REV3_V03",
+      "SECTION": "ELECTRICAL_PHYSICAL_ROUTE_HOST_CONTRACT",
+      "PROPOSAL": {
+        "CHAIN": [
+          "CABLE_OR_BUS_OBJECT",
+          "TRAY_CONDUIT_OR_DUCTBANK",
+          "ROUTE_SUPPORT",
+          "SUPPORT_ANCHOR_OR_EMBED",
+          "STRUCTURAL_HOST",
+          "PENETRATION",
+          "PENETRATION_HOST",
+          "FIRE_OR_ENVIRONMENTAL_BARRIER",
+          "FIRESTOP_OR_SEAL",
+          "GROUND_BOND",
+          "DESTINATION"
+        ]
+      }
+    },
+    {
+      "DELTA_ID": "T4-C002-AD-004",
+      "ACTION": "EXPAND",
+      "TARGET": "REV3_V12",
+      "SECTION": "ROUTE_PENETRATION_FIRESTOP_TRACEABILITY",
+      "PROPOSAL": {
+        "MANDATORY_RELATIONSHIPS": [
+          "SUPPORTED_BY",
+          "ANCHORED_TO",
+          "EMBEDDED_IN",
+          "PENETRATES",
+          "HOSTED_BY",
+          "CROSSES_FIRE_AREA_BOUNDARY",
+          "FIRE_SEALED_BY",
+          "BONDED_TO",
+          "SURVEYED_BY",
+          "INSPECTED_BY",
+          "RESTORED_BY"
+        ]
+      }
+    },
+    {
+      "DELTA_ID": "T4-C002-AD-005",
+      "ACTION": "UPDATE_REFERENCE_MAPPING",
+      "TARGET": "REV3_V02_V03_V13_LEGACY_SECTIONS",
+      "PROPOSAL": {
+        "CURRENT_F102": "DIAGNOSTICS_BUILDING",
+        "CURRENT_F106": "MACHINE_ASSEMBLY_AND_OUTAGE_HALL",
+        "LEGACY_F102_ASSEMBLY_HALL_TEXT": "PRESERVE_WITH_LEGACY_IDENTITY_PROVENANCE_MARKER",
+        "SILENT_TEXT_REWRITE": false
+      }
+    },
+    {
+      "DELTA_ID": "T4-C002-AD-006",
+      "ACTION": "PROMOTE_EXISTING_E_LAYER_ZONE_TO_CURRENT_IDENTITY_REFERENCE",
+      "TARGET": "REV3_V02_V03_V13",
+      "ZONE": "MC-CRANE-AXIS",
+      "PROPOSAL": {
+        "CURRENT_ROUTE": "F106_TO_F101",
+        "USE": [
+          "CONSTRUCTION_HEAVY_LIFT_RESERVATION",
+          "OUTAGE_MAJOR_MAINTENANCE_RESERVATION",
+          "CLASH_SCREENING"
+        ],
+        "NOT_VALID_FOR": [
+          "SURVEY_SETTING_OUT",
+          "FINAL_CRANE_CAPACITY",
+          "PAYLOAD_SPECIFIC_SWEPT_VOLUME",
+          "FINAL_RUNWAY_REACTION"
+        ]
+      }
+    }
+  ],
+  "PROPOSED_ANNEX_DELTAS": [
+    {
+      "DATASET_ID": "T4-C002-A01-CRS01_STRUCTURAL_INTERFACE",
+      "ROW_GRAIN": "SUPPORT_CONNECTION_INTERFACE",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "STATUS": "ADD_PROVISIONAL_SCHEMA_ROWS",
+      "FIELDS": [
+        "support_id",
+        "facility_host",
+        "local_host_id",
+        "connection_id",
+        "baseplate_bracket_id",
+        "anchor_group_id",
+        "embed_id",
+        "host_material",
+        "dof_TX",
+        "dof_TY",
+        "dof_TZ",
+        "dof_RX",
+        "dof_RY",
+        "dof_RZ",
+        "Kx",
+        "Ky",
+        "Kz",
+        "Krx",
+        "Kry",
+        "Krz",
+        "gap_x",
+        "gap_y",
+        "gap_z",
+        "contact_state",
+        "friction_model",
+        "load_case",
+        "Fx",
+        "Fy",
+        "Fz",
+        "Mx",
+        "My",
+        "Mz",
+        "allowable_reference",
+        "survey_record",
+        "inspection_record",
+        "as_left_record"
+      ]
+    },
+    {
+      "DATASET_ID": "T4-C002-A02-ELECTRICAL_CIVIL_ROUTE_HOST_GRAPH",
+      "ROW_GRAIN": "ROUTE_SEGMENT_OR_PENETRATION_INSTANCE",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "STATUS": "ADD_SCHEMA_PROVISIONAL_INSTANCES_ONLY"
+    },
+    {
+      "DATASET_ID": "T4-C002-A03-F106_F101_PROTECTED_ROUTE",
+      "ROW_GRAIN": "PROTECTED_3D_ZONE",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "STATUS": "REFERENCE_EXISTING_MC_CRANE_AXIS_WITH_CURRENT_F106_IDENTITY"
+    },
+    {
+      "DATASET_ID": "T4-C002-A04-TEMPORARY_SUPPORT_REMOVAL_RESTORATION",
+      "ROW_GRAIN": "TEMPORARY_SUPPORT_INSTANCE",
+      "MODE": "MACHINE_READABLE_ONLY",
+      "STATUS": "ADD_REQUIRED_EVIDENCE_FIELDS"
+    }
+  ],
+  "CREATED_OR_CHANGED_IDENTITIES": [
+    {
+      "ID": "T4-PROV-CRS01-HOST-LOCAL-01",
+      "TYPE": "LOCAL_STRUCTURAL_HOST_PLACEHOLDER",
+      "STATUS": "PROVISIONAL",
+      "PARENT": "H-101",
+      "EXACT_PHYSICAL_IDENTITY": "OPEN"
+    },
+    {
+      "ID": "T4-PROV-CRS01-CONNECTION-01",
+      "TYPE": "SUPPORT_TO_HOST_CONNECTION",
+      "STATUS": "PROVISIONAL",
+      "FROM": "CRS01-RST-L2",
+      "TO": "T4-PROV-CRS01-HOST-LOCAL-01"
+    },
+    {
+      "ID": "T4-PROV-CRS01-ANCHOR-GROUP-01",
+      "TYPE": "ANCHOR_OR_FASTENER_GROUP_PLACEHOLDER",
+      "STATUS": "PROVISIONAL",
+      "GEOMETRY": "OPEN"
+    },
+    {
+      "ID": "T4-PROV-CRS01-EMBED-OR-HOST-PLATE-01",
+      "TYPE": "EMBED_OR_HOST_PLATE_PLACEHOLDER",
+      "STATUS": "PROVISIONAL",
+      "EXISTENCE": "NOT_PROVEN"
+    },
+    {
+      "ID": "T4-PROV-ELEC-ROUTE-SUPPORT-HOST-A",
+      "TYPE": "ELECTRICAL_ROUTE_SUPPORT_HOST_PLACEHOLDER",
+      "STATUS": "PROVISIONAL"
+    },
+    {
+      "ID": "T4-PROV-ELEC-SUPPORT-ANCHOR-A",
+      "TYPE": "ELECTRICAL_SUPPORT_ANCHOR_PLACEHOLDER",
+      "STATUS": "PROVISIONAL"
+    },
+    {
+      "ID": "T4-PROV-ELEC-SUPPORT-EMBED-A",
+      "TYPE": "ELECTRICAL_SUPPORT_EMBED_PLACEHOLDER",
+      "STATUS": "PROVISIONAL"
+    },
+    {
+      "ID": "T4-PROV-ELEC-PEN-HOST-A",
+      "TYPE": "PENETRATION_STRUCTURAL_HOST_PLACEHOLDER",
+      "STATUS": "PROVISIONAL"
+    },
+    {
+      "ID": "T4-PROV-ELEC-FIRE-BARRIER-A",
+      "TYPE": "FIRE_BARRIER_PLACEHOLDER",
+      "STATUS": "PROVISIONAL",
+      "FIRE_RATING": "OPEN"
+    }
+  ],
+  "PARAMETER_CHANGES": [
+    {
+      "PARAMETER_ID": "T4-C002-P-F106-PLACEMENT-E",
+      "OBJECT": "F-106",
+      "VALUE": {
+        "CENTRE_E_M": 1000,
+        "CENTRE_N_M": 1148,
+        "GRADE_Z_M": 100,
+        "LENGTH_M": 104,
+        "WIDTH_M": 86,
+        "HEIGHT_M": 62
+      },
+      "STATUS": "EXISTING_CONTROLLED_ENGINEERING_RECONSTRUCTION_REFERENCED_NOT_NEWLY_GENERATED",
+      "SURVEYED": false
+    },
+    {
+      "PARAMETER_ID": "T4-C002-P-MC-CRANE-AXIS",
+      "OBJECT": "MC-CRANE-AXIS",
+      "VALUE": {
+        "E_MIN_M": 960,
+        "E_MAX_M": 1040,
+        "N_MIN_M": 1000,
+        "N_MAX_M": 1195,
+        "Z_MIN_M": 100,
+        "Z_MAX_M": 170
+      },
+      "STATUS": "EXISTING_CONTROLLED_ENGINEERING_RECONSTRUCTION_REFERENCED_NOT_NEWLY_GENERATED",
+      "SURVEYED": false
+    }
+  ],
+  "RELATIONSHIP_CHANGES": [
+    {
+      "ACTION": "PROPOSE_ADD",
+      "FROM": "CRS01-RST-L2",
+      "RELATION": "CONNECTED_TO",
+      "TO": "T4-PROV-CRS01-CONNECTION-01",
+      "STATUS": "E"
+    },
+    {
+      "ACTION": "PROPOSE_ADD",
+      "FROM": "T4-PROV-CRS01-CONNECTION-01",
+      "RELATION": "ANCHORED_OR_FASTENED_BY",
+      "TO": "T4-PROV-CRS01-ANCHOR-GROUP-01",
+      "STATUS": "E_PLACEHOLDER"
+    },
+    {
+      "ACTION": "PROPOSE_ADD",
+      "FROM": "T4-PROV-CRS01-CONNECTION-01",
+      "RELATION": "HOSTED_BY",
+      "TO": "T4-PROV-CRS01-HOST-LOCAL-01",
+      "STATUS": "E"
+    },
+    {
+      "ACTION": "PROPOSE_ADD",
+      "FROM": "T4-PROV-CRS01-HOST-LOCAL-01",
+      "RELATION": "MEMBER_OF",
+      "TO": "H-101",
+      "STATUS": "C_E"
+    },
+    {
+      "ACTION": "PROPOSE_ADD",
+      "FROM": "T3-PROV-TRAY-A",
+      "RELATION": "SUPPORTED_BY",
+      "TO": "T4-PROV-ELEC-ROUTE-SUPPORT-HOST-A",
+      "STATUS": "PROVISIONAL_CROSS_THREAD"
+    },
+    {
+      "ACTION": "PROPOSE_ADD",
+      "FROM": "T4-PROV-ELEC-ROUTE-SUPPORT-HOST-A",
+      "RELATION": "ANCHORED_BY",
+      "TO": "T4-PROV-ELEC-SUPPORT-ANCHOR-A",
+      "STATUS": "PROVISIONAL"
+    },
+    {
+      "ACTION": "PROPOSE_ADD",
+      "FROM": "T4-PROV-ELEC-SUPPORT-ANCHOR-A",
+      "RELATION": "EMBEDDED_OR_CONNECTED_TO",
+      "TO": "T4-PROV-ELEC-SUPPORT-EMBED-A",
+      "STATUS": "PROVISIONAL"
+    },
+    {
+      "ACTION": "PROPOSE_ADD",
+      "FROM": "T3-PROV-PEN-A",
+      "RELATION": "HOSTED_BY",
+      "TO": "T4-PROV-ELEC-PEN-HOST-A",
+      "STATUS": "PROVISIONAL"
+    },
+    {
+      "ACTION": "PROPOSE_ADD",
+      "FROM": "T3-PROV-PEN-A",
+      "RELATION": "CROSSES",
+      "TO": "T4-PROV-ELEC-FIRE-BARRIER-A",
+      "STATUS": "PROVISIONAL"
+    },
+    {
+      "ACTION": "PROPOSE_ADD",
+      "FROM": "T3-PROV-PEN-A",
+      "RELATION": "FIRE_SEALED_BY",
+      "TO": "T3-PROV-FIRESEAL-A",
+      "STATUS": "PROVISIONAL_CROSS_THREAD"
+    },
+    {
+      "ACTION": "PROPOSE_REFERENCE_UPDATE",
+      "FROM": "MC-CRANE-AXIS",
+      "RELATION": "CONNECTS_CURRENT_FACILITIES",
+      "TO": [
+        "F-106",
+        "F-101"
+      ],
+      "STATUS": "E_CONTROLLED"
+    }
+  ],
+  "CONFIGURATION_FINDINGS": {
+    "CRS01_6DOF_INTERFACE_SCHEMA": {
+      "STATUS": "REQUIRED_SCHEMA_CLOSED_VALUES_OPEN",
+      "TRANSLATIONAL_DOF": [
+        "TX",
+        "TY",
+        "TZ"
+      ],
+      "ROTATIONAL_DOF": [
+        "RX",
+        "RY",
+        "RZ"
+      ],
+      "PER_DOF_REQUIRED_ATTRIBUTES": [
+        "restraint_function",
+        "free_or_restrained_state",
+        "stiffness",
+        "gap",
+        "contact_state",
+        "allowable_displacement",
+        "as_designed_position",
+        "as_built_position",
+        "event_position_if_known"
+      ],
+      "GLOBAL_INTERFACE_ATTRIBUTES": [
+        "connection_type",
+        "friction_or_slip_basis",
+        "preload_if_applicable",
+        "anchor_or_fastener_state",
+        "host_member_stiffness",
+        "thermal_movement_basis",
+        "hydraulic_transient_load_basis",
+        "vibration_load_basis",
+        "seismic_load_basis_if_applicable",
+        "temporary_configuration_state",
+        "maintenance_as_left_state"
+      ]
+    },
+    "CRS01_ALLOWABLE_INPUT_CONTRACT": {
+      "THREAD_2_TO_THREAD_4_REQUIRED": [
+        "Fx_by_load_case",
+        "Fy_by_load_case",
+        "Fz_by_load_case",
+        "Mx_by_load_case",
+        "My_by_load_case",
+        "Mz_by_load_case",
+        "load_time_history_or_envelope_where_material",
+        "pipe_or_skid_displacement",
+        "thermal_displacement",
+        "hydraulic_transient_case",
+        "vibration_case",
+        "nozzle_or_tie_in_load_correlation",
+        "required_restrained_DOF",
+        "required_free_DOF"
+      ],
+      "THREAD_4_STRUCTURAL_SIDE_REQUIRED": [
+        "local_host_identity",
+        "host_material",
+        "host_section_or_member_properties",
+        "connection_geometry",
+        "anchor_geometry",
+        "embed_geometry",
+        "edge_distance",
+        "spacing",
+        "baseplate_or_bracket_stiffness",
+        "grout_or_bearing_state",
+        "host_stiffness",
+        "connection_stiffness",
+        "capacity_or_allowable_basis",
+        "interaction_equation_or_acceptance_rule",
+        "temporary_load_combinations",
+        "inspection_acceptance",
+        "as_built_state"
+      ],
+      "ALL_VALUES_CURRENTLY_AVAILABLE": false
+    },
+    "CRS01_SURVEY_INPUT_CONTRACT": [
+      "facility_datum_reference",
+      "local_control_points",
+      "support_reference_point",
+      "restraint_member_reference_points",
+      "anchor_or_fastener_centres_if_accessible",
+      "contact_face_coordinates",
+      "gap_measurements",
+      "orientation",
+      "local_host_reference_geometry",
+      "measurement_method",
+      "instrument_id",
+      "calibration_state",
+      "measurement_uncertainty",
+      "date_time",
+      "configuration_state",
+      "temperature_if_dimensionally_material",
+      "pre_maintenance_state",
+      "post_maintenance_as_left_state",
+      "post_event_preserved_state"
+    ],
+    "CRS01_TEMPORARY_SUPPORT_INTERFACE": {
+      "OBJECT": "CRS01-RST-L2",
+      "CLASS": "SUP-08_TEMPORARY_COMMISSIONING_RESTRAINT",
+      "RULES": [
+        "temporary_status_does_not_reduce_design_control",
+        "temporary_status_does_not_remove_anchor_host_capacity_requirement",
+        "temporary_status_requires_installation_and_inspection_evidence",
+        "temporary_status_requires_as_left_configuration_control",
+        "removal_or_adjustment_is_a_configuration_change",
+        "post_turnover_work_requires_receiving_work_control"
+      ]
+    },
+    "ELECTRICAL_ROUTE_PHYSICAL_OBJECT_CLASSES": [
+      "CABLE",
+      "CABLE_TRAY",
+      "CONDUIT",
+      "DUCTBANK",
+      "TRAY_OR_CONDUIT_SUPPORT",
+      "SUPPORT_ANCHOR",
+      "SUPPORT_EMBED",
+      "STRUCTURAL_HOST",
+      "PENETRATION",
+      "SLEEVE_OR_EMBEDDED_FRAME",
+      "PENETRATION_HOST",
+      "FIRE_BARRIER",
+      "FIRESTOP_OR_FIRE_SEAL",
+      "FLOOD_OR_ENVIRONMENTAL_SEAL_WHERE_APPLICABLE",
+      "GROUND_BOND",
+      "GROUNDING_EMBED",
+      "GROUNDING_GRID_INTERFACE"
+    ],
+    "ELECTRICAL_ROUTE_AS_BUILT_EVIDENCE_REQUIREMENT": [
+      "route_segment_identity",
+      "support_identity",
+      "support_host_identity",
+      "anchor_embed_identity",
+      "as_built_route_geometry",
+      "penetration_identity",
+      "penetration_host",
+      "sleeve_frame_configuration",
+      "fire_area_from",
+      "fire_area_to",
+      "fire_barrier_identity",
+      "firestop_identity",
+      "qualified_assembly_reference",
+      "installed_configuration",
+      "installation_inspection",
+      "restoration_record_after_cable_change",
+      "grounding_bond_identity",
+      "continuity_test",
+      "redline",
+      "survey_or_field_verification",
+      "turnover_state"
+    ],
+    "F106_F101_CURRENT_CONFIGURATION": {
+      "F106_CURRENT_IDENTITY": "MACHINE_ASSEMBLY_AND_OUTAGE_HALL",
+      "F102_CURRENT_IDENTITY": "DIAGNOSTICS_BUILDING",
+      "MC_CRANE_AXIS_STATUS": "CURRENT_E_LAYER_PROTECTED_ROUTE",
+      "MC_CRANE_AXIS_SURVEY_STATUS": "NOT_SURVEY_CONTROL",
+      "CONSTRUCTION_HEAVY_LIFT_ROUTE": "TOPOLOGICALLY_CLOSED",
+      "OUTAGE_HEAVY_LIFT_ROUTE": "TOPOLOGICALLY_RESERVED",
+      "CRANE_CAPACITY": "OPEN",
+      "RUNWAY_REACTIONS": "OPEN",
+      "PAYLOAD_SWEPT_VOLUME": "OPEN",
+      "MAINTENANCE_COMPONENT_SPECIFIC_REMOVAL": "OPEN"
+    }
+  },
+  "LIFECYCLE_FINDINGS": [
+    {
+      "ID": "T4-C002-LC-001",
+      "OBJECT": "CRS01-RST-L2",
+      "KNOWN_CONTROLLED_STATES": [
+        "MOBILIZED_PROCURED_2030-06-01",
+        "SITE_ARRIVAL_2030-09-03",
+        "INSTALLATION_MOBILIZATION_2030-09-22",
+        "MECHANICAL_COMPLETION_2030-09-28",
+        "TURNOVER_2030-10-11",
+        "COMMISSIONING_OPERATION_2030-10-12",
+        "PHOTO_BASELINE_2031-04-10",
+        "M88217_CLOSED_APPROVED_INFORMATION_STATE_2031-04-11",
+        "EVIDENCE_PRESERVATION_2031-04-12"
+      ],
+      "SOURCE": ":chatgpt-content-reference{index="33"}",
+      "LIMITATION": "Lifecycle status does not establish detailed physical host/anchor/as-left state."
+    },
+    {
+      "ID": "T4-C002-LC-002",
+      "OBJECT_FAMILY": "E101_E105_ELECTRICAL_ROUTE",
+      "LIFECYCLE": [
+        "ROUTE_RESERVED",
+        "SUPPORT_EMBED_RELEASED",
+        "SUPPORT_INSTALLED",
+        "RACEWAY_INSTALLED",
+        "CABLE_INSTALLED",
+        "PENETRATION_CONFIGURED",
+        "FIRESTOP_INSTALLED",
+        "GROUND_BOND_COMPLETED",
+        "TESTED",
+        "AS_BUILT_RECONCILED",
+        "TURNED_OVER",
+        "TEMPORARILY_MODIFIED_IF_REQUIRED",
+        "RESTORED"
+      ],
+      "STATUS": "DERIVED_REQUIRED_STATE_MODEL"
+    },
+    {
+      "ID": "T4-C002-LC-003",
+      "OBJECT": "F106_F101_MAJOR_LIFT_ROUTE",
+      "RULE": "Construction use and future outage use are separate configuration instances over a shared protected spatial reservation."
+    }
+  ],
+  "BOUNDARY_FINDINGS": [
+    {
+      "BOUNDARY_CONTRACT": "BC-C002-T2-T4-BHT401-CRS01-SUPPORT-REACTION-STRUCTURAL-HOST",
+      "STATUS": "T4_SIDE_ADVANCED_INPUT_FROM_T2_STILL_REQUIRED",
+      "T4_PROVIDES": [
+        "H-101 facility host closure",
+        "local-host unresolved branch",
+        "support-host connection graph",
+        "6DOF interface schema",
+        "allowable input contract",
+        "survey input contract",
+        "temporary-support state model"
+      ],
+      "T4_REQUIRES_FROM_T2": [
+        "CRS01_RST_L2_force_moment_envelopes",
+        "required restraint directions",
+        "required free movement directions",
+        "thermal displacements",
+        "hydraulic transient loads",
+        "vibration loads",
+        "pipe_skid_interface displacements",
+        "event-specific reaction history if reconstructable"
+      ],
+      "BLOCKING_FOR_NUMERICAL_EVENT_MODEL": true
+    },
+    {
+      "BOUNDARY_CONTRACT": "BC-C002-T3-T4-ELECTRICAL-PHYSICAL-ROUTE-CIVIL-FIRE-INTERFACE",
+      "STATUS": "T4_CIVIL_SCHEMA_ADVANCED_EXACT_ROUTE_STILL_OPEN",
+      "T4_PROVIDES": [
+        "current E101-E105 facility mapping",
+        "structural-host hierarchy",
+        "route support host schema",
+        "anchor/embed schema",
+        "penetration-host schema",
+        "fire-barrier/firestop object separation",
+        "as-built evidence contract"
+      ],
+      "T4_REQUIRES_FROM_T3": [
+        "actual cable schedule",
+        "route segment assignment",
+        "source destination by cable",
+        "voltage and separation class",
+        "route load and support loading",
+        "actual penetration assignment",
+        "grounding/bonding functional assignment"
+      ],
+      "BLOCKING_FOR_INSTANCE_LEVEL_ROUTE": true
+    },
+    {
+      "BOUNDARY_CONTRACT": "BC-C002-T4-T5-F106F101-LIFT-CUSTODY-MAINTENANCE-ROUTE",
+      "STATUS": "PARTIAL_CLOSURE",
+      "T4_PROVIDES": [
+        "current F106 identity",
+        "F101/F106 E-layer placement",
+        "MC-CRANE-AXIS protected route",
+        "construction/outage spatial reservation distinction"
+      ],
+      "T4_REQUIRES_FROM_T5": [
+        "maintenance payload identities",
+        "removal configuration",
+        "handling-tool envelope",
+        "rigging envelope",
+        "maintenance laydown requirements",
+        "temporary-support requirements",
+        "custody/work-control state during removal"
+      ],
+      "BLOCKING_FOR_PAYLOAD_SPECIFIC_MAINTENANCE_ROUTE": true
+    }
+  ],
+  "VALIDATION_RESULTS": [
+    {
+      "VALIDATION_ID": "T4-C002-VAL-001",
+      "SUBJECT": "LOAD_PATH_CONTINUITY_CRS01",
+      "RESULT": "PARTIAL",
+      "DETAIL": "Facility-level chain CRS01-RST-L2 -> local host -> H-101 primary structure -> H-101 substructure/foundation is coherent. Exact intermediate connection and numerical reactions remain open."
+    },
+    {
+      "VALIDATION_ID": "T4-C002-VAL-002",
+      "SUBJECT": "SUPPORT_HOST_COMPATIBILITY",
+      "RESULT": "PARTIAL",
+      "DETAIL": "H-101 is compatible as facility host for the temporary BHT commissioning restraint; exact local member material and connection are not established."
+    },
+    {
+      "VALIDATION_ID": "T4-C002-VAL-003",
+      "SUBJECT": "ANCHOR_EMBED_INTERFACE",
+      "RESULT": "PARTIAL_BLOCKED",
+      "DETAIL": "Required interface fields have been closed as a schema. No anchor/embed identity, geometry or allowable has been invented."
+    },
+    {
+      "VALIDATION_ID": "T4-C002-VAL-004",
+      "SUBJECT": "CONSTRUCTION_STAGE_STABILITY",
+      "RESULT": "PARTIAL",
+      "DETAIL": "Temporary-support lifecycle and support-removal rules are coherent and validated by fusion-machine precedent, but project-specific reactions and host capacities are unavailable.",
+      "EXTERNAL_VALIDATION": ":chatgpt-content-reference{index="34"}"
+    },
+    {
+      "VALIDATION_ID": "T4-C002-VAL-005",
+      "SUBJECT": "ELECTRICAL_ROUTE_SPATIAL_FEASIBILITY",
+      "RESULT": "PARTIAL_BLOCKED",
+      "DETAIL": "Physical object classes and support/penetration/firestop host chain are coherent; exact routes remain unavailable."
+    },
+    {
+      "VALIDATION_ID": "T4-C002-VAL-006",
+      "SUBJECT": "FIRE_BARRIER_CONTINUITY",
+      "RESULT": "PASS_REQUIREMENT_PARTIAL_INSTANCE_EVIDENCE",
+      "DETAIL": "Barrier continuity requires specific penetration and qualified seal configuration plus restoration evidence. Exact OFG instance mapping is open.",
+      "EXTERNAL_VALIDATION": [
+        ":chatgpt-content-reference{index="35"}",
+        ":chatgpt-content-reference{index="36"}"
+      ]
+    },
+    {
+      "VALIDATION_ID": "T4-C002-VAL-007",
+      "SUBJECT": "HEAVY_LIFT_ACCESS",
+      "RESULT": "PARTIAL_PASS",
+      "DETAIL": "A controlled F106-F101 protected heavy-lift axis exists at E-layer and current identities are reconciled. Payload-specific swept volume and crane engineering remain open."
+    },
+    {
+      "VALIDATION_ID": "T4-C002-VAL-008",
+      "SUBJECT": "MAINTENANCE_REMOVAL_ACCESS",
+      "RESULT": "PARTIAL_PASS",
+      "DETAIL": "The same protected corridor is explicitly classified for outage heavy lift, supporting spatial reservation. Individual component removal scenarios remain open."
+    }
+  ],
+  "VERIFICATION_RESULTS": [
+    {
+      "VERIFICATION_ID": "T4-C002-VER-001",
+      "SUBJECT": "SOURCE_TO_CLAIM",
+      "RESULT": "PASS",
+      "DETAIL": "Current canon, legacy provenance, engineered reconstruction, working-data and external precedent were kept separate."
+    },
+    {
+      "VERIFICATION_ID": "T4-C002-VER-002",
+      "SUBJECT": "OBJECT_TO_STRUCTURAL_HOST",
+      "RESULT": "PARTIAL_PASS",
+      "DETAIL": "CRS01-RST-L2 resolves to H-101 at facility level. Local host identity remains explicitly open."
+    },
+    {
+      "VERIFICATION_ID": "T4-C002-VER-003",
+      "SUBJECT": "SUPPORT_TO_ANCHOR_TO_EMBED",
+      "RESULT": "PARTIAL_BLOCKED",
+      "DETAIL": "Required graph is explicit but actual anchor/embed identities and geometry are absent."
+    },
+    {
+      "VERIFICATION_ID": "T4-C002-VER-004",
+      "SUBJECT": "ROUTE_TO_PENETRATION_TO_FIRESTOP",
+      "RESULT": "PARTIAL",
+      "DETAIL": "T3 provisional route objects support the required logical chain; actual project route and instance-level host/firestop mapping remain open."
+    },
+    {
+      "VERIFICATION_ID": "T4-C002-VER-005",
+      "SUBJECT": "SURVEY_AND_AS_BUILT_TRACE",
+      "RESULT": "PARTIAL",
+      "DETAIL": "Survey/as-built input contracts are explicit. CRS01 and E101-E105 instance records are not fully available."
+    },
+    {
+      "VERIFICATION_ID": "T4-C002-VER-006",
+      "SUBJECT": "CONFIGURATION_REPLAY_CRS01",
+      "RESULT": "PARTIAL",
+      "DETAIL": "Lifecycle through photo baseline, M-88217 information state and event evidence preservation is replayable; physical April-11 as-left support state is not."
+    },
+    {
+      "VERIFICATION_ID": "T4-C002-VER-007",
+      "SUBJECT": "TEMPORARY_WORK_REMOVAL_AND_RESTORATION",
+      "RESULT": "PASS_REQUIREMENT_OPEN_INSTANCE_EVIDENCE",
+      "DETAIL": "Temporary support/restraint adjustment or removal requires controlled restoration and retained evidence; M-88217 does not presently supply that proof."
+    },
+    {
+      "VERIFICATION_ID": "T4-C002-VER-008",
+      "SUBJECT": "F106_F102_CURRENT_IDENTITY",
+      "RESULT": "PASS",
+      "DETAIL": "Thread 1 resolved identity is consistent with the later coordinated facility register and master chronology."
+    },
+    {
+      "VERIFICATION_ID": "T4-C002-VER-009",
+      "SUBJECT": "NO_INVENTED_METRIC_GEOMETRY",
+      "RESULT": "PASS",
+      "DETAIL": "Only pre-existing E-layer F101/F106 placement and MC-CRANE-AXIS values were referenced. They remain explicitly non-surveyed engineering reconstruction."
+    },
+    {
+      "VERIFICATION_ID": "T4-C002-VER-010",
+      "SUBJECT": "CRANE_RATING_NON_PROMOTION",
+      "RESULT": "PASS",
+      "DETAIL": "No working-description crane capacity has been promoted."
+    }
+  ],
+  "ASSURANCE_RESULTS": {
+    "ASSURANCE_CLASS": "AS3",
+    "RESULT": "PASS_WITH_PROJECT_SPECIFIC_BLOCKS",
+    "GENERATION_IS_NOT_ACCEPTANCE": true,
+    "CHECKS_EXECUTED": [
+      "current facility identity precedence",
+      "legacy provenance preservation",
+      "CRS01 support class verification",
+      "facility host verification",
+      "local host non-invention check",
+      "anchor/embed non-invention check",
+      "6DOF completeness check",
+      "electrical route object-class completeness",
+      "penetration/firestop separation check",
+      "fire-barrier continuity check",
+      "E-layer geometry provenance check",
+      "heavy-lift corridor/current identity check",
+      "maintenance-route constructability screen",
+      "temporary-work restoration trace",
+      "cross-thread boundary completeness"
+    ],
+    "INDEPENDENT_ENGINEERING_CHECK_REQUIRED": [
+      "CRS01 event-specific reaction reconstruction",
+      "CRS01 local host identification",
+      "CRS01 anchor/embed qualification",
+      "CRS01 as-built survey reconstruction",
+      "E101-E105 instance-level route model",
+      "electrical support seismic/load qualification",
+      "firestop qualified-assembly verification",
+      "F106-F101 crane/runway analysis",
+      "component-specific outage-removal analysis"
+    ],
+    "RF023_SCOPE_NOTE": "Backward and cross propagation was assessed locally and returned as recommendations. Thread 4 performed no global propagation write."
+  },
+  "CONFLICTS": [
+    {
+      "CONFLICT_ID": "T4-C002-CF-001",
+      "SUBJECT": "LEGACY_F102_ASSEMBLY_HALL_IDENTITY",
+      "STATUS": "RESOLVED_FOR_CURRENT_CONFIGURATION_PRESERVE_LEGACY_PROVENANCE",
+      "CURRENT": {
+        "F-102": "DIAGNOSTICS_BUILDING",
+        "F-106": "MACHINE_ASSEMBLY_AND_OUTAGE_HALL"
+      },
+      "LEGACY": "Older integrated registers identify F-102 as Assembly/Outage Hall.",
+      "DISPOSITION": "DO_NOT_USE_F102_AS_CURRENT_ASSEMBLY_HALL_DO_NOT_DELETE_LEGACY_SOURCE_ROWS"
+    },
+    {
+      "CONFLICT_ID": "T4-C002-CF-002",
+      "SUBJECT": "E101_E105_LEGACY_FACILITY_MAPPING",
+      "STATUS": "CURRENT_MAPPING_SELECTED_BY_LATER_CONTROLLED_CHRONOLOGY_LEGACY_PRESERVED",
+      "CURRENT": {
+        "E-101": "MAIN_TRANSFORMER_YARD",
+        "E-102": "500_KV_SWITCHYARD",
+        "E-103": "STATION_ELECTRICAL_BUILDING",
+        "E-104": "EMERGENCY_POWER_BUILDING",
+        "E-105": "BATTERY_UPS_BUILDING"
+      },
+      "LEGACY_ALTERNATE_MAPPING": "PRESERVED_IN_REV2_INTEGRATED_SOURCE",
+      "SILENT_REWRITE": false
+    },
+    {
+      "CONFLICT_ID": "T4-C002-CF-003",
+      "SUBJECT": "CRS01_RECORD_STATUS_VERSUS_PHYSICAL_STATE",
+      "STATUS": "OPEN_FORENSIC_DIVERGENCE",
+      "DETAIL": "M-88217 CLOSED/APPROVED cannot be treated as proof of physical execution, correct anchor state or correct as-left restraint geometry."
+    },
+    {
+      "CONFLICT_ID": "T4-C002-CF-004",
+      "SUBJECT": "CRANE_WORKING_DESCRIPTION_VERSUS_CONTROLLED_OPEN_PARAMETER",
+      "STATUS": "OPEN_CONTROLLED_PARAMETER",
+      "DISPOSITION": "CRANE_RATING_REMAINS_OPEN"
+    }
+  ],
+  "OPEN_ITEMS": [
+    {
+      "OPEN_ITEM_ID": "T4-C002-OI-001",
+      "ITEM": "CRS01_LOCAL_STRUCTURAL_HOST_ID",
+      "PRIORITY": "BLOCKING_EVENT_LOAD_PATH"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-C002-OI-002",
+      "ITEM": "CRS01_CONNECTION_TYPE_AND_GEOMETRY",
+      "PRIORITY": "BLOCKING_EVENT_LOAD_PATH"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-C002-OI-003",
+      "ITEM": "CRS01_ANCHOR_FASTENER_GROUP_ID_GEOMETRY_MATERIAL_PRELOAD",
+      "PRIORITY": "BLOCKING_EVENT_LOAD_PATH"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-C002-OI-004",
+      "ITEM": "CRS01_EMBED_OR_HOST_PLATE_ID",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-C002-OI-005",
+      "ITEM": "CRS01_BASEPLATE_BRACKET_AND_GROUT_STATE",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-C002-OI-006",
+      "ITEM": "CRS01_HOST_AND_CONNECTION_STIFFNESS",
+      "PRIORITY": "BLOCKING_6DOF_ANALYSIS"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-C002-OI-007",
+      "ITEM": "CRS01_STRUCTURAL_ALLOWABLES_AND_LOAD_COMBINATIONS",
+      "PRIORITY": "BLOCKING_ACCEPTANCE"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-C002-OI-008",
+      "ITEM": "CRS01_AS_BUILT_GAP_CONTACT_AND_SURVEY",
+      "PRIORITY": "BLOCKING_EVENT_RECONSTRUCTION"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-C002-OI-009",
+      "ITEM": "CRS01_M88217_AS_LEFT_CONFIGURATION",
+      "PRIORITY": "BLOCKING_FORENSIC_RECONSTRUCTION"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-C002-OI-010",
+      "ITEM": "E101_E105_DUCTBANK_INSTANCE_IDENTITIES",
+      "PRIORITY": "BLOCKING_PHYSICAL_ROUTE"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-C002-OI-011",
+      "ITEM": "E101_E105_TRAY_CONDUIT_SUPPORT_IDS",
+      "PRIORITY": "BLOCKING_PHYSICAL_ROUTE"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-C002-OI-012",
+      "ITEM": "ELECTRICAL_SUPPORT_HOST_ANCHOR_EMBED_MAPPING",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-C002-OI-013",
+      "ITEM": "ELECTRICAL_PENETRATION_INSTANCE_SCHEDULE",
+      "PRIORITY": "BLOCKING_FIRE_AND_ROUTE"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-C002-OI-014",
+      "ITEM": "ELECTRICAL_FIRE_AREA_BOUNDARY_MAP",
+      "PRIORITY": "BLOCKING_FIRE"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-C002-OI-015",
+      "ITEM": "ELECTRICAL_FIRESTOP_INSTANCE_AND_QUALIFIED_ASSEMBLY_MAP",
+      "PRIORITY": "BLOCKING_FIRE"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-C002-OI-016",
+      "ITEM": "ELECTRICAL_ROUTE_AS_BUILT_SURVEY_MODEL",
+      "PRIORITY": "BLOCKING_PHYSICAL_ROUTE"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-C002-OI-017",
+      "ITEM": "GROUNDING_GRID_AND_BUILDING_BOND_INSTANCE_MAPPING",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-C002-OI-018",
+      "ITEM": "F106_F101_PAYLOAD_SPECIFIC_SWEPT_VOLUME",
+      "PRIORITY": "BLOCKING_FINAL_LIFT_VALIDATION"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-C002-OI-019",
+      "ITEM": "F106_F101_CRANE_RUNWAY_RAIL_HOOK_GEOMETRY",
+      "PRIORITY": "BLOCKING_FINAL_LIFT_VALIDATION"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-C002-OI-020",
+      "ITEM": "F106_F101_CRANE_CAPACITY_WHEEL_LOAD_AND_RUNWAY_REACTION",
+      "PRIORITY": "BLOCKING_FINAL_LIFT_VALIDATION"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-C002-OI-021",
+      "ITEM": "F106_F101_TEMPORARY_SUPPORT_REACTION_AND_STABILITY",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-C002-OI-022",
+      "ITEM": "F101_PERMANENT_SUPPORT_6DOF_NUMERICAL_CLOSURE",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-C002-OI-023",
+      "ITEM": "SECTOR_FIELD_JOINT_INSTANCE_GENEALOGY",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "OPEN_ITEM_ID": "T4-C002-OI-024",
+      "ITEM": "COMPONENT_SPECIFIC_MAINTENANCE_REMOVAL_ENVELOPES",
+      "PRIORITY": "BLOCKING_MAINTAINABILITY"
+    }
+  ],
+  "UNCERTAINTIES": [
+    {
+      "UNCERTAINTY_ID": "T4-C002-U-001",
+      "SUBJECT": "CRS01_HOST_MATERIAL",
+      "STATE": "OPEN",
+      "OPTIONS": [
+        "STRUCTURAL_STEEL",
+        "CONCRETE_WITH_EMBEDDED_STEEL",
+        "OTHER_SECONDARY_SUPPORT_NOT_YET_IDENTIFIED"
+      ]
+    },
+    {
+      "UNCERTAINTY_ID": "T4-C002-U-002",
+      "SUBJECT": "CRS01_CONNECTION_MECHANISM",
+      "STATE": "OPEN",
+      "OPTIONS": [
+        "BOLTED",
+        "WELDED",
+        "CLAMPED",
+        "COMBINED_OR_OTHER"
+      ]
+    },
+    {
+      "UNCERTAINTY_ID": "T4-C002-U-003",
+      "SUBJECT": "CRS01_GAP_CONTACT_STATE_ON_APRIL_11_12",
+      "STATE": "OPEN_FORENSIC"
+    },
+    {
+      "UNCERTAINTY_ID": "T4-C002-U-004",
+      "SUBJECT": "ELECTRICAL_ROUTE_INSTANCE_GEOMETRY",
+      "STATE": "OPEN"
+    },
+    {
+      "UNCERTAINTY_ID": "T4-C002-U-005",
+      "SUBJECT": "ELECTRICAL_FIRE_AREA_CLASSIFICATION_AND_FIRE_RATING",
+      "STATE": "OPEN"
+    },
+    {
+      "UNCERTAINTY_ID": "T4-C002-U-006",
+      "SUBJECT": "F106_F101_E_LAYER_TO_FIELD_SURVEY_TRANSFORM",
+      "STATE": "OPEN"
+    },
+    {
+      "UNCERTAINTY_ID": "T4-C002-U-007",
+      "SUBJECT": "CRANE_AND_PAYLOAD_FINAL_FEASIBILITY",
+      "STATE": "OPEN"
+    }
+  ],
+  "BACKWARD_PROPAGATION_RECOMMENDATIONS": [
+    {
+      "PROPAGATION_ID": "T4-C002-BP-001",
+      "TARGET": "REV3_V16",
+      "ACTION": "Add explicit CRS01 support-to-host connection object and 6DOF schema; retain all numerical fields OPEN until records/calculations exist."
+    },
+    {
+      "PROPAGATION_ID": "T4-C002-BP-002",
+      "TARGET": "REV3_V03",
+      "ACTION": "Add facility-to-local-structural-member hierarchy for temporary commissioning supports and prohibit direct support-to-building edges that skip unknown connection objects."
+    },
+    {
+      "PROPAGATION_ID": "T4-C002-BP-003",
+      "TARGET": "REV3_V12",
+      "ACTION": "Require every electrical route segment to trace through support/host/penetration/barrier/firestop and grounding relationships."
+    },
+    {
+      "PROPAGATION_ID": "T4-C002-BP-004",
+      "TARGET": "REV3_V10",
+      "ACTION": "Bind fire-area and cable-separation requirements to physical penetration/firestop instance evidence rather than route narrative alone."
+    },
+    {
+      "PROPAGATION_ID": "T4-C002-BP-005",
+      "TARGET": "REV3_V02",
+      "ACTION": "Propagate current F106/F102 mapping into current facility references while preserving legacy F102 Assembly/Outage Hall source text as superseded provenance."
+    },
+    {
+      "PROPAGATION_ID": "T4-C002-BP-006",
+      "TARGET": "REV3_V13",
+      "ACTION": "Reference MC-CRANE-AXIS explicitly as shared construction/outage spatial reservation but keep payload-specific swept volumes and crane capacities separate."
+    },
+    {
+      "PROPAGATION_ID": "T4-C002-BP-007",
+      "TARGET": "REV3_V17",
+      "ACTION": "Add executable checks for CRS01 host completeness, electrical route-host-penetration-firestop completeness and MC-CRANE-AXIS payload-specific obstruction validation."
+    },
+    {
+      "PROPAGATION_ID": "T4-C002-BP-008",
+      "TARGET": "MACHINE_ANNEX",
+      "ACTION": "Add host, anchor, embed, barrier, firestop, survey and evidence graph fields without populating unsupported metric values."
+    }
+  ],
+  "CROSS_BOUNDARY_DEPENDENCIES": [
+    {
+      "DEPENDENCY_ID": "BC-C002-T2-T4-BHT401-CRS01-SUPPORT-REACTION-STRUCTURAL-HOST",
+      "SOURCE_THREAD_REQUIRED": 2,
+      "STATUS": "BLOCKING_NUMERICAL_CLOSURE",
+      "REQUIRED_INPUT": [
+        "CRS01-RST-L2 required restraint function",
+        "force/moment envelope by load case",
+        "thermal movement",
+        "hydraulic transient reaction",
+        "vibration reaction",
+        "event reaction reconstruction",
+        "tie-in/nozzle displacement correlation"
+      ]
+    },
+    {
+      "DEPENDENCY_ID": "BC-C002-T3-T4-ELECTRICAL-PHYSICAL-ROUTE-CIVIL-FIRE-INTERFACE",
+      "SOURCE_THREAD_REQUIRED": 3,
+      "STATUS": "BLOCKING_INSTANCE_LEVEL_ROUTE_CLOSURE",
+      "REQUIRED_INPUT": [
+        "cable schedule",
+        "source-destination mapping",
+        "route-segment assignment",
+        "segregation class",
+        "actual raceway assignment",
+        "penetration assignment",
+        "grounding functional assignment",
+        "route/support loading"
+      ]
+    },
+    {
+      "DEPENDENCY_ID": "BC-C002-T4-T5-F106F101-LIFT-CUSTODY-MAINTENANCE-ROUTE",
+      "SOURCE_THREAD_REQUIRED": 5,
+      "STATUS": "BLOCKING_PAYLOAD_SPECIFIC_MAINTAINABILITY_CLOSURE",
+      "REQUIRED_INPUT": [
+        "maintenance payload identities",
+        "lifting fixture",
+        "rigging envelope",
+        "maintenance configuration",
+        "temporary support",
+        "laydown requirements",
+        "custody and work control"
+      ]
+    }
+  ],
+  "IDENTITY_RECONCILIATION_REQUESTS": [
+    {
+      "REQUEST_ID": "T4-C002-IDR-001",
+      "SUBJECT": "LEGACY_F102_ASSEMBLY_HALL_REFERENCES",
+      "CURRENT_RESOLUTION": {
+        "F-102": "DIAGNOSTICS_BUILDING",
+        "F-106": "MACHINE_ASSEMBLY_AND_OUTAGE_HALL"
+      },
+      "REQUESTED_THREAD_1_ACTION": "PROPAGATE_CURRENT_MAPPING_TO_ACTIVE_CURRENT_CONFIGURATION_REGISTRIES_AND_MARK_OLDER_F102_ASSEMBLY_HALL_ROWS_AS_LEGACY_SUPERSEDED_PROVENANCE_WITHOUT_DELETION"
+    },
+    {
+      "REQUEST_ID": "T4-C002-IDR-002",
+      "SUBJECT": "E101_E105_LEGACY_ALTERNATE_MAPPING",
+      "CURRENT_WORKING_MAPPING": {
+        "E-101": "MAIN_TRANSFORMER_YARD",
+        "E-102": "500_KV_SWITCHYARD",
+        "E-103": "STATION_ELECTRICAL_BUILDING",
+        "E-104": "EMERGENCY_POWER_BUILDING",
+        "E-105": "BATTERY_UPS_BUILDING"
+      },
+      "REQUESTED_THREAD_1_ACTION": "CONFIRM_GLOBAL_CURRENT_MAPPING_AND_PRESERVE_PRIOR_REV2_MAPPING_AS_HISTORICAL_PROVENANCE"
+    }
+  ],
+  "NEXT_INVESTIGATION_RECOMMENDATIONS": [
+    {
+      "RECOMMENDATION_ID": "T4-C002-NI-001",
+      "SUBJECT": "CRS01_LOCAL_HOST_AND_ANCHOR_FORENSIC_RECOVERY",
+      "REQUIRED_RECORDS": [
+        "temporary support drawing",
+        "IWP installation record",
+        "anchor schedule",
+        "embed schedule",
+        "structural calculation",
+        "field-fit sketch",
+        "as-built survey",
+        "installation QC",
+        "photographs",
+        "M88217 execution package",
+        "post-maintenance inspection",
+        "PMT or restoration evidence"
+      ],
+      "ASSIGNMENT_AUTHORITY": "THREAD_1_ONLY"
+    },
+    {
+      "RECOMMENDATION_ID": "T4-C002-NI-002",
+      "SUBJECT": "CRS01_EVENT_MECHANICS_COUPLED_MODEL",
+      "PREREQUISITES": [
+        "Thread 2 reaction input",
+        "local structural host",
+        "anchor/embed geometry",
+        "6DOF stiffness",
+        "gap/contact",
+        "as-left survey"
+      ],
+      "ASSIGNMENT_AUTHORITY": "THREAD_1_ONLY"
+    },
+    {
+      "RECOMMENDATION_ID": "T4-C002-NI-003",
+      "SUBJECT": "E101_E105_AS_BUILT_ROUTE_RECONSTRUCTION",
+      "REQUIRED_RECORDS": [
+        "cable schedule",
+        "raceway schedule",
+        "ductbank drawings",
+        "support drawings",
+        "penetration schedule",
+        "fire-area plan",
+        "firestop schedule",
+        "grounding drawings",
+        "field redlines",
+        "turnover dossiers",
+        "as-built survey"
+      ],
+      "ASSIGNMENT_AUTHORITY": "THREAD_1_ONLY"
+    },
+    {
+      "RECOMMENDATION_ID": "T4-C002-NI-004",
+      "SUBJECT": "F106_F101_PAYLOAD_SPECIFIC_4D_LIFT_AND_OUTAGE_MODEL",
+      "PREREQUISITES": [
+        "sector/component mass and COG",
+        "crane rated configurations",
+        "rail/hook geometry",
+        "rigging geometry",
+        "temporary support model",
+        "maintenance payloads",
+        "laydown geometry"
+      ],
+      "ASSIGNMENT_AUTHORITY": "THREAD_1_ONLY"
+    }
+  ],
+  "CONTENT_MANIFEST": {
+    "SECTIONS_PRESENT": [
+      "HEADER",
+      "LOCAL_STATE_CAPSULE",
+      "EXECUTED_SCOPE",
+      "UNFINISHED_SCOPE",
+      "RESEARCH_PERFORMED",
+      "SOURCES_USED",
+      "NEW_ENGINEERING_FINDINGS",
+      "PROPOSED_ATLAS_DELTAS",
+      "PROPOSED_ANNEX_DELTAS",
+      "CREATED_OR_CHANGED_IDENTITIES",
+      "PARAMETER_CHANGES",
+      "RELATIONSHIP_CHANGES",
+      "CONFIGURATION_FINDINGS",
+      "LIFECYCLE_FINDINGS",
+      "BOUNDARY_FINDINGS",
+      "VALIDATION_RESULTS",
+      "VERIFICATION_RESULTS",
+      "ASSURANCE_RESULTS",
+      "CONFLICTS",
+      "OPEN_ITEMS",
+      "UNCERTAINTIES",
+      "BACKWARD_PROPAGATION_RECOMMENDATIONS",
+      "CROSS_BOUNDARY_DEPENDENCIES",
+      "IDENTITY_RECONCILIATION_REQUESTS",
+      "NEXT_INVESTIGATION_RECOMMENDATIONS",
+      "CONTENT_MANIFEST",
+      "RETURN_COMPLETENESS_STATUS"
+    ],
+    "PROVISIONAL_ID_PREFIX_USED": "T4-PROV",
+    "NEW_PROVISIONAL_IDENTITIES_COUNT": 9,
+    "GLOBAL_CANON_WRITES": 0,
+    "GLOBAL_IDENTITY_MUTATIONS": 0,
+    "LEGACY_PROVENANCE_DELETIONS": 0,
+    "SILENT_MERGES": 0,
+    "UNSUPPORTED_STRUCTURAL_ALLOWABLES_INVENTED": 0,
+    "UNSUPPORTED_SURVEY_COORDINATES_INVENTED": 0,
+    "UNSUPPORTED_ELECTRICAL_ROUTE_GEOMETRY_INVENTED": 0,
+    "WORKING_CRANE_RATINGS_PROMOTED": 0,
+    "QUARANTINED_SECTOR_DAY_LEVEL_DATES_REWRITTEN": 0,
+    "SELF_ASSIGNED_NEXT_MAJOR_TASKS": 0
+  },
+  "RETURN_COMPLETENESS_STATUS": {
+    "STATUS": "COMPLETE_TO_CYCLE_002_STOP_CONDITION_WITH_EXPLICIT_PROJECT_SPECIFIC_BLOCKS",
+    "F106_F102_CURRENT_IDENTITY_PROPAGATED": true,
+    "CRS01_STRUCTURAL_BOUNDARY_ADVANCED_TO_MAXIMUM_SUPPORTED_DEPTH": true,
+    "T3_ELECTRICAL_CIVIL_BOUNDARY_ADVANCED": true,
+    "F106_F101_SPATIAL_OPEN_ITEMS_REDUCED_OR_EXPLICITLY_BLOCKED": true,
+    "NO_INVENTED_METRIC_GEOMETRY": true,
+    "ALL_MATERIAL_GAPS_REGISTERED": true,
+    "LOCAL_V_AND_V_COMPLETED_TO_REQUIRED_LEVEL": true,
+    "RETURN_PACKAGE_COMPLETE": true,
+    "LOCAL_STATE_CAPSULE_COMPLETE": true,
+    "GLOBAL_PROJECT_COMPLETION_DECLARED": false,
+    "NEXT_MAJOR_CYCLE_SELF_ASSIGNED": false,
+    "TERMINAL_STATE": "W_RETURN_READY"
+  }
+}

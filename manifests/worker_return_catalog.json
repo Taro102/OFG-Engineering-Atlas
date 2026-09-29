@@ -1,0 +1,215 @@
+{
+  "schema": "OFG_EA_WORKER_RETURN_CATALOG_V2",
+  "entries": [
+    {
+      "package_id": "OFG-EA-T2-C002-RETURN-R2",
+      "source": "working_raw/worker_returns_archive/貼り付けたテキスト（1）(10).txt",
+      "normalized": "working_raw/by_package/OFG-EA-T2-C002-RETURN-R2.txt",
+      "sha256": "8a304864fd77299a65b822dc8e0db27de8eedf673ac6e7bddc94da545152ee2f",
+      "size_bytes": 28738
+    },
+    {
+      "package_id": "OFG-EA-T4-C002-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けたテキスト（1）(20260928-112600).txt",
+      "normalized": "working_raw/by_package/OFG-EA-T4-C002-RETURN-R1.txt",
+      "sha256": "8c5cfb0401af8e51bfa10919857a77c48eea9287847efba2cbbf3dccefafe8ff",
+      "size_bytes": 65686
+    },
+    {
+      "package_id": "OFG-EA-T5-C002-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けたテキスト（1）(20260928-112939).txt",
+      "normalized": "working_raw/by_package/OFG-EA-T5-C002-RETURN-R1.txt",
+      "sha256": "ff82b97502a2ecd3b08050ee217ce5e67f65712eb66ba613c368c5c793603e9c",
+      "size_bytes": 79083
+    },
+    {
+      "package_id": "OFG-EA-T2-C002-T3REDIRECT-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けたテキスト（1）(20260928-115301).txt",
+      "normalized": "working_raw/by_package/OFG-EA-T2-C002-T3REDIRECT-RETURN-R1.txt",
+      "sha256": "f1ab172cc1f73ae10ba706c96fa720fbc9478e6029fd4265090253adae3e5f21",
+      "size_bytes": 43206
+    },
+    {
+      "package_id": "OFG-EA-T5-C003-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けたテキスト（1）(20260928-123357).txt",
+      "normalized": "working_raw/by_package/OFG-EA-T5-C003-RETURN-R1.txt",
+      "sha256": "5dd9d677f10cf5ee6e7021c2e8243741b5cb7a8c959cfd52428b38f036b8361b",
+      "size_bytes": 69369
+    },
+    {
+      "package_id": "OFG-EA-T2-C003-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けたテキスト（1）(20260928-124137).txt",
+      "normalized": "working_raw/by_package/OFG-EA-T2-C003-RETURN-R1.txt",
+      "sha256": "51c5dd140d535554ef51503316128080d6c16cf88bb99926a0d67a775da050b6",
+      "size_bytes": 164711
+    },
+    {
+      "package_id": "OFG-EA-T4-C003-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けたテキスト（1）(20260928-134912).txt",
+      "normalized": "working_raw/by_package/OFG-EA-T4-C003-RETURN-R1.txt",
+      "sha256": "61d8df390fd06f0ffe22433f17cf7702f5f10caa737178574b22d4e29a9e0626",
+      "size_bytes": 122901
+    },
+    {
+      "package_id": "OFG-EA-T2-C001-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けたテキスト（1）(5).txt",
+      "normalized": "working_raw/by_package/OFG-EA-T2-C001-RETURN-R1.txt",
+      "sha256": "96612d6808e609cc9c9561b6dd1caf057276437e9bb9e200e7b60f5124fa94cf",
+      "size_bytes": 48718
+    },
+    {
+      "package_id": "OFG-EA-T4-C001-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けたテキスト（1）(6).txt",
+      "normalized": "working_raw/by_package/OFG-EA-T4-C001-RETURN-R1.txt",
+      "sha256": "bb0a81af42f726ef48a6f2dc0b2f953461694c4376aea566514a863c62cd20fa",
+      "size_bytes": 82157
+    },
+    {
+      "package_id": "OFG-EA-T5-C001-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けたテキスト（1）(7).txt",
+      "normalized": "working_raw/by_package/OFG-EA-T5-C001-RETURN-R1.txt",
+      "sha256": "a11472ebe5921ea962128a1e2f5f62877f90faa9a86e4e14a0071bb54b3fbf17",
+      "size_bytes": 56527
+    },
+    {
+      "package_id": "OFG-EA-T2-C004-RETURN-R1-CONT-02",
+      "source": "working_raw/worker_returns_archive/貼り付けたマークダウン（1）(20260928-215853).md",
+      "normalized": "working_raw/by_package/OFG-EA-T2-C004-RETURN-R1-CONT-02.md",
+      "sha256": "20d73d26b554dcace8c590dfaaf4d548b7f00b92083104b0430b77c1db700558",
+      "size_bytes": 54746
+    },
+    {
+      "package_id": "OFG-EA-T2-C006-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けたマークダウン（1）(20260928-235336).md",
+      "normalized": "working_raw/by_package/OFG-EA-T2-C006-RETURN-R1.md",
+      "sha256": "93e7dee8f57718bd23466694584a9401ecbe5ac07a943c696841afd0a0ff3b50",
+      "size_bytes": 76829
+    },
+    {
+      "package_id": "OFG-EA-T2-C007-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けたマークダウン（1）(20260929-004416).md",
+      "normalized": "working_raw/by_package/OFG-EA-T2-C007-RETURN-R1.md",
+      "sha256": "a63217a60e3184d466821245be6d10c2e595036417808c4528631764c7f4e749",
+      "size_bytes": 58309
+    },
+    {
+      "package_id": "OFG-EA-T2-C008-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けたマークダウン（1）(20260929-022633).md",
+      "normalized": "working_raw/by_package/OFG-EA-T2-C008-RETURN-R1.md",
+      "sha256": "3f6f3dfe44b1fd670b1e5b8a8dd273cb6f586cc8ed7ef544cb3cca8aedc30de0",
+      "size_bytes": 61097
+    },
+    {
+      "package_id": "OFG-EA-T4-C008-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けたマークダウン（1）(20260929-022754).md",
+      "normalized": "working_raw/by_package/OFG-EA-T4-C008-RETURN-R1.md",
+      "sha256": "6762e6c63cbdf60aa599c675d10cd7285edb62efaf946cda990ab61b527f3e0b",
+      "size_bytes": 84365
+    },
+    {
+      "package_id": "OFG-EA-T2-C009-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けたマークダウン（1）(20260929-032148).md",
+      "normalized": "working_raw/by_package/OFG-EA-T2-C009-RETURN-R1.md",
+      "sha256": "ca5cf490f9c89f63efd07b9293ee2e6a448e5eb78aacdf2bc127a26c66e0b2f2",
+      "size_bytes": 61425
+    },
+    {
+      "package_id": "OFG-EA-T4-C009-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けたマークダウン（1）(20260929-032505).md",
+      "normalized": "working_raw/by_package/OFG-EA-T4-C009-RETURN-R1.md",
+      "sha256": "66895a05e3128120e1c1199eac5aa0a9a7a9184226bd11c9b46df21161072310",
+      "size_bytes": 74791
+    },
+    {
+      "package_id": "OFG-EA-T5-C005-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けられたテキスト（1 点）(1).txt",
+      "normalized": "working_raw/by_package/OFG-EA-T5-C005-RETURN-R1.txt",
+      "sha256": "6c94ede9e555f6aed4094f559e5f9253170758c7407fa7f5905e077035c0af0b",
+      "size_bytes": 53545
+    },
+    {
+      "package_id": "OFG-EA-T2-C010-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けられたテキスト（1 点）(10).txt",
+      "normalized": "working_raw/by_package/OFG-EA-T2-C010-RETURN-R1.txt",
+      "sha256": "a8a56fb67cfdefce415487de75bf9d76671eb8c469586fe4ee9d33fd8f0ed4b4",
+      "size_bytes": 66248
+    },
+    {
+      "package_id": "OFG-EA-T2-C005-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けられたテキスト（1 点）(2).txt",
+      "normalized": "working_raw/by_package/OFG-EA-T2-C005-RETURN-R1.txt",
+      "sha256": "154e34639f589f7f25bcf7c0f1006f7c1edb2dd450ea6512812dd9f536652352",
+      "size_bytes": 76290
+    },
+    {
+      "package_id": "OFG-EA-T5-C010-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けられたテキスト（1 点）(20260929-035853).txt",
+      "normalized": "working_raw/by_package/OFG-EA-T5-C010-RETURN-R1.txt",
+      "sha256": "23c49fd66d07b6774ff990e5f914b01930899ffc68c569d270c609e9f106e378",
+      "size_bytes": 37642
+    },
+    {
+      "package_id": "OFG-EA-T4-C010-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けられたテキスト（1 点）(20260929-040249).txt",
+      "normalized": "working_raw/by_package/OFG-EA-T4-C010-RETURN-R1.txt",
+      "sha256": "0c01279dabbc6dc262e41529431dbbdbd5ac0ce2baa62b9e249abed142fa9216",
+      "size_bytes": 79270
+    },
+    {
+      "package_id": "OFG-EA-T4-C005-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けられたテキスト（1 点）(3).txt",
+      "normalized": "working_raw/by_package/OFG-EA-T4-C005-RETURN-R1.txt",
+      "sha256": "2574615d6b21355a014a673efa38aee6e86fd918ea2f3e76176153ba2a5887f0",
+      "size_bytes": 104316
+    },
+    {
+      "package_id": "OFG-EA-T5-C006-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けられたテキスト（1 点）(4).txt",
+      "normalized": "working_raw/by_package/OFG-EA-T5-C006-RETURN-R1.txt",
+      "sha256": "edfefcfe6858291d1dec3db933e90d6883734d734d53fb179ca4483260af5266",
+      "size_bytes": 53383
+    },
+    {
+      "package_id": "OFG-EA-T2-C006-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けられたテキスト（1 点）(5).txt",
+      "normalized": "working_raw/by_package/OFG-EA-T2-C006-RETURN-R1.txt",
+      "sha256": "a8a2f10aac884f4854eeed37c54b3236356de6ab303ac915ca8b0341ccecb5d8",
+      "size_bytes": 43374
+    },
+    {
+      "package_id": "OFG-EA-T4-C007-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けられたテキスト（1 点）(6).txt",
+      "normalized": "working_raw/by_package/OFG-EA-T4-C007-RETURN-R1.txt",
+      "sha256": "8876e689e2508018a732bde3c9d9e5b4b5c584412e3734cb21d67138922c659b",
+      "size_bytes": 79940
+    },
+    {
+      "package_id": "OFG-EA-T4-C007-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けられたテキスト（1 点）(7).txt",
+      "normalized": "working_raw/by_package/OFG-EA-T4-C007-RETURN-R1.txt",
+      "sha256": "8876e689e2508018a732bde3c9d9e5b4b5c584412e3734cb21d67138922c659b",
+      "size_bytes": 79940
+    },
+    {
+      "package_id": "OFG-EA-T5-C007-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けられたテキスト（1 点）(8).txt",
+      "normalized": "working_raw/by_package/OFG-EA-T5-C007-RETURN-R1__VARIANT2.txt",
+      "sha256": "df9327f6683165830c12c4324db2668ea7fb2f9d829a1cff116b5e02123d01fa",
+      "size_bytes": 49341
+    },
+    {
+      "package_id": "OFG-EA-T4-C008-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けられたテキスト（1 点）(9).txt",
+      "normalized": "working_raw/by_package/OFG-EA-T4-C008-RETURN-R1.txt",
+      "sha256": "e1c0429768cfba7b5eb0eb13351b31161434dfd9c86d4bf10e8f31c664237351",
+      "size_bytes": 51600
+    },
+    {
+      "package_id": "OFG-EA-T4-C004-RETURN-R1",
+      "source": "working_raw/worker_returns_archive/貼り付けられたテキスト（1 点）.txt",
+      "normalized": "working_raw/by_package/OFG-EA-T4-C004-RETURN-R1.txt",
+      "sha256": "4dd2f72ae5034b2786a722eda6f94c03c34745a2b3f62046ebf4e2ff9dac813b",
+      "size_bytes": 125905
+    }
+  ]
+}

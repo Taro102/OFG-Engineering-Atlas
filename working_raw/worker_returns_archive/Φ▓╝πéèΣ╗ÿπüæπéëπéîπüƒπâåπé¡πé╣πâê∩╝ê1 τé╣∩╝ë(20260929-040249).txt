@@ -1,0 +1,2121 @@
+{
+  "HEADER": {
+    "PACKAGE_ID": "OFG-EA-T4-C010-RETURN-R1",
+    "PACKAGE_VERSION": "1.0.0",
+    "PACKAGE_TYPE": "OFG_ENGINEERING_ATLAS_WORKER_RETURN",
+    "SOURCE_THREAD": 4,
+    "TARGET_THREAD": 1,
+    "CYCLE_ID": "OFG-EA-CYCLE-010",
+    "TASK_ID": "T4-C010-REVERSE-EVENT-SOURCE-PACKAGE-SURVEY-TRACE-WAVE8",
+    "INPUT_BASELINE_ID": "OFG-EA-B000-REV3-REVW3-REVS-2031-04-19",
+    "INTEGRATED_STAGING_DELTA_ID": "OFG-EA-C009-INTEGRATED-STAGING-R1",
+    "WORKING_VIEW_ID": "OFG-EA-B000-PLUS-C001-C002-C003-C004-C005-C006-C007-C008-C009-STAGING-R1",
+    "CONFIGURATION_CUT": "2031-04-19",
+    "ASSURANCE_CLASS": "AS3",
+    "RETURN_FORMAT": "COPY_PASTE_SAFE_STRICT_JSON",
+    "GLOBAL_WRITE_PERFORMED": false,
+    "CANONICAL_ID_MUTATION_PERFORMED": false,
+    "SILENT_MERGE_PERFORMED": false,
+    "REV4_PROMOTION_PERFORMED": false,
+    "THREAD_3_DEPENDENCY_CREATED": false,
+    "GENERIC_EVENT_LABEL_PROMOTED_TO_EXACT_PACKAGE_ID": false,
+    "PARENT_ASSET_EVENT_PROMOTED_TO_CHILD_MEMBERSHIP": false,
+    "WORKFRONT_ACTIVITY_PROMOTED_TO_OBJECT_SPECIFIC_EXECUTION": false,
+    "DATE_ALIGNMENT_USED_AS_IDENTITY_PROOF": false,
+    "EXECUTOR_NAME_USED_AS_PACKAGE_OWNERSHIP_PROOF": false,
+    "SURVEY_GENERATION_PROMOTED_TO_ACCEPTED_SURVEY_TRUTH": false,
+    "FUNCTIONAL_CORRESPONDENCE_PROMOTED_TO_EXPLICIT_NATIVE_EDGE": false,
+    "UG04_PROMOTED_TO_SPECIFIC_FEEDER_ROUTE": false,
+    "RESERVED_OPENING_PROMOTED_TO_INSTALLED_PENETRATION": false,
+    "M88217_ADMIN_STATUS_PROMOTED_TO_PHYSICAL_EXECUTION": false,
+    "UNSUPPORTED_STRUCTURAL_VALUE_CREATED": false,
+    "UNSUPPORTED_CRANE_VALUE_CREATED": false,
+    "UNSUPPORTED_SURVEY_VALUE_CREATED": false,
+    "UNSUPPORTED_ROUTE_VALUE_CREATED": false,
+    "SELF_ASSIGNED_NEXT_MAJOR_CYCLE": false,
+    "RETURN_STATUS": "READY_FOR_THREAD_1_INTEGRATION"
+  },
+  "LOCAL_STATE_CAPSULE": {
+    "THREAD_ID": 4,
+    "CURRENT_STATE": "W_RETURN_READY",
+    "WORKER_ROLE": "PARALLEL_ENGINEERING_REVIEW_WORKER",
+    "PRIMARY_ORIENTATION": "SITE_CIVIL_STRUCTURAL_BUILDINGS_CONSTRUCTION_INSTALLATION",
+    "PINNED_BASELINE_ID": "OFG-EA-B000-REV3-REVW3-REVS-2031-04-19",
+    "PINNED_STAGING_DELTA_ID": "OFG-EA-C009-INTEGRATED-STAGING-R1",
+    "PINNED_WORKING_VIEW_ID": "OFG-EA-B000-PLUS-C001-C002-C003-C004-C005-C006-C007-C008-C009-STAGING-R1",
+    "LOCAL_CHECKPOINT_ID": "T4-C010-CP-WAVE8-AS3-COMPLETE",
+    "STATE_MANIFEST_ID": "T4-C010-MANIFEST-R1",
+    "THREAD_3_STATE": "PERMANENTLY_RETIRED_READ_ONLY_ARCHIVE",
+    "ELECTRICAL_PHYSICAL_ROUTE_OWNERSHIP": "THREAD_4",
+    "REV4_SOURCE_STATE": "QUARANTINED_OUT_OF_BASELINE",
+    "NEWLY_CONTROLLED_SEARCH_PATHS_EXECUTED": [
+      "RECORD_LABEL_TO_SOURCE_ROW",
+      "EVENT_DATE_TO_SOURCE_FILE",
+      "WORKFRONT_TO_PACKAGE",
+      "EXECUTOR_TO_PACKAGE_INDEX",
+      "PARENT_ASSET_EVENT_TO_CHILD_SCOPE",
+      "RECORD_CLASS_TO_REPOSITORY",
+      "SURVEY_ACTIVITY_TO_ACCEPTANCE_RECORD"
+    ],
+    "C010_PRINCIPAL_ADVANCES": [
+      "RECONCILED_THE_DISPATCHED_SIX_BHT401_P101_EVENT_HITS_TO_EXACT_REV3_MASTER_EVENT_ROWIDS",
+      "RECONCILED_THE_DISPATCHED_TEN_CRS01_RST_L2_EVENT_HITS_TO_EXACT_REV3_MASTER_EVENT_ROWIDS",
+      "IDENTIFIED_WHY_CRS01_HAS_TEN_MASTER_EVENT_HITS_BUT_ONLY_NINE_EQUIPMENT_EVENT_HISTORY_ROWS",
+      "BOUND_THE_MASTER_EVENT_TIMELINE_TO_ANNEX_0012_AND_ITS_NATIVE_SOURCE_FILENAME_AND_REPOSITORY_PATH",
+      "REVERSE_TRACED_P101_SITE_INSTALLATION_MC_TURNOVER_AND_COMMISSIONING_ROWS_TO_DETAILED_SITE_WORK_HISTORY_FIELDS",
+      "REVERSE_TRACED_CRS01_SITE_ARRIVAL_INSTALLATION_MC_TURNOVER_AND_COMMISSIONING_ROWS_TO_DETAILED_SITE_WORK_HISTORY_FIELDS",
+      "CONFIRMED_THAT_GENERIC_IWP_MC_TURNOVER_AND_COMMISSIONING_LABELS_DO_NOT_RESOLVE_EXACT_PACKAGE_IDENTITIES",
+      "CONFIRMED_MACHINE_ANNEX_HAS_TWO_NATIVE_IWP_TABLES_BOTH_LIMITED_TO_F101_SECTOR_ERECTION_AND_ROLLING_FIELD_JOINING",
+      "CONFIRMED_NO_NATIVE_CWP_TABLE_WAS_DISCOVERED_IN_THE_REV3_MACHINE_ANNEX",
+      "ADVANCED_H101_BHT_FOUNDATION_AND_ALIGNMENT_TRACE_TO_PERIOD_LEVEL_WORKFRONT_EVIDENCE_BUT_NOT_EXACT_ACCEPTANCE_RECORD_IDS",
+      "ADVANCED_2026_UNDERGROUND_TRACE_TO_PERIOD_LEVEL_HIDDEN_WORK_EVIDENCE_CLASSES_BUT_NOT_UG01_TO_UG05_SEGMENT_IDENTITIES",
+      "ADVANCED_E103_E104_E105_TRACE_TO_MONTHLY_GROUPED_ELECTRICAL_WORKFRONT_ROWS_BUT_NOT_BUILDING_SPECIFIC_CHILD_ROUTE_MEMBERSHIP",
+      "ADVANCED_RTE003_TO_CONTROLLED_FUNCTIONAL_ROUTE_PLUS_OPEN_F101_001_FUNCTIONAL_CORRESPONDENCE_WITH_CURRENT_METRIC_STATE_OPEN",
+      "RECHECKED_RTE007_AND_RTE008_FOR_ORIGINAL_SETTING_AND_MAINTENANCE_ROUTE_EVIDENCE_WITH_NO_EXACT_EXECUTED_ROUTE_PACKAGE_RECOVERED",
+      "REEXECUTED_SURV001_TO_SURV008_ACCEPTANCE_TERM_SEARCH_AND_CONFIRMED_ALL_CONTROLLED_SURVEY_TRUTH_FIELDS_REMAIN_OPEN",
+      "RECHECKED_M88217_AND_CRS01_WITHOUT_RECOVERING_A_SPECIFIC_EXECUTION_ATTACHMENT_REPOSITORY_TRANSACTION_OR_ASLEFT_PHYSICAL_BINDING"
+    ]
+  },
+  "SOURCE_REPOSITORY_MAP": {
+    "MASTER_EVENT_TIMELINE": {
+      "ANNEX_ID": "ANNEX-0012",
+      "SOURCE_PATH": "OFG_DEFINITIVE_ENGINEERING_ATLAS_REV3_DATA/OFG_Atlas_Rev3_DATA02_Master_Event_Timeline_Through_2031-04-19.csv",
+      "SOURCE_FILENAME": "OFG_Atlas_Rev3_DATA02_Master_Event_Timeline_Through_2031-04-19.csv",
+      "ROW_COUNT": 128986,
+      "SQLITE_TABLE": "OFG_Atlas_Rev3_DATA02_Master_Event_Timeline_Thro",
+      "IMPORT_STATUS": "IMPORTED_CSV",
+      "CITATION": ":contentReference[oaicite:0]{index=0}"
+    },
+    "EQUIPMENT_EVENT_HISTORY_MIRROR": {
+      "SOURCE_FILENAME": "OFG_Equipment_Event_History_RevA.csv",
+      "ROLE": "COMPACT_ASSET_EVENT_HISTORY_MIRROR",
+      "P101_ROWS_VISIBLE": "INDEX_610_THROUGH_615",
+      "CRS01_ROWS_VISIBLE": "INDEX_3394_THROUGH_3402",
+      "CRS01_LOCKED_CANON_ROUTINE_PHOTOGRAPH_ROW_INCLUDED": false,
+      "CITATION": ":contentReference[oaicite:1]{index=1}"
+    },
+    "SITE_WORK_HISTORY_MASTER": {
+      "SOURCE_FILENAME": "OFG_Site_Work_History_Master_RevW3.csv",
+      "ROLE": "DETAILED_WORKFRONT_EXECUTION_AUTHORITY_AND_EXPECTED_RECORD_CONTEXT",
+      "EVENT_ROWS": 106302,
+      "STATUS": "WORKING_DATASET_NOT_SELF_AUTHENTICATING_CANON"
+    },
+    "SITE_WORKFRONT_MONTHLY_HISTORY": {
+      "SOURCE_FILENAME": "OFG_Site_Workfront_Monthly_History_RevW3.csv",
+      "ROLE": "MONTHLY_WORKFRONT_AGGREGATION",
+      "CONTROL": "DERIVED_WORKFRONT_LEDGER_NOT_INDEPENDENT_EXECUTION_PROOF",
+      "CITATION": ":contentReference[oaicite:2]{index=2}"
+    },
+    "PACKAGE_MODEL": {
+      "ANNEX_ID": "ANNEX-0547",
+      "SOURCE_FILENAME": "WP05_R01_Physical_Object_Lifecycle_Package_Model.csv",
+      "SQLITE_TABLE": "WP05_R01_Physical_Object_Lifecycle_Package_Model",
+      "PACKAGE_CLASSES": [
+        "WP-DES",
+        "WP-PROC",
+        "WP-LOG",
+        "WP-IWP",
+        "WP-QA",
+        "WP-MC",
+        "WP-TOV"
+      ],
+      "CONTROL": "PACKAGE_CLASS_IS_NOT_HISTORICAL_PACKAGE_INSTANCE",
+      "CITATION": ":contentReference[oaicite:3]{index=3}"
+    },
+    "SUPPORT_ITP_REGISTER": {
+      "ANNEX_ID": "ANNEX-0540",
+      "SOURCE_FILENAME": "ITP05_R01_Inspection_Test_NDE_Hold_Point_Register.csv",
+      "SQLITE_TABLE": "ITP05_R01_Inspection_Test_NDE_Hold_Point_Registe",
+      "TARGET_HANDLES": [
+        "ITP-SUP-01",
+        "ITP-SUP-02"
+      ],
+      "CONTROL": "ITP_REQUIREMENT_IS_NOT_EXECUTED_ITP_RECORD",
+      "CITATION": ":contentReference[oaicite:4]{index=4}"
+    },
+    "NATIVE_IWP_REGISTERS": [
+      {
+        "ANNEX_ID": "ANNEX-0296",
+        "SOURCE_FILENAME": "IWP01_R01_Sector_Erection_Workpacks.csv",
+        "ROW_COUNT": 16,
+        "SCOPE": "F101_SECTOR_ERECTION",
+        "TARGET_BHT_SUPPORT_MEMBERSHIP": false,
+        "TARGET_UNDERGROUND_MEMBERSHIP": false,
+        "TARGET_ELECTRICAL_ROUTE_MEMBERSHIP": false
+      },
+      {
+        "ANNEX_ID": "ANNEX-0297",
+        "SOURCE_FILENAME": "IWP01_R02_Rolling_Field_Joining.csv",
+        "ROW_COUNT": 16,
+        "SCOPE": "F101_ROLLING_FIELD_JOINING",
+        "TARGET_BHT_SUPPORT_MEMBERSHIP": false,
+        "TARGET_UNDERGROUND_MEMBERSHIP": false,
+        "TARGET_ELECTRICAL_ROUTE_MEMBERSHIP": false
+      }
+    ],
+    "NATIVE_IWP_REGISTER_CITATION": ":contentReference[oaicite:5]{index=5}",
+    "NATIVE_CWP_TABLE_DISCOVERY": {
+      "RESULT": "NO_TABLE_NAME_OR_CATALOG_FILENAME_IDENTIFIED_AS_PLANTWIDE_CWP_REGISTER",
+      "INTERPRETATION": "DOES_NOT_PROVE_PROJECT_CWP_RECORDS_NEVER_EXISTED"
+    },
+    "SURVEY_TRUTH_REGISTER": {
+      "ANNEX_ID": "ANNEX-0437",
+      "SOURCE_FILENAME": "SURVEY01_R01_Coordinate_Truth_Register.csv",
+      "ROW_COUNT": 8,
+      "SQLITE_TABLE": "SURVEY01_R01_Coordinate_Truth_Register",
+      "CITATIONS": [
+        ":contentReference[oaicite:6]{index=6}",
+        ":contentReference[oaicite:7]{index=7}"
+      ]
+    },
+    "ROUTE_REGISTER": {
+      "ANNEX_ID": "ANNEX-0287",
+      "SOURCE_FILENAME": "ROUTE02_R01_Construction_and_Maintenance_Routes.csv",
+      "ROW_COUNT": 8,
+      "SQLITE_TABLE": "ROUTE02_R01_Construction_and_Maintenance_Routes",
+      "CITATION": ":contentReference[oaicite:8]{index=8}"
+    },
+    "F101_OPENING_LIFECYCLE": {
+      "ANNEX_ID": "ANNEX-0299",
+      "SOURCE_FILENAME": "OPEN01_R01_F101_Opening_Lifecycle.csv",
+      "ROW_COUNT": 8,
+      "SQLITE_TABLE": "OPEN01_R01_F101_Opening_Lifecycle",
+      "CITATION": ":contentReference[oaicite:9]{index=9}"
+    }
+  },
+  "REVERSE_EVENT_TRACE": {
+    "BHT401_P101": {
+      "ASSET_ID": "BHT-401-P-101",
+      "MASTER_EVENT_HIT_COUNT": 6,
+      "EQUIPMENT_EVENT_HISTORY_HIT_COUNT": 6,
+      "COUNT_RECONCILIATION": "EXACT",
+      "WORKFRONT": {
+        "ZONE": "Z03-A",
+        "BUILDING_LOCATION": "H-101 BHT Annex",
+        "SYSTEM": "BHT-401",
+        "ASSET_CLASS": "Pump",
+        "DESCRIPTION": "Main blanket coolant pump",
+        "OWNER_OR_ASSET_CONTROLLER": "OPG",
+        "DESIGN_AUTHORITY": "E&C/HMS",
+        "SUPPLIER_OEM": "BWXT Canada / qualified package supplier",
+        "INSTALLER_OR_OPERATOR": "E.S. Fox/BWXT"
+      },
+      "EVENTS": [
+        {
+          "MASTER_EVENT_ROWID": 2417,
+          "MASTER_EVENT_CSV_DATA_INDEX_ZERO_BASED": 2416,
+          "DATE": "2025-11-01",
+          "DOMAIN": "ASSET_LIFECYCLE",
+          "CANON_STATUS": "WORKING DATASET — SUBJECT TO REV E/F/H/I RECONCILIATION",
+          "EVENT_TYPE": "Mobilized/Procured",
+          "DOCUMENT_OR_RECORD_LABEL": "Asset master / PO / mobilization record",
+          "DETAIL": "Asset entered OFG controlled lifecycle.",
+          "EQUIPMENT_EVENT_HISTORY_INDEX": 610,
+          "SITE_WORK_HISTORY_MATCH": false,
+          "EXACT_PACKAGE_ID_RECOVERED": false,
+          "SOURCE_FILE": "OFG_Atlas_Rev3_DATA02_Master_Event_Timeline_Through_2031-04-19.csv"
+        },
+        {
+          "MASTER_EVENT_ROWID": 25358,
+          "MASTER_EVENT_CSV_DATA_INDEX_ZERO_BASED": 25357,
+          "DATE": "2028-02-05",
+          "DOMAIN": "ASSET_LIFECYCLE",
+          "CANON_STATUS": "WORKING DATASET — SUBJECT TO REV E/F/H/I RECONCILIATION",
+          "EVENT_TYPE": "Site Arrival",
+          "DOCUMENT_OR_RECORD_LABEL": "Receiving inspection / delivery record",
+          "DETAIL": "Receipt/arrival recorded; condition and identification checked.",
+          "EQUIPMENT_EVENT_HISTORY_INDEX": 611,
+          "SITE_WORK_HISTORY_DATA_INDEX_ZERO_BASED": 3001,
+          "SITE_WORK_HISTORY_MATCH": true,
+          "EXPECTED_RECORD_SET": [
+            "shipping release",
+            "packing list",
+            "customs/import",
+            "receiving inspection",
+            "condition/damage report",
+            "identification/serial reconciliation",
+            "preservation/storage assignment"
+          ],
+          "EXACT_RECEIVING_RECORD_ID_RECOVERED": false,
+          "EXACT_PACKAGE_ID_RECOVERED": false
+        },
+        {
+          "MASTER_EVENT_ROWID": 25587,
+          "MASTER_EVENT_CSV_DATA_INDEX_ZERO_BASED": 25586,
+          "DATE": "2028-03-07",
+          "DOMAIN": "ASSET_LIFECYCLE",
+          "CANON_STATUS": "WORKING DATASET — SUBJECT TO REV E/F/H/I RECONCILIATION",
+          "EVENT_TYPE": "Installation/Mobilization",
+          "DOCUMENT_OR_RECORD_LABEL": "IWP / setup record",
+          "DETAIL": "Field installation or deployment commenced.",
+          "EQUIPMENT_EVENT_HISTORY_INDEX": 612,
+          "SITE_WORK_HISTORY_DATA_INDEX_ZERO_BASED": 3170,
+          "SITE_WORK_HISTORY_MATCH": true,
+          "EXECUTION_COMMAND_PATH": "E.S. Fox/BWXT craft/field supervision -> Bechtel constructor/package chain -> E&C field engineering / work-package coordination -> E&C/HMS; OPG oversight and owner interfaces as applicable",
+          "EXPECTED_RECORD_SET": [
+            "released CWP/IWP",
+            "IFC drawing/model",
+            "permit/access",
+            "material issue",
+            "lift/rigging where applicable",
+            "installation checklist",
+            "QC hold/witness",
+            "redline/as-built",
+            "survey/alignment/torque/weld/NDE as applicable"
+          ],
+          "EXACT_IWP_ID_RECOVERED": false,
+          "EXACT_CWP_ID_RECOVERED": false,
+          "CHILD_SUPPORT_OR_ELECTRICAL_MEMBERSHIP_RECOVERED": false
+        },
+        {
+          "MASTER_EVENT_ROWID": 68192,
+          "MASTER_EVENT_CSV_DATA_INDEX_ZERO_BASED": 68191,
+          "DATE": "2029-12-11",
+          "DOMAIN": "ASSET_LIFECYCLE",
+          "CANON_STATUS": "WORKING DATASET — SUBJECT TO REV E/F/H/I RECONCILIATION",
+          "EVENT_TYPE": "Mechanical Completion",
+          "DOCUMENT_OR_RECORD_LABEL": "MC certificate / completion package",
+          "DETAIL": "Defined installation scope completed subject to punch status.",
+          "EQUIPMENT_EVENT_HISTORY_INDEX": 613,
+          "SITE_WORK_HISTORY_DATA_INDEX_ZERO_BASED": 45547,
+          "EXPECTED_RECORD_SET": [
+            "MC checklist/certificate",
+            "completed ITPs",
+            "punch list",
+            "NCR disposition",
+            "preservation state",
+            "boundary definition",
+            "configuration reconciliation",
+            "missing-evidence check"
+          ],
+          "EXACT_MC_PACKAGE_ID_RECOVERED": false,
+          "CHILD_ROUTE_MC_MEMBERSHIP_RECOVERED": false
+        },
+        {
+          "MASTER_EVENT_ROWID": 79353,
+          "MASTER_EVENT_CSV_DATA_INDEX_ZERO_BASED": 79352,
+          "DATE": "2030-03-16",
+          "DOMAIN": "ASSET_LIFECYCLE",
+          "CANON_STATUS": "WORKING DATASET — SUBJECT TO REV E/F/H/I RECONCILIATION",
+          "EVENT_TYPE": "Turnover",
+          "DOCUMENT_OR_RECORD_LABEL": "Turnover dossier / certificate",
+          "DETAIL": "Custody transferred to receiving organization where applicable.",
+          "EQUIPMENT_EVENT_HISTORY_INDEX": 614,
+          "SITE_WORK_HISTORY_DATA_INDEX_ZERO_BASED": 56708,
+          "EXPECTED_RECORD_SET": [
+            "joint walkdown",
+            "turnover dossier",
+            "boundary drawing",
+            "as-built configuration",
+            "open-item list",
+            "baseline inspection",
+            "tagging/custody certificate",
+            "authorized re-entry rules"
+          ],
+          "EXACT_TURNOVER_DOSSIER_ID_RECOVERED": false,
+          "CHILD_ROUTE_TURNOVER_MEMBERSHIP_RECOVERED": false
+        },
+        {
+          "MASTER_EVENT_ROWID": 96785,
+          "MASTER_EVENT_CSV_DATA_INDEX_ZERO_BASED": 96784,
+          "DATE": "2030-06-16",
+          "DOMAIN": "ASSET_LIFECYCLE",
+          "CANON_STATUS": "WORKING DATASET — SUBJECT TO REV E/F/H/I RECONCILIATION",
+          "EVENT_TYPE": "Commissioning/Operation",
+          "DOCUMENT_OR_RECORD_LABEL": "Commissioning test / operating record",
+          "DETAIL": "Functional use or commissioning initiated.",
+          "EQUIPMENT_EVENT_HISTORY_INDEX": 615,
+          "SITE_WORK_HISTORY_DATA_INDEX_ZERO_BASED": 74124,
+          "EXPECTED_RECORD_SET": [
+            "approved test procedure",
+            "prerequisites",
+            "lineup/isolation",
+            "temporary configuration",
+            "test data/logs",
+            "acceptance evaluation",
+            "deficiency/change record",
+            "commissioning report",
+            "maintenance/operating history"
+          ],
+          "EXACT_COMMISSIONING_TEST_ID_RECOVERED": false
+        }
+      ],
+      "MIRROR_CITATION": ":contentReference[oaicite:10]{index=10}",
+      "WORKING_LIFECYCLE_CITATION": ":contentReference[oaicite:11]{index=11}",
+      "C010_CONCLUSION": "ALL_SIX_EVENT_HITS_ARE_RECONCILED_TO_NATIVE_MASTER_EVENT_ROWS; RECORD_LABELS_REMAIN_GENERIC_AND_DO_NOT_RESOLVE_EXACT_IWP_MC_TOV_OR_CHILD_SCOPE_MEMBERSHIP"
+    },
+    "CRS01_RST_L2": {
+      "ASSET_ID": "CRS01-RST-L2",
+      "MASTER_EVENT_HIT_COUNT": 10,
+      "EQUIPMENT_EVENT_HISTORY_HIT_COUNT": 9,
+      "COUNT_RECONCILIATION": {
+        "STATUS": "RESOLVED",
+        "CAUSE": "MASTER_EVENT_TIMELINE_CONTAINS_A_SEPARATE_LOCKED_CANON_2031_04_10_ROUTINE_PHOTOGRAPHS_ROW_IN_ADDITION_TO_THE_WORKING_DATASET_PHOTO_BASELINE_ROW",
+        "EQUIPMENT_EVENT_HISTORY_DOES_NOT_CONTAIN_THE_EXTRA_LOCKED_CANON_ROW": true
+      },
+      "WORKFRONT": {
+        "ZONE": "Z03-A",
+        "BUILDING_LOCATION": "H-101 BHT Train 1 commissioning bay",
+        "SYSTEM": "TMP-BHT-401-CRS-01",
+        "ASSET_CLASS": "Restraint",
+        "DESCRIPTION": "Lateral restraint 2",
+        "OWNER_OR_ASSET_CONTROLLER": "E&C / OPG Commissioning",
+        "DESIGN_AUTHORITY": "E&C",
+        "SUPPLIER_OEM": "Qualified component supplier",
+        "INSTALLER_OR_OPERATOR": "E.S. Fox / OPG Commissioning"
+      },
+      "EVENTS": [
+        {
+          "MASTER_EVENT_ROWID": 93119,
+          "MASTER_EVENT_CSV_DATA_INDEX_ZERO_BASED": 93118,
+          "DATE": "2030-06-01",
+          "DOMAIN": "ASSET_LIFECYCLE",
+          "CANON_STATUS": "WORKING DATASET — SUBJECT TO REV E/F/H/I RECONCILIATION",
+          "EVENT_TYPE": "Mobilized/Procured",
+          "DOCUMENT_OR_RECORD_LABEL": "Asset master / PO / mobilization record",
+          "DETAIL": "Asset entered OFG controlled lifecycle.",
+          "EQUIPMENT_EVENT_HISTORY_INDEX": 3394,
+          "SITE_WORK_HISTORY_MATCH": false,
+          "EXACT_PO_OR_MOBILIZATION_RECORD_ID": "OPEN"
+        },
+        {
+          "MASTER_EVENT_ROWID": 110824,
+          "MASTER_EVENT_CSV_DATA_INDEX_ZERO_BASED": 110823,
+          "DATE": "2030-09-03",
+          "DOMAIN": "ASSET_LIFECYCLE",
+          "CANON_STATUS": "WORKING DATASET — SUBJECT TO REV E/F/H/I RECONCILIATION",
+          "EVENT_TYPE": "Site Arrival",
+          "DOCUMENT_OR_RECORD_LABEL": "Receiving inspection / delivery record",
+          "DETAIL": "Receipt/arrival recorded; condition and identification checked.",
+          "EQUIPMENT_EVENT_HISTORY_INDEX": 3395,
+          "SITE_WORK_HISTORY_DATA_INDEX_ZERO_BASED": 88161,
+          "EXACT_RECEIVING_RECORD_ID": "OPEN"
+        },
+        {
+          "MASTER_EVENT_ROWID": 113364,
+          "MASTER_EVENT_CSV_DATA_INDEX_ZERO_BASED": 113363,
+          "DATE": "2030-09-22",
+          "DOMAIN": "ASSET_LIFECYCLE",
+          "CANON_STATUS": "WORKING DATASET — SUBJECT TO REV E/F/H/I RECONCILIATION",
+          "EVENT_TYPE": "Installation/Mobilization",
+          "DOCUMENT_OR_RECORD_LABEL": "IWP / setup record",
+          "DETAIL": "Field installation or deployment commenced.",
+          "EQUIPMENT_EVENT_HISTORY_INDEX": 3396,
+          "SITE_WORK_HISTORY_DATA_INDEX_ZERO_BASED": 90701,
+          "EXECUTION_COMMAND_PATH": "E.S. Fox / OPG Commissioning craft/field supervision -> Bechtel constructor/package chain -> E&C field engineering / work-package coordination -> E&C; OPG oversight and owner interfaces as applicable",
+          "EXACT_IWP_ID": "OPEN",
+          "ITP_SUP_01_EXECUTED_RECORD_ID": "OPEN",
+          "ITP_SUP_02_EXECUTED_RECORD_ID": "OPEN"
+        },
+        {
+          "MASTER_EVENT_ROWID": 114112,
+          "MASTER_EVENT_CSV_DATA_INDEX_ZERO_BASED": 114111,
+          "DATE": "2030-09-28",
+          "DOMAIN": "ASSET_LIFECYCLE",
+          "CANON_STATUS": "WORKING DATASET — SUBJECT TO REV E/F/H/I RECONCILIATION",
+          "EVENT_TYPE": "Mechanical Completion",
+          "DOCUMENT_OR_RECORD_LABEL": "MC certificate / completion package",
+          "DETAIL": "Defined installation scope completed subject to punch status.",
+          "EQUIPMENT_EVENT_HISTORY_INDEX": 3397,
+          "SITE_WORK_HISTORY_DATA_INDEX_ZERO_BASED": 91449,
+          "EXACT_MC_PACKAGE_ID": "OPEN",
+          "COMPLETED_ITP_INSTANCE_IDENTITIES": "OPEN"
+        },
+        {
+          "MASTER_EVENT_ROWID": 115764,
+          "MASTER_EVENT_CSV_DATA_INDEX_ZERO_BASED": 115763,
+          "DATE": "2030-10-11",
+          "DOMAIN": "ASSET_LIFECYCLE",
+          "CANON_STATUS": "WORKING DATASET — SUBJECT TO REV E/F/H/I RECONCILIATION",
+          "EVENT_TYPE": "Turnover",
+          "DOCUMENT_OR_RECORD_LABEL": "Turnover dossier / certificate",
+          "DETAIL": "Custody transferred to receiving organization where applicable.",
+          "EQUIPMENT_EVENT_HISTORY_INDEX": 3398,
+          "SITE_WORK_HISTORY_DATA_INDEX_ZERO_BASED": 93101,
+          "EXACT_TURNOVER_DOSSIER_ID": "OPEN",
+          "EXACT_LOW_LEVEL_RESTRAINT_MEMBERSHIP": "OPEN"
+        },
+        {
+          "MASTER_EVENT_ROWID": 115915,
+          "MASTER_EVENT_CSV_DATA_INDEX_ZERO_BASED": 115914,
+          "DATE": "2030-10-12",
+          "DOMAIN": "ASSET_LIFECYCLE",
+          "CANON_STATUS": "WORKING DATASET — SUBJECT TO REV E/F/H/I RECONCILIATION",
+          "EVENT_TYPE": "Commissioning/Operation",
+          "DOCUMENT_OR_RECORD_LABEL": "Commissioning test / operating record",
+          "DETAIL": "Functional use or commissioning initiated.",
+          "EQUIPMENT_EVENT_HISTORY_INDEX": 3399,
+          "SITE_WORK_HISTORY_DATA_INDEX_ZERO_BASED": 93252,
+          "EXACT_COMMISSIONING_TEST_ID": "OPEN"
+        },
+        {
+          "MASTER_EVENT_ROWID": 128758,
+          "MASTER_EVENT_CSV_DATA_INDEX_ZERO_BASED": 128757,
+          "DATE": "2031-04-10",
+          "DOMAIN": "EVIDENCE",
+          "CANON_STATUS": "LOCKED CANON",
+          "EVENT_TYPE": "Routine photographs",
+          "DOCUMENT_OR_RECORD_LABEL": "Canonical Backbone / Master Reference",
+          "DETAIL": "Photographs capture restraint geometry/witness marks before event",
+          "EQUIPMENT_EVENT_HISTORY_MIRROR_ROW": null,
+          "ROLE": "THE_EXTRA_TENTH_MASTER_EVENT_HIT"
+        },
+        {
+          "MASTER_EVENT_ROWID": 128759,
+          "MASTER_EVENT_CSV_DATA_INDEX_ZERO_BASED": 128758,
+          "DATE": "2031-04-10",
+          "DOMAIN": "ASSET_LIFECYCLE",
+          "CANON_STATUS": "WORKING DATASET — SUBJECT TO REV E/F/H/I RECONCILIATION",
+          "EVENT_TYPE": "Photo Baseline",
+          "DOCUMENT_OR_RECORD_LABEL": "PHOTO-BHT401-0410",
+          "DETAIL": "Routine photographic survey captured restraint geometry and witness marks.",
+          "EQUIPMENT_EVENT_HISTORY_INDEX": 3400,
+          "PHYSICAL_RECORD_IDENTITY": "PHOTO-BHT401-0410"
+        },
+        {
+          "MASTER_EVENT_ROWID": 128783,
+          "MASTER_EVENT_CSV_DATA_INDEX_ZERO_BASED": 128782,
+          "DATE": "2031-04-11",
+          "DOMAIN": "ASSET_LIFECYCLE",
+          "CANON_STATUS": "WORKING DATASET — SUBJECT TO REV E/F/H/I RECONCILIATION",
+          "EVENT_TYPE": "Maintenance Record",
+          "DOCUMENT_OR_RECORD_LABEL": "M-88217",
+          "DETAIL": "M-88217 indexed as lateral-restraint inspection/adjustment; status CLOSED/APPROVED.",
+          "EQUIPMENT_EVENT_HISTORY_INDEX": 3401,
+          "HEADER_OR_INDEX_IDENTITY": "M-88217",
+          "EXECUTION_ATTACHMENT_RECOVERED": false,
+          "AS_FOUND_RECOVERED": false,
+          "AS_LEFT_RECOVERED": false
+        },
+        {
+          "MASTER_EVENT_ROWID": 128808,
+          "MASTER_EVENT_CSV_DATA_INDEX_ZERO_BASED": 128807,
+          "DATE": "2031-04-12",
+          "DOMAIN": "ASSET_LIFECYCLE",
+          "CANON_STATUS": "WORKING DATASET — SUBJECT TO REV E/F/H/I RECONCILIATION",
+          "EVENT_TYPE": "Evidence Control",
+          "DOCUMENT_OR_RECORD_LABEL": "EVID-BHT401-RSTL2",
+          "DETAIL": "Restraint preserved for engineering/event investigation.",
+          "EQUIPMENT_EVENT_HISTORY_INDEX": 3402,
+          "PHYSICAL_EXECUTION_OF_M88217_PROVEN": false
+        }
+      ],
+      "CANONICAL_CHAIN_CITATION": ":contentReference[oaicite:12]{index=12}",
+      "M88217_LIMIT_CITATION": ":contentReference[oaicite:13]{index=13}",
+      "C010_CONCLUSION": "TEN_HIT_COUNT_RECONCILED; NO_EVENT_ROW_OR_REVERSE_RECORD_LABEL_SEARCH_RECOVERED_THE_MISSING_M88217_EXECUTION_PACKAGE_OR_EXACT_SUPPORT_ITP_ASLEFT_CHAIN"
+    }
+  },
+  "RECORD_LABEL_REVERSE_SEARCH_RESULTS": {
+    "SEARCH_KEYS": [
+      "Asset master / PO / mobilization record",
+      "Receiving inspection / delivery record",
+      "IWP / setup record",
+      "MC certificate / completion package",
+      "Turnover dossier / certificate",
+      "Commissioning test / operating record"
+    ],
+    "RESULT": {
+      "LABELS_ARE_HIGH_FREQUENCY_GENERIC_EVENT_RECORD_CLASSES": true,
+      "LABELS_CONTAIN_UNIQUE_HISTORICAL_PACKAGE_IDENTIFIER": false,
+      "LABELS_CAN_IDENTIFY_EXPECTED_REPOSITORY_OR_RECORD_CLASS": true,
+      "LABELS_CAN_IDENTIFY_OBJECT_SCOPE_MEMBERSHIP_BY_THEMSELVES": false
+    },
+    "PACKAGE_CLASS_RELATION": {
+      "IWP_SETUP_RECORD": "SEMANTICALLY_ALIGNS_WITH_WP-IWP_BUT_IS_NOT_AN_EXACT_WP-IWP_INSTANCE_ID",
+      "MC_CERTIFICATE_COMPLETION_PACKAGE": "SEMANTICALLY_ALIGNS_WITH_WP-MC_BUT_IS_NOT_AN_EXACT_WP-MC_INSTANCE_ID",
+      "TURNOVER_DOSSIER_CERTIFICATE": "SEMANTICALLY_ALIGNS_WITH_WP-TOV_BUT_IS_NOT_AN_EXACT_WP-TOV_INSTANCE_ID",
+      "COMMISSIONING_TEST_OPERATING_RECORD": "POST_TURNOVER_TEST_RECORD_CLASS_NOT_A_PACKAGE_ID"
+    },
+    "NATIVE_PACKAGE_MODEL_CITATION": ":contentReference[oaicite:14]{index=14}",
+    "CONTROL": "GENERIC_EVENT_RECORD_LABEL_IS_NOT_EXACT_PACKAGE_ID"
+  },
+  "PACKAGE_INDEX_REVERSE_SEARCH": {
+    "SEARCH_AXES": [
+      "DATE",
+      "WORKFRONT",
+      "EXECUTOR",
+      "RECORD_CLASS",
+      "BUILDING_LOCATION",
+      "SYSTEM",
+      "PARENT_ASSET",
+      "PACKAGE_CLASS"
+    ],
+    "NATIVE_CWP_REGISTER": {
+      "DISCOVERED": false,
+      "EXACT_TARGET_CWP_ID_RECOVERED": false
+    },
+    "NATIVE_IWP_REGISTERS": {
+      "DISCOVERED": 2,
+      "SCOPES": [
+        "F101_SECTOR_ERECTION",
+        "F101_ROLLING_FIELD_JOINING"
+      ],
+      "BHT401_SUPPORT_MEMBERSHIP": false,
+      "BHT401_P101_MEMBERSHIP": false,
+      "BHT401_PENETRATION_MEMBERSHIP": false,
+      "UG01_TO_UG05_MEMBERSHIP": false,
+      "E103_E104_E105_ROUTE_MEMBERSHIP": false
+    },
+    "EXECUTED_ITP_INDEX": {
+      "GENERIC_REQUIREMENT_REGISTER_DISCOVERED": true,
+      "OBJECT_SPECIFIC_EXECUTED_RECORD_INDEX_DISCOVERED": false,
+      "BHT401_SUPPORT_EXECUTED_ITP_SUP_01_RECOVERED": false,
+      "BHT401_SUPPORT_EXECUTED_ITP_SUP_02_RECOVERED": false,
+      "CRS01_EXECUTED_ITP_SUP_01_RECOVERED": false,
+      "CRS01_EXECUTED_ITP_SUP_02_RECOVERED": false
+    },
+    "MC_TURNOVER": {
+      "GENERIC_PARENT_ASSET_EVENT_ROWS_RECOVERED": true,
+      "EXACT_PACKAGE_INSTANCE_ID_RECOVERED": false,
+      "CHILD_SCOPE_MEMBERSHIP_RECOVERED": false
+    },
+    "RESULT": "REVERSE_SEARCH_ADVANCED_REPOSITORY_AND_RECORD_CLASS_LOCATION_BUT_DID_NOT_CLOSE_EXACT_PACKAGE_INSTANCE_IDENTITIES"
+  },
+  "H101_BHT_FOUNDATION_ALIGNMENT_REVERSE_TRACE": {
+    "WORKFRONT": "H-101 / Z03",
+    "HISTORICAL_PERIOD": "THROUGHOUT_2028",
+    "EXECUTION_CHAIN": "E.S. Fox/BWXT and package suppliers under Bechtel; E&C mechanical/process/thermal-hydraulic engineering; HMS where HFRP interfaces are implicated",
+    "SUPPORTED_ACTIVITY": [
+      "FOUR_BLANKET_HEAT_TRANSPORT_PUMP_FOUNDATIONS_ACCEPTED",
+      "PRIMARY_HX_STEAM_GENERATORS_INSTALLED",
+      "PRIMARY_PUMP_CASINGS_INSTALLED",
+      "LARGE_BORE_PIPING_BEGAN",
+      "EQUIPMENT_PRESERVATION_MAINTAINED"
+    ],
+    "SUPPORTED_EVIDENCE_CLASSES": [
+      "FOUNDATION_ACCEPTANCE",
+      "SOLEPLATE_ALIGNMENT_GROUT_RECORDS",
+      "EQUIPMENT_RECEIVING",
+      "NOZZLE_INTERFACE_SURVEY",
+      "PIPING_WELD_NDE",
+      "PRESERVATION_RECORDS"
+    ],
+    "P101_SOURCE_EVENT_ROWS": {
+      "SITE_ARRIVAL": {
+        "DATE": "2028-02-05",
+        "SITE_WORK_HISTORY_DATA_INDEX_ZERO_BASED": 3001,
+        "DOCUMENT_OR_RECORD_LABEL": "Receiving inspection / delivery record"
+      },
+      "INSTALLATION_START": {
+        "DATE": "2028-03-07",
+        "SITE_WORK_HISTORY_DATA_INDEX_ZERO_BASED": 3170,
+        "DOCUMENT_OR_RECORD_LABEL": "IWP / setup record"
+      }
+    },
+    "MONTHLY_WORKFRONT_ROWS": [
+      {
+        "MONTHLY_DATA_INDEX_ZERO_BASED": 174,
+        "MONTH": "2028-02",
+        "EVENT_TYPE": "Site Arrival",
+        "EVENT_COUNT": 5,
+        "EXECUTOR": "E.S. Fox/BWXT",
+        "DESIGN_AUTHORITY": "E&C/HMS",
+        "SAMPLE_ASSETS_INCLUDE": [
+          "BHT-401-P-101",
+          "BHT-401-SG-101",
+          "BHT-401-MOV-101",
+          "BHT-401-MOV-102",
+          "BHT-401-CV-103"
+        ]
+      },
+      {
+        "MONTHLY_DATA_INDEX_ZERO_BASED": 187,
+        "MONTH": "2028-03",
+        "EVENT_TYPE": "Installation/Mobilization",
+        "EVENT_COUNT": 5,
+        "EXECUTOR": "E.S. Fox/BWXT",
+        "DESIGN_AUTHORITY": "E&C/HMS",
+        "SAMPLE_ASSETS_INCLUDE": [
+          "BHT-401-P-101",
+          "BHT-401-SG-101",
+          "BHT-401-MOV-101",
+          "BHT-401-MOV-102",
+          "BHT-401-CV-103"
+        ]
+      }
+    ],
+    "EXACT_FOUNDATION_ACCEPTANCE_RECORD_ID": "OPEN",
+    "EXACT_P101_FOUNDATION_OBJECT_ID": "OPEN",
+    "EXACT_SOLEPLATE_RECORD_ID": "OPEN",
+    "EXACT_GROUT_RECORD_ID": "OPEN",
+    "EXACT_NOZZLE_INTERFACE_SURVEY_ID": "OPEN",
+    "EXACT_PACKAGE_ID": "OPEN",
+    "OBJECT_SPECIFIC_ACCEPTANCE_BINDING": "OPEN",
+    "CONTROL": "NARRATIVE_WORKFRONT_ACTIVITY_AND_PARENT_EQUIPMENT_EVENT_DO_NOT_CREATE_A_FOUNDATION_OR_SURVEY_RECORD_ID",
+    "CITATION": ":contentReference[oaicite:15]{index=15}"
+  },
+  "UNDERGROUND_REVERSE_TRACE": {
+    "HISTORICAL_WORKFRONT": {
+      "DATE_WINDOW": "2026_JANUARY_THROUGH_APRIL",
+      "ZONES": [
+        "Z01",
+        "Z02",
+        "Z03",
+        "Z04",
+        "BURIED_UTILITIES"
+      ],
+      "SUPPORTED_INSTALLED_CLASSES": [
+        "PERMANENT_STORM",
+        "SANITARY",
+        "FIRE_WATER",
+        "DUCTBANK",
+        "GROUNDING_GRID",
+        "UTILITY_WATER",
+        "SELECTED_DRAINS"
+      ],
+      "SUPPORTED_PRIMARY_EVIDENCE_CLASSES": [
+        "SURVEY",
+        "EXCAVATION_ACCEPTANCE",
+        "BLAST_VIBRATION_LOGS",
+        "UNDERGROUND_INSPECTION_TEST_RECORDS",
+        "BURIED_LINE_ASBUILTS",
+        "EMBED_PENETRATION_INTERFACE_REGISTERS"
+      ],
+      "EXECUTION_CHAIN": "Bechtel + civil/package contractors; E&C civil/structural and underground utilities; OPG construction oversight",
+      "CITATION": ":contentReference[oaicite:16]{index=16}"
+    },
+    "F101_IRREVERSIBLE_INTERFACE_TRACE": {
+      "DATE_WINDOW": "2026_JUNE_THROUGH_AUGUST",
+      "WORKFRONT": "F101_BASEMAT",
+      "SUPPORTED_OBJECT_CLASSES": [
+        "REBAR_AND_COUPLERS",
+        "MACHINE_EQUIPMENT_EMBEDS",
+        "ANCHOR_SLEEVES",
+        "ELECTRICAL_GROUNDS",
+        "EMBEDDED_CONDUITS",
+        "WATERSTOPS",
+        "CONSTRUCTION_JOINTS"
+      ],
+      "SUPPORTED_RECORD_CLASSES": [
+        "PREPOUR_CHECKLIST",
+        "EMBED_PENETRATION_REGISTER",
+        "SURVEY",
+        "MATERIAL_CERTIFICATES",
+        "CONCRETE_BATCH_DELIVERY_TESTS",
+        "HOLD_WITNESS_RELEASES"
+      ],
+      "CITATION": ":contentReference[oaicite:17]{index=17}"
+    },
+    "LATE_2026_TRACE": {
+      "DATE_WINDOW": "2026_OCTOBER_THROUGH_DECEMBER",
+      "SUPPORTED_RECORD_CLASSES": [
+        "CIVIL_COMPLETION_RECORDS",
+        "STRUCTURAL_SURVEYS",
+        "UNDERGROUND_ASBUILTS",
+        "INTERFACE_PUNCH_RECORDS"
+      ],
+      "CITATION": ":contentReference[oaicite:18]{index=18}"
+    },
+    "NATIVE_EVENT_DATASET_REVERSE_CHECK": {
+      "YEAR_2026_INSTALLATION_MOBILIZATION_ROWS": 68,
+      "ROW_DISTRIBUTION": [
+        {
+          "SYSTEM": "GROUNDWORKS",
+          "BUILDING_LOCATION": "Major concrete workfronts",
+          "INSTALLER": "Aecon",
+          "ROW_COUNT": 36
+        },
+        {
+          "SYSTEM": "TUNNEL-CONSTRUCTION",
+          "BUILDING_LOCATION": "Intake Tunnel",
+          "INSTALLER": "Tunnel contractor",
+          "ROW_COUNT": 16
+        },
+        {
+          "SYSTEM": "TUNNEL-CONSTRUCTION",
+          "BUILDING_LOCATION": "Outfall Tunnel",
+          "INSTALLER": "Tunnel contractor",
+          "ROW_COUNT": 16
+        }
+      ],
+      "UG01_TO_UG05_EXACT_ASSET_EVENT_ROWS": 0,
+      "INTERPRETATION": "THE_CONTROLLED_NARRATIVE_ESTABLISHES_UNDERGROUND_INSTALLATION_AND_EVIDENCE_GENERATION_BUT_THE_REVW3_EVENT_ROWS_DO_NOT_INSTANTIATE_UG01_TO_UG05_AS_ASSET_LEVEL_INSTALLATION_EVENTS"
+    },
+    "UG_OBJECTS": [
+      {
+        "ID": "UG-01",
+        "SERVICE": "PHTS_SUPPLY_RETURN_GALLERY",
+        "STATUS": "E_CORRIDOR",
+        "SEGMENT_NODE_CROSSING_TEST_PREBACKFILL_REDLINE_ASBUILT_MC_TOV_TRACE": "OPEN"
+      },
+      {
+        "ID": "UG-02",
+        "SERVICE": "TRI_PROCESS_GALLERY",
+        "STATUS": "E_CORRIDOR",
+        "SEGMENT_NODE_CROSSING_TEST_PREBACKFILL_REDLINE_ASBUILT_MC_TOV_TRACE": "OPEN"
+      },
+      {
+        "ID": "UG-03",
+        "SERVICE": "RH_HOT_CELL_SERVICES",
+        "STATUS": "E_CORRIDOR",
+        "SEGMENT_NODE_CROSSING_TEST_PREBACKFILL_REDLINE_ASBUILT_MC_TOV_TRACE": "OPEN"
+      },
+      {
+        "ID": "UG-04",
+        "SERVICE": "ELECTRICAL_IC_DUCTBANK",
+        "STATUS": "E_CORRIDOR",
+        "SPECIFIC_FEEDER_ROUTE_PROVEN": false,
+        "SEGMENT_NODE_CROSSING_TEST_PREBACKFILL_REDLINE_ASBUILT_MC_TOV_TRACE": "OPEN"
+      },
+      {
+        "ID": "UG-05",
+        "SERVICE": "STORM_DEWATERING_DISCHARGE",
+        "STATUS": "E_CORRIDOR",
+        "SEGMENT_NODE_CROSSING_TEST_PREBACKFILL_REDLINE_ASBUILT_MC_TOV_TRACE": "OPEN"
+      }
+    ],
+    "C010_CONCLUSION": "REVERSE_TRACE_REACHED_PERIOD_LEVEL_WORKFRONT_AND_EVIDENCE_CLASS_BUT_NOT_SEGMENT_LEVEL_SOURCE_REFERENCE"
+  },
+  "E103_E104_E105_REVERSE_TRACE": {
+    "TARGET_FACILITIES": {
+      "E-103": "STATION_ELECTRICAL_BUILDING",
+      "E-104": "EMERGENCY_POWER_BUILDING",
+      "E-105": "BATTERY_UPS_BUILDING"
+    },
+    "MONTHLY_LEDGER_SCOPE": "E-101/E-102/E-103/E-104/E-105_GROUPED_WORKFRONT",
+    "INSTALLATION_ROWS": [
+      {
+        "MONTHLY_DATA_INDEX_ZERO_BASED": 256,
+        "MONTH": "2028-06",
+        "EVENT_TYPE": "Installation/Mobilization",
+        "EXECUTOR": "E.S. Fox/OEM",
+        "DESIGN_AUTHORITY": "E&C",
+        "EVENT_COUNT": 6
+      },
+      {
+        "MONTHLY_DATA_INDEX_ZERO_BASED": 280,
+        "MONTH": "2028-07",
+        "EVENT_TYPE": "Installation/Mobilization",
+        "EXECUTOR": "E.S. Fox/OEM",
+        "DESIGN_AUTHORITY": "E&C",
+        "EVENT_COUNT": 5
+      },
+      {
+        "MONTHLY_DATA_INDEX_ZERO_BASED": 303,
+        "MONTH": "2028-08",
+        "EVENT_TYPE": "Installation/Mobilization",
+        "EXECUTOR": "E.S. Fox/OEM",
+        "DESIGN_AUTHORITY": "E&C",
+        "EVENT_COUNT": 4
+      },
+      {
+        "MONTHLY_DATA_INDEX_ZERO_BASED": 327,
+        "MONTH": "2028-09",
+        "EVENT_TYPE": "Installation/Mobilization",
+        "EXECUTOR": "E.S. Fox/OEM",
+        "DESIGN_AUTHORITY": "E&C",
+        "EVENT_COUNT": 5
+      },
+      {
+        "MONTHLY_DATA_INDEX_ZERO_BASED": 381,
+        "MONTH": "2028-10",
+        "EVENT_TYPE": "Installation/Mobilization",
+        "EXECUTOR": "E.S. Fox/OEM",
+        "DESIGN_AUTHORITY": "E&C",
+        "EVENT_COUNT": 4
+      },
+      {
+        "MONTHLY_DATA_INDEX_ZERO_BASED": 433,
+        "MONTH": "2028-11",
+        "EVENT_TYPE": "Installation/Mobilization",
+        "EXECUTOR": "E.S. Fox/OEM",
+        "DESIGN_AUTHORITY": "E&C",
+        "EVENT_COUNT": 4
+      }
+    ],
+    "MC_TURNOVER_COMMISSIONING_ROWS": [
+      {
+        "MONTHLY_DATA_INDEX_ZERO_BASED": 1454,
+        "MONTH": "2029-06",
+        "EVENT_TYPE": "Mechanical Completion",
+        "EVENT_COUNT": 59
+      },
+      {
+        "MONTHLY_DATA_INDEX_ZERO_BASED": 1663,
+        "MONTH": "2029-09",
+        "EVENT_TYPE": "Turnover",
+        "EVENT_COUNT": 59
+      },
+      {
+        "MONTHLY_DATA_INDEX_ZERO_BASED": 1708,
+        "MONTH": "2029-10",
+        "EVENT_TYPE": "Commissioning/Operation",
+        "EVENT_COUNT": 59
+      },
+      {
+        "MONTHLY_DATA_INDEX_ZERO_BASED": 1710,
+        "MONTH": "2029-10",
+        "EVENT_TYPE": "Turnover",
+        "EVENT_COUNT": 34
+      },
+      {
+        "MONTHLY_DATA_INDEX_ZERO_BASED": 1763,
+        "MONTH": "2029-11",
+        "EVENT_TYPE": "Turnover",
+        "EVENT_COUNT": 24
+      },
+      {
+        "MONTHLY_DATA_INDEX_ZERO_BASED": 1811,
+        "MONTH": "2029-12",
+        "EVENT_TYPE": "Turnover",
+        "EVENT_COUNT": 15
+      }
+    ],
+    "REPRESENTATIVE_ASSET_CLASSES_VISIBLE_IN_GROUPED_ROWS": [
+      "STATION_SERVICE_TRANSFORMER",
+      "13_8_KV_SWITCHGEAR",
+      "4_16_KV_SWITCHGEAR",
+      "600_V_MOTOR_CONTROL_CENTER",
+      "SAFETY_DC_BATTERY_BANK",
+      "BATTERY_CHARGER",
+      "UPS_INVERTER",
+      "500_KV_SWITCHYARD_EQUIPMENT"
+    ],
+    "BACKFEED_AND_LIVE_BOUNDARY_HISTORY": {
+      "SUPPORTED": true,
+      "DETAIL": "Selected electrical buildings entered permanent backfeed and later controlled live-room operation; energization package, clearance/tagging, boundary drawings, switching/test steps and access-control changes are identified as evidence classes.",
+      "CITATION": ":contentReference[oaicite:19]{index=19}"
+    },
+    "CHILD_ROUTE_IDENTITIES": {
+      "BHT401_P101_CABLE_ID": "OPEN",
+      "BHT401_P101_RACEWAY_ID": "OPEN",
+      "BHT401_P101_DUCTBANK_SEGMENT_ID": "OPEN",
+      "BHT401_P101_PENETRATION_ID": "OPEN",
+      "BHT401_P101_FIRESTOP_ID": "OPEN_CONDITIONAL",
+      "BHT401_P101_GROUND_BOND_ID": "OPEN",
+      "E103_CABLE_RACEWAY_POPULATION": "OPEN",
+      "E104_CABLE_RACEWAY_POPULATION": "OPEN",
+      "E105_CABLE_RACEWAY_POPULATION": "OPEN",
+      "EXACT_TEST_RECORD_IDS": "OPEN",
+      "EXACT_ASBUILT_ROUTE_IDS": "OPEN"
+    },
+    "CONTROL": "GROUPED_E101_TO_E105_WORKFRONT_ROWS_CANNOT_BE_PARTITIONED_TO_E103_E104_E105_WITHOUT_BUILDING_OR_OBJECT_ASSIGNMENT_EVIDENCE",
+    "MONTHLY_LEDGER_CITATION": ":contentReference[oaicite:20]{index=20}"
+  },
+  "RTE003_REVERSE_TRACE": {
+    "ROUTE_ID": "RTE-003",
+    "FROM_TO": "F106 station -> F101 pit",
+    "PAYLOAD": "assembled sector",
+    "HANDLING_METHOD": "paired heavy bridge cranes",
+    "OBJECTS": "HFRP sector structure",
+    "PHYSICAL_CONSTRAINTS": [
+      "continuous crane hall",
+      "rigging headroom",
+      "COG",
+      "exclusion zone"
+    ],
+    "NATIVE_STATUS": "C",
+    "HISTORICAL_CRITICAL_LIFT_ACTIVITY": {
+      "PERIOD": "2028_SS01_TO_SS12_MONTHLY_ERECTION_FRONT",
+      "EXECUTION_CHAIN": "Kiewit/MHI/HMS machine-assembly organization within Bechtel site control; E&C integration; HMS reference assurance; metrology and NDE specialists",
+      "SUPPORTED_SEQUENCE": [
+        "fixture release",
+        "verified shipping/as-built mass and COG",
+        "crane configuration",
+        "metrology",
+        "obstruction walkdown",
+        "temporary-support inspection",
+        "rigging inspection",
+        "test/critical lift",
+        "pit set",
+        "stabilization",
+        "as-set survey",
+        "release-to-join"
+      ],
+      "SUPPORTED_RECORD_CLASSES": [
+        "critical-lift record",
+        "rigging certification",
+        "metrology",
+        "temporary-support inspection",
+        "as-set survey",
+        "release-to-join record"
+      ],
+      "CITATION": ":contentReference[oaicite:21]{index=21}"
+    },
+    "OPENING_CORRESPONDENCE": {
+      "OPENING_ID": "OPEN-F101-001",
+      "OPENING": "Crane-hall-to-pit major lift envelope",
+      "BOUNDARY_ROUTE": "F106/F101 -> pit",
+      "PAYLOAD_SERVICES": "SS-01..16; PF/CS/cryostat/machine tooling",
+      "ACTIVE_STATES": "S2-S4",
+      "FINAL_STATE": "Permanent crane-hall volume / closure restrictions",
+      "CLOSURE_GATE": "critical lift complete + future maintenance strategy accepted",
+      "STATUS": "C function/O dimensions",
+      "RELATION_TO_RTE003": "FUNCTIONAL_CORRESPONDENCE",
+      "EXPLICIT_NATIVE_EDGE_RECOVERED": false,
+      "CITATIONS": [
+        ":contentReference[oaicite:22]{index=22}",
+        ":contentReference[oaicite:23]{index=23}"
+      ]
+    },
+    "EXACT_CRITICAL_LIFT_PACKAGE_IDS": "OPEN",
+    "EXACT_METROLOGY_RECORD_IDS": "OPEN",
+    "EXACT_OBSTRUCTION_WALKDOWN_IDS": "OPEN",
+    "EXACT_RIGGING_CERTIFICATE_IDS": "OPEN",
+    "EXACT_AS_SET_SURVEY_IDS": "OPEN",
+    "CURRENT_RUNWAY_ASBUILT": "OPEN",
+    "CURRENT_HOOK_PATH": "OPEN",
+    "CURRENT_OPENING_DIMENSIONS": "OPEN",
+    "CURRENT_ROUTE_ACCEPTANCE": "OPEN",
+    "CONTROL": "HISTORICAL_LIFT_SEQUENCE_AND_FUNCTIONAL_OPENING_CORRESPONDENCE_DO_NOT_CREATE_A_CURRENT_METRIC_ROUTE_OR_EXPLICIT_NATIVE_EDGE"
+  },
+  "RTE007_RTE008_REVERSE_TRACE": {
+    "RTE-007": {
+      "FROM_TO": "Z03 equipment bay -> HX/SG foundation",
+      "PAYLOAD": "major process equipment",
+      "HANDLING_METHOD": "SPMT/skates/crane",
+      "OBJECTS": "HX/SG",
+      "PHYSICAL_CONSTRAINT": "must occur before dense piping",
+      "STATUS": "C",
+      "ORIGINAL_SETTING_ACTIVITY": "SUPPORTED_AT_H101_WORKFRONT_LEVEL",
+      "CURRENT_SURVEY_ID": "OPEN",
+      "CURRENT_OBSTRUCTION_WALKDOWN_ID": "OPEN",
+      "CURRENT_OPENING_OR_REMOVAL_BAY_ID": "OPEN",
+      "CURRENT_ASBUILT_ROUTE_ID": "OPEN",
+      "EXACT_ORIGINAL_SETTING_WORKPACKAGE_ID": "OPEN",
+      "EXACT_REMOVAL_ROUTE_WORKPACKAGE_ID": "OPEN",
+      "MAINTENANCE_REUSE_ACCEPTANCE": "OPEN"
+    },
+    "RTE-008": {
+      "FROM_TO": "Z03 pump access -> pump vault",
+      "PAYLOAD": "pump/motor",
+      "HANDLING_METHOD": "crane/monorail/skates",
+      "OBJECTS": "main pumps",
+      "PHYSICAL_CONSTRAINT": "alignment workface + future removal",
+      "STATUS": "C/F",
+      "BHT401_P101_FUNCTIONAL_RELEVANCE": "SUPPORTED_AT_CLASS_LEVEL",
+      "ORIGINAL_PUMP_SETTING_ACTIVITY": "SUPPORTED_AT_H101_WORKFRONT_LEVEL",
+      "CURRENT_SURVEY_ID": "OPEN",
+      "CURRENT_OBSTRUCTION_ID": "OPEN",
+      "CURRENT_CLEARANCE": "OPEN",
+      "CURRENT_LIFT_DEVICE_INSTANCE": "OPEN",
+      "CURRENT_SWEPT_VOLUME": "OPEN",
+      "EXACT_ORIGINAL_SETTING_WORKPACKAGE_ID": "OPEN",
+      "EXACT_REMOVAL_WORKPACKAGE_ID": "OPEN",
+      "CURRENT_REMOVAL_REUSE_ACCEPTANCE": "OPEN"
+    },
+    "SOURCE_CITATIONS": [
+      ":contentReference[oaicite:24]{index=24}",
+      ":contentReference[oaicite:25]{index=25}"
+    ],
+    "C010_CONCLUSION": "DATE_WORKFRONT_ASSET_CLASS_AND_HANDLING_SEARCH_SUPPORTS_ROUTE_FUNCTION_BUT_NOT_EXACT_ORIGINAL_SETTING_OR_REMOVAL_PACKAGE_IDENTITIES"
+  },
+  "SURVEY_REVERSE_TRACE": {
+    "SEARCH_TERMS_EXECUTED": [
+      "official datum",
+      "projection",
+      "epoch",
+      "vertical datum",
+      "geoid",
+      "benchmark",
+      "primary control monuments",
+      "stability",
+      "re-observation",
+      "Atlas-local transform",
+      "7-parameter",
+      "transformation residuals",
+      "instrument calibration",
+      "closure",
+      "tolerance",
+      "as-built verification",
+      "measured versus design",
+      "uncertainty",
+      "acceptance",
+      "subsurface utility survey",
+      "record reconciliation",
+      "deformation monitoring",
+      "settlement",
+      "lateral movement",
+      "time series"
+    ],
+    "RESULTS": [
+      {
+        "ID": "SURV-001",
+        "LAYER": "Horizontal datum",
+        "PURPOSE": "Project survey grid",
+        "REQUIRED_CONTROLLED_FIELD": "Official datum/projection and epoch",
+        "OWNER": "Survey authority",
+        "STATUS": "OPEN",
+        "ACCEPTED_RECORD_RECOVERED": false
+      },
+      {
+        "ID": "SURV-002",
+        "LAYER": "Vertical datum",
+        "PURPOSE": "Project elevations",
+        "REQUIRED_CONTROLLED_FIELD": "Geoid/benchmark definition",
+        "OWNER": "Survey authority",
+        "STATUS": "OPEN",
+        "ACCEPTED_RECORD_RECOVERED": false
+      },
+      {
+        "ID": "SURV-003",
+        "LAYER": "Primary control monuments",
+        "PURPOSE": "Site control network",
+        "REQUIRED_CONTROLLED_FIELD": "Coordinates, stability, protection, re-observation",
+        "OWNER": "Survey authority",
+        "STATUS": "OPEN",
+        "ACCEPTED_RECORD_RECOVERED": false
+      },
+      {
+        "ID": "SURV-004",
+        "LAYER": "Atlas-local transform",
+        "PURPOSE": "Atlas E/N/Z -> project grid",
+        "REQUIRED_CONTROLLED_FIELD": "7-parameter/appropriate transformation + residuals",
+        "OWNER": "Survey/BIM",
+        "STATUS": "OPEN",
+        "ACCEPTED_RECORD_RECOVERED": false
+      },
+      {
+        "ID": "SURV-005",
+        "LAYER": "Construction control",
+        "PURPOSE": "Workface setout",
+        "REQUIRED_CONTROLLED_FIELD": "Instrument/calibration/closure/tolerance",
+        "OWNER": "Construction survey",
+        "STATUS": "OPEN",
+        "ACCEPTED_RECORD_RECOVERED": false
+      },
+      {
+        "ID": "SURV-006",
+        "LAYER": "As-built verification",
+        "PURPOSE": "Installed SSC coordinates",
+        "REQUIRED_CONTROLLED_FIELD": "Measured vs design + uncertainty + acceptance",
+        "OWNER": "QA/Survey",
+        "STATUS": "OPEN",
+        "ACCEPTED_RECORD_RECOVERED": false
+      },
+      {
+        "ID": "SURV-007",
+        "LAYER": "Subsurface utility survey",
+        "PURPOSE": "Underground truth",
+        "REQUIRED_CONTROLLED_FIELD": "survey + record reconciliation",
+        "OWNER": "Civil/BIM",
+        "STATUS": "OPEN",
+        "ACCEPTED_RECORD_RECOVERED": false
+      },
+      {
+        "ID": "SURV-008",
+        "LAYER": "Deformation monitoring",
+        "PURPOSE": "F-101/heavy structures",
+        "REQUIRED_CONTROLLED_FIELD": "settlement/lateral movement/time series",
+        "OWNER": "Geotech/Survey",
+        "STATUS": "OPEN",
+        "ACCEPTED_RECORD_RECOVERED": false
+      }
+    ],
+    "HISTORICAL_ACTIVITY_EXISTENCE": [
+      "PERMANENT_SURVEY_MONUMENTS_ESTABLISHED_IN_EARLY_WORKS",
+      "SURVEY_CONTROL_TRANSFERRED_INTO_FINAL_CONSTRUCTION_NETWORK",
+      "PREPOUR_AND_POSTPOUR_SURVEYS_GENERATED",
+      "STRUCTURAL_SURVEYS_GENERATED",
+      "F106_F101_METROLOGY_AND_AS_SET_SURVEYS_GENERATED",
+      "NOZZLE_INTERFACE_SURVEYS_GENERATED"
+    ],
+    "ACCEPTED_SURVEY_TRUTH_RECOVERED": false,
+    "CONTROL": "SURVEY_GENERATION_IS_NOT_ACCEPTANCE",
+    "CITATIONS": [
+      ":contentReference[oaicite:26]{index=26}",
+      ":contentReference[oaicite:27]{index=27}",
+      ":contentReference[oaicite:28]{index=28}",
+      ":contentReference[oaicite:29]{index=29}"
+    ]
+  },
+  "CRS01_M88217_REVERSE_TRACE": {
+    "OBJECT_ID": "CRS01-RST-L2",
+    "PARENT_CONFIGURATION": "TMP-BHT-401-CRS-01",
+    "REVERSE_SEARCH_KEYS": [
+      "M-88217",
+      "CRS01-RST-L2",
+      "lateral-restraint inspection/adjustment",
+      "as-found",
+      "as-left",
+      "performer",
+      "sign-on",
+      "parts",
+      "dimensions",
+      "torque",
+      "tension",
+      "QC witness",
+      "configuration confirmation",
+      "execution package",
+      "repository",
+      "attachment"
+    ],
+    "RECOVERED_NATIVE_SPECIFIC_RECORDS": [
+      "PHOTO-BHT401-0410",
+      "M-88217",
+      "EVID-BHT401-RSTL2"
+    ],
+    "RECOVERED_GENERIC_LIFECYCLE_RECORD_LABELS": [
+      "IWP / setup record",
+      "MC certificate / completion package",
+      "Turnover dossier / certificate",
+      "Commissioning test / operating record"
+    ],
+    "NOT_RECOVERED": [
+      "M88217_EXECUTION_PACKAGE_ID",
+      "M88217_ATTACHMENT_ID",
+      "M88217_REPOSITORY_TRANSACTION_ID",
+      "M88217_PERFORMER_SIGNON",
+      "M88217_SUPERVISOR_ID",
+      "M88217_QC_WITNESS_ID",
+      "M88217_AS_FOUND_RECORD",
+      "M88217_AS_LEFT_RECORD",
+      "M88217_PARTS_USED",
+      "M88217_DIMENSIONAL_RECORD",
+      "M88217_TORQUE_OR_TENSION_RECORD",
+      "M88217_CONFIGURATION_CONFIRMATION",
+      "CRS01_LOCAL_STRUCTURAL_HOST_ID",
+      "CRS01_CONNECTION_ID",
+      "CRS01_ANCHOR_ID",
+      "CRS01_EMBED_OR_HOST_PLATE_ID",
+      "CRS01_ACCEPTED_ASBUILT_SURVEY_ID",
+      "CRS01_EXECUTED_ITP_SUP_01_ID",
+      "CRS01_EXECUTED_ITP_SUP_02_ID"
+    ],
+    "M88217_ADMIN_STATUS": "CLOSED/APPROVED",
+    "PHYSICAL_EXECUTION_PROVEN": false,
+    "ASLEFT_CONFIGURATION_PROVEN": false,
+    "C010_ADVANCEMENT": "NONE_BEYOND_EXACT_MASTER_EVENT_SOURCE_ROW_AND_REPOSITORY_CLASS_RECONCILIATION",
+    "DISPOSITION": "CRITICAL_OPEN",
+    "CITATIONS": [
+      ":contentReference[oaicite:30]{index=30}",
+      ":contentReference[oaicite:31]{index=31}"
+    ]
+  },
+  "NEW_ENGINEERING_FINDINGS": [
+    {
+      "FINDING_ID": "T4-C010-F001",
+      "TITLE": "P101_SIX_EVENT_COUNT_RECONCILED",
+      "RESULT": "PASS",
+      "DETAIL": "The six BHT-401-P-101 hits are exact rows in ANNEX-0012 and are mirrored one-for-one by equipment-event-history indices 610 through 615."
+    },
+    {
+      "FINDING_ID": "T4-C010-F002",
+      "TITLE": "CRS01_TEN_EVENT_COUNT_RECONCILED",
+      "RESULT": "PASS",
+      "DETAIL": "ANNEX-0012 contains ten CRS01-RST-L2 rows; the compact equipment-event history contains nine because it omits the separate LOCKED CANON routine-photographs row while retaining the working PHOTO-BHT401-0410 row."
+    },
+    {
+      "FINDING_ID": "T4-C010-F003",
+      "TITLE": "EVENT_ROW_SOURCE_REPOSITORY_IDENTIFIED",
+      "RESULT": "PASS",
+      "DETAIL": "The master event source is ANNEX-0012 under OFG_DEFINITIVE_ENGINEERING_ATLAS_REV3_DATA with 128986 imported rows."
+    },
+    {
+      "FINDING_ID": "T4-C010-F004",
+      "TITLE": "GENERIC_IWP_LABEL_DID_NOT_RESOLVE_EXACT_IWP",
+      "RESULT": "OPEN",
+      "DETAIL": "Reverse search by label/date/workfront/executor found lifecycle context but no unique historical P101 or CRS01 installation-package identifier."
+    },
+    {
+      "FINDING_ID": "T4-C010-F005",
+      "TITLE": "NATIVE_IWP_TABLE_SCOPE_IS_MACHINE_ERECTION_SPECIFIC",
+      "RESULT": "PASS",
+      "DETAIL": "The two native IWP tables are 16-row sector-erection and 16-row rolling-field-joining registers and do not resolve BHT, underground or electrical target package membership."
+    },
+    {
+      "FINDING_ID": "T4-C010-F006",
+      "TITLE": "NO_NATIVE_PLANTWIDE_CWP_TABLE_DISCOVERED",
+      "RESULT": "OPEN",
+      "DETAIL": "No Rev3 Machine Annex table or catalog filename explicitly serving as the requested plantwide CWP index was recovered; this is not evidence that project CWP records never existed."
+    },
+    {
+      "FINDING_ID": "T4-C010-F007",
+      "TITLE": "BHT_FOUNDATION_EVIDENCE_CLASS_EXISTS_WITHOUT_RECORD_ID",
+      "RESULT": "PARTIAL",
+      "DETAIL": "H-101 2028 history supports pump-foundation acceptance, soleplate/alignment/grout and nozzle/interface survey evidence classes, but exact package and record identities remain open."
+    },
+    {
+      "FINDING_ID": "T4-C010-F008",
+      "TITLE": "UNDERGROUND_HISTORY_AND_EVENT_MODEL_HAVE_A_GRANULARITY_GAP",
+      "RESULT": "PARTIAL",
+      "DETAIL": "Controlled history establishes ductbank, grounding-grid, underground inspection/test and buried-line as-built activity in 2026, but UG-01 through UG-05 do not appear as asset-level installation events in the queried RevW3 event rows."
+    },
+    {
+      "FINDING_ID": "T4-C010-F009",
+      "TITLE": "E103_E104_E105_ELECTRICAL_ACTIVITY_IS_GROUPED",
+      "RESULT": "PARTIAL",
+      "DETAIL": "Monthly ledger rows aggregate E-101 through E-105 and therefore cannot establish which individual building or route owns each sampled electrical asset without a separate allocation source."
+    },
+    {
+      "FINDING_ID": "T4-C010-F010",
+      "TITLE": "P101_PARENT_LIFECYCLE_DOES_NOT_CLOSE_ELECTRICAL_CHILD_SCOPE",
+      "RESULT": "PASS",
+      "DETAIL": "The P101 installation/MC/turnover/commissioning rows do not identify source bus, feeder, cable, raceway, ductbank, penetration, ground bond or as-built route."
+    },
+    {
+      "FINDING_ID": "T4-C010-F011",
+      "TITLE": "RTE003_OPENF101001_CORRESPONDENCE_IS_FUNCTIONAL_NOT_NATIVE_EDGE",
+      "RESULT": "PASS",
+      "DETAIL": "Both describe the F106/F101-to-pit major-lift function, but no explicit native relationship edge was recovered."
+    },
+    {
+      "FINDING_ID": "T4-C010-F012",
+      "TITLE": "RTE003_HISTORICAL_USE_DOES_NOT_CLOSE_CURRENT_METRIC_ROUTE",
+      "RESULT": "PASS",
+      "DETAIL": "Historical critical-lift/metrology/obstruction/as-set activity exists, while current runway, hook-path, opening dimensions and accepted survey remain open."
+    },
+    {
+      "FINDING_ID": "T4-C010-F013",
+      "TITLE": "RTE007_RTE008_REMAIN_FUNCTIONAL_ROUTE_IDENTITIES",
+      "RESULT": "PARTIAL",
+      "DETAIL": "Their handling methods and maintenance functions are controlled, but exact original-setting or removal-package identities and current surveyed routes were not recovered."
+    },
+    {
+      "FINDING_ID": "T4-C010-F014",
+      "TITLE": "SURVEY_ACCEPTANCE_SEARCH_DID_NOT_CLOSE_ANY_SURV_LAYER",
+      "RESULT": "OPEN",
+      "DETAIL": "SURV-001 through SURV-008 remain OPEN despite separate evidence that survey activities occurred."
+    },
+    {
+      "FINDING_ID": "T4-C010-F015",
+      "TITLE": "CRS01_REVERSE_SEARCH_DID_NOT_RECOVER_M88217_EXECUTION",
+      "RESULT": "CRITICAL_OPEN",
+      "DETAIL": "M-88217 remains an indexed CLOSED/APPROVED record without a recovered execution attachment, repository transaction, as-found/as-left package or physical support binding."
+    }
+  ],
+  "PROPOSED_ATLAS_DELTAS": [
+    {
+      "DELTA_ID": "T4-C010-AD-001",
+      "TARGET": "EVENT_PROVENANCE_MODEL",
+      "ACTION": "ADD_MASTER_EVENT_ROWID_ANNEX_ID_SOURCE_FILE_AND_MIRROR_ROW_FIELDS"
+    },
+    {
+      "DELTA_ID": "T4-C010-AD-002",
+      "TARGET": "PACKAGE_TRACE_MODEL",
+      "ACTION": "ADD_RECORD_LABEL_PACKAGE_CLASS_PACKAGE_INSTANCE_AND_OBJECT_MEMBERSHIP_AS_FOUR_DISTINCT_FIELDS"
+    },
+    {
+      "DELTA_ID": "T4-C010-AD-003",
+      "TARGET": "BHT401_P101",
+      "ACTION": "ADD_EXACT_REV3_MASTER_EVENT_ROW_PROVENANCE_FOR_ALL_SIX_LIFECYCLE_HITS_WITH_CHILD_SCOPE_MEMBERSHIP_OPEN"
+    },
+    {
+      "DELTA_ID": "T4-C010-AD-004",
+      "TARGET": "CRS01_RST_L2",
+      "ACTION": "ADD_EXACT_REV3_MASTER_EVENT_ROW_PROVENANCE_FOR_ALL_TEN_HITS_AND_EXPLICITLY_DOCUMENT_THE_NINE_ROW_EQUIPMENT_HISTORY_MIRROR"
+    },
+    {
+      "DELTA_ID": "T4-C010-AD-005",
+      "TARGET": "UNDERGROUND_MODEL",
+      "ACTION": "REPRESENT_PERIOD_LEVEL_CONSTRUCTION_EVIDENCE_SEPARATELY_FROM_UG_SEGMENT_LEVEL_FIELD_TRUTH"
+    },
+    {
+      "DELTA_ID": "T4-C010-AD-006",
+      "TARGET": "ELECTRICAL_ROUTE_MODEL",
+      "ACTION": "REPRESENT_GROUPED_BUILDING_WORKFRONT_ACTIVITY_SEPARATELY_FROM_BUILDING_AND_ROUTE_INSTANCE_ASSIGNMENT"
+    },
+    {
+      "DELTA_ID": "T4-C010-AD-007",
+      "TARGET": "ROUTE02_OPEN01",
+      "ACTION": "ADD_PROVISIONAL_FUNCTIONAL_CORRESPONDENCE_BETWEEN_RTE003_AND_OPEN_F101_001_WITH_EXPLICIT_NATIVE_EDGE_FALSE"
+    },
+    {
+      "DELTA_ID": "T4-C010-AD-008",
+      "TARGET": "SURVEY01",
+      "ACTION": "ADD_SEARCH_AUDIT_FIELDS_SHOWING_SURVEY_ACTIVITY_RECOVERED_BUT_ACCEPTANCE_RECORD_NOT_RECOVERED"
+    },
+    {
+      "DELTA_ID": "T4-C010-AD-009",
+      "TARGET": "CRS01_FORENSIC_MODEL",
+      "ACTION": "ADD_MASTER_EVENT_ROW_PROVENANCE_AND_KEEP_ALL_EXECUTION_ASLEFT_AND_LOCAL_LOADPATH_FIELDS_OPEN"
+    }
+  ],
+  "PROPOSED_ANNEX_DELTAS": [
+    {
+      "DATASET_ID": "T4-C010-A01-EVENT-SOURCE-ROW-PROVENANCE",
+      "ROW_GRAIN": "MASTER_EVENT_ROW_X_SOURCE_FILE_X_MIRROR_ROW_X_WORKFRONT_ROW",
+      "STATUS": "PROPOSED"
+    },
+    {
+      "DATASET_ID": "T4-C010-A02-RECORD-LABEL-PACKAGE-RESOLUTION",
+      "ROW_GRAIN": "OBJECT_X_EVENT_X_RECORD_LABEL_X_PACKAGE_CLASS_X_PACKAGE_INSTANCE_X_MEMBERSHIP",
+      "STATUS": "PROPOSED"
+    },
+    {
+      "DATASET_ID": "T4-C010-A03-UNDERGROUND-PERIOD-TO-SEGMENT-TRACE",
+      "ROW_GRAIN": "PERIOD_WORKFRONT_X_UG_CORRIDOR_X_SEGMENT_X_HIDDEN_WORK_RECORD",
+      "STATUS": "PROPOSED"
+    },
+    {
+      "DATASET_ID": "T4-C010-A04-ELECTRICAL-WORKFRONT-TO-ROUTE-TRACE",
+      "ROW_GRAIN": "MONTHLY_WORKFRONT_ROW_X_BUILDING_X_LOAD_X_CABLE_X_RACEWAY_X_ASBUILT",
+      "STATUS": "PROPOSED"
+    },
+    {
+      "DATASET_ID": "T4-C010-A05-ROUTE-OPENING-CURRENT-CONFIGURATION",
+      "ROW_GRAIN": "ROUTE_X_OPENING_X_HISTORICAL_USE_X_CURRENT_SURVEY_X_ACCEPTANCE",
+      "STATUS": "PROPOSED"
+    },
+    {
+      "DATASET_ID": "T4-C010-A06-SURVEY-SEARCH-AUDIT",
+      "ROW_GRAIN": "SURVEY_LAYER_X_SEARCH_TERM_X_ACTIVITY_EVIDENCE_X_ACCEPTANCE_RECORD",
+      "STATUS": "PROPOSED"
+    }
+  ],
+  "CREATED_OR_CHANGED_IDENTITIES": {
+    "NEW_CANONICAL_IDENTITIES": [],
+    "NEW_T4_PROVISIONAL_IDENTITIES": [],
+    "CANONICAL_IDENTITIES_CHANGED": [],
+    "IDENTITIES_RECONCILED_WITH_SOURCE_ROWS": [
+      "BHT-401-P-101",
+      "CRS01-RST-L2"
+    ],
+    "FUNCTIONAL_CORRESPONDENCE_PROPOSED_NOT_PROMOTED": [
+      {
+        "FROM": "RTE-003",
+        "TO": "OPEN-F101-001"
+      }
+    ]
+  },
+  "RELATIONSHIP_CHANGES": [
+    {
+      "ACTION": "PROPOSE_ADD",
+      "FROM": "BHT-401-P-101",
+      "RELATION": "HAS_MASTER_EVENT_ROW",
+      "TO": [
+        2417,
+        25358,
+        25587,
+        68192,
+        79353,
+        96785
+      ],
+      "STATUS": "PROVENANCE_RELATION"
+    },
+    {
+      "ACTION": "PROPOSE_ADD",
+      "FROM": "CRS01-RST-L2",
+      "RELATION": "HAS_MASTER_EVENT_ROW",
+      "TO": [
+        93119,
+        110824,
+        113364,
+        114112,
+        115764,
+        115915,
+        128758,
+        128759,
+        128783,
+        128808
+      ],
+      "STATUS": "PROVENANCE_RELATION"
+    },
+    {
+      "ACTION": "PROPOSE_ADD",
+      "FROM": "RTE-003",
+      "RELATION": "FUNCTIONALLY_CORRESPONDS_TO",
+      "TO": "OPEN-F101-001",
+      "STATUS": "PROPOSED_NOT_NATIVE_EDGE"
+    }
+  ],
+  "CONFIGURATION_FINDINGS": [
+    {
+      "ID": "T4-C010-CFG-001",
+      "SUBJECT": "P101",
+      "STATE": "PARENT_ASSET_EVENT_HISTORY_SOURCE_ROWS_CLOSED_EXACT_PACKAGE_AND_CHILD_ROUTE_OPEN"
+    },
+    {
+      "ID": "T4-C010-CFG-002",
+      "SUBJECT": "CRS01",
+      "STATE": "TEN_EVENT_SOURCE_ROWS_CLOSED_PHYSICAL_EXECUTION_AND_ASLEFT_OPEN"
+    },
+    {
+      "ID": "T4-C010-CFG-003",
+      "SUBJECT": "UNDERGROUND",
+      "STATE": "PERIOD_LEVEL_WORK_HISTORY_CLOSED_SEGMENT_FIELD_TRUTH_OPEN"
+    },
+    {
+      "ID": "T4-C010-CFG-004",
+      "SUBJECT": "E103_E104_E105",
+      "STATE": "GROUPED_WORKFRONT_HISTORY_CLOSED_BUILDING_SPECIFIC_ROUTE_OPEN"
+    },
+    {
+      "ID": "T4-C010-CFG-005",
+      "SUBJECT": "RTE003",
+      "STATE": "FUNCTION_AND_HISTORICAL_USE_CLOSED_CURRENT_METRIC_CONFIGURATION_OPEN"
+    },
+    {
+      "ID": "T4-C010-CFG-006",
+      "SUBJECT": "RTE007_RTE008",
+      "STATE": "FUNCTION_CLOSED_EXECUTED_SETTING_REMOVAL_PACKAGE_AND_CURRENT_ROUTE_OPEN"
+    },
+    {
+      "ID": "T4-C010-CFG-007",
+      "SUBJECT": "SURVEY01",
+      "STATE": "ACTIVITY_EXISTENCE_PARTIAL_CONTROL_TRUTH_OPEN"
+    }
+  ],
+  "VALIDATION_RESULTS": [
+    {
+      "ID": "T4-C010-VAL-001",
+      "SUBJECT": "P101_SIX_EVENT_COUNT",
+      "RESULT": "PASS_EXACT"
+    },
+    {
+      "ID": "T4-C010-VAL-002",
+      "SUBJECT": "CRS01_TEN_EVENT_COUNT",
+      "RESULT": "PASS_EXACT"
+    },
+    {
+      "ID": "T4-C010-VAL-003",
+      "SUBJECT": "CRS01_NINE_VERSUS_TEN_MIRROR_DIFFERENCE",
+      "RESULT": "RESOLVED"
+    },
+    {
+      "ID": "T4-C010-VAL-004",
+      "SUBJECT": "EVENT_ROW_TO_ANNEX_0012_SOURCE",
+      "RESULT": "PASS"
+    },
+    {
+      "ID": "T4-C010-VAL-005",
+      "SUBJECT": "GENERIC_LABEL_TO_EXACT_PACKAGE",
+      "RESULT": "FAIL_OPEN"
+    },
+    {
+      "ID": "T4-C010-VAL-006",
+      "SUBJECT": "BHT_FOUNDATION_ACCEPTANCE_RECORD_ID",
+      "RESULT": "FAIL_OPEN"
+    },
+    {
+      "ID": "T4-C010-VAL-007",
+      "SUBJECT": "UG01_TO_UG05_SEGMENT_SOURCE_REFERENCE",
+      "RESULT": "FAIL_OPEN"
+    },
+    {
+      "ID": "T4-C010-VAL-008",
+      "SUBJECT": "E103_E104_E105_CHILD_ROUTE_BINDING",
+      "RESULT": "FAIL_OPEN"
+    },
+    {
+      "ID": "T4-C010-VAL-009",
+      "SUBJECT": "RTE003_HISTORICAL_USE",
+      "RESULT": "PASS_AT_WORKFRONT_LEVEL"
+    },
+    {
+      "ID": "T4-C010-VAL-010",
+      "SUBJECT": "RTE003_CURRENT_METRIC_ROUTE",
+      "RESULT": "FAIL_OPEN"
+    },
+    {
+      "ID": "T4-C010-VAL-011",
+      "SUBJECT": "RTE007_RTE008_CURRENT_CONFIGURATION",
+      "RESULT": "FAIL_OPEN"
+    },
+    {
+      "ID": "T4-C010-VAL-012",
+      "SUBJECT": "SURV001_TO_SURV008_ACCEPTANCE",
+      "RESULT": "FAIL_OPEN"
+    },
+    {
+      "ID": "T4-C010-VAL-013",
+      "SUBJECT": "CRS01_M88217_EXECUTION_ATTACHMENT",
+      "RESULT": "FAIL_OPEN"
+    }
+  ],
+  "VERIFICATION_RESULTS": [
+    {
+      "ID": "T4-C010-VV-001",
+      "METHOD": "MASTER_EVENT_ROW_SOURCE_FILE_RECONCILIATION",
+      "RESULT": "PASS"
+    },
+    {
+      "ID": "T4-C010-VV-002",
+      "METHOD": "MASTER_EVENT_VERSUS_EQUIPMENT_EVENT_MIRROR",
+      "RESULT": "PASS_WITH_DOCUMENTED_CRS01_EXTRA_LOCKED_CANON_ROW"
+    },
+    {
+      "ID": "T4-C010-VV-003",
+      "METHOD": "GENERIC_RECORD_LABEL_VERSUS_EXACT_PACKAGE_ID",
+      "RESULT": "PASS_SEPARATION"
+    },
+    {
+      "ID": "T4-C010-VV-004",
+      "METHOD": "PARENT_ASSET_EVENT_VERSUS_CHILD_SCOPE",
+      "RESULT": "PASS_SEPARATION"
+    },
+    {
+      "ID": "T4-C010-VV-005",
+      "METHOD": "DATE_ALIGNMENT_VERSUS_IDENTITY_BINDING",
+      "RESULT": "PASS_SEPARATION"
+    },
+    {
+      "ID": "T4-C010-VV-006",
+      "METHOD": "EXECUTOR_VERSUS_PACKAGE_OWNERSHIP",
+      "RESULT": "PASS_SEPARATION"
+    },
+    {
+      "ID": "T4-C010-VV-007",
+      "METHOD": "WORKFRONT_ACTIVITY_VERSUS_OBJECT_EXECUTION",
+      "RESULT": "PASS_SEPARATION"
+    },
+    {
+      "ID": "T4-C010-VV-008",
+      "METHOD": "SURVEY_ACTIVITY_VERSUS_ACCEPTANCE",
+      "RESULT": "PASS_SEPARATION"
+    },
+    {
+      "ID": "T4-C010-VV-009",
+      "METHOD": "FUNCTIONAL_CORRESPONDENCE_VERSUS_NATIVE_EDGE",
+      "RESULT": "PASS_SEPARATION"
+    },
+    {
+      "ID": "T4-C010-VV-010",
+      "METHOD": "UG04_VERSUS_SPECIFIC_FEEDER_ROUTE",
+      "RESULT": "PASS_SEPARATION"
+    },
+    {
+      "ID": "T4-C010-VV-011",
+      "METHOD": "RESERVED_OPENING_VERSUS_INSTALLED_PENETRATION",
+      "RESULT": "PASS_SEPARATION"
+    },
+    {
+      "ID": "T4-C010-VV-012",
+      "METHOD": "M88217_STATUS_VERSUS_EXECUTION",
+      "RESULT": "PASS_SEPARATION"
+    },
+    {
+      "ID": "T4-C010-VV-013",
+      "METHOD": "REV4_PROMOTION_FILTER",
+      "RESULT": "PASS"
+    },
+    {
+      "ID": "T4-C010-VV-014",
+      "METHOD": "THREAD3_DEPENDENCY_CHECK",
+      "RESULT": "PASS"
+    },
+    {
+      "ID": "T4-C010-VV-015",
+      "METHOD": "UNSUPPORTED_NUMERIC_VALUE_CHECK",
+      "RESULT": "PASS"
+    }
+  ],
+  "ASSURANCE_RESULTS": {
+    "ASSURANCE_CLASS": "AS3",
+    "RESULT": "PASS_WITH_REVERSE_TRACE_GAPS_EXPLICITLY_PRESERVED",
+    "GENERATION_IS_NOT_ACCEPTANCE": true,
+    "MASTER_EVENT_SOURCE_TRACE": "PASS",
+    "EVENT_COUNT_RECONCILIATION": "PASS",
+    "PACKAGE_INSTANCE_DISCIPLINE": "PASS",
+    "WORKFRONT_GRANULARITY_DISCIPLINE": "PASS",
+    "SURVEY_TRUTH_DISCIPLINE": "PASS",
+    "ROUTE_CURRENT_CONFIGURATION_DISCIPLINE": "PASS",
+    "CRS01_FORENSIC_NON_INFERENCE": "PASS",
+    "REV4_QUARANTINE": "PASS",
+    "THREAD3_RETIREMENT": "PASS",
+    "NO_UNSUPPORTED_NUMERIC_CLOSURE": "PASS"
+  },
+  "CONFLICTS": [
+    {
+      "CONFLICT_ID": "T4-C010-CF-001",
+      "SUBJECT": "CRS01_MASTER_EVENT_COUNT_VERSUS_EQUIPMENT_EVENT_COUNT",
+      "VALUE_A": 10,
+      "VALUE_B": 9,
+      "DISPOSITION": "RESOLVED",
+      "RESOLUTION": "MASTER_TIMELINE_HAS_ONE_ADDITIONAL_LOCKED_CANON_2031_04_10_ROUTINE_PHOTOGRAPHS_ROW"
+    },
+    {
+      "CONFLICT_ID": "T4-C010-CF-002",
+      "SUBJECT": "GENERIC_PACKAGE_LABEL_VERSUS_HISTORICAL_PACKAGE_ID",
+      "DISPOSITION": "KEEP_SEPARATE"
+    },
+    {
+      "CONFLICT_ID": "T4-C010-CF-003",
+      "SUBJECT": "2026_UNDERGROUND_WORK_HISTORY_VERSUS_UG_INSTANCE_EVENT_ROWS",
+      "DISPOSITION": "KEEP_PERIOD_LEVEL_HISTORY_AND_OBJECT_LEVEL_FIELD_TRUTH_SEPARATE"
+    },
+    {
+      "CONFLICT_ID": "T4-C010-CF-004",
+      "SUBJECT": "E101_TO_E105_GROUPED_WORKFRONT_VERSUS_E103_E104_E105_INDIVIDUAL_ASSIGNMENT",
+      "DISPOSITION": "KEEP_BUILDING_ASSIGNMENT_OPEN"
+    },
+    {
+      "CONFLICT_ID": "T4-C010-CF-005",
+      "SUBJECT": "RTE003_OPENF101001_FUNCTIONAL_CORRESPONDENCE_VERSUS_NATIVE_GRAPH_EDGE",
+      "DISPOSITION": "FUNCTIONAL_CORRESPONDENCE_ONLY"
+    }
+  ],
+  "OPEN_ITEMS": [
+    {
+      "ID": "T4-C010-OI-001",
+      "SUBJECT": "P101_EXACT_IWP_ID",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "ID": "T4-C010-OI-002",
+      "SUBJECT": "P101_EXACT_MC_PACKAGE_ID",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "ID": "T4-C010-OI-003",
+      "SUBJECT": "P101_EXACT_TURNOVER_DOSSIER_ID",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "ID": "T4-C010-OI-004",
+      "SUBJECT": "P101_CHILD_ELECTRICAL_ROUTE_MEMBERSHIP",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "ID": "T4-C010-OI-005",
+      "SUBJECT": "CRS01_EXACT_INITIAL_IWP_ID",
+      "PRIORITY": "CRITICAL_FORENSIC"
+    },
+    {
+      "ID": "T4-C010-OI-006",
+      "SUBJECT": "CRS01_EXECUTED_ITP_SUP_01_AND_ITP_SUP_02",
+      "PRIORITY": "CRITICAL_FORENSIC"
+    },
+    {
+      "ID": "T4-C010-OI-007",
+      "SUBJECT": "CRS01_LOCAL_HOST_CONNECTION_ANCHOR_EMBED",
+      "PRIORITY": "CRITICAL_FORENSIC"
+    },
+    {
+      "ID": "T4-C010-OI-008",
+      "SUBJECT": "M88217_EXECUTION_ATTACHMENT_AND_REPOSITORY_TRANSACTION",
+      "PRIORITY": "CRITICAL_FORENSIC"
+    },
+    {
+      "ID": "T4-C010-OI-009",
+      "SUBJECT": "H101_BHT_FOUNDATION_ACCEPTANCE_RECORD_IDS",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "ID": "T4-C010-OI-010",
+      "SUBJECT": "H101_SOLEPLATE_ALIGNMENT_GROUT_RECORD_IDS",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "ID": "T4-C010-OI-011",
+      "SUBJECT": "H101_NOZZLE_INTERFACE_SURVEY_RECORD_IDS",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "ID": "T4-C010-OI-012",
+      "SUBJECT": "UG01_TO_UG05_SEGMENT_NODE_CROSSING_IDENTITIES",
+      "PRIORITY": "CRITICAL_HIDDEN_WORK"
+    },
+    {
+      "ID": "T4-C010-OI-013",
+      "SUBJECT": "UG01_TO_UG05_TEST_PREBACKFILL_REDLINE_ASBUILT_RECORD_IDS",
+      "PRIORITY": "CRITICAL_HIDDEN_WORK"
+    },
+    {
+      "ID": "T4-C010-OI-014",
+      "SUBJECT": "E103_E104_E105_BUILDING_SPECIFIC_CABLE_RACEWAY_ASSIGNMENT",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "ID": "T4-C010-OI-015",
+      "SUBJECT": "RTE003_CURRENT_SURVEY_OPENING_RUNWAY_HOOKPATH_ACCEPTANCE",
+      "PRIORITY": "CRITICAL_LIFT"
+    },
+    {
+      "ID": "T4-C010-OI-016",
+      "SUBJECT": "RTE007_CURRENT_SETTING_REMOVAL_ROUTE_PACKAGE_AND_SURVEY",
+      "PRIORITY": "MAINTAINABILITY"
+    },
+    {
+      "ID": "T4-C010-OI-017",
+      "SUBJECT": "RTE008_CURRENT_PUMP_REMOVAL_ROUTE_PACKAGE_AND_SURVEY",
+      "PRIORITY": "MAINTAINABILITY"
+    },
+    {
+      "ID": "T4-C010-OI-018",
+      "SUBJECT": "SURV001_TO_SURV008_ACCEPTANCE_RECORDS",
+      "PRIORITY": "CRITICAL_CONFIGURATION"
+    },
+    {
+      "ID": "T4-C010-OI-019",
+      "SUBJECT": "PLANTWIDE_HISTORICAL_CWP_INDEX",
+      "PRIORITY": "HIGH"
+    },
+    {
+      "ID": "T4-C010-OI-020",
+      "SUBJECT": "PLANTWIDE_OBJECT_TO_IWP_QA_MC_TOV_MEMBERSHIP_INDEX",
+      "PRIORITY": "HIGH"
+    }
+  ],
+  "UNCERTAINTIES": [
+    {
+      "ID": "T4-C010-U-001",
+      "SUBJECT": "EXACT_HISTORICAL_PACKAGE_INSTANCE_IDENTITY",
+      "STATE": "OPEN"
+    },
+    {
+      "ID": "T4-C010-U-002",
+      "SUBJECT": "UNDERGROUND_WORKFRONT_ACTIVITY_TO_UG_SEGMENT_BINDING",
+      "STATE": "OPEN"
+    },
+    {
+      "ID": "T4-C010-U-003",
+      "SUBJECT": "GROUPED_ELECTRICAL_WORKFRONT_TO_INDIVIDUAL_BUILDING_BINDING",
+      "STATE": "OPEN"
+    },
+    {
+      "ID": "T4-C010-U-004",
+      "SUBJECT": "RTE003_OPENF101001_EXPLICIT_NATIVE_RELATION",
+      "STATE": "OPEN"
+    },
+    {
+      "ID": "T4-C010-U-005",
+      "SUBJECT": "CURRENT_ROUTE_METRIC_CONFIGURATION",
+      "STATE": "OPEN"
+    },
+    {
+      "ID": "T4-C010-U-006",
+      "SUBJECT": "SURVEY_CONTROL_AND_ACCEPTANCE",
+      "STATE": "OPEN"
+    },
+    {
+      "ID": "T4-C010-U-007",
+      "SUBJECT": "CRS01_APRIL11_PHYSICAL_STATE",
+      "STATE": "CRITICAL_OPEN"
+    }
+  ],
+  "BACKWARD_PROPAGATION_RECOMMENDATIONS": [
+    {
+      "ID": "T4-C010-BP-001",
+      "TARGET": "MASTER_EVENT_SCHEMA",
+      "ACTION": "PERSIST_SOURCE_ANNEX_SOURCE_ROW_SOURCE_FILENAME_AND_MIRROR_RECORD_POINTER"
+    },
+    {
+      "ID": "T4-C010-BP-002",
+      "TARGET": "PACKAGE_MODEL",
+      "ACTION": "SEPARATE_RECORD_CLASS_PACKAGE_CLASS_PACKAGE_INSTANCE_AND_OBJECT_MEMBERSHIP"
+    },
+    {
+      "ID": "T4-C010-BP-003",
+      "TARGET": "SITE_WORK_HISTORY",
+      "ACTION": "ADD_EXACT_PACKAGE_ID_AND_REPOSITORY_TRANSACTION_FIELDS_WHEN_EVIDENCE_EXISTS"
+    },
+    {
+      "ID": "T4-C010-BP-004",
+      "TARGET": "UNDERGROUND_MODEL",
+      "ACTION": "ADD_PERIOD_HISTORY_TO_SEGMENT_SOURCE_REFERENCE_BRIDGE"
+    },
+    {
+      "ID": "T4-C010-BP-005",
+      "TARGET": "ELECTRICAL_MODEL",
+      "ACTION": "ADD_GROUPED_WORKFRONT_TO_BUILDING_ROOM_ROUTE_ALLOCATION_BRIDGE"
+    },
+    {
+      "ID": "T4-C010-BP-006",
+      "TARGET": "ROUTE02_OPEN01",
+      "ACTION": "REQUIRE_EXPLICIT_RELATIONSHIP_EVIDENCE_BEFORE_FUNCTIONAL_CORRESPONDENCE_IS_PROMOTED_TO_NATIVE_EDGE"
+    },
+    {
+      "ID": "T4-C010-BP-007",
+      "TARGET": "SURVEY01",
+      "ACTION": "ADD_ACCEPTANCE_RECORD_ID_REPOSITORY_REVISION_UNCERTAINTY_AND_OBJECT_BINDING_FIELDS"
+    },
+    {
+      "ID": "T4-C010-BP-008",
+      "TARGET": "CRS01_FORENSIC_MODEL",
+      "ACTION": "ADD_EXACT_MASTER_EVENT_ROW_POINTERS_WHILE_KEEPING_M88217_EXECUTION_AND_ASLEFT_OPEN"
+    }
+  ],
+  "CROSS_BOUNDARY_DEPENDENCIES": [
+    {
+      "ID": "BC-C010-T1-T4-PACKAGE-INDEX",
+      "STATUS": "BLOCKING",
+      "REQUIRED_INPUTS": [
+        "CONTRACTOR_CWP_INDEX",
+        "CONTRACTOR_IWP_INDEX",
+        "EXECUTED_ITP_INDEX",
+        "QA_RELEASE_INDEX",
+        "MC_MEMBERSHIP_INDEX",
+        "TURNOVER_DOSSIER_INDEX",
+        "REPOSITORY_TRANSACTION_LOG"
+      ]
+    },
+    {
+      "ID": "BC-C010-T1-T4-ELECTRICAL-ROUTE",
+      "STATUS": "BLOCKING",
+      "REQUIRED_INPUTS": [
+        "BHT401_P101_FEEDER_ID",
+        "CABLE_ID",
+        "E103_E104_E105_BUILDING_ASSIGNMENT",
+        "RACEWAY_ID",
+        "DUCTBANK_SEGMENT_ID",
+        "PENETRATION_ASSIGNMENT",
+        "GROUND_BOND_ASSIGNMENT",
+        "TEST_RECORD",
+        "ASBUILT_ROUTE"
+      ]
+    },
+    {
+      "ID": "BC-C010-T1-T4-SURVEY-TRUTH",
+      "STATUS": "BLOCKING",
+      "REQUIRED_INPUTS": [
+        "DATUM",
+        "BENCHMARK",
+        "CONTROL_MONUMENT_REGISTER",
+        "TRANSFORM_AND_RESIDUALS",
+        "CALIBRATION",
+        "ASBUILT_ACCEPTANCE",
+        "SUBSURFACE_RECONCILIATION",
+        "DEFORMATION_MONITORING"
+      ]
+    },
+    {
+      "ID": "BC-C010-T4-T5-REPOSITORY-CUSTODY",
+      "STATUS": "ACTIVE",
+      "THREAD4_NEEDS": [
+        "PACKAGE_REPOSITORY_PATH",
+        "ATTACHMENT_ID",
+        "TRANSACTION_ID",
+        "SIGNED_EXECUTION_RECORD",
+        "TURNOVER_MEMBERSHIP"
+      ]
+    },
+    {
+      "ID": "BC-C010-THREAD3",
+      "STATUS": "NONE",
+      "THREAD3_DEPENDENCY": false
+    }
+  ],
+  "IDENTITY_RECONCILIATION_REQUESTS": [
+    {
+      "ID": "T4-C010-IDR-001",
+      "SUBJECT": "ANNEX-0012_EVENT_ROW_PROVENANCE",
+      "REQUEST": "PROMOTE_ROW_PROVENANCE_RELATIONSHIPS_WITHOUT_PROMOTING_WORKING_EVENT_CONTENT_TO_CANON"
+    },
+    {
+      "ID": "T4-C010-IDR-002",
+      "SUBJECT": "CRS01_TEN_VERSUS_NINE_COUNT",
+      "REQUEST": "RECORD_AS_RESOLVED_SOURCE_LAYER_DIFFERENCE_NOT_A_DATA_LOSS_CONFLICT"
+    },
+    {
+      "ID": "T4-C010-IDR-003",
+      "SUBJECT": "GENERIC_IWP_MC_TOV_LABELS",
+      "REQUEST": "DO_NOT_ALIAS_TO_HISTORICAL_PACKAGE_INSTANCE_IDS"
+    },
+    {
+      "ID": "T4-C010-IDR-004",
+      "SUBJECT": "UG01_TO_UG05",
+      "REQUEST": "DO_NOT_PROMOTE_PERIOD_LEVEL_UNDERGROUND_HISTORY_TO_SEGMENT_IDENTITY"
+    },
+    {
+      "ID": "T4-C010-IDR-005",
+      "SUBJECT": "E103_E104_E105",
+      "REQUEST": "DO_NOT_PARTITION_GROUPED_E101_TO_E105_LEDGER_ROWS_WITHOUT_NATIVE_ASSIGNMENT"
+    },
+    {
+      "ID": "T4-C010-IDR-006",
+      "SUBJECT": "RTE003_OPENF101001",
+      "REQUEST": "KEEP_AS_FUNCTIONAL_CORRESPONDENCE_ONLY"
+    },
+    {
+      "ID": "T4-C010-IDR-007",
+      "SUBJECT": "M88217",
+      "REQUEST": "KEEP_EXECUTION_AND_ASLEFT_STATE_OPEN_DESPITE_CLOSED_APPROVED_HEADER"
+    }
+  ],
+  "NEXT_INVESTIGATION_RECOMMENDATIONS": [
+    {
+      "ID": "T4-C010-NI-001",
+      "SUBJECT": "REPOSITORY_NATIVE_PACKAGE_LOOKUP",
+      "TARGET": [
+        "DOCUMENT_MANAGEMENT_INDEX",
+        "TURNOVER_DATABASE_EXPORT",
+        "CONSTRUCTION_COMPLETIONS_DATABASE",
+        "WORKFACE_PLANNING_DATABASE",
+        "EXECUTED_ITP_REGISTER",
+        "PACKAGE_ATTACHMENT_TABLE",
+        "REPOSITORY_TRANSACTION_LOG"
+      ],
+      "ASSIGNMENT_AUTHORITY": "THREAD_1_ONLY"
+    },
+    {
+      "ID": "T4-C010-NI-002",
+      "SUBJECT": "H101_BHT_FOUNDATION_ACCEPTANCE",
+      "TARGET": [
+        "PUMP_FOUNDATION_ID_REGISTER",
+        "FOUNDATION_ACCEPTANCE_CERTIFICATE",
+        "SOLEPLATE_SURVEY",
+        "ALIGNMENT_REPORT",
+        "GROUT_RECORD",
+        "NOZZLE_INTERFACE_SURVEY",
+        "PACKAGE_SCOPE_MEMBERSHIP"
+      ],
+      "ASSIGNMENT_AUTHORITY": "THREAD_1_ONLY"
+    },
+    {
+      "ID": "T4-C010-NI-003",
+      "SUBJECT": "UNDERGROUND_HIDDEN_WORK_REPOSITORY",
+      "TARGET": [
+        "UTILITY_SEGMENT_REGISTER",
+        "MANHOLE_HANDHOLE_REGISTER",
+        "CROSSING_REGISTER",
+        "TEST_PACKAGE_INDEX",
+        "PREBACKFILL_SURVEY_INDEX",
+        "CONCEALMENT_RELEASE",
+        "REDLINE_REGISTER",
+        "BURIED_ASBUILT_DRAWING_INDEX",
+        "MC_TURNOVER_MEMBERSHIP"
+      ],
+      "ASSIGNMENT_AUTHORITY": "THREAD_1_ONLY"
+    },
+    {
+      "ID": "T4-C010-NI-004",
+      "SUBJECT": "E103_E104_E105_CHILD_ROUTE_ALLOCATION",
+      "TARGET": [
+        "CABLE_SCHEDULE",
+        "RACEWAY_SCHEDULE",
+        "DUCTBANK_ASSIGNMENT",
+        "ROOM_ROUTE_DRAWINGS",
+        "PENETRATION_ASSIGNMENT",
+        "FIRESTOP_REGISTER",
+        "GROUND_BOND_SCHEDULE",
+        "TEST_INDEX",
+        "ASBUILT_ROUTE_DRAWING"
+      ],
+      "ASSIGNMENT_AUTHORITY": "THREAD_1_ONLY"
+    },
+    {
+      "ID": "T4-C010-NI-005",
+      "SUBJECT": "RTE003_CURRENT_CONFIGURATION",
+      "TARGET": [
+        "CRITICAL_LIFT_PACKAGE_INDEX",
+        "METROLOGY_RECORD_INDEX",
+        "OBSTRUCTION_WALKDOWN",
+        "CRANE_RUNWAY_ASBUILT",
+        "RAIL_SURVEY",
+        "HOOK_PATH",
+        "OPEN_F101_001_ASBUILT",
+        "CURRENT_ROUTE_ACCEPTANCE"
+      ],
+      "ASSIGNMENT_AUTHORITY": "THREAD_1_ONLY"
+    },
+    {
+      "ID": "T4-C010-NI-006",
+      "SUBJECT": "RTE007_RTE008_SETTING_AND_REMOVAL_HISTORY",
+      "TARGET": [
+        "EQUIPMENT_SETTING_IWP",
+        "RIGGING_PLAN",
+        "LAYDOWN_PLAN",
+        "ORIGINAL_ALIGNMENT_SURVEY",
+        "CURRENT_OBSTRUCTION_WALKDOWN",
+        "MAINTENANCE_REMOVAL_PLAN",
+        "CURRENT_ROUTE_SURVEY",
+        "REUSE_ACCEPTANCE"
+      ],
+      "ASSIGNMENT_AUTHORITY": "THREAD_1_ONLY"
+    },
+    {
+      "ID": "T4-C010-NI-007",
+      "SUBJECT": "SURVEY_ACCEPTANCE_REPOSITORY",
+      "TARGET": [
+        "PROJECT_SURVEY_CONTROL_MANUAL",
+        "DATUM_DEFINITION",
+        "BENCHMARK_CERTIFICATE",
+        "CONTROL_MONUMENT_REGISTER",
+        "NETWORK_ADJUSTMENT",
+        "TRANSFORMATION_REPORT",
+        "INSTRUMENT_CALIBRATION_LOG",
+        "ASBUILT_ACCEPTANCE_REGISTER",
+        "SUBSURFACE_UTILITY_SURVEY",
+        "DEFORMATION_MONITORING_SERIES"
+      ],
+      "ASSIGNMENT_AUTHORITY": "THREAD_1_ONLY"
+    },
+    {
+      "ID": "T4-C010-NI-008",
+      "SUBJECT": "M88217_TRANSACTION_LEVEL_TRACE",
+      "TARGET": [
+        "WORK_MANAGEMENT_AUDIT_LOG",
+        "ATTACHMENT_MANIFEST",
+        "DOCUMENT_CONTROL_TRANSACTION_LOG",
+        "ELECTRONIC_SIGNATURE_LOG",
+        "PERFORMER_SIGNON",
+        "SUPERVISOR_RELEASE",
+        "QC_WITNESS",
+        "AS_FOUND",
+        "AS_LEFT",
+        "PARTS_ISSUE",
+        "TORQUE_OR_TENSION_RECORD",
+        "CONFIGURATION_RESTORATION"
+      ],
+      "ASSIGNMENT_AUTHORITY": "THREAD_1_ONLY"
+    }
+  ],
+  "CONTENT_MANIFEST": {
+    "MASTER_EVENT_TIMELINE_SOURCE_ANNEX_RECONCILED": 1,
+    "P101_MASTER_EVENT_ROWS_REVERSE_TRACED": 6,
+    "CRS01_MASTER_EVENT_ROWS_REVERSE_TRACED": 10,
+    "P101_EQUIPMENT_EVENT_MIRROR_ROWS_RECONCILED": 6,
+    "CRS01_EQUIPMENT_EVENT_MIRROR_ROWS_RECONCILED": 9,
+    "CRS01_EXTRA_LOCKED_CANON_MASTER_ROWS_IDENTIFIED": 1,
+    "P101_DETAILED_SITE_WORK_ROWS_RECONCILED": 5,
+    "CRS01_DETAILED_SITE_WORK_ROWS_RECONCILED": 5,
+    "NATIVE_IWP_REGISTERS_REVIEWED": 2,
+    "NATIVE_CWP_REGISTERS_RECOVERED": 0,
+    "SUPPORT_ITP_REQUIREMENT_HANDLES_REUSED": 2,
+    "PACKAGE_CLASS_HANDLES_REUSED": 4,
+    "UNDERGROUND_CORRIDORS_REVERSE_TRACED": 5,
+    "SURVEY_LAYERS_SEARCHED": 8,
+    "TARGET_ELECTRICAL_BUILDINGS_REVIEWED": 3,
+    "ROUTES_REVERSE_TRACED": 3,
+    "RTE003_FUNCTIONAL_OPENING_CORRESPONDENCE_IDENTIFIED": 1,
+    "EXACT_BHT_FOUNDATION_ACCEPTANCE_RECORD_IDS_RECOVERED": 0,
+    "EXACT_UG_SEGMENT_HIDDEN_WORK_CHAINS_RECOVERED": 0,
+    "EXACT_BHT401_P101_ELECTRICAL_CHILD_ROUTE_CHAINS_RECOVERED": 0,
+    "EXACT_E103_E104_E105_ROUTE_CHAINS_RECOVERED": 0,
+    "EXACT_RTE003_CURRENT_METRIC_ACCEPTANCE_CHAINS_RECOVERED": 0,
+    "EXACT_RTE007_EXECUTED_SETTING_OR_REMOVAL_PACKAGES_RECOVERED": 0,
+    "EXACT_RTE008_EXECUTED_SETTING_OR_REMOVAL_PACKAGES_RECOVERED": 0,
+    "ACCEPTED_SURVEY_TRUTH_RECORDS_RECOVERED": 0,
+    "M88217_EXECUTION_ATTACHMENTS_RECOVERED": 0,
+    "QUALIFYING_CRS01_PHYSICAL_CLOSURE_RECORDS_RECOVERED": 0,
+    "NEW_IDENTITIES_CREATED": 0,
+    "GLOBAL_CANON_WRITES": 0,
+    "REV4_PROMOTIONS": 0,
+    "THREAD3_DEPENDENCIES_CREATED": 0,
+    "UNSUPPORTED_NUMERIC_VALUES_CREATED": 0,
+    "NEW_ENGINEERING_FINDINGS": 15,
+    "PROPOSED_ATLAS_DELTAS": 9,
+    "PROPOSED_ANNEX_DELTAS": 6,
+    "VALIDATION_RESULTS": 13,
+    "VERIFICATION_RESULTS": 15,
+    "CONFLICTS_REGISTERED": 5,
+    "OPEN_ITEMS": 20,
+    "UNCERTAINTIES": 7,
+    "BACKWARD_PROPAGATION_RECOMMENDATIONS": 8,
+    "CROSS_BOUNDARY_DEPENDENCIES": 5,
+    "IDENTITY_RECONCILIATION_REQUESTS": 7,
+    "NEXT_INVESTIGATION_RECOMMENDATIONS": 8
+  },
+  "RETURN_COMPLETENESS_STATUS": {
+    "STATUS": "COMPLETE_TO_CYCLE_010_REVERSE_TRACE_EVIDENCE_LIMIT",
+    "OBJECTIVE_1_P101_AND_CRS01_EVENT_ROW_REVERSE_TRACE": "COMPLETE",
+    "OBJECTIVE_2_GENERIC_RECORD_LABEL_TO_EXACT_PACKAGE_SEARCH": "EXECUTED_EXACT_PACKAGE_IDS_OPEN",
+    "OBJECTIVE_3_DATE_WORKFRONT_EXECUTOR_RECORDCLASS_PACKAGE_INDEX_SEARCH": "EXECUTED_NATIVE_PACKAGE_INDEX_COVERAGE_INSUFFICIENT_FOR_TARGET_CLOSURE",
+    "OBJECTIVE_4_H101_FOUNDATION_ACCEPTANCE_TRACE": "PARTIAL_WORKFRONT_AND_EVIDENCE_CLASS_CLOSED_EXACT_RECORD_IDS_OPEN",
+    "OBJECTIVE_5_2026_UNDERGROUND_TRACE": "PARTIAL_PERIOD_HISTORY_CLOSED_SEGMENT_HIDDEN_WORK_SOURCE_REFERENCES_OPEN",
+    "OBJECTIVE_6_E103_E104_E105_TRACE": "PARTIAL_GROUPED_WORKFRONT_ROWS_CLOSED_CHILD_ROUTE_IDENTITIES_OPEN",
+    "OBJECTIVE_7_RTE003_TRACE": "PARTIAL_HISTORICAL_ACTIVITY_AND_FUNCTIONAL_OPENING_CORRESPONDENCE_CLOSED_CURRENT_CONFIGURATION_OPEN",
+    "OBJECTIVE_8_RTE007_RTE008_TRACE": "PARTIAL_FUNCTION_CLOSED_EXECUTED_SETTING_REMOVAL_PACKAGE_AND_CURRENT_CONFIGURATION_OPEN",
+    "OBJECTIVE_9_SURVEY_ACCEPTANCE_SEARCH": "COMPLETE_SEARCH_ALL_SURV_LAYERS_REMAIN_OPEN",
+    "OBJECTIVE_10_CRS01_M88217_ADVANCE": "NO_ADVANCEMENT_NO_QUALIFYING_EXECUTION_EVIDENCE_RECOVERED",
+    "GENERIC_EVENT_RECORD_LABEL_IS_NOT_EXACT_PACKAGE_ID_ENFORCED": true,
+    "PARENT_ASSET_EVENT_IS_NOT_CHILD_SCOPE_MEMBERSHIP_ENFORCED": true,
+    "WORKFRONT_ACTIVITY_IS_NOT_OBJECT_SPECIFIC_EXECUTION_ENFORCED": true,
+    "DATE_ALIGNMENT_ALONE_IS_NOT_IDENTITY_BINDING_ENFORCED": true,
+    "EXECUTOR_NAME_ALONE_IS_NOT_PACKAGE_OWNERSHIP_ENFORCED": true,
+    "SURVEY_GENERATION_IS_NOT_ACCEPTANCE_ENFORCED": true,
+    "FUNCTIONAL_CORRESPONDENCE_IS_NOT_EXPLICIT_NATIVE_EDGE_ENFORCED": true,
+    "UG04_IS_NOT_SPECIFIC_FEEDER_ROUTE_ENFORCED": true,
+    "RESERVED_OPENING_IS_NOT_INSTALLED_PENETRATION_ENFORCED": true,
+    "NO_M88217_ADMIN_STATUS_EQUALS_PHYSICAL_EXECUTION_ENFORCED": true,
+    "NO_UNSUPPORTED_STRUCTURAL_CRANE_SURVEY_OR_ROUTE_VALUES_ENFORCED": true,
+    "NO_REV4_PROMOTION_ENFORCED": true,
+    "NO_THREAD3_DEPENDENCY_ENFORCED": true,
+    "ALL_MATERIAL_GAPS_REGISTERED": true,
+    "AS3_LOCAL_ASSURANCE_COMPLETED": true,
+    "GLOBAL_PROJECT_COMPLETION_DECLARED": false,
+    "NEXT_MAJOR_CYCLE_SELF_ASSIGNED": false,
+    "TERMINAL_STATE": "W_RETURN_READY"
+  }
+}
