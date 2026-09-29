@@ -1,0 +1,20 @@
+[
+  {
+    "cycle": "C010",
+    "staging": "OFG-EA-C010-INTEGRATED-STAGING-R1",
+    "state": "COMPLETE",
+    "completion_pct": 51,
+    "plausible": [
+      48,
+      54
+    ],
+    "major": [
+      "20 Annex handles reverse-traced to five parent document families",
+      "ANNEX-0012 master-event row provenance for P101 and CRS01",
+      "ANNEX-0536 DT05 provenance and CRS01 lifecycle edge bindings",
+      "PHOTO-BHT401-0410 and EVID-BHT401-RSTL2 repository chains",
+      "source-layer distinction for CWS 8E vs 6 physical",
+      "field-truth and electrical exact identities remain open"
+    ]
+  }
+]

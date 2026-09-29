@@ -1,0 +1,51 @@
+{
+  "schema": "OFG_EA_MIGRATION_BUNDLE_README_V2_1",
+  "purpose": "Raw current working state, raw reference data, worker-return provenance archive, deterministic retrieval/indexing/ingest/transport programs, and successor-thread rehydration support.",
+  "authoritative_state_cut": "C010_INTEGRATED_C011_ACTIVE",
+  "configuration_cut": "2031-04-19",
+  "directories": {
+    "state": "Normalized current master/reference state and active-cycle control data",
+    "reference_raw": "Materialized Rev3/RevW3 reference data and Rev3 V00-V18 volumes",
+    "working_raw": "Materialized worker return packets and normalized package-name copies",
+    "programs": "Codec, index, retrieval, rehydration, verification and bootstrap programs",
+    "manifests": "Content-addressed bundle and worker-return manifests",
+    "transport": "Generated MRE2 transport envelopes for successor threads"
+  },
+  "bootstrap": "bash programs/bootstrap.sh",
+  "retrieval_examples": [
+    "python programs/ofg_retrieve.py state --section working",
+    "python programs/ofg_retrieve.py conflicts --state OPEN",
+    "python programs/ofg_retrieve.py open --contains M88217",
+    "python programs/ofg_retrieve.py query CRS01 --limit 25",
+    "python programs/ofg_retrieve.py neighbors DT-BHT-006",
+    "python programs/ofg_retrieve.py scan BHT-401-P-101 2030-09-22 --path-contains DATA02",
+    "python programs/ofg_rehydrate.py --thread 1 --generation 2 --output state/T1-G2_REHYDRATION_CAPSULE.json"
+  ],
+  "large_reference_policy": {
+    "default_index": "metadata + state + worker returns + compact reference CSV/JSON",
+    "full_row_index": "python programs/ofg_index.py --include-large --docs",
+    "reason": "Avoid requiring full 143MB site-work history and other large datasets in RAM or conversational context."
+  },
+  "known_reference_gap": "Rev3 DATA07 SQLite was historically referenced but is not present as a raw source file; the bundle includes a newly generated local SQLite retrieval index and preserves this distinction in state/known_raw_gaps.json.",
+  "programs": {
+    "ofg_index.py": "Build local SQLite/FTS catalog; --include-large and --docs enable deep indexing",
+    "ofg_retrieve.py": "Bounded indexed retrieval plus streaming raw scan",
+    "ofg_rehydrate.py": "Generate role-bounded successor thread capsules",
+    "ofg_codec.py": "MRE2 canonical JSON/hash/envelope/chunk functions",
+    "ofg_transport.py": "Generate ordered MRE2 activation transport shards",
+    "ofg_ingest.py": "Idempotent raw worker-return ingestion with duplicate/hash quarantine; no semantic merge",
+    "ofg_verify.py": "Verify bundle file hashes against manifest",
+    "bootstrap.sh": "Rebuild default index and successor capsules"
+  },
+  "raw_working_scope": {
+    "normalized_master_state": "state/",
+    "worker_return_archive": "working_raw/worker_returns_archive/",
+    "normalized_worker_returns": "working_raw/by_package/",
+    "known_raw_gaps": "state/known_raw_gaps.json"
+  },
+  "raw_reference_scope": {
+    "core_rev3_revW3": "reference_raw/",
+    "rev3_volumes": "reference_raw/rev3_volumes/",
+    "organizational_working_history": "reference_raw/organizational_working_history/"
+  }
+}

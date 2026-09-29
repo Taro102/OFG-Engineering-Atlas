@@ -1,0 +1,43 @@
+{
+  "schema": "OFG_EA_MRE2_TRANSPORT_MANIFEST_V2",
+  "thread": 4,
+  "generation": 2,
+  "master_epoch": 2,
+  "shards": [
+    {
+      "shard_id": "T4-G2-CTRL-01",
+      "path": "T4-G2-CTRL-01.json",
+      "sha256": "92b6ba59a179f309bdacf2b8c0d3cf6c19dcb29d7d2722f961b9ae02eb27f95b",
+      "payload_hash": "2ee2e9e9fdee6574affaa945f0e7b4072ee5a76932e34e48eaf4541fab4d6cbf",
+      "sequence": 1
+    },
+    {
+      "shard_id": "T4-G2-ENCODING-02",
+      "path": "T4-G2-ENCODING-02.json",
+      "sha256": "571cb1a22ed2cbe7d23b456ca03ad2c4840053d92b63f6dfb4e28101e4bda11f",
+      "payload_hash": "330864ac30808fad5f5bd09f780c217d9c1c1d3440ca78e54394edf5f7f6e229",
+      "sequence": 2
+    },
+    {
+      "shard_id": "T4-G2-CAPSULE-03",
+      "path": "T4-G2-CAPSULE-03.json",
+      "sha256": "60b85fee198c497f136eb23a03198e5249226ed9565b9cbb9fba541469309e7b",
+      "payload_hash": "d0a288d4cc07c4969ce3a80e4967fbe10b1fa2f041616bf79d9e8742aecf7de3",
+      "sequence": 3
+    },
+    {
+      "shard_id": "T4-G2-ACTIVE-04",
+      "path": "T4-G2-ACTIVE-04.json",
+      "sha256": "36500dbf9821f619f7b3d1efa9cdffc6b17290f4d71f3dee394ceee488018acf",
+      "payload_hash": "dced957d985eb7d17074d38690d3f040cc539489ff49075b960d9c907df7ba7c",
+      "sequence": 4
+    },
+    {
+      "shard_id": "T4-G2-DISPATCH-05",
+      "path": "T4-G2-DISPATCH-05.json",
+      "sha256": "0bf09d17095fa5ae485d043f110d4e3adf2d598f559eb2c3f57a296923fe16b3",
+      "payload_hash": "7b92201735fef04aee4f62f4d57c157152fba9c9d88b14384003c7b8dd2429a4",
+      "sequence": 5
+    }
+  ]
+}

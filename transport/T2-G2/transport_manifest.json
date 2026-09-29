@@ -1,0 +1,43 @@
+{
+  "schema": "OFG_EA_MRE2_TRANSPORT_MANIFEST_V2",
+  "thread": 2,
+  "generation": 2,
+  "master_epoch": 2,
+  "shards": [
+    {
+      "shard_id": "T2-G2-CTRL-01",
+      "path": "T2-G2-CTRL-01.json",
+      "sha256": "a544416d6ba695829983382d5bd4906173ddc62918a5adbf94c54e0b4649545d",
+      "payload_hash": "2ee2e9e9fdee6574affaa945f0e7b4072ee5a76932e34e48eaf4541fab4d6cbf",
+      "sequence": 1
+    },
+    {
+      "shard_id": "T2-G2-ENCODING-02",
+      "path": "T2-G2-ENCODING-02.json",
+      "sha256": "228907327e9c945f72598d191eba00611cb4720e44d10cd6e3a24345d7d0856b",
+      "payload_hash": "330864ac30808fad5f5bd09f780c217d9c1c1d3440ca78e54394edf5f7f6e229",
+      "sequence": 2
+    },
+    {
+      "shard_id": "T2-G2-CAPSULE-03",
+      "path": "T2-G2-CAPSULE-03.json",
+      "sha256": "ea8e3332e34cdde8d16bbe50b78c2364d258acc8423a1f2835a04d44d328955c",
+      "payload_hash": "ffec04930c635e056d9c880e3682334947eb13407f8f8ed934d98da9016789ea",
+      "sequence": 3
+    },
+    {
+      "shard_id": "T2-G2-ACTIVE-04",
+      "path": "T2-G2-ACTIVE-04.json",
+      "sha256": "c1acc63b0c59e1fbcf63a00f876e797153f68ec54be81208730c567e6d48a0da",
+      "payload_hash": "dced957d985eb7d17074d38690d3f040cc539489ff49075b960d9c907df7ba7c",
+      "sequence": 4
+    },
+    {
+      "shard_id": "T2-G2-DISPATCH-05",
+      "path": "T2-G2-DISPATCH-05.json",
+      "sha256": "4e383453401f218c246d8c2413c1b56c2ebc04808b956c7c00a7cdd0f592719c",
+      "payload_hash": "7b92201735fef04aee4f62f4d57c157152fba9c9d88b14384003c7b8dd2429a4",
+      "sequence": 5
+    }
+  ]
+}

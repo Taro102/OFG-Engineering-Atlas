@@ -1,0 +1,15 @@
+[
+  {
+    "src": "DT-BHT-006",
+    "rel": "MAPPED_TO_HISTORICAL_EVIDENCE_ROW",
+    "dst": "BHT401-EV-006",
+    "source_path": "state/provenance_bindings.jsonl",
+    "state": "C010",
+    "json": {
+      "dst": "BHT401-EV-006",
+      "rel": "MAPPED_TO_HISTORICAL_EVIDENCE_ROW",
+      "src": "DT-BHT-006",
+      "state": "C010"
+    }
+  }
+]

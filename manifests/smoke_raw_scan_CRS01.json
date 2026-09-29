@@ -1,0 +1,46 @@
+[
+  {
+    "source_path": "reference_raw/OFG_Atlas_Rev3_DATA02_Master_Event_Timeline_Through_2031-04-19(6).csv",
+    "line": 128759,
+    "header": [
+      "Date",
+      "Canon_Status",
+      "Domain",
+      "Entity_or_Asset",
+      "Event_Type",
+      "Detail",
+      "Document_or_Record"
+    ],
+    "row": [
+      "2031-04-10",
+      "LOCKED CANON",
+      "EVIDENCE",
+      "CRS01-RST-L2",
+      "Routine photographs",
+      "Photographs capture restraint geometry/witness marks before event",
+      "Canonical Backbone / Master Reference"
+    ]
+  },
+  {
+    "source_path": "reference_raw/OFG_Atlas_Rev3_DATA02_Master_Event_Timeline_Through_2031-04-19(6).csv",
+    "line": 128760,
+    "header": [
+      "Date",
+      "Canon_Status",
+      "Domain",
+      "Entity_or_Asset",
+      "Event_Type",
+      "Detail",
+      "Document_or_Record"
+    ],
+    "row": [
+      "2031-04-10",
+      "WORKING DATASET — SUBJECT TO REV E/F/H/I RECONCILIATION",
+      "ASSET_LIFECYCLE",
+      "CRS01-RST-L2",
+      "Photo Baseline",
+      "Routine photographic survey captured restraint geometry and witness marks.",
+      "PHOTO-BHT401-0410"
+    ]
+  }
+]

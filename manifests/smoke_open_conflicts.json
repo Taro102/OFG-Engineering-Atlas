@@ -1,0 +1,25 @@
+[
+  {
+    "id": "GCF-C001-001",
+    "subject": "M88217_ADMIN_STATUS_VS_PHYSICAL_EXECUTION",
+    "state": "OPEN_CRITICAL_DORMANT",
+    "admin_state": "CLOSED_APPROVED",
+    "physical_execution_proven": false,
+    "reopen_threshold_met": false
+  },
+  {
+    "id": "GCF-C001-003",
+    "subject": "BHT401_PUMP_SUBUNIT_TAG_GRANULARITY",
+    "state": "OPEN_HIGH"
+  },
+  {
+    "id": "GCF-C001-004",
+    "subject": "BHT401_SGHX_GRANULARITY",
+    "state": "OPEN_HIGH"
+  },
+  {
+    "id": "GCF-C001-006",
+    "subject": "CRANE_CAPACITY",
+    "state": "OPEN_HIGH"
+  }
+]

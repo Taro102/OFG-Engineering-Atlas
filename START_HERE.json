@@ -1,0 +1,37 @@
+{
+  "schema": "OFG_EA_MIGRATION_START_HERE_V2",
+  "bundle_role": "AUTHORITATIVE_TRANSFER_CARRIER_FOR_T1_G2_T2_G2_T4_G2_T5_G2",
+  "state_cut": "C010_INTEGRATED_C011_ACTIVE",
+  "configuration_cut": "2031-04-19",
+  "new_master_thread": [
+    "UPLOAD_THIS_COMPLETE_ZIP_TO_T1_G2",
+    "INSTRUCT_T1_G2_TO_EXTRACT_AND_READ_START_HERE_JSON_STATE_CURRENT_WORKING_STATE_JSON_STATE_MIGRATION_CONTROL_JSON_AND_STATE_T1_G2_REHYDRATION_CAPSULE_JSON",
+    "RUN_OR_SEMANTICALLY_APPLY_PROGRAMS_OFG_VERIFY_PY",
+    "RUN_OR_SEMANTICALLY_APPLY_PROGRAMS_OFG_RETRIEVE_PY_FOR_BOUNDED_RETRIEVAL",
+    "DO_NOT_GLOBAL_INTEGRATE_C011_UNTIL_ACTIVE_WORKER_RETURNS_ARE_PRESENT_AND_USER_SAYS_COMMENCE"
+  ],
+  "new_T2_thread": [
+    "UPLOAD_THIS_ZIP_OR_AT_MINIMUM_THE_T2_G2_TRANSPORT_AND_REHYDRATION_CAPSULE",
+    "LOAD_STATE_T2_G2_REHYDRATION_CAPSULE_JSON",
+    "T2_G1_IS_INACTIVE_AND_HAS_NO_C011_RETURN",
+    "REISSUE_AND_EXECUTE_OFG_EA_T2_C011_FROM_C010_PIN"
+  ],
+  "new_T4_thread": [
+    "LOAD_STATE_T4_G2_REHYDRATION_CAPSULE_JSON",
+    "REMAIN_STANDBY_WHILE_T4_G1_RETAINS_C011_WRITER_AUTHORITY_UNLESS_MASTER_FENCES_G1"
+  ],
+  "new_T5_thread": [
+    "LOAD_STATE_T5_G2_REHYDRATION_CAPSULE_JSON",
+    "REMAIN_STANDBY_WHILE_T5_G1_RETAINS_C011_WRITER_AUTHORITY_UNLESS_MASTER_FENCES_G1"
+  ],
+  "retrieval": {
+    "bootstrap": "bash programs/bootstrap.sh",
+    "query": "python programs/ofg_retrieve.py query CRS01 --limit 25",
+    "raw_scan": "python programs/ofg_retrieve.py scan BHT-401-P-101 2030-09-22 --path-contains DATA02",
+    "graph": "python programs/ofg_retrieve.py neighbors DT-BHT-006",
+    "conflicts": "python programs/ofg_retrieve.py conflicts --state OPEN",
+    "open_frontier": "python programs/ofg_retrieve.py open --contains M88217"
+  },
+  "integrity": "manifests/bundle_manifest.json plus programs/ofg_verify.py",
+  "known_materialization_gaps": "state/known_raw_gaps.json"
+}

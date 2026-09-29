@@ -1,0 +1,1025 @@
+{
+  "schema": "OFG_EA_BUNDLE_MANIFEST_V2_1",
+  "bundle_id": "OFG_EA_MASTER_MIGRATION_RAW_DATA_RETRIEVAL_R2",
+  "state_cut": "C010_INTEGRATED_C011_ACTIVE",
+  "configuration_cut": "2031-04-19",
+  "file_count": 169,
+  "total_uncompressed_bytes": 241010727,
+  "manifest_self_excluded": true,
+  "files": [
+    {
+      "path": "PROGRAM_USAGE.json",
+      "size_bytes": 1405,
+      "sha256": "06da03faf045f573102a9e4739dcce98292b555ea1c020e897c7ec0ddcc5994f",
+      "ext": ".json"
+    },
+    {
+      "path": "README_MACHINE.json",
+      "size_bytes": 3165,
+      "sha256": "ae12923ab597b9f8a77b33ec55f615dc5283977f9a620c3d20c857f0218e1f44",
+      "ext": ".json"
+    },
+    {
+      "path": "START_HERE.json",
+      "size_bytes": 1864,
+      "sha256": "899a26dcdd900044757fee03857b4b6a3f78c17e537ebb1b976023489b8a2bcb",
+      "ext": ".json"
+    },
+    {
+      "path": "manifests/retrieval_smoke_cycle.json",
+      "size_bytes": 603,
+      "sha256": "d11a85ebd74f3a628b63242364c7a7dfb00c2e4b9df26a35ed8e813c72ce5079",
+      "ext": ".json"
+    },
+    {
+      "path": "manifests/retrieval_smoke_neighbors.json",
+      "size_bytes": 337,
+      "sha256": "30cbc6b14acbdfd37e9250be7c703fe713c4bccbdc0120f477cc26592ba1a39f",
+      "ext": ".json"
+    },
+    {
+      "path": "manifests/retrieval_smoke_query.json",
+      "size_bytes": 20778,
+      "sha256": "b47c3487ca127b8126110f4e98d6e4aac192ce11fa68924d6b7d9541cd51bd6f",
+      "ext": ".json"
+    },
+    {
+      "path": "manifests/smoke_neighbors_DT-BHT-006.json",
+      "size_bytes": 337,
+      "sha256": "30cbc6b14acbdfd37e9250be7c703fe713c4bccbdc0120f477cc26592ba1a39f",
+      "ext": ".json"
+    },
+    {
+      "path": "manifests/smoke_open_M88217.json",
+      "size_bytes": 105,
+      "sha256": "467c6d457c3373cd450bbb98334a742b3a93702c0fd42fb2cee250e4cebff5a2",
+      "ext": ".json"
+    },
+    {
+      "path": "manifests/smoke_open_conflicts.json",
+      "size_bytes": 557,
+      "sha256": "181b0e0564e2417acf38cb531382eaca89b691d331c46f58205443f345f3c3fb",
+      "ext": ".json"
+    },
+    {
+      "path": "manifests/smoke_query_CRS01.json",
+      "size_bytes": 35571,
+      "sha256": "4f2fb36090a8c4c02aedf61bda8e6466d0b7a5e0eb54f14920f1fb54ea002ee3",
+      "ext": ".json"
+    },
+    {
+      "path": "manifests/smoke_raw_scan_CRS01.json",
+      "size_bytes": 1137,
+      "sha256": "11e634fa7b8b715e5355ec569181ed20f3b793664575af004476db21e25616f7",
+      "ext": ".json"
+    },
+    {
+      "path": "manifests/validation_report.json",
+      "size_bytes": 3792,
+      "sha256": "14ef203faf9587984e68c4204ed5fecc875605cd6b836d7214cc6e0bc446f0d1",
+      "ext": ".json"
+    },
+    {
+      "path": "manifests/worker_return_catalog.json",
+      "size_bytes": 10747,
+      "sha256": "ccff6c192d345eea66075cffc8cc58ff392d72383dacbd6246e50dccfd6ff473",
+      "ext": ".json"
+    },
+    {
+      "path": "ofg_master_state.sqlite",
+      "size_bytes": 42110976,
+      "sha256": "df13f3be6092a709a92c7a5b0ac06b24489d708c897f303b47b97ac5588bc0e7",
+      "ext": ".sqlite"
+    },
+    {
+      "path": "programs/__pycache__/ofg_codec.cpython-313.pyc",
+      "size_bytes": 6461,
+      "sha256": "a8dc8d17f91da4f6a350c86a09c701a894d2eba4f6360d729b5f1ce11a84ec1b",
+      "ext": ".pyc"
+    },
+    {
+      "path": "programs/bootstrap.sh",
+      "size_bytes": 804,
+      "sha256": "592392252aa39c3791c42a1d6b98d9213351e809264dafae8a52efb68bc9e52b",
+      "ext": ".sh"
+    },
+    {
+      "path": "programs/ofg_codec.py",
+      "size_bytes": 3459,
+      "sha256": "b1372e3b1a163df76bd60a2fa7581c541b84f4e60a3210b54a7b8faca926d8f5",
+      "ext": ".py"
+    },
+    {
+      "path": "programs/ofg_index.py",
+      "size_bytes": 8179,
+      "sha256": "c428895ecee18b0a45e7a622267efef12911177739f8b6d37def33d2999e8d8b",
+      "ext": ".py"
+    },
+    {
+      "path": "programs/ofg_ingest.py",
+      "size_bytes": 3615,
+      "sha256": "958e660fc99bc6adabc5674592fb9c5da1a91b8d5698b57fc1ea1a32e848636a",
+      "ext": ".py"
+    },
+    {
+      "path": "programs/ofg_rehydrate.py",
+      "size_bytes": 2618,
+      "sha256": "74fe67f7d3690157a5ef891cf77ade0115eb053c7cf3fbbd97ee5fae6d4594b1",
+      "ext": ".py"
+    },
+    {
+      "path": "programs/ofg_retrieve.py",
+      "size_bytes": 5365,
+      "sha256": "bf3a3cafa7e20435d5b5444c7cdc127fdb59b6452024a294066961bc90de3a57",
+      "ext": ".py"
+    },
+    {
+      "path": "programs/ofg_transport.py",
+      "size_bytes": 2165,
+      "sha256": "d31b4f689e080157e123a1c74a6146f96de58ad7b230dfa11a5233ad8e499004",
+      "ext": ".py"
+    },
+    {
+      "path": "programs/ofg_verify.py",
+      "size_bytes": 954,
+      "sha256": "3749def809f2ad91ee5c40b9c3ddf3cf4f310120fae9515a58064dbb9911967d",
+      "ext": ".py"
+    },
+    {
+      "path": "reference_raw/OFG_Actual_Site_Work_History_RevW3(9).docx",
+      "size_bytes": 80435,
+      "sha256": "05a6f896ae1513a12ab537448c0157134e27ffe1059f3c4f2af677fd64898169",
+      "ext": ".docx"
+    },
+    {
+      "path": "reference_raw/OFG_Atlas_Rev3_DATA00_README(9).txt",
+      "size_bytes": 1593,
+      "sha256": "f92082f370fab2b5e4b7518a808f88bc0d866ce7299781e49a078785642a44fc",
+      "ext": ".txt"
+    },
+    {
+      "path": "reference_raw/OFG_Atlas_Rev3_DATA01_Controlled_Asset_Register(8).csv",
+      "size_bytes": 10762718,
+      "sha256": "50fe00f65fab4316642c9835be6513117bfb11cda5e9d53fac02d16597ec2d3a",
+      "ext": ".csv"
+    },
+    {
+      "path": "reference_raw/OFG_Atlas_Rev3_DATA02_Master_Event_Timeline_Through_2031-04-19(6).csv",
+      "size_bytes": 26539936,
+      "sha256": "ca328fd6a7e1acf0c99d801d39a48ac20cbe3b3c2e4f9650f3257c23c1260375",
+      "ext": ".csv"
+    },
+    {
+      "path": "reference_raw/OFG_Atlas_Rev3_DATA03_Site_Geometry(7).geojson",
+      "size_bytes": 17576,
+      "sha256": "fb94001dfefe83fb4a21221480f9ae1bfefdae9541d488ad0e74af2fac5b4573",
+      "ext": ".geojson"
+    },
+    {
+      "path": "reference_raw/OFG_Atlas_Rev3_DATA04_Parametric_3D_Geometry(7).json",
+      "size_bytes": 12631,
+      "sha256": "b46e4fef42dc884351cd3386100cf1a7e1cf7e0a1789b762c707cda05bfd8944",
+      "ext": ".json"
+    },
+    {
+      "path": "reference_raw/OFG_Atlas_Rev3_DATA05_Relationship_Graph(7).csv",
+      "size_bytes": 22953,
+      "sha256": "9ddd29ea938c0dc5e9b0d218fc52d955408442dbd82ab5f9108816f186e75beb",
+      "ext": ".csv"
+    },
+    {
+      "path": "reference_raw/OFG_Atlas_Rev3_DATA06_Physical_Object_Schema(8).json",
+      "size_bytes": 2070,
+      "sha256": "70bb30755f2a81bb5deb917ce92ca6bebd0730facac26ebf6eb80eb0bec2de5d",
+      "ext": ".json"
+    },
+    {
+      "path": "reference_raw/OFG_Atlas_Rev3_DATA08_Digital_Thread_QA(8).json",
+      "size_bytes": 180,
+      "sha256": "bd8d84f3fb158ae231924e177db9d26669153677793a6be19142b1d340e4d414",
+      "ext": ".json"
+    },
+    {
+      "path": "reference_raw/OFG_Definitive_Engineering_Atlas_Rev3_MACHINE_ANNEX_CATALOG(7).csv",
+      "size_bytes": 209035,
+      "sha256": "538a66d38ffba6356b642aad7650559421daea364396cfa7d075f35323d83b2d",
+      "ext": ".csv"
+    },
+    {
+      "path": "reference_raw/OFG_Definitive_Engineering_Atlas_Rev3_MACHINE_ANNEX_MANIFEST(8).json",
+      "size_bytes": 444,
+      "sha256": "faee2a54202b75b2d3c056698a031f5aa35442fb8063d074e956f2ec2bb3f2d6",
+      "ext": ".json"
+    },
+    {
+      "path": "reference_raw/OFG_Definitive_Engineering_Atlas_Rev3_MASTER_INDEX(9).docx",
+      "size_bytes": 41193,
+      "sha256": "543a3596730ea091c85c835b3c2e85d41d9583b3a97472c6c434596327452480",
+      "ext": ".docx"
+    },
+    {
+      "path": "reference_raw/OFG_Site_Work_History_Master_RevW3(8).csv",
+      "size_bytes": 143123205,
+      "sha256": "efdee0aa79172799d1b06df0a02772500d52e6a3ce92c4904b7eb56e549b8117",
+      "ext": ".csv"
+    },
+    {
+      "path": "reference_raw/OFG_Site_Work_Representative_Asset_Dossiers_RevW3(8).csv",
+      "size_bytes": 9537,
+      "sha256": "324b6926f234db000a551fe6835650b3d21595243d2db79efd13fcccf4e75fc3",
+      "ext": ".csv"
+    },
+    {
+      "path": "reference_raw/OFG_Site_Workfront_Monthly_History_RevW3(7).csv",
+      "size_bytes": 2076912,
+      "sha256": "362956f89eadf8afb4078273ca42b2a133b660de977001e55267c8d5d8211dea",
+      "ext": ".csv"
+    },
+    {
+      "path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Annex_K_Workstream_Transition_Register(20260928-081854).csv",
+      "size_bytes": 4142826,
+      "sha256": "9dd12a1ddc351543af76d79957d0b858a47efa2c1a453b03a00482c0e597c428",
+      "ext": ".csv"
+    },
+    {
+      "path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Annex_L_Deliverable_Family_Genealogy(10).csv",
+      "size_bytes": 1816104,
+      "sha256": "461ce8fecde0373408e0d2db187d56c5cefa6f19fc22910b7464a254696ae4e4",
+      "ext": ".csv"
+    },
+    {
+      "path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Annex_M_Workstream_Period_Synopsis(20260928-082241).csv",
+      "size_bytes": 3548178,
+      "sha256": "b13aef21112c59b8ff914b114605ee5fe73a934f4826372ab5e74648d73ac9b4",
+      "ext": ".csv"
+    },
+    {
+      "path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Vol14A_Workstream_Ownership_Transitions(10).docx",
+      "size_bytes": 69001,
+      "sha256": "c12efd0c56484ee61f96df07ef0e8ac8b70f25322f3c399992787d71d098da67",
+      "ext": ".docx"
+    },
+    {
+      "path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Vol14B_Workstream_Ownership_Transitions(10).docx",
+      "size_bytes": 73866,
+      "sha256": "252514e216c07e1721e539e0ba0772529ef239478a36bd2289555ab0aadfa977",
+      "ext": ".docx"
+    },
+    {
+      "path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Vol14C_Workstream_Ownership_Transitions(10).docx",
+      "size_bytes": 80094,
+      "sha256": "e41a64f523c23aca9a013aae0b16cd6a09d94f0c90defac9e8dfb0e08017b3eb",
+      "ext": ".docx"
+    },
+    {
+      "path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Vol14D_Workstream_Ownership_Transitions(10).docx",
+      "size_bytes": 71892,
+      "sha256": "961411744edf1e570a72408fe5bc5dea156b1f9d45cfd1c9d2335f719872bda7",
+      "ext": ".docx"
+    },
+    {
+      "path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Vol15A_Deliverable_and_Record_Genealogy(10).docx",
+      "size_bytes": 59609,
+      "sha256": "cdf975ac36f88f72707ba017c703c56186a9aa6a4a1117aae5ce27080193acf1",
+      "ext": ".docx"
+    },
+    {
+      "path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Vol15B_Deliverable_and_Record_Genealogy(9).docx",
+      "size_bytes": 63018,
+      "sha256": "f2ba3f367ce2e143d84a6d60b0688f1cec2f897a4831fd1df24483788dd073ee",
+      "ext": ".docx"
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V00_CANON_CONTROL_HIERARCHY_PROJECT_HISTORY_INSTITUTIONAL_WORLD(7).docx",
+      "size_bytes": 70542,
+      "sha256": "cd7a221e08a26d2bd6c2adec5b99507b5c51654bad5ffc088bda96680162cdd8",
+      "ext": ".docx"
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V01_TECHNOLOGY_MATURATION_DESIGN_BASIS_FUNDAMENTAL_ENGINEERING(8).docx",
+      "size_bytes": 64352,
+      "sha256": "d7c0d1372f0923aa6b42502dd8b4125128c78020365c02ab684947b718b8a73d",
+      "ext": ".docx"
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V02_SITE_GEOGRAPHY_COORDINATES_LOGISTICS_CONSTRUCTION_FIELD(8).docx",
+      "size_bytes": 68284,
+      "sha256": "3e3d49b3b1bd59281cb3d5fc13e1ed3557b0335a453ec28e3c9f3521e0233c69",
+      "ext": ".docx"
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V03_BUILDINGS_CIVIL_STRUCTURAL_ROOMS_PENETRATIONS_EMBEDS(8).docx",
+      "size_bytes": 88062,
+      "sha256": "ecfa313986d5a4959f7d0db87fa0fc34cec0f75841fc04fe95d504efd7b15dd7",
+      "ext": ".docx"
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V04_FUSION_MACHINE_TOKAMAK_VACUUM_VESSEL_CRYOSTAT_STRUCTURAL_LOAD_PATH(8).docx",
+      "size_bytes": 91738,
+      "sha256": "c1599e1323820a4938bb9dd47935b1a2c143733b51c2212ff0565cdad1e3f10a",
+      "ext": ".docx"
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V05_MAGNETS_MAGNET_POWER_CRYOGENICS_QUENCH_PROTECTION(7).docx",
+      "size_bytes": 59536,
+      "sha256": "f20b905c9cdcd0d95f0cfb03f7ec0913e19b1c0e3c25333665c3b567eeeddbbe",
+      "ext": ".docx"
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V06_BLANKET_DIVERTOR_TRITIUM_FUEL_CYCLE_REMOTE_HANDLING(6).docx",
+      "size_bytes": 89457,
+      "sha256": "c8232bbf54a2c799cf1669c16e5b4b954c1f7a2b04ee895632bbad441a75d0c0",
+      "ext": ".docx"
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V07_PRIMARY_BLANKET_HEAT_TRANSPORT_PHYSICAL_CONFIGURATION_AND_FUNDAMENTAL_ENGINEERING(8).docx",
+      "size_bytes": 123187,
+      "sha256": "a4b7620eeb865d06facfada3fe3646979d07c66e9a2bea39cde5d8c7f5b68422",
+      "ext": ".docx"
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V08_VACUUM_GAS_COOLING_AUXILIARIES_PROCESS_SYSTEMS(7).docx",
+      "size_bytes": 75499,
+      "sha256": "a7372d6a39adefb556a2048705be727806de13549306a5096fe5aff7212605b2",
+      "ext": ".docx"
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V09_POWER_CYCLE_BALANCE_OF_PLANT_PLANT_UTILITIES(7).docx",
+      "size_bytes": 58128,
+      "sha256": "f39f9cc3765ac2aa8bd9c08d65cb60a6c73fa7957f7f6df7649598397f134b44",
+      "ext": ".docx"
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V10_ELECTRICAL_I_C_DIGITAL_PLANT_HVAC_FIRE_CONFINEMENT(7).docx",
+      "size_bytes": 55025,
+      "sha256": "52ed16cea786226b3b2e95efa740ad52717f7dfddc059e1d02620aa868dd1784",
+      "ext": ".docx"
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V11_EQUIPMENT_COMPONENT_MASTER_ENCYCLOPEDIA(7).docx",
+      "size_bytes": 85905,
+      "sha256": "2a6845f17cfad154be2cacebf58ed1002fc1a325763da4fb4dae735f9778306c",
+      "ext": ".docx"
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V12_CONNECTIVITY_ROUTING_NOZZLES_FABRICATION_WELDS_SUPPORTS(7).docx",
+      "size_bytes": 84456,
+      "sha256": "779b997295f19277873552c7949c1be7d16f014695f10d35f1ba516986f21be5",
+      "ext": ".docx"
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V13_CONSTRUCTION_TEMPORARY_WORKS_INSTALLATION_FIELD_EXECUTION(7).docx",
+      "size_bytes": 107473,
+      "sha256": "c08bbbda87919906ab8a6a665774bea3f0ab87fa7dc6ab9d7b42368721676c86",
+      "ext": ".docx"
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V14_COMMISSIONING_TURNOVER_OPERATIONS_READINESS_TEMPORARY_CONFIGURATION(7).docx",
+      "size_bytes": 52758,
+      "sha256": "9369bde0cecc266d0aca12ee866a86d78c03515ed5809483c8f87862ae4480b1",
+      "ext": ".docx"
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V15_MASTER_CHRONOLOGY_INSTALLATION_HISTORY_STORY_DATE_PHYSICAL_STATE(7).docx",
+      "size_bytes": 68859,
+      "sha256": "05641016cc99617e80646a8a71ebbcf09267e1be1cef96f18fe8904df3a9d91e",
+      "ext": ".docx"
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V16_BHT_401_CRS_01_FORENSIC_CONFIGURATION_INFORMATION_PROVENANCE(7).docx",
+      "size_bytes": 91706,
+      "sha256": "d88fe4c1c37d7486aeba456be06fb510b1ece51d8b83d9f93be7315828471e2d",
+      "ext": ".docx"
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V17_VERIFICATION_VALIDATION_FMEA_OPEN_ITEMS_BACKWARD_PROPAGATION(6).docx",
+      "size_bytes": 71152,
+      "sha256": "9adf144ac519ca54117082a95403d68f068d6d2894f56787b178af449e68473a",
+      "ext": ".docx"
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V18_MASTER_SYSTEM_DICTIONARY_ALL_94_SYSTEMS_INTERFACE_COORDINATION(7).docx",
+      "size_bytes": 54547,
+      "sha256": "5b8b3c1aa95b22fccdc2c5ef392245756dcf7005b5d47a13838862161b7e8787",
+      "ext": ".docx"
+    },
+    {
+      "path": "state/T1-G2_REHYDRATION_CAPSULE.json",
+      "size_bytes": 15902,
+      "sha256": "5578722a36cbf0636f28d1053b61237edda1deb4d88aa6561a9f68cc01587bb6",
+      "ext": ".json"
+    },
+    {
+      "path": "state/T2-G2_REHYDRATION_CAPSULE.json",
+      "size_bytes": 6553,
+      "sha256": "f7f8e4a45c619b614824002df4c1f72ae4b19e19b4e1eaf7a84ba8c6263d6ee3",
+      "ext": ".json"
+    },
+    {
+      "path": "state/T4-G2_REHYDRATION_CAPSULE.json",
+      "size_bytes": 6673,
+      "sha256": "e29f5f265b68cb840f87f745182680d57c0c3dfc1ebae072bb51484a58271642",
+      "ext": ".json"
+    },
+    {
+      "path": "state/T5-G2_REHYDRATION_CAPSULE.json",
+      "size_bytes": 6290,
+      "sha256": "95468770c9163acb99f04a137a87f6026593ea248a739859b39ce3a9dfba61a5",
+      "ext": ".json"
+    },
+    {
+      "path": "state/active_cycle_c011.json",
+      "size_bytes": 1394,
+      "sha256": "a8af9c07de4c6e7b090d61ef78623f98349d4750bf6b1dad4add54e19abfb9c7",
+      "ext": ".json"
+    },
+    {
+      "path": "state/c011_dispatches.json",
+      "size_bytes": 8371,
+      "sha256": "c14effd74b1f57dfc6eeee4d521128fdeaed5c6cc9db7aeb94b18efaf8b5a173",
+      "ext": ".json"
+    },
+    {
+      "path": "state/conflicts.jsonl",
+      "size_bytes": 1655,
+      "sha256": "038fc90dc90fea4a1f5a17e976986abd1e8042e45cf3e6a4ceb50cb7280d2fd1",
+      "ext": ".jsonl"
+    },
+    {
+      "path": "state/current_working_state.json",
+      "size_bytes": 13413,
+      "sha256": "6859df47e781d6985cf6f6441324ced2e6f8cd3eddf4768f542a650bac229ffc",
+      "ext": ".json"
+    },
+    {
+      "path": "state/cycle_history.jsonl",
+      "size_bytes": 3564,
+      "sha256": "44ef94c44b2cb5f1d62f800171b33f80dc9dc14e8a176debff9f512e8f7246f0",
+      "ext": ".jsonl"
+    },
+    {
+      "path": "state/encoding_retrieval_spec.json",
+      "size_bytes": 1612,
+      "sha256": "0997195f2d0cab23a38bb4d9f04dd874fd97a2bc527ac66ab10d54b4144f21bc",
+      "ext": ".json"
+    },
+    {
+      "path": "state/identity_registry_seed.jsonl",
+      "size_bytes": 2047,
+      "sha256": "aabe445579cce462d1a30625dea42206bc71b36dc7a2b089b800515da3be3dd1",
+      "ext": ".jsonl"
+    },
+    {
+      "path": "state/known_raw_gaps.json",
+      "size_bytes": 1282,
+      "sha256": "5eab87b6717fae8e58aec5835043dd5957080478270f6cce642958fb8a43fed8",
+      "ext": ".json"
+    },
+    {
+      "path": "state/migration_control.json",
+      "size_bytes": 1351,
+      "sha256": "f1499f0e26db1e77b66fbb5f077c57c818865bc74f6420c1b59e6e4c0f7f7486",
+      "ext": ".json"
+    },
+    {
+      "path": "state/open_frontiers.jsonl",
+      "size_bytes": 1703,
+      "sha256": "1047d9c208041606576fef06d76007f22c80aedc228919465ab919cac99c7c7b",
+      "ext": ".jsonl"
+    },
+    {
+      "path": "state/provenance_bindings.jsonl",
+      "size_bytes": 1532,
+      "sha256": "509614a659a43c18387f5612ab7091b518431164f350e8188dde20db51828fdd",
+      "ext": ".jsonl"
+    },
+    {
+      "path": "state/reference_state.json",
+      "size_bytes": 6109,
+      "sha256": "b00ae52296c61f0e81dac08cc6442a149893537ae7263953f40f6ad90113b72a",
+      "ext": ".json"
+    },
+    {
+      "path": "state/thread_role_profiles.json",
+      "size_bytes": 1111,
+      "sha256": "05a506fc2fa63d5959dc1fa8e18f03674994299e67eea7f6e721fc7b702f3db3",
+      "ext": ".json"
+    },
+    {
+      "path": "transport/T1-G2/T1-G2-ACTIVE-04.json",
+      "size_bytes": 1655,
+      "sha256": "e00a61deb0a97d9a393e40eb367ae5d1cd7aff2d2f5aa322781cef2bb1337095",
+      "ext": ".json"
+    },
+    {
+      "path": "transport/T1-G2/T1-G2-CAPSULE-03.json",
+      "size_bytes": 12424,
+      "sha256": "9e6b4be6670aa6e579994e6c89a6574caf13e303575af560c876f2cab8aa4b18",
+      "ext": ".json"
+    },
+    {
+      "path": "transport/T1-G2/T1-G2-CTRL-01.json",
+      "size_bytes": 1590,
+      "sha256": "059809a95d50235ba65ae6c5931a8485e951e93dd8f37942043ea9da3aa5e030",
+      "ext": ".json"
+    },
+    {
+      "path": "transport/T1-G2/T1-G2-DISPATCH-05.json",
+      "size_bytes": 8069,
+      "sha256": "79a2ba74bfcedc0b7cc124eedc454608ebf2b309aea7fa07b9362d2532369e25",
+      "ext": ".json"
+    },
+    {
+      "path": "transport/T1-G2/T1-G2-ENCODING-02.json",
+      "size_bytes": 1931,
+      "sha256": "1338505aec7064db1032df29b59f1b4d944d0ea5853224ddcb83fac63bf15e06",
+      "ext": ".json"
+    },
+    {
+      "path": "transport/T1-G2/transport_manifest.json",
+      "size_bytes": 1540,
+      "sha256": "f08b79f94d928bd17af37887f0b761f3563b8360565efd5b3a60bb5993c7a02d",
+      "ext": ".json"
+    },
+    {
+      "path": "transport/T2-G2/T2-G2-ACTIVE-04.json",
+      "size_bytes": 1655,
+      "sha256": "c1acc63b0c59e1fbcf63a00f876e797153f68ec54be81208730c567e6d48a0da",
+      "ext": ".json"
+    },
+    {
+      "path": "transport/T2-G2/T2-G2-CAPSULE-03.json",
+      "size_bytes": 5613,
+      "sha256": "ea8e3332e34cdde8d16bbe50b78c2364d258acc8423a1f2835a04d44d328955c",
+      "ext": ".json"
+    },
+    {
+      "path": "transport/T2-G2/T2-G2-CTRL-01.json",
+      "size_bytes": 1590,
+      "sha256": "a544416d6ba695829983382d5bd4906173ddc62918a5adbf94c54e0b4649545d",
+      "ext": ".json"
+    },
+    {
+      "path": "transport/T2-G2/T2-G2-DISPATCH-05.json",
+      "size_bytes": 8069,
+      "sha256": "4e383453401f218c246d8c2413c1b56c2ebc04808b956c7c00a7cdd0f592719c",
+      "ext": ".json"
+    },
+    {
+      "path": "transport/T2-G2/T2-G2-ENCODING-02.json",
+      "size_bytes": 1931,
+      "sha256": "228907327e9c945f72598d191eba00611cb4720e44d10cd6e3a24345d7d0856b",
+      "ext": ".json"
+    },
+    {
+      "path": "transport/T2-G2/transport_manifest.json",
+      "size_bytes": 1540,
+      "sha256": "24e0838d531c06189d7bc8387917d6168403bd168476cb5d3a7602eab0b6e120",
+      "ext": ".json"
+    },
+    {
+      "path": "transport/T4-G2/T4-G2-ACTIVE-04.json",
+      "size_bytes": 1655,
+      "sha256": "36500dbf9821f619f7b3d1efa9cdffc6b17290f4d71f3dee394ceee488018acf",
+      "ext": ".json"
+    },
+    {
+      "path": "transport/T4-G2/T4-G2-CAPSULE-03.json",
+      "size_bytes": 5619,
+      "sha256": "60b85fee198c497f136eb23a03198e5249226ed9565b9cbb9fba541469309e7b",
+      "ext": ".json"
+    },
+    {
+      "path": "transport/T4-G2/T4-G2-CTRL-01.json",
+      "size_bytes": 1590,
+      "sha256": "92b6ba59a179f309bdacf2b8c0d3cf6c19dcb29d7d2722f961b9ae02eb27f95b",
+      "ext": ".json"
+    },
+    {
+      "path": "transport/T4-G2/T4-G2-DISPATCH-05.json",
+      "size_bytes": 8069,
+      "sha256": "0bf09d17095fa5ae485d043f110d4e3adf2d598f559eb2c3f57a296923fe16b3",
+      "ext": ".json"
+    },
+    {
+      "path": "transport/T4-G2/T4-G2-ENCODING-02.json",
+      "size_bytes": 1931,
+      "sha256": "571cb1a22ed2cbe7d23b456ca03ad2c4840053d92b63f6dfb4e28101e4bda11f",
+      "ext": ".json"
+    },
+    {
+      "path": "transport/T4-G2/transport_manifest.json",
+      "size_bytes": 1540,
+      "sha256": "c6a2b47662f1882de316545a737c61c36837817d05ddc2b48bf4b2039e9d9177",
+      "ext": ".json"
+    },
+    {
+      "path": "transport/T5-G2/T5-G2-ACTIVE-04.json",
+      "size_bytes": 1655,
+      "sha256": "e856a38f563f46b13d14486ef90aece7a3633b89bcf242a4bfea1e6c9d1c0a61",
+      "ext": ".json"
+    },
+    {
+      "path": "transport/T5-G2/T5-G2-CAPSULE-03.json",
+      "size_bytes": 5424,
+      "sha256": "8e0465bd36b1fcdaa9e81a12214d46ff4de74d144f7051838ba0ca64021dbe7e",
+      "ext": ".json"
+    },
+    {
+      "path": "transport/T5-G2/T5-G2-CTRL-01.json",
+      "size_bytes": 1590,
+      "sha256": "9ded02ca50be7dbf08bf937a538f5d0c3f8131e27990b6b34e59886b0b68897f",
+      "ext": ".json"
+    },
+    {
+      "path": "transport/T5-G2/T5-G2-DISPATCH-05.json",
+      "size_bytes": 8069,
+      "sha256": "d99e566d563cd80856c65b89404bd8bbfd6d3239b433fd0121c4f048d43445b4",
+      "ext": ".json"
+    },
+    {
+      "path": "transport/T5-G2/T5-G2-ENCODING-02.json",
+      "size_bytes": 1931,
+      "sha256": "38ec76618ecf67b0c6a4ca7177d07a6ad540bb6fe5a870584cdbb62f1e8e223f",
+      "ext": ".json"
+    },
+    {
+      "path": "transport/T5-G2/transport_manifest.json",
+      "size_bytes": 1540,
+      "sha256": "8d66573c0f0da421db308fc528b2b6be31f9b8f51292167bafb237ab26457794",
+      "ext": ".json"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T2-C001-RETURN-R1.txt",
+      "size_bytes": 48718,
+      "sha256": "96612d6808e609cc9c9561b6dd1caf057276437e9bb9e200e7b60f5124fa94cf",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T2-C002-RETURN-R2.txt",
+      "size_bytes": 28738,
+      "sha256": "8a304864fd77299a65b822dc8e0db27de8eedf673ac6e7bddc94da545152ee2f",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T2-C002-T3REDIRECT-RETURN-R1.txt",
+      "size_bytes": 43206,
+      "sha256": "f1ab172cc1f73ae10ba706c96fa720fbc9478e6029fd4265090253adae3e5f21",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T2-C003-RETURN-R1.txt",
+      "size_bytes": 164711,
+      "sha256": "51c5dd140d535554ef51503316128080d6c16cf88bb99926a0d67a775da050b6",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T2-C004-RETURN-R1-CONT-02.md",
+      "size_bytes": 54746,
+      "sha256": "20d73d26b554dcace8c590dfaaf4d548b7f00b92083104b0430b77c1db700558",
+      "ext": ".md"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T2-C005-RETURN-R1.txt",
+      "size_bytes": 76290,
+      "sha256": "154e34639f589f7f25bcf7c0f1006f7c1edb2dd450ea6512812dd9f536652352",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T2-C006-RETURN-R1.md",
+      "size_bytes": 76829,
+      "sha256": "93e7dee8f57718bd23466694584a9401ecbe5ac07a943c696841afd0a0ff3b50",
+      "ext": ".md"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T2-C006-RETURN-R1.txt",
+      "size_bytes": 43374,
+      "sha256": "a8a2f10aac884f4854eeed37c54b3236356de6ab303ac915ca8b0341ccecb5d8",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T2-C007-RETURN-R1.md",
+      "size_bytes": 58309,
+      "sha256": "a63217a60e3184d466821245be6d10c2e595036417808c4528631764c7f4e749",
+      "ext": ".md"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T2-C008-RETURN-R1.md",
+      "size_bytes": 61097,
+      "sha256": "3f6f3dfe44b1fd670b1e5b8a8dd273cb6f586cc8ed7ef544cb3cca8aedc30de0",
+      "ext": ".md"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T2-C009-RETURN-R1.md",
+      "size_bytes": 61425,
+      "sha256": "ca5cf490f9c89f63efd07b9293ee2e6a448e5eb78aacdf2bc127a26c66e0b2f2",
+      "ext": ".md"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T2-C010-RETURN-R1.txt",
+      "size_bytes": 66248,
+      "sha256": "a8a56fb67cfdefce415487de75bf9d76671eb8c469586fe4ee9d33fd8f0ed4b4",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T4-C001-RETURN-R1.txt",
+      "size_bytes": 82157,
+      "sha256": "bb0a81af42f726ef48a6f2dc0b2f953461694c4376aea566514a863c62cd20fa",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T4-C002-RETURN-R1.txt",
+      "size_bytes": 65686,
+      "sha256": "8c5cfb0401af8e51bfa10919857a77c48eea9287847efba2cbbf3dccefafe8ff",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T4-C003-RETURN-R1.txt",
+      "size_bytes": 122901,
+      "sha256": "61d8df390fd06f0ffe22433f17cf7702f5f10caa737178574b22d4e29a9e0626",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T4-C004-RETURN-R1.txt",
+      "size_bytes": 125905,
+      "sha256": "4dd2f72ae5034b2786a722eda6f94c03c34745a2b3f62046ebf4e2ff9dac813b",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T4-C005-RETURN-R1.txt",
+      "size_bytes": 104316,
+      "sha256": "2574615d6b21355a014a673efa38aee6e86fd918ea2f3e76176153ba2a5887f0",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T4-C007-RETURN-R1.txt",
+      "size_bytes": 79940,
+      "sha256": "8876e689e2508018a732bde3c9d9e5b4b5c584412e3734cb21d67138922c659b",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T4-C008-RETURN-R1.md",
+      "size_bytes": 84365,
+      "sha256": "6762e6c63cbdf60aa599c675d10cd7285edb62efaf946cda990ab61b527f3e0b",
+      "ext": ".md"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T4-C008-RETURN-R1.txt",
+      "size_bytes": 51600,
+      "sha256": "e1c0429768cfba7b5eb0eb13351b31161434dfd9c86d4bf10e8f31c664237351",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T4-C009-RETURN-R1.md",
+      "size_bytes": 74791,
+      "sha256": "66895a05e3128120e1c1199eac5aa0a9a7a9184226bd11c9b46df21161072310",
+      "ext": ".md"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T4-C010-RETURN-R1.txt",
+      "size_bytes": 79270,
+      "sha256": "0c01279dabbc6dc262e41529431dbbdbd5ac0ce2baa62b9e249abed142fa9216",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T5-C001-RETURN-R1.txt",
+      "size_bytes": 56527,
+      "sha256": "a11472ebe5921ea962128a1e2f5f62877f90faa9a86e4e14a0071bb54b3fbf17",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T5-C002-RETURN-R1.txt",
+      "size_bytes": 79083,
+      "sha256": "ff82b97502a2ecd3b08050ee217ce5e67f65712eb66ba613c368c5c793603e9c",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T5-C003-RETURN-R1.txt",
+      "size_bytes": 69369,
+      "sha256": "5dd9d677f10cf5ee6e7021c2e8243741b5cb7a8c959cfd52428b38f036b8361b",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T5-C005-RETURN-R1.txt",
+      "size_bytes": 53545,
+      "sha256": "6c94ede9e555f6aed4094f559e5f9253170758c7407fa7f5905e077035c0af0b",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T5-C006-RETURN-R1.txt",
+      "size_bytes": 53383,
+      "sha256": "edfefcfe6858291d1dec3db933e90d6883734d734d53fb179ca4483260af5266",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T5-C007-RETURN-R1.txt",
+      "size_bytes": 43374,
+      "sha256": "a8a2f10aac884f4854eeed37c54b3236356de6ab303ac915ca8b0341ccecb5d8",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T5-C007-RETURN-R1__VARIANT2.txt",
+      "size_bytes": 49341,
+      "sha256": "df9327f6683165830c12c4324db2668ea7fb2f9d829a1cff116b5e02123d01fa",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T5-C008-RETURN-R1.txt",
+      "size_bytes": 49341,
+      "sha256": "df9327f6683165830c12c4324db2668ea7fb2f9d829a1cff116b5e02123d01fa",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T5-C009-RETURN-R1.txt",
+      "size_bytes": 51600,
+      "sha256": "e1c0429768cfba7b5eb0eb13351b31161434dfd9c86d4bf10e8f31c664237351",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T5-C010-RETURN-R1.txt",
+      "size_bytes": 37642,
+      "sha256": "23c49fd66d07b6774ff990e5f914b01930899ffc68c569d270c609e9f106e378",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けたテキスト（1）(10).txt",
+      "size_bytes": 28738,
+      "sha256": "8a304864fd77299a65b822dc8e0db27de8eedf673ac6e7bddc94da545152ee2f",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けたテキスト（1）(20260928-112600).txt",
+      "size_bytes": 65686,
+      "sha256": "8c5cfb0401af8e51bfa10919857a77c48eea9287847efba2cbbf3dccefafe8ff",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けたテキスト（1）(20260928-112939).txt",
+      "size_bytes": 79083,
+      "sha256": "ff82b97502a2ecd3b08050ee217ce5e67f65712eb66ba613c368c5c793603e9c",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けたテキスト（1）(20260928-115301).txt",
+      "size_bytes": 43206,
+      "sha256": "f1ab172cc1f73ae10ba706c96fa720fbc9478e6029fd4265090253adae3e5f21",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けたテキスト（1）(20260928-123357).txt",
+      "size_bytes": 69369,
+      "sha256": "5dd9d677f10cf5ee6e7021c2e8243741b5cb7a8c959cfd52428b38f036b8361b",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けたテキスト（1）(20260928-124137).txt",
+      "size_bytes": 164711,
+      "sha256": "51c5dd140d535554ef51503316128080d6c16cf88bb99926a0d67a775da050b6",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けたテキスト（1）(20260928-134912).txt",
+      "size_bytes": 122901,
+      "sha256": "61d8df390fd06f0ffe22433f17cf7702f5f10caa737178574b22d4e29a9e0626",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けたテキスト（1）(5).txt",
+      "size_bytes": 48718,
+      "sha256": "96612d6808e609cc9c9561b6dd1caf057276437e9bb9e200e7b60f5124fa94cf",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けたテキスト（1）(6).txt",
+      "size_bytes": 82157,
+      "sha256": "bb0a81af42f726ef48a6f2dc0b2f953461694c4376aea566514a863c62cd20fa",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けたテキスト（1）(7).txt",
+      "size_bytes": 56527,
+      "sha256": "a11472ebe5921ea962128a1e2f5f62877f90faa9a86e4e14a0071bb54b3fbf17",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けたマークダウン（1）(20260928-215853).md",
+      "size_bytes": 54746,
+      "sha256": "20d73d26b554dcace8c590dfaaf4d548b7f00b92083104b0430b77c1db700558",
+      "ext": ".md"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けたマークダウン（1）(20260928-235336).md",
+      "size_bytes": 76829,
+      "sha256": "93e7dee8f57718bd23466694584a9401ecbe5ac07a943c696841afd0a0ff3b50",
+      "ext": ".md"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けたマークダウン（1）(20260929-004416).md",
+      "size_bytes": 58309,
+      "sha256": "a63217a60e3184d466821245be6d10c2e595036417808c4528631764c7f4e749",
+      "ext": ".md"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けたマークダウン（1）(20260929-022633).md",
+      "size_bytes": 61097,
+      "sha256": "3f6f3dfe44b1fd670b1e5b8a8dd273cb6f586cc8ed7ef544cb3cca8aedc30de0",
+      "ext": ".md"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けたマークダウン（1）(20260929-022754).md",
+      "size_bytes": 84365,
+      "sha256": "6762e6c63cbdf60aa599c675d10cd7285edb62efaf946cda990ab61b527f3e0b",
+      "ext": ".md"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けたマークダウン（1）(20260929-032148).md",
+      "size_bytes": 61425,
+      "sha256": "ca5cf490f9c89f63efd07b9293ee2e6a448e5eb78aacdf2bc127a26c66e0b2f2",
+      "ext": ".md"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けたマークダウン（1）(20260929-032505).md",
+      "size_bytes": 74791,
+      "sha256": "66895a05e3128120e1c1199eac5aa0a9a7a9184226bd11c9b46df21161072310",
+      "ext": ".md"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けられたテキスト（1 点）(1).txt",
+      "size_bytes": 53545,
+      "sha256": "6c94ede9e555f6aed4094f559e5f9253170758c7407fa7f5905e077035c0af0b",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けられたテキスト（1 点）(10).txt",
+      "size_bytes": 66248,
+      "sha256": "a8a56fb67cfdefce415487de75bf9d76671eb8c469586fe4ee9d33fd8f0ed4b4",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けられたテキスト（1 点）(2).txt",
+      "size_bytes": 76290,
+      "sha256": "154e34639f589f7f25bcf7c0f1006f7c1edb2dd450ea6512812dd9f536652352",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けられたテキスト（1 点）(20260929-035853).txt",
+      "size_bytes": 37642,
+      "sha256": "23c49fd66d07b6774ff990e5f914b01930899ffc68c569d270c609e9f106e378",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けられたテキスト（1 点）(20260929-040249).txt",
+      "size_bytes": 79270,
+      "sha256": "0c01279dabbc6dc262e41529431dbbdbd5ac0ce2baa62b9e249abed142fa9216",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けられたテキスト（1 点）(3).txt",
+      "size_bytes": 104316,
+      "sha256": "2574615d6b21355a014a673efa38aee6e86fd918ea2f3e76176153ba2a5887f0",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けられたテキスト（1 点）(4).txt",
+      "size_bytes": 53383,
+      "sha256": "edfefcfe6858291d1dec3db933e90d6883734d734d53fb179ca4483260af5266",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けられたテキスト（1 点）(5).txt",
+      "size_bytes": 43374,
+      "sha256": "a8a2f10aac884f4854eeed37c54b3236356de6ab303ac915ca8b0341ccecb5d8",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けられたテキスト（1 点）(6).txt",
+      "size_bytes": 79940,
+      "sha256": "8876e689e2508018a732bde3c9d9e5b4b5c584412e3734cb21d67138922c659b",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けられたテキスト（1 点）(7).txt",
+      "size_bytes": 79940,
+      "sha256": "8876e689e2508018a732bde3c9d9e5b4b5c584412e3734cb21d67138922c659b",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けられたテキスト（1 点）(8).txt",
+      "size_bytes": 49341,
+      "sha256": "df9327f6683165830c12c4324db2668ea7fb2f9d829a1cff116b5e02123d01fa",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けられたテキスト（1 点）(9).txt",
+      "size_bytes": 51600,
+      "sha256": "e1c0429768cfba7b5eb0eb13351b31161434dfd9c86d4bf10e8f31c664237351",
+      "ext": ".txt"
+    },
+    {
+      "path": "working_raw/worker_returns_archive/貼り付けられたテキスト（1 点）.txt",
+      "size_bytes": 125905,
+      "sha256": "4dd2f72ae5034b2786a722eda6f94c03c34745a2b3f62046ebf4e2ff9dac813b",
+      "ext": ".txt"
+    }
+  ]
+}

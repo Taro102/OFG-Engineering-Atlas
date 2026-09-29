@@ -1,0 +1,185 @@
+{
+  "schema": "OFG_EA_BUNDLE_VALIDATION_REPORT_V2",
+  "index": {
+    "status": "PASS",
+    "db": "/mnt/data/ofg_migration_bundle/ofg_master_state.sqlite",
+    "counts": {
+      "files": 165,
+      "records": 7775,
+      "edges": 14
+    },
+    "include_large": false,
+    "docs": false
+  },
+  "transport_envelopes_checked": 20,
+  "transport_envelopes_pass": true,
+  "transport_results": [
+    {
+      "path": "transport/T1-G2/T1-G2-ACTIVE-04.json",
+      "returncode": 0,
+      "result": {
+        "ok": true,
+        "message": "ok"
+      }
+    },
+    {
+      "path": "transport/T1-G2/T1-G2-CAPSULE-03.json",
+      "returncode": 0,
+      "result": {
+        "ok": true,
+        "message": "ok"
+      }
+    },
+    {
+      "path": "transport/T1-G2/T1-G2-CTRL-01.json",
+      "returncode": 0,
+      "result": {
+        "ok": true,
+        "message": "ok"
+      }
+    },
+    {
+      "path": "transport/T1-G2/T1-G2-DISPATCH-05.json",
+      "returncode": 0,
+      "result": {
+        "ok": true,
+        "message": "ok"
+      }
+    },
+    {
+      "path": "transport/T1-G2/T1-G2-ENCODING-02.json",
+      "returncode": 0,
+      "result": {
+        "ok": true,
+        "message": "ok"
+      }
+    },
+    {
+      "path": "transport/T2-G2/T2-G2-ACTIVE-04.json",
+      "returncode": 0,
+      "result": {
+        "ok": true,
+        "message": "ok"
+      }
+    },
+    {
+      "path": "transport/T2-G2/T2-G2-CAPSULE-03.json",
+      "returncode": 0,
+      "result": {
+        "ok": true,
+        "message": "ok"
+      }
+    },
+    {
+      "path": "transport/T2-G2/T2-G2-CTRL-01.json",
+      "returncode": 0,
+      "result": {
+        "ok": true,
+        "message": "ok"
+      }
+    },
+    {
+      "path": "transport/T2-G2/T2-G2-DISPATCH-05.json",
+      "returncode": 0,
+      "result": {
+        "ok": true,
+        "message": "ok"
+      }
+    },
+    {
+      "path": "transport/T2-G2/T2-G2-ENCODING-02.json",
+      "returncode": 0,
+      "result": {
+        "ok": true,
+        "message": "ok"
+      }
+    },
+    {
+      "path": "transport/T4-G2/T4-G2-ACTIVE-04.json",
+      "returncode": 0,
+      "result": {
+        "ok": true,
+        "message": "ok"
+      }
+    },
+    {
+      "path": "transport/T4-G2/T4-G2-CAPSULE-03.json",
+      "returncode": 0,
+      "result": {
+        "ok": true,
+        "message": "ok"
+      }
+    },
+    {
+      "path": "transport/T4-G2/T4-G2-CTRL-01.json",
+      "returncode": 0,
+      "result": {
+        "ok": true,
+        "message": "ok"
+      }
+    },
+    {
+      "path": "transport/T4-G2/T4-G2-DISPATCH-05.json",
+      "returncode": 0,
+      "result": {
+        "ok": true,
+        "message": "ok"
+      }
+    },
+    {
+      "path": "transport/T4-G2/T4-G2-ENCODING-02.json",
+      "returncode": 0,
+      "result": {
+        "ok": true,
+        "message": "ok"
+      }
+    },
+    {
+      "path": "transport/T5-G2/T5-G2-ACTIVE-04.json",
+      "returncode": 0,
+      "result": {
+        "ok": true,
+        "message": "ok"
+      }
+    },
+    {
+      "path": "transport/T5-G2/T5-G2-CAPSULE-03.json",
+      "returncode": 0,
+      "result": {
+        "ok": true,
+        "message": "ok"
+      }
+    },
+    {
+      "path": "transport/T5-G2/T5-G2-CTRL-01.json",
+      "returncode": 0,
+      "result": {
+        "ok": true,
+        "message": "ok"
+      }
+    },
+    {
+      "path": "transport/T5-G2/T5-G2-DISPATCH-05.json",
+      "returncode": 0,
+      "result": {
+        "ok": true,
+        "message": "ok"
+      }
+    },
+    {
+      "path": "transport/T5-G2/T5-G2-ENCODING-02.json",
+      "returncode": 0,
+      "result": {
+        "ok": true,
+        "message": "ok"
+      }
+    }
+  ],
+  "smoke_files": [
+    "smoke_query_CRS01.json",
+    "smoke_neighbors_DT-BHT-006.json",
+    "smoke_open_conflicts.json",
+    "smoke_open_M88217.json",
+    "smoke_raw_scan_CRS01.json"
+  ]
+}

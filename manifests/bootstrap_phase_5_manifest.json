@@ -1,0 +1,353 @@
+{
+  "phase": 5,
+  "repository": "Taro102/OFG-Engineering-Atlas",
+  "base_remote_commit": "370dce9e6a42808d39522da894614a3910925ee0",
+  "phase_1_status": "PASS",
+  "phase_2_status": "PASS",
+  "phase_3_status": "PASS",
+  "phase_4_status": "PASS",
+  "phase_5_status": "PREPARED_NOT_YET_PUBLISHED",
+  "github_authority": "NOT_YET_ACTIVE",
+  "source_bundle_id": "OFG_EA_MASTER_MIGRATION_RAW_DATA_RETRIEVAL_R2",
+  "source_archive_sha256": "bc052b488e3ce944f765583f7d3b5f0731e210e6a423e439e3d98738bee34da1",
+  "transport_file_count": 24,
+  "remaining_r2_manifest_file_count": 10,
+  "root_migration_metadata_file_count": 2,
+  "r2_source_file_count": 36,
+  "generated_metadata_file_count": 1,
+  "total_publication_file_count": 37,
+  "total_uncompressed_byte_count": 212745,
+  "files": [
+    {
+      "repository_relative_path": "START_HERE.json",
+      "source_path_in_r2": "ofg_migration_bundle/START_HERE.json",
+      "byte_count": 1864,
+      "sha256": "899a26dcdd900044757fee03857b4b6a3f78c17e537ebb1b976023489b8a2bcb",
+      "classification": "MIGRATION_ENTRYPOINT_METADATA",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "README_MACHINE.json",
+      "source_path_in_r2": "ofg_migration_bundle/README_MACHINE.json",
+      "byte_count": 3165,
+      "sha256": "ae12923ab597b9f8a77b33ec55f615dc5283977f9a620c3d20c857f0218e1f44",
+      "classification": "MACHINE_MIGRATION_README",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "manifests/bundle_manifest.json",
+      "source_path_in_r2": "ofg_migration_bundle/manifests/bundle_manifest.json",
+      "byte_count": 38821,
+      "sha256": "5eb45e90b32a386ffeb97d81a0287e040e8a2f93a64772921d92af3277ff6abc",
+      "classification": "R2_FULL_BUNDLE_CONTENT_MANIFEST",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "manifests/retrieval_smoke_cycle.json",
+      "source_path_in_r2": "ofg_migration_bundle/manifests/retrieval_smoke_cycle.json",
+      "byte_count": 603,
+      "sha256": "d11a85ebd74f3a628b63242364c7a7dfb00c2e4b9df26a35ed8e813c72ce5079",
+      "classification": "R2_RETRIEVAL_SMOKE_OR_VALIDATION_ARTIFACT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "manifests/retrieval_smoke_neighbors.json",
+      "source_path_in_r2": "ofg_migration_bundle/manifests/retrieval_smoke_neighbors.json",
+      "byte_count": 337,
+      "sha256": "30cbc6b14acbdfd37e9250be7c703fe713c4bccbdc0120f477cc26592ba1a39f",
+      "classification": "R2_RETRIEVAL_SMOKE_OR_VALIDATION_ARTIFACT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "manifests/retrieval_smoke_query.json",
+      "source_path_in_r2": "ofg_migration_bundle/manifests/retrieval_smoke_query.json",
+      "byte_count": 20778,
+      "sha256": "b47c3487ca127b8126110f4e98d6e4aac192ce11fa68924d6b7d9541cd51bd6f",
+      "classification": "R2_RETRIEVAL_SMOKE_OR_VALIDATION_ARTIFACT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "manifests/smoke_neighbors_DT-BHT-006.json",
+      "source_path_in_r2": "ofg_migration_bundle/manifests/smoke_neighbors_DT-BHT-006.json",
+      "byte_count": 337,
+      "sha256": "30cbc6b14acbdfd37e9250be7c703fe713c4bccbdc0120f477cc26592ba1a39f",
+      "classification": "R2_RETRIEVAL_SMOKE_OR_VALIDATION_ARTIFACT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "manifests/smoke_open_M88217.json",
+      "source_path_in_r2": "ofg_migration_bundle/manifests/smoke_open_M88217.json",
+      "byte_count": 105,
+      "sha256": "467c6d457c3373cd450bbb98334a742b3a93702c0fd42fb2cee250e4cebff5a2",
+      "classification": "R2_RETRIEVAL_SMOKE_OR_VALIDATION_ARTIFACT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "manifests/smoke_open_conflicts.json",
+      "source_path_in_r2": "ofg_migration_bundle/manifests/smoke_open_conflicts.json",
+      "byte_count": 557,
+      "sha256": "181b0e0564e2417acf38cb531382eaca89b691d331c46f58205443f345f3c3fb",
+      "classification": "R2_RETRIEVAL_SMOKE_OR_VALIDATION_ARTIFACT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "manifests/smoke_query_CRS01.json",
+      "source_path_in_r2": "ofg_migration_bundle/manifests/smoke_query_CRS01.json",
+      "byte_count": 35571,
+      "sha256": "4f2fb36090a8c4c02aedf61bda8e6466d0b7a5e0eb54f14920f1fb54ea002ee3",
+      "classification": "R2_RETRIEVAL_SMOKE_OR_VALIDATION_ARTIFACT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "manifests/smoke_raw_scan_CRS01.json",
+      "source_path_in_r2": "ofg_migration_bundle/manifests/smoke_raw_scan_CRS01.json",
+      "byte_count": 1137,
+      "sha256": "11e634fa7b8b715e5355ec569181ed20f3b793664575af004476db21e25616f7",
+      "classification": "R2_RETRIEVAL_SMOKE_OR_VALIDATION_ARTIFACT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "manifests/validation_report.json",
+      "source_path_in_r2": "ofg_migration_bundle/manifests/validation_report.json",
+      "byte_count": 3792,
+      "sha256": "14ef203faf9587984e68c4204ed5fecc875605cd6b836d7214cc6e0bc446f0d1",
+      "classification": "R2_BUNDLE_VALIDATION_REPORT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "transport/T1-G2/T1-G2-ACTIVE-04.json",
+      "source_path_in_r2": "ofg_migration_bundle/transport/T1-G2/T1-G2-ACTIVE-04.json",
+      "byte_count": 1655,
+      "sha256": "e00a61deb0a97d9a393e40eb367ae5d1cd7aff2d2f5aa322781cef2bb1337095",
+      "classification": "MRE2_SUCCESSOR_THREAD_TRANSPORT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "transport/T1-G2/T1-G2-CAPSULE-03.json",
+      "source_path_in_r2": "ofg_migration_bundle/transport/T1-G2/T1-G2-CAPSULE-03.json",
+      "byte_count": 12424,
+      "sha256": "9e6b4be6670aa6e579994e6c89a6574caf13e303575af560c876f2cab8aa4b18",
+      "classification": "MRE2_SUCCESSOR_THREAD_TRANSPORT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "transport/T1-G2/T1-G2-CTRL-01.json",
+      "source_path_in_r2": "ofg_migration_bundle/transport/T1-G2/T1-G2-CTRL-01.json",
+      "byte_count": 1590,
+      "sha256": "059809a95d50235ba65ae6c5931a8485e951e93dd8f37942043ea9da3aa5e030",
+      "classification": "MRE2_SUCCESSOR_THREAD_TRANSPORT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "transport/T1-G2/T1-G2-DISPATCH-05.json",
+      "source_path_in_r2": "ofg_migration_bundle/transport/T1-G2/T1-G2-DISPATCH-05.json",
+      "byte_count": 8069,
+      "sha256": "79a2ba74bfcedc0b7cc124eedc454608ebf2b309aea7fa07b9362d2532369e25",
+      "classification": "MRE2_SUCCESSOR_THREAD_TRANSPORT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "transport/T1-G2/T1-G2-ENCODING-02.json",
+      "source_path_in_r2": "ofg_migration_bundle/transport/T1-G2/T1-G2-ENCODING-02.json",
+      "byte_count": 1931,
+      "sha256": "1338505aec7064db1032df29b59f1b4d944d0ea5853224ddcb83fac63bf15e06",
+      "classification": "MRE2_SUCCESSOR_THREAD_TRANSPORT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "transport/T1-G2/transport_manifest.json",
+      "source_path_in_r2": "ofg_migration_bundle/transport/T1-G2/transport_manifest.json",
+      "byte_count": 1540,
+      "sha256": "f08b79f94d928bd17af37887f0b761f3563b8360565efd5b3a60bb5993c7a02d",
+      "classification": "MRE2_SUCCESSOR_THREAD_TRANSPORT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "transport/T2-G2/T2-G2-ACTIVE-04.json",
+      "source_path_in_r2": "ofg_migration_bundle/transport/T2-G2/T2-G2-ACTIVE-04.json",
+      "byte_count": 1655,
+      "sha256": "c1acc63b0c59e1fbcf63a00f876e797153f68ec54be81208730c567e6d48a0da",
+      "classification": "MRE2_SUCCESSOR_THREAD_TRANSPORT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "transport/T2-G2/T2-G2-CAPSULE-03.json",
+      "source_path_in_r2": "ofg_migration_bundle/transport/T2-G2/T2-G2-CAPSULE-03.json",
+      "byte_count": 5613,
+      "sha256": "ea8e3332e34cdde8d16bbe50b78c2364d258acc8423a1f2835a04d44d328955c",
+      "classification": "MRE2_SUCCESSOR_THREAD_TRANSPORT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "transport/T2-G2/T2-G2-CTRL-01.json",
+      "source_path_in_r2": "ofg_migration_bundle/transport/T2-G2/T2-G2-CTRL-01.json",
+      "byte_count": 1590,
+      "sha256": "a544416d6ba695829983382d5bd4906173ddc62918a5adbf94c54e0b4649545d",
+      "classification": "MRE2_SUCCESSOR_THREAD_TRANSPORT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "transport/T2-G2/T2-G2-DISPATCH-05.json",
+      "source_path_in_r2": "ofg_migration_bundle/transport/T2-G2/T2-G2-DISPATCH-05.json",
+      "byte_count": 8069,
+      "sha256": "4e383453401f218c246d8c2413c1b56c2ebc04808b956c7c00a7cdd0f592719c",
+      "classification": "MRE2_SUCCESSOR_THREAD_TRANSPORT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "transport/T2-G2/T2-G2-ENCODING-02.json",
+      "source_path_in_r2": "ofg_migration_bundle/transport/T2-G2/T2-G2-ENCODING-02.json",
+      "byte_count": 1931,
+      "sha256": "228907327e9c945f72598d191eba00611cb4720e44d10cd6e3a24345d7d0856b",
+      "classification": "MRE2_SUCCESSOR_THREAD_TRANSPORT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "transport/T2-G2/transport_manifest.json",
+      "source_path_in_r2": "ofg_migration_bundle/transport/T2-G2/transport_manifest.json",
+      "byte_count": 1540,
+      "sha256": "24e0838d531c06189d7bc8387917d6168403bd168476cb5d3a7602eab0b6e120",
+      "classification": "MRE2_SUCCESSOR_THREAD_TRANSPORT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "transport/T4-G2/T4-G2-ACTIVE-04.json",
+      "source_path_in_r2": "ofg_migration_bundle/transport/T4-G2/T4-G2-ACTIVE-04.json",
+      "byte_count": 1655,
+      "sha256": "36500dbf9821f619f7b3d1efa9cdffc6b17290f4d71f3dee394ceee488018acf",
+      "classification": "MRE2_SUCCESSOR_THREAD_TRANSPORT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "transport/T4-G2/T4-G2-CAPSULE-03.json",
+      "source_path_in_r2": "ofg_migration_bundle/transport/T4-G2/T4-G2-CAPSULE-03.json",
+      "byte_count": 5619,
+      "sha256": "60b85fee198c497f136eb23a03198e5249226ed9565b9cbb9fba541469309e7b",
+      "classification": "MRE2_SUCCESSOR_THREAD_TRANSPORT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "transport/T4-G2/T4-G2-CTRL-01.json",
+      "source_path_in_r2": "ofg_migration_bundle/transport/T4-G2/T4-G2-CTRL-01.json",
+      "byte_count": 1590,
+      "sha256": "92b6ba59a179f309bdacf2b8c0d3cf6c19dcb29d7d2722f961b9ae02eb27f95b",
+      "classification": "MRE2_SUCCESSOR_THREAD_TRANSPORT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "transport/T4-G2/T4-G2-DISPATCH-05.json",
+      "source_path_in_r2": "ofg_migration_bundle/transport/T4-G2/T4-G2-DISPATCH-05.json",
+      "byte_count": 8069,
+      "sha256": "0bf09d17095fa5ae485d043f110d4e3adf2d598f559eb2c3f57a296923fe16b3",
+      "classification": "MRE2_SUCCESSOR_THREAD_TRANSPORT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "transport/T4-G2/T4-G2-ENCODING-02.json",
+      "source_path_in_r2": "ofg_migration_bundle/transport/T4-G2/T4-G2-ENCODING-02.json",
+      "byte_count": 1931,
+      "sha256": "571cb1a22ed2cbe7d23b456ca03ad2c4840053d92b63f6dfb4e28101e4bda11f",
+      "classification": "MRE2_SUCCESSOR_THREAD_TRANSPORT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "transport/T4-G2/transport_manifest.json",
+      "source_path_in_r2": "ofg_migration_bundle/transport/T4-G2/transport_manifest.json",
+      "byte_count": 1540,
+      "sha256": "c6a2b47662f1882de316545a737c61c36837817d05ddc2b48bf4b2039e9d9177",
+      "classification": "MRE2_SUCCESSOR_THREAD_TRANSPORT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "transport/T5-G2/T5-G2-ACTIVE-04.json",
+      "source_path_in_r2": "ofg_migration_bundle/transport/T5-G2/T5-G2-ACTIVE-04.json",
+      "byte_count": 1655,
+      "sha256": "e856a38f563f46b13d14486ef90aece7a3633b89bcf242a4bfea1e6c9d1c0a61",
+      "classification": "MRE2_SUCCESSOR_THREAD_TRANSPORT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "transport/T5-G2/T5-G2-CAPSULE-03.json",
+      "source_path_in_r2": "ofg_migration_bundle/transport/T5-G2/T5-G2-CAPSULE-03.json",
+      "byte_count": 5424,
+      "sha256": "8e0465bd36b1fcdaa9e81a12214d46ff4de74d144f7051838ba0ca64021dbe7e",
+      "classification": "MRE2_SUCCESSOR_THREAD_TRANSPORT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "transport/T5-G2/T5-G2-CTRL-01.json",
+      "source_path_in_r2": "ofg_migration_bundle/transport/T5-G2/T5-G2-CTRL-01.json",
+      "byte_count": 1590,
+      "sha256": "9ded02ca50be7dbf08bf937a538f5d0c3f8131e27990b6b34e59886b0b68897f",
+      "classification": "MRE2_SUCCESSOR_THREAD_TRANSPORT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "transport/T5-G2/T5-G2-DISPATCH-05.json",
+      "source_path_in_r2": "ofg_migration_bundle/transport/T5-G2/T5-G2-DISPATCH-05.json",
+      "byte_count": 8069,
+      "sha256": "d99e566d563cd80856c65b89404bd8bbfd6d3239b433fd0121c4f048d43445b4",
+      "classification": "MRE2_SUCCESSOR_THREAD_TRANSPORT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "transport/T5-G2/T5-G2-ENCODING-02.json",
+      "source_path_in_r2": "ofg_migration_bundle/transport/T5-G2/T5-G2-ENCODING-02.json",
+      "byte_count": 1931,
+      "sha256": "38ec76618ecf67b0c6a4ca7177d07a6ad540bb6fe5a870584cdbb62f1e8e223f",
+      "classification": "MRE2_SUCCESSOR_THREAD_TRANSPORT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "transport/T5-G2/transport_manifest.json",
+      "source_path_in_r2": "ofg_migration_bundle/transport/T5-G2/transport_manifest.json",
+      "byte_count": 1540,
+      "sha256": "8d66573c0f0da421db308fc528b2b6be31f9b8f51292167bafb237ab26457794",
+      "classification": "MRE2_SUCCESSOR_THREAD_TRANSPORT",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_relative_path": "manifests/bootstrap_phase_5_manifest.json",
+      "source_path_in_r2": null,
+      "byte_count": 17458,
+      "sha256": null,
+      "classification": "PHASE5_PUBLICATION_MANIFEST",
+      "source_status": "NEW_PHASE5_PUBLICATION_METADATA",
+      "sha256_status": "SELF_HASH_EXCLUDED_EXTERNAL_SHA256_PROVIDED_IN_DELIVERY_RESPONSE"
+    }
+  ],
+  "transport_scope": {
+    "logical_threads": [
+      "T1-G2",
+      "T2-G2",
+      "T4-G2",
+      "T5-G2"
+    ],
+    "thread3_transport_present": false,
+    "thread3_state": "PERMANENTLY_RETIRED_READ_ONLY_NO_SUCCESSOR_TRANSPORT",
+    "expected_envelopes_per_active_successor": 5,
+    "expected_transport_manifest_per_active_successor": 1,
+    "semantic_merge_performed": false,
+    "c011_integration_performed": false,
+    "c012_issued": false
+  },
+  "publication_controls": {
+    "phase1_files_modified": false,
+    "phase2_files_modified": false,
+    "phase3_files_modified": false,
+    "phase4_files_modified": false,
+    "reference_raw_included": false,
+    "working_raw_included": false,
+    "sqlite_included": false,
+    "r2_zip_included": false,
+    "large_reference_data_included": false,
+    "github_authority_activated": false,
+    "remote_write_performed": false
+  },
+  "notes": [
+    "manifests/worker_return_catalog.json is intentionally excluded from Phase 5 because it was published and verified in Phase 4.",
+    "manifests/bundle_manifest.json describes the original full R2 migration bundle and therefore references files that may not yet be present in the GitHub repository at Phase 5.",
+    "validation and smoke artifacts are preserved as R2 provenance; they are not re-executed results for the GitHub repository."
+  ],
+  "recommended_git_commit_message": "Bootstrap Phase 5: publish successor transport and migration metadata"
+}
