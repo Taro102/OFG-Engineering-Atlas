@@ -1,0 +1,10 @@
+{
+  "migration_source": "OFG_EA_Master_Migration_Raw_Data_Retrieval_R2.zip",
+  "predecessor_master": "T1-G1",
+  "successor_master": "T1-G2",
+  "master_epoch": 2,
+  "github_repository_visibility": "PUBLIC_INTENTIONAL",
+  "github_roundtrip_validation": "NOT_YET_PERFORMED",
+  "github_authority": "NOT_YET_ACTIVE",
+  "raw_large_file_migration": "NOT_YET_PERFORMED"
+}

@@ -1,0 +1,14 @@
+{
+  "thread_instances": {
+    "T1-G2": "MASTER_ORCHESTRATOR_INTEGRATOR_AND_SUBSTANTIVE_ENGINEERING_REVIEW",
+    "T2-G2": "SUCCESSOR_LOGICAL_THREAD_2",
+    "T4-G1": "CURRENT_C011_WRITER_UNLESS_EXPLICITLY_FENCED",
+    "T5-G1": "CURRENT_C011_WRITER_UNLESS_EXPLICITLY_FENCED",
+    "T4-G2": "HOT_STANDBY",
+    "T5-G2": "HOT_STANDBY"
+  },
+  "thread3": "PERMANENTLY_RETIRED_READ_ONLY",
+  "worker_global_write_authority": false,
+  "global_integration_authority": "T1",
+  "c011_global_integration_gate": "ALL_REQUIRED_RETURNS_ACCEPTED_PLUS_USER_EXPLICIT_COMMENCE"
+}

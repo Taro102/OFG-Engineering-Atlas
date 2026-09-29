@@ -1,0 +1,18 @@
+{
+  "top_level_logical_structure": {
+    "control/": "Repository policy, authority, configuration, migration control, and layout.",
+    "state/": "Version-controlled normalized machine state and controlled registers.",
+    "atlas/": "Human- and machine-readable engineering semantics and reference material.",
+    "annex/": "Machine-readable schemas, registers, parameters, datasets, and code packages.",
+    "reference/": "Controlled reference catalogues and source bindings, preserving authority distinctions.",
+    "raw/": "Immutable provenance inputs intended for public distribution.",
+    "threads/": "Thread role state, generation controls, and rehydration checkpoints.",
+    "dispatch/": "Versioned work-cycle dispatch packages.",
+    "returns/": "Worker return packages with provenance and acceptance status.",
+    "programs/": "Retrieval, validation, indexing, ingestion, and transport programs.",
+    "indexes/": "Rebuildable retrieval index specifications and manifests.",
+    "generated/": "Derivative generated outputs, including rebuildable retrieval databases."
+  },
+  "directory_creation_rule": "CREATE_ONLY_WHEN_ACTUAL_TRACKED_FILES_REQUIRE_THE_DIRECTORY",
+  "placeholder_empty_directories": "PROHIBITED"
+}

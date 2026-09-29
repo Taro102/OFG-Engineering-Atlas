@@ -1,0 +1,28 @@
+{
+  "repository": "Taro102/OFG-Engineering-Atlas",
+  "visibility": "PUBLIC_INTENTIONAL",
+  "persistent_authority_target": true,
+  "github_authority_state": "NOT_YET_ACTIVE",
+  "configuration_cut": "2031-04-19",
+  "raw_sources": "IMMUTABLE_PROVENANCE_INPUT",
+  "normalized_state": "VERSION_CONTROLLED",
+  "sqlite": "DERIVED_REBUILDABLE_INDEX",
+  "silent_identity_merge": "PROHIBITED",
+  "silent_identity_split": "PROHIBITED",
+  "silent_identity_rename": "PROHIBITED",
+  "unsupported_inference": "PROHIBITED",
+  "external_precedent_as_ofg_history": "PROHIBITED",
+  "thread3": "PERMANENTLY_RETIRED_READ_ONLY_ARCHIVE",
+  "rev4": "QUARANTINED_OUT_OF_BASELINE",
+  "public_distribution_required": true,
+  "prohibited_commit_material": [
+    "CREDENTIALS",
+    "ACCESS_TOKENS",
+    "AUTHENTICATION_MATERIAL",
+    "PRIVATE_KEYS",
+    "LOCAL_ACCOUNT_IDENTIFIERS",
+    "TRANSIENT_CONNECTOR_CREDENTIALS",
+    "SOURCE_MATERIAL_NOT_INTENDED_FOR_PUBLIC_DISTRIBUTION"
+  ],
+  "large_file_handling": "SEPARATE_STORAGE_CONCERN_DEFERRED_TO_LATER_PHASE"
+}

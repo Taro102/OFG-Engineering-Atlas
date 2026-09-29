@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.cache/
+.tmp/
+scratch/
+work/
+*.log
+generated/*.sqlite
+generated/*.sqlite-wal
+generated/*.sqlite-shm
+migration_staging/
