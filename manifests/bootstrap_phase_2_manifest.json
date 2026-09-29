@@ -1,0 +1,250 @@
+{
+  "phase": 2,
+  "repository": "Taro102/OFG-Engineering-Atlas",
+  "base_remote_commit": "7a741ea18db4ba69ac6997c8bbb8eff59c099f91",
+  "phase_1_status": "PASS",
+  "phase_2_status": "PREPARED_NOT_YET_PUBLISHED",
+  "github_authority": "NOT_YET_ACTIVE",
+  "source_bundle_id": "OFG_EA_MASTER_MIGRATION_RAW_DATA_RETRIEVAL_R2",
+  "source_archive_sha256": "bc052b488e3ce944f765583f7d3b5f0731e210e6a423e439e3d98738bee34da1",
+  "file_count": 11,
+  "source_file_count": 10,
+  "generated_publication_metadata_count": 1,
+  "total_uncompressed_byte_count": 40374,
+  "files": [
+    {
+      "repository_path": "programs/ofg_retrieve.py",
+      "source_path_in_r2": "ofg_migration_bundle/programs/ofg_retrieve.py",
+      "byte_count": 5365,
+      "sha256": "bf3a3cafa7e20435d5b5444c7cdc127fdb59b6452024a294066961bc90de3a57",
+      "classification": "PYTHON_EXECUTION_SOURCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_path": "programs/ofg_index.py",
+      "source_path_in_r2": "ofg_migration_bundle/programs/ofg_index.py",
+      "byte_count": 8179,
+      "sha256": "c428895ecee18b0a45e7a622267efef12911177739f8b6d37def33d2999e8d8b",
+      "classification": "PYTHON_EXECUTION_SOURCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_path": "programs/ofg_rehydrate.py",
+      "source_path_in_r2": "ofg_migration_bundle/programs/ofg_rehydrate.py",
+      "byte_count": 2618,
+      "sha256": "74fe67f7d3690157a5ef891cf77ade0115eb053c7cf3fbbd97ee5fae6d4594b1",
+      "classification": "PYTHON_EXECUTION_SOURCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_path": "programs/ofg_codec.py",
+      "source_path_in_r2": "ofg_migration_bundle/programs/ofg_codec.py",
+      "byte_count": 3459,
+      "sha256": "b1372e3b1a163df76bd60a2fa7581c541b84f4e60a3210b54a7b8faca926d8f5",
+      "classification": "PYTHON_EXECUTION_SOURCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_path": "programs/ofg_ingest.py",
+      "source_path_in_r2": "ofg_migration_bundle/programs/ofg_ingest.py",
+      "byte_count": 3615,
+      "sha256": "958e660fc99bc6adabc5674592fb9c5da1a91b8d5698b57fc1ea1a32e848636a",
+      "classification": "PYTHON_EXECUTION_SOURCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_path": "programs/ofg_transport.py",
+      "source_path_in_r2": "ofg_migration_bundle/programs/ofg_transport.py",
+      "byte_count": 2165,
+      "sha256": "d31b4f689e080157e123a1c74a6146f96de58ad7b230dfa11a5233ad8e499004",
+      "classification": "PYTHON_EXECUTION_SOURCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_path": "programs/ofg_verify.py",
+      "source_path_in_r2": "ofg_migration_bundle/programs/ofg_verify.py",
+      "byte_count": 954,
+      "sha256": "3749def809f2ad91ee5c40b9c3ddf3cf4f310120fae9515a58064dbb9911967d",
+      "classification": "PYTHON_EXECUTION_SOURCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_path": "programs/bootstrap.sh",
+      "source_path_in_r2": "ofg_migration_bundle/programs/bootstrap.sh",
+      "byte_count": 804,
+      "sha256": "592392252aa39c3791c42a1d6b98d9213351e809264dafae8a52efb68bc9e52b",
+      "classification": "BASH_EXECUTION_SOURCE",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_path": "state/encoding_retrieval_spec.json",
+      "source_path_in_r2": "ofg_migration_bundle/state/encoding_retrieval_spec.json",
+      "byte_count": 1612,
+      "sha256": "0997195f2d0cab23a38bb4d9f04dd874fd97a2bc527ac66ab10d54b4144f21bc",
+      "classification": "ENCODING_RETRIEVAL_SPECIFICATION",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_path": "PROGRAM_USAGE.json",
+      "source_path_in_r2": "ofg_migration_bundle/PROGRAM_USAGE.json",
+      "byte_count": 1405,
+      "sha256": "06da03faf045f573102a9e4739dcce98292b555ea1c020e897c7ec0ddcc5994f",
+      "classification": "EXECUTION_USAGE_DOCUMENTATION",
+      "source_status": "EXISTING_R2_SOURCE_BYTE_FOR_BYTE_UNCHANGED"
+    },
+    {
+      "repository_path": "manifests/bootstrap_phase_2_manifest.json",
+      "source_path_in_r2": null,
+      "byte_count": 10198,
+      "sha256": null,
+      "classification": "PUBLICATION_MANIFEST",
+      "source_status": "NEW_USER_REQUESTED_PUBLICATION_METADATA_NOT_R2_SOURCE",
+      "sha256_status": "SELF_HASH_EXCLUDED_EXTERNAL_SHA256_PROVIDED_IN_DELIVERY_RESPONSE"
+    }
+  ],
+  "integrity_policy": {
+    "source_hash_basis": "EXACT_UNMODIFIED_R2_FILE_BYTES",
+    "self_hash_exclusion": "Only this manifest SHA-256 is null inside the manifest to avoid circular self-hashing. Its complete-file SHA-256 is supplied externally in the delivery response.",
+    "self_byte_count_included": true,
+    "zip_sha256_location": "DELIVERY_RESPONSE"
+  },
+  "additional_source_files_included": [],
+  "dependency_review": {
+    "local_python_imports": [
+      {
+        "consumer": "programs/ofg_transport.py",
+        "dependency": "programs/ofg_codec.py",
+        "status": "INCLUDED"
+      }
+    ],
+    "program_invocations": [
+      {
+        "consumer": "programs/bootstrap.sh",
+        "dependencies": [
+          "programs/ofg_index.py",
+          "programs/ofg_rehydrate.py"
+        ],
+        "status": "INCLUDED"
+      },
+      {
+        "consumer": "programs/ofg_ingest.py",
+        "dependencies": [
+          "programs/ofg_index.py"
+        ],
+        "condition": "UNLESS_NO_REINDEX",
+        "status": "INCLUDED"
+      }
+    ],
+    "additional_schema_or_documentation_dependency_demonstrated": false,
+    "external_runtimes": [
+      "Python 3 with required standard-library modules and SQLite support",
+      "Bash for bootstrap.sh; Windows requires a Bash-capable environment"
+    ],
+    "deferred_runtime_inputs": [
+      {
+        "consumers": [
+          "programs/ofg_rehydrate.py",
+          "programs/bootstrap.sh"
+        ],
+        "paths": [
+          "state/current_working_state.json",
+          "state/reference_state.json",
+          "state/active_cycle_c011.json",
+          "state/thread_role_profiles.json",
+          "state/conflicts.jsonl",
+          "state/open_frontiers.jsonl",
+          "state/identity_registry_seed.jsonl",
+          "state/provenance_bindings.jsonl"
+        ],
+        "status": "EXCLUDED_NORMALIZED_STATE"
+      },
+      {
+        "consumers": [
+          "programs/ofg_transport.py"
+        ],
+        "paths": [
+          "state/migration_control.json",
+          "state/T{thread}-G{generation}_REHYDRATION_CAPSULE.json",
+          "state/active_cycle_c011.json",
+          "state/c011_dispatches.json"
+        ],
+        "status": "EXCLUDED_STATE_AND_PAYLOADS"
+      },
+      {
+        "consumers": [
+          "programs/ofg_ingest.py"
+        ],
+        "paths": [
+          "state/current_working_state.json",
+          "USER_SUPPLIED_WORKER_RETURN"
+        ],
+        "status": "EXCLUDED_STATE_AND_RUNTIME_INPUT"
+      },
+      {
+        "consumers": [
+          "programs/ofg_verify.py"
+        ],
+        "paths": [
+          "manifests/bundle_manifest.json",
+          "FILES_REFERENCED_BY_ORIGINAL_BUNDLE_MANIFEST"
+        ],
+        "status": "DEFERRED_FULL_BUNDLE_INTEGRITY_INPUTS",
+        "note": "The original verifier reads bundle_manifest.json, not bootstrap_phase_2_manifest.json. It is not a standalone Phase-2 verifier."
+      },
+      {
+        "consumers": [
+          "programs/ofg_retrieve.py"
+        ],
+        "paths": [
+          "state/current_working_state.json",
+          "state/reference_state.json",
+          "state/active_cycle_c011.json",
+          "state/cycle_history.jsonl",
+          "state/conflicts.jsonl",
+          "state/open_frontiers.jsonl",
+          "ofg_master_state.sqlite",
+          "reference_raw/"
+        ],
+        "status": "COMMAND_DEPENDENT_EXCLUDED_STATE_INDEX_AND_CORPUS"
+      },
+      {
+        "consumers": [
+          "programs/ofg_index.py"
+        ],
+        "paths": [
+          "state/*.json",
+          "state/*.jsonl",
+          "working_raw/by_package/",
+          "reference_raw/"
+        ],
+        "status": "OPTIONAL_OR_COMMAND_DEPENDENT_INPUTS_NOT_FULLY_PRESENT_IN_PHASE2"
+      }
+    ]
+  },
+  "execution_readiness": {
+    "classification": "SOURCE_PUBLICATION_ONLY_NOT_FULL_RUNTIME_ACTIVATION",
+    "python_syntax_and_cli_help": "PASS",
+    "bash_syntax": "PASS",
+    "full_workflow_execution": "NOT_PERFORMED",
+    "bootstrap_execution": "DEFERRED_NOT_AUTHORIZED_BY_THIS_PACKAGE",
+    "constraints": [
+      "Original paths reference reference_raw/ and working_raw/; no migration to other logical layout paths has been implemented.",
+      "Default SQLite output is ofg_master_state.sqlite at the runtime root, outside the Phase-1 generated/*.sqlite ignore pattern. Do not publish generated databases.",
+      "The indexer scans the entire supplied runtime root and has no explicit .git exclusion. Use a separately prepared runtime dataset root without repository metadata or authentication material; do not run against the Git checkout root.",
+      "The indexer replaces an existing target database; bootstrap and rehydration can write capsule files. No such mutation was executed for this publication.",
+      "The existing codec chunker accumulates chunks in memory. Large-volume execution scalability is not established by this source-publication validation.",
+      "Windows-friendly packaging preserves UTF-8 source bytes and original LF line endings; it does not establish native Windows runtime validation."
+    ]
+  },
+  "publication_controls": {
+    "phase1_files_included": false,
+    "phase1_modification_allowed": false,
+    "phase3_started": false,
+    "c011_modification_allowed": false,
+    "c012_issuance_allowed": false,
+    "remote_write_performed": false,
+    "github_connector_role": "READ_ONLY_INSPECTION_AND_VERIFICATION",
+    "visibility": "PUBLIC_INTENTIONAL"
+  },
+  "recommended_git_commit_message": "Bootstrap Phase 2: publish R2 execution and retrieval sources"
+}
