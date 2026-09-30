@@ -4,7 +4,10 @@
   "successor_master": "T1-G2",
   "master_epoch": 2,
   "github_repository_visibility": "PUBLIC_INTENTIONAL",
-  "github_roundtrip_validation": "NOT_YET_PERFORMED",
-  "github_authority": "NOT_YET_ACTIVE",
-  "raw_large_file_migration": "NOT_YET_PERFORMED"
+  "github_roundtrip_validation": "PASS",
+  "github_roundtrip_validation_checkpoint": "bb31b7c7ede98fdcfefb132dd76858fb3a47ee2f",
+  "github_authority": "ACTIVE_PERSISTENT_CONTROL_PLANE",
+  "github_authority_activation": "OFG-EA-GITHUB-AUTHORITY-PHASE7",
+  "raw_large_file_migration": "COMPLETE_GIT_LFS",
+  "migration_completion": "COMPLETE"
 }

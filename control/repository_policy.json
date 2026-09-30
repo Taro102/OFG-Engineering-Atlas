@@ -2,7 +2,10 @@
   "repository": "Taro102/OFG-Engineering-Atlas",
   "visibility": "PUBLIC_INTENTIONAL",
   "persistent_authority_target": true,
-  "github_authority_state": "NOT_YET_ACTIVE",
+  "github_authority_state": "ACTIVE_PERSISTENT_CONTROL_PLANE",
+  "github_authority_scope": "VERSION_CONTROLLED_CONTROL_STATE_MANIFESTS_PROVENANCE_AND_REFERENCE_CORPUS",
+  "authority_activation_record": "control/authority_activation.json",
+  "authority_activation_requires_roundtrip_validation": true,
   "configuration_cut": "2031-04-19",
   "raw_sources": "IMMUTABLE_PROVENANCE_INPUT",
   "normalized_state": "VERSION_CONTROLLED",
@@ -24,5 +27,5 @@
     "TRANSIENT_CONNECTOR_CREDENTIALS",
     "SOURCE_MATERIAL_NOT_INTENDED_FOR_PUBLIC_DISTRIBUTION"
   ],
-  "large_file_handling": "SEPARATE_STORAGE_CONCERN_DEFERRED_TO_LATER_PHASE"
+  "large_file_handling": "GIT_LFS_FOR_QUALIFYING_REFERENCE_RAW_OBJECTS"
 }

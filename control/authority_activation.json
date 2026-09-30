@@ -1,0 +1,89 @@
+{
+  "schema": "OFG_EA_AUTHORITY_ACTIVATION_V1",
+  "activation_id": "OFG-EA-GITHUB-AUTHORITY-PHASE7",
+  "activation_parent_head": "bb31b7c7ede98fdcfefb132dd76858fb3a47ee2f",
+  "repository": "Taro102/OFG-Engineering-Atlas",
+  "branch": "main",
+  "repository_visibility": "PUBLIC_INTENTIONAL",
+  "authority_state_after_commit": "ACTIVE_PERSISTENT_CONTROL_PLANE",
+  "authority_scope": "VERSION_CONTROLLED_CONTROL_STATE_MANIFESTS_PROVENANCE_AND_REFERENCE_CORPUS",
+  "validation_basis": {
+    "package_type": "FULL_MIGRATION_ROUNDTRIP_VALIDATION_RESULT",
+    "result": "PASS",
+    "r2_archive_sha256": "bc052b488e3ce944f765583f7d3b5f0731e210e6a423e439e3d98738bee34da1",
+    "r2_archive_file_count": 170,
+    "tracked_files_verified": 182,
+    "projected_r2_files_verified": 168,
+    "projected_r2_mismatch_count": 0,
+    "nonarchive_r2_files_verified": 138,
+    "worker_return_archive_files_verified_by_content_multiset": 30,
+    "worker_return_archive_filename_validation_mode": "PHASE4_CANONICAL_PATH_VALIDATION_PLUS_V5_CROSS_PLATFORM_CONTENT_MULTISET",
+    "generated_repository_history_drift_count": 0,
+    "remote_lfs_object_bytes_downloaded_and_hashed": true,
+    "lfs_source_sha256": "efdee0aa79172799d1b06df0a02772500d52e6a3ce92c4904b7eb56e549b8117",
+    "lfs_source_size": 143123205,
+    "git_fsck_result": "PASS",
+    "git_lfs_fsck_result": "PASS",
+    "missing_tracked_paths": [],
+    "unexpected_tracked_paths": [],
+    "head_stable_during_validation": true
+  },
+  "engineering_state": {
+    "baseline_id": "OFG-EA-B000-REV3-REVW3-REVS-2031-04-19",
+    "latest_integrated_staging": "OFG-EA-C010-INTEGRATED-STAGING-R1",
+    "working_view": "OFG-EA-B000-PLUS-C001-C002-C003-C004-C005-C006-C007-C008-C009-C010-STAGING-R1",
+    "configuration_cut": "2031-04-19",
+    "latest_integrated_cycle": "OFG-EA-CYCLE-010",
+    "active_cycle": "OFG-EA-CYCLE-011",
+    "engineering_state_changed_by_activation": false,
+    "baseline_promoted": false,
+    "global_release": false
+  },
+  "thread_cutover": {
+    "T1-G1": "FROZEN_PREDECESSOR_MASTER_READ_ONLY",
+    "T1-G2": "ACTIVE_MASTER_EPOCH_2",
+    "T2-G1": "INACTIVE_CONTEXT_LIMIT_NO_C011_RETURN",
+    "T2-G2": "ACTIVE_C011_REISSUE_OWNER",
+    "T4-G1": "CURRENT_C011_WRITER_UNLESS_EXPLICITLY_FENCED",
+    "T4-G2": "HOT_STANDBY",
+    "T5-G1": "CURRENT_C011_WRITER_UNLESS_EXPLICITLY_FENCED",
+    "T5-G2": "HOT_STANDBY",
+    "T3": "PERMANENTLY_RETIRED_READ_ONLY_NO_SUCCESSOR"
+  },
+  "cycle_guards": {
+    "c011_integrated": false,
+    "c011_integration_allowed": false,
+    "c011_gate": "T2_G2_C011_RETURN_PLUS_T4_C011_RETURN_PLUS_T5_C011_RETURN_AND_USER_COMMENCE",
+    "c012_exists": false,
+    "c012_issuance_allowed": false
+  },
+  "snapshot_precedence": {
+    "rule": "THIS_ACTIVATION_RECORD_SUPERSEDES_PRE_CUTOVER_AUTHORITY_FIELDS_ONLY",
+    "pre_cutover_snapshot_files_preserved": [
+      "state/current_working_state.json",
+      "state/migration_control.json",
+      "state/T1-G2_REHYDRATION_CAPSULE.json",
+      "transport/T1-G2/**",
+      "transport/T2-G2/**",
+      "transport/T4-G2/**",
+      "transport/T5-G2/**"
+    ],
+    "engineering_content_in_pre_cutover_snapshots_remains_VALID_UNLESS_SUPERSEDED_BY_LATER_CYCLE_STATE": true,
+    "authority_resolution_order": [
+      "control/authority_activation.json",
+      "control/authority_model.json",
+      "control/migration_status.json",
+      "control/repository_policy.json",
+      "pre_cutover_state_snapshots"
+    ]
+  },
+  "prohibitions": [
+    "NO_C011_GLOBAL_INTEGRATION_AS_SIDE_EFFECT_OF_AUTHORITY_ACTIVATION",
+    "NO_C012_ISSUANCE_AS_SIDE_EFFECT_OF_AUTHORITY_ACTIVATION",
+    "NO_BASELINE_PROMOTION",
+    "NO_GLOBAL_RELEASE",
+    "NO_T3_REACTIVATION",
+    "NO_REV4_BASELINE_PROMOTION",
+    "NO_RECONSTRUCTION_OF_KNOWN_RAW_GAPS"
+  ]
+}

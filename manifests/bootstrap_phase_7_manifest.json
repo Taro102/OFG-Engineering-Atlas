@@ -1,0 +1,68 @@
+{
+  "phase": 7,
+  "package_type": "OFG_ENGINEERING_ATLAS_AUTHORITY_ACTIVATION",
+  "repository": "Taro102/OFG-Engineering-Atlas",
+  "base_remote_commit": "bb31b7c7ede98fdcfefb132dd76858fb3a47ee2f",
+  "full_migration_roundtrip_validation": "PASS",
+  "source_r2_sha256": "bc052b488e3ce944f765583f7d3b5f0731e210e6a423e439e3d98738bee34da1",
+  "authority_state_before": "NOT_YET_ACTIVE",
+  "authority_state_after": "ACTIVE_PERSISTENT_CONTROL_PLANE",
+  "active_master_before": "T1-G1_PRE_CUTOVER_SNAPSHOT",
+  "active_master_after": "T1-G2",
+  "modified_existing_file_count": 3,
+  "new_file_count": 2,
+  "total_changed_path_count": 5,
+  "expected_tracked_files_after_publication": 184,
+  "files": [
+    {
+      "path": "control/migration_status.json",
+      "operation": "MODIFY",
+      "base_git_blob_sha": "a6511b397d2117415f3a0999051fb3fd72cd3a2e",
+      "byte_count": 560,
+      "sha256": "b9e3e9456da598e7ca65b88f0c1033fc6f9c8597899dfd89cc4ab1436e4e8748"
+    },
+    {
+      "path": "control/repository_policy.json",
+      "operation": "MODIFY",
+      "base_git_blob_sha": "193bcfe40e538dfc2cecd90493b433fffe35ac92",
+      "byte_count": 1286,
+      "sha256": "b2d039d5a4c524c9dbdabf75e39510fd581c654353eccbe635316ffbeaa22003"
+    },
+    {
+      "path": "control/authority_model.json",
+      "operation": "MODIFY",
+      "base_git_blob_sha": "b01b0082538d580c67f752368d30542ec3baa597",
+      "byte_count": 898,
+      "sha256": "29acc39c199fa2d0520568fa3b99335f4285ff7ea8fcf119dbf48db87cccd3a1"
+    },
+    {
+      "path": "control/authority_activation.json",
+      "operation": "ADD",
+      "base_git_blob_sha": null,
+      "byte_count": 3744,
+      "sha256": "eddef8a60326b016dd6d756b5ff11f35bc1491853dd741d23b824b923c2888aa"
+    },
+    {
+      "path": "manifests/bootstrap_phase_7_manifest.json",
+      "operation": "ADD",
+      "base_git_blob_sha": null,
+      "byte_count": 2425,
+      "sha256": null,
+      "sha256_status": "SELF_HASH_EXCLUDED_EXTERNAL_SHA256_PROVIDED"
+    }
+  ],
+  "cycle_controls": {
+    "c011_integrated": false,
+    "c011_integration_allowed": false,
+    "c012_exists": false,
+    "c012_issuance_allowed": false
+  },
+  "publication_controls": {
+    "engineering_state_changed": false,
+    "baseline_promoted": false,
+    "global_release": false,
+    "t3_reactivated": false,
+    "rev4_promoted": false
+  },
+  "recommended_commit_message": "Bootstrap Phase 7: activate GitHub authority and T1-G2 master"
+}

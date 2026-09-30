@@ -1,7 +1,13 @@
 {
+  "master_epoch": 2,
+  "active_master_instance": "T1-G2",
+  "predecessor_master_instance": "T1-G1",
+  "repository_control_plane_authority": "GITHUB_MAIN",
   "thread_instances": {
-    "T1-G2": "MASTER_ORCHESTRATOR_INTEGRATOR_AND_SUBSTANTIVE_ENGINEERING_REVIEW",
-    "T2-G2": "SUCCESSOR_LOGICAL_THREAD_2",
+    "T1-G1": "FROZEN_PREDECESSOR_MASTER_READ_ONLY",
+    "T1-G2": "ACTIVE_MASTER_ORCHESTRATOR_INTEGRATOR_AND_SUBSTANTIVE_ENGINEERING_REVIEW",
+    "T2-G1": "INACTIVE_CONTEXT_LIMIT_NO_C011_RETURN",
+    "T2-G2": "ACTIVE_C011_REISSUE_OWNER",
     "T4-G1": "CURRENT_C011_WRITER_UNLESS_EXPLICITLY_FENCED",
     "T5-G1": "CURRENT_C011_WRITER_UNLESS_EXPLICITLY_FENCED",
     "T4-G2": "HOT_STANDBY",
@@ -9,6 +15,8 @@
   },
   "thread3": "PERMANENTLY_RETIRED_READ_ONLY",
   "worker_global_write_authority": false,
-  "global_integration_authority": "T1",
-  "c011_global_integration_gate": "ALL_REQUIRED_RETURNS_ACCEPTED_PLUS_USER_EXPLICIT_COMMENCE"
+  "global_integration_authority": "T1-G2",
+  "c011_global_integration_gate": "ALL_REQUIRED_RETURNS_ACCEPTED_PLUS_USER_EXPLICIT_COMMENCE",
+  "c011_integration_allowed": false,
+  "c012_issuance_allowed": false
 }
