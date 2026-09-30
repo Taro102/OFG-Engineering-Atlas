@@ -40,15 +40,15 @@
     "global_release": false
   },
   "thread_cutover": {
-    "T1-G1": "FROZEN_PREDECESSOR_MASTER_READ_ONLY",
-    "T1-G2": "ACTIVE_MASTER_EPOCH_2",
-    "T2-G1": "INACTIVE_CONTEXT_LIMIT_NO_C011_RETURN",
-    "T2-G2": "ACTIVE_C011_REISSUE_OWNER",
-    "T4-G1": "CURRENT_C011_WRITER_UNLESS_EXPLICITLY_FENCED",
-    "T4-G2": "HOT_STANDBY",
-    "T5-G1": "CURRENT_C011_WRITER_UNLESS_EXPLICITLY_FENCED",
-    "T5-G2": "HOT_STANDBY",
-    "T3": "PERMANENTLY_RETIRED_READ_ONLY_NO_SUCCESSOR"
+    "T1-G1": "PERMANENTLY_FROZEN_RETIRED_PREDECESSOR_MASTER",
+    "T1-G2": "SOLE_ACTIVE_MASTER_EPOCH_2",
+    "T2-G1": "PERMANENTLY_FENCED_INACTIVE_CONTEXT_LIMIT_NO_C011_RETURN",
+    "T2-G2": "SOLE_THREAD2_C011_EXECUTION_GENERATION",
+    "T4-G1": "PERMANENTLY_FENCED_RETIRED_NO_ACCEPTED_C011_RETURN",
+    "T4-G2": "SOLE_THREAD4_C011_EXECUTION_GENERATION",
+    "T5-G1": "PERMANENTLY_FENCED_RETIRED_NO_ACCEPTED_C011_RETURN",
+    "T5-G2": "SOLE_THREAD5_C011_EXECUTION_GENERATION",
+    "T3": "PERMANENTLY_RETIRED_READ_ONLY_NO_SUCCESSOR_NO_DEPENDENCY"
   },
   "cycle_guards": {
     "c011_integrated": false,
@@ -71,6 +71,7 @@
     "engineering_content_in_pre_cutover_snapshots_remains_VALID_UNLESS_SUPERSEDED_BY_LATER_CYCLE_STATE": true,
     "authority_resolution_order": [
       "control/authority_activation.json",
+      "control/generation_cutover.json",
       "control/authority_model.json",
       "control/migration_status.json",
       "control/repository_policy.json",
@@ -85,5 +86,6 @@
     "NO_T3_REACTIVATION",
     "NO_REV4_BASELINE_PROMOTION",
     "NO_RECONSTRUCTION_OF_KNOWN_RAW_GAPS"
-  ]
+  ],
+  "generation_cutover_record": "control/generation_cutover.json"
 }

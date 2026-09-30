@@ -1,0 +1,140 @@
+{
+  "schema": "OFG_EA_LEGACY_RETIREMENT_G2_CUTOVER_MANIFEST_V1",
+  "checkpoint_id": "OFG-EA-LEGACY-RETIREMENT-G2-CUTOVER-E2-R1-RECOVERY1",
+  "package_origin": "RECOVERY_RECONSTRUCTION_FROM_T1_G2_VALIDATION_RESULT",
+  "base_remote_commit": "a4becbeaad392ca4c1fef2df94089f17b7f89edd",
+  "repository": "Taro102/OFG-Engineering-Atlas",
+  "branch": "main",
+  "master_epoch": 2,
+  "engineering_pin": {
+    "baseline_id": "OFG-EA-B000-REV3-REVW3-REVS-2031-04-19",
+    "latest_integrated_staging": "OFG-EA-C010-INTEGRATED-STAGING-R1",
+    "working_view": "OFG-EA-B000-PLUS-C001-C002-C003-C004-C005-C006-C007-C008-C009-C010-STAGING-R1",
+    "configuration_cut": "2031-04-19",
+    "active_cycle": "OFG-EA-CYCLE-011"
+  },
+  "file_count": 18,
+  "modified_existing_files": 10,
+  "added_files": 8,
+  "expected_postpublication_tracked_files": 192,
+  "files": [
+    {
+      "repository_relative_path": "control/authority_activation.json",
+      "operation": "MODIFY",
+      "byte_count": 3978,
+      "sha256": "1506e7129d2baa389a4fa1d63be20ed17854050fc3d60a6c088abc26076615ab"
+    },
+    {
+      "repository_relative_path": "control/authority_model.json",
+      "operation": "MODIFY",
+      "byte_count": 1135,
+      "sha256": "0f63eec2015f4f04c2ee560abe51fc5dfe2a5e25cce03d32c5bfe73e55f96200"
+    },
+    {
+      "repository_relative_path": "control/generation_cutover.json",
+      "operation": "ADD",
+      "byte_count": 2908,
+      "sha256": "c893bbeaea795752589bcbd85268e917b69c109428dd690093da9202730d82ae"
+    },
+    {
+      "repository_relative_path": "dispatch/C011/OFG-EA-T2-C011-G2.json",
+      "operation": "ADD",
+      "byte_count": 3523,
+      "sha256": "8b3722cdc50a935a7286f713e9add97573d22f7acf978c56fbfc9b34497a977c"
+    },
+    {
+      "repository_relative_path": "dispatch/C011/OFG-EA-T4-C011-G2.json",
+      "operation": "ADD",
+      "byte_count": 3646,
+      "sha256": "5fe2c58a02ebeb230d7ab5eed5585c5c684a8c1ff9d1d4489abd60cb35b3bf26"
+    },
+    {
+      "repository_relative_path": "dispatch/C011/OFG-EA-T5-C011-G2.json",
+      "operation": "ADD",
+      "byte_count": 3538,
+      "sha256": "13c34ce79d8de5188ec7ac3c09e65f0101ab6351ce78a8468e5e40098194e279"
+    },
+    {
+      "repository_relative_path": "state/T1-G2_REHYDRATION_CAPSULE.json",
+      "operation": "MODIFY",
+      "byte_count": 16843,
+      "sha256": "63b6aebb8e46a020821357d1ab0ab67ec7e334a38c2bfdffc4ffd7cdfa68db16"
+    },
+    {
+      "repository_relative_path": "state/T2-G2_REHYDRATION_CAPSULE.json",
+      "operation": "MODIFY",
+      "byte_count": 7589,
+      "sha256": "4991bb4db3f9b26d68b95481e17b7b304c8b3dd92b5924d178b58bed06931a0a"
+    },
+    {
+      "repository_relative_path": "state/T4-G2_REHYDRATION_CAPSULE.json",
+      "operation": "MODIFY",
+      "byte_count": 7669,
+      "sha256": "57a1843fc0556884507b0e16fb1ad4f1c5f8b1cb0fde2f7ab74318fd25f48025"
+    },
+    {
+      "repository_relative_path": "state/T5-G2_REHYDRATION_CAPSULE.json",
+      "operation": "MODIFY",
+      "byte_count": 7286,
+      "sha256": "9b77e75c74fb62e28580bd8a3a3be24f1af476304a5ce1b2f4d0c5ef732c2384"
+    },
+    {
+      "repository_relative_path": "state/active_cycle_c011.json",
+      "operation": "MODIFY",
+      "byte_count": 1910,
+      "sha256": "3ee94dc0f1bb22ceb4005151a234ad57bf3130d913d05ebc5678575e02cdf3ee"
+    },
+    {
+      "repository_relative_path": "state/current_working_state.json",
+      "operation": "MODIFY",
+      "byte_count": 14151,
+      "sha256": "aa6995f7becd5bad15b10ede21b9257a4f0106c42036fe002d394940e96b1ca1"
+    },
+    {
+      "repository_relative_path": "state/migration_control.json",
+      "operation": "MODIFY",
+      "byte_count": 1900,
+      "sha256": "738995c94c1143c7d9914c5cac25b0f267aa94d8700f016447963b64e978fb11"
+    },
+    {
+      "repository_relative_path": "state/thread_role_profiles.json",
+      "operation": "MODIFY",
+      "byte_count": 1524,
+      "sha256": "9b7694857c0717e7e3e20fee17ec60153a7d76368078a5a3beb18b75c0826ee0"
+    },
+    {
+      "repository_relative_path": "threads/initialization/T2-G2_initialization_ack.json",
+      "operation": "ADD",
+      "byte_count": 1189,
+      "sha256": "6a06278b1455460476d22124e155db21d02f97e8f02c273bc68ae88530e9e397"
+    },
+    {
+      "repository_relative_path": "threads/initialization/T4-G2_initialization_ack.json",
+      "operation": "ADD",
+      "byte_count": 1197,
+      "sha256": "dda1800d5333a826429675a826ee111e950810c9e11906cd183976767b944223"
+    },
+    {
+      "repository_relative_path": "threads/initialization/T5-G2_initialization_ack.json",
+      "operation": "ADD",
+      "byte_count": 1197,
+      "sha256": "3480a2f4c6487e10823459aaf324add88fafb31d6f5c6722d89d8da9b82d6c65"
+    },
+    {
+      "repository_relative_path": "manifests/legacy_thread_retirement_g2_cutover_manifest.json",
+      "operation": "ADD",
+      "sha256": null,
+      "sha256_status": "SELF_HASH_EXCLUDED_EXTERNAL_DIGEST",
+      "byte_count": 5157
+    }
+  ],
+  "guards": {
+    "c011_integrated": false,
+    "c012_created": false,
+    "baseline_promoted": false,
+    "global_release": false,
+    "thread3_reactivated": false,
+    "rev4_promoted": false
+  },
+  "publication_requires_t1_g2_revalidation": true
+}

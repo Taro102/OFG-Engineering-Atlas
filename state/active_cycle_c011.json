@@ -12,26 +12,34 @@
       "package_id": "OFG-EA-T2-C011",
       "task_id": "T2-C011-OBJECT-LIFECYCLE-PROCUREMENT-RECEIPT-SOURCE-CROSSWALK-WAVE9",
       "original_instance": "T2-G1",
-      "original_instance_state": "INACTIVE_CONTEXT_LIMIT",
+      "original_instance_state": "PERMANENTLY_FENCED_INACTIVE_CONTEXT_LIMIT",
       "return_received": false,
       "successor_instance": "T2-G2",
-      "action": "REISSUE_SAME_TASK_FROM_C010_PIN"
+      "action": "EXECUTE_SAME_TASK_FROM_C010_PIN",
+      "writer_generation": "T2-G2"
     },
     "T4": {
       "package_id": "OFG-EA-T4-C011",
       "task_id": "T4-C011-CROSS-TABLE-JOIN-PACKAGE-HIDDENWORK-ROUTE-SURVEY-WAVE9",
-      "current_instance": "T4-G1",
+      "predecessor_instance": "T4-G1",
+      "predecessor_state": "PERMANENTLY_FENCED_RETIRED_NO_ACCEPTED_C011_RETURN",
       "return_received": false,
       "successor_instance": "T4-G2",
-      "successor_state": "STANDBY"
+      "successor_state": "ACTIVE_C011_WRITER",
+      "action": "REEXECUTE_SAME_TASK_FROM_C010_PIN",
+      "writer_generation": "T4-G2"
     },
     "T5": {
       "package_id": "OFG-EA-T5-C011",
       "task_id": "T5-C011-DIRECT-SQLITE-CROSSWALK-ATTACHMENT-COMPLETION-WAVE9",
-      "current_instance": "T5-G1",
+      "predecessor_instance": "T5-G1",
+      "predecessor_state": "PERMANENTLY_FENCED_RETIRED_NO_ACCEPTED_C011_RETURN",
       "return_received": false,
       "successor_instance": "T5-G2",
-      "successor_state": "STANDBY"
+      "successor_state": "ACTIVE_C011_WRITER",
+      "action": "REEXECUTE_SAME_TASK_FROM_C010_PIN",
+      "writer_generation": "T5-G2"
     }
-  }
+  },
+  "generation_cutover_checkpoint": "OFG-EA-LEGACY-RETIREMENT-G2-CUTOVER-E2-R1-RECOVERY1"
 }

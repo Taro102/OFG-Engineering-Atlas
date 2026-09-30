@@ -1,9 +1,9 @@
 {
   "schema": "OFG_EA_WORKING_STATE_V2",
-  "master_epoch_source": 1,
-  "successor_master_epoch": 2,
-  "current_master_instance": "T1-G1",
-  "successor_master_instance": "T1-G2",
+  "master_epoch_source": 2,
+  "successor_master_epoch": null,
+  "current_master_instance": "T1-G2",
+  "successor_master_instance": null,
   "baseline_id": "OFG-EA-B000-REV3-REVW3-REVS-2031-04-19",
   "latest_integrated_staging": "OFG-EA-C010-INTEGRATED-STAGING-R1",
   "working_view": "OFG-EA-B000-PLUS-C001-C002-C003-C004-C005-C006-C007-C008-C009-C010-STAGING-R1",
@@ -23,33 +23,42 @@
   "active_cycle": "OFG-EA-CYCLE-011",
   "thread_instances": {
     "T1-G1": {
-      "state": "ROLLOVER_REQUIRED",
-      "writer": true
-    },
-    "T1-G2": {
-      "state": "TO_ACTIVATE",
+      "state": "PERMANENTLY_FROZEN_RETIRED_PREDECESSOR_MASTER",
       "writer": false
     },
+    "T1-G2": {
+      "state": "ACTIVE_MASTER_EPOCH_2",
+      "writer": true
+    },
     "T2-G1": {
-      "state": "INACTIVE_CONTEXT_LIMIT",
+      "state": "PERMANENTLY_FENCED_INACTIVE_CONTEXT_LIMIT",
+      "writer": false,
       "c011_return_received": false
     },
     "T2-G2": {
-      "state": "TO_ACTIVATE_IMMEDIATE_C011_REISSUE"
+      "state": "ACTIVE_C011_PENDING",
+      "writer": true,
+      "c011_return_received": false
     },
     "T4-G1": {
-      "state": "ACTIVE_C011_PENDING",
-      "writer": true
+      "state": "PERMANENTLY_FENCED_RETIRED_NO_ACCEPTED_C011_RETURN",
+      "writer": false,
+      "c011_return_received": false
     },
     "T4-G2": {
-      "state": "PREPOSITION_STANDBY"
+      "state": "ACTIVE_C011_PENDING",
+      "writer": true,
+      "c011_return_received": false
     },
     "T5-G1": {
-      "state": "ACTIVE_C011_PENDING",
-      "writer": true
+      "state": "PERMANENTLY_FENCED_RETIRED_NO_ACCEPTED_C011_RETURN",
+      "writer": false,
+      "c011_return_received": false
     },
     "T5-G2": {
-      "state": "PREPOSITION_STANDBY"
+      "state": "ACTIVE_C011_PENDING",
+      "writer": true,
+      "c011_return_received": false
     }
   },
   "critical_state": {
@@ -443,11 +452,12 @@
       "completion_pct": null,
       "plausible": null,
       "major": [
-        "T2-G1 became inactive before return; C011 T2 task must be reissued to T2-G2 from C010 pin",
-        "T4-G1 C011 pending",
-        "T5-G1 C011 pending",
-        "C011 global integration prohibited until active returns complete and user Commence"
+        "T2-G1 permanently fenced after context exhaustion with no accepted C011 return; T2-G2 sole Thread-2 execution generation",
+        "T4-G1 permanently fenced with no accepted C011 return; T4-G2 sole Thread-4 execution generation from original C010 pin",
+        "T5-G1 permanently fenced with no accepted C011 return; T5-G2 sole Thread-5 execution generation from original C010 pin",
+        "C011 global integration prohibited until T2-G2, T4-G2 and T5-G2 returns are accepted and user explicitly says Commence"
       ]
     }
-  ]
+  ],
+  "generation_cutover_checkpoint": "OFG-EA-LEGACY-RETIREMENT-G2-CUTOVER-E2-R1-RECOVERY1"
 }
