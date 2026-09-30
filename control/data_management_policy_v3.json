@@ -1,0 +1,130 @@
+{
+  "schema": "OFG-EA-WF3-DATA-MANAGEMENT-V3",
+  "planes": [
+    "CONTROL",
+    "EVIDENCE",
+    "EVENT",
+    "SEMANTIC_STATE",
+    "INDEX",
+    "EXECUTION"
+  ],
+  "tiers": {
+    "HOT": "Active task manifests, current root and bounded role/dependency slices.",
+    "WARM": "Recent sealed segments, accepted checkpoints, dossiers and provenance manifests.",
+    "COLD": "Immutable raw objects, old event segments and large datasets; retrieve by manifest hit only."
+  },
+  "context_rule": "Never load the full Atlas/Annex/corpus/history into conversational context; page by cursor, byte/record limit and dependency scope.",
+  "sharding": {
+    "version": "SEMANTIC_SHARDING_V1",
+    "semantic_key_fields": [
+      "namespace",
+      "domain",
+      "system_id",
+      "object_uid",
+      "record_kind"
+    ],
+    "unknown_key": "Explicit UNKNOWN value plus open identity item; never invent an identity to obtain a shard.",
+    "key_serialization": "Canonical JSON array of five strings under OFG-EA-MRE3-CANONICAL-V1; exact raw-source locator identity retained in descriptors, never normalized source bytes.",
+    "bucket": "First two lowercase hex characters of SHA256(key_serialization UTF8), 256 fixed logical buckets.",
+    "partition_key": "Dataset ID + semantic bucket + configured partition ID; configuration is immutable in dataset manifest.",
+    "stable_paths": "state/mre3/<namespace>/<domain>/<bucket>/<segment_sha256>.jsonl; path components must be safe ASCII controlled tokens. Original evidence filenames remain unchanged.",
+    "resharding": "New immutable dataset version with explicit old/new mapping; never silently remap or deduplicate raw provenance."
+  },
+  "segments": {
+    "format": "Each record uses OFG-EA-MRE3-CANONICAL-V1 canonical bytes plus one LF; no BOM.",
+    "seal": "Record count, byte count, stream/sequence bounds and exact-byte SHA256; sealed segment immutable.",
+    "event_hash": "Apply OFG-EA-MRE3-CANONICAL-V1 to event excluding event_hash; next previous_event_hash must match.",
+    "ordering": "Declared stream sequence, never inferred physical execution chronology.",
+    "append": "Write new segment, not append to sealed segment.",
+    "partial": "Unsealed partial output stays EXECUTION staging and is not reachable from authoritative root."
+  },
+  "immutable_sources": {
+    "identity": "Exact-byte SHA256 plus byte count; preserve original filenames, Unicode code points, line endings, duplicate materializations and variants.",
+    "storage_descriptors": {
+      "required_fields": [
+        "storage_kind",
+        "uri",
+        "content_sha256",
+        "byte_count",
+        "access_state"
+      ],
+      "storage_kind": [
+        "GIT_BLOB",
+        "GIT_LFS",
+        "EXTERNAL_CONTENT_ADDRESSED",
+        "LOCAL_CANDIDATE"
+      ],
+      "lfs": "Descriptor source hash/size must match pointer oid/size AND retrieved source bytes; a Git pointer is not source data.",
+      "remote_storage": "Only explicitly public-distribution-authorized storage; no credentials embedded.",
+      "unavailable": "Report OPEN/BLOCKED; do not infer source content."
+    }
+  },
+  "dataset_roots": {
+    "algorithm": "SHA256 of OFG-EA-MRE3-CANONICAL-V1 bytes of {dataset_id, partition_strategy, source_sha256, source_byte_count, partitions}; partition rows sorted by NFC partition_id UTF8 bytes and include partition_id, sequence, sequence_total, input_hash, output_hash, byte_count, record_count. Require IDs unique after NFC.",
+    "complete_requirement": "All declared partitions SEALED_VERIFIED with expected coverage; only COMPLETE dataset roots may enter authoritative semantic state.",
+    "partial_root": "Candidate manifest only; never publish partial ingestion as COMPLETE.",
+    "authority_gate": "dataset_authoritative=true requires INGEST_COMPLETE, all declared input/output partition byte hashes and counts independently verified, dataset_root_hash independently recomputed and validated, complete manifest, and explicit master-controlled committed-root inclusion.",
+    "thread_view_visibility": "Every incomplete, partial, aborted, quarantined or unverified dataset is excluded from authoritative thread views and may appear only as explicit candidate/diagnostic execution state."
+  },
+  "resumable_processing": {
+    "checkpoint_fields": [
+      "dataset_id",
+      "dataset_version",
+      "source_hash",
+      "partition_id",
+      "cursor",
+      "completed_chunk_hashes",
+      "pending_chunks",
+      "errors",
+      "resume_key",
+      "V&V_state"
+    ],
+    "resume": "Check source hash, partition config and completed hashes before continuing; replay by immutable chunk ID.",
+    "incomplete_ingestion": "Quarantine candidate chunks and incomplete manifests outside authoritative root; no missing chunks fabricated."
+  },
+  "derivatives": {
+    "index_authority": false,
+    "sqlite_authority": false,
+    "parquet_authority": false,
+    "policy": "Rebuild from immutable source/root/version; record input hashes and code version. Do not mistake generated Parquet for authoritative provenance."
+  },
+  "transport": {
+    "codec": "OFG-EA-MRE3",
+    "required_fields": [
+      "codec",
+      "schema",
+      "payload_id",
+      "sequence",
+      "sequence_total",
+      "depends_on",
+      "previous_hash",
+      "payload_hash",
+      "resume_key",
+      "payload"
+    ],
+    "hash": "SHA256 of canonical payload under OFG-EA-MRE3-CANONICAL-V1; envelope metadata validated separately.",
+    "multipart": "Declare complete inventory and sequence dependencies; isolate incomplete transport as EXECUTION, never authoritative semantic state.",
+    "mobile": "Bounded compact JSON and content refs; large operations require deterministic desktop handoff."
+  },
+  "canonical_contract_ref": "control/workflow_protocol_v3.json#/serialization/canonical_contract",
+  "storage_descriptor_schema": "schemas/storage_object_descriptor_v1.json",
+  "dataset_ingest_schema": "schemas/dataset_ingest_v1.json",
+  "storage_backend_independence": "object_id plus content_sha256 identifies semantic object; backend/location changes do not alter semantic identity. Preserve original locator bytes by byte-safe URI/escaped descriptor encoding.",
+  "ingest_lifecycle": {
+    "states": [
+      "INGEST_CREATED",
+      "INGEST_VALIDATING_SOURCE",
+      "INGEST_PARTITIONING",
+      "INGEST_PROCESSING",
+      "INGEST_VERIFYING",
+      "INGEST_COMPLETE",
+      "INGEST_ABORTED",
+      "INGEST_QUARANTINED"
+    ],
+    "normal_sequence": "CREATED -> VALIDATING_SOURCE -> PARTITIONING -> PROCESSING -> VERIFYING -> COMPLETE",
+    "failure_transitions": "Any nonterminal state may transition to ABORTED or QUARANTINED, preserving immutable completed partition objects and diagnostic journal. No terminal COMPLETE dataset is silently edited.",
+    "resume": "Revalidate source descriptor and exact source hash/size, partition configuration and all completed hashes before resuming PROCESSING with a new journal entry; changed source/configuration requires a new ingest_id.",
+    "verification_failure": "Quarantine corrupt partition and incomplete manifest; dataset_authoritative remains false and authoritative views exclude candidate data. Repair/retry only from verified immutable source.",
+    "completion": "Exact partition count, completed count, unique NFC IDs, sequence coverage, byte/record counts, input/output hashes and dataset root must validate. Explicit master acceptance and committed-root inclusion are additionally required before an authoritative view may reference the dataset."
+  }
+}

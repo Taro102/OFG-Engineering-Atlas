@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ofg:ea:OFG-EA-STATE-ROOT-V1",
+  "title": "OFG-EA-STATE-ROOT-V1",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "OFG-EA-STATE-ROOT-V1"
+    },
+    "root_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "repository": {
+      "const": "Taro102/OFG-Engineering-Atlas"
+    },
+    "branch": {
+      "const": "main"
+    },
+    "base_commit": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "master_instance": {
+      "const": "T1-G2"
+    },
+    "master_epoch": {
+      "const": 2
+    },
+    "mode": {
+      "const": "LEGACY_COMPATIBILITY"
+    },
+    "engineering_pin": {
+      "type": "object"
+    },
+    "legacy_manifest_ref": {
+      "type": "object"
+    },
+    "legacy_inputs_root_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "legacy_input_file_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "legacy_inputs": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "protocol_refs": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "native_mre3_state": {
+      "type": "object"
+    },
+    "planes": {
+      "type": "object"
+    },
+    "guards": {
+      "type": "object"
+    },
+    "hash_contract": {
+      "type": "object"
+    },
+    "state_root_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "r1_disposition": {
+      "const": "PREPARED_REJECTED_NOT_PUBLISHED_SUPERSEDED_BY_R2"
+    }
+  },
+  "required": [
+    "schema",
+    "root_id",
+    "repository",
+    "branch",
+    "base_commit",
+    "master_instance",
+    "master_epoch",
+    "mode",
+    "engineering_pin",
+    "legacy_manifest_ref",
+    "legacy_inputs_root_sha256",
+    "legacy_input_file_count",
+    "legacy_inputs",
+    "protocol_refs",
+    "native_mre3_state",
+    "planes",
+    "guards",
+    "hash_contract",
+    "state_root_hash",
+    "r1_disposition"
+  ],
+  "additionalProperties": false,
+  "$comment": "All semantic hashing uses control/workflow_protocol_v3.json#/serialization/canonical_contract; exact source bytes are never NFC-normalized."
+}

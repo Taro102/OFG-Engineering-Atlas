@@ -1,0 +1,188 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ofg:ea:OFG-EA-EVENT-V1",
+  "title": "OFG-EA-EVENT-V1",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "OFG-EA-EVENT-V1"
+    },
+    "event_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "stream_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sequence": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "previous_event_hash": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "event_type": {
+      "enum": [
+        "CLAIM_PROPOSED",
+        "CLAIM_ACCEPTED",
+        "CLAIM_REJECTED",
+        "CONFLICT_REGISTERED",
+        "VIEW_SEALED",
+        "RETURN_SUBMITTED",
+        "TRANSACTION_PREPARED",
+        "TRANSACTION_COMMITTED",
+        "TRANSACTION_ABORTED",
+        "CHECKPOINT_PUBLISHED"
+      ]
+    },
+    "master_epoch": {
+      "const": 2
+    },
+    "actor_instance": {
+      "enum": [
+        "T1-G2",
+        "T2-G2",
+        "T4-G2",
+        "T5-G2"
+      ]
+    },
+    "transaction_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "recorded_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "subject_refs": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "urn:ofg:ea:OFG-EA-OBJECT-REFERENCE-V1",
+        "title": "OFG-EA-OBJECT-REFERENCE-V1",
+        "type": "object",
+        "properties": {
+          "schema": {
+            "const": "OFG-EA-OBJECT-REFERENCE-V1"
+          },
+          "repository": {
+            "const": "Taro102/OFG-Engineering-Atlas"
+          },
+          "commit": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "record_selector": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "byte_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "plane": {
+            "enum": [
+              "CONTROL",
+              "EVIDENCE",
+              "EVENT",
+              "SEMANTIC_STATE",
+              "INDEX",
+              "EXECUTION"
+            ]
+          }
+        },
+        "required": [
+          "schema",
+          "repository",
+          "commit",
+          "path",
+          "record_selector",
+          "sha256",
+          "byte_count",
+          "plane"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "payload": {
+      "type": "object"
+    },
+    "event_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "required": [
+    "schema",
+    "event_id",
+    "stream_id",
+    "sequence",
+    "previous_event_hash",
+    "event_type",
+    "master_epoch",
+    "actor_instance",
+    "transaction_id",
+    "recorded_at",
+    "subject_refs",
+    "payload",
+    "event_hash"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "sequence": {
+            "const": 1
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "previous_event_hash": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "sequence": {
+            "minimum": 2
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "previous_event_hash": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          }
+        }
+      }
+    }
+  ],
+  "$comment": "All semantic hashing uses control/workflow_protocol_v3.json#/serialization/canonical_contract; exact source bytes are never NFC-normalized."
+}

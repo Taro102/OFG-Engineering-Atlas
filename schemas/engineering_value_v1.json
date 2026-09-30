@@ -1,0 +1,361 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ofg:ea:OFG-EA-ENGINEERING-VALUE-V1",
+  "title": "OFG-EA-ENGINEERING-VALUE-V1",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "OFG-EA-ENGINEERING-VALUE-V1"
+    },
+    "value_type": {
+      "enum": [
+        "DECIMAL",
+        "INTEGER",
+        "INTERVAL",
+        "BOOLEAN",
+        "CATEGORY",
+        "TEXT"
+      ]
+    },
+    "value_state": {
+      "enum": [
+        "KNOWN",
+        "OPEN",
+        "UNKNOWN",
+        "NOT_APPLICABLE",
+        "CONFLICT",
+        "QUARANTINED"
+      ]
+    },
+    "value": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?([eE][+-]?[0-9]+)?$"
+        },
+        {
+          "type": "integer"
+        },
+        {
+          "type": "boolean"
+        },
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "lower": {
+              "type": "string",
+              "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?([eE][+-]?[0-9]+)?$"
+            },
+            "upper": {
+              "type": "string",
+              "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?([eE][+-]?[0-9]+)?$"
+            },
+            "lower_inclusive": {
+              "type": "boolean"
+            },
+            "upper_inclusive": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "lower",
+            "upper",
+            "lower_inclusive",
+            "upper_inclusive"
+          ],
+          "additionalProperties": false
+        }
+      ]
+    },
+    "unit": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "$id": "urn:ofg:ea:OFG-EA-UNIT-V1",
+      "title": "OFG-EA-UNIT-V1",
+      "type": "object",
+      "properties": {
+        "schema": {
+          "const": "OFG-EA-UNIT-V1"
+        },
+        "system": {
+          "enum": [
+            "UCUM",
+            "CONTROLLED_PROJECT",
+            "DIMENSIONLESS",
+            "UNKNOWN"
+          ]
+        },
+        "code": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "state": {
+          "enum": [
+            "KNOWN",
+            "UNKNOWN",
+            "NOT_APPLICABLE"
+          ]
+        }
+      },
+      "required": [
+        "schema",
+        "system",
+        "code",
+        "state"
+      ],
+      "additionalProperties": false
+    },
+    "precision": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "$id": "urn:ofg:ea:OFG-EA-PRECISION-V1",
+      "title": "OFG-EA-PRECISION-V1",
+      "type": "object",
+      "properties": {
+        "schema": {
+          "const": "OFG-EA-PRECISION-V1"
+        },
+        "kind": {
+          "enum": [
+            "EXACT",
+            "DECIMAL_PLACES",
+            "SIGNIFICANT_DIGITS",
+            "RESOLUTION",
+            "UNSPECIFIED"
+          ]
+        },
+        "digits": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "resolution": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rounding": {
+          "enum": [
+            "NONE",
+            "HALF_EVEN",
+            "HALF_UP",
+            "FLOOR",
+            "CEILING",
+            "UNSPECIFIED"
+          ]
+        }
+      },
+      "required": [
+        "schema",
+        "kind",
+        "digits",
+        "resolution",
+        "rounding"
+      ],
+      "additionalProperties": false
+    },
+    "uncertainty": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "raw_source_value": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  },
+  "required": [
+    "schema",
+    "value_type",
+    "value_state",
+    "value",
+    "unit",
+    "precision",
+    "uncertainty",
+    "raw_source_value",
+    "limitations"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "value_state": {
+            "enum": [
+              "OPEN",
+              "UNKNOWN",
+              "NOT_APPLICABLE",
+              "CONFLICT"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "value": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "value_state": {
+            "const": "KNOWN"
+          },
+          "value_type": {
+            "const": "DECIMAL"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "value": {
+            "type": "string",
+            "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?([eE][+-]?[0-9]+)?$"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "value_state": {
+            "const": "KNOWN"
+          },
+          "value_type": {
+            "const": "INTEGER"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "value": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "value_state": {
+            "const": "KNOWN"
+          },
+          "value_type": {
+            "const": "BOOLEAN"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "value": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "value_state": {
+            "const": "KNOWN"
+          },
+          "value_type": {
+            "const": "CATEGORY"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "value": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "value_state": {
+            "const": "KNOWN"
+          },
+          "value_type": {
+            "const": "TEXT"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "value": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "value_state": {
+            "const": "KNOWN"
+          },
+          "value_type": {
+            "const": "INTERVAL"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "value": {
+            "type": "object",
+            "properties": {
+              "lower": {
+                "type": "string",
+                "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?([eE][+-]?[0-9]+)?$"
+              },
+              "upper": {
+                "type": "string",
+                "pattern": "^-?(0|[1-9][0-9]*)(\\.[0-9]+)?([eE][+-]?[0-9]+)?$"
+              },
+              "lower_inclusive": {
+                "type": "boolean"
+              },
+              "upper_inclusive": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "lower",
+              "upper",
+              "lower_inclusive",
+              "upper_inclusive"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    }
+  ],
+  "$comment": "All semantic hashing uses control/workflow_protocol_v3.json#/serialization/canonical_contract; exact source bytes are never NFC-normalized. Precision-sensitive authoritative decimal values require value_type=DECIMAL and string-valued value; preserve declared unit/precision/value_state."
+}

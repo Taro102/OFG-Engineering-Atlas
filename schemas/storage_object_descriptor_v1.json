@@ -1,0 +1,210 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ofg:ea:OFG-EA-STORAGE-OBJECT-DESCRIPTOR-V1",
+  "title": "OFG-EA-STORAGE-OBJECT-DESCRIPTOR-V1",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "OFG-EA-STORAGE-OBJECT-DESCRIPTOR-V1"
+    },
+    "object_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "content_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "byte_count": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "media_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "backend": {
+      "anyOf": [
+        {
+          "enum": [
+            "GIT",
+            "GIT_LFS",
+            "OBJECT_STORE",
+            "ARCHIVE_STORAGE"
+          ]
+        },
+        {
+          "type": "string",
+          "pattern": "^EXT:[A-Z][A-Z0-9_]*$"
+        }
+      ]
+    },
+    "repository_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "object_locator": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "immutable": {
+      "const": true
+    },
+    "availability_state": {
+      "enum": [
+        "AVAILABLE",
+        "UNAVAILABLE",
+        "PARTIAL",
+        "QUARANTINED",
+        "MISSING",
+        "ARCHIVED"
+      ]
+    },
+    "source_authority_class": {
+      "enum": [
+        "IMMUTABLE_PROVENANCE_INPUT",
+        "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+        "CONTROLLED_NORMALIZED_STATE",
+        "DERIVED_REBUILDABLE_INDEX",
+        "EXECUTION_CANDIDATE",
+        "QUARANTINED_NONAUTHORITATIVE"
+      ]
+    },
+    "compression": {
+      "type": "object",
+      "properties": {
+        "codec": {
+          "type": "string",
+          "minLength": 1
+        },
+        "original_byte_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        }
+      },
+      "required": [
+        "codec",
+        "original_byte_count"
+      ],
+      "additionalProperties": false
+    },
+    "encryption_state": {
+      "enum": [
+        "NONE",
+        "ENCRYPTED",
+        "UNKNOWN"
+      ]
+    },
+    "chunking": {
+      "type": "object",
+      "properties": {
+        "strategy": {
+          "enum": [
+            "NONE",
+            "FIXED_SIZE",
+            "CONTENT_DEFINED"
+          ]
+        },
+        "chunk_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "chunk_manifest_ref": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "strategy",
+        "chunk_count",
+        "chunk_manifest_ref"
+      ],
+      "additionalProperties": false
+    },
+    "created_from": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "provenance_refs": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "extensions": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema",
+    "object_id",
+    "content_sha256",
+    "byte_count",
+    "media_type",
+    "backend",
+    "repository_path",
+    "object_locator",
+    "immutable",
+    "availability_state",
+    "source_authority_class",
+    "compression",
+    "encryption_state",
+    "chunking",
+    "created_from",
+    "provenance_refs"
+  ],
+  "additionalProperties": false,
+  "description": "Semantic object identity independent of physical backend. Known backends plus reserved EXT: namespace; extensions require controlled resolver registration and schema validation before use. content_sha256 and byte_count always refer to uncompressed plaintext semantic source bytes; stored compressed/encrypted blob hashes belong in explicit extensions and must also be verified.",
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "backend": {
+            "enum": [
+              "GIT",
+              "GIT_LFS"
+            ]
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "repository_path": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "availability_state": {
+            "const": "AVAILABLE"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "object_locator": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    }
+  ],
+  "$comment": "All semantic hashing uses control/workflow_protocol_v3.json#/serialization/canonical_contract; exact source bytes are never NFC-normalized."
+}

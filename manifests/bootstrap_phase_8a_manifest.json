@@ -1,0 +1,184 @@
+{
+  "schema": "OFG-EA-PHASE8A-PUBLICATION-MANIFEST-V1",
+  "publication_id": "OFG-EA-WF3-MRE3-PHASE8A-E2-R2",
+  "phase": "8A",
+  "repository": "Taro102/OFG-Engineering-Atlas",
+  "branch": "main",
+  "base_remote_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+  "phase8a_status": "PREPARED_NOT_YET_PUBLISHED",
+  "github_authority": "ACTIVE_PERSISTENT_CONTROL_PLANE",
+  "prior_tracked_file_count": 192,
+  "publication_file_count": 24,
+  "additions": 24,
+  "modifications": 0,
+  "deletions": 0,
+  "expected_tracked_file_count": 216,
+  "state_root_hash": "031c48775775f331e40724bed0b49392d66b2442cf95abd3bad6fcf0469e66e6",
+  "legacy_input_file_count": 30,
+  "legacy_inputs_root_sha256": "b8723daf6230116df28442e011342ded5de9480766b4ce40aed6a662853bf6bb",
+  "canonical_contract_id": "OFG-EA-MRE3-CANONICAL-V1",
+  "files": [
+    {
+      "repository_relative_path": "control/cross_thread_validation_protocol_v3.json",
+      "action": "ADD",
+      "byte_count": 3079,
+      "sha256": "eeb19a552ba344d51816c982403c724b9e5b56634c67a150b9a59f0a112547c4"
+    },
+    {
+      "repository_relative_path": "control/data_management_policy_v3.json",
+      "action": "ADD",
+      "byte_count": 7531,
+      "sha256": "6b5df4b4d17846643372035a050bca2ab2b09fbf7a93d121f7f826e045de3896"
+    },
+    {
+      "repository_relative_path": "control/failure_recovery_protocol_v3.json",
+      "action": "ADD",
+      "byte_count": 2462,
+      "sha256": "68691fe463e4661682bc52500fa1e0d1d22889594bb86e949426ca41ba053eb4"
+    },
+    {
+      "repository_relative_path": "control/transaction_protocol_v3.json",
+      "action": "ADD",
+      "byte_count": 3190,
+      "sha256": "76b5e8c3af1662a247a4ab329e84babbc354bfdaddc0fd95f71e9cd853ab4540"
+    },
+    {
+      "repository_relative_path": "control/workflow_protocol_v3.json",
+      "action": "ADD",
+      "byte_count": 7665,
+      "sha256": "f2be529cce976fa789ef9ac619f07cc34d80202c4ce8e055ba6a8e3e58b66e7f"
+    },
+    {
+      "repository_relative_path": "control/workstream_profiles.json",
+      "action": "ADD",
+      "byte_count": 2465,
+      "sha256": "27060bb18d5859325f731dca83105b9353334bb8d429d705523668a975b12dbb"
+    },
+    {
+      "repository_relative_path": "docs/wf3_phase8a_execution.json",
+      "action": "ADD",
+      "byte_count": 3136,
+      "sha256": "89ab6fc6be8b8d1f98067b09f166a47cc57014636dfda610e9090f5636ee6009"
+    },
+    {
+      "repository_relative_path": "schemas/claim_v1.json",
+      "action": "ADD",
+      "byte_count": 13859,
+      "sha256": "0086d46256d51531f501812863fdffed8449ee6b9f406a4e3dbf9fd0f75532e1"
+    },
+    {
+      "repository_relative_path": "schemas/dataset_ingest_v1.json",
+      "action": "ADD",
+      "byte_count": 9461,
+      "sha256": "b52d4e451ebf487b914cac89d8a9118ce0ccf631edbd92725949e8cd96188e61"
+    },
+    {
+      "repository_relative_path": "schemas/engineering_value_v1.json",
+      "action": "ADD",
+      "byte_count": 7589,
+      "sha256": "478ca7dfc201531f9496c3de7d1d91ff2f2c7034846be45f2041df1f6d472157"
+    },
+    {
+      "repository_relative_path": "schemas/event_v1.json",
+      "action": "ADD",
+      "byte_count": 3951,
+      "sha256": "7014aabe728f09075d87d87576a54f8d4595cfeff1a676a83a77a9ddac45ec7f"
+    },
+    {
+      "repository_relative_path": "schemas/handoff_v1.json",
+      "action": "ADD",
+      "byte_count": 7582,
+      "sha256": "2b4bffdfe53b5895274726b6df778fdd4d2ed1ab5d0129f3ca528e2d5fb2edca"
+    },
+    {
+      "repository_relative_path": "schemas/return_delta_v1.json",
+      "action": "ADD",
+      "byte_count": 22124,
+      "sha256": "7be3ce13825fde45814256c28d439189f23bc263e08282c48fa908b7f3c2e5d6"
+    },
+    {
+      "repository_relative_path": "schemas/state_root_v1.json",
+      "action": "ADD",
+      "byte_count": 2193,
+      "sha256": "144c4a22e00d9781792d6ee63c4292e9d1107e126283c0e7ee641ae1febee178"
+    },
+    {
+      "repository_relative_path": "schemas/storage_object_descriptor_v1.json",
+      "action": "ADD",
+      "byte_count": 4633,
+      "sha256": "c1809a1b6b51abe715aaeba5e71fb829503b5650035ee2506e258ed37aa0e885"
+    },
+    {
+      "repository_relative_path": "schemas/thread_view_v1.json",
+      "action": "ADD",
+      "byte_count": 9403,
+      "sha256": "7a69246c61ed76ae3af4d644a285b3d7c55309292b804d41ac625699f8d156ff"
+    },
+    {
+      "repository_relative_path": "schemas/transaction_v1.json",
+      "action": "ADD",
+      "byte_count": 10149,
+      "sha256": "53387b0cdb7ca17b12ce93637d4d9a9350988a11a0e51d8d8d79882b1cd3dd25"
+    },
+    {
+      "repository_relative_path": "state/legacy_compatibility_manifest.json",
+      "action": "ADD",
+      "byte_count": 56896,
+      "sha256": "56e6394dfbee7ccea7537f76d1616b064954be94bb9d66dab03de61d0936481f"
+    },
+    {
+      "repository_relative_path": "state/root_manifest.json",
+      "action": "ADD",
+      "byte_count": 20971,
+      "sha256": "2ec2dee818bceea490f43fd5494afa3e091ae961dcc96edcbddcf2255e76986a"
+    },
+    {
+      "repository_relative_path": "threads/T1-G2/state.json",
+      "action": "ADD",
+      "byte_count": 2705,
+      "sha256": "6de3357ef754647e4704e5d00e742a5f1e0868d5f4f629c16dcff40520ba8d94"
+    },
+    {
+      "repository_relative_path": "threads/T2-G2/state.json",
+      "action": "ADD",
+      "byte_count": 2948,
+      "sha256": "4d8fd85441a770cb0b687bd4bf199def74b80f1aa95a6f743b17906a172c622a"
+    },
+    {
+      "repository_relative_path": "threads/T4-G2/state.json",
+      "action": "ADD",
+      "byte_count": 2937,
+      "sha256": "8a7286cb7e70dcbd3fdcf9507cd4103447c898003ab7eb515664d9e94b7b5a0d"
+    },
+    {
+      "repository_relative_path": "threads/T5-G2/state.json",
+      "action": "ADD",
+      "byte_count": 2934,
+      "sha256": "d352efc31677f1c9685b11929da485cbf7e521f185e00549485be342cdb16c15"
+    }
+  ],
+  "self_hash_exclusion": {
+    "path": "manifests/bootstrap_phase_8a_manifest.json",
+    "mechanism": "Self excluded; complete stored byte SHA256 in external delivery manifest."
+  },
+  "r1_disposition": "PREPARED_REJECTED_NOT_PUBLISHED_SUPERSEDED_BY_R2",
+  "R1_PUBLISHED": false,
+  "WF3_ACTIVE": false,
+  "MRE3_ACTIVE": false,
+  "guards": {
+    "c011_engineering_state_changed": false,
+    "c011_execution_status_changed": false,
+    "c011_execution_performed": false,
+    "c011_integration_performed": false,
+    "c011_mre3_return_handling_activated": false,
+    "native_mre3_state_migration_performed": false,
+    "c012_created": false,
+    "baseline_promoted": false,
+    "global_release": false,
+    "rev4_promoted": false,
+    "thread3_reactivated": false,
+    "missing_returns_inferred": false,
+    "WF3_ACTIVE": false,
+    "MRE3_ACTIVE": false
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "schema": "OFG-EA-WF3-TRANSACTION-V3",
+  "record_schema": "OFG-EA-TRANSACTION-V1",
+  "states": [
+    "PREPARE",
+    "COMMIT",
+    "ABORT"
+  ],
+  "decision_authority": "T1-G2 via explicitly authorized Git-capable publication executor",
+  "prepare": {
+    "required": [
+      "transaction_id",
+      "base_commit",
+      "base_state_root_hash",
+      "read_set",
+      "write_set",
+      "candidate_object_refs",
+      "validation_refs",
+      "prepare_hash",
+      "idempotency_key"
+    ],
+    "effect": "No authoritative root changes; validate candidate bytes, declared access scope, schema, identity, generation, provenance and dependencies.",
+    "read_set": "Commit-pinned paths/record selectors with exact-byte hashes; missing-object reads must declare exists=false.",
+    "write_set": "Explicit ADD/SUPERSEDE_POINTER/APPEND_SEGMENT proposals with expected prior hash; no destructive edit of immutable source/event/return.",
+    "undeclared_dependency": "BLOCK and amend/reprepare; never ignore undeclared reads/writes."
+  },
+  "commit": {
+    "preconditions": [
+      "Matching valid PREPARE hash",
+      "Current main and state root match expected base, or newly PREPARED after scoped semantic rebase",
+      "All read_set expected hashes/existence still match",
+      "No overlapping writer reservation/conflict",
+      "Candidate objects fully sealed/verified and validation PASS",
+      "Generation/epoch/dispatch valid",
+      "Required user authorization present"
+    ],
+    "atomicity": "One main commit publishes objects, commit decision record and new root together; Git ref update must use expected parent and non-force push. Candidate reachability alone before root commit grants no semantic authority.",
+    "optimistic_concurrency": "If HEAD changed, perform lightweight sync and compare declared dependencies. Disjoint changes still require refreshed PREPARE at current HEAD; overlapping semantic changes require three-way merge base/current/proposal preserving conflicts. No last-write-wins.",
+    "outcome": "New root references committed object/decision hashes. Root manifest records base/parent commit; publishing commit is externally observed to avoid hash cycles."
+  },
+  "abort": {
+    "effect": "Append ABORT decision with reason and candidate refs; authoritative root remains previous verified root.",
+    "after_commit": "Cannot ABORT an already committed transaction; issue explicit compensating transaction.",
+    "idempotency": "Same ID/key and identical proposal may replay; divergent ID/key reuse quarantined."
+  },
+  "phase8a": {
+    "engineering_transaction_execution": false,
+    "bootstrap_publication": "Additive metadata publication at exact base; initial root binds pre-existing MRE2 bytes. No engineering delta transaction is manufactured."
+  },
+  "record_identity": "transaction_id identifies the lifecycle; phase records are immutable under (transaction_id, phase, transaction_hash). Repeated identical phase record is idempotent; divergent repeated phase record quarantined. COMMIT prepare_hash equals the PREPARE record transaction_hash.",
+  "canonical_contract_ref": "control/workflow_protocol_v3.json#/serialization/canonical_contract"
+}

@@ -1,0 +1,1328 @@
+{
+  "schema": "OFG-EA-MRE3-LEGACY-COMPATIBILITY-V1",
+  "publication_id": "OFG-EA-WF3-MRE3-PHASE8A-E2-R2",
+  "repository": "Taro102/OFG-Engineering-Atlas",
+  "branch": "main",
+  "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+  "codec_origin": "OFG-EA-MRE2",
+  "compatibility_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+  "semantic_authority": "Exact inherited authority of each existing controlled record; inclusion does not elevate unaccepted assertions or administrative closure to physical execution.",
+  "preserved_engineering_cycles": [
+    "OFG-EA-CYCLE-001",
+    "OFG-EA-CYCLE-002",
+    "OFG-EA-CYCLE-003",
+    "OFG-EA-CYCLE-004",
+    "OFG-EA-CYCLE-005",
+    "OFG-EA-CYCLE-006",
+    "OFG-EA-CYCLE-007",
+    "OFG-EA-CYCLE-008",
+    "OFG-EA-CYCLE-009",
+    "OFG-EA-CYCLE-010"
+  ],
+  "engineering_pin": {
+    "baseline_id": "OFG-EA-B000-REV3-REVW3-REVS-2031-04-19",
+    "staging_pin": "OFG-EA-C010-INTEGRATED-STAGING-R1",
+    "working_view": "OFG-EA-B000-PLUS-C001-C002-C003-C004-C005-C006-C007-C008-C009-C010-STAGING-R1",
+    "configuration_cut": "2031-04-19",
+    "active_cycle": "OFG-EA-CYCLE-011"
+  },
+  "source_file_count": 30,
+  "source_total_bytes": 112539,
+  "controlled_inputs_root_sha256": "b8723daf6230116df28442e011342ded5de9480766b4ce40aed6a662853bf6bb",
+  "controlled_inputs_root_algorithm": "SHA256 of OFG-EA-MRE3-CANONICAL-V1 bytes of controlled_inputs array sorted by repository_relative_path NFC UTF8 bytes; source file byte hashes unchanged.",
+  "controlled_inputs": [
+    {
+      "repository_relative_path": "control/authority_activation.json",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "576efca905b3ac142737602b0d1c4ba5fb9bca2f",
+      "byte_count": 3978,
+      "sha256": "1506e7129d2baa389a4fa1d63be20ed17854050fc3d60a6c088abc26076615ab",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "CONTROL",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "control/authority_model.json",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "a9b25d9132ff3e167994eebe0a66b3c915137cf0",
+      "byte_count": 1135,
+      "sha256": "0f63eec2015f4f04c2ee560abe51fc5dfe2a5e25cce03d32c5bfe73e55f96200",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "CONTROL",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "control/configuration_state.json",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "e31df3de1a840edc520541666ea2787fd6923573",
+      "byte_count": 410,
+      "sha256": "ea7551a8fae8763baff3cf1a3ce7e405e4597f5bfe3864c08cde397b90e1f946",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "CONTROL",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "control/generation_cutover.json",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "a9edf97df3ab5b4c54f2a4983ab795e76fd76a73",
+      "byte_count": 2908,
+      "sha256": "c893bbeaea795752589bcbd85268e917b69c109428dd690093da9202730d82ae",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "CONTROL",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "control/migration_status.json",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "d13f47650adefff871a2104fdfae601d050b18ba",
+      "byte_count": 560,
+      "sha256": "b9e3e9456da598e7ca65b88f0c1033fc6f9c8597899dfd89cc4ab1436e4e8748",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "CONTROL",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "control/repository_layout.json",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "723e7ff801d8b6210d00d2e3588e29b4a0f7fdd2",
+      "byte_count": 1225,
+      "sha256": "62ae17fb856c883c677be7f6904434bffe7f8f36d6fe61d3fe6b57d61e8251ba",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "CONTROL",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "control/repository_policy.json",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "2940a9e3cffcc724a993e34b0ecd7636d12d9c05",
+      "byte_count": 1286,
+      "sha256": "b2d039d5a4c524c9dbdabf75e39510fd581c654353eccbe635316ffbeaa22003",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "CONTROL",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "dispatch/C011/OFG-EA-T2-C011-G2.json",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "7054dce9ae1e6674aad77ee9e0dc8ffa3637d571",
+      "byte_count": 3523,
+      "sha256": "8b3722cdc50a935a7286f713e9add97573d22f7acf978c56fbfc9b34497a977c",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "SEMANTIC_STATE",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "dispatch/C011/OFG-EA-T4-C011-G2.json",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "8493c886a5413efd2130ea62d32d837d9e0f6a07",
+      "byte_count": 3646,
+      "sha256": "5fe2c58a02ebeb230d7ab5eed5585c5c684a8c1ff9d1d4489abd60cb35b3bf26",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "SEMANTIC_STATE",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "dispatch/C011/OFG-EA-T5-C011-G2.json",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "9497c11c504d63b46dc58e6575a7ab5e36c8440d",
+      "byte_count": 3538,
+      "sha256": "13c34ce79d8de5188ec7ac3c09e65f0101ab6351ce78a8468e5e40098194e279",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "SEMANTIC_STATE",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "state/T1-G2_REHYDRATION_CAPSULE.json",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "55732a0593642b3862cb396f55a6a80baee02073",
+      "byte_count": 16843,
+      "sha256": "63b6aebb8e46a020821357d1ab0ab67ec7e334a38c2bfdffc4ffd7cdfa68db16",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "SEMANTIC_STATE",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "state/T2-G2_REHYDRATION_CAPSULE.json",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "1519cd64a02fff52d4fcad3efe2cdb7ed37db7cf",
+      "byte_count": 7589,
+      "sha256": "4991bb4db3f9b26d68b95481e17b7b304c8b3dd92b5924d178b58bed06931a0a",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "SEMANTIC_STATE",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "state/T4-G2_REHYDRATION_CAPSULE.json",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "8bf7897aaab157c1480c1f82f1099c0501a14bcd",
+      "byte_count": 7669,
+      "sha256": "57a1843fc0556884507b0e16fb1ad4f1c5f8b1cb0fde2f7ab74318fd25f48025",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "SEMANTIC_STATE",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "state/T5-G2_REHYDRATION_CAPSULE.json",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "16ffe798fe357234fa700a3f1b47061846f278a5",
+      "byte_count": 7286,
+      "sha256": "9b77e75c74fb62e28580bd8a3a3be24f1af476304a5ce1b2f4d0c5ef732c2384",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "SEMANTIC_STATE",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "state/active_cycle_c011.json",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "55ace452a5759a16b7838ed1387503f3787bb1f4",
+      "byte_count": 1910,
+      "sha256": "3ee94dc0f1bb22ceb4005151a234ad57bf3130d913d05ebc5678575e02cdf3ee",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "SEMANTIC_STATE",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "state/c011_dispatches.json",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "e5b11ba2b388877a3f1ebeddf4605642e1e1c69e",
+      "byte_count": 8371,
+      "sha256": "c14effd74b1f57dfc6eeee4d521128fdeaed5c6cc9db7aeb94b18efaf8b5a173",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "SEMANTIC_STATE",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "state/conflicts.jsonl",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "5cfbd3f8c0cbdcf9fca3d889aafd522c705a8a65",
+      "byte_count": 1655,
+      "sha256": "038fc90dc90fea4a1f5a17e976986abd1e8042e45cf3e6a4ceb50cb7280d2fd1",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "SEMANTIC_STATE",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "state/current_working_state.json",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "858f1dc334cd14aa4d2ada6485cccc702ba3cc8e",
+      "byte_count": 14151,
+      "sha256": "aa6995f7becd5bad15b10ede21b9257a4f0106c42036fe002d394940e96b1ca1",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "SEMANTIC_STATE",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "state/cycle_history.jsonl",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "22fdcd8819ae89dfe90ef84f27cd4e17a79397b7",
+      "byte_count": 3564,
+      "sha256": "44ef94c44b2cb5f1d62f800171b33f80dc9dc14e8a176debff9f512e8f7246f0",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "SEMANTIC_STATE",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "state/encoding_retrieval_spec.json",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "94a866098ddb003b17f6f06e2bfb69aa298a9137",
+      "byte_count": 1612,
+      "sha256": "0997195f2d0cab23a38bb4d9f04dd874fd97a2bc527ac66ab10d54b4144f21bc",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "SEMANTIC_STATE",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "state/identity_registry_seed.jsonl",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "d9aef9901816df8fa34643ad550df8243b35887d",
+      "byte_count": 2047,
+      "sha256": "aabe445579cce462d1a30625dea42206bc71b36dc7a2b089b800515da3be3dd1",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "SEMANTIC_STATE",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "state/known_raw_gaps.json",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "c5667f61dc01493a55128c47bcf6ad334f09d70b",
+      "byte_count": 1282,
+      "sha256": "5eab87b6717fae8e58aec5835043dd5957080478270f6cce642958fb8a43fed8",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "SEMANTIC_STATE",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "state/migration_control.json",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "d39b55c03616ff780ce9fbf213ced4bc5c52b7e4",
+      "byte_count": 1900,
+      "sha256": "738995c94c1143c7d9914c5cac25b0f267aa94d8700f016447963b64e978fb11",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "SEMANTIC_STATE",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "state/open_frontiers.jsonl",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "e8404b8c255a003de2e71207f16e0d6cd4f91e76",
+      "byte_count": 1703,
+      "sha256": "1047d9c208041606576fef06d76007f22c80aedc228919465ab919cac99c7c7b",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "SEMANTIC_STATE",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "state/provenance_bindings.jsonl",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "7bdafa20addeff01a3f0829da216a2860ff7336a",
+      "byte_count": 1532,
+      "sha256": "509614a659a43c18387f5612ab7091b518431164f350e8188dde20db51828fdd",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "SEMANTIC_STATE",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "state/reference_state.json",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "ec57582f44fccd68d39719bdd45ada6aa65f9b39",
+      "byte_count": 6109,
+      "sha256": "b00ae52296c61f0e81dac08cc6442a149893537ae7263953f40f6ad90113b72a",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "SEMANTIC_STATE",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "state/thread_role_profiles.json",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "181ba36f88eda3e212974b70013b374f80779ca7",
+      "byte_count": 1524,
+      "sha256": "9b7694857c0717e7e3e20fee17ec60153a7d76368078a5a3beb18b75c0826ee0",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "SEMANTIC_STATE",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "threads/initialization/T2-G2_initialization_ack.json",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "46e5a6dd00192297c74f2287b31cfc0b8ff60beb",
+      "byte_count": 1189,
+      "sha256": "6a06278b1455460476d22124e155db21d02f97e8f02c273bc68ae88530e9e397",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "EXECUTION",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "threads/initialization/T4-G2_initialization_ack.json",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "b9e33f3f8578fcf208e9d69075a5c62c9553471f",
+      "byte_count": 1197,
+      "sha256": "dda1800d5333a826429675a826ee111e950810c9e11906cd183976767b944223",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "EXECUTION",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    },
+    {
+      "repository_relative_path": "threads/initialization/T5-G2_initialization_ack.json",
+      "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+      "git_blob_sha": "6357d6ba935d4b6ac517fc6e79d08222db7fc189",
+      "byte_count": 1197,
+      "sha256": "3480a2f4c6487e10823459aaf324add88fafb31d6f5c6722d89d8da9b82d6c65",
+      "source_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+      "plane": "EXECUTION",
+      "semantic_rule": "INHERIT_EXISTING_RECORD_MEANING_AND_AUTHORITY_NO_RECLASSIFICATION"
+    }
+  ],
+  "preexisting_repository_blob_inventory": [
+    {
+      "path": ".gitattributes",
+      "git_blob_sha": "8965ee67a2e6ed56941e8dbaf00b14f7c49ac2b3",
+      "git_blob_byte_count": 308
+    },
+    {
+      "path": ".gitignore",
+      "git_blob_sha": "46669ca530cb35b4567a7bf4d75153b8db5c0a23",
+      "git_blob_byte_count": 138
+    },
+    {
+      "path": "PROGRAM_USAGE.json",
+      "git_blob_sha": "683e079a3c7f4895c90a0ad8b1bea4885c30c6ec",
+      "git_blob_byte_count": 1405
+    },
+    {
+      "path": "README.md",
+      "git_blob_sha": "c8ad919e67b56c29bdc30f26fb9b9e3a6b27c462",
+      "git_blob_byte_count": 2192
+    },
+    {
+      "path": "README_MACHINE.json",
+      "git_blob_sha": "346a6a8a99057e6af420c34459723722b941e212",
+      "git_blob_byte_count": 3165
+    },
+    {
+      "path": "START_HERE.json",
+      "git_blob_sha": "8a2012f7f14eb255c7cf2daed45f196c3585cbdf",
+      "git_blob_byte_count": 1864
+    },
+    {
+      "path": "control/authority_activation.json",
+      "git_blob_sha": "576efca905b3ac142737602b0d1c4ba5fb9bca2f",
+      "git_blob_byte_count": 3978
+    },
+    {
+      "path": "control/authority_model.json",
+      "git_blob_sha": "a9b25d9132ff3e167994eebe0a66b3c915137cf0",
+      "git_blob_byte_count": 1135
+    },
+    {
+      "path": "control/configuration_state.json",
+      "git_blob_sha": "e31df3de1a840edc520541666ea2787fd6923573",
+      "git_blob_byte_count": 410
+    },
+    {
+      "path": "control/generation_cutover.json",
+      "git_blob_sha": "a9edf97df3ab5b4c54f2a4983ab795e76fd76a73",
+      "git_blob_byte_count": 2908
+    },
+    {
+      "path": "control/migration_status.json",
+      "git_blob_sha": "d13f47650adefff871a2104fdfae601d050b18ba",
+      "git_blob_byte_count": 560
+    },
+    {
+      "path": "control/repository_layout.json",
+      "git_blob_sha": "723e7ff801d8b6210d00d2e3588e29b4a0f7fdd2",
+      "git_blob_byte_count": 1225
+    },
+    {
+      "path": "control/repository_policy.json",
+      "git_blob_sha": "2940a9e3cffcc724a993e34b0ecd7636d12d9c05",
+      "git_blob_byte_count": 1286
+    },
+    {
+      "path": "dispatch/C011/OFG-EA-T2-C011-G2.json",
+      "git_blob_sha": "7054dce9ae1e6674aad77ee9e0dc8ffa3637d571",
+      "git_blob_byte_count": 3523
+    },
+    {
+      "path": "dispatch/C011/OFG-EA-T4-C011-G2.json",
+      "git_blob_sha": "8493c886a5413efd2130ea62d32d837d9e0f6a07",
+      "git_blob_byte_count": 3646
+    },
+    {
+      "path": "dispatch/C011/OFG-EA-T5-C011-G2.json",
+      "git_blob_sha": "9497c11c504d63b46dc58e6575a7ab5e36c8440d",
+      "git_blob_byte_count": 3538
+    },
+    {
+      "path": "manifests/bootstrap_phase_2_manifest.json",
+      "git_blob_sha": "fa963982cd403cbdde035a22b6026f9f631d41c5",
+      "git_blob_byte_count": 10198
+    },
+    {
+      "path": "manifests/bootstrap_phase_3_manifest.json",
+      "git_blob_sha": "0b8a8eb767cc8c7e5467aef783a932e323858482",
+      "git_blob_byte_count": 9210
+    },
+    {
+      "path": "manifests/bootstrap_phase_4_manifest.json",
+      "git_blob_sha": "d5c969cd72d841ac1d7f413e6f9742ee9e34e4b4",
+      "git_blob_byte_count": 35311
+    },
+    {
+      "path": "manifests/bootstrap_phase_5_manifest.json",
+      "git_blob_sha": "7d5aef6fd33a71b0deabb65135b5458488571fbd",
+      "git_blob_byte_count": 17458
+    },
+    {
+      "path": "manifests/bootstrap_phase_6a_manifest.json",
+      "git_blob_sha": "5bbec43a507ad0e901396e571bd0b7809c7a9e20",
+      "git_blob_byte_count": 27617
+    },
+    {
+      "path": "manifests/bootstrap_phase_6b_manifest.json",
+      "git_blob_sha": "b0f510dcf52e3927aba30ba5008f2a15f27ebb83",
+      "git_blob_byte_count": 2794
+    },
+    {
+      "path": "manifests/bootstrap_phase_7_manifest.json",
+      "git_blob_sha": "6eacabccca41f0596c7abdaa4483971239a0a9d5",
+      "git_blob_byte_count": 2425
+    },
+    {
+      "path": "manifests/bundle_manifest.json",
+      "git_blob_sha": "37bffc1ae210bc0047ad439f243b40fb81a9eecf",
+      "git_blob_byte_count": 38821
+    },
+    {
+      "path": "manifests/legacy_thread_retirement_g2_cutover_manifest.json",
+      "git_blob_sha": "31b25e3f68da6497e292b892d1553be5dafca1f7",
+      "git_blob_byte_count": 5157
+    },
+    {
+      "path": "manifests/retrieval_smoke_cycle.json",
+      "git_blob_sha": "cc119183b2581fe8568a151eacfe8735febe5048",
+      "git_blob_byte_count": 603
+    },
+    {
+      "path": "manifests/retrieval_smoke_neighbors.json",
+      "git_blob_sha": "d46b9dee753c844d4be62ad1ab98e13c012b8ac4",
+      "git_blob_byte_count": 337
+    },
+    {
+      "path": "manifests/retrieval_smoke_query.json",
+      "git_blob_sha": "0fdafdd7cabb99effb7c4f524abc4e7fdc318e0c",
+      "git_blob_byte_count": 20778
+    },
+    {
+      "path": "manifests/smoke_neighbors_DT-BHT-006.json",
+      "git_blob_sha": "d46b9dee753c844d4be62ad1ab98e13c012b8ac4",
+      "git_blob_byte_count": 337
+    },
+    {
+      "path": "manifests/smoke_open_M88217.json",
+      "git_blob_sha": "e5fb4baf98924e34f5902a6cc3af0e8f32db93eb",
+      "git_blob_byte_count": 105
+    },
+    {
+      "path": "manifests/smoke_open_conflicts.json",
+      "git_blob_sha": "6a4cde07fd88dd98d48e5936906f58782eeaffec",
+      "git_blob_byte_count": 557
+    },
+    {
+      "path": "manifests/smoke_query_CRS01.json",
+      "git_blob_sha": "18d4ce5108837d2c44a91e1ffc4b66488b8a4fa6",
+      "git_blob_byte_count": 35571
+    },
+    {
+      "path": "manifests/smoke_raw_scan_CRS01.json",
+      "git_blob_sha": "75e4e0fb4e9858d52ee75799af6dca48d75259ca",
+      "git_blob_byte_count": 1137
+    },
+    {
+      "path": "manifests/validation_report.json",
+      "git_blob_sha": "69599d4db566ae06aad197cbfdc490f45ede5dd9",
+      "git_blob_byte_count": 3792
+    },
+    {
+      "path": "manifests/worker_return_catalog.json",
+      "git_blob_sha": "0a21ba7c6181c8d5d9f43cb92fdac72d915a1f1a",
+      "git_blob_byte_count": 10747
+    },
+    {
+      "path": "programs/bootstrap.sh",
+      "git_blob_sha": "ce965945db4076227474f291c45a8a3d93f86173",
+      "git_blob_byte_count": 804
+    },
+    {
+      "path": "programs/ofg_codec.py",
+      "git_blob_sha": "e839794342d446884fd8e9922fb900e5d9240298",
+      "git_blob_byte_count": 3459
+    },
+    {
+      "path": "programs/ofg_index.py",
+      "git_blob_sha": "2d1f0afd6d3765bf073c8df601b9602057413337",
+      "git_blob_byte_count": 8179
+    },
+    {
+      "path": "programs/ofg_ingest.py",
+      "git_blob_sha": "5d3d45c15583c6e95162cbc8e629697bf24c4d15",
+      "git_blob_byte_count": 3615
+    },
+    {
+      "path": "programs/ofg_rehydrate.py",
+      "git_blob_sha": "7e743d29d347c4e19dabdd1350a1b100db7f1ef5",
+      "git_blob_byte_count": 2618
+    },
+    {
+      "path": "programs/ofg_retrieve.py",
+      "git_blob_sha": "7084e17b102562d9b645bba7aefd72b5e27b017d",
+      "git_blob_byte_count": 5365
+    },
+    {
+      "path": "programs/ofg_transport.py",
+      "git_blob_sha": "915388c024f58b05b899b47cc5e1ddf59209707a",
+      "git_blob_byte_count": 2165
+    },
+    {
+      "path": "programs/ofg_verify.py",
+      "git_blob_sha": "5037b5ad38dd9f47bcd86f036f6fa811eac7d432",
+      "git_blob_byte_count": 954
+    },
+    {
+      "path": "reference_raw/OFG_Actual_Site_Work_History_RevW3(9).docx",
+      "git_blob_sha": "b50944562d39d7b3d3f0cc545616e26a0388100b",
+      "git_blob_byte_count": 80435
+    },
+    {
+      "path": "reference_raw/OFG_Atlas_Rev3_DATA00_README(9).txt",
+      "git_blob_sha": "be336b978bcf80f627eea48f7834e54c05992fbe",
+      "git_blob_byte_count": 1593
+    },
+    {
+      "path": "reference_raw/OFG_Atlas_Rev3_DATA01_Controlled_Asset_Register(8).csv",
+      "git_blob_sha": "67c8997f9d8497d7c5802c6f5e1cf071d35be30f",
+      "git_blob_byte_count": 10762718
+    },
+    {
+      "path": "reference_raw/OFG_Atlas_Rev3_DATA02_Master_Event_Timeline_Through_2031-04-19(6).csv",
+      "git_blob_sha": "e1943971bdb0ab6228c2e8be2ce62fc720ed9e1c",
+      "git_blob_byte_count": 26539936
+    },
+    {
+      "path": "reference_raw/OFG_Atlas_Rev3_DATA03_Site_Geometry(7).geojson",
+      "git_blob_sha": "8442ac018482f0bedb2da27326fc347fe7d6e3dd",
+      "git_blob_byte_count": 17576
+    },
+    {
+      "path": "reference_raw/OFG_Atlas_Rev3_DATA04_Parametric_3D_Geometry(7).json",
+      "git_blob_sha": "873eb8e08c6c2cd1e05fb54395645bb583289a72",
+      "git_blob_byte_count": 12631
+    },
+    {
+      "path": "reference_raw/OFG_Atlas_Rev3_DATA05_Relationship_Graph(7).csv",
+      "git_blob_sha": "3d3b2a4af1d8fb95b94bb2f49f44d2530c8f56b0",
+      "git_blob_byte_count": 22953
+    },
+    {
+      "path": "reference_raw/OFG_Atlas_Rev3_DATA06_Physical_Object_Schema(8).json",
+      "git_blob_sha": "a6f563947f303ce031307595fdbbf199d1990216",
+      "git_blob_byte_count": 2070
+    },
+    {
+      "path": "reference_raw/OFG_Atlas_Rev3_DATA08_Digital_Thread_QA(8).json",
+      "git_blob_sha": "8743ffd4c895fb0bc728a9a9daad051d0d4a5e04",
+      "git_blob_byte_count": 180
+    },
+    {
+      "path": "reference_raw/OFG_Definitive_Engineering_Atlas_Rev3_MACHINE_ANNEX_CATALOG(7).csv",
+      "git_blob_sha": "216118174908969a07aae6cb3228197ad74a1bb3",
+      "git_blob_byte_count": 209035
+    },
+    {
+      "path": "reference_raw/OFG_Definitive_Engineering_Atlas_Rev3_MACHINE_ANNEX_MANIFEST(8).json",
+      "git_blob_sha": "11d64af5b80c8cbffdac8fe8dc742cea23ee8e17",
+      "git_blob_byte_count": 444
+    },
+    {
+      "path": "reference_raw/OFG_Definitive_Engineering_Atlas_Rev3_MASTER_INDEX(9).docx",
+      "git_blob_sha": "01ace62ecb488e58caf0791e376329383a99a1f8",
+      "git_blob_byte_count": 41193
+    },
+    {
+      "path": "reference_raw/OFG_Site_Work_History_Master_RevW3(8).csv",
+      "git_blob_sha": "585fdbad9d71236f07ca3e5946b856547b21098e",
+      "git_blob_byte_count": 134
+    },
+    {
+      "path": "reference_raw/OFG_Site_Work_Representative_Asset_Dossiers_RevW3(8).csv",
+      "git_blob_sha": "ffdde0326b7161a71e5638d5470b0c2ea081a349",
+      "git_blob_byte_count": 9537
+    },
+    {
+      "path": "reference_raw/OFG_Site_Workfront_Monthly_History_RevW3(7).csv",
+      "git_blob_sha": "d7966cf5b5b126550fcb17a1304f3eb60f87a921",
+      "git_blob_byte_count": 2076912
+    },
+    {
+      "path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Annex_K_Workstream_Transition_Register(20260928-081854).csv",
+      "git_blob_sha": "e2ab28cf3c42ab61d169cd14a4886c9db0b7978e",
+      "git_blob_byte_count": 4142826
+    },
+    {
+      "path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Annex_L_Deliverable_Family_Genealogy(10).csv",
+      "git_blob_sha": "bfd0f20029ddf72e559e6a9275f2ef2e1f74b830",
+      "git_blob_byte_count": 1816104
+    },
+    {
+      "path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Annex_M_Workstream_Period_Synopsis(20260928-082241).csv",
+      "git_blob_sha": "85e66fe9da61e445e4436d1bdd72488f832805f5",
+      "git_blob_byte_count": 3548178
+    },
+    {
+      "path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Vol14A_Workstream_Ownership_Transitions(10).docx",
+      "git_blob_sha": "17e1b4ff202a5046bd9a8cef01d457e6e8013183",
+      "git_blob_byte_count": 69001
+    },
+    {
+      "path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Vol14B_Workstream_Ownership_Transitions(10).docx",
+      "git_blob_sha": "d5d7a1c969315321c5fff2190f386f7ad719a9c6",
+      "git_blob_byte_count": 73866
+    },
+    {
+      "path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Vol14C_Workstream_Ownership_Transitions(10).docx",
+      "git_blob_sha": "9251acd5c2fe360e8a615cdc5bc2ccd69b2f1eb6",
+      "git_blob_byte_count": 80094
+    },
+    {
+      "path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Vol14D_Workstream_Ownership_Transitions(10).docx",
+      "git_blob_sha": "413aba92f52a64ae6da10f9e10da3cc315ff2764",
+      "git_blob_byte_count": 71892
+    },
+    {
+      "path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Vol15A_Deliverable_and_Record_Genealogy(10).docx",
+      "git_blob_sha": "5fb2434845724f67e80b53b14105040a7c9ceba4",
+      "git_blob_byte_count": 59609
+    },
+    {
+      "path": "reference_raw/organizational_working_history/OFG_Organizational_Working_History_RevS_Vol15B_Deliverable_and_Record_Genealogy(9).docx",
+      "git_blob_sha": "2ab05ff3b95ca86c4924321316137756d9db30b2",
+      "git_blob_byte_count": 63018
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V00_CANON_CONTROL_HIERARCHY_PROJECT_HISTORY_INSTITUTIONAL_WORLD(7).docx",
+      "git_blob_sha": "5ca529f4a01b81bfb10014430ab0cb7b8ade3368",
+      "git_blob_byte_count": 70542
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V01_TECHNOLOGY_MATURATION_DESIGN_BASIS_FUNDAMENTAL_ENGINEERING(8).docx",
+      "git_blob_sha": "269b5fab5b44726fc568dbc232a04fdacd5e1ad7",
+      "git_blob_byte_count": 64352
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V02_SITE_GEOGRAPHY_COORDINATES_LOGISTICS_CONSTRUCTION_FIELD(8).docx",
+      "git_blob_sha": "4972dfee69a67813964bb48391940bced4dfe556",
+      "git_blob_byte_count": 68284
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V03_BUILDINGS_CIVIL_STRUCTURAL_ROOMS_PENETRATIONS_EMBEDS(8).docx",
+      "git_blob_sha": "89e3d83c46b89c02b2290963de367181dcad975b",
+      "git_blob_byte_count": 88062
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V04_FUSION_MACHINE_TOKAMAK_VACUUM_VESSEL_CRYOSTAT_STRUCTURAL_LOAD_PATH(8).docx",
+      "git_blob_sha": "134b6cc7c06c067a41b57bdb277b4068dcd71561",
+      "git_blob_byte_count": 91738
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V05_MAGNETS_MAGNET_POWER_CRYOGENICS_QUENCH_PROTECTION(7).docx",
+      "git_blob_sha": "5bad949c755796bc7fd74b9110a77cce6b2e79c3",
+      "git_blob_byte_count": 59536
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V06_BLANKET_DIVERTOR_TRITIUM_FUEL_CYCLE_REMOTE_HANDLING(6).docx",
+      "git_blob_sha": "e2fd9e75c665579cd8bc17542870b250ea69011b",
+      "git_blob_byte_count": 89457
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V07_PRIMARY_BLANKET_HEAT_TRANSPORT_PHYSICAL_CONFIGURATION_AND_FUNDAMENTAL_ENGINEERING(8).docx",
+      "git_blob_sha": "9b05066710d71d6b367c3bacc5711dcb47f86eb7",
+      "git_blob_byte_count": 123187
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V08_VACUUM_GAS_COOLING_AUXILIARIES_PROCESS_SYSTEMS(7).docx",
+      "git_blob_sha": "7dc4782722143298de3ac0b4828eec386558c698",
+      "git_blob_byte_count": 75499
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V09_POWER_CYCLE_BALANCE_OF_PLANT_PLANT_UTILITIES(7).docx",
+      "git_blob_sha": "4679f5e8e8c2f5277f497775892cfd93259cadaa",
+      "git_blob_byte_count": 58128
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V10_ELECTRICAL_I_C_DIGITAL_PLANT_HVAC_FIRE_CONFINEMENT(7).docx",
+      "git_blob_sha": "9f489888c562aac98e5b47cdef57543a80be7cfb",
+      "git_blob_byte_count": 55025
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V11_EQUIPMENT_COMPONENT_MASTER_ENCYCLOPEDIA(7).docx",
+      "git_blob_sha": "5d1d93b1c819e34a2290d71fa4d6df9e5fa4fde6",
+      "git_blob_byte_count": 85905
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V12_CONNECTIVITY_ROUTING_NOZZLES_FABRICATION_WELDS_SUPPORTS(7).docx",
+      "git_blob_sha": "73603af61a4b654c12ef4f75c6fb0f4cce97b2f9",
+      "git_blob_byte_count": 84456
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V13_CONSTRUCTION_TEMPORARY_WORKS_INSTALLATION_FIELD_EXECUTION(7).docx",
+      "git_blob_sha": "a813f045b33845efb386e7cfb4bba2b002c208aa",
+      "git_blob_byte_count": 107473
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V14_COMMISSIONING_TURNOVER_OPERATIONS_READINESS_TEMPORARY_CONFIGURATION(7).docx",
+      "git_blob_sha": "6239394165e9c3a4e8732f75f35a4ad21704370c",
+      "git_blob_byte_count": 52758
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V15_MASTER_CHRONOLOGY_INSTALLATION_HISTORY_STORY_DATE_PHYSICAL_STATE(7).docx",
+      "git_blob_sha": "aab128c0e05c05f14490fd248e3c23845af9f6c4",
+      "git_blob_byte_count": 68859
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V16_BHT_401_CRS_01_FORENSIC_CONFIGURATION_INFORMATION_PROVENANCE(7).docx",
+      "git_blob_sha": "38e0a8f85d24dfba33bb971dd5ef5dc584419310",
+      "git_blob_byte_count": 91706
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V17_VERIFICATION_VALIDATION_FMEA_OPEN_ITEMS_BACKWARD_PROPAGATION(6).docx",
+      "git_blob_sha": "faf8e51f25773c9b2b67f8326c90ce665602a42d",
+      "git_blob_byte_count": 71152
+    },
+    {
+      "path": "reference_raw/rev3_volumes/OFG_Definitive_Engineering_Atlas_Rev3_V18_MASTER_SYSTEM_DICTIONARY_ALL_94_SYSTEMS_INTERFACE_COORDINATION(7).docx",
+      "git_blob_sha": "122cba3d2e730915fa32ea44dbabc8996beb5827",
+      "git_blob_byte_count": 54547
+    },
+    {
+      "path": "state/T1-G2_REHYDRATION_CAPSULE.json",
+      "git_blob_sha": "55732a0593642b3862cb396f55a6a80baee02073",
+      "git_blob_byte_count": 16843
+    },
+    {
+      "path": "state/T2-G2_REHYDRATION_CAPSULE.json",
+      "git_blob_sha": "1519cd64a02fff52d4fcad3efe2cdb7ed37db7cf",
+      "git_blob_byte_count": 7589
+    },
+    {
+      "path": "state/T4-G2_REHYDRATION_CAPSULE.json",
+      "git_blob_sha": "8bf7897aaab157c1480c1f82f1099c0501a14bcd",
+      "git_blob_byte_count": 7669
+    },
+    {
+      "path": "state/T5-G2_REHYDRATION_CAPSULE.json",
+      "git_blob_sha": "16ffe798fe357234fa700a3f1b47061846f278a5",
+      "git_blob_byte_count": 7286
+    },
+    {
+      "path": "state/active_cycle_c011.json",
+      "git_blob_sha": "55ace452a5759a16b7838ed1387503f3787bb1f4",
+      "git_blob_byte_count": 1910
+    },
+    {
+      "path": "state/c011_dispatches.json",
+      "git_blob_sha": "e5b11ba2b388877a3f1ebeddf4605642e1e1c69e",
+      "git_blob_byte_count": 8371
+    },
+    {
+      "path": "state/conflicts.jsonl",
+      "git_blob_sha": "5cfbd3f8c0cbdcf9fca3d889aafd522c705a8a65",
+      "git_blob_byte_count": 1655
+    },
+    {
+      "path": "state/current_working_state.json",
+      "git_blob_sha": "858f1dc334cd14aa4d2ada6485cccc702ba3cc8e",
+      "git_blob_byte_count": 14151
+    },
+    {
+      "path": "state/cycle_history.jsonl",
+      "git_blob_sha": "22fdcd8819ae89dfe90ef84f27cd4e17a79397b7",
+      "git_blob_byte_count": 3564
+    },
+    {
+      "path": "state/encoding_retrieval_spec.json",
+      "git_blob_sha": "94a866098ddb003b17f6f06e2bfb69aa298a9137",
+      "git_blob_byte_count": 1612
+    },
+    {
+      "path": "state/identity_registry_seed.jsonl",
+      "git_blob_sha": "d9aef9901816df8fa34643ad550df8243b35887d",
+      "git_blob_byte_count": 2047
+    },
+    {
+      "path": "state/known_raw_gaps.json",
+      "git_blob_sha": "c5667f61dc01493a55128c47bcf6ad334f09d70b",
+      "git_blob_byte_count": 1282
+    },
+    {
+      "path": "state/migration_control.json",
+      "git_blob_sha": "d39b55c03616ff780ce9fbf213ced4bc5c52b7e4",
+      "git_blob_byte_count": 1900
+    },
+    {
+      "path": "state/open_frontiers.jsonl",
+      "git_blob_sha": "e8404b8c255a003de2e71207f16e0d6cd4f91e76",
+      "git_blob_byte_count": 1703
+    },
+    {
+      "path": "state/provenance_bindings.jsonl",
+      "git_blob_sha": "7bdafa20addeff01a3f0829da216a2860ff7336a",
+      "git_blob_byte_count": 1532
+    },
+    {
+      "path": "state/reference_state.json",
+      "git_blob_sha": "ec57582f44fccd68d39719bdd45ada6aa65f9b39",
+      "git_blob_byte_count": 6109
+    },
+    {
+      "path": "state/thread_role_profiles.json",
+      "git_blob_sha": "181ba36f88eda3e212974b70013b374f80779ca7",
+      "git_blob_byte_count": 1524
+    },
+    {
+      "path": "threads/initialization/T2-G2_initialization_ack.json",
+      "git_blob_sha": "46e5a6dd00192297c74f2287b31cfc0b8ff60beb",
+      "git_blob_byte_count": 1189
+    },
+    {
+      "path": "threads/initialization/T4-G2_initialization_ack.json",
+      "git_blob_sha": "b9e33f3f8578fcf208e9d69075a5c62c9553471f",
+      "git_blob_byte_count": 1197
+    },
+    {
+      "path": "threads/initialization/T5-G2_initialization_ack.json",
+      "git_blob_sha": "6357d6ba935d4b6ac517fc6e79d08222db7fc189",
+      "git_blob_byte_count": 1197
+    },
+    {
+      "path": "transport/T1-G2/T1-G2-ACTIVE-04.json",
+      "git_blob_sha": "7b6453c2e86cd020bfbf9d6bd866bdcabfdb17a5",
+      "git_blob_byte_count": 1655
+    },
+    {
+      "path": "transport/T1-G2/T1-G2-CAPSULE-03.json",
+      "git_blob_sha": "f8a37a0e16d82f4e4855e5d3686366a92de94676",
+      "git_blob_byte_count": 12424
+    },
+    {
+      "path": "transport/T1-G2/T1-G2-CTRL-01.json",
+      "git_blob_sha": "1204512d6e95f66e58c988ed8d66bedbadee4b10",
+      "git_blob_byte_count": 1590
+    },
+    {
+      "path": "transport/T1-G2/T1-G2-DISPATCH-05.json",
+      "git_blob_sha": "36df7a210be5d9cf1822737fa4026b8e0d7eb797",
+      "git_blob_byte_count": 8069
+    },
+    {
+      "path": "transport/T1-G2/T1-G2-ENCODING-02.json",
+      "git_blob_sha": "73308a3dbd475c61fe066fa00132d38ee6388802",
+      "git_blob_byte_count": 1931
+    },
+    {
+      "path": "transport/T1-G2/transport_manifest.json",
+      "git_blob_sha": "6045bab9e2282a1df607f6673dc7eeec81f6b658",
+      "git_blob_byte_count": 1540
+    },
+    {
+      "path": "transport/T2-G2/T2-G2-ACTIVE-04.json",
+      "git_blob_sha": "ba21da6e775d3335445b2ed99d0b5bc1e94b4433",
+      "git_blob_byte_count": 1655
+    },
+    {
+      "path": "transport/T2-G2/T2-G2-CAPSULE-03.json",
+      "git_blob_sha": "5c98f5778cb573057388d03dbed4351603816057",
+      "git_blob_byte_count": 5613
+    },
+    {
+      "path": "transport/T2-G2/T2-G2-CTRL-01.json",
+      "git_blob_sha": "eeecd8ed8c37f2731cbfb071eb46af838c66d02f",
+      "git_blob_byte_count": 1590
+    },
+    {
+      "path": "transport/T2-G2/T2-G2-DISPATCH-05.json",
+      "git_blob_sha": "a59c7b2a27f73ca89f56474e5aa2f9033b4f0d12",
+      "git_blob_byte_count": 8069
+    },
+    {
+      "path": "transport/T2-G2/T2-G2-ENCODING-02.json",
+      "git_blob_sha": "f1ab09611008ee8dd0226afc2660df589098e8d5",
+      "git_blob_byte_count": 1931
+    },
+    {
+      "path": "transport/T2-G2/transport_manifest.json",
+      "git_blob_sha": "4d0efc0668fd4d0f0b86a73fad0874dab822ad3b",
+      "git_blob_byte_count": 1540
+    },
+    {
+      "path": "transport/T4-G2/T4-G2-ACTIVE-04.json",
+      "git_blob_sha": "30d0ee4cb5124ca79ba24289ed1549fd2c049b71",
+      "git_blob_byte_count": 1655
+    },
+    {
+      "path": "transport/T4-G2/T4-G2-CAPSULE-03.json",
+      "git_blob_sha": "2cc7e949a64819a9d860d23ba4810a5747032fc6",
+      "git_blob_byte_count": 5619
+    },
+    {
+      "path": "transport/T4-G2/T4-G2-CTRL-01.json",
+      "git_blob_sha": "05fba1121ed02a90c94eb50acbd8c953747a172e",
+      "git_blob_byte_count": 1590
+    },
+    {
+      "path": "transport/T4-G2/T4-G2-DISPATCH-05.json",
+      "git_blob_sha": "4dd02dc521b2fa2db98c60dee5710a8cc1c34a50",
+      "git_blob_byte_count": 8069
+    },
+    {
+      "path": "transport/T4-G2/T4-G2-ENCODING-02.json",
+      "git_blob_sha": "0f2154181744be7a7d3b0eb3f2ce650ca1bf598b",
+      "git_blob_byte_count": 1931
+    },
+    {
+      "path": "transport/T4-G2/transport_manifest.json",
+      "git_blob_sha": "abe14d5fcfdb55d95f16d6b92da0d9cbfc05d25c",
+      "git_blob_byte_count": 1540
+    },
+    {
+      "path": "transport/T5-G2/T5-G2-ACTIVE-04.json",
+      "git_blob_sha": "aa077bae518f6d455cc9fc6e594f9ab426e4713a",
+      "git_blob_byte_count": 1655
+    },
+    {
+      "path": "transport/T5-G2/T5-G2-CAPSULE-03.json",
+      "git_blob_sha": "973546460fad6fb6f88e8655a083d12e79be37b5",
+      "git_blob_byte_count": 5424
+    },
+    {
+      "path": "transport/T5-G2/T5-G2-CTRL-01.json",
+      "git_blob_sha": "607fde133447bed34f6aaaa6153d0b25d995cca8",
+      "git_blob_byte_count": 1590
+    },
+    {
+      "path": "transport/T5-G2/T5-G2-DISPATCH-05.json",
+      "git_blob_sha": "2324828d8f47f7297bad5847d30b5e20440348bb",
+      "git_blob_byte_count": 8069
+    },
+    {
+      "path": "transport/T5-G2/T5-G2-ENCODING-02.json",
+      "git_blob_sha": "7f66e5668f050e0a4061ddd4db7d8220ee18e7fa",
+      "git_blob_byte_count": 1931
+    },
+    {
+      "path": "transport/T5-G2/transport_manifest.json",
+      "git_blob_sha": "007f6697aef061736fe1c5a4b85451990d0a4ab0",
+      "git_blob_byte_count": 1540
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T2-C001-RETURN-R1.txt",
+      "git_blob_sha": "7a6dfcc84d433dd21b87ce803e3e3a8dba04c5cd",
+      "git_blob_byte_count": 48718
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T2-C002-RETURN-R2.txt",
+      "git_blob_sha": "283ae1cb7c84c6ca7b15a28b6d75c3efa97d2891",
+      "git_blob_byte_count": 28738
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T2-C002-T3REDIRECT-RETURN-R1.txt",
+      "git_blob_sha": "cd3d44719ceb50b5d54a0d54393c72fd76bb66bc",
+      "git_blob_byte_count": 43206
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T2-C003-RETURN-R1.txt",
+      "git_blob_sha": "b0fe24d47998c92abfed6f561b02ba9c66cd6ac4",
+      "git_blob_byte_count": 164711
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T2-C004-RETURN-R1-CONT-02.md",
+      "git_blob_sha": "6cba4b2fb0f6413444d2e7fba217215380fab6fe",
+      "git_blob_byte_count": 54746
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T2-C005-RETURN-R1.txt",
+      "git_blob_sha": "2c446e6bb7469496adc904b8d32e2b84f88eb9fd",
+      "git_blob_byte_count": 76290
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T2-C006-RETURN-R1.md",
+      "git_blob_sha": "525b7ac15d3e4116fec19c7d110ad62e9f860575",
+      "git_blob_byte_count": 76829
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T2-C006-RETURN-R1.txt",
+      "git_blob_sha": "ef52e1852669dac9e791b15dcdcc6a4ca57e5245",
+      "git_blob_byte_count": 43374
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T2-C007-RETURN-R1.md",
+      "git_blob_sha": "d7670fed5f974ee6173679d8e03ad12181fc8acb",
+      "git_blob_byte_count": 58309
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T2-C008-RETURN-R1.md",
+      "git_blob_sha": "665b6812bb6f473a8bbe58680a4cd8d9739e93d7",
+      "git_blob_byte_count": 61097
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T2-C009-RETURN-R1.md",
+      "git_blob_sha": "7fd67faa8fc52037686f5ebab189c4554d45ac47",
+      "git_blob_byte_count": 61425
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T2-C010-RETURN-R1.txt",
+      "git_blob_sha": "1ac8355671c391be18735d9ff7460e5395272526",
+      "git_blob_byte_count": 66248
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T4-C001-RETURN-R1.txt",
+      "git_blob_sha": "e53730d3997938f8a08defae2a2d2c905d32d4b5",
+      "git_blob_byte_count": 82157
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T4-C002-RETURN-R1.txt",
+      "git_blob_sha": "0a75985e7202d2efd1673f5fdf61a78fca08ecc3",
+      "git_blob_byte_count": 65686
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T4-C003-RETURN-R1.txt",
+      "git_blob_sha": "d831e9f41787f1caf536a63bb47f81c54e5dc7ff",
+      "git_blob_byte_count": 122901
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T4-C004-RETURN-R1.txt",
+      "git_blob_sha": "ae40f5b6708854c10c891460add5d7b810e1cf52",
+      "git_blob_byte_count": 125905
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T4-C005-RETURN-R1.txt",
+      "git_blob_sha": "ca4270c3909dfc10b8c78c6b9d0e9d01c358dc53",
+      "git_blob_byte_count": 104316
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T4-C007-RETURN-R1.txt",
+      "git_blob_sha": "d07ec1c16ff6d6c5d9274b07abb0e673817bc4c4",
+      "git_blob_byte_count": 79940
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T4-C008-RETURN-R1.md",
+      "git_blob_sha": "8185a99aac4af9c0724d67cb51f24bd5d686b833",
+      "git_blob_byte_count": 84365
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T4-C008-RETURN-R1.txt",
+      "git_blob_sha": "40e2493b7b49e10e5bf2fa1656897691f4279ae3",
+      "git_blob_byte_count": 51600
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T4-C009-RETURN-R1.md",
+      "git_blob_sha": "7368355ffcdd32439d728a57b6642471ed6531c0",
+      "git_blob_byte_count": 74791
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T4-C010-RETURN-R1.txt",
+      "git_blob_sha": "86614f26c97a0d7c5048202b91f51340cf7d2f31",
+      "git_blob_byte_count": 79270
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T5-C001-RETURN-R1.txt",
+      "git_blob_sha": "1200c6c1665c35625d58f585d43c713ed500166b",
+      "git_blob_byte_count": 56527
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T5-C002-RETURN-R1.txt",
+      "git_blob_sha": "516b1bdb083f7ba3d134d2a5a8936ee6780e55db",
+      "git_blob_byte_count": 79083
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T5-C003-RETURN-R1.txt",
+      "git_blob_sha": "7e4aba9e165e07ebe05c775cf10803e19dd5831f",
+      "git_blob_byte_count": 69369
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T5-C005-RETURN-R1.txt",
+      "git_blob_sha": "7d3a51627de53143f19e2a845491179d132a628d",
+      "git_blob_byte_count": 53545
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T5-C006-RETURN-R1.txt",
+      "git_blob_sha": "99b1b6ed8ca733147f1e1d6bd1d78c17452a41ee",
+      "git_blob_byte_count": 53383
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T5-C007-RETURN-R1.txt",
+      "git_blob_sha": "ef52e1852669dac9e791b15dcdcc6a4ca57e5245",
+      "git_blob_byte_count": 43374
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T5-C007-RETURN-R1__VARIANT2.txt",
+      "git_blob_sha": "aa4f071321cdc7d80ecde4b4dd54d915586076a2",
+      "git_blob_byte_count": 49341
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T5-C008-RETURN-R1.txt",
+      "git_blob_sha": "aa4f071321cdc7d80ecde4b4dd54d915586076a2",
+      "git_blob_byte_count": 49341
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T5-C009-RETURN-R1.txt",
+      "git_blob_sha": "40e2493b7b49e10e5bf2fa1656897691f4279ae3",
+      "git_blob_byte_count": 51600
+    },
+    {
+      "path": "working_raw/by_package/OFG-EA-T5-C010-RETURN-R1.txt",
+      "git_blob_sha": "ba144ffc93f5eb8b35e5f8fcb88ed4c2ac93b57c",
+      "git_blob_byte_count": 37642
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(1).txt",
+      "git_blob_sha": "7d3a51627de53143f19e2a845491179d132a628d",
+      "git_blob_byte_count": 53545
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(10).txt",
+      "git_blob_sha": "1ac8355671c391be18735d9ff7460e5395272526",
+      "git_blob_byte_count": 66248
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(2).txt",
+      "git_blob_sha": "2c446e6bb7469496adc904b8d32e2b84f88eb9fd",
+      "git_blob_byte_count": 76290
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(20260929-035853).txt",
+      "git_blob_sha": "ba144ffc93f5eb8b35e5f8fcb88ed4c2ac93b57c",
+      "git_blob_byte_count": 37642
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(20260929-040249).txt",
+      "git_blob_sha": "86614f26c97a0d7c5048202b91f51340cf7d2f31",
+      "git_blob_byte_count": 79270
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(3).txt",
+      "git_blob_sha": "ca4270c3909dfc10b8c78c6b9d0e9d01c358dc53",
+      "git_blob_byte_count": 104316
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(4).txt",
+      "git_blob_sha": "99b1b6ed8ca733147f1e1d6bd1d78c17452a41ee",
+      "git_blob_byte_count": 53383
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(5).txt",
+      "git_blob_sha": "ef52e1852669dac9e791b15dcdcc6a4ca57e5245",
+      "git_blob_byte_count": 43374
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(6).txt",
+      "git_blob_sha": "d07ec1c16ff6d6c5d9274b07abb0e673817bc4c4",
+      "git_blob_byte_count": 79940
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(7).txt",
+      "git_blob_sha": "d07ec1c16ff6d6c5d9274b07abb0e673817bc4c4",
+      "git_blob_byte_count": 79940
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(8).txt",
+      "git_blob_sha": "aa4f071321cdc7d80ecde4b4dd54d915586076a2",
+      "git_blob_byte_count": 49341
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë(9).txt",
+      "git_blob_sha": "40e2493b7b49e10e5bf2fa1656897691f4279ae3",
+      "git_blob_byte_count": 51600
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπéëπéîπüƒπâåπé¡πé╣πâê∩╝ê1 τé╣∩╝ë.txt",
+      "git_blob_sha": "ae40f5b6708854c10c891460add5d7b810e1cf52",
+      "git_blob_byte_count": 125905
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(10).txt",
+      "git_blob_sha": "283ae1cb7c84c6ca7b15a28b6d75c3efa97d2891",
+      "git_blob_byte_count": 28738
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(20260928-112600).txt",
+      "git_blob_sha": "0a75985e7202d2efd1673f5fdf61a78fca08ecc3",
+      "git_blob_byte_count": 65686
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(20260928-112939).txt",
+      "git_blob_sha": "516b1bdb083f7ba3d134d2a5a8936ee6780e55db",
+      "git_blob_byte_count": 79083
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(20260928-115301).txt",
+      "git_blob_sha": "cd3d44719ceb50b5d54a0d54393c72fd76bb66bc",
+      "git_blob_byte_count": 43206
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(20260928-123357).txt",
+      "git_blob_sha": "7e4aba9e165e07ebe05c775cf10803e19dd5831f",
+      "git_blob_byte_count": 69369
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(20260928-124137).txt",
+      "git_blob_sha": "b0fe24d47998c92abfed6f561b02ba9c66cd6ac4",
+      "git_blob_byte_count": 164711
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(20260928-134912).txt",
+      "git_blob_sha": "d831e9f41787f1caf536a63bb47f81c54e5dc7ff",
+      "git_blob_byte_count": 122901
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(5).txt",
+      "git_blob_sha": "7a6dfcc84d433dd21b87ce803e3e3a8dba04c5cd",
+      "git_blob_byte_count": 48718
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(6).txt",
+      "git_blob_sha": "e53730d3997938f8a08defae2a2d2c905d32d4b5",
+      "git_blob_byte_count": 82157
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâåπé¡πé╣πâê∩╝ê1∩╝ë(7).txt",
+      "git_blob_sha": "1200c6c1665c35625d58f585d43c713ed500166b",
+      "git_blob_byte_count": 56527
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâ₧πâ╝πé»πâÇπéªπâ│∩╝ê1∩╝ë(20260928-215853).md",
+      "git_blob_sha": "6cba4b2fb0f6413444d2e7fba217215380fab6fe",
+      "git_blob_byte_count": 54746
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâ₧πâ╝πé»πâÇπéªπâ│∩╝ê1∩╝ë(20260928-235336).md",
+      "git_blob_sha": "525b7ac15d3e4116fec19c7d110ad62e9f860575",
+      "git_blob_byte_count": 76829
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâ₧πâ╝πé»πâÇπéªπâ│∩╝ê1∩╝ë(20260929-004416).md",
+      "git_blob_sha": "d7670fed5f974ee6173679d8e03ad12181fc8acb",
+      "git_blob_byte_count": 58309
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâ₧πâ╝πé»πâÇπéªπâ│∩╝ê1∩╝ë(20260929-022633).md",
+      "git_blob_sha": "665b6812bb6f473a8bbe58680a4cd8d9739e93d7",
+      "git_blob_byte_count": 61097
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâ₧πâ╝πé»πâÇπéªπâ│∩╝ê1∩╝ë(20260929-022754).md",
+      "git_blob_sha": "8185a99aac4af9c0724d67cb51f24bd5d686b833",
+      "git_blob_byte_count": 84365
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâ₧πâ╝πé»πâÇπéªπâ│∩╝ê1∩╝ë(20260929-032148).md",
+      "git_blob_sha": "7fd67faa8fc52037686f5ebab189c4554d45ac47",
+      "git_blob_byte_count": 61425
+    },
+    {
+      "path": "working_raw/worker_returns_archive/Φ▓╝πéèΣ╗ÿπüæπüƒπâ₧πâ╝πé»πâÇπéªπâ│∩╝ê1∩╝ë(20260929-032505).md",
+      "git_blob_sha": "7368355ffcdd32439d728a57b6642471ed6531c0",
+      "git_blob_byte_count": 74791
+    }
+  ],
+  "full_repository_binding": "Git commit BASE cryptographically binds the complete 192-file Git tree; controlled inputs additionally bound by exact-byte SHA256. LFS source identity remains in existing pointer/descriptors; no fresh full corpus roundtrip is claimed.",
+  "preservation": {
+    "c001_c010_semantics": true,
+    "conflicts": true,
+    "open_frontiers": true,
+    "identity_states": true,
+    "provenance": true,
+    "duplicate_materializations": true,
+    "variants": true,
+    "known_raw_gaps": true,
+    "existing_c011_task_scope": true
+  },
+  "no_native_claim_event_reclassification": true,
+  "guards": {
+    "c011_engineering_state_changed": false,
+    "c011_execution_status_changed": false,
+    "c011_execution_performed": false,
+    "c011_integration_performed": false,
+    "c011_mre3_return_handling_activated": false,
+    "native_mre3_state_migration_performed": false,
+    "c012_created": false,
+    "baseline_promoted": false,
+    "global_release": false,
+    "rev4_promoted": false,
+    "thread3_reactivated": false,
+    "missing_returns_inferred": false,
+    "WF3_ACTIVE": false,
+    "MRE3_ACTIVE": false
+  },
+  "canonical_contract_ref": "control/workflow_protocol_v3.json#/serialization/canonical_contract",
+  "r1_disposition": "PREPARED_REJECTED_NOT_PUBLISHED_SUPERSEDED_BY_R2"
+}

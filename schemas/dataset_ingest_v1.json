@@ -1,0 +1,396 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ofg:ea:OFG-EA-DATASET-INGEST-V1",
+  "title": "OFG-EA-DATASET-INGEST-V1",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "OFG-EA-DATASET-INGEST-V1"
+    },
+    "dataset_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ingest_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_object_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "source_byte_count": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "base_git_head": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "base_state_root": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "dataset_authoritative": {
+      "type": "boolean"
+    },
+    "partition_strategy": {
+      "type": "object",
+      "properties": {
+        "strategy_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "configuration_hash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "strategy_id",
+        "version",
+        "configuration_hash"
+      ],
+      "additionalProperties": false
+    },
+    "partition_count": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "completed_partition_count": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "partitions": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "urn:ofg:ea:OFG-EA-DATASET-PARTITION-V1",
+        "title": "OFG-EA-DATASET-PARTITION-V1",
+        "type": "object",
+        "properties": {
+          "schema": {
+            "const": "OFG-EA-DATASET-PARTITION-V1"
+          },
+          "partition_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "sequence": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 9007199254740991
+          },
+          "sequence_total": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 9007199254740991
+          },
+          "input_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "input_hash": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "output_ref": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "output_hash": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "byte_count": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "record_count": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 9007199254740991
+          },
+          "resume_key": {
+            "type": "string",
+            "minLength": 1
+          },
+          "state": {
+            "enum": [
+              "PARTITION_PENDING",
+              "PARTITION_PROCESSING",
+              "PARTITION_COMPLETE",
+              "PARTITION_ABORTED",
+              "PARTITION_QUARANTINED"
+            ]
+          },
+          "hash_validation_state": {
+            "enum": [
+              "UNVERIFIED",
+              "VERIFIED",
+              "FAILED"
+            ]
+          }
+        },
+        "required": [
+          "schema",
+          "partition_id",
+          "sequence",
+          "sequence_total",
+          "input_ref",
+          "input_hash",
+          "output_ref",
+          "output_hash",
+          "byte_count",
+          "record_count",
+          "resume_key",
+          "state",
+          "hash_validation_state"
+        ],
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "state": {
+                  "const": "PARTITION_COMPLETE"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "output_ref": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "output_hash": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "hash_validation_state": {
+                  "const": "VERIFIED"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "dataset_manifest_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dataset_root_hash": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "resume_state": {
+      "type": "object",
+      "properties": {
+        "resume_key": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_verified": {
+          "type": "boolean"
+        },
+        "pending_partition_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "verified_partition_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "cursor": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "errors": {
+          "type": "array"
+        }
+      },
+      "required": [
+        "resume_key",
+        "source_verified",
+        "pending_partition_ids",
+        "verified_partition_ids",
+        "cursor",
+        "errors"
+      ],
+      "additionalProperties": false
+    },
+    "recovery_action": {
+      "enum": [
+        "NONE",
+        "RESUME_VERIFIED_PARTITIONS",
+        "REVALIDATE_SOURCE",
+        "RETRY_FAILED_PARTITIONS",
+        "ABORT",
+        "QUARANTINE"
+      ]
+    },
+    "ingest_state": {
+      "enum": [
+        "INGEST_CREATED",
+        "INGEST_VALIDATING_SOURCE",
+        "INGEST_PARTITIONING",
+        "INGEST_PROCESSING",
+        "INGEST_VERIFYING",
+        "INGEST_COMPLETE",
+        "INGEST_ABORTED",
+        "INGEST_QUARANTINED"
+      ]
+    },
+    "dataset_root_validation_state": {
+      "enum": [
+        "UNVERIFIED",
+        "VERIFIED",
+        "FAILED"
+      ]
+    }
+  },
+  "required": [
+    "schema",
+    "dataset_id",
+    "ingest_id",
+    "source_object_ref",
+    "source_sha256",
+    "source_byte_count",
+    "base_git_head",
+    "base_state_root",
+    "dataset_authoritative",
+    "partition_strategy",
+    "partition_count",
+    "completed_partition_count",
+    "partitions",
+    "dataset_manifest_ref",
+    "dataset_root_hash",
+    "resume_state",
+    "recovery_action",
+    "ingest_state",
+    "dataset_root_validation_state"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "ingest_state": {
+            "const": "INGEST_COMPLETE"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "partitions": {
+            "minItems": 1,
+            "items": {
+              "properties": {
+                "state": {
+                  "const": "PARTITION_COMPLETE"
+                },
+                "hash_validation_state": {
+                  "const": "VERIFIED"
+                }
+              }
+            }
+          },
+          "partition_count": {
+            "minimum": 1
+          },
+          "completed_partition_count": {
+            "minimum": 1
+          },
+          "dataset_manifest_ref": {
+            "type": "string",
+            "minLength": 1
+          },
+          "dataset_root_hash": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "dataset_root_validation_state": {
+            "const": "VERIFIED"
+          },
+          "resume_state": {
+            "properties": {
+              "source_verified": {
+                "const": true
+              },
+              "pending_partition_ids": {
+                "maxItems": 0
+              },
+              "errors": {
+                "maxItems": 0
+              }
+            }
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "dataset_authoritative": {
+            "const": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "dataset_authoritative": {
+            "const": true
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "ingest_state": {
+            "const": "INGEST_COMPLETE"
+          }
+        }
+      }
+    }
+  ],
+  "description": "JSON Schema enforces lifecycle/authority shape. Independent semantic verification must also check source and partition bytes/hashes, exact counts and sequence coverage, resume inventory, dataset root hash and master root inclusion. VERIFIED flags alone are never proof. Partial datasets are excluded from authoritative views.",
+  "$comment": "All semantic hashing uses control/workflow_protocol_v3.json#/serialization/canonical_contract; exact source bytes are never NFC-normalized."
+}

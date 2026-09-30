@@ -1,0 +1,70 @@
+{
+  "schema": "OFG-EA-WF3-THREAD-BINDING-V1",
+  "record_kind": "DERIVED_MASTER_PUBLISHED_BINDING_NOT_RUNTIME_CONNECTION_ACK",
+  "physical_instance": "T2-G2",
+  "logical_thread": 2,
+  "master_instance": "T1-G2",
+  "master_epoch": 2,
+  "repository": "Taro102/OFG-Engineering-Atlas",
+  "branch": "main",
+  "authoritative_control_plane": "GITHUB_MAIN_ACTIVE_PERSISTENT_CONTROL_PLANE",
+  "authority_ref": "control/authority_model.json",
+  "generation_ref": "control/generation_cutover.json",
+  "role": "SOLE_ACTIVE_C011_WRITER_GENERATION_THREAD2",
+  "generation_state": "ACTIVE_C011_PENDING",
+  "writer_authority": true,
+  "global_write_authority": false,
+  "predecessor_instance": "T2-G1",
+  "predecessor_fence_state": "PERMANENTLY_FENCED_INACTIVE_CONTEXT_LIMIT_NO_C011_RETURN",
+  "engineering_pin": {
+    "baseline_id": "OFG-EA-B000-REV3-REVW3-REVS-2031-04-19",
+    "staging_pin": "OFG-EA-C010-INTEGRATED-STAGING-R1",
+    "working_view": "OFG-EA-B000-PLUS-C001-C002-C003-C004-C005-C006-C007-C008-C009-C010-STAGING-R1",
+    "configuration_cut": "2031-04-19",
+    "active_cycle": "OFG-EA-CYCLE-011"
+  },
+  "compatibility_root_hash": "031c48775775f331e40724bed0b49392d66b2442cf95abd3bad6fcf0469e66e6",
+  "compatibility_root_ref": "state/root_manifest.json",
+  "binding_source_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+  "last_independently_validated_wf3_head": null,
+  "github_connection_status": "PENDING_POSTPUBLICATION_INDEPENDENT_VALIDATION",
+  "supported_workstream_profiles": [
+    "MOBILE_IPHONE",
+    "DESKTOP_FULL"
+  ],
+  "runtime_workstream_profile": null,
+  "default_workstream_profile_policy": "REQUEST_SELECTION_IF_UNSPECIFIED",
+  "lightweight_all_thread_sync_required": true,
+  "semantic_validation": "DEPENDENCY_SCOPED_READ_SET_WRITE_SET_CLOSURE",
+  "peer_threads": [
+    "T1-G2",
+    "T4-G2",
+    "T5-G2"
+  ],
+  "outstanding_assignments": [
+    {
+      "dispatch_ref": "dispatch/C011/OFG-EA-T2-C011-G2.json",
+      "dispatch_id": "OFG-EA-T2-C011",
+      "task_id": "T2-C011-OBJECT-LIFECYCLE-PROCUREMENT-RECEIPT-SOURCE-CROSSWALK-WAVE9",
+      "expected_return_packet_id": "OFG-EA-T2-C011-RETURN-R1",
+      "existing_status": "INHERITED_WITHOUT_EXECUTION_STATUS_CHANGE"
+    }
+  ],
+  "accepted_c011_return_refs": [],
+  "new_mre3_c011_return_handling_active": false,
+  "phase8a_status": "BOOTSTRAP_PENDING_PUBLICATION_AND_READBACK",
+  "synchronization_errors": [],
+  "open_synchronization_items": [
+    "Independent WF3 binding and compatibility root readback after publication"
+  ],
+  "protocol_refs": {
+    "workflow": "control/workflow_protocol_v3.json",
+    "data_management": "control/data_management_policy_v3.json",
+    "failure_recovery": "control/failure_recovery_protocol_v3.json",
+    "transaction": "control/transaction_protocol_v3.json",
+    "cross_validation": "control/cross_thread_validation_protocol_v3.json",
+    "profiles": "control/workstream_profiles.json"
+  },
+  "WF3_ACTIVE": false,
+  "MRE3_ACTIVE": false
+}

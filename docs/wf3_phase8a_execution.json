@@ -1,0 +1,60 @@
+{
+  "schema": "OFG-EA-WF3-PHASE8A-EXECUTION-NOTES-V1",
+  "status": "PROTOCOL_BOOTSTRAP_ONLY",
+  "root_validation": [
+    "Verify root file external hash",
+    "Recompute canonical state_root_hash excluding only itself",
+    "Verify exact legacy manifest hash/bytes",
+    "Verify all 30 input byte hashes and Git blob IDs at BASE",
+    "Verify protocol/schema refs at publication HEAD",
+    "Compare all 192 prior blob IDs unchanged",
+    "Do not convert raw/legacy state into claims/events automatically"
+  ],
+  "future_record_hash_fields": {
+    "event": "event_hash",
+    "claim": "claim_hash",
+    "view": "view_hash",
+    "return_delta": "payload_hash",
+    "handoff": "payload_hash",
+    "transaction": "transaction_hash"
+  },
+  "record_hash_rule": "Use control/workflow_protocol_v3.json#/serialization/canonical_contract for every semantic record/dataset/root hash, excluding only its declared self-hash field. Exact stored-byte SHA256 remains separate.",
+  "engineering_value_rules": [
+    "Units and precision fields always present; UNKNOWN units/precision explicitly represented; never guessed from context.",
+    "Decimal strings preserve significant source detail; precision metadata records rounding/measurement limits.",
+    "CONFLICT has null selected value and parallel claims; no canonical value silently chosen.",
+    "OPEN/UNKNOWN/NOT_APPLICABLE have null value; QUARANTINED is explicit and cannot be consumed as accepted fact.",
+    "Validate interval ordering, dimensional compatibility, unit vocabulary and uncertainty method semantically before acceptance."
+  ],
+  "claim_kind_rules": {
+    "SOURCE_ASSERTION": "Explicit source statement, not confirmed physical truth.",
+    "ENGINEERING_DERIVATION": "Reproducible calculation with inputs, units and method.",
+    "ENGINEERED_RECONSTRUCTION": "Explicit modeled reconstruction, never verbatim historical evidence.",
+    "ASSUMPTION": "Declared unverified premise with limitation.",
+    "REQUIREMENT": "Normative requirement, not executed record.",
+    "OBSERVATION": "Recorded observation with provenance and limits.",
+    "CONFLICT": "Preserved incompatible evidence/claims, no forced resolution."
+  },
+  "bootstrap_gate": [
+    "PUBLISH_ADDITIVE_METADATA",
+    "REMOTE_READBACK_PASS",
+    "INDEPENDENT_LIGHTWEIGHT_SYNC_ALL_ACTIVE_THREADS"
+  ],
+  "next_phase": "STOP_WAIT_FOR_SEPARATE_AUTHORIZATION_NO_PHASE8B",
+  "phase8a_guards": {
+    "c011_engineering_state_changed": false,
+    "c011_execution_status_changed": false,
+    "c011_execution_performed": false,
+    "c011_integration_performed": false,
+    "c011_mre3_return_handling_activated": false,
+    "native_mre3_state_migration_performed": false,
+    "c012_created": false,
+    "baseline_promoted": false,
+    "global_release": false,
+    "rev4_promoted": false,
+    "thread3_reactivated": false,
+    "missing_returns_inferred": false
+  },
+  "r1_disposition": "PREPARED_REJECTED_NOT_PUBLISHED_SUPERSEDED_BY_R2",
+  "canonical_implementation": "Delivery support file mre3_canonical.py is a reference implementation, not an additional repository path. Contract authority is the hash-bound workflow policy."
+}

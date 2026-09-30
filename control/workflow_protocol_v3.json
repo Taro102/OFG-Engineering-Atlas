@@ -1,0 +1,143 @@
+{
+  "schema": "OFG-EA-WF3",
+  "version": "3.0.0",
+  "publication_id": "OFG-EA-WF3-MRE3-PHASE8A-E2-R2",
+  "implementation_phase": "8A_PROTOCOL_BOOTSTRAP_LEGACY_COMPATIBILITY_ONLY",
+  "base_commit": "ecb3e1b97cb339425ab7043134276b1751ed77ac",
+  "repository": "Taro102/OFG-Engineering-Atlas",
+  "branch": "main",
+  "persistent_authority": "GITHUB_MAIN_ACTIVE_PERSISTENT_CONTROL_PLANE",
+  "existing_authority_controls": [
+    "control/authority_activation.json",
+    "control/authority_model.json",
+    "control/generation_cutover.json"
+  ],
+  "authority_precedence": "Existing published authority/generation/configuration controls remain controlling; new thread records are derived binding projections, not competing authority.",
+  "master": "T1-G2",
+  "master_epoch": 2,
+  "active_instances": [
+    "T1-G2",
+    "T2-G2",
+    "T4-G2",
+    "T5-G2"
+  ],
+  "planes": {
+    "CONTROL": {
+      "role": "Versioned policies, schema, authority and root pointers; main commit is publication decision authority."
+    },
+    "EVIDENCE": {
+      "role": "Immutable source bytes and storage descriptors; evidence existence is not semantic acceptance."
+    },
+    "EVENT": {
+      "role": "Immutable append-only journals of explicitly authorized operations; no historical event invented."
+    },
+    "SEMANTIC_STATE": {
+      "role": "Claims and immutable views under a committed state root; in Phase8A all engineering semantics remain legacy inputs."
+    },
+    "INDEX": {
+      "role": "Rebuildable SQLite/Parquet/search/materialized retrieval; never authoritative."
+    },
+    "EXECUTION": {
+      "role": "Bounded caches, queues, runtime profiles, resumable partitions and candidates; never persistent engineering authority."
+    }
+  },
+  "serialization": {
+    "codec": "OFG-EA-MRE3",
+    "encoding": "UTF8",
+    "json_canonicalization": "See serialization.canonical_contract: OFG-EA-MRE3-CANONICAL-V1",
+    "byte_hash": "SHA256_EXACT_STORED_BYTES",
+    "record_hash": "SHA256 canonical bytes under OFG-EA-MRE3-CANONICAL-V1 excluding only declared top-level self-hash.",
+    "ids": "Stable opaque IDs; no silent identity merge/split/rename.",
+    "decimal_rule": "Authoritative engineering quantities use engineering_value_v1 string-valued decimals; finite noninteger JSON numbers are rejected.",
+    "canonical_contract": {
+      "contract_id": "OFG-EA-MRE3-CANONICAL-V1",
+      "specification": "OFG_DEFINED_NOT_RFC8785_OR_JCS",
+      "encoding": "UTF-8",
+      "bom": "PROHIBITED",
+      "unicode": "RECURSIVE_NFC_ON_OBJECT_KEYS_AND_STRING_VALUES",
+      "unicode_version": "15.0.0; reject unassigned code points under this version; version upgrade requires an explicitly versioned canonical contract, never a silent runtime change.",
+      "key_order": "NORMALIZE_KEYS_TO_NFC_THEN_SORT_BY_UTF8_BYTE_SEQUENCE_ASCENDING_UNSIGNED_BYTES",
+      "key_collision": "REJECT_CANONICALIZATION_KEY_COLLISION",
+      "array_order": "PRESERVE_SEMANTIC_ORDER",
+      "json": "COMPACT_NO_INSIGNIFICANT_WHITESPACE",
+      "line_endings": "Canonical bytes have no trailing newline. JSONL segments delimit canonical records with a single LF. Embedded newline characters are escaped as JSON \\n; no CRLF conversion of raw evidence.",
+      "hash": "SHA-256",
+      "number_handling": {
+        "structural_numbers": "Only signed integers in [-9007199254740991,9007199254740991]; shortest base-10 ASCII representation, no leading plus/zeros; negative zero parsed as integer zero.",
+        "non_integer_json_numbers": "REJECT_CANONICALIZATION_NONINTEGER_NUMBER; encode authoritative precision-sensitive quantities as engineering_value_v1 string decimals.",
+        "nonfinite": "REJECT_CANONICALIZATION_NONFINITE_NUMBER; NaN and positive/negative Infinity rejected.",
+        "booleans": "JSON true/false, distinct from integers."
+      },
+      "string_escaping": "After NFC, reject unpaired surrogates; escape quote/backslash and U+0000..U+001F per JSON. Use \\b, \\t, \\n, \\f, \\r for those five characters, lowercase \\u00xx for other controls. All other scalar values encoded directly in UTF-8; slash not escaped.",
+      "raw_bytes": "NFC applies to semantic canonical JSON only. Existing MRE2/source bytes, original filenames and provenance remain exact; never normalize raw source bytes or locator bytes.",
+      "hash_self_exclusion": "Exclude only the record-specific declared top-level self-hash field before canonicalization.",
+      "duplicate_json_input_keys": "Reject duplicate literal keys and keys colliding after NFC while parsing; never keep last key."
+    }
+  },
+  "event_semantics": {
+    "append_only": true,
+    "event_types": [
+      "CLAIM_PROPOSED",
+      "CLAIM_ACCEPTED",
+      "CLAIM_REJECTED",
+      "CONFLICT_REGISTERED",
+      "VIEW_SEALED",
+      "RETURN_SUBMITTED",
+      "TRANSACTION_PREPARED",
+      "TRANSACTION_COMMITTED",
+      "TRANSACTION_ABORTED",
+      "CHECKPOINT_PUBLISHED"
+    ],
+    "stream_order": "Sequence strictly increases within named stream; previous_event_hash links each stream; no invented global cross-stream chronology.",
+    "immutability": "Never edit/delete accepted events or sealed segments; corrections are new events that reference superseded claims without erasing originals.",
+    "replay": "Same event_id and same hash is idempotent; same ID/different hash quarantined.",
+    "publication": "Only committed root-reachable segments constitute authoritative event history; prepared candidate journals are EXECUTION objects.",
+    "initial_event_state": "NO_NATIVE_MRE3_EVENTS_CREATED"
+  },
+  "legacy_compatibility": {
+    "manifest": "state/legacy_compatibility_manifest.json",
+    "root": "state/root_manifest.json",
+    "input_status": "LEGACY_COMPATIBILITY_AUTHORITATIVE_INPUT",
+    "preserve_cycles": "C001-C010_ALL_EXISTING_SEMANTICS",
+    "automatic_reclassification": false,
+    "native_migration": "DEFERRED_TO_SEPARATELY_AUTHORIZED_PHASE",
+    "mre2_codec_and_programs": "UNCHANGED; derived outputs cannot overwrite current controlled state."
+  },
+  "immutable_delta_returns": {
+    "schema": "OFG-EA-RETURN-V1",
+    "future_payload_location": "returns/<cycle_id>/<physical_instance>/<return_id>/<payload_hash>/delta.json",
+    "acceptance_metadata": "Separate master-controlled append-only decision events; worker submission is not acceptance.",
+    "read_set_write_set_required": true,
+    "no_mutation_after_hash": true,
+    "c011_activation": false,
+    "activation_gate": "Separate explicit user-authorized activation after infrastructure readback and required thread validation; Phase8A alone does not authorize new C011 handling."
+  },
+  "protocol_refs": {
+    "workflow": "control/workflow_protocol_v3.json",
+    "data_management": "control/data_management_policy_v3.json",
+    "failure_recovery": "control/failure_recovery_protocol_v3.json",
+    "transaction": "control/transaction_protocol_v3.json",
+    "cross_validation": "control/cross_thread_validation_protocol_v3.json",
+    "profiles": "control/workstream_profiles.json"
+  },
+  "guards": {
+    "c011_engineering_state_changed": false,
+    "c011_execution_status_changed": false,
+    "c011_execution_performed": false,
+    "c011_integration_performed": false,
+    "c011_mre3_return_handling_activated": false,
+    "native_mre3_state_migration_performed": false,
+    "c012_created": false,
+    "baseline_promoted": false,
+    "global_release": false,
+    "rev4_promoted": false,
+    "thread3_reactivated": false,
+    "missing_returns_inferred": false,
+    "WF3_ACTIVE": false,
+    "MRE3_ACTIVE": false
+  },
+  "r1_disposition": "PREPARED_REJECTED_NOT_PUBLISHED_SUPERSEDED_BY_R2",
+  "r1_published": false,
+  "WF3_ACTIVE": false,
+  "MRE3_ACTIVE": false
+}

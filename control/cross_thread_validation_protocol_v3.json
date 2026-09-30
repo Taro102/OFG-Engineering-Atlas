@@ -1,0 +1,76 @@
+{
+  "schema": "OFG-EA-WF3-CROSS-VALIDATION-V3",
+  "lightweight_all_thread_sync": {
+    "required_instances": [
+      "T1-G2",
+      "T2-G2",
+      "T4-G2",
+      "T5-G2"
+    ],
+    "triggers": [
+      "INITIALIZATION",
+      "TASK_START",
+      "HEAD_CHANGE",
+      "RETURN_FINALIZATION",
+      "MASTER_ACCEPTANCE",
+      "GLOBAL_INTEGRATION",
+      "GENERATION_TRANSFER",
+      "NEXT_CYCLE",
+      "HANDOFF"
+    ],
+    "minimum": [
+      "repository_branch_head",
+      "state_root_hash",
+      "master_epoch",
+      "baseline_staging_view_cut_cycle",
+      "physical_generation_and_writer_fence",
+      "peer_binding_visibility",
+      "accepted_return_inventory",
+      "T3_retired",
+      "Rev4_quarantined",
+      "dispatch_identity_and_expected_return"
+    ],
+    "results": [
+      "PASS",
+      "PARTIAL",
+      "BLOCKED",
+      "FAIL"
+    ],
+    "rule": "Independent connector read at exact head; repeat HEAD read after retrieval. Never infer another thread completed sync from a published projection.",
+    "partial": "Document noncompromising limitations and explicit T1-G2 waiver; identity/pin/authority/fence/hash mismatch cannot be waived."
+  },
+  "semantic_cross_validation": {
+    "scope": "Dependency closure of read_set/write_set, shared objects/interfaces, provenance edges and explicitly declared boundary requests; do not scan unrelated full peer workspaces.",
+    "dependency_closure": "Expand referenced claims/objects/interfaces plus required provenance one hop; expand further when necessary. Undeclared discovered dependencies require declaration and new validation.",
+    "required_return_fields": [
+      "CROSS_THREAD_VALIDATION",
+      "CROSS_THREAD_REFERENCES"
+    ],
+    "validation_fields": [
+      "repository_head_used",
+      "state_root_hash_used",
+      "thread_sync_gate_result",
+      "peer_threads_checked",
+      "peer_state_refs",
+      "read_set",
+      "write_set",
+      "shared_objects_checked",
+      "shared_interfaces_checked",
+      "accepted_return_refs_checked",
+      "relevant_conflicts_checked",
+      "relevant_open_frontiers_checked",
+      "cross_thread_conflicts_detected",
+      "stale_or_missing_peer_state",
+      "boundary_requests",
+      "cross_thread_consistency_result",
+      "limitations"
+    ],
+    "exact_refs": "repository, commit, path, record_selector, sha256; no conversation assertions as persistent authority.",
+    "unaccepted_worker_assertions": "Candidate claims only; never authoritative peer state.",
+    "conflict_rule": "Preserve parallel states and OPEN boundaries; semantic agreement is not forced.",
+    "master_global_gate": "All active instances lightweight sync plus dependency-scoped validation of every proposed integrated delta; all required accepted returns plus explicit user Commence remain mandatory."
+  },
+  "c011_new_return_protocol_activation": false,
+  "legacy_return_handling": "Unchanged in Phase8A; schema presence does not authorize execution, acceptance or integration.",
+  "canonical_contract_ref": "control/workflow_protocol_v3.json#/serialization/canonical_contract"
+}

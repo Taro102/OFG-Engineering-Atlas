@@ -1,0 +1,454 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ofg:ea:OFG-EA-TRANSACTION-V1",
+  "title": "OFG-EA-TRANSACTION-V1",
+  "type": "object",
+  "properties": {
+    "schema": {
+      "const": "OFG-EA-TRANSACTION-V1"
+    },
+    "transaction_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "idempotency_key": {
+      "type": "string",
+      "minLength": 1
+    },
+    "phase": {
+      "enum": [
+        "PREPARE",
+        "COMMIT",
+        "ABORT"
+      ]
+    },
+    "master_instance": {
+      "const": "T1-G2"
+    },
+    "master_epoch": {
+      "const": 2
+    },
+    "base_commit": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{40}$"
+    },
+    "base_state_root_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "read_set": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "urn:ofg:ea:OFG-EA-ACCESS-V1",
+        "title": "OFG-EA-ACCESS-V1",
+        "type": "object",
+        "properties": {
+          "schema": {
+            "const": "OFG-EA-ACCESS-V1"
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "record_selector": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "exists": {
+            "type": "boolean"
+          },
+          "expected_sha256": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "operation": {
+            "const": "READ"
+          }
+        },
+        "required": [
+          "schema",
+          "path",
+          "record_selector",
+          "exists",
+          "expected_sha256",
+          "operation"
+        ],
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "exists": {
+                  "const": true
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "expected_sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "exists": {
+                  "const": false
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "expected_sha256": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "write_set": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "urn:ofg:ea:OFG-EA-ACCESS-V1",
+        "title": "OFG-EA-ACCESS-V1",
+        "type": "object",
+        "properties": {
+          "schema": {
+            "const": "OFG-EA-ACCESS-V1"
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "record_selector": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "exists": {
+            "type": "boolean"
+          },
+          "expected_sha256": {
+            "anyOf": [
+              {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "operation": {
+            "enum": [
+              "ADD",
+              "SUPERSEDE_POINTER",
+              "APPEND_SEGMENT"
+            ]
+          }
+        },
+        "required": [
+          "schema",
+          "path",
+          "record_selector",
+          "exists",
+          "expected_sha256",
+          "operation"
+        ],
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "exists": {
+                  "const": true
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "expected_sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "exists": {
+                  "const": false
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "expected_sha256": {
+                  "type": "null"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "candidate_object_refs": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "urn:ofg:ea:OFG-EA-OBJECT-REFERENCE-V1",
+        "title": "OFG-EA-OBJECT-REFERENCE-V1",
+        "type": "object",
+        "properties": {
+          "schema": {
+            "const": "OFG-EA-OBJECT-REFERENCE-V1"
+          },
+          "repository": {
+            "const": "Taro102/OFG-Engineering-Atlas"
+          },
+          "commit": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "record_selector": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "byte_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "plane": {
+            "enum": [
+              "CONTROL",
+              "EVIDENCE",
+              "EVENT",
+              "SEMANTIC_STATE",
+              "INDEX",
+              "EXECUTION"
+            ]
+          }
+        },
+        "required": [
+          "schema",
+          "repository",
+          "commit",
+          "path",
+          "record_selector",
+          "sha256",
+          "byte_count",
+          "plane"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "validation_refs": {
+      "type": "array",
+      "items": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "urn:ofg:ea:OFG-EA-OBJECT-REFERENCE-V1",
+        "title": "OFG-EA-OBJECT-REFERENCE-V1",
+        "type": "object",
+        "properties": {
+          "schema": {
+            "const": "OFG-EA-OBJECT-REFERENCE-V1"
+          },
+          "repository": {
+            "const": "Taro102/OFG-Engineering-Atlas"
+          },
+          "commit": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "record_selector": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "byte_count": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "plane": {
+            "enum": [
+              "CONTROL",
+              "EVIDENCE",
+              "EVENT",
+              "SEMANTIC_STATE",
+              "INDEX",
+              "EXECUTION"
+            ]
+          }
+        },
+        "required": [
+          "schema",
+          "repository",
+          "commit",
+          "path",
+          "record_selector",
+          "sha256",
+          "byte_count",
+          "plane"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "prepare_hash": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "resulting_state_root_hash": {
+      "anyOf": [
+        {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "abort_reason": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "transaction_hash": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    }
+  },
+  "required": [
+    "schema",
+    "transaction_id",
+    "idempotency_key",
+    "phase",
+    "master_instance",
+    "master_epoch",
+    "base_commit",
+    "base_state_root_hash",
+    "read_set",
+    "write_set",
+    "candidate_object_refs",
+    "validation_refs",
+    "prepare_hash",
+    "resulting_state_root_hash",
+    "abort_reason",
+    "transaction_hash"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "phase": {
+            "const": "COMMIT"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "prepare_hash": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "resulting_state_root_hash": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{64}$"
+          },
+          "abort_reason": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "phase": {
+            "const": "PREPARE"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "prepare_hash": {
+            "type": "null"
+          },
+          "resulting_state_root_hash": {
+            "type": "null"
+          },
+          "abort_reason": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "phase": {
+            "const": "ABORT"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "abort_reason": {
+            "type": "string",
+            "minLength": 1
+          },
+          "resulting_state_root_hash": {
+            "type": "null"
+          }
+        }
+      }
+    }
+  ],
+  "$comment": "All semantic hashing uses control/workflow_protocol_v3.json#/serialization/canonical_contract; exact source bytes are never NFC-normalized."
+}

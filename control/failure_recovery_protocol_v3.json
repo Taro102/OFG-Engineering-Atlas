@@ -1,0 +1,47 @@
+{
+  "schema": "OFG-EA-WF3-FAILURE-RECOVERY-V3",
+  "failure_classes": [
+    "HEAD_DRIFT",
+    "STALE_GENERATION",
+    "HASH_MISMATCH",
+    "SCHEMA_FAILURE",
+    "MISSING_DEPENDENCY",
+    "PARTIAL_INGESTION",
+    "INTERRUPTED_PREPARE",
+    "PUSH_RESULT_UNKNOWN",
+    "DUPLICATE_ID_DIFFERENT_HASH",
+    "UNAVAILABLE_LFS_SOURCE",
+    "CONTEXT_OR_DEVICE_LOSS"
+  ],
+  "protocol": [
+    "PAUSE_STATE_DEPENDENT_WORK",
+    "PRESERVE_CANDIDATE_BYTES_AND_JOURNAL",
+    "CLASSIFY_AND_QUARANTINE_UNVERIFIED_OBJECTS",
+    "READ_CURRENT_MAIN_AND_LAST_VERIFIED_ROOT",
+    "REVALIDATE_IDENTITY_GENERATION_DISPATCH_AND_READ_SET",
+    "REPLAY_IDEMPOTENT_VERIFIED_CHUNKS_OR_REPREPARE",
+    "RECORD_ERRORS_OPEN_ITEMS_AND_RECOVERY_POSTCONDITION"
+  ],
+  "push_result_unknown": "Inspect remote commit/root before retry; never assume failed push implies no commit and never duplicate decision events.",
+  "context_loss": "Recover from committed manifests, accepted returns and verified resumable checkpoints; conversation is cache only.",
+  "corruption": "Use immutable hash-verified source; retain corrupt bytes as nonauthoritative diagnostic candidate without overwriting provenance.",
+  "repair": "Only explicit controlled transaction; no silently repaired engineering values or missing historical packets.",
+  "rollback": "Prefer forward compensating commit; never force-push or erase committed history. Reverting Phase8A requires exact published hash and confirmation no later dependents/root transactions exist; otherwise explicit reviewed compensation.",
+  "checkpoints": "Persist task ID/pin/generation/profile, read_set, completed immutable chunks, pending work, V&V/conflicts/open frontiers/provenance and resume key.",
+  "phase8a_guards": {
+    "c011_engineering_state_changed": false,
+    "c011_execution_status_changed": false,
+    "c011_execution_performed": false,
+    "c011_integration_performed": false,
+    "c011_mre3_return_handling_activated": false,
+    "native_mre3_state_migration_performed": false,
+    "c012_created": false,
+    "baseline_promoted": false,
+    "global_release": false,
+    "rev4_promoted": false,
+    "thread3_reactivated": false,
+    "missing_returns_inferred": false
+  },
+  "canonical_contract_ref": "control/workflow_protocol_v3.json#/serialization/canonical_contract",
+  "r1_recovery": "R1 was never published; no R1 rollback is required. Discard publication candidacy; preserve rejected artifact only as nonauthoritative audit evidence."
+}

@@ -1,0 +1,93 @@
+{
+  "schema": "OFG-EA-WF3-WORKSTREAM-PROFILES-V1",
+  "supported_profiles": [
+    "MOBILE_IPHONE",
+    "DESKTOP_FULL"
+  ],
+  "runtime_input": "WORKSTREAM_PROFILE",
+  "default_policy": "REQUEST_SELECTION_WHEN_UNSPECIFIED",
+  "runtime_only": true,
+  "commit_for_device_switch": false,
+  "authority_change": false,
+  "new_generation_on_switch": false,
+  "invariants": [
+    "logical_identity",
+    "physical_generation",
+    "master_epoch",
+    "authority",
+    "task_scope",
+    "writer_state",
+    "baseline",
+    "staging",
+    "view",
+    "cut",
+    "provenance",
+    "V&V",
+    "merge_rules"
+  ],
+  "profiles": {
+    "MOBILE_IPHONE": {
+      "capabilities": [
+        "engineering_reasoning",
+        "orchestration",
+        "connector_retrieval",
+        "bounded_rehydration",
+        "lightweight_sync",
+        "dependency_scoped_semantic_validation",
+        "compact_json_transport",
+        "return_handoff_assembly"
+      ],
+      "do_not_assume": [
+        "shell",
+        "python",
+        "git_cli",
+        "filesystem",
+        "LFS_administration",
+        "full_clone",
+        "bulk_push"
+      ],
+      "desktop_operation": "DESKTOP_HANDOFF_REQUIRED"
+    },
+    "DESKTOP_FULL": {
+      "capabilities": [
+        "ALL_MOBILE_CAPABILITIES",
+        "git",
+        "LFS",
+        "python",
+        "large_hashing",
+        "partition_processing",
+        "index_rebuild",
+        "archive_generation",
+        "controlled_publication"
+      ],
+      "higher_authority": false,
+      "worker_global_write_authority": false
+    }
+  },
+  "profile_required_in": [
+    "initialization",
+    "task_start",
+    "return",
+    "handoff"
+  ],
+  "switch": {
+    "mobile_to_desktop": "OFG-EA-HANDOFF-V1 deterministic unfinished-work capsule",
+    "desktop_to_mobile": "Bounded OFG-EA-HANDOFF-V1 MOBILE_REHYDRATION_CAPSULE",
+    "preserve": [
+      "task_checkpoint",
+      "repository_pin_or_explicit_refresh",
+      "read_set",
+      "write_set",
+      "pending_work",
+      "identities",
+      "conflicts",
+      "provenance",
+      "V&V",
+      "boundary_requests"
+    ],
+    "resume": "Verify payload hash and run lightweight sync before state-dependent work."
+  },
+  "handoff_schema": "schemas/handoff_v1.json",
+  "phase8a_activation": "Profile schema bootstrap only; no assumption that any worker has independently validated this unpublished protocol.",
+  "canonical_contract_ref": "control/workflow_protocol_v3.json#/serialization/canonical_contract"
+}
