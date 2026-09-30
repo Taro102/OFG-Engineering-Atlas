@@ -1,0 +1,91 @@
+{
+  "schema": "OFG-EA-MASTER-RECOVERY-CONTROL-V1",
+  "publication_id": "OFG-EA-T1-G3-MASTER-RECOVERY-CUTOVER-E3-R1",
+  "base_head": "879390336f430ab22f25d117de110614a278f466",
+  "parent_state_root": "031c48775775f331e40724bed0b49392d66b2442cf95abd3bad6fcf0469e66e6",
+  "master_instance": "T1-G3",
+  "master_epoch": 3,
+  "predecessor_instance": "T1-G2",
+  "predecessor_state": "PERMANENTLY_FENCED_RETIRED_FAILED_EXECUTION_CHANNEL",
+  "target_generation_state": "SOLE_ACTIVE_MASTER_EPOCH_3",
+  "record_effect": "CONDITIONAL_ON_AUTHORIZED_PUBLICATION_AND_INDEPENDENT_REMOTE_VALIDATION",
+  "engineering_pin": {
+    "baseline_id": "OFG-EA-B000-REV3-REVW3-REVS-2031-04-19",
+    "staging_pin": "OFG-EA-C010-INTEGRATED-STAGING-R1",
+    "working_view": "OFG-EA-B000-PLUS-C001-C002-C003-C004-C005-C006-C007-C008-C009-C010-STAGING-R1",
+    "configuration_cut": "2031-04-19",
+    "active_cycle": "OFG-EA-CYCLE-011"
+  },
+  "bindings": {
+    "T1-G3": "threads/T1-G3/state.json",
+    "T2-G2": "threads/T2-G2/bindings/master_epoch_3.json",
+    "T4-G2": "threads/T4-G2/bindings/master_epoch_3.json",
+    "T5-G2": "threads/T5-G2/bindings/master_epoch_3.json"
+  },
+  "guards": {
+    "c011_integrated": false,
+    "c012_created": false,
+    "WF3_ACTIVE": false,
+    "MRE3_ACTIVE": false,
+    "accepted_C011_returns": 0,
+    "containerization_implemented": false
+  },
+  "C011_state": "ACTIVE_UNINTEGRATED_IMPLEMENTATION_HOLD",
+  "T3_state": "PERMANENTLY_RETIRED_READ_ONLY_NO_SUCCESSOR_NO_DEPENDENCY",
+  "Rev4_state": "QUARANTINED_OUT_OF_BASELINE",
+  "Phase8B_published": false,
+  "authority_precedence": [
+    "state/current_root.json",
+    "control/master_recovery_cutover.json",
+    "successor_bindings",
+    "parent_historical_controls"
+  ],
+  "protocol_overrides": {
+    "workflow": {
+      "master": "T1-G3",
+      "master_epoch": 3,
+      "active_instances": [
+        "T1-G3",
+        "T2-G2",
+        "T4-G2",
+        "T5-G2"
+      ]
+    },
+    "cross_validation": {
+      "required_instances": [
+        "T1-G3",
+        "T2-G2",
+        "T4-G2",
+        "T5-G2"
+      ],
+      "partial_waiver_authority": "T1-G3_AFTER_VALIDATED_CUTOVER"
+    },
+    "future_transaction_decision_authority": "T1-G3_AFTER_VALIDATED_CUTOVER",
+    "native_epoch2_schemas": "HISTORICAL_INACTIVE_FOR_EPOCH3"
+  },
+  "stalled_execution": {
+    "source_master": "T1-G2",
+    "execution": "Phase8B preparation",
+    "state": "ORPHANED_NONAUTHORITATIVE_UNPUBLISHED_EXECUTION",
+    "publication_effect": "NONE",
+    "engineering_effect": "NONE",
+    "allowed_inference": "NONE",
+    "B01_B30_conversational_PASS": "NOT_DURABLY_ACCEPTED",
+    "recovered_package": "NONE_INDEPENDENTLY_PROVEN",
+    "future_recovery": "Exact bytes, hashes, dependencies and independently reproduced validation required; recovery confers no authority."
+  },
+  "stale_master_policy": {
+    "classification": "STALE_MASTER_GENERATION",
+    "handling": [
+      "REJECT",
+      "QUARANTINE_FOR_FORENSIC_REFERENCE"
+    ],
+    "current_acceptance": "PROHIBITED"
+  },
+  "publication_authority": "PENDING_EXPLICIT_USER_AUTHORIZATION",
+  "package_generation_provenance": {
+    "workspace": "AUX-XFER-CFG-01",
+    "authority": "NONAUTHORITATIVE_AUXILIARY",
+    "authority_effect": "NONE"
+  }
+}

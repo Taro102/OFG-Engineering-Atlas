@@ -1,15 +1,15 @@
 {
   "schema": "OFG_EA_MIGRATION_BUNDLE_README_V2_1",
-  "purpose": "Raw current working state, raw reference data, worker-return provenance archive, deterministic retrieval/indexing/ingest/transport programs, and successor-thread rehydration support.",
+  "purpose": "Bounded engineering retrieval with immutable parent compatibility state and a verified successor authority overlay.",
   "authoritative_state_cut": "C010_INTEGRATED_C011_ACTIVE",
   "configuration_cut": "2031-04-19",
   "directories": {
-    "state": "Normalized current master/reference state and active-cycle control data",
+    "state": "Immutable compatibility inputs; state/current_root.json selects successor control",
     "reference_raw": "Materialized Rev3/RevW3 reference data and Rev3 V00-V18 volumes",
     "working_raw": "Materialized worker return packets and normalized package-name copies",
     "programs": "Codec, index, retrieval, rehydration, verification and bootstrap programs",
     "manifests": "Content-addressed bundle and worker-return manifests",
-    "transport": "Generated MRE2 transport envelopes for successor threads"
+    "transport": "Historical epoch-2 transports; derived current transports go under generated/"
   },
   "bootstrap": "bash programs/bootstrap.sh",
   "retrieval_examples": [
@@ -19,7 +19,7 @@
     "python programs/ofg_retrieve.py query CRS01 --limit 25",
     "python programs/ofg_retrieve.py neighbors DT-BHT-006",
     "python programs/ofg_retrieve.py scan BHT-401-P-101 2030-09-22 --path-contains DATA02",
-    "python programs/ofg_rehydrate.py --thread 1 --generation 2 --output state/T1-G2_REHYDRATION_CAPSULE.json"
+    "python programs/ofg_rehydrate.py --thread 1 --output generated/rehydration/T1.json"
   ],
   "large_reference_policy": {
     "default_index": "metadata + state + worker returns + compact reference CSV/JSON",
@@ -34,11 +34,12 @@
     "ofg_codec.py": "MRE2 canonical JSON/hash/envelope/chunk functions",
     "ofg_transport.py": "Generate ordered MRE2 activation transport shards",
     "ofg_ingest.py": "Idempotent raw worker-return ingestion with duplicate/hash quarantine; no semantic merge",
-    "ofg_verify.py": "Verify bundle file hashes against manifest",
-    "bootstrap.sh": "Rebuild default index and successor capsules"
+    "ofg_verify.py": "Successor verification or explicit --historical published Phase8A verification",
+    "bootstrap.sh": "Rebuild default index and successor capsules",
+    "ofg_current.py": "Verified current authority/binding resolver; candidate mode has no authority effect"
   },
   "raw_working_scope": {
-    "normalized_master_state": "state/",
+    "normalized_master_state": "Parent state plus separately verified current selector/overlay",
     "worker_return_archive": "working_raw/worker_returns_archive/",
     "normalized_worker_returns": "working_raw/by_package/",
     "known_raw_gaps": "state/known_raw_gaps.json"

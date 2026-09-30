@@ -1,0 +1,100 @@
+{
+  "schema": "OFG-EA-POST-CUTOVER-INFRASTRUCTURE-PLAN-V1",
+  "artifact_role": "PLANNING_CONTROL_ONLY",
+  "phase_order": [
+    "8B.0_CONTAINER_FOUNDATION",
+    "8B.1_TRANSACTION_CORE",
+    "8B.2_RECOVERY_AND_TRANSACTION_TESTS",
+    "8B.3_LARGE_DATA_INGEST_AND_RESUMABILITY",
+    "8C_BOUNDED_VIEWS_AND_QUERY_PLANNING",
+    "8D_FAILURE_INJECTION",
+    "8E_LOCAL_GLOBAL_CACHE_AND_STORAGE_OPTIMIZATION",
+    "8F_WF3_MRE3_ACTIVATION"
+  ],
+  "future_contracts": [
+    "OFG-EA-EXECUTION-CONTAINER-V1",
+    "OFG-EA-DATA-CONTAINER-V1",
+    "OFG-EA-TASK-CONTAINER-V1"
+  ],
+  "execution_container_requirements": [
+    "OCI_COMPATIBLE_RUNTIME",
+    "IMMUTABLE_IMAGE_DIGEST",
+    "PINNED_CPYTHON_MRE3_RUNTIME",
+    "UNICODE15_CANONICALIZATION_REPRODUCIBLE",
+    "NO_AUTHORITATIVE_BULK_DATA_IN_IMAGE",
+    "NONROOT_WHERE_PRACTICABLE",
+    "READONLY_ROOT_FILESYSTEM_WHERE_PRACTICABLE",
+    "AUTHORITATIVE_REPOSITORY_EVIDENCE_MOUNTS_READONLY",
+    "SEPARATE_WRITABLE_CACHE_WORKSPACE_OUTPUT_CHECKPOINT_VOLUMES",
+    "CPU_RAM_SCRATCH_LIMITS",
+    "NO_CREDENTIALS_IN_IMAGE",
+    "NETWORK_DISABLED_BY_DEFAULT",
+    "IMAGE_DIGEST_IN_EXECUTION_PROVENANCE"
+  ],
+  "data_container_requirements": [
+    "LOGICAL_DATA_DISTINCT_FROM_OCI_IMAGES",
+    "CONTENT_ADDRESSED_MANIFEST_DRIVEN",
+    "SEALED_IMMUTABLE_AFTER_VALIDATION",
+    "SEMANTIC_PARTITIONING_FIRST_PHYSICAL_CHUNKING_SECOND",
+    "SHA256_OBJECT_HASHES",
+    "MERKLE_CONTAINER_ROOT",
+    "BACKEND_INDEPENDENT_DESCRIPTORS",
+    "DEDUPLICATED_IMMUTABLE_CHUNKS_PRESERVE_PROVENANCE",
+    "PARTIAL_INGEST_NONAUTHORITATIVE",
+    "COPY_ON_WRITE_REFERENCE_REUSE",
+    "ON_DEMAND_MATERIALIZATION",
+    "HOT_WARM_COLD",
+    "RESUMABLE_CHECKPOINTS"
+  ],
+  "physical_backends": [
+    "GIT",
+    "GIT_LFS",
+    "OCI_ARTIFACT",
+    "OBJECT_STORE",
+    "LOCAL_CACHE",
+    "ARCHIVE_STORAGE"
+  ],
+  "data_container_states": [
+    "CREATED",
+    "POPULATING",
+    "VERIFYING",
+    "SEALED",
+    "PUBLISHED",
+    "INCOMPLETE",
+    "ABORTED",
+    "QUARANTINED",
+    "CORRUPT",
+    "UNAVAILABLE"
+  ],
+  "reproducible_task_identity": [
+    "repository_HEAD",
+    "STATE_ROOT",
+    "execution_image_digest",
+    "data_container_roots",
+    "task_ID",
+    "transaction_ID",
+    "checkpoint_resume_key"
+  ],
+  "long_run_checkpoint_policy": {
+    "monolithic_90_minute_execution": "PROHIBITED",
+    "boundaries": [
+      "implementation_stage",
+      "test_batch",
+      "large_data_partition_group",
+      "compatibility_regression_stage",
+      "package_assembly"
+    ],
+    "storage": "EXTERNAL_TO_EPHEMERAL_EXECUTION_CONTAINER_AND_CONVERSATION",
+    "resume": "DETERMINISTIC_FROM_LAST_VALIDATED_HASHED_CHECKPOINT",
+    "partial_outputs": "NONAUTHORITATIVE"
+  },
+  "CONTAINERIZATION_CHANGES_CURRENT_CUTOVER_SCOPE": false,
+  "containerization_implemented": false,
+  "ENGINEERING_STATE_EFFECT": "NONE",
+  "POST_CUTOVER_REQUIRED_INFRASTRUCTURE": [
+    "PHASE8B0_CONTAINER_FOUNDATION"
+  ],
+  "phase_gate": "SEPARATE_AUTHORIZATION_AND_VALIDATED_DURABLE_CHECKPOINTS",
+  "WF3_ACTIVE": false,
+  "MRE3_ACTIVE": false
+}

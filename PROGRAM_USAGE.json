@@ -1,7 +1,7 @@
 {
   "schema": "OFG_EA_PROGRAM_USAGE_V2",
   "bootstrap": "bash programs/bootstrap.sh",
-  "verify": "python programs/ofg_verify.py --root .",
+  "verify": "python programs/ofg_verify.py",
   "query_examples": [
     "python programs/ofg_retrieve.py query CRS01 --limit 25",
     "python programs/ofg_retrieve.py conflicts --state OPEN",
@@ -10,13 +10,13 @@
     "python programs/ofg_retrieve.py scan BHT-401-P-101 2030-09-22 --path-contains DATA02"
   ],
   "rehydration": [
-    "python programs/ofg_rehydrate.py --thread 1 --generation 2 --output state/T1-G2_REHYDRATION_CAPSULE.json",
-    "python programs/ofg_rehydrate.py --thread 2 --generation 2 --output state/T2-G2_REHYDRATION_CAPSULE.json",
-    "python programs/ofg_rehydrate.py --thread 4 --generation 2 --output state/T4-G2_REHYDRATION_CAPSULE.json",
-    "python programs/ofg_rehydrate.py --thread 5 --generation 2 --output state/T5-G2_REHYDRATION_CAPSULE.json"
+    "python programs/ofg_rehydrate.py --thread 1 --output generated/rehydration/T1.json",
+    "python programs/ofg_rehydrate.py --thread 2 --output generated/rehydration/T2.json",
+    "python programs/ofg_rehydrate.py --thread 4 --output generated/rehydration/T4.json",
+    "python programs/ofg_rehydrate.py --thread 5 --output generated/rehydration/T5.json"
   ],
-  "transport_example": "python programs/ofg_transport.py --thread 1 --generation 2 --outdir transport/T1-G2",
+  "transport_example": "python programs/ofg_transport.py --thread 1 --capsule generated/rehydration/T1.json --outdir generated/transport/T1-G3",
   "ingest_example": "python programs/ofg_ingest.py /path/to/OFG-EA-T4-C011-RETURN-R1.json",
   "full_index_optional": "python programs/ofg_index.py --include-large --docs",
-  "control": "ofg_ingest.py performs storage validation and indexing only; it never performs Thread-1 semantic integration or baseline promotion"
+  "control": "Verified current selector and independent remote receipt required for current operations. Explicit --candidate verifies without authority. Ingest stores candidates only; never accepts returns."
 }

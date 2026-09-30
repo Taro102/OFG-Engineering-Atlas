@@ -1,0 +1,20 @@
+{
+  "schema": "OFG-EA-CURRENT-ROOT-SELECTOR-V1",
+  "root_ref": {
+    "path": "state/master_recovery_root_e3_r1.json",
+    "byte_count": 68320,
+    "sha256": "673a4a2a56b4a33b4eff6c38b2c4e1249f173793e4a38bc57423ee94d93fbdbe"
+  },
+  "control_ref": {
+    "path": "control/master_recovery_cutover.json",
+    "byte_count": 3222,
+    "sha256": "616509825f3b3920ac880af609ea037d58bcf7e0abfc5644de16a0ed768bc387"
+  },
+  "schema_ref": {
+    "path": "schemas/master_recovery_cutover_v1.json",
+    "byte_count": 5345,
+    "sha256": "9e9cf234aaf32dc320d86d0e6fbc9dee63825791e8b9ab2ca3a18651a15770a8"
+  },
+  "expected_target_root_hash": "0c2a390b799faca3719aa75638e8f417321eb90de108b4ee496625149d6da717",
+  "authority_effect_before_publication": "NONE"
+}

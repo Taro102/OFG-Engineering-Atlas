@@ -1,0 +1,209 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:ofg:ea:master-recovery-cutover-v1",
+  "$defs": {
+    "control": {
+      "type": "object",
+      "required": [
+        "schema",
+        "base_head",
+        "parent_state_root",
+        "master_instance",
+        "master_epoch",
+        "guards",
+        "bindings",
+        "engineering_pin"
+      ],
+      "properties": {
+        "schema": {
+          "const": "OFG-EA-MASTER-RECOVERY-CONTROL-V1"
+        },
+        "base_head": {
+          "const": "879390336f430ab22f25d117de110614a278f466"
+        },
+        "parent_state_root": {
+          "const": "031c48775775f331e40724bed0b49392d66b2442cf95abd3bad6fcf0469e66e6"
+        },
+        "master_instance": {
+          "const": "T1-G3"
+        },
+        "master_epoch": {
+          "const": 3
+        },
+        "guards": {
+          "const": {
+            "c011_integrated": false,
+            "c012_created": false,
+            "WF3_ACTIVE": false,
+            "MRE3_ACTIVE": false,
+            "accepted_C011_returns": 0,
+            "containerization_implemented": false
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "binding": {
+      "type": "object",
+      "required": [
+        "schema",
+        "physical_instance",
+        "master_instance",
+        "master_epoch",
+        "accepted_c011_return_refs",
+        "engineering_pin"
+      ],
+      "properties": {
+        "schema": {
+          "const": "OFG-EA-MASTER-RECOVERY-BINDING-V1"
+        },
+        "physical_instance": {
+          "enum": [
+            "T1-G3",
+            "T2-G2",
+            "T4-G2",
+            "T5-G2"
+          ]
+        },
+        "master_instance": {
+          "const": "T1-G3"
+        },
+        "master_epoch": {
+          "const": 3
+        },
+        "accepted_c011_return_refs": {
+          "const": []
+        },
+        "WF3_ACTIVE": {
+          "const": false
+        },
+        "MRE3_ACTIVE": {
+          "const": false
+        }
+      },
+      "additionalProperties": true
+    },
+    "root": {
+      "type": "object",
+      "required": [
+        "schema",
+        "base_head",
+        "parent_state_root",
+        "master_instance",
+        "master_epoch",
+        "legacy_inputs_root_sha256",
+        "legacy_input_count",
+        "objects",
+        "preserved_inputs",
+        "state_root_hash"
+      ],
+      "properties": {
+        "schema": {
+          "const": "OFG-EA-MASTER-RECOVERY-ROOT-V1"
+        },
+        "base_head": {
+          "const": "879390336f430ab22f25d117de110614a278f466"
+        },
+        "parent_state_root": {
+          "const": "031c48775775f331e40724bed0b49392d66b2442cf95abd3bad6fcf0469e66e6"
+        },
+        "master_instance": {
+          "const": "T1-G3"
+        },
+        "master_epoch": {
+          "const": 3
+        },
+        "legacy_inputs_root_sha256": {
+          "const": "b8723daf6230116df28442e011342ded5de9480766b4ce40aed6a662853bf6bb"
+        },
+        "legacy_input_count": {
+          "const": 30
+        },
+        "state_root_hash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "additionalProperties": true
+    },
+    "selector": {
+      "type": "object",
+      "required": [
+        "schema",
+        "root_ref",
+        "control_ref",
+        "schema_ref",
+        "expected_target_root_hash"
+      ],
+      "properties": {
+        "schema": {
+          "const": "OFG-EA-CURRENT-ROOT-SELECTOR-V1"
+        },
+        "expected_target_root_hash": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        }
+      },
+      "additionalProperties": true
+    },
+    "master_context_policy": {
+      "type": "object",
+      "required": [
+        "contract",
+        "role",
+        "normal_packet_target_bytes",
+        "exceptional_packet_target_bytes",
+        "continuation_critical_conversation_only_state"
+      ],
+      "properties": {
+        "contract": {
+          "const": "OFG-EA-MASTER-MINIMAL-CONTEXT-V1"
+        },
+        "role": {
+          "const": "THIN_MASTER_CONTROL_PLANE"
+        },
+        "normal_packet_target_bytes": {
+          "const": 20480
+        },
+        "exceptional_packet_target_bytes": {
+          "const": 102400
+        },
+        "continuation_critical_conversation_only_state": {
+          "const": "PROHIBITED"
+        },
+        "AUX_rotation_changes_master_epoch": {
+          "const": false
+        },
+        "MASTER_CONTEXT_POLICY_ACTIVE_AFTER_CUTOVER": {
+          "const": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "roadmap": {
+      "type": "object",
+      "required": [
+        "schema",
+        "phase_order",
+        "containerization_implemented",
+        "ENGINEERING_STATE_EFFECT"
+      ],
+      "properties": {
+        "schema": {
+          "const": "OFG-EA-POST-CUTOVER-INFRASTRUCTURE-PLAN-V1"
+        },
+        "containerization_implemented": {
+          "const": false
+        },
+        "CONTAINERIZATION_CHANGES_CURRENT_CUTOVER_SCOPE": {
+          "const": false
+        },
+        "ENGINEERING_STATE_EFFECT": {
+          "const": "NONE"
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "description": "Configuration bridge only; no native epoch-3 event or transaction activation. Hash and dependency semantics additionally enforced by ofg_current.py."
+}

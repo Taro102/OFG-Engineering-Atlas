@@ -1,32 +1,14 @@
 #!/usr/bin/env python3
-"""Create deterministic MRE2 transport envelopes for successor master/worker activation."""
-from __future__ import annotations
-import argparse,json,sys
+import argparse,json
 from pathlib import Path
-ROOT_DEFAULT=Path(__file__).resolve().parents[1]
-sys.path.insert(0,str(ROOT_DEFAULT/'programs'))
-from ofg_codec import envelope, canonical_bytes
-
-def load(p): return json.load(open(p,encoding='utf-8'))
+from ofg_current import load_context,resolve_instance,output_path,read,sha,require
+from ofg_codec import envelope,canonical_bytes
 def main():
-    ap=argparse.ArgumentParser(); ap.add_argument('--root',default=str(ROOT_DEFAULT)); ap.add_argument('--thread',required=True,choices=['1','2','4','5']); ap.add_argument('--generation',type=int,default=2); ap.add_argument('--outdir',required=True); a=ap.parse_args()
-    root=Path(a.root).resolve(); out=Path(a.outdir); out.mkdir(parents=True,exist_ok=True)
-    capsule=load(root/'state'/f'T{a.thread}-G{a.generation}_REHYDRATION_CAPSULE.json')
-    pieces=[
-      ('CTRL',load(root/'state/migration_control.json')),
-      ('ENCODING',load(root/'state/encoding_retrieval_spec.json')),
-      ('CAPSULE',capsule),
-      ('ACTIVE',load(root/'state/active_cycle_c011.json')),
-      ('DISPATCH',load(root/'state/c011_dispatches.json'))
-    ]
-    prev=None; manifest=[]; total=len(pieces)
-    for i,(typ,payload) in enumerate(pieces,1):
-        sid=f'T{a.thread}-G{a.generation}-{typ}-{i:02d}'
-        e=envelope(payload,sid,typ,master_epoch=2,logical_scope=f'T{a.thread}',generation_scope=f'T{a.thread}-G{a.generation}',sequence=i,sequence_total=total,depends_on=[] if i==1 else [manifest[-1]['shard_id']],previous_hash=prev)
-        p=out/(sid+'.json'); p.write_bytes(canonical_bytes(e));
-        import hashlib
-        h=hashlib.sha256(p.read_bytes()).hexdigest(); prev=h
-        manifest.append({'shard_id':sid,'path':p.name,'sha256':h,'payload_hash':e['payload_hash'],'sequence':i})
-    (out/'transport_manifest.json').write_text(json.dumps({'schema':'OFG_EA_MRE2_TRANSPORT_MANIFEST_V2','thread':int(a.thread),'generation':a.generation,'master_epoch':2,'shards':manifest},ensure_ascii=False,indent=2),encoding='utf-8')
-    print(json.dumps({'status':'PASS','outdir':str(out),'shards':len(manifest)},ensure_ascii=False))
+ a=argparse.ArgumentParser();a.add_argument('--root',default=str(Path(__file__).resolve().parents[1]));a.add_argument('--thread',required=True,choices=['1','2','4','5']);a.add_argument('--generation',type=int);a.add_argument('--candidate',action='store_true');a.add_argument('--capsule',required=True);a.add_argument('--outdir',required=True);n=a.parse_args()
+ c=load_context(n.root,n.candidate);name=('T1-G3' if n.thread=='1' else 'T'+n.thread+'-G2') if n.generation is None else 'T'+n.thread+'-G'+str(n.generation);b=resolve_instance(c,name);out=output_path(c,n.outdir)
+ capsule=json.loads(Path(n.capsule).read_text(encoding='utf-8'));require(capsule['source_state_root']==c['state']['state_root_hash'] and capsule['physical_instance']==name,'stale_capsule');out.mkdir(parents=True,exist_ok=True)
+ pieces=[('CONTROL',c['control']),('BINDING',b),('CAPSULE',capsule)];prev=None;entries=[]
+ for i,(kind,payload) in enumerate(pieces,1):
+  sid=name+'-'+kind+'-'+str(i).zfill(2);e=envelope(payload,sid,kind,master_epoch=3,generation_scope=name,sequence=i,sequence_total=len(pieces),previous_hash=prev);raw=canonical_bytes(e);p=out/(sid+'.json');p.write_bytes(raw);prev=sha(raw);entries.append({'path':p.name,'sha256':prev})
+ (out/'transport_manifest.json').write_text(json.dumps({'schema':'OFG-EA-DERIVED-MRE2-TRANSPORT-V1','authority_effect':'NONE','master_epoch':3,'source_state_root':c['state']['state_root_hash'],'physical_instance':name,'shards':entries},indent=2),encoding='utf-8');print(json.dumps({'status':'PASS','authority_effect':'NONE','shards':len(entries)}))
 if __name__=='__main__':main()

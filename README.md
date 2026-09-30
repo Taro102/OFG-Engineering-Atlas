@@ -1,15 +1,11 @@
 # OFG Engineering Atlas
 
-This repository is intentionally public and intended for public distribution. It is the prospective persistent master repository for the OFG Engineering Atlas.
+GitHub main is the persistent control plane. Current authority resolves through `state/current_root.json`, the successor root and `control/master_recovery_cutover.json`. The candidate package has no authority until separately authorized publication and independent remote validation.
 
-The current migration source is the validated R2 migration bundle, `OFG_EA_Master_Migration_Raw_Data_Retrieval_R2.zip`. GitHub does not become authoritative until repository round-trip validation passes and the authority transition is explicitly recorded. GitHub authority is currently `NOT_YET_ACTIVE`.
+The target master is T1-G3 epoch 3. T1-G2 is fenced after validated cutover; existing T2-G2, T4-G2 and T5-G2 generations retain their tasks and original dispatch provenance. Historical compatibility records and transports remain unchanged and cannot activate current authority.
 
-The Engineering Atlas is human- and machine-readable. It provides engineering meaning, relationships, design basis, assumptions, provenance, interpretation, and pointers. The Annex is machine-readable and contains structured registers, schemas, parameters, datasets, and code packages.
+T1-G3 operates as a thin master under `control/master_context_policy.json`; bulk execution and evidence remain external. `control/post_cutover_infrastructure_plan.json` is a roadmap, not implementation or activation.
 
-Raw provenance and normalized state are distinct. Raw sources are immutable provenance inputs; normalized state is version-controlled machine state. Generated retrieval databases, including SQLite indexes, are derivative and rebuildable, not authoritative. Missing records and unresolved engineering identities must remain explicit rather than being invented.
+The engineering pin remains B000 Rev3/RevW3/RevS, C010 integrated staging, configuration cut 2031-04-19. C011 remains unintegrated with zero accepted returns; C012 is absent. WF3 and MRE3 remain inactive. No baseline promotion or global release occurs. T3 remains retired; Rev4 remains quarantined. Raw evidence, open identities and conflicts are preserved.
 
-Phase 1 establishes only the repository control plane. The configuration cut is `2031-04-19`, the latest integrated staging is C010, and C011 remains active but not globally integrated. No baseline promotion or global release has occurred. C011 global integration requires all required returns to be accepted and the user's explicit `Commence`. C012 must not be issued before C011 global integration.
-
-The intended repository structure is defined in `control/repository_layout.json`. Directories are created only when they contain actual tracked files. The complete migration ZIP, large raw files, and complete reference corpus are not included in this phase.
-
-Only material intended for public distribution may be committed. Credentials, access tokens, authentication material, private keys, local account identifiers, and transient connector credentials must not be committed. Large-file handling is a separate storage concern for a later phase; the technical nature or size of the OFG project corpus does not itself prohibit its public distribution.
+Use selector-aware programs for current operations with a separately supplied independent readback receipt. `--candidate` permits local validation only. `--historical` retrieves published parent state at the pinned source commit. Original onboarding remains recoverable from Git history. Generated capsules, indexes and transports are derivative and nonauthoritative.

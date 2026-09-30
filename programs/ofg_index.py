@@ -8,6 +8,7 @@ import argparse,csv,hashlib,json,os,re,sqlite3,zipfile
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
+from ofg_current import load_context,resolve_instance,effective,output_path,read,sha,canonical,require,historical,classify_origin
 ROOT_DEFAULT=Path(__file__).resolve().parents[1]
 
 def sha256_file(p,block=1024*1024):
@@ -84,7 +85,7 @@ def docx_text(path):
 
 def index_state(db,root):
     for p in sorted((root/'state').glob('*')):
-        if p.suffix=='.json': add_record(db,str(p.relative_to(root)),p.stem,json.load(open(p,encoding='utf-8')),'STATE')
+        if p.suffix=='.json': add_record(db,str(p.relative_to(root)),p.stem,json.load(open(p,encoding='utf-8')),'HISTORICAL_COMPATIBILITY')
         elif p.suffix=='.jsonl':
             for n,line in enumerate(open(p,encoding='utf-8'),1):
                 if line.strip(): add_record(db,str(p.relative_to(root)),p.stem,json.loads(line),None)
@@ -102,6 +103,8 @@ def index_compact_reference(db,root,include_large=False,docs=False):
     for p in sorted(ref.rglob('*')):
         if not p.is_file(): continue
         rel=str(p.relative_to(root)); size=p.stat().st_size
+        with open(p,'rb') as probe:
+            if probe.read(64).startswith(b'version https://git-lfs.github.com/spec/v1'): continue
         if p.suffix.lower()=='.csv':
             if size>5_000_000 and not include_large: continue
             with open(p,encoding='utf-8-sig',errors='replace',newline='') as f:
@@ -124,17 +127,20 @@ def index_edges(db,root):
             o=json.loads(line); db.execute('INSERT INTO edges(src,rel,dst,source_path,state,json) VALUES(?,?,?,?,?,?)',(o.get('src'),o.get('rel'),o.get('dst'),str(p.relative_to(root)),o.get('state'),json_text(o)))
 
 def main():
-    ap=argparse.ArgumentParser(); ap.add_argument('--root',default=str(ROOT_DEFAULT)); ap.add_argument('--db',default=None); ap.add_argument('--include-large',action='store_true'); ap.add_argument('--docs',action='store_true'); a=ap.parse_args()
-    root=Path(a.root).resolve(); dbp=Path(a.db).resolve() if a.db else root/'ofg_master_state.sqlite'
+    ap=argparse.ArgumentParser(); ap.add_argument('--root',default=str(ROOT_DEFAULT)); ap.add_argument('--db',default=None); ap.add_argument('--include-large',action='store_true'); ap.add_argument('--docs',action='store_true'); ap.add_argument('--candidate',action='store_true'); a=ap.parse_args()
+    root=Path(a.root).resolve(); ctx=load_context(root,a.candidate); dbp=Path(a.db).resolve() if a.db else root/'generated'/'index.sqlite'
+    root=ctx['root']; dbp=output_path(ctx,dbp); dbp.parent.mkdir(parents=True,exist_ok=True)
     if dbp.exists(): dbp.unlink()
     db=sqlite3.connect(dbp); init_db(db)
     for p in sorted(root.rglob('*')):
-        if not p.is_file() or p==dbp: continue
+        if not p.is_file() or p==dbp or any(x in ('.git','generated','__pycache__') for x in p.relative_to(root).parts): continue
         rel=str(p.relative_to(root)); raw=p.read_bytes() if p.stat().st_size<5_000_000 else None
         text=raw.decode('utf-8','ignore') if raw and p.suffix.lower() in ('.txt','.md','.json') else ''
         def mm(pattern):
             m=re.search(pattern,text); return m.group(1) if m else None
         db.execute('INSERT OR REPLACE INTO files(path,category,ext,size_bytes,sha256,package_id,task_id,cycle_id) VALUES(?,?,?,?,?,?,?,?)',(rel,classify(rel),p.suffix.lower(),p.stat().st_size,sha256_file(p),mm(r'"(?:PACKAGE_ID|RETURN_PACKET_ID)"\s*:\s*"([^"]+)"'),mm(r'"TASK_ID"\s*:\s*"([^"]+)"'),mm(r'"CYCLE_ID"\s*:\s*"([^"]+)"')))
+    db.execute('INSERT INTO kv(key,value_json) VALUES(?,?)',('current_root',json.dumps({'state_root':ctx['state']['state_root_hash'],'base_head':ctx['state']['base_head']})))
+    for section in ['working','reference','active']: add_record(db,'state/current_root.json','CURRENT_'+section,effective(ctx,section),'CURRENT_DERIVED_PROJECTION')
     index_state(db,root); index_worker_returns(db,root); index_compact_reference(db,root,a.include_large,a.docs); index_edges(db,root)
     db.execute('INSERT OR REPLACE INTO kv(key,value_json) VALUES(?,?)',('index_config',json.dumps({'root':str(root),'include_large':a.include_large,'docs':a.docs},separators=(',',':')))); db.commit()
     counts={t:db.execute(f'SELECT COUNT(*) FROM {t}').fetchone()[0] for t in ['files','records','edges']}

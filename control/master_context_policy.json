@@ -1,0 +1,45 @@
+{
+  "schema": "OFG-EA-MASTER-MINIMAL-CONTEXT-V1",
+  "contract": "OFG-EA-MASTER-MINIMAL-CONTEXT-V1",
+  "master_instance": "T1-G3",
+  "role": "THIN_MASTER_CONTROL_PLANE",
+  "responsibilities": [
+    "authority_decisions",
+    "cycle_orchestration",
+    "semantic_acceptance_rejection",
+    "integration_gates",
+    "conflict_disposition",
+    "generation_control",
+    "publication_approval",
+    "user_authorization_gates"
+  ],
+  "excluded_default_workloads": [
+    "repository_wide_scans",
+    "large_manifests",
+    "raw_datasets",
+    "full_test_logs",
+    "bulk_hashes",
+    "package_construction",
+    "container_execution",
+    "long_running_local_processing",
+    "verbose_worker_returns",
+    "large_shell_Codex_transcripts"
+  ],
+  "default_input": "MASTER_DECISION_PACKET",
+  "normal_packet_target_bytes": 20480,
+  "exceptional_packet_target_bytes": 102400,
+  "larger_material": "DURABLE_ARTIFACT_REFERENCE_ONLY",
+  "continuation_critical_conversation_only_state": "PROHIBITED",
+  "reconstruction_inputs": [
+    "HEAD",
+    "STATE_ROOT",
+    "master_binding",
+    "active_cycle_state",
+    "compact_outstanding_decision_register"
+  ],
+  "outstanding_decision_register": "threads/T1-G3/state.json#/outstanding_decisions",
+  "material_decision_checkpointing": "PROMPT_DURABLE_CHECKPOINT_BEFORE_DEPENDENT_CONTINUATION",
+  "AUX_rotation_changes_master_epoch": false,
+  "MASTER_CONTEXT_POLICY_ACTIVE_AFTER_CUTOVER": true,
+  "engineering_semantics_effect": "NONE"
+}

@@ -3,10 +3,11 @@
 from __future__ import annotations
 import argparse,csv,json,os,sqlite3,sys
 from pathlib import Path
+from ofg_current import load_context,resolve_instance,effective,output_path,read,sha,canonical,require,historical,classify_origin
 ROOT_DEFAULT=Path(__file__).resolve().parents[1]
 
 def dbopen(root,dbpath=None):
-    p=Path(dbpath) if dbpath else Path(root)/'ofg_master_state.sqlite'
+    p=Path(dbpath) if dbpath else Path(root)/'generated'/'index.sqlite'
     return sqlite3.connect(p),p
 
 def query_db(db,q,limit,dataset=None,object_id=None):
@@ -50,7 +51,7 @@ def neighbors(db,node,limit=100):
     return [{'src':r[0],'rel':r[1],'dst':r[2],'source_path':r[3],'state':r[4],'json':json.loads(r[5]) if r[5] else None} for r in rows]
 
 def main():
-    ap=argparse.ArgumentParser(); ap.add_argument('--root',default=str(ROOT_DEFAULT)); ap.add_argument('--db',default=None)
+    ap=argparse.ArgumentParser(); ap.add_argument('--root',default=str(ROOT_DEFAULT)); ap.add_argument('--db',default=None); ap.add_argument('--candidate',action='store_true'); ap.add_argument('--historical',action='store_true')
     sub=ap.add_subparsers(dest='cmd',required=True)
     q=sub.add_parser('query'); q.add_argument('text'); q.add_argument('--limit',type=int,default=20); q.add_argument('--dataset'); q.add_argument('--object')
     s=sub.add_parser('scan'); s.add_argument('terms',nargs='+'); s.add_argument('--limit',type=int,default=50); s.add_argument('--path-contains')
@@ -61,8 +62,11 @@ def main():
     op=sub.add_parser('open'); op.add_argument('--contains')
     a=ap.parse_args(); root=Path(a.root)
     if a.cmd=='state':
+        if not a.historical:
+            ctx=load_context(root,a.candidate); print(json.dumps(effective(ctx,a.section),ensure_ascii=False,indent=2)); return
+        historical(root)
         fn={'working':'current_working_state.json','reference':'reference_state.json','active':'active_cycle_c011.json'}[a.section]
-        print(Path(root,'state',fn).read_text(encoding='utf-8')); return
+        raw=__import__('subprocess').check_output(['git','-C',str(root),'show','879390336f430ab22f25d117de110614a278f466:state/'+fn]);print(json.dumps({'authority_class':'HISTORICAL_ONLY','data':json.loads(raw)},ensure_ascii=False)); return
     if a.cmd=='cycle':
         rows=[json.loads(x) for x in Path(root,'state','cycle_history.jsonl').read_text(encoding='utf-8').splitlines() if x.strip()]
         print(json.dumps([r for r in rows if r['cycle'].upper()==a.cycle.upper()],ensure_ascii=False,indent=2)); return
@@ -75,7 +79,8 @@ def main():
         if a.contains: rows=[r for r in rows if a.contains.lower() in r.get('subject','').lower()]
         print(json.dumps(rows,ensure_ascii=False,indent=2)); return
     if a.cmd=='scan': print(json.dumps(raw_scan(root,a.terms,a.limit,a.path_contains),ensure_ascii=False,indent=2)); return
-    db,_=dbopen(root,a.db)
+    ctx=load_context(root,a.candidate); db,_=dbopen(ctx['root'],a.db)
+    row=db.execute("SELECT value_json FROM kv WHERE key='current_root'").fetchone(); require(row is not None and json.loads(row[0])['state_root']==ctx['state']['state_root_hash'],'stale_current_index')
     if a.cmd=='query': print(json.dumps(query_db(db,a.text,a.limit,a.dataset,a.object),ensure_ascii=False,indent=2))
     elif a.cmd=='neighbors': print(json.dumps(neighbors(db,a.node,a.limit),ensure_ascii=False,indent=2))
 if __name__=='__main__': main()
